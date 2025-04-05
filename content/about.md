@@ -2,34 +2,50 @@
 title: About Us
 layout: base.html
 ---
+---
+title: About TabStax
+layout: base
+---
 
-# About Killone Group Water Scheme
+# About TabStax
 
-The Killone Group Water Scheme serves the community in the parish of Clarecastle & Ballyea Parish, County Clare.
+Hi, I'm **Colm Byrne** — author of [*Superpowered: How Neurodivergents Win in the Age of AI*](https://mybook.to/superpowered).  
+I've worked as a product manager with companies ranging from Apple to early-stage startups and global enterprises.
 
-We are dedicated to providing high-quality water services to our members.
+I built TabStax because I needed it — and chances are, you do too.
 
-![Killone Logo](/killonelogo.png) 
+---
 
-## Group Water Schemes in Ireland
+## Why TabStax Exists
 
-Uisce Éireann provides water and wastewater services to customers through the public water and sewerage schemes. We're responsible for the development, maintenance and operation of water and wastewater plants and the associated pipe networks.
+Modern life demands context switching: work, side projects, research, errands — all in the browser. But tabs weren’t built for focus. Bookmarks are static, messy, and slow.
 
-### What are Group Water Schemes?
+TabStax helps you instantly load full sets of tabs — we call them **Stax** — grouped by purpose. No more digging. No more mental load.
 
-Group Water Schemes are privately owned and operated schemes. The Group Water Schemes' Programme was introduced in 1962 to provide capital grant aid to rural dwellers for the construction of water distribution systems to pipe water from local water sources such as lakes or boreholes into their homes and farms.
+Whether you're managing ADHD, juggling multiple roles, or just tired of the chaos — TabStax gives you back your flow.
 
-Communities set up voluntary co-operative structures known as Group Water Schemes to privately manage these water distribution systems with current operating costs being funded through contributions from Group Scheme members and Central Government subsidies.
+---
 
-### Types of Schemes
+## Who It's For
 
-There are two categories of Group Water Schemes in Ireland:
+- Neurodivergent minds (like mine) who crave clarity and fast recall  
+- Busy professionals balancing multiple projects  
+- Creators, developers, founders, PMs, and researchers  
+- Anyone who needs to **switch contexts fast** — without losing momentum
 
-* **Private Group Water Schemes:** They abstract, treat and distribute their own water supply from a private source such as a lake, river, well or spring. Please note that Uisce Éireann does not have any responsibility for Private Group Water Schemes.
-* **Public Group Water Schemes:** They obtain water by a connection to a public water supply and distribute this water through a local distribution network owned and operated by the Group. Group schemes are responsible for the provision of supplies to their customers and the maintenance of their networks irrespective of whether supplies are privately or publicly sourced.
+---
 
-### Public Group Water Schemes Charging Arrangements
+## What’s Coming Next
 
-Public Group Water Schemes obtain water by a connection to a public water supply and distribute this water through a local distribution network owned and operated by the Group. There are also a small number of public Group Sewerage Schemes that are connected to, and discharge wastewater to, Uisce Éireann's public wastewater network. Up to the 30th September 2022 Uisce Éireann will continue to charge public Group Water Schemes at the rates applied by Local Authorities. These charges differ in each Local Authority, and have not been changed since Uisce Éireann took responsibility for water services. Following a decision on new charging arrangements by the Commission for Regulation of Utilities for public Group Water Schemes new charges will apply from the 1st Oct 2022. The new charging arrangements also apply to public Group Sewerage Schemes. For details on the new charges see Business Charges.
+- 👥 **Teams** — Collaborate on shared Stax with permission control  
+- 🔗 **Sharing** — Generate public links to curated Stax  
+- 🌍 **Community Stax** — Browse and reuse open tab groups from others  
+- 🔴 **Live Stax** — Auto-updating Stax for active dashboards or research feeds  
 
-For more information on the CRU's decision on Charging Arrangements for public Group Water Schemes, visit [www.cru.ie](www.cru.ie).
+---
+
+This is just the beginning.  
+If you're reading this, you're early — and that means you get to help shape what comes next.
+
+👉 [Join the beta](https://tally.so/r/m6PlrB)) or follow the journey.  
+Let’s make the browser work for our brains, not against them.
