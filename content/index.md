@@ -1,13 +1,51 @@
 ---
-title: Welcome to Killone Group Water Scheme
-layout: base.html
+title: TabStax — Your Home Page for the Internet
+layout: base
 ---
 
-# Killone Group Water Scheme
-The Killone Group Water Scheme provides clean, reliable water to the community of Clarecastle & Ballyea Parish.
+![TabStax Logo](/assets/logo.png)
 
-We serve over 400 households, farms, and businesses.
+# Context Switching, Made Easy
 
-To get in touch, see our [**contact page**](/contact/).
+TabStax is your **home page for the internet** — a better way to manage, switch, and share sets of tabs with one click.
 
-![Killone Water Scheme](killonews.png)
+### 🧠 Why TabStax?
+
+Modern life is full of **distraction** and **context switching**. Whether you're managing personal research, deep work projects, or bouncing between client tasks — TabStax helps you:
+
+- **Instantly switch** between contexts
+- Organize **named groups of tabs** ("Stax") with one click
+- **Replace or edit stacks** anytime
+- **Access anywhere** — synced across your devices
+
+> Save your brainpower. Let TabStax handle the tabs.
+
+---
+
+### 💡 Use Cases
+
+- **What I'm Reading Now** — Start your day with a focused reading stack.
+- **Project Mode** — Instantly open the tools and sites you need to work.
+- **Work vs Personal** (coming soon)
+- **Public Sharing** (coming soon)
+- **Team Collaboration** (coming soon)
+- **Self-Hosted Options** (coming soon)
+
+---
+
+### 🔄 Works Across Devices
+
+Your Stax are saved in the cloud (or locally if you prefer). Access your workspaces from any browser.
+
+---
+
+### 🧩 Built Different
+
+Designed for the **neurodiverse** and the **incredibly busy**, TabStax minimizes cognitive load and maximizes flow.
+
+---
+
+### 🚀 Ready to focus?
+
+TabStax is lightweight, fast, and launching soon.  
+No fluff. Just the tabs you need — when you need them.
