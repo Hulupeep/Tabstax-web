@@ -13,7 +13,7 @@ Hi, I'm **Colm Byrne** — author of [*Superpowered: How Neurodivergents Win in 
 I've worked as a product manager with companies ranging from Apple to early-stage startups and global enterprises.
 
 I built TabStax because I needed it — and chances are, you do too.
-TabStax is a product of Flout Labs registered in Ireland as a limited company,
+
 
 ---
 
@@ -50,3 +50,5 @@ If you're reading this, you're early — and that means you get to help shape wh
 
 👉 [Join the beta](https://tally.so/r/m6PlrB)) or follow the journey.  
 Let’s make the browser work for our brains, not against them.
+
+TabStax is a product of Flout Labs registered in Ireland as a limited company,
