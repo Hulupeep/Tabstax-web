@@ -3,7 +3,7 @@ title: TabStax — Your Home Page for the Internet
 layout: base.html
 ---
 
-![TabStax Logo](/screenshot.png)
+![TabStax Logo](/logomed.png)
 
 # Context Switching, Made Easy
 
@@ -23,7 +23,9 @@ Modern life is full of **distraction** and **context switching**. Whether you're
 
 > Save your brainpower. Let TabStax handle the tabs.
 
+
 ---
+![TabStax Logo](/screenshot.png)
 
 ### 💡 Use Cases
 
