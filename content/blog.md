@@ -1,51 +1,66 @@
 ---
-title: Archive
+title: Blog
 layout: base.html
 ---
 
-# Archive
-This is where the old stuff goes!
+# Blog
+### March 30, 2025: Context-Switching Is Costing You More Than You Think
 
-## Funding Notification (May 2011)
+Ever feel exhausted after a workday but unsure exactly what you accomplished? You're not alone. Modern professionals juggle endless tabs, Slack messages, meetings, and tasks—each switch carrying a hidden cognitive tax. Studies show that it takes around 23 minutes to regain full focus after switching tasks. Multiply that by dozens of switches daily, and you’re paying a steep price.
 
-The following notification was sent by a Clare County Council official to an officer of Killone Group Water Scheme on the 27th of May 2011:
+For developers, product managers, or researchers, context-switching isn’t just inconvenient—it’s destructive. Lost threads of thought, disrupted deep work sessions, and diminished creativity are just part of the bill. Traditional bookmarking and tab management tools haven’t kept pace with this challenge, leaving users managing tabs manually, leading to frequent interruptions.
 
-> Clare County Council wish to inform you that a payment of €15,880.00 will issue to the Group’s Bank Account on Friday 3rd June 2011.
->
-> This represents only Part (Approximately half) of the 2009 subsidy payment to which the Group Water Scheme is entitled. It is not clear why the balance of €14000 (approx) is being withheld.
->
-> Posted by Martin at 07:28 No comments: Email This BlogThis! Share to X Share to Facebook Share to Pinterest
+But hope isn’t lost. Innovations like context-specific tab grouping tools, such as TabStax, aim directly at reducing these hidden costs. By bundling resources into instantly-accessible stacks, professionals can swiftly jump between projects without cognitive drag.
 
-## Water Quality Assessment (May 2011)
+**Kicker:** Context-switching isn't just killing your productivity—it's draining your potential. Tools designed around human cognition are the future of focused work.
 
-The drinking water quality proved to be satisfactory on both chemical and biological parameters measured during the month (May 2011). The turbidity continues to be a bit of a challenge as it is always close to 1.0 NTU. We need this value to be less than 0.5 NTU consistently, but the plant as at present configured is not capable of achieving this. Capital funding will be required in order to upgrade the plant to the required standard.
+---
 
-> Posted by Martin at 07:49 1 comment: Email This BlogThis! Share to X Share to Facebook Share to Pinterest
->
-> Labels: KGWS Water Quality Report
+### March 23, 2025: Neurodivergent Brains and the Power of Structured Flexibility
 
-## Information For All Users and Visitors to the KGWS Blog
+Neurodiverse minds—those with ADHD, autism, dyslexia, and beyond—bring immense creativity and unique perspectives. However, these brains often face heightened challenges in navigating traditional productivity structures that prize linear workflows.
 
-The Killone GWS (KGWS) Blog is to be used solely for the purpose of communicating facts (environmental issues, quality issues, safety issues, funding issues etc.) and opinions relating to the provision of services by Killone Group Water Scheme, Tiermaclane, Co Clare, to its members. The Blog may be used to register complaints, opportunities for improvement, feedback, etc relating to the services provided by Killone GWS.
+The solution isn't forcing neurodiverse individuals into rigid productivity systems. Instead, tools should support "structured flexibility": clear, intuitive frameworks that accommodate spontaneous shifts in attention without losing overall project coherence. Systems that group tasks and resources into easily accessible contexts help manage frequent cognitive transitions seamlessly.
 
-Users using it for other purposes will be blocked.
+Imagine a developer easily shifting from debugging code in one context to drafting documentation in another, without the mental whiplash typical of these switches. By embracing context-aware solutions, neurodiverse workers gain powerful allies in the fight against productivity blockers.
 
-Those interested in actively participating in the management of the scheme are most welcome to contribute.
+**Kicker:** Neurodivergent minds don't need fixing—they need tools designed for flexibility. Let's empower rather than constrain.
 
-> The Editor
->
-> Posted by Martin at 07:36 No comments: Email This BlogThis! Share to X Share to Facebook Share to Pinterest
->
-> Labels: Information
+---
 
-## Killone GWS Funding
+### March 16, 2025: Is "Deep Work" Possible in a Tab-Overloaded World?
 
-I'm not sure if the cheque has arrived from the council yet.
+Cal Newport’s "Deep Work" has become a productivity bible, emphasizing sustained, distraction-free focus. Yet, many modern digital workers laugh at the very thought. How do you sustain deep work amidst dozens of browser tabs screaming for attention?
 
-> Posted by Martin at 06:16 No comments: Email This BlogThis! Share to X Share to Facebook Share to Pinterest
+The average professional toggles between tabs hundreds of times daily, each transition eroding focus incrementally. The sheer volume and variety of resources required for modern projects demand a better system—a system that groups tasks and resources intelligently and contextually.
 
-## Update on overdue funding from Co Council (May 2011)
+Tools that manage tabs contextually allow professionals to quickly open all relevant resources for a project in one click and effortlessly clear distractions when switching tasks. Such structured tab management creates islands of deep focus within a sea of potential distractions.
 
-Funding from Co Council, due since 2009, promised by phone at 5.00pm Tue 17th prior to AGM still not received on Fri 27th!
+**Kicker:** Deep work isn't about working harder—it's about smarter, focused environments. Could context-based tab management hold the secret?
 
-> Posted by Martin at 06:16 No comments: Email This BlogThis! Share to X Share to Facebook Share to Pinterest
+---
+
+### March 9, 2025: Collaboration or Chaos: When Productivity Tools Backfire
+
+Collaboration is essential, but let's face it: endless notifications, overlapping conversations, and dispersed resources often plunge teams into chaos. Ironically, productivity tools intended to streamline workflows can sometimes exacerbate confusion.
+
+Project and product managers find themselves perpetually tracking scattered resources—spreadsheets, Jira boards, Slack threads, and browser tabs multiply, leaving critical information fragmented. The cognitive burden of constant switching undermines efficiency and creativity.
+
+The next generation of tools must unify rather than fragment our workflows. Imagine effortlessly sharing structured sets of resources—tabs, documentation, tasks—all bundled neatly into contexts accessible to your entire team.
+
+Simple, contextual tab management solutions promise a future where collaboration enhances clarity rather than creating chaos.
+
+**Kicker:** If your tools create more chaos than clarity, it's time to rethink collaboration. The solution may be simpler than you think.
+
+---
+
+### March 2, 2025: The Hidden Benefits of Limiting Your Choices
+
+We cherish freedom, but sometimes too many options paralyze us. This paradox of choice frequently manifests in digital workspaces filled with open tabs and unlimited paths forward. Each open tab symbolizes potential but also distraction.
+
+Interestingly, limiting your available choices can significantly enhance productivity. By actively constraining your workspace to only the necessary tabs and resources, you reduce cognitive load and decision fatigue, creating mental clarity.
+
+Digital minimalism isn't just a personal lifestyle choice—it's a productivity strategy. Tools that help users quickly prune their workspace, close unnecessary tabs, and open only context-specific resources significantly boost clarity and productivity.
+
+**Kicker:** Freedom isn't found in endless choice—it's found in focused clarity. Less might truly be more.
+
