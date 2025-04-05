@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: base
+layout: base.html
 ---
 
 # Get in Touch
