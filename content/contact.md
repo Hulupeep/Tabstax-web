@@ -33,11 +33,5 @@ I’d love to hear from you. I read every message personally — whether it’s 
 
 ---
 
-## Or Email Me Directly
-
-**hello@tabstax.com**
-
----
-
 Thanks for being here.  
 – Colm
