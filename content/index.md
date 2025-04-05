@@ -1,6 +1,6 @@
 ---
 title: TabStax — Your Home Page for the Internet
-layout: base
+layout: base.html
 ---
 
 ![TabStax Logo](/logemed.png)
