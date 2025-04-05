@@ -3,7 +3,7 @@ title: TabStax — Your Home Page for the Internet
 layout: base
 ---
 
-![TabStax Logo](/assets/logo.png)
+![TabStax Logo](/assets/logomed.png)
 
 # Context Switching, Made Easy
 
