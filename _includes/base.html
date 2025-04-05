@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} | Killone Group Water Scheme</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="bg-gray-50 text-gray-700 font-sans leading-normal">
+<header class="bg-blue-600 py-4 shadow-md flex items-center justify-between px-6">
+    <div>
+        <a href="/">
+<img src="\killonelogosmall.png" alt="Killone Group Water Scheme Logo" class="h-12 w-auto">
+
+        </a>
+    </div>
+    <nav>
+        <ul class="flex space-x-4 text-white">
+            <li><a href="/" class="hover:text-gray-200">Home</a></li>
+            <li><a href="/about/" class="hover:text-gray-200">About</a></li>
+            <li><a href="/archive/" class="hover:text-gray-200">Archive</a></li>
+            <li><a href="/contact/" class="hover:text-gray-200">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="bg-white p-6 shadow rounded prose max-w-none">
+            {{ content | raw }}
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 py-4 mt-10">
+        <div class="container mx-auto px-4 text-sm text-center text-gray-500">
+            © Killone Group Water Scheme {{ "now" | date: "%Y" }}
+        </div>
+    </footer>
+</body>
+</html>
