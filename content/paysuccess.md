@@ -19,7 +19,8 @@ title: "TabStax Pro - Welcome!"
 
 1. **Close this tab**
 2. **Click the TabStax extension icon** in your browser toolbar  
-3. **Click "Sync"** - you now have Pro access!
+3. **Click "Sync"**
+4. ***Sign in if prompted** you now have global superstar universal pro amazing god-like access. You are pro.
 
 </div>
 
