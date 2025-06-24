@@ -34,14 +34,3 @@ title: "TabStax Pro - Welcome!"
 Questions? Email us at [support@tabstax.app](mailto:support@tabstax.app)
 
 </div>
-
-<script>
-// Get session ID from URL for analytics
-const urlParams = new URLSearchParams(window.location.search);
-const sessionId = urlParams.get('session_id');
-
-if (sessionId) {
-    // Optional: Send to analytics
-    console.log('Payment completed:', sessionId);
-}
-</script>
