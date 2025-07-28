@@ -1,0 +1,287 @@
+---
+permalink: /share/index.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TabStax - Shared Collection</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+    
+    .header {
+      background-color: white;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+      padding: 1.5rem 0;
+    }
+    
+    .header-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    
+    .stax-info {
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
+    }
+    
+    .stax-name {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    
+    .owner-info {
+      color: #6b7280;
+      font-size: 0.875rem;
+    }
+    
+    .links-container {
+      background-color: white;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+    
+    .link-item {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      border: 1px solid #e5e7eb;
+      border-radius: 0.375rem;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      color: #1f2937;
+      transition: background-color 0.2s;
+    }
+    
+    .link-item:hover {
+      background-color: #f9fafb;
+    }
+    
+    .link-favicon {
+      width: 20px;
+      height: 20px;
+      margin-right: 0.75rem;
+      flex-shrink: 0;
+    }
+    
+    .link-title {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    
+    .loading, .error {
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+    
+    .error h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: #dc2626;
+    }
+    
+    .cta-section {
+      background-color: #dbeafe;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 2rem;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      background-color: #2563eb;
+      color: white;
+      padding: 0.75rem 2rem;
+      border-radius: 0.375rem;
+      text-decoration: none;
+      font-weight: 500;
+      margin-top: 1rem;
+      transition: background-color 0.2s;
+    }
+    
+    .cta-button:hover {
+      background-color: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-content">
+      <div class="logo">
+        📦 TabStax
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+    <div id="content">
+      <div class="loading">Loading shared stax...</div>
+    </div>
+  </div>
+  
+  <script>
+    const SUPABASE_URL = 'https://ayfhqcwzdqakxgkbzdpn.supabase.co';
+    const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF5ZmhxY3d6ZHFha3hna2J6ZHBuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDMyODk0OTAsImV4cCI6MjA1ODg2NTQ5MH0.sGZcBOOmmOejn-_jcJ49xwW09HVtDKUyjWMXYSyziz8';
+    
+    async function loadSharedStax() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const shareId = urlParams.get('s');
+      
+      // Also support path-based URLs like /share/uuid
+      const pathMatch = window.location.pathname.match(/\/share\/([a-f0-9-]+)/);
+      const finalShareId = shareId || (pathMatch && pathMatch[1]);
+      
+      if (!finalShareId) {
+        showError('No share ID provided', 'Invalid share link');
+        return;
+      }
+      
+      try {
+        // Fetch stax data
+        const staxResponse = await fetch(
+          `${SUPABASE_URL}/rest/v1/stax?share_id=eq.${finalShareId}&is_public=eq.true&select=*`,
+          {
+            headers: {
+              'apikey': SUPABASE_KEY,
+              'Authorization': `Bearer ${SUPABASE_KEY}`
+            }
+          }
+        );
+        
+        if (!staxResponse.ok) {
+          throw new Error('Failed to fetch stax');
+        }
+        
+        const staxData = await staxResponse.json();
+        
+        if (!staxData || staxData.length === 0) {
+          showError('Shared stax not found', 'This link may have expired or been removed');
+          return;
+        }
+        
+        const stax = staxData[0];
+        
+        // Fetch owner info
+        const profileResponse = await fetch(
+          `${SUPABASE_URL}/rest/v1/profiles?id=eq.${stax.user_id}&select=handle`,
+          {
+            headers: {
+              'apikey': SUPABASE_KEY,
+              'Authorization': `Bearer ${SUPABASE_KEY}`
+            }
+          }
+        );
+        
+        let ownerHandle = 'Anonymous';
+        if (profileResponse.ok) {
+          const profileData = await profileResponse.json();
+          if (profileData && profileData.length > 0) {
+            ownerHandle = profileData[0].handle || 'Anonymous';
+          }
+        }
+        
+        // Fetch links
+        const linksResponse = await fetch(
+          `${SUPABASE_URL}/rest/v1/stax_links?stax_id=eq.${stax.id}&select=*&order=position`,
+          {
+            headers: {
+              'apikey': SUPABASE_KEY,
+              'Authorization': `Bearer ${SUPABASE_KEY}`
+            }
+          }
+        );
+        
+        let links = [];
+        if (linksResponse.ok) {
+          links = await linksResponse.json();
+        }
+        
+        displayStax(stax, ownerHandle, links);
+        
+      } catch (error) {
+        console.error('Error loading shared stax:', error);
+        showError('Failed to load shared stax', 'Please try again later');
+      }
+    }
+    
+    function showError(title, message) {
+      document.getElementById('content').innerHTML = `
+        <div class="error">
+          <h2>${title}</h2>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+    
+    function displayStax(stax, ownerHandle, links) {
+      const linksHtml = links.length > 0 
+        ? links.map(link => `
+            <a href="${link.url}" target="_blank" rel="noopener noreferrer" class="link-item">
+              ${link.favicon ? `<img src="${link.favicon}" alt="" class="link-favicon" onerror="this.style.display='none'">` : ''}
+              <span class="link-title">${link.title}</span>
+            </a>
+          `).join('')
+        : '<p style="text-align: center; color: #6b7280;">This stax has no links yet.</p>';
+      
+      document.getElementById('content').innerHTML = `
+        <div class="stax-info">
+          <h1 class="stax-name">${stax.name}</h1>
+          <p class="owner-info">Shared by ${ownerHandle}</p>
+        </div>
+        
+        <div class="links-container">
+          ${linksHtml}
+        </div>
+        
+        <div class="cta-section">
+          <p>Want to save this stax to your collection?</p>
+          <a href="https://chrome.google.com/webstore" class="cta-button">Get TabStax Extension</a>
+        </div>
+      `;
+    }
+    
+    // Load the shared stax when page loads
+    loadSharedStax();
+  </script>
+</body>
+</html>
