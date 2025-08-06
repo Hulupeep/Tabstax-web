@@ -1,10 +1,10 @@
 ---
-title: Blog
+title: Help
 layout: base.html
 ---
 
-# Blog
-### March 30, 2025: Context-Switching Is Costing You More Than You Think
+# Help
+### Videos and Help go here
 
 Ever feel exhausted after a workday but unsure exactly what you accomplished? You're not alone. Modern professionals juggle endless tabs, Slack messages, meetings, and tasks—each switch carrying a hidden cognitive tax. Studies show that it takes around 23 minutes to regain full focus after switching tasks. Multiply that by dozens of switches daily, and you’re paying a steep price.
 
