@@ -66,7 +66,7 @@ You can:
 - Request deletion of your account and data
 - Ask questions or express concerns at any time
 
-📧 Email us at [support@tabstax.com](mailto:support@tabstax.com)
+📧 Email us at [support@floutlabs.com](mailto:support@floutlabs.com)
 
 ---
 
@@ -92,7 +92,7 @@ We may update this policy from time to time. We'll notify users of significant c
 
 For any privacy-related questions or requests:
 
-- Email: [support@tabstax.com](mailto:support@tabstax.com)  
+- Email: [support@floutlabs.com](mailto:support@floutlabs.com)  
 - Website: [https://www.tabstax.com](https://www.tabstax.com)
 
 ---
