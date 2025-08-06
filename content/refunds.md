@@ -26,7 +26,7 @@ We do not issue refunds for:
 
 As TabStax is a digital product, there is no physical return process. Simply contact us for help with your account or request a refund.
 
-To request a refund, email us at: **support@tabstax.com**  
+To request a refund, email us at: **support@floutlabs.com**  
 Please include your account email and the reason for your refund request.
 
 ---
@@ -41,7 +41,7 @@ You can cancel your subscription anytime from your account settings. Cancelation
 
 If you're considering initiating a dispute with your bank or card provider, please contact us first. We can usually resolve the issue quickly.
 
-Email us: **support@tabstax.com**
+Email us: **support@floutlabs.com**
 
 ---
 
@@ -49,7 +49,7 @@ Email us: **support@tabstax.com**
 
 For any questions about our refunds, cancelation, or support:
 
-- 📧 Email: [support@tabstax.com](mailto:support@tabstax.com)
+- 📧 Email: [support@floutlabs.com](mailto:support@floutlabs.com)
 - 🌐 Website: [www.tabstax.com](https://www.tabstax.com)
 
 ---
