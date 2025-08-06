@@ -58,7 +58,7 @@ We may update these Terms from time to time. Continued use of TabStax after chan
 
 ## 📧 Contact
 
-If you have any questions about these Terms, reach out to us at [support@tabstax.com](mailto:support@tabstax.com).
+If you have any questions about these Terms, reach out to us at [support@floutlabs.com](mailto:support@floutlabs.com).
 
 ---
 
@@ -67,7 +67,7 @@ If you have any questions about these Terms, reach out to us at [support@tabstax
 
 For privacy-related concerns or data access requests:
 
-- 📧 Email: [support@tabstax.com](mailto:support@tabstax.com)
+- 📧 Email: [support@floutlabs.com](mailto:support@floutlabs.com)
 - 🌐 Website: [www.tabstax.com](https://www.tabstax.com)
 
 ---
