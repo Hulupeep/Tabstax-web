@@ -1,3 +1,5 @@
+"use client"
+
 import TabStaxPopup from "@/popup"
 
 export default function Home() {
