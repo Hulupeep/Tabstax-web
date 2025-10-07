@@ -1,0 +1,214 @@
+# TabStax Extension - Mockups Index
+
+## Main Extension Files
+├── popup.tsx                    # Main popup container with screen routing logic
+├── popup.html                   # Extension popup HTML entry point
+├── success.html                 # Standalone success page (Stripe redirect)
+├── cancel.html                  # Standalone cancel page (Stripe redirect)
+└── manifest.json               # Extension configuration and permissions
+
+## React Components
+
+### Core Interface Components
+├── popup.tsx                    # Main popup with tab management and screen routing
+│   ├── Purpose: Primary extension interface with Stax management
+│   ├── Features: Tab selection, Stax dropdown, Open/Create buttons
+│   ├── States: main|auth|paywall|maybe-later|success|cancel
+│   └── Smart Logic: Dynamic Open button, Sync button visibility
+
+### Authentication Flow
+├── auth-screen.tsx              # Sign in/Sign up form
+│   ├── Purpose: User authentication before paywall
+│   ├── Features: Email/password forms, toggle sign-in/sign-up
+│   ├── Validation: Form validation, loading states
+│   └── Integration: Supabase auth, redirects to paywall
+
+### Monetization Flow
+├── paywall-screen.tsx           # Pro upgrade with monthly trial offer
+│   ├── Purpose: Convert free users to paid subscribers
+│   ├── Features: Feature showcase, pricing (€4.99 → €3.99/month)
+│   ├── CTA: "Start Free Trial" → Stripe checkout (monthly)
+│   └── Alternative: "Maybe Later" → retention screen
+
+├── maybe-later-screen.tsx       # Retention attempt with annual offer
+│   ├── Purpose: Recover abandoning users with better deal
+│   ├── Features: Shows free plan limitations, security concerns
+│   ├── Offer: $20 annual (no recurring billing)
+│   ├── CTA: "Sure. Let's do this." → Stripe checkout (annual)
+│   └── Alternative: "I'll stick with limited features"
+
+├── success-screen.tsx           # Payment confirmation and onboarding
+│   ├── Purpose: Celebrate purchase, show unlocked features
+│   ├── Features: Confetti animation, feature activation list
+│   ├── Details: Annual plan confirmation, expiry date
+│   ├── Onboarding: Next steps guide (4 numbered actions)
+│   └── CTA: "Start Using Pro Features" → main interface
+
+├── cancel-screen.tsx            # Payment cancellation recovery
+│   ├── Purpose: Recover abandoned Stripe checkouts
+│   ├── Features: Reassurance (no charges), value reminder
+│   ├── Security: Stripe trust signals, payment safety
+│   ├── Urgency: Limited time offer reminder
+│   └── Actions: "Try Payment Again" | "Return to TabStax"
+
+## Standalone HTML Pages (Stripe Redirects)
+
+### success.html                 # Stripe success redirect page
+├── Purpose: Standalone celebration page after payment
+├── Features: Animated success icon, plan confirmation
+├── Content: Unlocked features list, next steps guide
+├── Styling: Inline CSS, responsive design
+├── JavaScript: Auto-close functionality, expiry date calculation
+└── Integration: Closes tab, returns to extension
+
+### cancel.html                  # Stripe cancel redirect page  
+├── Purpose: Standalone recovery page for cancelled payments
+├── Features: Reassuring messaging, value proposition
+├── Content: Feature reminders, security reassurance
+├── Styling: Inline CSS, warning color scheme
+├── JavaScript: Return to extension functionality
+└── Integration: Closes tab, returns to extension
+
+## UI Component Breakdown
+
+### Header Section (All Screens)
+├── TabStax Logo                 # Brand identity, blue color
+├── Back Button                  # Navigation (auth/paywall screens)
+├── Sync Button                  # Visible for non-Pro users, pulsing animation
+└── Screen Title                 # Context-specific titles
+
+### Main Interface (popup.tsx)
+├── Stax Dropdown               # Select active Stax (cardano/work/personal)
+├── Tab List                    # Checkboxes + tab titles, scrollable
+├── Smart Open Button           # "Open All" or "Open Selected (X)"
+├── Stax Name Input             # Text field for new Stax names
+├── Make/Update Button          # Create/update Stax from current tabs
+└── Version Footer              # Version 1.0.4 display
+
+### Authentication Form (auth-screen.tsx)
+├── Welcome Message             # Context-appropriate greeting
+├── Email Input                 # With mail icon, validation
+├── Password Input              # With lock icon, validation  
+├── Submit Button               # "Sign In" or "Create Account"
+├── Toggle Link                 # Switch between sign-in/sign-up
+└── Terms Notice                # Legal compliance text
+
+### Paywall Layout (paywall-screen.tsx)
+├── Trial Banner                # 7-day free trial highlight
+├── Feature Showcase            # 3 key features with icons
+├── Benefits List               # 6 bullet points with checkmarks
+├── Pricing Display             # Crossed out €4.99 → €3.99
+├── Primary CTA                 # "Start Free Trial" button
+├── Secondary CTA               # "Maybe Later" button
+└── Cancellation Notice         # "Cancel anytime" reassurance
+
+### Maybe Later Layout (maybe-later-screen.tsx)
+├── Warning Header              # Alert triangle + warning message
+├── Limitations Grid            # 4 red-highlighted restrictions
+├── Annual Offer Banner         # $20 deal with benefits
+├── Conversion CTA              # "Sure. Let's do this." button
+├── Decline Option              # "I'll stick with limited features"
+└── Social Proof               # "Join 10,000+ professionals"
+
+### Success Layout (success-screen.tsx)
+├── Celebration Header          # Large checkmark + confetti
+├── Plan Confirmation           # Annual plan details banner
+├── Features Grid               # 4 unlocked features with "Active" badges
+├── Next Steps List             # 4 numbered onboarding actions
+├── Continue Button             # "Start Using Pro Features"
+└── Support Notice              # Pro support availability
+
+### Cancel Layout (cancel-screen.tsx)
+├── Reassurance Header          # "No worries!" with orange icon
+├── Value Reminder              # 3 key benefits they're missing
+├── Security Section            # Payment safety reassurance
+├── Urgency Banner              # Limited time offer reminder
+├── Retry Button                # "Try Payment Again"
+├── Exit Option                 # "Return to TabStax"
+└── Support Contact             # Help email address
+
+## Visual Design System
+
+### Color Palette
+├── Primary Blue: #3B82F6       # TabStax brand, buttons, links
+├── Success Green: #10B981      # Success states, checkmarks
+├── Warning Orange: #F59E0B     # Caution, cancel states
+├── Error Red: #EF4444          # Errors, limitations
+├── Gray Scale: #64748B-#F8FAFC # Text, backgrounds, borders
+└── Gradients: Blue→Purple      # Premium CTAs, success banners
+
+### Typography
+├── Headers: 24px-28px Bold     # Screen titles, celebration text
+├── Subheaders: 16px-18px Semi  # Section titles, feature names
+├── Body: 14px Regular          # Main content, descriptions
+├── Small: 12px Regular         # Helper text, version info
+└── Buttons: 16px Semi-Bold     # All CTA buttons
+
+### Spacing & Layout
+├── Card Width: 400px           # Fixed popup width
+├── Card Height: 600px          # Fixed popup height
+├── Padding: 16px-32px          # Content spacing
+├── Gaps: 8px-24px              # Element spacing
+├── Border Radius: 8px-12px     # Rounded corners
+└── Shadows: Subtle elevation   # Card depth
+
+### Interactive States
+├── Hover: Slight elevation     # Button hover effects
+├── Loading: Spinner + disabled # Processing states
+├── Error: Red border/text      # Validation errors
+├── Success: Green highlights   # Confirmation states
+├── Pulse: Sync button          # Attention animation
+└── Confetti: Success screen    # Celebration animation
+
+## User Flow Connections
+
+### Authentication Flow
+popup.tsx → auth-screen.tsx → paywall-screen.tsx
+
+### Conversion Flow  
+paywall-screen.tsx → maybe-later-screen.tsx → success-screen.tsx
+
+### Payment Flow
+success-screen.tsx ← success.html ← Stripe Checkout
+cancel-screen.tsx ← cancel.html ← Stripe Checkout
+
+### Error Recovery
+cancel-screen.tsx → paywall-screen.tsx → maybe-later-screen.tsx
+
+## File Dependencies
+
+### React Components
+├── All components import from @/components/ui/* (shadcn)
+├── Icons from lucide-react
+├── Styling via Tailwind CSS classes
+└── State management via React hooks
+
+### Standalone HTML
+├── Inline CSS for styling
+├── Vanilla JavaScript for interactions
+├── No external dependencies
+└── Self-contained for Stripe redirects
+
+## Integration Points
+
+### Supabase Integration
+├── Authentication: auth-screen.tsx
+├── Payment Processing: paywall-screen.tsx, maybe-later-screen.tsx
+├── User State: popup.tsx (plan_type checking)
+└── Profile Updates: success flow
+
+### Browser Extension APIs
+├── Tab Management: popup.tsx (Open buttons)
+├── New Tab Creation: Payment buttons
+├── Storage: User preferences, Stax data
+└── Permissions: Active tab access
+
+### Stripe Integration
+├── Checkout Sessions: process-payment edge function
+├── Success Redirects: success.html
+├── Cancel Redirects: cancel.html
+└── Webhook Processing: Backend subscription updates
+
+---
+Total Components: 6 React + 2 HTML = 8 user-facing screens
+Purpose: Complete user journey from install → authentication → payment → success

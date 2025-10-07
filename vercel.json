@@ -1,8 +1,0 @@
-  {
-    "rewrites": [
-      {
-        "source": "/share/:shareId",
-        "destination": "/share/?s=:shareId"
-      }
-    ]
-  }

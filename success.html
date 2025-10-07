@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Pro - TabStax</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 12px;
+            padding: 32px;
+            max-width: 400px;
+            width: 100%;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .icon {
+            width: 64px;
+            height: 64px;
+            background: #dcfce7;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+            position: relative;
+        }
+        .pulse {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 24px;
+            height: 24px;
+            background: #fbbf24;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.7; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        h1 {
+            color: #16a34a;
+            margin: 0 0 8px;
+            font-size: 28px;
+        }
+        .subtitle {
+            color: #64748b;
+            margin: 0 0 24px;
+            line-height: 1.5;
+        }
+        .plan-info {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+        .plan-info h3 {
+            margin: 0 0 8px;
+            font-size: 16px;
+        }
+        .plan-info p {
+            margin: 0;
+            opacity: 0.9;
+            font-size: 14px;
+        }
+        .features {
+            margin: 24px 0;
+        }
+        .features h3 {
+            margin: 0 0 16px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px;
+            background: #dcfce7;
+            border: 1px solid #bbf7d0;
+            border-radius: 8px;
+            margin: 12px 0;
+            text-align: left;
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin: 0 0 4px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .feature-desc {
+            font-size: 12px;
+            color: #64748b;
+            margin: 0;
+        }
+        .status-badge {
+            background: #dcfce7;
+            color: #166534;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+        }
+        .next-steps {
+            margin: 24px 0;
+            text-align: left;
+        }
+        .next-steps h3 {
+            margin: 0 0 12px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .step {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .step-number {
+            width: 24px;
+            height: 24px;
+            background: #dbeafe;
+            color: #2563eb;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .btn {
+            background: linear-gradient(135deg, #10b981, #3b82f6);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 24px;
+        }
+        .btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+        }
+        .support {
+            margin-top: 24px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22,4 12,14.01 9,11.01"></polyline>
+            </svg>
+            <div class="pulse"></div>
+        </div>
+        
+        <h1>Brilliant! You're in.</h1>
+        <p class="subtitle">Welcome to TabStax Pro - Look what you've unlocked:</p>
+        
+        <div class="plan-info">
+            <h3>📅 Pro Annual Plan Activated</h3>
+            <p>Full access for one year • No recurring charges • Expires <span id="expiry-date"></span></p>
+        </div>
+        
+        <div class="features">
+            <h3>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2">
+                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                    <polyline points="22,4 12,14.01 9,11.01"></polyline>
+                </svg>
+                Features Unlocked
+            </h3>
+            
+            <div class="feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2">
+                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                </svg>
+                <div class="feature-content">
+                    <div class="feature-title">
+                        Cloud Sync
+                        <span class="status-badge">Active</span>
+                    </div>
+                    <p class="feature-desc">Your Stax are now synced across all your devices</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <div class="feature-content">
+                    <div class="feature-title">
+                        Enterprise Encryption
+                        <span class="status-badge">Active</span>
+                    </div>
+                    <p class="feature-desc">All your links are now secured with AES-256 encryption</p>
+                </div>
+            </div>
+            
+            <div class="feature">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <div class="feature-content">
+                    <div class="feature-title">
+                        Team Sharing
+                        <span class="status-badge">Active</span>
+                    </div>
+                    <p class="feature-desc">Share Stax with colleagues and collaborate seamlessly</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="next-steps">
+            <h3>What to do next:</h3>
+            <div class="step">
+                <div class="step-number">1</div>
+                <span>Create your first encrypted Stax</span>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <span>Set up team sharing with colleagues</span>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <span>Sync your existing Stax to the cloud</span>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <span>Explore advanced organization tools</span>
+            </div>
+        </div>
+        
+        <button class="btn" onclick="startUsing()">
+            Start Using Pro Features
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12,5 19,12 12,19"></polyline>
+            </svg>
+        </button>
+        
+        <div class="support">
+            Questions? Contact our Pro support team anytime
+        </div>
+    </div>
+
+    <script>
+        // Set expiry date (one year from now)
+        const expiryDate = new Date();
+        expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+        document.getElementById('expiry-date').textContent = expiryDate.toLocaleDateString();
+        
+        function startUsing() {
+            // Close this tab and return to extension
+            window.close();
+        }
+    </script>
+</body>
+</html>
