@@ -1,4 +1,4 @@
-# Killone Group Water Scheme Website
+# Killone Group Water Scheme Website  
 
 This repository contains the content for the Killone Group Water Scheme website, serving the Clarecastle & Ballyea Parish community in County Clare.
 
