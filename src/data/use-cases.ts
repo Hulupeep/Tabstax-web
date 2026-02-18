@@ -2792,4 +2792,538 @@ export const useCases: UseCase[] = [
     ],
     relatedSlugs: ["actor-returning-after-20-years", "artist-hobby-to-shop", "dungeon-master-campaigns"],
   },
+
+  // ── 74–85: ADHD Use Cases ─────────────────────────────────────
+  {
+    id: 74,
+    slug: "adhd-tab-hoarder-external-memory",
+    title: "ADHD Tab Hoarder Using the Browser as an External Brain",
+    category: "Health, Recovery & Performance",
+    persona: "ADHD Professional",
+    summary:
+      "You have 147 tabs open because closing one feels like erasing a memory. Your browser IS your working memory — but it's collapsing under its own weight, and you can't find anything anymore.",
+    content:
+      "You open a tab to look something up. That leads to another tab. Then a Slack notification sends you to three more. By lunch you have over a hundred tabs spread across four windows, and you can't close any of them because each one represents a thought you haven't finished processing. The ADHD brain uses browser tabs the way most people use sticky notes — as external working memory. Researchers call this \"cognitive offloading\": when your internal working memory is unreliable, you outsource it to your environment. Open tabs become placeholders for ongoing tasks, half-read articles, and \"I'll get to this\" intentions.\n\nThe problem is that tab hoarding doesn't scale. Once you pass fifty tabs, you can't find the one you need. The browser slows down, the favicons blur together, and the nagging visual clutter adds background anxiety. You've turned a coping mechanism into a second problem. According to a study by Joseph Chee Chang et al., people treat tabs as a to-do list that \"nags\" at them — but the nag becomes noise when there are too many.\n\nTabStax turns the chaotic tab hoard into named, resumable contexts. Instead of 147 tabs in one window, you have six or seven Stax: one for the client project, one for the side build, one for personal research, one for finances. Each Stax saves the exact tabs you need, plus a next action telling you where you left off. Close the Stax, the tabs vanish. Open it again, everything reappears — plus the note you left yourself. Your browser stays clean. Your external brain stays organized. You stop losing thoughts because they're not floating in tab purgatory anymore — they're saved in a named context you can reopen any time.",
+    staxPattern:
+      '"Client Project – Dev" / "Side Build – AI Experiment" / "Personal Research – ADHD Strategies" / "Finances – Tax Prep"',
+    seoTitle: "ADHD Tab Hoarding Solution | TabStax",
+    metaDescription:
+      "Stop using 100+ browser tabs as external memory. TabStax saves each context as a named Stax you can close and reopen without losing a single thought.",
+    keywords: [
+      "ADHD tab hoarding",
+      "too many browser tabs ADHD",
+      "browser as external memory ADHD",
+      "tab management ADHD",
+      "cognitive offloading browser tabs",
+    ],
+    faq: [
+      {
+        q: "Why do people with ADHD keep so many tabs open?",
+        a: "ADHD affects working memory, so open tabs serve as external memory aids — each tab represents a thought, task, or intention the brain can't reliably hold internally.",
+      },
+      {
+        q: "How does TabStax help with ADHD tab hoarding?",
+        a: "TabStax groups related tabs into named Stax you can close and reopen. Instead of 100+ tabs in one window, you have clean, resumable contexts with next actions attached.",
+      },
+      {
+        q: "Will I lose my tabs if I close a Stax?",
+        a: "No. Closing a Stax saves all tabs and your place in them. Reopen the Stax and every tab returns exactly where you left off, plus your notes and next actions.",
+      },
+    ],
+    relatedSlugs: ["neurodivergent-builder", "adhd-task-initiation-paralysis", "adhd-decision-paralysis-frozen"],
+  },
+  {
+    id: 75,
+    slug: "adhd-task-initiation-paralysis",
+    title: "ADHD Task Initiation: Staring at the Screen, Unable to Start",
+    category: "Deep Work, Research & Analysis",
+    persona: "ADHD Knowledge Worker",
+    summary:
+      "You know exactly what needs doing. You've been thinking about it all morning. But you're frozen — the gap between knowing and starting feels like a concrete wall. It's not laziness. It's a missing start signal.",
+    content:
+      "Task initiation is one of the most debilitating ADHD symptoms. In online ADHD communities, people rank it alongside time blindness and emotional dysregulation as the symptoms that most damage their careers and self-image. You sit down at your desk. You have a clear task: write the report, review the PR, reply to the email chain. You understand what needs doing. You even want to do it. But your body won't move. Your brain won't engage. You open a new tab, check something irrelevant, come back, and the wall is still there.\n\nDr. Russell Barkley's research shows ADHD brains run on low dopamine, creating an \"interest-based nervous system\" where boring or unclear tasks feel impossible to start — even when the consequences of not starting are severe. The standard advice is to \"shrink the first step\" — make it so small your brain doesn't feel threatened. But that assumes you can identify the first step. When you return to a project after hours or days away, the first step is buried under reconstruction: Where was I? What files were open? What was the decision I made last time?\n\nTabStax eliminates that reconstruction entirely. Each Stax has a Start Page with a concrete next action — not \"work on the report\" but \"add the Q3 comparison table to slide 7.\" When your brain can't generate a start signal, the Stax provides one. Open the Stax, see the action, do the action. The five-minute rule becomes effortless when you don't spend four of those five minutes remembering what to do. Hey — TabStax's quick capture command — lets you drop the next action into any Stax from wherever you are, so your future self always has a clear entry point waiting.",
+    staxPattern:
+      '"Q3 Report – Slide Deck" with Start Page: "Add Q3 comparison table to slide 7"',
+    seoTitle: "ADHD Task Initiation Help | TabStax",
+    metaDescription:
+      "Can't start the task even though you know what to do? TabStax gives your ADHD brain a concrete next action every time you open a project — no reconstruction required.",
+    keywords: [
+      "ADHD task initiation",
+      "ADHD can't start tasks",
+      "executive dysfunction task paralysis",
+      "ADHD productivity tool",
+      "ADHD start signal browser",
+    ],
+    faq: [
+      {
+        q: "What is ADHD task initiation difficulty?",
+        a: "Task initiation is an executive function that allows you to begin tasks. ADHD brains often struggle to generate the internal 'start signal,' making it hard to begin even wanted tasks.",
+      },
+      {
+        q: "How does TabStax help with ADHD task initiation?",
+        a: "Each Stax saves a concrete next action on its Start Page. When you open a project, you see exactly what to do first — no reconstruction, no decision fatigue, just action.",
+      },
+      {
+        q: "What is the Hey feature and how does it help with task initiation?",
+        a: "Hey is TabStax's quick-capture command. Drop a next action into any Stax from wherever you are — so your future self always finds a clear entry point, not a blank screen.",
+      },
+    ],
+    relatedSlugs: ["neurodivergent-builder", "adhd-tab-hoarder-external-memory", "adhd-project-graveyard"],
+  },
+  {
+    id: 76,
+    slug: "adhd-context-switching-tax",
+    title: "ADHD and the 40% Context Switching Tax",
+    category: "Multi-Client & Multi-Project",
+    persona: "ADHD Multi-Project Worker",
+    summary:
+      "Context switching costs everyone productivity — but ADHD brains pay double. Studies show up to 40% of productive time is lost to task transitions. For ADHD minds already managing executive function overhead, that's a career-threatening tax.",
+    content:
+      "A Harvard Business Review study found the average knowledge worker toggles between applications 1,200 times per day, losing roughly five working weeks per year to reorientation alone. For neurotypical brains, that's bad. For ADHD brains, it's devastating. ADHD already taxes executive function — attention regulation, working memory, inhibitory control — and every context switch demands more of the same depleted resources. Each transition is a micro-decision: stop this, start that, reload the mental model, find the right tabs, remember the last decision. Neurotypical brains handle these transitions semi-automatically. ADHD brains treat each one as a brand new cognitive event.\n\nThe result is a double tax: the universal context-switching cost that everyone pays, plus the ADHD-specific reconstruction cost of re-entering a mental state your working memory already dropped. The research from FocusBear notes that ADHD brains can lose up to 40% of productive capacity to switching costs alone. This isn't a focus problem — it's an infrastructure problem. Your brain needs external scaffolding to make transitions cheap.\n\nTabStax makes context switching nearly free. Each project is a named Stax with saved tabs, notes, and a next action. Switching projects means closing one Stax and opening another — a ten-second operation that preserves full context on both sides. No hunting for tabs, no rebuilding mental models, no lost decisions. The 40% tax drops to almost zero because the reconstruction happens in your browser, not your brain. For ADHD professionals juggling multiple projects, clients, or roles, this isn't a nice-to-have — it's the difference between burning out by Wednesday and sustaining flow all week.",
+    staxPattern:
+      '"Client A – Strategy Deck" / "Client B – Data Migration" / "Internal – Sprint Planning"',
+    seoTitle: "ADHD Context Switching Solution | TabStax",
+    metaDescription:
+      "ADHD brains lose up to 40% of productive time to context switching. TabStax makes project transitions nearly free — close one Stax, open another, full context preserved.",
+    keywords: [
+      "ADHD context switching",
+      "context switching cost ADHD",
+      "ADHD productivity loss",
+      "task switching ADHD brain",
+      "reduce context switching ADHD",
+    ],
+    faq: [
+      {
+        q: "Why is context switching harder for people with ADHD?",
+        a: "ADHD already taxes executive function — attention, working memory, and inhibitory control. Each context switch demands more of those same depleted resources, creating a double tax.",
+      },
+      {
+        q: "How much productivity does context switching cost ADHD workers?",
+        a: "Research suggests up to 40% of productive capacity can be lost to switching costs. The average worker loses five working weeks per year to reorientation alone.",
+      },
+      {
+        q: "How does TabStax reduce context switching costs?",
+        a: "Each project is a saved Stax with tabs, notes, and next actions. Switching projects is a ten-second operation — close one Stax, open another — with zero reconstruction needed.",
+      },
+    ],
+    relatedSlugs: ["consultant-three-clients", "neurodivergent-builder", "adhd-task-initiation-paralysis"],
+  },
+  {
+    id: 77,
+    slug: "adhd-project-graveyard",
+    title: "The ADHD Project Graveyard: 20 Starts, Zero Finishes",
+    category: "Dreams, Second Act & Identity",
+    persona: "ADHD Creator",
+    summary:
+      "You've started a podcast, a Notion system, three side projects, and a workout plan this year. None survived past the dopamine crash. Your project graveyard grows while your confidence shrinks.",
+    content:
+      "The ADHD project graveyard is practically a rite of passage. Each new idea arrives with a surge of dopamine — the brain lights up, you research obsessively, you set up the infrastructure, and you produce more in 48 hours than most people do in a week. Then the novelty wears off. The dopamine crashes. The thing that felt electric yesterday now feels like homework. You open the project, stare at it, close it, and open something new instead. As ADHD coach Dana Rayburn notes, the cycle is predictable: hyperfocus, distraction or burnout, abandonment.\n\nThe emotional toll compounds. Each abandoned project becomes evidence in the case your inner critic is building: you're unreliable, you never finish anything, why even start? Research from The Mini ADHD Coach shows that unfinished projects create visual clutter that acts as a permanent to-do list, adding background stress that makes starting the next thing even harder.\n\nTabStax breaks the abandonment cycle in two ways. First, it makes re-entry free. When the dopamine returns — and it often does, unpredictably — opening the Stax puts you exactly where you left off. No setup cost, no reconstruction, no staring at a project you can't remember the state of. The Start Page says what to do next, and you do it. Second, TabStax makes strategic pausing intentional. Instead of \"I abandoned this,\" it's \"I parked this Stax with a clear next action and I'll come back when I'm ready.\" The graveyard becomes a garage — projects on pause, not projects on death row. When you see six parked Stax with clear next actions, you stop feeling like a failure and start feeling like someone with a lot of interesting things in progress.",
+    staxPattern:
+      '"Podcast – Episode 3 Edit" (parked) / "Side Project – ClaimAlert MVP" (active) / "Workout Plan – Week 4" (parked)',
+    seoTitle: "ADHD Unfinished Projects Solution | TabStax",
+    metaDescription:
+      "Turn your ADHD project graveyard into a project garage. TabStax lets you park and resume projects with zero setup cost — so the dopamine return finds a clear next action.",
+    keywords: [
+      "ADHD unfinished projects",
+      "ADHD project abandonment",
+      "ADHD start but never finish",
+      "ADHD hyperfocus burnout cycle",
+      "ADHD project management tool",
+    ],
+    faq: [
+      {
+        q: "Why do people with ADHD start projects but never finish them?",
+        a: "ADHD brains crave novelty dopamine. New projects deliver it; continuing old ones doesn't. When the dopamine crashes, the project feels impossible to resume — especially without clear context.",
+      },
+      {
+        q: "How does TabStax help ADHD creators finish projects?",
+        a: "TabStax saves each project as a Stax with a concrete next action. When motivation returns, re-entry is instant — no setup cost, no staring at a blank screen wondering where you left off.",
+      },
+      {
+        q: "What's the difference between a project graveyard and a project garage?",
+        a: "A graveyard is abandoned projects with no path back. A garage is parked projects with saved context and clear next actions — ready to resume whenever you are.",
+      },
+    ],
+    relatedSlugs: ["neurodivergent-builder", "adhd-task-initiation-paralysis", "night-nurse-secretly-writing-novel"],
+  },
+  {
+    id: 78,
+    slug: "adhd-needs-external-accountability",
+    title: "\"Don't Update Me\" — But My ADHD Brain Needs That",
+    category: "Rituals, Meetings & Team Rhythms",
+    persona: "ADHD Employee",
+    summary:
+      "Your manager says \"just do the work and update me when it's done.\" But ADHD brains need external accountability checkpoints to function. Without them, tasks drift into the void. TabStax Hey gives you the structure your manager won't.",
+    content:
+      "In r/ADHD communities, this scenario appears constantly: a well-meaning manager says \"I trust you, don't bother updating me, just get it done.\" For a neurotypical employee, that's liberation. For someone with ADHD, it's a death sentence for productivity. External accountability isn't a crutch — it's a core part of how ADHD brains regulate attention and initiate tasks. Without check-in points, deadlines become abstract, tasks lose urgency, and the \"I'll do it later\" spiral begins.\n\nThe research is clear: ADHD brains operate on an interest-based nervous system, not an importance-based one. Urgency, novelty, and external pressure are the primary activation levers. Remove external accountability and you remove one of the three levers that actually work. Body doubling studies show that just having another person aware of your work dramatically improves task completion. The manager who says \"don't update me\" has unknowingly removed the scaffolding.\n\nTabStax fills this gap without requiring your manager to change. Hey — the quick-capture command — lets you log next actions into any Stax from wherever you are. Each action becomes a self-accountability checkpoint: \"Sent draft to Sarah for review,\" \"Waiting on API key from DevOps,\" \"Next: add error handling to /login.\" The Attention Stax dashboard shows all your projects with their current next actions, creating a visual accountability board you can check every morning. You don't need your manager to ask \"where are you on this?\" — you can see the answer yourself. And when you do need to give an update, every Stax has a ready-made status trail. The structure lives in your tools, not in someone else's willingness to provide it.",
+    staxPattern:
+      '"Project Alpha – Backend" with Hey actions: "Sent draft to Sarah" → "Waiting on API key" → "Add error handling to /login"',
+    seoTitle: "ADHD External Accountability Tool | TabStax",
+    metaDescription:
+      "Manager says 'don't update me' but your ADHD brain needs checkpoints? TabStax Hey gives you self-accountability with logged next actions across every project.",
+    keywords: [
+      "ADHD external accountability",
+      "ADHD needs check-ins work",
+      "ADHD self-accountability tool",
+      "ADHD body doubling alternative",
+      "ADHD workplace structure",
+    ],
+    faq: [
+      {
+        q: "Why do people with ADHD need external accountability at work?",
+        a: "ADHD brains activate through urgency, novelty, and external pressure. Without check-in points, tasks lose urgency and drift — it's neurological, not motivational.",
+      },
+      {
+        q: "How does TabStax replace manager check-ins for ADHD workers?",
+        a: "Hey lets you log next actions into any Stax as you work. The Attention Stax dashboard shows all projects with current actions — a self-serve accountability board.",
+      },
+      {
+        q: "What is Hey in TabStax?",
+        a: "Hey is a quick-capture command that lets you add next actions to any Stax from wherever you are — browser, terminal, or web app — without switching context.",
+      },
+    ],
+    relatedSlugs: ["adhd-remote-work-no-structure", "adhd-task-initiation-paralysis", "corporate-manager-12-saas"],
+  },
+  {
+    id: 79,
+    slug: "adhd-fired-new-job-onboarding",
+    title: "Fired Again: ADHD and the New Job Onboarding Cliff",
+    category: "Admin, Money & Systems",
+    persona: "ADHD Job Seeker",
+    summary:
+      "You crushed the interview. You were brilliant in the first meeting. Then onboarding hit — new systems, new people, no routine — and your executive function collapsed. ADHD workers are 60% more likely to be fired. TabStax can change that.",
+    content:
+      "In ADHD communities, the story repeats with heartbreaking regularity: talented people who ace interviews, impress in early meetings, then crumble during the chaotic first weeks of a new role. Research by Dr. Russell Barkley shows employees with ADHD are 60% more likely to be fired and 30% more likely to have chronic employment issues. The reason isn't ability — it's the onboarding period, which demands maximum executive function at the exact moment you have the least structural support.\n\nNew job onboarding requires learning multiple new systems simultaneously, remembering names and org structures, absorbing unwritten norms, managing time without established routines, and performing well enough to survive the probation period. For ADHD brains, this is a perfect storm: working memory overload, no established patterns, zero autopilot, and the pressure of being watched. Four to five months in, many experience what researchers describe as a \"chemical switch\" — the novelty dopamine evaporates and forcing yourself through the day becomes agonizing.\n\nTabStax gives you the scaffolding your new workplace won't. On day one, create a Stax for each major system you're learning: \"HR & Benefits Stax\" with enrollment pages, policy docs, and a checklist. \"Team Wiki Stax\" with the org chart, Slack channels, and meeting cadences. \"Daily Work Stax\" with the tools you'll use most, plus a Start Page listing your first concrete deliverables. Each Stax becomes a reloadable orientation kit. Instead of asking your manager the same question twice — a fast track to a bad impression — you open the Stax and the answer is right there. The Hey feature logs micro-progress throughout the day so you can show your manager a clear trail of what you've done and what's next, even when your brain feels like it's drowning.",
+    staxPattern:
+      '"New Job – HR & Benefits" / "New Job – Team Wiki & People" / "New Job – Daily Work" / "New Job – First 30 Days"',
+    seoTitle: "ADHD New Job Onboarding Survival Tool | TabStax",
+    metaDescription:
+      "ADHD workers are 60% more likely to be fired. TabStax turns chaotic new job onboarding into reloadable orientation kits with clear next actions for every system.",
+    keywords: [
+      "ADHD new job onboarding",
+      "ADHD fired from job",
+      "ADHD employment struggles",
+      "ADHD onboarding survival",
+      "executive dysfunction new job",
+    ],
+    faq: [
+      {
+        q: "Why is new job onboarding so hard for people with ADHD?",
+        a: "Onboarding demands maximum executive function — learning new systems, people, and norms simultaneously — at the exact moment you have no established routines to lean on.",
+      },
+      {
+        q: "How can TabStax help ADHD workers survive onboarding?",
+        a: "Create a Stax for each system you're learning. Each one saves the relevant tabs, docs, and a Start Page with next steps — a reloadable orientation kit instead of scattered bookmarks.",
+      },
+      {
+        q: "How does TabStax prevent asking the same question twice?",
+        a: "Save answers, docs, and process pages in the relevant Stax. Instead of asking your manager again, open the Stax — the answer is already there with context.",
+      },
+    ],
+    relatedSlugs: ["adhd-needs-external-accountability", "adhd-context-switching-tax", "laid-off-accountability-crew"],
+  },
+  {
+    id: 80,
+    slug: "adhd-time-blindness-where-did-day-go",
+    title: "ADHD Time Blindness: Where Did the Entire Day Go?",
+    category: "Health, Recovery & Performance",
+    persona: "ADHD Professional",
+    summary:
+      "It's 6 PM. You've been \"working\" since 9 AM. But you can't name a single thing you finished. Time blindness isn't poor time management — it's a broken internal clock. TabStax makes your day visible.",
+    content:
+      "Time blindness is one of ADHD's most misunderstood symptoms. It's not that you're bad at managing time — it's that you literally cannot feel time passing. An hour feels like fifteen minutes when you're hyperfocused, and fifteen minutes feels like an hour when you're stuck. The result: you look up from your screen at 6 PM, genuinely shocked that nine hours have passed, unable to account for most of them. The evening panic sets in: \"Where is my life going, and why can I never seem to have enough time?\"\n\nThe standard advice — use a calendar, set timers, plan your day — assumes you can sense duration and urgency. For ADHD brains, calendars are abstract artifacts that exist in a different dimension. You set the timer, then forget it's running. You plan the day, then the plan evaporates by 10 AM. What you need isn't better planning — it's a system that makes time visible through your work itself.\n\nTabStax creates a natural time log without requiring you to track anything manually. Each project is a Stax. Opening and closing Stax throughout the day creates a trail of what you worked on and when. The Attention Stax dashboard (Must / Should / Good / Meh) forces a daily triage that takes thirty seconds: what matters today? When you open the Must Stax and see \"Draft the proposal intro — just the first paragraph\" on the Start Page, you work on that instead of falling into a three-hour research rabbit hole. At the end of the day, your Stax history shows you exactly where the time went. Not a vague sense of \"I was busy\" — a concrete record of projects touched, actions completed, and progress made. Time blindness doesn't disappear, but its damage does.",
+    staxPattern:
+      'Attention Stax: Must → "Proposal Draft" / Should → "Code Review" / Good → "Blog Post Research" / Meh → "Inbox Zero"',
+    seoTitle: "ADHD Time Blindness Productivity Tool | TabStax",
+    metaDescription:
+      "Can't feel time passing? TabStax makes your workday visible with project-based context switching that creates a natural time trail — no manual tracking required.",
+    keywords: [
+      "ADHD time blindness",
+      "ADHD where did the day go",
+      "ADHD time management tool",
+      "time blindness productivity",
+      "ADHD daily planning tool",
+    ],
+    faq: [
+      {
+        q: "What is ADHD time blindness?",
+        a: "Time blindness means you can't accurately sense time passing. Hours feel like minutes during hyperfocus, and the day ends with no clear account of where it went.",
+      },
+      {
+        q: "How does TabStax help with ADHD time blindness?",
+        a: "Attention Stax forces a 30-second daily triage (Must/Should/Good/Meh). Opening and closing Stax throughout the day creates a visible trail of what you worked on.",
+      },
+      {
+        q: "Do I need to manually track time in TabStax?",
+        a: "No. Your natural workflow of opening, working in, and closing Stax creates an automatic record. No timers, no logging — just work, and the trail builds itself.",
+      },
+    ],
+    relatedSlugs: ["adhd-context-switching-tax", "adhd-task-initiation-paralysis", "adhd-medication-afternoon-cliff"],
+  },
+  {
+    id: 81,
+    slug: "adhd-decision-paralysis-frozen",
+    title: "ADHD Decision Paralysis: Frozen by Too Many Options",
+    category: "Deep Work, Research & Analysis",
+    persona: "ADHD Overthinker",
+    summary:
+      "You have twelve things to do. They all feel equally urgent. You can't decide which one to start, so you start none of them. The guilt builds while the clock runs. ADHD choice paralysis isn't procrastination — it's a brain that can't rank.",
+    content:
+      "ADHD decision paralysis sits at the intersection of three executive function deficits: working memory (can't hold all options in mind), flexible thinking (can't shift between evaluation criteria), and inhibitory control (can't dismiss low-priority options). The result is a freeze state that looks like procrastination but feels like drowning. You're not avoiding work — you're overwhelmed by the inability to choose between competing tasks. Studies show that when people face too many options, they're more likely to make no decision at all. For ADHD brains, \"too many\" can be as few as three.\n\nThe inner experience is exhausting. You spend the entire day in mental gymnastics — weighing tasks, second-guessing, starting one thing then switching to another because maybe that's more important. By evening, you're mentally drained despite producing almost nothing. The shame compounds: \"I had the whole day and I did nothing.\" The Mini ADHD Coach describes three overlapping types: mental paralysis (too many thoughts), task paralysis (can't start what you've chosen), and choice paralysis (can't choose what to start).\n\nTabStax attacks choice paralysis directly through the Attention Stax system. The Must / Should / Good / Meh framework pre-decides priority for you. During a calm moment — maybe Sunday evening or first thing Monday — you drag your Stax into lanes. \"Must\" gets the client deadline. \"Should\" gets the code review. \"Good\" gets the blog post. \"Meh\" gets inbox maintenance. Now when Monday morning hits and your brain freezes, you don't decide anything. You open the first Stax in the Must lane. The Start Page tells you what to do. Decision eliminated. Action begins. The framework works because it separates the deciding from the doing — you triage when you have clarity, and execute when you don't.",
+    staxPattern:
+      'Must → "Client Deadline – Final Deliverable" / Should → "Code Review – PR #47" / Good → "Blog Post Draft" / Meh → "Email & Admin"',
+    seoTitle: "ADHD Decision Paralysis Tool | TabStax",
+    metaDescription:
+      "Can't decide what to work on? TabStax Attention Stax pre-sorts your projects into Must/Should/Good/Meh — so your frozen brain just opens the first Stax and starts.",
+    keywords: [
+      "ADHD decision paralysis",
+      "ADHD choice overload",
+      "ADHD can't decide what to do",
+      "ADHD priority tool",
+      "ADHD analysis paralysis solution",
+    ],
+    faq: [
+      {
+        q: "Why do people with ADHD struggle with decision paralysis?",
+        a: "ADHD impairs working memory, flexible thinking, and inhibitory control — the three skills needed to evaluate options and commit to a choice. Too many options causes a freeze.",
+      },
+      {
+        q: "How does TabStax Attention Stax help with ADHD decision paralysis?",
+        a: "The Must/Should/Good/Meh framework lets you pre-sort projects when calm. When paralysis hits, just open the first Must Stax — no deciding needed, just doing.",
+      },
+      {
+        q: "When should I sort my Attention Stax?",
+        a: "Triage during a calm moment — Sunday evening or Monday morning. It takes 30 seconds. Then spend the rest of the week executing, not deciding.",
+      },
+    ],
+    relatedSlugs: ["adhd-task-initiation-paralysis", "adhd-time-blindness-where-did-day-go", "adhd-tab-hoarder-external-memory"],
+  },
+  {
+    id: 82,
+    slug: "adhd-remote-work-no-structure",
+    title: "ADHD Remote Worker With Zero External Structure",
+    category: "Multi-Client & Multi-Project",
+    persona: "ADHD Remote Worker",
+    summary:
+      "The office gave you structure you didn't know you needed — the commute, the boss walking by, the meeting rhythm. Now you work from home and the entire day is formless. Some days you work 14 hours, some days you work zero.",
+    content:
+      "Remote work is a double-edged sword for ADHD brains. The quiet is welcome. The flexibility is lifesaving. But the structure — the ambient accountability of coworkers, the commute that signals \"work starts now,\" the meeting cadences that break the day into blocks — all of that disappears. Research from Mental Health America and ADDitude Magazine consistently finds that ADHD remote workers struggle most with self-regulation: starting work, staying on task, knowing when to stop, and separating \"work brain\" from \"home brain.\"\n\nThe paradox is brutal: 64% of ADHD employees rank schedule flexibility as their most valued workplace benefit, yet remote workers with ADHD report finding daily tasks 17% more challenging than on-site peers. Without physical separation between work and home, many adults with ADHD find themselves either unable to start work or unable to stop. One common pattern: working from 7 AM until 10 PM because the computer is always there and you \"should always be working.\" Another: lying on the couch unable to open the laptop despite mounting deadlines.\n\nTabStax recreates the structural scaffolding that the office provided. Morning ritual: open the Attention Stax dashboard, spend thirty seconds dragging projects into Must / Should / Good / Meh. That's your daily plan — the commute replacement. During the day, each project lives in its own Stax. Opening a Stax is clocking into that project. Closing it is clocking out. The physical act of switching Stax creates artificial boundaries your home environment doesn't provide. At the end of the day, closing all Stax is your commute home — a signal to your brain that work is done. The structure lives in the tool, not in the environment, so it follows you whether you're at your desk, the kitchen table, or a coffee shop.",
+    staxPattern:
+      'Morning: Open Attention Stax → Drag into lanes. Workday: Open/close project Stax. Evening: Close all Stax = "commute home."',
+    seoTitle: "ADHD Remote Work Structure Tool | TabStax",
+    metaDescription:
+      "Lost the office structure your ADHD brain depended on? TabStax recreates daily scaffolding with project-based context switching and a 30-second morning triage.",
+    keywords: [
+      "ADHD remote work",
+      "ADHD work from home structure",
+      "ADHD remote work productivity",
+      "ADHD self-regulation work",
+      "ADHD work routine tool",
+    ],
+    faq: [
+      {
+        q: "Why is remote work harder for people with ADHD?",
+        a: "The office provides external structure — commutes, coworkers, meeting rhythms — that ADHD brains unknowingly depend on. At home, you must generate all that structure yourself.",
+      },
+      {
+        q: "How does TabStax replace office structure for ADHD remote workers?",
+        a: "Morning Attention Stax triage replaces the commute. Opening/closing project Stax creates work boundaries. Closing all Stax at day's end signals 'work is done.'",
+      },
+      {
+        q: "Can TabStax help with ADHD work-life boundary problems?",
+        a: "Yes. The physical act of closing all Stax creates a clear 'commute home' moment — a signal to your brain that work mode is over, even when your desk is in your bedroom.",
+      },
+    ],
+    relatedSlugs: ["adhd-needs-external-accountability", "adhd-time-blindness-where-did-day-go", "remote-founder-pitch-hire-roadmap"],
+  },
+  {
+    id: 83,
+    slug: "adhd-freelancer-deadline-juggler",
+    title: "ADHD Freelancer Who Misses Every Deadline",
+    category: "SME & Multi-Role Founders",
+    persona: "ADHD Freelancer",
+    summary:
+      "You love the freedom of freelancing — varied work, no boss, choose your own hours. But without external structure, deadlines slip, clients get ghosted, and the guilt-anxiety spiral makes everything worse.",
+    content:
+      "Freelancing attracts ADHD brains for good reason: novelty, autonomy, variety, and pressure-driven deadlines. But the same condition that makes you brilliant in a deadline sprint makes you terrible at everything between sprints. Without a boss, meetings, or team accountability, tasks drift. Invoices go unsent. Client emails sit unanswered. That proposal you promised \"by Friday\" is now ten days late and you're avoiding the client entirely because the shame of being late makes it harder to start.\n\nADHD coach and freelancer communities describe a common death spiral: miss a deadline → feel shame → avoid the client → deadline gets later → shame intensifies → avoid harder. Going freelance can be a \"tipping point\" for ADHD diagnosis — where struggles that were partially buffered by office structure become catastrophically visible. The freelancer with ADHD isn't less talented. They're operating without the scaffolding that neurotypical work environments provide by default.\n\nTabStax gives freelancers the client management infrastructure their brain can't build alone. Each client gets a Stax: the project brief, communication threads, deliverable docs, and — critically — a Start Page with the current deadline and next concrete action. The Attention Stax dashboard shows all clients in priority lanes. When you open the dashboard Monday morning, you see: Must → \"Acme Corp: deliver wireframes by Wednesday\" / Should → \"Bloom Studio: first draft review\" / Good → \"Personal site redesign.\" The Hey command lets you log progress from anywhere: \"Hey Acme Corp: sent wireframes for review.\" Every client has a visible status trail, so when you do check in, you have something concrete to share instead of a vague \"still working on it.\" The structure doesn't require willpower — it requires opening the dashboard.",
+    staxPattern:
+      '"Acme Corp – Wireframes" / "Bloom Studio – Brand Guidelines" / "Personal – Site Redesign"',
+    seoTitle: "ADHD Freelancer Deadline Tool | TabStax",
+    metaDescription:
+      "ADHD freelancer missing deadlines? TabStax gives each client a Stax with next actions and deadlines visible on the Attention dashboard — structure without a boss.",
+    keywords: [
+      "ADHD freelancer productivity",
+      "ADHD self-employed deadlines",
+      "ADHD freelancer missing deadlines",
+      "ADHD client management tool",
+      "ADHD freelancer structure",
+    ],
+    faq: [
+      {
+        q: "Why do ADHD freelancers struggle with deadlines?",
+        a: "Freelancing removes the external structure — bosses, meetings, team accountability — that ADHD brains rely on to activate. Without it, deadlines become abstract and drift.",
+      },
+      {
+        q: "How does TabStax help ADHD freelancers manage multiple clients?",
+        a: "Each client gets a Stax with project tabs, docs, and a Start Page showing the current deadline and next action. The Attention dashboard shows all clients by priority.",
+      },
+      {
+        q: "Can I log client progress in TabStax without switching context?",
+        a: "Yes. The Hey command lets you add a next action or status update to any client Stax from wherever you are — no need to stop what you're doing.",
+      },
+    ],
+    relatedSlugs: ["adhd-needs-external-accountability", "agency-founder-three-clients", "sme-owner-six-apps"],
+  },
+  {
+    id: 84,
+    slug: "adhd-student-cant-start-assignment",
+    title: "ADHD Student Staring at a Blank Assignment for Three Hours",
+    category: "Learning, Education & Future Self",
+    persona: "ADHD College Student",
+    summary:
+      "The essay is due tomorrow. You've had two weeks. You've opened and closed the doc seventeen times. Your research tabs multiplied into sixty and you can't find the three that actually matter. Your brain isn't broken — it's overloaded.",
+    content:
+      "College is an ADHD minefield. Every assignment triggers multiple paralysis types simultaneously: decision paralysis (which source to use?), task paralysis (how to start the introduction?), and time paralysis (it's due in 14 days so it doesn't feel real). Research from Riveta Labs shows that school creates the perfect storm of ADHD triggers: multi-subject decision paralysis, long-term project overwhelm, and unclear instructions that leave the first step ambiguous.\n\nThe browser makes it worse. A research session for one essay spawns forty tabs: journal articles, Wikipedia rabbit holes, that one blog post that seemed relevant, three YouTube explainers, and the assignment brief buried somewhere in the middle. By the time you've \"researched enough,\" you're exhausted from managing tabs and can't remember which sources actually support your argument. The essay sits blank while the tab bar overflows.\n\nTabStax turns research chaos into an actionable workspace. Create a Stax for each assignment: \"Psych 301 – Memory & Learning Essay.\" Save the assignment brief, your three best sources, the citation generator, and the doc you're writing in. The Start Page says: \"Thesis: spaced repetition outperforms cramming. Next action: write the introduction paragraph using the Smith 2024 study.\" Close all other tabs. Your sixty-tab research nightmare becomes a focused five-tab workspace with a clear first sentence to write. When you need to switch to another class, close this Stax and open \"Bio 210 – Lab Report.\" Neither assignment loses context. Neither bleeds tabs into the other. You stop drowning in research and start writing — because the Stax removed every obstacle between you and the first sentence.",
+    staxPattern:
+      '"Psych 301 – Memory Essay" / "Bio 210 – Lab Report" / "CS 150 – Project Milestone 2"',
+    seoTitle: "ADHD Student Assignment Help Tool | TabStax",
+    metaDescription:
+      "ADHD student can't start the assignment? TabStax turns research tab chaos into a focused workspace with a clear first action — write the sentence, not manage the tabs.",
+    keywords: [
+      "ADHD student productivity",
+      "ADHD college assignment help",
+      "ADHD research tab management",
+      "ADHD student browser tool",
+      "ADHD assignment paralysis",
+    ],
+    faq: [
+      {
+        q: "Why can't ADHD students start assignments even with enough time?",
+        a: "Assignments trigger decision, task, and time paralysis simultaneously. The ADHD brain can't rank priorities, generate a start signal, or feel urgency for distant deadlines.",
+      },
+      {
+        q: "How does TabStax help ADHD students with research and writing?",
+        a: "Create a Stax per assignment with only the tabs you need. The Start Page gives a concrete first action — 'write the intro using Smith 2024' — so you start writing, not searching.",
+      },
+      {
+        q: "Can I switch between classes without losing my place?",
+        a: "Yes. Close one assignment Stax and open another. Each saves its tabs, sources, and next action independently. No tab bleed between classes.",
+      },
+    ],
+    relatedSlugs: ["failing-student-triage", "young-adult-uni-side-hustle", "adhd-task-initiation-paralysis"],
+  },
+  {
+    id: 85,
+    slug: "adhd-medication-afternoon-cliff",
+    title: "The ADHD Medication Cliff: When 2 PM Hits and Focus Evaporates",
+    category: "Health, Recovery & Performance",
+    persona: "Medicated ADHD Professional",
+    summary:
+      "Your stimulant medication is a miracle until it isn't. Around 2 PM the crash hits — focus evaporates, irritability spikes, and the afternoon becomes a write-off. But your workday isn't over. TabStax helps you work with the cliff instead of against it.",
+    content:
+      "Between 2 PM and 4 PM, adults on ADHD stimulant medication often experience what clinicians call \"medication rebound\" — a sudden return of symptoms, sometimes worse than baseline, as the drug's dopamine boost fades. Cleveland Clinic describes it as a \"full-blown crash\" that affects attention, productivity, and emotional regulation. Dr. William Dodson notes that almost all stimulant side effects occur when blood levels rise or fall — and the afternoon crash is the sharpest fall of the day.\n\nThe practical impact: your morning was productive. You crushed three tasks, wrote clear emails, stayed focused. Then 2 PM arrives and your brain turns to static. You stare at the screen, start five things, finish none, get irritable, and by 4 PM you're convinced you're a fraud who only works half a day. The gap between morning-you and afternoon-you feels like two different people.\n\nTabStax lets you design your day around the cliff instead of pretending it doesn't exist. Morning strategy: use your peak medication hours for Must Stax — the cognitively demanding work that requires full executive function. Triage the Attention Stax dashboard during morning clarity. Afternoon strategy: when the crash hits, switch to Good or Meh Stax — low-cognitive-load tasks like email triage, light code review, or reading. The key insight: each Stax has a Start Page calibrated to the energy level it requires. Your morning Must Stax says \"Write the technical spec introduction.\" Your afternoon Meh Stax says \"Reply to three emails — just replies, no new threads.\" You're still working through the crash, but the work matches your available capacity. Focus Mode — the full-screen single-action view — is especially powerful during the crash: one action, large text, nothing else. Even a depleted brain can do one thing at a time.",
+    staxPattern:
+      'Morning Must → "Technical Spec – Write Intro" / Afternoon Good → "Email Replies – 3 Responses" / Focus Mode for single actions',
+    seoTitle: "ADHD Medication Crash Productivity Tool | TabStax",
+    metaDescription:
+      "ADHD meds wear off at 2 PM and focus crashes? TabStax helps you design your workday around the cliff — deep work in the morning, low-load Stax in the afternoon.",
+    keywords: [
+      "ADHD medication crash",
+      "ADHD afternoon productivity",
+      "ADHD stimulant rebound",
+      "ADHD medication wearing off",
+      "ADHD workday energy management",
+    ],
+    faq: [
+      {
+        q: "What is the ADHD medication afternoon crash?",
+        a: "Medication rebound occurs when stimulant levels drop — usually between 2-4 PM. Symptoms return abruptly, often worse than baseline, causing a sharp productivity cliff.",
+      },
+      {
+        q: "How does TabStax help work through a medication crash?",
+        a: "Design your Attention Stax around energy levels: Must Stax for morning peak hours, Good/Meh Stax for afternoon crash with low-cognitive-load next actions.",
+      },
+      {
+        q: "What is Focus Mode in TabStax?",
+        a: "Focus Mode shows a single action in full-screen with large text and a count-up timer. When your brain is depleted, it removes everything except the one thing you need to do.",
+      },
+    ],
+    relatedSlugs: ["adhd-time-blindness-where-did-day-go", "adhd-decision-paralysis-frozen", "adhd-remote-work-no-structure"],
+  },
+  {
+    id: 86,
+    slug: "journalist-collaborative-article",
+    title: "Journalist Managing a Multi-Contributor Article With Runners and Editors",
+    category: "Rituals, Meetings & Team Rhythms",
+    persona: "Lead Journalist / Editor",
+    summary:
+      "You're writing a feature with three runners feeding you quotes, a photographer filing images, and an editor making live changes to the shared doc. The tabs multiply, the versions blur, and by deadline you can't tell who contributed what or what's left to do.",
+    content:
+      "A complex feature article isn't a solo act. You have runners in the field gathering quotes and filing raw copy into shared Google Docs. A photographer is uploading images to a shared drive. Your editor is making live structural changes to the master draft. A fact-checker needs access to original sources. And you — the lead writer — are trying to synthesize everything into a coherent narrative while the tabs multiply. By noon you have the master doc, three runner docs, a source spreadsheet, the photo folder, the CMS backend, Slack threads with your editor, and a half-dozen reference articles all open in one chaotic browser window.\n\nThe worst part isn't the volume — it's the context loss. You switch to check a runner's doc, then can't find the master draft. You open Slack to reply to your editor, then lose the source spreadsheet. Every interruption costs minutes of reconstruction, and in a newsroom with a 4 PM deadline, those minutes are lethal. Research shows journalists are most productive with around four focused tabs, but the reality of multi-contributor work demands dozens.\n\nTabStax turns the chaos into a structured editorial workflow. Create a Stax for the article itself: master doc, style guide, CMS page, and your editor's Slack thread. That's your writing environment. Create a second Stax for contributor inputs: runner docs, the photo folder, source spreadsheet, and fact-check notes. The Start Page on the main Stax tracks the status of every moving piece: \"Runner 1: quotes filed, awaiting integration\" / \"Photos: 8 received, 3 selected\" / \"Fact-check: pending on paragraphs 4-6.\" Use Hey to log progress from either Stax without switching: \"Hey Feature Stax: integrated Runner 2 quotes into section 3.\" At any point, you can see exactly what's done, what's pending, and whose input you're waiting on. When your editor asks \"where are we?\" you don't scramble — you open the Stax and read the trail.",
+    staxPattern:
+      '"Feature: Housing Crisis – Writing" / "Feature: Housing Crisis – Contributor Inputs"',
+    seoTitle: "Journalist Multi-Contributor Article Tool | TabStax",
+    metaDescription:
+      "Managing a feature with runners, editors, and shared docs? TabStax organizes contributor inputs and writing into separate workspaces with visible status trails.",
+    keywords: [
+      "journalist browser workspace",
+      "newsroom collaboration tool",
+      "multi-contributor article management",
+      "journalist tab management",
+      "editorial workflow browser",
+    ],
+    faq: [
+      {
+        q: "How does TabStax help journalists manage multi-contributor articles?",
+        a: "Create separate Stax for writing and contributor inputs. The Start Page tracks each runner's status, filed quotes, photos, and fact-checks in one visible trail.",
+      },
+      {
+        q: "Can runners and editors see the same Stax?",
+        a: "Yes. Share the contributor Stax so runners know where to file copy, and the writing Stax so your editor can see the master doc and current status.",
+      },
+      {
+        q: "How does TabStax handle deadline pressure in newsrooms?",
+        a: "Hey logs progress without switching context. At any point you can see what's done, what's pending, and whose input you're waiting on — no scrambling when the editor asks for status.",
+      },
+    ],
+    relatedSlugs: ["marketing-lead-launch", "conference-organizer", "film-editor-feature-trailer"],
+  },
+  {
+    id: 87,
+    slug: "adhd-productivity-app-fatigue",
+    title: "ADHD Productivity App Fatigue: Tried 36 Apps, Still Losing Tabs",
+    category: "Health, Recovery & Performance",
+    persona: "ADHD App Searcher",
+    summary:
+      "You've tried Todoist, Notion, Trello, Habitica, Focusmate, Forest, and thirty more. Each one worked for two weeks then joined the app graveyard. The problem isn't the apps — it's that none of them manage what you actually work in: the browser.",
+    content:
+      "A viral Reddit post on r/ADHD documented one person's 500-day journey through 36 productivity apps — routine-setters, to-do lists, habit trackers, health apps, and productivity suites. The conclusion resonated with thousands: most apps are designed for neurotypical brains, require too much manual input, and create \"productivity theater\" — the appearance of getting organized without actually helping you do the work. Streaks, gamification, and dopamine-hit animations keep you opening the app but don't address the core ADHD challenge: getting into and staying in the actual work.\n\nThe fundamental problem with most productivity apps for ADHD is they exist outside your workflow. You have to leave the thing you're doing, open the app, update your status, then navigate back. For a brain that struggles with task switching, this is asking for trouble. Every context switch is a risk of never coming back. And the apps that do stay in your browser — bookmark managers, tab savers — solve the wrong problem. They organize tabs without preserving context, next actions, or the cognitive state you need to resume work.\n\nTabStax is different because it lives where you already work — the browser. It doesn't ask you to maintain a separate system. Your Stax IS your workspace: the tabs, the notes, the next action, all saved together. There's no manual sync between your todo app and your browser. There's no context switch to update a dashboard. When you open a Stax, you're immediately in the work — not in a meta-layer about the work. The Attention Stax dashboard (Must / Should / Good / Meh) is the only triage layer, and it takes thirty seconds. Hey captures next actions from wherever you are without leaving the current surface. The goal isn't to be another productivity app you abandon in two weeks. The goal is to make your browser itself the productivity system — so there's nothing to abandon because you never leave it.",
+    staxPattern:
+      'Not another app — your browser IS the system. Stax = tabs + next actions + notes, saved where you already work.',
+    seoTitle: "ADHD Productivity App Alternative | TabStax",
+    metaDescription:
+      "Tried 36 productivity apps and none stuck? TabStax works inside your browser — no separate system to maintain, no context switching to update, no app to abandon.",
+    keywords: [
+      "ADHD productivity app fatigue",
+      "best productivity app ADHD",
+      "ADHD app graveyard",
+      "browser based productivity ADHD",
+      "ADHD tried every app",
+    ],
+    faq: [
+      {
+        q: "Why do productivity apps stop working for people with ADHD?",
+        a: "Most apps require manual input and exist outside your workflow. Each update is a context switch — and for ADHD brains, every switch is a risk of never returning to the task.",
+      },
+      {
+        q: "How is TabStax different from other ADHD productivity tools?",
+        a: "TabStax lives in your browser, not outside it. Your workspace IS the productivity system — tabs, notes, and next actions saved together. No separate app to maintain or abandon.",
+      },
+      {
+        q: "Do I need to manually update TabStax?",
+        a: "Barely. Opening and closing Stax is your natural workflow. Hey captures next actions from anywhere. The only manual step is a 30-second Attention Stax triage each morning.",
+      },
+    ],
+    relatedSlugs: ["adhd-tab-hoarder-external-memory", "adhd-task-initiation-paralysis", "neurodivergent-builder"],
+  },
 ];
