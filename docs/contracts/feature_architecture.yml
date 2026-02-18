@@ -1,0 +1,119 @@
+contract_meta:
+  id: feature_architecture
+  version: 1
+  created_from_spec: "TabStax-web architectural invariants"
+  covers_reqs:
+    - ARCH-001
+    - ARCH-002
+    - ARCH-003
+    - ARCH-004
+    - ARCH-005
+  owner: "tabstax-web"
+
+llm_policy:
+  enforce: true
+  llm_may_modify_non_negotiables: false
+  override_phrase: "override_contract: feature_architecture"
+
+rules:
+  non_negotiable:
+    - id: ARCH-001
+      title: "Static export only — no server-side features"
+      scope:
+        - "src/**/*.{ts,tsx}"
+        - "!src/**/*.test.*"
+      behavior:
+        forbidden_patterns:
+          - pattern: /getServerSideProps/
+            message: "getServerSideProps not compatible with static export — use generateStaticParams or client-side data"
+          - pattern: /export\s+(async\s+)?function\s+(GET|POST|PUT|DELETE|PATCH)\s*\(/
+            message: "API routes not compatible with static export (output: 'export')"
+          - pattern: /NextResponse\.json/
+            message: "NextResponse.json is for API routes — not available with static export"
+          - pattern: /cookies\(\)/
+            message: "cookies() requires server runtime — not available with static export"
+          - pattern: /headers\(\)/
+            message: "headers() requires server runtime — not available with static export"
+        example_violation: |
+          export async function GET(request: Request) {
+            return NextResponse.json({ data: "hello" })
+          }
+        example_compliant: |
+          // Use generateStaticParams for dynamic routes
+          export async function generateStaticParams() {
+            return useCases.map((uc) => ({ slug: uc.slug }))
+          }
+
+    - id: ARCH-002
+      title: "Use 'Attention Stax' branding — never 'Attention Blocks', 'Terrain', or 'Map'"
+      scope:
+        - "src/**/*.{ts,tsx}"
+      behavior:
+        forbidden_patterns:
+          - pattern: /Attention\s+Blocks/
+            message: "Use 'Attention Stax' — never 'Attention Blocks'"
+          - pattern: /["']Terrain["']/
+            message: "Use 'Stax' — never 'Terrain' for product naming"
+        example_violation: |
+          <h1>Attention Blocks</h1>
+        example_compliant: |
+          <h1>Attention Stax</h1>
+
+    - id: ARCH-003
+      title: "All CTAs must point to dash.tabstax.app/attention"
+      scope:
+        - "src/components/*.tsx"
+        - "src/app/**/page.tsx"
+      behavior:
+        forbidden_patterns:
+          - pattern: /tally\.so/
+            message: "No Tally.so forms — signup is via dash.tabstax.app/attention"
+          - pattern: /href=["']\/signup["']/
+            message: "No local signup routes — all signup CTAs go to dash.tabstax.app/attention"
+        required_patterns:
+          - pattern: /dash\.tabstax\.app\/attention/
+            message: "Primary CTA must link to dash.tabstax.app/attention"
+            scope:
+              - "src/components/Hero.tsx"
+              - "src/components/Pricing.tsx"
+              - "src/components/FinalCTA.tsx"
+
+    - id: ARCH-004
+      title: "Images must use unoptimized mode or plain img tags"
+      scope:
+        - "src/**/*.tsx"
+      behavior:
+        forbidden_patterns:
+          - pattern: /from\s+["']next\/image["']/
+            message: "next/image requires image optimization — use plain <img> tags for static export compatibility"
+        example_violation: |
+          import Image from "next/image"
+        example_compliant: |
+          <img src="/logomenu.png" alt="TabStax" width={120} height={32} />
+
+    - id: ARCH-005
+      title: "Dynamic routes must set dynamicParams = false"
+      scope:
+        - "src/app/**/[*]/page.tsx"
+      behavior:
+        required_patterns:
+          - pattern: /dynamicParams\s*=\s*false/
+            message: "Dynamic routes must export dynamicParams = false for static export"
+
+compliance_checklist:
+  before_editing_files:
+    - question: "Are you adding an API route or server-side function?"
+      if_yes: "STOP — this is a static export site. No API routes, getServerSideProps, or server actions."
+    - question: "Are you adding a CTA or signup link?"
+      if_yes: "Must point to https://dash.tabstax.app/attention — no Tally.so forms."
+    - question: "Are you referencing the product by name?"
+      if_yes: "Use 'Attention Stax' — never 'Attention Blocks', 'Terrain', or 'Map'."
+    - question: "Are you adding images?"
+      if_yes: "Use plain <img> tags — not next/image (incompatible with static export)."
+
+test_hooks:
+  tests:
+    - file: "src/__tests__/contracts/feature_architecture.test.ts"
+      description: "Pattern checks for ARCH-001 through ARCH-005"
+  tooling:
+    checker_script: "scripts/check-contracts.js"

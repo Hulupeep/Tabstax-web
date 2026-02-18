@@ -1,0 +1,58 @@
+contract_id: journey_seo_use_case
+version: "1.0"
+journey_id: J-SEO-USE-CASE
+criticality: CRITICAL
+description: >
+  A user finds a TabStax use-case page via a Google search for their specific
+  problem. The page must surface with accurate title and description in the
+  SERP, and deliver rich structured data (FAQ, breadcrumb, article) on landing.
+
+actors:
+  - name: Search User
+    description: Person searching Google for a productivity problem matching a TabStax use case
+
+steps:
+  - step: 1
+    action: >
+      User searches Google for role+problem query
+      (e.g. "browser tab manager for consultants")
+    expected: TabStax use-case page appears in results with keyword-matching title (≤60 chars) and description (≤155 chars)
+
+  - step: 2
+    action: User clicks the search result
+    expected: Page loads at /use-cases/[slug]
+
+  - step: 3
+    action: Browser renders the page
+    expected: >
+      - HTML <title> equals seoTitle field
+      - meta[name="description"] equals metaDescription field
+      - FAQPage, BreadcrumbList, Article JSON-LD present in <head>
+
+  - step: 4
+    action: User scrolls to FAQ section
+    expected: >
+      FAQ Q&A entries are visible as readable text.
+      Questions are phrased in plain search language.
+
+  - step: 5
+    action: User scrolls to related use cases
+    expected: >
+      3 related use-case cards are visible.
+      Each links to a valid /use-cases/[slug] URL.
+
+definition_of_done:
+  - All 73 use-case pages render seoTitle as <title>
+  - All 73 pages render FAQPage JSON-LD with ≥3 entries
+  - All 73 pages render BreadcrumbList JSON-LD
+  - All 73 pages render Article JSON-LD
+  - All 73 pages show FAQ section and 3 related cards
+  - /use-cases index renders CollectionPage JSON-LD
+  - npm run build passes with 0 errors
+  - Playwright journey tests pass
+
+test_file: tests/e2e/journey_seo_use_case.spec.ts
+
+deferral_policy:
+  allowed: false
+  reason: SEO is core discoverability — cannot be deferred

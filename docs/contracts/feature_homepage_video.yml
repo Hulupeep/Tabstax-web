@@ -1,0 +1,52 @@
+contract_id: feature_homepage_video
+version: "1.0"
+description: >
+  Enforces correct and accessible embedding of the TabStax YouTube product video
+  on the homepage. Requires privacy-preserving embed URL and responsive layout.
+
+protected_files:
+  - "src/components/VideoSection.tsx"
+  - "src/app/page.tsx"
+
+invariants:
+  - id: I-VIDEO-001
+    level: MUST
+    description: >
+      Embed URL must use youtube-nocookie.com, not youtube.com.
+    pattern_required:
+      - "youtube-nocookie.com"
+    pattern_forbidden:
+      - '"https://www.youtube.com/embed'
+    files: ["src/components/VideoSection.tsx"]
+
+  - id: I-VIDEO-002
+    level: MUST
+    description: >
+      Video embed must be responsive (16:9 aspect ratio). Look for aspect-ratio
+      or the padding-top percentage technique.
+    pattern_required:
+      - "aspect"
+    files: ["src/components/VideoSection.tsx"]
+
+  - id: I-VIDEO-003
+    level: MUST
+    description: >
+      iframe must have a title attribute for accessibility.
+    pattern_required:
+      - 'title='
+    files: ["src/components/VideoSection.tsx"]
+
+  - id: I-VIDEO-004
+    level: MUST
+    description: >
+      VideoSection must be imported and used in page.tsx.
+    pattern_required:
+      - "VideoSection"
+    files: ["src/app/page.tsx"]
+
+compliance_checklist:
+  - "Embed URL uses youtube-nocookie.com domain"
+  - "iframe has title attribute"
+  - "Container is responsive 16:9"
+  - "VideoSection imported in page.tsx"
+  - "npm run build passes"

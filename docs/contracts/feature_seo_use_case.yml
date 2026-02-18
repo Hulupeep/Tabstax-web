@@ -1,0 +1,100 @@
+contract_id: feature_seo_use_case
+version: "1.0"
+description: >
+  Enforces SEO structure on all /use-cases/[slug] pages and the /use-cases index.
+  Each page must have keyword-optimised metadata, structured data (JSON-LD),
+  a visible FAQ section, and related use-case links for internal linking.
+
+protected_files:
+  - "src/data/use-cases.ts"
+  - "src/app/use-cases/[slug]/page.tsx"
+  - "src/app/use-cases/page.tsx"
+
+invariants:
+  - id: I-SEO-001
+    level: MUST
+    description: >
+      The UseCase interface must declare seoTitle, metaDescription, keywords,
+      faq, and relatedSlugs fields.
+    pattern_required:
+      - "seoTitle"
+      - "metaDescription"
+      - "keywords"
+      - "relatedSlugs"
+    files: ["src/data/use-cases.ts"]
+
+  - id: I-SEO-002
+    level: MUST
+    description: >
+      The use-case page template must render FAQPage JSON-LD.
+    pattern_required:
+      - "FAQPage"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-003
+    level: MUST
+    description: >
+      The use-case page template must render BreadcrumbList JSON-LD.
+    pattern_required:
+      - "BreadcrumbList"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-004
+    level: MUST
+    description: >
+      The use-case page template must render Article JSON-LD.
+    pattern_required:
+      - '"@type": "Article"'
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-005
+    level: MUST
+    description: >
+      generateMetadata must use useCase.seoTitle for the title field.
+    pattern_required:
+      - "useCase.seoTitle"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-006
+    level: MUST
+    description: >
+      generateMetadata must use useCase.metaDescription for the description field.
+    pattern_required:
+      - "useCase.metaDescription"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-007
+    level: MUST
+    description: >
+      The use-case page must render at least one <h2> element for content structure.
+    pattern_required:
+      - "<h2"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-008
+    level: MUST
+    description: >
+      The use-case page must render related use-case links using relatedSlugs.
+    pattern_required:
+      - "relatedSlugs"
+    files: ["src/app/use-cases/[slug]/page.tsx"]
+
+  - id: I-SEO-009
+    level: MUST
+    description: >
+      The /use-cases index must render CollectionPage JSON-LD.
+    pattern_required:
+      - "CollectionPage"
+    files: ["src/app/use-cases/page.tsx"]
+
+compliance_checklist:
+  - "UseCase interface has all 5 new fields"
+  - "generateMetadata uses seoTitle not title"
+  - "generateMetadata uses metaDescription not summary"
+  - "Article JSON-LD rendered in page head"
+  - "BreadcrumbList JSON-LD rendered in page head"
+  - "FAQPage JSON-LD rendered in page head"
+  - "FAQ section visible on page body"
+  - "relatedSlugs used to render 3 related use case cards"
+  - "Page content uses h2 headings"
+  - "CollectionPage JSON-LD on /use-cases index"
