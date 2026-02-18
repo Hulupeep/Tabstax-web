@@ -8,7 +8,7 @@ export default defineConfig({
   reporter: "list",
   timeout: 30000,
   use: {
-    baseURL: "https://tabstax.app",
+    baseURL: "https://www.tabstax.app",
     trace: "on-first-retry",
   },
   projects: [
