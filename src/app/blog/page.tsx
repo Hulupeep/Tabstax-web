@@ -1,18 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import { blogPosts } from "@/data/blog-posts";
+import Link from "next/link";
 
 export default function BlogPage() {
-  const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
-
   const sortedPosts = [...blogPosts].sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
-
-  function togglePost(slug: string) {
-    setExpandedSlug(expandedSlug === slug ? null : slug);
-  }
 
   function formatDate(dateStr: string) {
     return new Date(dateStr).toLocaleDateString("en-US", {
@@ -34,52 +28,33 @@ export default function BlogPage() {
         </p>
 
         <div className="space-y-8">
-          {sortedPosts.map((post) => {
-            const isExpanded = expandedSlug === post.slug;
-
-            return (
-              <article
-                key={post.slug}
-                className="border-b border-charcoal/10 pb-8 last:border-b-0"
+          {sortedPosts.map((post) => (
+            <article
+              key={post.slug}
+              className="border-b border-charcoal/10 pb-8 last:border-b-0"
+            >
+              <Link href={`/blog/${post.slug}`} className="group block">
+                <p className="text-sm font-semibold text-amber uppercase tracking-wide mb-1">
+                  {post.kicker}
+                </p>
+                <h2 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal group-hover:text-terracotta transition-colors mb-2">
+                  {post.title}
+                </h2>
+                <time className="text-sm text-warm-gray">
+                  {formatDate(post.date)}
+                </time>
+                <p className="font-body text-warm-gray mt-4 leading-relaxed">
+                  {post.excerpt}
+                </p>
+              </Link>
+              <Link
+                href={`/blog/${post.slug}`}
+                className="mt-4 inline-block text-sm font-semibold text-amber hover:text-terracotta transition-colors"
               >
-                <button
-                  onClick={() => togglePost(post.slug)}
-                  className="w-full text-left group"
-                >
-                  <p className="text-sm font-semibold text-amber uppercase tracking-wide mb-1">
-                    {post.kicker}
-                  </p>
-                  <h2 className="font-heading text-2xl sm:text-3xl font-bold text-charcoal group-hover:text-terracotta transition-colors mb-2">
-                    {post.title}
-                  </h2>
-                  <time className="text-sm text-warm-gray">
-                    {formatDate(post.date)}
-                  </time>
-                </button>
-
-                {!isExpanded && (
-                  <p className="font-body text-warm-gray mt-4 leading-relaxed">
-                    {post.excerpt}
-                  </p>
-                )}
-
-                {isExpanded && (
-                  <div className="font-body text-charcoal mt-6 space-y-4 leading-relaxed">
-                    {post.content.split("\n\n").map((paragraph, i) => (
-                      <p key={i}>{paragraph}</p>
-                    ))}
-                  </div>
-                )}
-
-                <button
-                  onClick={() => togglePost(post.slug)}
-                  className="mt-4 text-sm font-semibold text-amber hover:text-terracotta transition-colors"
-                >
-                  {isExpanded ? "Collapse" : "Read more"}
-                </button>
-              </article>
-            );
-          })}
+                Read more →
+              </Link>
+            </article>
+          ))}
         </div>
       </div>
     </section>
