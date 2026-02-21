@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     seoDescription:
       "Open tabs are deferred decisions. Learn why constraining your browser workspace reduces cognitive load, and how to put projects down without losing them.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Digital Minimalism",
     keywords: [
       "too many browser tabs",
@@ -130,7 +130,7 @@ Sometimes the simplest thing is the right thing. [Save your first Stax](/) and c
     seoDescription:
       "Most teams don't have too many tools by accident. Here's why they backfire, what the missing tab layer reveals, and how to fix context handoffs.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Team Dynamics",
     keywords: [
       "productivity tools backfire",
@@ -236,7 +236,7 @@ It won't unify your tool stack. It won't fix Jira or make Slack less chaotic. Bu
     seoDescription:
       "Deep Work is solid advice, but it underestimates modern context switching. Here's a realistic version of deep focus built for fragmented workdays.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Focus & Flow",
     keywords: [
       "deep work browser tabs",
@@ -358,7 +358,7 @@ That's not Newport's original framing. But it's a more realistic version of deep
     seoDescription:
       "Most productivity tools were built for linear work. Here's why they fail neurodivergent workers, and what structured flexibility looks like in practice.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Neurodiversity",
     keywords: [
       "neurodivergent productivity tools",
@@ -479,7 +479,7 @@ But if the reason is that every time you try to come back, you spend the first f
     seoTitle: "Why Closing Browser Tabs Feels Like Losing a Memory",
     seoDescription: "Discover why closing browser tabs triggers anxiety for many people. The external brain browser tabs phenomenon is real — here's the science and the fix.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
       "external brain browser tabs adhd",
@@ -625,7 +625,7 @@ The context reconstruction tax is real, it is measurable, and it is avoidable. N
     seoDescription:
       "200+ tabs and too anxious to close them? This tab hoarder clean up method walks you through audit, triage, and archiving without losing anything important.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tab Management",
     keywords: [
       "tab hoarder clean up method",
@@ -786,7 +786,7 @@ Start with the snapshot. Everything else follows from that.`,
     seoDescription:
       "Auto close tabs tools like Tab Wrangler work for some people and cause real loss for others. Here's the difference — and a better alternative for every brain type.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
       "auto close tabs adhd backfire",
@@ -941,7 +941,7 @@ If the preserving model resonates, [TabStax](/use-cases) is built specifically f
     seoDescription:
       "Productivity app fatigue is real and documented. Here's why tools don't stick — and what research on habit formation says about the tools that actually do.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
       "productivity app fatigue why tools dont stick",
@@ -1103,7 +1103,7 @@ For related thinking on how to build habits that actually survive, see [The Two-
     seoDescription:
       "An attention dashboard adhd productivity habit that keeps your priorities visible all day. Here's how to set one up and stop it going stale within a week.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
       "attention dashboard adhd productivity habit",
@@ -1254,7 +1254,7 @@ That is the whole system. The complexity creep can come later, if it needs to. S
     seoDescription:
       "Task initiation adhd first step checklist — a practical system for encoding the first concrete action into every project so re-entry is never a guessing game.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
       "task initiation adhd first step checklist",
@@ -1452,7 +1452,7 @@ The start signal matters. Write it before you leave.`,
     seoDescription:
       "The 23-minute stat isn't the real cost. The real cost of context switching is re-entry — rebuilding where you were. Here's what actually fixes it.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Productivity",
     keywords: [
       "context switching cost",
@@ -1578,7 +1578,7 @@ But if you're a knowledge worker whose work runs through the browser — and mos
     seoDescription:
       "Discipline isn't the productivity fix — system design is. Learn why productivity systems vs willpower adhd debates miss the point, and what actually helps.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
       "productivity systems vs willpower adhd",
@@ -1738,7 +1738,7 @@ Stop moralising the problem. Start designing the fix.`,
     seoDescription:
       "Tab hoarding psychology explained without judgment. Understand why tab hoarding why cant close tabs is a memory system failure — and what actually replaces it.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tab Management",
     keywords: [
       "tab hoarding psychology why cant close tabs",
@@ -1906,7 +1906,7 @@ If you have 200 tabs open right now, that's fine. You don't owe anyone a clean b
     seoDescription:
       "Build an anti-overwhelm productivity system one screen wide: three active worlds, one next action each. No extra apps — just a browser with named contexts.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
       "anti-overwhelm productivity system one screen",
@@ -2093,7 +2093,7 @@ Complexity is the enemy of execution. Keep it minimal. Execute more.`,
     seoDescription:
       "Stop re-prioritising every hour. The attention management productivity board adhd habit locks in weekly priorities so you can execute instead of plan. Here's how.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
       "attention management productivity board adhd",
@@ -2282,7 +2282,7 @@ The habit takes fifteen minutes to set up and saves hours in constant deliberati
     seoDescription:
       "Browser search vs context re-entry overwhelm: search assumes you know what to look for. When overwhelmed, structure reduces load while search adds it. Here's why.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
       "browser search vs context re-entry overwhelm",
@@ -2454,7 +2454,7 @@ Make your projects ready, not just findable. The difference is the difference be
     seoDescription:
       "Combine kanban whiteboard digital hybrid productivity adhd: physical kanban for high-salience priorities, digital tab cockpits for execution state. Here's the setup.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Hybrid Workflows",
     keywords: [
       "kanban whiteboard digital hybrid productivity adhd",
@@ -2680,7 +2680,7 @@ That's the hybrid. It's not complex. It's not a personality change. It's two too
     seoDescription:
       "Productivity tool switching cost drains your focus and creates churn. Use the Jobs-To-Be-Done framework to hire the right tool once — and stop the cycle.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
       "productivity tool switching cost stop churn",
@@ -2840,7 +2840,7 @@ The churn stops when the evaluation habit starts. Define the job first. Audit th
     seoDescription:
       "ADHD unfinished projects aren't a motivation problem — they're a re-entry problem. Understand why projects stall at the point of return, not the point of start.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
       "adhd unfinished projects graveyard",
@@ -3011,7 +3011,7 @@ The goal is not a graveyard with zero residents. It is a graveyard that contains
     seoDescription:
       "Bullet journal vs digital tabs productivity — paper wins on salience, tabs win on fidelity. This guide helps you use both without duplication or guilt.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Hybrid Workflows",
     keywords: [
       "bullet journal vs digital tabs productivity",
@@ -3168,7 +3168,7 @@ The hybrid is not a set-and-forget solution. It needs occasional maintenance. Th
     seoDescription:
       "Context switching tax ADHD productivity cost is real and documented. Studies show 20-40% loss from task switching — and ADHD amplifies every part of it.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
       "context switching tax adhd productivity cost",
@@ -3325,7 +3325,7 @@ The 40% figure is not fate. It is a measurement of what happens by default. Chan
     seoDescription:
       "Replace sticky notes digital productivity capture without losing salience. The reason digital fails is not features — it's visibility. Here's how to fix that.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Capture Systems",
     keywords: [
       "replace sticky notes digital productivity capture",
@@ -3483,7 +3483,7 @@ The goal is not to eliminate paper — it is to make the choice between paper an
     seoDescription:
       "ADHD job onboarding new job executive function challenges are a re-entry problem, not a willpower problem. Build your new job cockpit from week one.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "ADHD & Work",
     keywords: [
       "adhd job onboarding new job executive function",
@@ -3643,7 +3643,7 @@ Design the environment. The onboarding follows. See [the use cases](/use-cases) 
     seoTitle: "TabStax vs Workona: Which Tab Tool Fits Your Work?",
     seoDescription: "TabStax vs Workona comparison: one is a re-entry engine with next-action intent, the other a full workspace OS. Find out which tab manager fits your workflow.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Both deal with browser tabs and projects — but Workona is a workspace OS for teams, and TabStax is a re-entry engine for individuals. Here's the honest breakdown.",
     keywords: ["tabstax vs workona comparison review", "workona alternative", "tab manager comparison", "browser workspace tool", "project tab manager"],
@@ -3708,7 +3708,7 @@ For more comparisons, see [TabStax vs Toby](/blog/tabstax-vs-toby), [why Chrome 
     seoTitle: "TabStax vs Toby: Collections or Next-Action Re-entry?",
     seoDescription: "TabStax vs Toby tab manager comparison: Toby saves links for teams, TabStax saves intent for individuals. Honest breakdown of which fits your workflow.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Toby saves links. TabStax saves intent. That one-sentence summary captures the core difference — and determines which tool fits your workflow.",
     keywords: ["tabstax vs toby tab manager comparison", "toby extension alternative", "tab collection manager", "browser tab organiser comparison", "toby vs tabstax"],
@@ -3763,7 +3763,7 @@ For related comparisons, see [TabStax vs Workona](/blog/tabstax-vs-workona), [Ta
     seoTitle: "TabStax vs OneTab: Tab Dump or Living Project State?",
     seoDescription: "TabStax vs OneTab: OneTab clears tab clutter fast and free. TabStax saves named project contexts with next actions. Which is right for your browser habits?",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "OneTab is a relief valve. TabStax is a project context manager. Those are different tools — here's which problem you actually have.",
     keywords: ["tabstax vs onetab which is better", "onetab alternative", "tab manager for projects", "browser tab hoarding solution", "onetab vs tabstax"],
@@ -3815,7 +3815,7 @@ For more context, see [TabStax use cases](/use-cases).`,
     seoTitle: "TabStax vs Session Buddy: Recovery or Continuity?",
     seoDescription: "TabStax vs Session Buddy comparison: Session Buddy is passive crash protection. TabStax is active project continuity with next actions. Honest breakdown of both.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Session Buddy is passive safety. TabStax is active continuity. Are you trying to protect yourself from losing tabs, or building a reliable system for re-entering project work?",
     keywords: ["tabstax vs session buddy comparison", "session buddy alternative", "browser session manager", "tab session recovery tool", "session buddy vs tabstax"],
@@ -3863,7 +3863,7 @@ See also [TabStax vs OneTab](/blog/tabstax-vs-onetab) and [TabStax use cases](/u
     seoTitle: "TabStax vs Tabs Outliner: Tree Notes or Cockpit Switching?",
     seoDescription: "TabStax vs Tabs Outliner: one is a rich browser notebook with tree structure and notes, the other a fast project cockpit switcher. Honest comparison of both.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Tabs Outliner thinks your browser is a notebook. TabStax thinks your browser is a project launcher. That distinction determines nearly every design decision in both tools.",
     keywords: ["tabstax vs tabs outliner comparison", "tabs outliner alternative", "browser tab notebook", "tab tree manager comparison", "tabs outliner vs tabstax"],
@@ -3909,7 +3909,7 @@ For more context, see [TabStax vs Workona](/blog/tabstax-vs-workona) and [TabSta
     seoTitle: "Why Chrome Tab Groups Fail for Multi-Project Work",
     seoDescription: "Chrome tab groups reduce visual clutter but fail at persistence, cross-device sync, intent tracking, and structured re-entry. Here is exactly where they break down.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Browser Limitations",
     excerpt: "Chrome tab groups are a step in the right direction that stops well short of what serious multi-project browser work actually requires. Here's exactly where they fail.",
     keywords: ["chrome tab groups limitations multi-project", "chrome tab groups vs extensions", "browser tab management limitations", "chrome tab groups persistence", "multi-project tab management"],
@@ -3955,7 +3955,7 @@ For more on using TabStax alongside Chrome's native features, see [TabStax vs Wo
     seoTitle: "OneTab Best Practices: How Not to Lose Your Lists",
     seoDescription: "Learn onetab best practices tips organization — naming conventions, the star feature, when to export, and honest limits of OneTab's flat-list model.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "OneTab works best when you name every group immediately, use the star feature intentionally, and export anything you'd be upset to lose. Here's the full routine.",
     keywords: ["onetab best practices tips organization", "onetab naming conventions", "onetab star lock feature", "onetab export tabs", "onetab alternatives"],
@@ -4008,7 +4008,7 @@ For a direct comparison, see [TabStax vs OneTab](/blog/tabstax-vs-onetab). The [
     seoTitle: "Session Buddy Best Practices: Collections You Can Find",
     seoDescription: "Master session buddy tips organisation collections — naming, tagging, auto-save settings, export for backup, and when Session Buddy's model reaches its ceiling.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "Session Buddy rewards discipline around naming and tagging. The conventions below make the difference between a collection library you can navigate and a pile of saved sessions.",
     keywords: ["session buddy tips organisation collections", "session buddy naming conventions", "session buddy auto-save settings", "session buddy export backup", "session buddy alternatives"],
@@ -4062,7 +4062,7 @@ For [how Session Buddy compares to alternatives](/blog/tabstax-vs-session-buddy)
     seoTitle: "Tabs Outliner Best Practices: Trees That Stay Useful",
     seoDescription: "Master tabs outliner tips tree organization — current work vs archive nodes, effective note-taking, weekly pruning rituals, and honest limits of the tree model.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "Tabs Outliner's tree structure is powerful when maintained. Here's the two-zone architecture, pruning ritual, and note-taking patterns that keep it from becoming an archaeological site.",
     keywords: ["tabs outliner tips tree organization", "tabs outliner node structure", "tabs outliner notes to-do", "tabs outliner pruning maintenance", "tabs outliner export"],
@@ -4119,7 +4119,7 @@ For [how Tabs Outliner compares to TabStax](/blog/tabstax-vs-tabs-outliner) in t
     seoTitle: "TabXpert Best Practices: Tags and Session History Tips",
     seoDescription: "Master tabxpert best practices power user tips — tag taxonomy design, session history management, cloud sync setup, and honest tradeoffs of a fully-featured tool.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "TabXpert's features are only as valuable as the organizational habits you build around them. Here's the tag taxonomy decision, history management, and sync setup that makes it pay off.",
     keywords: ["tabxpert best practices power user tips", "tabxpert tag taxonomy", "tabxpert session history management", "tabxpert cloud sync setup", "tabxpert search strategies"],
@@ -4174,7 +4174,7 @@ For a direct comparison between TabXpert and other session managers, [the TabSta
     seoTitle: "Vivaldi Workspaces vs Tab Managers: When Native Wins",
     seoDescription: "Vivaldi workspaces vs tab manager comparison — where built-in workspace tools win on trust and integration, and where extensions win on portability and next actions.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Browser Alternatives",
     excerpt: "Vivaldi Workspaces wins on trust, integration depth, and first-party sync reliability. Extensions win on portability, the next-actions context layer, and sharing. Here's the real comparison.",
     keywords: ["vivaldi workspaces vs tab manager comparison", "vivaldi workspaces review", "browser native workspace tools", "vivaldi vs chrome extensions", "tab management browser choice"],
@@ -4219,7 +4219,7 @@ The most useful framing isn't "which is better" but "which constraint matters mo
     seoTitle: "Arc Browser Spaces: Multi-Role Configuration Guide",
     seoDescription: "Master arc browser spaces setup multi-role guide — configure Spaces for work, personal, and side projects, understand the pinned/unpinned tab model, and assess Arc's uncertain future.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Browser Alternatives",
     excerpt: "Arc Spaces is a genuine innovation in browser workspace design. Here's the practical configuration guide, including what the pinned/unpinned model means and what Arc's frozen roadmap means for your workflow.",
     keywords: ["arc browser spaces setup multi-role guide", "arc browser spaces configuration", "arc pinned unpinned tabs", "arc browser limitations 2025", "arc alternatives tab management"],
@@ -4280,7 +4280,7 @@ Arc Spaces doesn't attach next actions to a Space, doesn't support sharing a Spa
     seoTitle: "Arc Browser Stopped New Features: Should You Switch?",
     seoDescription: "The Browser Company stopped adding features to Arc in 2025, pivoting to AI browser Dia. Here's what it means for power users and your best migration options.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Browser News",
     excerpt: "Arc's feature freeze is not a crisis, but it is an invitation to audit your workflow dependency. Here's the honest analysis and your real migration options.",
     keywords: ["arc browser stopped features alternative 2025", "arc browser future", "arc browser migration", "dia browser alternative", "arc spaces replacement"],
@@ -4341,7 +4341,7 @@ The more resilient approach is to build your workflow dependencies on tools that
     seoTitle: "Cluster Chrome Extension Gone: Your Migration Guide",
     seoDescription: "Cluster Chrome extension was removed from the store. This practical guide helps former Cluster users find the right modern replacement based on what they actually used it for.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Migration Guide",
     excerpt: "Before picking a replacement for Cluster, identify what job you were actually hiring it to do. Window organisation, tab group management, and session save-and-restore each point to different tools.",
     keywords: ["cluster chrome extension removed migration alternative", "cluster extension replacement", "chrome tab manager migration", "workona alternative cluster", "tab group manager chrome"],
@@ -4394,7 +4394,7 @@ Cluster's disappearance is one of many examples of extension removals that have 
     seoTitle: "Pocket Shutdown: How to Rebuild Your Read-Later Stack",
     seoDescription: "Mozilla shut down Pocket in July 2025. Here's how to export your saved articles and find the right read-later replacement — Instapaper, Raindrop, Readwise Reader, or Matter.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Migration Guide",
     excerpt: "Mozilla shut down Pocket in July 2025. Before picking a replacement, identify what you actually used Pocket for — reading queue, research library, or annotation practice. Each points to a different tool.",
     keywords: ["pocket shutdown replacement read-later alternative 2025", "pocket alternative 2025", "best read-later app after pocket", "raindrop instapaper readwise comparison", "pocket export data migration"],
@@ -4446,7 +4446,7 @@ For TabStax users: read-later tools and tab managers serve adjacent but differen
     seoTitle: "Browser Extension Security: How to Choose Extensions Safely",
     seoDescription: "The Great Suspender malware incident showed extensions can be weaponised after purchase. Here's how to evaluate browser extension security and privacy before you install.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Security & Privacy",
     excerpt: "The Great Suspender incident — a trusted extension sold to a buyer who injected malware — is a template for a recurring attack. Here's the practical checklist for evaluating any extension before you install.",
     keywords: ["browser extension security privacy how to choose", "browser extension malware risk", "safe chrome extensions evaluation", "great suspender incident security", "chrome extension permissions explained"],
@@ -4504,7 +4504,7 @@ For tab management tools specifically, see [how to evaluate privacy claims from 
     seoTitle: "Manifest V3: Why Browser Extensions Keep Disappearing",
     seoDescription: "Manifest V3 is Google's Chrome extension overhaul that forced rewrites and caused several popular tab managers to vanish. Here's what actually changed and what it means for your workflow.",
     date: "2026-02-20",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     kicker: "Browser Ecosystem",
     excerpt: "Manifest V3 is Google's rewrite of the Chrome extension platform. It forced architectural rewrites, killed several popular tab managers, and tells you something important about which tools to trust.",
     keywords: ["manifest v3 chrome extension changes impact", "manifest v3 tab manager impact", "mv3 extension migration", "chrome extension api changes", "why chrome extensions disappear"],
@@ -4557,7 +4557,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Stop hunting for tabs before every client call. Build a client Stax that opens your full client cockpit in one click — CRM, notes, deck, and next action ready.",
     kicker: "Consultant Workflow",
     excerpt: "Stop hunting for tabs before every client call. Build a client Stax that opens your full client cockpit in one click — CRM, notes, deck, and next action ready.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "client context switching browser management",
@@ -4597,7 +4597,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Gloria Mark finds 23-minute interruption recovery. The APA documents 20-40% performance loss from task switching. Here's what the reconstruction tax actually costs.",
     kicker: "Research & Insights",
     excerpt: "Gloria Mark finds 23-minute interruption recovery. The APA documents 20-40% performance loss from task switching. Here's what the reconstruction tax actually costs.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "context switching cost at work productivity",
@@ -4641,7 +4641,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "High-value accounts demand intensive prep. Build a per-account sales cockpit with CRM, proposal, competitor intel, and next action — ready before every call.",
     kicker: "Sales Workflow",
     excerpt: "High-value accounts demand intensive prep. Build a per-account sales cockpit with CRM, proposal, competitor intel, and next action — ready before every call.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "sales browser context switching account management",
@@ -4681,7 +4681,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A CS manager going from a healthy QBR to a churn-risk call needs different tools and data. Here's how separate cockpits stop tone bleed from costing you renewals.",
     kicker: "Customer Success",
     excerpt: "A CS manager going from a healthy QBR to a churn-risk call needs different tools and data. Here's how separate cockpits stop tone bleed from costing you renewals.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "customer success context switching renewal churn",
@@ -4721,7 +4721,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Four to six panellists all need the same candidate context. Build one shared hiring cockpit — CV, portfolio, notes, criteria — and share it with the panel.",
     kicker: "Recruiting Workflow",
     excerpt: "Four to six panellists all need the same candidate context. Build one shared hiring cockpit — CV, portfolio, notes, criteria — and share it with the panel.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "recruiter browser tab management interview panel",
@@ -4761,7 +4761,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Not every handoff needs a Jira ticket. For agency and small team transitions, a browser cockpit with a clear next action is the fastest complete handoff.",
     kicker: "Team Workflow",
     excerpt: "Not every handoff needs a Jira ticket. For agency and small team transitions, a browser cockpit with a clear next action is the fastest complete handoff.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "project handoff lightweight browser collaboration",
@@ -4801,7 +4801,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Agency work runs at three levels: client, project, and phase. Browser organisation patterns that keep each level in its own context, with naming conventions.",
     kicker: "Agency Workflow",
     excerpt: "Agency work runs at three levels: client, project, and phase. Browser organisation patterns that keep each level in its own context, with naming conventions.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "browser organisation agency freelancer client project",
@@ -4841,7 +4841,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Sales context lives in stages: prospecting, qualification, proposal, closing. Browser organisation patterns to keep each stage in its own purpose-built environment.",
     kicker: "Sales Workflow",
     excerpt: "Sales context lives in stages: prospecting, qualification, proposal, closing. Browser organisation patterns to keep each stage in its own purpose-built environment.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "sales browser organisation tab management account",
@@ -4885,7 +4885,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A structured weekly planning ritual: decide which 4 browser worlds you're working in this week, load them Monday, and don't add a fifth without removing one.",
     kicker: "Consultant Workflow",
     excerpt: "A structured weekly planning ritual: decide which 4 browser worlds you're working in this week, load them Monday, and don't add a fifth without removing one.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "weekly planning browser context rotation productivity",
@@ -4929,7 +4929,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Re-entry time is the minutes between 'I'm switching to this project' and 'I know what to do next.' Here's how to track it, quantify the cost, and cut it.",
     kicker: "Research & Insights",
     excerpt: "Re-entry time is the minutes between 'I'm switching to this project' and 'I know what to do next.' Here's how to track it, quantify the cost, and cut it.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "re-entry time measurement productivity metric",
@@ -4973,7 +4973,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "If you open the same Jira, Notion, Slack, and dashboard tabs every morning, you're spending 10-40 hours a year on pure orientation. Here's how to fix it.",
     kicker: "Browser Habits",
     excerpt: "If you open the same Jira, Notion, Slack, and dashboard tabs every morning, you're spending 10-40 hours a year on pure orientation. Here's how to fix it.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "reopening same browser tabs every day productivity",
@@ -5017,7 +5017,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Real estate agents, field engineers, sales reps — the context switching problem lives on mobile too. Here's how to design a field-ready cockpit for your phone.",
     kicker: "Mobile Workflow",
     excerpt: "Real estate agents, field engineers, sales reps — the context switching problem lives on mobile too. Here's how to design a field-ready cockpit for your phone.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "mobile browser productivity field work cockpit",
@@ -5061,7 +5061,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Tone bleed is when emotional residue from one meeting bleeds into the next. Here's a practical protocol for resetting context and posture before each back-to-back.",
     kicker: "Meeting Workflow",
     excerpt: "Tone bleed is when emotional residue from one meeting bleeds into the next. Here's a practical protocol for resetting context and posture before each back-to-back.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "back to back meetings context switching tone bleed",
@@ -5105,7 +5105,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Build per-meeting browser cockpits you preload 10 minutes before you need them — agenda, last notes, live dashboard. The practice of preload, not scramble.",
     kicker: "Meeting Workflow",
     excerpt: "Build per-meeting browser cockpits you preload 10 minutes before you need them — agenda, last notes, live dashboard. The practice of preload, not scramble.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "meeting preparation browser tabs context preload",
@@ -5149,7 +5149,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Every morning you open email, Slack, Notion, your project tracker, analytics, and your CRM. That's not productivity — it's orientation. Here's how to fix it.",
     kicker: "Daily Workflow",
     excerpt: "Every morning you open email, Slack, Notion, your project tracker, analytics, and your CRM. That's not productivity — it's orientation. Here's how to fix it.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-22",
     keywords: [
       "morning browser app rebuild productivity waste",
@@ -5193,7 +5193,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Build a pre-saved incident response browser cockpit with Datadog, Grafana, runbooks, PagerDuty, Slack, and your DB console — one click and you're operational.",
     kicker: "DevOps Workflow",
     excerpt: "Build a pre-saved incident response browser cockpit with Datadog, Grafana, runbooks, PagerDuty, Slack, and your DB console — one click and you're operational.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "incident response browser setup devops template",
@@ -5233,7 +5233,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Build a shareable standup kit in your browser — sprint board, yesterday's decisions, today's focus, blockers — so any team member can run the ritual reliably.",
     kicker: "Agile Workflow",
     excerpt: "Build a shareable standup kit in your browser — sprint board, yesterday's decisions, today's focus, blockers — so any team member can run the ritual reliably.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "standup template reusable browser team ritual",
@@ -5273,7 +5273,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Different incidents need different runbooks and dashboards. Build per-type browser cockpits for database failures, payment outages, security events, and scaling emergencies.",
     kicker: "DevOps Workflow",
     excerpt: "Different incidents need different runbooks and dashboards. Build per-type browser cockpits for database failures, payment outages, security events, and scaling emergencies.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "devops browser runbook organisation incident types",
@@ -5317,7 +5317,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "For small teams or lateral status sharing, skip the Jira overhead. Build lightweight project status visibility with a shared browser cockpit, a status doc, and a standup kit.",
     kicker: "Team Workflow",
     excerpt: "For small teams or lateral status sharing, skip the Jira overhead. Build lightweight project status visibility with a shared browser cockpit, a status doc, and a standup kit.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "project status visible lightweight without pm tool",
@@ -5361,7 +5361,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Sharing a link gives a colleague one data point. Sharing an environment gives them context. The difference reshapes incident response, standups, onboarding, and demos.",
     kicker: "Team Workflow",
     excerpt: "Sharing a link gives a colleague one data point. Sharing an environment gives them context. The difference reshapes incident response, standups, onboarding, and demos.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "shared browser context team collaboration environments",
@@ -5401,7 +5401,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Stop scrolling through 47 Slack messages to find yesterday's standup. Build a persistent browser standup kit with sprint board, decisions doc, and today's focus — shareable in one click.",
     kicker: "Agile Workflow",
     excerpt: "Stop scrolling through 47 Slack messages to find yesterday's standup. Build a persistent browser standup kit with sprint board, decisions doc, and today's focus — shareable in one click.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "standup documentation browser tabs slack alternative",
@@ -5445,7 +5445,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "15 minutes between calls. Walk through the PM survival protocol: open your stakeholder cockpit, scan last meeting notes, check dashboard numbers, write your one key message, join.",
     kicker: "Meeting Workflow",
     excerpt: "15 minutes between calls. Walk through the PM survival protocol: open your stakeholder cockpit, scan last meeting notes, check dashboard numbers, write your one key message, join.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "meeting preparation 15 minutes browser fast",
@@ -5489,7 +5489,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Active work and reference material have different access patterns. Stop mixing WIP and reference in your browser — here's how to separate them and why it eliminates the can't-find-anything problem.",
     kicker: "Browser Organisation",
     excerpt: "Active work and reference material have different access patterns. Stop mixing WIP and reference in your browser — here's how to separate them and why it eliminates the can't-find-anything problem.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "work in progress vs reference browser organisation",
@@ -5533,7 +5533,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Most tab managers are free. Walk through the business models behind donation-based, paid-tier, one-time, and ad-funded extensions — and what each means for your data and the tool's longevity.",
     kicker: "Security & Privacy",
     excerpt: "Most tab managers are free. Walk through the business models behind donation-based, paid-tier, one-time, and ad-funded extensions — and what each means for your data and the tool's longevity.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "free browser extension sustainability business model",
@@ -5573,7 +5573,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Browser extensions get discontinued. The Great Suspender, Cluster, Pocket — it happens. Build a contingency plan: regular exports, backup workflows, and a migration path before you need it.",
     kicker: "Ecosystem Risk",
     excerpt: "Browser extensions get discontinued. The Great Suspender, Cluster, Pocket — it happens. Build a contingency plan: regular exports, backup workflows, and a migration path before you need it.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "browser extension discontinued replacement contingency",
@@ -5617,7 +5617,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Most people choose tab tools from YouTube reviews. Use this evaluation framework instead: job-fit test, permissions audit, publisher reliability check, data portability test, and trial protocol.",
     kicker: "Buyer's Guide",
     excerpt: "Most people choose tab tools from YouTube reviews. Use this evaluation framework instead: job-fit test, permissions audit, publisher reliability check, data portability test, and trial protocol.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "browser tab manager evaluation criteria checklist",
@@ -5661,7 +5661,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Every tab manager says it respects your privacy. Learn how to verify: read manifest permissions, interpret privacy policies for extensions, check data transmission with developer tools.",
     kicker: "Security & Privacy",
     excerpt: "Every tab manager says it respects your privacy. Learn how to verify: read manifest permissions, interpret privacy policies for extensions, check data transmission with developer tools.",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-23",
     keywords: [
       "browser extension privacy evaluation tab manager",
@@ -5705,7 +5705,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Learn how the Two-Stax Model separates your writing cockpit from your input sources — so you synthesise before you write, not while you write.",
     excerpt: "Learn how the Two-Stax Model separates your writing cockpit from your input sources — so you synthesise before you write, not while you write.",
     kicker: "Journalism Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "journalist browser tab organisation writing research",
@@ -5745,7 +5745,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Twenty open tabs is not a research system — it's geology. Here's how to build a five-tab story cockpit that holds everything you need and nothing you don't.",
     excerpt: "Twenty open tabs is not a research system — it's geology. Here's how to build a five-tab story cockpit that holds everything you need and nothing you don't.",
     kicker: "Journalism Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "journalist tab management story research browser",
@@ -5785,7 +5785,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Zotero archives your sources permanently. TabStax holds your active working environment. Here's how to use both together without confusing their jobs.",
     excerpt: "Zotero archives your sources permanently. TabStax holds your active working environment. Here's how to use both together without confusing their jobs.",
     kicker: "Research Tools",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "zotero tabstax journalist research workflow",
@@ -5825,7 +5825,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "When three reporters, a photographer, and a copy editor are all working on your feature, status lives in Slack by default. Here's a better structure.",
     excerpt: "When three reporters, a photographer, and a copy editor are all working on your feature, status lives in Slack by default. Here's a better structure.",
     kicker: "Editorial Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "journalist multi-contributor article management browser",
@@ -5865,7 +5865,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Fact-checking is a distinct workflow from writing. It needs its own browser environment: claims list, source archive, status tracker, and editor queries.",
     excerpt: "Fact-checking is a distinct workflow from writing. It needs its own browser environment: claims list, source archive, status tracker, and editor queries.",
     kicker: "Editorial Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "fact checking browser workflow journalist",
@@ -5906,7 +5906,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "By 3:30pm you should have your deadline cockpit open. Here is exactly what goes in it: draft, editor notes, wire context, headline options, legal checklist.",
     excerpt: "By 3:30pm you should have your deadline cockpit open. Here is exactly what goes in it: draft, editor notes, wire context, headline options, legal checklist.",
     kicker: "Journalism Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "newsroom deadline browser workflow template",
@@ -5946,7 +5946,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Open tabs close. Browsers crash. Sources disappear. If your source list lives in your tab bar, you are one crash away from losing your research trail.",
     excerpt: "Open tabs close. Browsers crash. Sources disappear. If your source list lives in your tab bar, you are one crash away from losing your research trail.",
     kicker: "Research Methods",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "journalist source management browser tab risk",
@@ -5986,7 +5986,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The Zotero browser connector archives any citable web page in one click with full metadata and a web snapshot. Here is exactly what it captures and how to use it.",
     excerpt: "The Zotero browser connector archives any citable web page in one click with full metadata and a web snapshot. Here is exactly what it captures and how to use it.",
     kicker: "Research Tools",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "zotero connector browser workflow journalist sources",
@@ -6026,7 +6026,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Google Sheets and Zotero both manage sources but they do different jobs. Here is when a spreadsheet wins, when a library wins, and how to use both together.",
     excerpt: "Google Sheets and Zotero both manage sources but they do different jobs. Here is when a spreadsheet wins, when a library wins, and how to use both together.",
     kicker: "Research Methods",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "journalist source organisation spreadsheet library",
@@ -6066,7 +6066,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Instapaper saves articles for distraction-free reading. Readwise Reader saves and resurfaces highlights on a schedule. Different jobs, different tools.",
     excerpt: "Instapaper saves articles for distraction-free reading. Readwise Reader saves and resurfaces highlights on a schedule. Different jobs, different tools.",
     kicker: "Reading Tools",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "instapaper vs readwise reader comparison journalist",
@@ -6107,7 +6107,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Raindrop.io is a permanent bookmark library. Tab managers are active working environments. Here is how to use both in a two-layer browser system.",
     excerpt: "Raindrop.io is a permanent bookmark library. Tab managers are active working environments. Here is how to use both in a two-layer browser system.",
     kicker: "Browser Systems",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "raindrop io tab manager two layer browser system",
@@ -6147,7 +6147,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Some researchers live entirely in tabs with notes in their head. The migration to tabs plus notes does not have to be dramatic. Here is a gradual approach.",
     excerpt: "Some researchers live entirely in tabs with notes in their head. The migration to tabs plus notes does not have to be dramatic. Here is a gradual approach.",
     kicker: "Research Methods",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "browser tabs notes workflow integration migration",
@@ -6187,7 +6187,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Layer 1 is Zotero for source archiving. Layer 2 is Notion for synthesis and structure. Layer 3 is your browser cockpit for active work. Here is how they connect.",
     excerpt: "Layer 1 is Zotero for source archiving. Layer 2 is Notion for synthesis and structure. Layer 3 is your browser cockpit for active work. Here is how they connect.",
     kicker: "Research Stacks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "zotero notion tabstax research stack journalist",
@@ -6227,7 +6227,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The two-lists method: one list of active cockpits for current work, one archive for everything else. Never let your archive live in your active environment.",
     excerpt: "The two-lists method: one list of active cockpits for current work, one archive for everything else. Never let your archive live in your active environment.",
     kicker: "Browser Organisation",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "active projects archive browser two lists method",
@@ -6267,7 +6267,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Three types of browser work have completely different needs. Research needs quiet. Comms needs responsiveness. Execution needs focus. Separating them is the fix.",
     excerpt: "Three types of browser work have completely different needs. Research needs quiet. Comms needs responsiveness. Execution needs focus. Separating them is the fix.",
     kicker: "Productivity Frameworks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-24",
     keywords: [
       "browser work types research communication execution",
@@ -6307,7 +6307,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Notion stores your docs and decisions. TabStax stores your active browser environment. Learn how these two tools work as separate layers in a real project workflow.",
     excerpt: "Notion stores your docs and decisions. TabStax stores your active browser environment. Learn how these two tools work as separate layers in a real project workflow.",
     kicker: "Tool Integration",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "notion tabstax integration knowledge base workflow",
@@ -6347,7 +6347,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Obsidian keeps your permanent notes. TabStax keeps your active browser cockpit. Here's how to wire them together for a local-first, project-aware daily workflow.",
     excerpt: "Obsidian keeps your permanent notes. TabStax keeps your active browser cockpit. Here's how to wire them together for a local-first, project-aware daily workflow.",
     kicker: "Tool Integration",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "obsidian tabstax integration local notes workflow",
@@ -6387,7 +6387,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A campaign launch has phases. Each phase needs its own browser cockpit. Here's how to structure pre-launch, launch day, and post-launch environments that don't bleed into each other.",
     excerpt: "A campaign launch has phases. Each phase needs its own browser cockpit. Here's how to structure pre-launch, launch day, and post-launch environments that don't bleed into each other.",
     kicker: "Marketing Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "marketing campaign browser organisation launch",
@@ -6427,7 +6427,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Three modes, three browser worlds. Here's how content creators can build separate cockpits for prep, live production, and post-production without bleeding context between them.",
     excerpt: "Three modes, three browser worlds. Here's how content creators can build separate cockpits for prep, live production, and post-production without bleeding context between them.",
     kicker: "Creator Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "content creator browser tab management workflow",
@@ -6467,7 +6467,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "47 tabs, three windows, none of them labelled. Here's the honest escape plan for founders whose browser became a junk drawer — with a concrete audit and sorting method.",
     excerpt: "47 tabs, three windows, none of them labelled. Here's the honest escape plan for founders whose browser became a junk drawer — with a concrete audit and sorting method.",
     kicker: "Founder Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "browser organisation founder startup junk drawer",
@@ -6508,7 +6508,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "When you're bootstrapping with 10 customers, each one deserves a browser cockpit. Here's how per-customer named worlds create clarity and reduce churn for early-stage founders.",
     excerpt: "When you're bootstrapping with 10 customers, each one deserves a browser cockpit. Here's how per-customer named worlds create clarity and reduce churn for early-stage founders.",
     kicker: "Founder Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "bootstrapping founder customer pipeline browser",
@@ -6548,7 +6548,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Your CRM, docs, analytics, email, and team comms all live in the browser. It's not a tool you use — it's the OS you work in. Here's what that actually means.",
     excerpt: "Your CRM, docs, analytics, email, and team comms all live in the browser. It's not a tool you use — it's the OS you work in. Here's what that actually means.",
     kicker: "Product Philosophy",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "browser as work operating system productivity",
@@ -6588,7 +6588,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Multi-role founders context-switch constantly. The world building approach makes each role a distinct browser cockpit — so switching is deliberate, not accidental.",
     excerpt: "Multi-role founders context-switch constantly. The world building approach makes each role a distinct browser cockpit — so switching is deliberate, not accidental.",
     kicker: "Founder Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "role based browser environments productivity founder",
@@ -6628,7 +6628,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A cockpit named 'Project 1' is useless in three weeks. Here are naming conventions for browser Stax that stay meaningful over time, with anti-patterns to avoid.",
     excerpt: "A cockpit named 'Project 1' is useless in three weeks. Here are naming conventions for browser Stax that stay meaningful over time, with anti-patterns to avoid.",
     kicker: "Browser Organisation",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "naming convention browser tab stax cockpit",
@@ -6668,7 +6668,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Board prep is a multi-world problem. Fundraising data, product roadmap, and hiring pipeline each need their own browser cockpit. Here's how to separate them and show up ready.",
     excerpt: "Board prep is a multi-world problem. Fundraising data, product roadmap, and hiring pipeline each need their own browser cockpit. Here's how to separate them and show up ready.",
     kicker: "Founder Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "startup founder board prep browser context switching",
@@ -6709,7 +6709,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Every browser extension claims to respect your privacy. Here's the technical checklist — manifest permissions, network requests, open source checks — to verify those claims.",
     excerpt: "Every browser extension claims to respect your privacy. Here's the technical checklist — manifest permissions, network requests, open source checks — to verify those claims.",
     kicker: "Security & Privacy",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "tab manager privacy evaluation browser extension",
@@ -6749,7 +6749,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A task is vague. A next action is specific enough to start without thinking. Here's why that difference determines what gets done — and how to attach next actions to browser cockpits.",
     excerpt: "A task is vague. A next action is specific enough to start without thinking. Here's why that difference determines what gets done — and how to attach next actions to browser cockpits.",
     kicker: "GTD & Frameworks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "tasks vs next actions gtd difference daily practice",
@@ -6789,7 +6789,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A video has stages: ideation, pre-production, production, post-production. Each stage is a browser world. Here's how to build per-stage Stax that keep your video pipeline moving.",
     excerpt: "A video has stages: ideation, pre-production, production, post-production. Each stage is a browser world. Here's how to build per-stage Stax that keep your video pipeline moving.",
     kicker: "Creator Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "creator workflow browser tab management video stages",
@@ -6829,7 +6829,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Writing a book in the browser means juggling a manuscript, references, character notes, editor comments, and a timeline. Save it all as a named cockpit — and re-enter with full context.",
     excerpt: "Writing a book in the browser means juggling a manuscript, references, character notes, editor comments, and a timeline. Save it all as a named cockpit — and re-enter with full context.",
     kicker: "Writing Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "author book editing browser workflow manuscript",
@@ -6869,7 +6869,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Phase transitions lose momentum. Design, Development, QA, Launch — each handoff is a context reset. Browser cockpits change that: hand off the world, not just the spec doc.",
     excerpt: "Phase transitions lose momentum. Design, Development, QA, Launch — each handoff is a context reset. Browser cockpits change that: hand off the world, not just the spec doc.",
     kicker: "Team Workflow",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-25",
     keywords: [
       "project handoff browser collaboration multi-phase",
@@ -6909,7 +6909,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Learn how the PARA method maps directly to browser tab organisation. Structure your browser worlds as Projects, Areas, Resources, and Archives for clearer thinking.",
     excerpt: "Learn how the PARA method maps directly to browser tab organisation. Structure your browser worlds as Projects, Areas, Resources, and Archives for clearer thinking.",
     kicker: "Productivity Frameworks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "para method browser tab organisation",
@@ -6949,7 +6949,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "GTD's capture-and-clarify loop has a gap: your trusted system lives outside the browser where work happens. Here's how to close it with browser-native next actions.",
     excerpt: "GTD's capture-and-clarify loop has a gap: your trusted system lives outside the browser where work happens. Here's how to close it with browser-native next actions.",
     kicker: "Productivity Frameworks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "gtd browser tabs next action capture workflow",
@@ -6989,7 +6989,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Cognitive offloading is a legitimate strategy — using your environment to reduce mental load. Browser tabs do this, but unstructured tab piles eventually backfire. Here's what the research says.",
     excerpt: "Cognitive offloading is a legitimate strategy — using your environment to reduce mental load. Browser tabs do this, but unstructured tab piles eventually backfire. Here's what the research says.",
     kicker: "Research & Insights",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "cognitive offloading browser tabs external memory",
@@ -7034,7 +7034,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The simplest alternative to tab management tools: one browser window per role. Here's how it works, where it breaks down, and when to move to something more structured.",
     excerpt: "The simplest alternative to tab management tools: one browser window per role. Here's how it works, where it breaks down, and when to move to something more structured.",
     kicker: "DIY Workflows",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "browser windows per project role diy separation",
@@ -7074,7 +7074,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Browser profiles create fully separate environments for work and personal use. Here is the complete trade-off analysis: when profiles work well and when they create more overhead than they solve.",
     excerpt: "Browser profiles create fully separate environments for work and personal use. Here is the complete trade-off analysis: when profiles work well and when they create more overhead than they solve.",
     kicker: "Browser Configuration",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "browser profiles separate work personal productivity",
@@ -7118,7 +7118,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Tab suspension tools like OneTab and Auto Tab Discard solve a browser performance problem. They do not solve an organisation problem. These are different jobs. Here is why the distinction matters.",
     excerpt: "Tab suspension tools like OneTab and Auto Tab Discard solve a browser performance problem. They do not solve an organisation problem. These are different jobs. Here is why the distinction matters.",
     kicker: "Browser Habits",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "tab suspension vs tab organisation productivity",
@@ -7158,7 +7158,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A bookmark saves a URL. Resuming work requires the URL plus context: where you were, what else you had open, and what you were about to do. These are different jobs. Here is the distinction.",
     excerpt: "A bookmark saves a URL. Resuming work requires the URL plus context: where you were, what else you had open, and what you were about to do. These are different jobs. Here is the distinction.",
     kicker: "Browser Habits",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "bookmarking vs browser session restore productivity",
@@ -7198,7 +7198,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Productivity tool switching is a symptom of hiring tools for jobs they cannot do. A Jobs-to-be-Done audit helps you define the job first and find tools that actually do it.",
     excerpt: "Productivity tool switching is a symptom of hiring tools for jobs they cannot do. A Jobs-to-be-Done audit helps you define the job first and find tools that actually do it.",
     kicker: "Productivity Mindset",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "productivity tool switching stop churn jtbd framework",
@@ -7242,7 +7242,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Side projects die at re-entry, not at start. The fix is not more motivation — it is making re-entry cheap enough to work on even on a low-energy day. Here is the continuity-first approach.",
     excerpt: "Side projects die at re-entry, not at start. The fix is not more motivation — it is making re-entry cheap enough to work on even on a low-energy day. Here is the continuity-first approach.",
     kicker: "Project Continuity",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "side project productivity continuity motivation graveyard",
@@ -7286,7 +7286,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Search assumes you know what to look for. Re-entry requires knowing where you were. These are different cognitive operations — and confusing them is costing you time every day.",
     excerpt: "Search assumes you know what to look for. Re-entry requires knowing where you were. These are different cognitive operations — and confusing them is costing you time every day.",
     kicker: "Browser Habits",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "browser search vs context re-entry knowledge work",
@@ -7326,7 +7326,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "If you open the same 12 tabs every morning, you're spending 5-10 minutes per day on pure overhead. That's 20-40 hours per year. Here is the one-click fix.",
     excerpt: "If you open the same 12 tabs every morning, you're spending 5-10 minutes per day on pure overhead. That's 20-40 hours per year. Here is the one-click fix.",
     kicker: "Browser Habits",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "reopening same browser tabs every morning routine",
@@ -7370,7 +7370,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A concrete, fear-free method for reducing 200 browser tabs to 5 focused project worlds. Triage instead of delete. Named worlds instead of tab piles. A max-worlds constraint that holds.",
     excerpt: "A concrete, fear-free method for reducing 200 browser tabs to 5 focused project worlds. Triage instead of delete. Named worlds instead of tab piles. A max-worlds constraint that holds.",
     kicker: "Tab Management",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "reduce browser tabs focused productivity method",
@@ -7414,7 +7414,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Notion, Obsidian, and Roam are excellent for capturing what you have learned. They are not where knowledge work happens. The gap between notes and browser is costing you context every day.",
     excerpt: "Notion, Obsidian, and Roam are excellent for capturing what you have learned. They are not where knowledge work happens. The gap between notes and browser is costing you context every day.",
     kicker: "Tool Philosophy",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "note taking vs browser workflow gap productivity",
@@ -7454,7 +7454,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The GTD weekly review is the ritual that keeps your trusted system current. Here is a 20-minute protocol for applying it to your browser worlds: review, update, archive, and create.",
     excerpt: "The GTD weekly review is the ritual that keeps your trusted system current. Here is a 20-minute protocol for applying it to your browser worlds: review, update, archive, and create.",
     kicker: "GTD & Frameworks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-26",
     keywords: [
       "gtd weekly review browser cockpit organisation",
@@ -7498,7 +7498,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Six courses, 40 tabs each, no separation — that is the overwhelm spiral. Learn how to build one browser cockpit per course to reclaim focus and actually finish work.",
     excerpt: "Six courses, 40 tabs each, no separation — that is the overwhelm spiral. Learn how to build one browser cockpit per course to reclaim focus and actually finish work.",
     kicker: "Student Life",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "student browser tab management courses separation",
@@ -7538,7 +7538,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The blank screen before an essay is rarely about not knowing what to write. It is about not having the right environment open. Here is how to build a writing launch pad that gets you started.",
     excerpt: "The blank screen before an essay is rarely about not knowing what to write. It is about not having the right environment open. Here is how to build a writing launch pad that gets you started.",
     kicker: "Student Life",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "student assignment re-entry writing task initiation",
@@ -7578,7 +7578,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Two levels of browser organisation for students: persistent module cockpits for the whole semester and temporary assignment cockpits for each sprint. Here is how to manage both.",
     excerpt: "Two levels of browser organisation for students: persistent module cockpits for the whole semester and temporary assignment cockpits for each sprint. Here is how to manage both.",
     kicker: "Student Life",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "student browser organisation per module assignment",
@@ -7622,7 +7622,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Family admin in 2026 is scattered across 12 or more systems. A browser cockpit consolidates the portals you actually use into one named world you and your partner can share.",
     excerpt: "Family admin in 2026 is scattered across 12 or more systems. A browser cockpit consolidates the portals you actually use into one named world you and your partner can share.",
     kicker: "Family Life",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "family admin browser organisation school portals",
@@ -7662,7 +7662,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Caregiving involves 15 or more systems: GP portals, specialist referrals, benefits applications, legal documents. Every session starts with retrieval. Here is a better approach.",
     excerpt: "Caregiving involves 15 or more systems: GP portals, specialist referrals, benefits applications, legal documents. Every session starts with retrieval. Here is a better approach.",
     kicker: "Caregiver Support",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "caregiver browser organisation tools legal benefits",
@@ -7704,7 +7704,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Travel planning is 40 maybe-tabs, three windows, and a spreadsheet one week out of date. A named browser cockpit per trip keeps research, shortlists, and bookings in one place.",
     excerpt: "Travel planning is 40 maybe-tabs, three windows, and a spreadsheet one week out of date. A named browser cockpit per trip keeps research, shortlists, and bookings in one place.",
     kicker: "Life Admin",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "travel planning browser tab management cockpit",
@@ -7744,7 +7744,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Executing an estate is a months-long project with episodic sessions. A dedicated cockpit with all portals, documents, and the current next action makes each session a resumption, not a restart.",
     excerpt: "Executing an estate is a months-long project with episodic sessions. A dedicated cockpit with all portals, documents, and the current next action makes each session a resumption, not a restart.",
     kicker: "Life Admin",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "estate executor browser admin workflow",
@@ -7784,7 +7784,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The pension you have not reviewed, the will you have not written, the side project that is always next month. A named container with one next action is the first real step.",
     excerpt: "The pension you have not reviewed, the will you have not written, the side project that is always next month. A named container with one next action is the first real step.",
     kicker: "Life Projects",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "quiet crisis midlife project productivity named container",
@@ -7824,7 +7824,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Genealogy research is tab chaos: census databases, parish records, DNA services, family trees. Two people with similar names in 1860 will derail your research without organisation.",
     excerpt: "Genealogy research is tab chaos: census databases, parish records, DNA services, family trees. Two people with similar names in 1860 will derail your research without organisation.",
     kicker: "Hobby Projects",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "genealogy research browser tab management organisation",
@@ -7864,7 +7864,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A DM running three campaigns has three completely different worlds. Mixing NPCs, maps, and plot threads across campaigns kills immersion. Here is how to keep them separated.",
     excerpt: "A DM running three campaigns has three completely different worlds. Mixing NPCs, maps, and plot threads across campaigns kills immersion. Here is how to keep them separated.",
     kicker: "Hobby Projects",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "dungeon master browser campaign organisation tools",
@@ -7906,7 +7906,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "International relocation is a multi-year project: visas, housing, schools, banks, healthcare. A move planning cockpit keeps each phase organised and prevents anything from falling through.",
     excerpt: "International relocation is a multi-year project: visas, housing, schools, banks, healthcare. A move planning cockpit keeps each phase organised and prevents anything from falling through.",
     kicker: "Life Admin",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "moving abroad planning browser tabs organisation expat",
@@ -7946,7 +7946,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Tax season means HMRC, bank statements across multiple portals, pension, investments, expense tracker. Every session re-finds these. A financial cockpit saves that time across the season.",
     excerpt: "Tax season means HMRC, bank statements across multiple portals, pension, investments, expense tracker. Every session re-finds these. A financial cockpit saves that time across the season.",
     kicker: "Life Admin",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "tax season browser organisation financial cockpit",
@@ -7986,7 +7986,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Parenting in 2026 means the school portal, dinner money app, ParentPay, Google Classroom, and PE kit reminders — all in separate systems. One browser cockpit brings them together.",
     excerpt: "Parenting in 2026 means the school portal, dinner money app, ParentPay, Google Classroom, and PE kit reminders — all in separate systems. One browser cockpit brings them together.",
     kicker: "Family Life",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "school admin browser organisation family portals",
@@ -8026,7 +8026,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Community organisations lose volunteers because onboarding is a 40-minute verbal dump of URLs no-one can retain. A shared browser cockpit makes onboarding self-serve and sticky.",
     excerpt: "Community organisations lose volunteers because onboarding is a 40-minute verbal dump of URLs no-one can retain. A shared browser cockpit makes onboarding self-serve and sticky.",
     kicker: "Community Work",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "volunteer onboarding browser shared workspace cockpit",
@@ -8066,7 +8066,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "The novel, the career change, the community solar project that is always next month. Not a motivation problem — an infrastructure one. Here is how to give the dream a container.",
     excerpt: "The novel, the career change, the community solar project that is always next month. Not a motivation problem — an infrastructure one. Here is how to give the dream a container.",
     kicker: "Life Projects",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-27",
     keywords: [
       "second act career change hobby project productivity",
@@ -8106,7 +8106,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Link your Notion project brief to your browser cockpit for instant context recovery. A practical template connecting your decision docs to your working environment.",
     excerpt: "Link your Notion project brief to your browser cockpit for instant context recovery. A practical template connecting your decision docs to your working environment.",
     kicker: "Templates & Integrations",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "notion template project brief tabstax link",
@@ -8146,7 +8146,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Add an Active Cockpit field to your Obsidian daily note template. Recover your exact working context from any historical date with one link.",
     excerpt: "Add an Active Cockpit field to your Obsidian daily note template. Recover your exact working context from any historical date with one link.",
     kicker: "Templates & Integrations",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "obsidian daily note template cockpit link tabstax",
@@ -8186,7 +8186,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Build a research stack that separates source archiving, synthesis, and active execution. Zotero holds your sources, Notion holds your thinking, your cockpit holds your current tabs.",
     excerpt: "Build a research stack that separates source archiving, synthesis, and active execution. Zotero holds your sources, Notion holds your thinking, your cockpit holds your current tabs.",
     kicker: "Research Stacks",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "three layer research stack zotero notion tabstax",
@@ -8226,7 +8226,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Move from OneTab's flat tab lists to named, actionable workspaces. A practical step-by-step guide to migrating your OneTab archive into a structured system.",
     excerpt: "Move from OneTab's flat tab lists to named, actionable workspaces. A practical step-by-step guide to migrating your OneTab archive into a structured system.",
     kicker: "Migration Guides",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "onetab migration workspace tool step by step",
@@ -8266,7 +8266,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Session Buddy collections are named but often become catch-alls. A practical migration guide to move from Session Buddy to structured, actionable browser workspaces.",
     excerpt: "Session Buddy collections are named but often become catch-alls. A practical migration guide to move from Session Buddy to structured, actionable browser workspaces.",
     kicker: "Migration Guides",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "session buddy migration workspace named cockpit",
@@ -8306,7 +8306,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Browser profiles create completely separate environments for work and personal browsing. A complete trade-off guide covering the edge cases most tutorials skip.",
     excerpt: "Browser profiles create completely separate environments for work and personal browsing. A complete trade-off guide covering the edge cases most tutorials skip.",
     kicker: "Browser Configuration",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "browser profiles work personal worlds trade-offs",
@@ -8346,7 +8346,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Most browser organisation falls apart at naming. A practical guide to cockpit naming conventions, anti-patterns, a decision tree, and a quarterly audit ritual.",
     excerpt: "Most browser organisation falls apart at naming. A practical guide to cockpit naming conventions, anti-patterns, a decision tree, and a quarterly audit ritual.",
     kicker: "Browser Organisation",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "browser cockpit naming convention organisation",
@@ -8386,7 +8386,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Multi-role professionals context-switch constantly but rarely intentionally. Building explicit browser worlds for each role reduces cognitive collision and sharpens execution.",
     excerpt: "Multi-role professionals context-switch constantly but rarely intentionally. Building explicit browser worlds for each role reduces cognitive collision and sharpens execution.",
     kicker: "Advanced Patterns",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "role based environments browser productivity explicit",
@@ -8426,7 +8426,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Three fundamentally different types of browser work require different environments. Understanding the taxonomy is the first step to ending the junk-drawer browser problem.",
     excerpt: "Three fundamentally different types of browser work require different environments. Understanding the taxonomy is the first step to ending the junk-drawer browser problem.",
     kicker: "Framework Thinking",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "browser work types taxonomy research communication",
@@ -8466,7 +8466,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Most tab managers are free. Understanding how they survive — and what happens when they don't — is essential for choosing tools you can depend on long-term.",
     excerpt: "Most tab managers are free. Understanding how they survive — and what happens when they don't — is essential for choosing tools you can depend on long-term.",
     kicker: "Ecosystem Thinking",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "free browser extension business model sustainability",
@@ -8506,7 +8506,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "A personal runbook treats life admin as repeatable processes with documented procedures. Build one to stop reconstructing context every time an annual or rare event recurs.",
     excerpt: "A personal runbook treats life admin as repeatable processes with documented procedures. Build one to stop reconstructing context every time an annual or rare event recurs.",
     kicker: "Life Systems",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "personal runbook life admin system browser",
@@ -8546,7 +8546,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "One list for active cockpits, one for archives. The discipline of never letting completed work live in your active browser environment changes how clearly you see your current workload.",
     excerpt: "One list for active cockpits, one for archives. The discipline of never letting completed work live in your active browser environment changes how clearly you see your current workload.",
     kicker: "Browser Organisation",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "active projects archive browser two lists organisation",
@@ -8586,7 +8586,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "Sticky notes work because they're always in your visual field. Digital reminders fail to replace them because they disappear. Build a digital system that preserves salience.",
     excerpt: "Sticky notes work because they're always in your visual field. Digital reminders fail to replace them because they disappear. Build a digital system that preserves salience.",
     kicker: "Capture Systems",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "replace sticky notes digital capture salience productivity",
@@ -8626,7 +8626,7 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
     seoDescription: "If you open the same 10+ tabs every morning, you have an undocumented daily environment. Name it, save it, open it in one click. Here's the complete protocol.",
     excerpt: "If you open the same 10+ tabs every morning, you have an undocumented daily environment. Name it, save it, open it in one click. Here's the complete protocol.",
     kicker: "Browser Habits",
-    author: "TabStax Team",
+    author: "Colm Byrne",
     date: "2026-02-28",
     keywords: [
       "daily browser tabs morning routine escape productivity",
@@ -8658,5 +8658,93 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
         a: "It should reflect your actual first action, which might be consistent (email triage every morning) or variable (depending on what's happening that week). Update it at the end of each day to reflect tomorrow's actual first action. This becomes the habit of leaving yourself a note for tomorrow — which is its own useful practice beyond the cockpit itself."
       }
     ]
+  },
+  {
+    slug: "ai-making-us-more-distracted-disorganized",
+    title: "How AI Is Making Us More Distracted — And Why Traditional Tools Are Failing",
+    seoTitle: "AI Is Making Us More Distracted: Here's the Evidence",
+    seoDescription: "AI tools multiplied the surfaces where work lives — and traditional tools weren't built for it. Here's what the research says and what actually helps.",
+    kicker: "Future of Work",
+    author: "Colm Byrne",
+    date: "2026-03-01",
+    excerpt: "AI tools were supposed to consolidate the chaos. Instead, most people who use them daily report feeling more fragmented — more tabs open, more half-finished threads, more mornings starting with 'wait, where was I?' Here's why, and what actually helps.",
+    keywords: [
+      "ai distraction productivity",
+      "ai tools disorganized work",
+      "browser tab management ai era",
+      "context switching ai workflow",
+      "ai fragmentation knowledge work"
+    ],
+    faq: [
+      {
+        q: "Does AI actually make knowledge workers less productive?",
+        a: "The research is genuinely mixed. Studies on AI-assisted coding show meaningful productivity gains on well-defined tasks. Studies on general knowledge work show more variable results, with fragmentation and context-switching costs often offsetting output gains. The honest answer is: AI makes specific tasks faster and increases total fragmentation. Net productivity depends heavily on whether you have a workflow that manages the fragmentation."
+      },
+      {
+        q: "Why do traditional tab managers fail in the AI era specifically?",
+        a: "Traditional tab managers were designed to solve two problems: saving URLs for later (bookmarks), and recovering from browser crashes (session managers). Neither problem involves intent, next actions, or the relationship between a browser session and the AI conversations that accompanied it. The AI era created a third problem — capturing working state across multiple AI surfaces — that traditional tab managers were not designed to address."
+      },
+      {
+        q: "What is the context reconstruction tax?",
+        a: "The context reconstruction tax is the cognitive and time cost of rebuilding your working state after you leave a project and return to it later. Before AI tools, this was primarily about re-reading docs and code. In the AI era, it also includes reconstructing the reasoning thread from AI conversations that have no permanent home in the project, re-discovering which browser tabs were relevant, and figuring out what the next concrete action was."
+      },
+      {
+        q: "Is this problem worse for certain kinds of work?",
+        a: "Yes. Work that involves extended AI-assisted reasoning — research, writing, complex coding, design — is significantly more affected than work with clear deliverables and short cycles. The more AI surfaces involved in a project, the higher the reconstruction cost when you return to it."
+      },
+      {
+        q: "Can I just use one AI tool to reduce fragmentation?",
+        a: "Constraining your AI tool use reduces one dimension of fragmentation but not the underlying problem. Even within a single AI tool, each conversation is a separate context that has no home in the project it served. The problem is not which AI tools you use — it is whether the container around your working session captures intent and next actions, regardless of how many AI tools are inside it."
+      },
+      {
+        q: "What does a good AI-era project container actually look like?",
+        a: "It holds the browser tabs for the project — including AI conversation tabs — in a named, returnable session. It attaches a next action that you wrote at the end of your last session, specific enough to act on without re-reading everything. It is fast to reopen and fast to update. The re-entry experience should take seconds, not minutes of reconstruction."
+      }
+    ],
+    content:
+      "Something strange happened to knowledge work between 2023 and 2025. AI tools were supposed to consolidate the chaos — summarise the docs, draft the emails, answer the research questions. Instead, most people who use AI daily report feeling *more* fragmented, not less. More tabs open, not fewer. More half-finished threads, not fewer. More mornings that start with: \"Wait, where was I?\"\n\n" +
+      "The phrase *ai distraction productivity* has become a genuine search query because the experience is real and widespread. This post makes the case that the problem isn't the AI tools themselves — they are genuinely powerful — but that the infrastructure around them was designed for a fundamentally different era of work. And traditional tools are failing to bridge that gap.\n\n" +
+      "## Part 1: AI Tools Multiplied Our Surfaces, Not Our Focus\n\n" +
+      "Before AI assistants became daily work surfaces, a typical knowledge worker might move between three or four core tools in a session: a code editor, a browser, a document editor, a communication app. The surfaces were stable. You knew where your work lived.\n\n" +
+      "Now, a single project might touch ChatGPT (to brainstorm the initial framing), Claude (to refine the argument and check logic), Perplexity (to pull supporting research), Notion AI (to draft the final document), and Gemini (to summarise a long thread). Each of those interactions produces outputs — often good outputs — but none of them are tethered to a shared project container. The work starts in one AI, gets refined in another, lands in a document that exists somewhere in a third tool, and the browser context that connected all of it is gone the next morning.\n\n" +
+      "This is not a hypothetical. A 2023 Microsoft Work Trend Index report found that the average knowledge worker switches between apps and services 1,200 times per day — and AI tools have only added more switching destinations, not fewer. Gloria Mark's research at UC Irvine, which established that it takes an average of 23 minutes to fully regain focus after an interruption, predates the AI assistant era entirely. We are now living with a compounded version of that problem: more interruption surfaces, each one producing its own thread of context that must later be reconstructed.\n\n" +
+      "The mechanism is worth naming precisely. Every AI conversation creates a context artifact — a thread with reasoning, decisions, and partial conclusions — that has no permanent home. ChatGPT conversations live in ChatGPT. Claude conversations live in Claude. They are not linkable to the project they served. They are not searchable alongside the browser tabs that were open during the conversation. They exist in their own orphaned namespace, and when you need to pick up the work again, you face what we call the **context reconstruction tax**: the cognitive and time cost of rebuilding the state you were in before you left.\n\n" +
+      "That tax didn't exist before AI tools became daily work surfaces. Reconstructing context from a Google Doc is annoying but manageable — you scroll back through the doc. Reconstructing context from a Claude conversation is harder, because the conversation itself might reference four other tabs, a Perplexity search result, and a half-formed idea you had while reading a GitHub issue. All of that is gone unless you deliberately captured it.\n\n" +
+      "## Part 2: Traditional Tools Were Built for a Different Era\n\n" +
+      "The tools that knowledge workers use to manage browser context were designed for problems that no longer represent the whole picture.\n\n" +
+      "**Bookmarks** were designed to archive single resources — a reference URL you might want again. They were not designed to capture \"I am mid-way through an AI-assisted refactor, and this tab, this conversation, and this PR review are the three things that together constitute my working state.\" A bookmark saves a URL. It does not save intent, context, or the relationship between resources.\n\n" +
+      "**OneTab** solves a real problem — it collapses a sprawling browser session into a list when you need to free up memory. But it saves URLs, not AI conversation context. The ChatGPT thread that was central to your working session becomes a link that, when clicked, reopens to a conversation interface with no indication of where you left off or what the conversation was *for*. The URL is preserved. The reasoning is not.\n\n" +
+      "**Session Buddy** is excellent at crash recovery. If your browser closes unexpectedly, it restores the tabs. But crash recovery and context recovery are different problems. Session Buddy brings back the tabs. It does not bring back the reasoning thread that connected them, the next action you were about to take, or the question you were in the middle of asking.\n\n" +
+      "**Chrome tab groups** let you colour-code and name a set of open tabs, which is a genuine step forward. But they have no intent layer. A tab group named \"Project X\" tells you nothing about what you were doing in Project X, what you decided, or what comes next. The group is a container with no memory.\n\n" +
+      "**Notion AI** is interesting because it sits inside a PKM tool explicitly designed for knowledge capture. But its failure mode in the AI era is specific: it captures the *output* of your AI-assisted work session — the final draft, the cleaned-up notes — without capturing the *working state* that produced it. The browser tabs you had open while writing, the Claude conversation that helped you structure the argument, the Perplexity search that surfaced the key statistic — none of that lives in Notion. Notion has the conclusion; the cockpit that produced it has vanished.\n\n" +
+      "The pattern across all of these tools is consistent: they solve the problem they were designed for, but the AI era created a new problem they weren't designed for. The new problem is **context debt**.\n\n" +
+      "## Part 3: The Specific Mechanism — AI Creates Context Debt\n\n" +
+      "Context debt is a concept borrowed loosely from technical debt: it accumulates silently, costs nothing today, and becomes expensive later.\n\n" +
+      "Here is what context debt looks like in practice. You open a Claude conversation to help you think through a product decision. You spend 40 minutes in that conversation. You arrive at a clear recommendation. You copy the key points into a Notion doc. You close the Claude tab.\n\n" +
+      "Three days later, a colleague asks a follow-up question about that decision. You have the Notion doc. You do not have the reasoning thread that produced it — the five alternatives you considered, the constraint that ruled out option B, the specific phrasing that helped you finally articulate the tradeoff. You are now in debt. The cost of repaying it is either re-reading a Notion doc that doesn't contain the reasoning, or spending twenty minutes doing cognitive archaeology through your own vague memory.\n\n" +
+      "This is not a failure of discipline. It is a structural failure of the tools. No current AI assistant has a native \"save this conversation to project X\" button that links the conversation to a browser working session. The AI era created a new kind of working state: distributed across multiple AI surfaces, browser tabs, and document tools, held together by nothing except the memory of the person doing the work.\n\n" +
+      "Research on interruption and context switching suggests that the cognitive cost of reconstruction scales with the complexity of the interrupted task. A 2022 study published in *Computers in Human Behavior* found that complex, multi-step cognitive tasks had significantly higher recovery costs than simple tasks after interruption. AI-assisted work is by nature complex and multi-step. Each AI tool in the chain adds another layer that must be reconstructed.\n\n" +
+      "## Part 4: What Actually Helps (Without Pretending There's an Easy Fix)\n\n" +
+      "Before getting to tooling, it is worth being honest about what this problem actually requires. There is no tool that will automatically track your AI conversations, link them to your browser context, and present you with a perfect project state each morning. That product does not exist. What exists are partial solutions that, combined with deliberate habits, reduce the reconstruction tax significantly.\n\n" +
+      "The most durable thing that helps is a **browser-native context management habit**: treating the browser window, not the AI tool, as the primary cockpit for a project. This means keeping the AI conversation tab inside the same window as the production tabs it relates to, rather than letting AI conversations accumulate in a separate browser window or session.\n\n" +
+      "The second thing that helps is a **session-close ritual** that AI workflows particularly benefit from. Before closing a set of AI-assisted tabs, spend ninety seconds capturing three things: what you were doing, what you decided, and what the single next action is. The AI conversation summary can seed this, but it should not be the source of truth — AI summaries tend to capture what was discussed, not what you specifically decided to do next.\n\n" +
+      "The third thing that helps is **explicit project containers** that outlive any individual AI session. This can be as simple as a named browser window that you return to for a specific project, with the discipline to keep that window's tabs stable until the project is done. The container forces a question: \"Does this tab belong to this project?\" That question has clarifying value.\n\n" +
+      "What TabStax attempts to do is make the container native to the browser session rather than something you maintain through discipline alone. When you name a Stax — a saved browser session with a name, tags, and an attached next action — you are answering the question \"what is this window for?\" at the moment you save it. When you return to that Stax three days later, you reopen not just the tabs but the intent that organised them. The AI conversation tab that was open when you saved is there. The next action you wrote is there. The cognitive re-entry cost is lower because you preserved the context when it was fresh, rather than trying to reconstruct it when it is stale.\n\n" +
+      "You can read more about how this applies to [specific AI-assisted workflows in our use cases section](/use-cases) and about [the broader problem of context switching in knowledge work](/blog/context-switching-cost).\n\n" +
+      "## Part 5: A Practical AI Workflow Hygiene Protocol\n\n" +
+      "Here is a concrete protocol, tested against the failure modes described above.\n\n" +
+      "**1. One named project cockpit per AI-assisted project.**\n\nWhen you begin an AI-assisted work session for a specific project, open or return to a dedicated browser window for that project. Give it a name you will recognise. This window is the cockpit. Every tab that belongs to that project — including the AI conversation tabs — lives in this window.\n\n" +
+      "**2. The AI conversation tab lives inside the cockpit.**\n\nResist the habit of keeping all AI conversations in one browser window and all production tabs in another. That separation makes the AI conversation feel like a support tool rather than a core part of the working session. Keep them together.\n\n" +
+      "**3. Before closing the cockpit, write one next action.**\n\nThis is the highest-leverage intervention. The next action should be specific enough that you can act on it without opening any of the closed tabs. \"Continue refactoring the auth module\" is not specific enough. \"Move the `validateToken` call from the middleware to the service layer and check that the existing test still passes\" is specific enough.\n\n" +
+      "**4. Use the AI conversation summary as the next action seed, not the source of truth.**\n\nMost AI assistants will summarise a conversation if you ask. That summary is useful as a starting point. But AI summaries are optimised for coverage, not for your specific next action. The summary gives you the raw material; you write the next action.\n\n" +
+      "**5. Treat AI conversation links as first-class project artifacts.**\n\nIf you are sharing a project with a collaborator, the Claude or ChatGPT conversation that produced a key decision is as relevant as the Notion doc that recorded it. Share both. Link both in whatever project container you use.\n\n" +
+      "This protocol will not eliminate context debt entirely. But it reduces the frequency and the cost of reconstruction, which is the realistic goal.\n\n" +
+      "## Try TabStax\n\n" +
+      "If AI fragmentation is a problem you recognise — more surfaces, more half-finished threads, more mornings starting with \"wait, where was I?\" — TabStax was built for exactly this. It saves your browser session as a named project with tabs, tags, and a next action attached, so you can close everything and come back days later knowing exactly where to start. [Try TabStax free](https://tabstax.app) and cut the reconstruction tax on your AI-assisted work.\n\n" +
+      "## The Honest Summary\n\n" +
+      "AI tools are not making us distracted because they are poorly designed. They are making us more fragmented because each one is well-designed for its own surface and poorly integrated with every other surface in the workflow. ChatGPT is a good AI assistant. Claude is a good AI assistant. Perplexity is a good research tool. None of them were designed to coordinate with the browser session that surrounds them, the project context that organised them, or the next action that should follow from them.\n\n" +
+      "Traditional tools — bookmarks, tab managers, session restorers, PKM tools — were designed for a world where work had cleaner boundaries. That world is gone. The AI era created a new kind of working state: distributed across multiple AI surfaces, browser tabs, and document tools, held together by nothing except the memory of the person doing the work.\n\n" +
+      "The reconstruction tax for that working state is real, measurable in minutes and cognitive effort per re-entry, and largely ignored by the current generation of productivity tools. The solution is not to use fewer AI tools — that would be throwing away genuine value. The solution is to build better cockpits around them: named, intentional project containers that hold the AI conversation alongside the production tabs, attach a next action before the session closes, and make re-entry cheaper than reconstruction.\n\n" +
+      "That is a harder problem than \"just save your tabs.\" It is also a more important one."
   }
 ];
