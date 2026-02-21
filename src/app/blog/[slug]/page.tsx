@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { blogPosts } from "@/data/blog-posts";
+import { readingTime } from "@/lib/reading-time";
 import type { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
@@ -70,6 +71,13 @@ export default function BlogPostPage({
   const post = blogPosts.find((p) => p.slug === params.slug);
   if (!post) notFound();
 
+  const relatedPosts = blogPosts
+    .filter((p) => p.slug !== post.slug && p.kicker === post.kicker)
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
+
+  const mins = readingTime(post.content);
+
   function formatDate(dateStr: string) {
     return new Date(dateStr).toLocaleDateString("en-US", {
       year: "numeric",
@@ -78,8 +86,35 @@ export default function BlogPostPage({
     });
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.seoTitle,
+    description: post.seoDescription,
+    author: {
+      "@type": "Person",
+      name: post.author,
+    },
+    datePublished: post.date,
+    dateModified: post.date,
+    url: `https://www.tabstax.app/blog/${post.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "TabStax",
+      url: "https://www.tabstax.app",
+    },
+    keywords: post.keywords.join(", "),
+    articleSection: post.kicker,
+  };
+
   return (
     <section className="bg-cream min-h-screen">
+      {/* JSON-LD structured data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
 
         {/* Back link */}
@@ -97,10 +132,12 @@ export default function BlogPostPage({
         <h1 className="font-heading text-3xl sm:text-4xl font-bold text-charcoal mb-4 leading-tight">
           {post.title}
         </h1>
-        <div className="flex items-center gap-3 text-sm text-warm-gray mb-10">
-          <time>{formatDate(post.date)}</time>
-          <span>·</span>
+        <div className="flex flex-wrap items-center gap-3 text-sm text-warm-gray mb-10">
+          <time dateTime={post.date}>{formatDate(post.date)}</time>
+          <span aria-hidden>·</span>
           <span>{post.author}</span>
+          <span aria-hidden>·</span>
+          <span>{mins} min read</span>
         </div>
 
         {/* Body */}
@@ -147,13 +184,49 @@ export default function BlogPostPage({
           </div>
         )}
 
+        {/* Related posts */}
+        {relatedPosts.length > 0 && (
+          <div className="mt-16 border-t border-charcoal/10 pt-10">
+            <h2 className="font-heading text-xl font-bold text-charcoal mb-6">
+              More in {post.kicker}
+            </h2>
+            <div className="space-y-5">
+              {relatedPosts.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={`/blog/${related.slug}`}
+                  className="group block"
+                >
+                  <p className="font-semibold text-charcoal group-hover:text-terracotta transition-colors leading-snug">
+                    {related.title}
+                  </p>
+                  <p className="text-sm text-warm-gray mt-1">
+                    {new Date(related.date).toLocaleDateString("en-US", {
+                      year: "numeric",
+                      month: "short",
+                      day: "numeric",
+                    })}{" "}
+                    · {readingTime(related.content)} min read
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Bottom nav */}
-        <div className="mt-16 border-t border-charcoal/10 pt-8">
+        <div className="mt-16 border-t border-charcoal/10 pt-8 flex items-center justify-between">
           <Link
             href="/blog"
             className="text-sm font-semibold text-amber hover:text-terracotta transition-colors"
           >
             ← Back to all posts
+          </Link>
+          <Link
+            href={`/blog?category=${encodeURIComponent(post.kicker)}`}
+            className="text-sm font-semibold text-amber hover:text-terracotta transition-colors"
+          >
+            More: {post.kicker} →
           </Link>
         </div>
       </div>
