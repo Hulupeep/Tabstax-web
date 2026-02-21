@@ -19,7 +19,7 @@ export const blogPosts: BlogPost[] = [
     seoTitle: "Fewer Browser Tabs, Better Focus: The Paradox of Choice",
     seoDescription:
       "Open tabs are deferred decisions. Learn why constraining your browser workspace reduces cognitive load, and how to put projects down without losing them.",
-    date: "2026-02-21",
+    date: "2024-12-08",
     author: "Colm Byrne",
     kicker: "Digital Minimalism",
     keywords: [
@@ -133,7 +133,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "When Productivity Tools Make Teams Less Productive",
     seoDescription:
       "Most teams don't have too many tools by accident. Here's why they backfire, what the missing tab layer reveals, and how to fix context handoffs.",
-    date: "2026-02-19",
+    date: "2024-12-10",
     author: "Colm Byrne",
     kicker: "Team Dynamics",
     keywords: [
@@ -243,7 +243,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Can You Do Deep Work With 60 Browser Tabs Open?",
     seoDescription:
       "Deep Work is solid advice, but it underestimates modern context switching. Here's a realistic version of deep focus built for fragmented workdays.",
-    date: "2026-02-16",
+    date: "2024-12-13",
     author: "Colm Byrne",
     kicker: "Focus & Flow",
     keywords: [
@@ -369,7 +369,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Neurodivergent Productivity: Why Most Tools Fail",
     seoDescription:
       "Most productivity tools were built for linear work. Here's why they fail neurodivergent workers, and what structured flexibility looks like in practice.",
-    date: "2026-02-14",
+    date: "2024-12-15",
     author: "Colm Byrne",
     kicker: "Neurodiversity",
     keywords: [
@@ -494,7 +494,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Closing a Tab Feels Like Erasing a Memory: The External Brain Problem",
     seoTitle: "Why Closing Browser Tabs Feels Like Losing a Memory",
     seoDescription: "Discover why closing browser tabs triggers anxiety for many people. The external brain browser tabs phenomenon is real — here's the science and the fix.",
-    date: "2026-02-11",
+    date: "2024-12-18",
     author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
@@ -644,7 +644,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Tab Hoarder Clean Slate Protocol: No Shame, No Loss",
     seoDescription:
       "200+ tabs and too anxious to close them? This tab hoarder clean up method walks you through audit, triage, and archiving without losing anything important.",
-    date: "2026-02-09",
+    date: "2024-12-20",
     author: "Colm Byrne",
     kicker: "Tab Management",
     keywords: [
@@ -809,7 +809,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Why Auto-Closing Browser Tabs Backfires for Some People",
     seoDescription:
       "Auto close tabs tools like Tab Wrangler work for some people and cause real loss for others. Here's the difference — and a better alternative for every brain type.",
-    date: "2026-02-06",
+    date: "2024-12-23",
     author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
@@ -968,7 +968,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "App Fatigue: Why Productivity Tools Never Stick",
     seoDescription:
       "Productivity app fatigue is real and documented. Here's why tools don't stick — and what research on habit formation says about the tools that actually do.",
-    date: "2026-02-04",
+    date: "2024-12-25",
     author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
@@ -1134,7 +1134,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "The Two-Screen Dashboard Habit: Priority You Can't Ignore",
     seoDescription:
       "An attention dashboard adhd productivity habit that keeps your priorities visible all day. Here's how to set one up and stop it going stale within a week.",
-    date: "2026-02-01",
+    date: "2024-12-28",
     author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
@@ -1289,7 +1289,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Start Signal Checklist: Externalise Your First Step",
     seoDescription:
       "Task initiation adhd first step checklist — a practical system for encoding the first concrete action into every project so re-entry is never a guessing game.",
-    date: "2026-01-30",
+    date: "2024-12-30",
     author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
@@ -1491,7 +1491,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Why Context Switching Costs More Than You Think at Work",
     seoDescription:
       "The 23-minute stat isn't the real cost. The real cost of context switching is re-entry — rebuilding where you were. Here's what actually fixes it.",
-    date: "2026-01-27",
+    date: "2025-01-02",
     author: "Colm Byrne",
     kicker: "Productivity",
     keywords: [
@@ -1621,7 +1621,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Re-entry vs Discipline: Stop Moralising Productivity",
     seoDescription:
       "Discipline isn't the productivity fix — system design is. Learn why productivity systems vs willpower adhd debates miss the point, and what actually helps.",
-    date: "2026-01-25",
+    date: "2025-01-04",
     author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
@@ -1785,7 +1785,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Why Some People Never Close Browser Tabs (And What Helps)",
     seoDescription:
       "Tab hoarding psychology explained without judgment. Understand why tab hoarding why cant close tabs is a memory system failure — and what actually replaces it.",
-    date: "2026-01-22",
+    date: "2025-01-07",
     author: "Colm Byrne",
     kicker: "Tab Management",
     keywords: [
@@ -1957,7 +1957,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "A Minimal Anti-Overwhelm Productivity System (One Screen)",
     seoDescription:
       "Build an anti-overwhelm productivity system one screen wide: three active worlds, one next action each. No extra apps — just a browser with named contexts.",
-    date: "2026-01-20",
+    date: "2025-01-09",
     author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
@@ -2148,7 +2148,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "The Attention Board Habit: Prioritise Once, Execute Often",
     seoDescription:
       "Stop re-prioritising every hour. The attention management productivity board adhd habit locks in weekly priorities so you can execute instead of plan. Here's how.",
-    date: "2026-01-17",
+    date: "2025-01-12",
     author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
@@ -2341,7 +2341,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Why Browser Search Isn't Enough When You're Overwhelmed",
     seoDescription:
       "Browser search vs context re-entry overwhelm: search assumes you know what to look for. When overwhelmed, structure reduces load while search adds it. Here's why.",
-    date: "2026-01-15",
+    date: "2025-01-14",
     author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
@@ -2517,7 +2517,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Whiteboard Kanban Plus Tab Cockpits: A Hybrid System",
     seoDescription:
       "Combine kanban whiteboard digital hybrid productivity adhd: physical kanban for high-salience priorities, digital tab cockpits for execution state. Here's the setup.",
-    date: "2026-01-12",
+    date: "2025-01-17",
     author: "Colm Byrne",
     kicker: "Hybrid Workflows",
     keywords: [
@@ -2747,7 +2747,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "How to Stop Switching Productivity Tools Every Week",
     seoDescription:
       "Productivity tool switching cost drains your focus and creates churn. Use the Jobs-To-Be-Done framework to hire the right tool once — and stop the cycle.",
-    date: "2026-01-10",
+    date: "2025-01-19",
     author: "Colm Byrne",
     kicker: "Productivity Mindset",
     keywords: [
@@ -2911,7 +2911,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "ADHD Project Graveyard: Starts, Stalls, and Continuity",
     seoDescription:
       "ADHD unfinished projects aren't a motivation problem — they're a re-entry problem. Understand why projects stall at the point of return, not the point of start.",
-    date: "2026-01-07",
+    date: "2025-01-22",
     author: "Colm Byrne",
     kicker: "ADHD Systems",
     keywords: [
@@ -3086,7 +3086,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Bullet Journal vs Browser Tab Cockpits: When Each Wins",
     seoDescription:
       "Bullet journal vs digital tabs productivity — paper wins on salience, tabs win on fidelity. This guide helps you use both without duplication or guilt.",
-    date: "2026-01-05",
+    date: "2025-01-24",
     author: "Colm Byrne",
     kicker: "Hybrid Workflows",
     keywords: [
@@ -3247,7 +3247,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "The 40% Context Switching Tax: Why ADHD Amplifies the Cost",
     seoDescription:
       "Context switching tax ADHD productivity cost is real and documented. Studies show 20-40% loss from task switching — and ADHD amplifies every part of it.",
-    date: "2026-01-02",
+    date: "2025-01-27",
     author: "Colm Byrne",
     kicker: "Focus & Memory",
     keywords: [
@@ -3408,7 +3408,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Replacing Sticky Notes With Digital Capture That Sticks",
     seoDescription:
       "Replace sticky notes digital productivity capture without losing salience. The reason digital fails is not features — it's visibility. Here's how to fix that.",
-    date: "2025-12-31",
+    date: "2025-01-29",
     author: "Colm Byrne",
     kicker: "Capture Systems",
     keywords: [
@@ -3570,7 +3570,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "ADHD and New Job Onboarding: Surviving the Re-entry Cliff",
     seoDescription:
       "ADHD job onboarding new job executive function challenges are a re-entry problem, not a willpower problem. Build your new job cockpit from week one.",
-    date: "2025-12-28",
+    date: "2025-02-01",
     author: "Colm Byrne",
     kicker: "ADHD & Work",
     keywords: [
@@ -3734,7 +3734,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabStax vs Workona: Re-entry Engine vs Workspace OS",
     seoTitle: "TabStax vs Workona: Which Tab Tool Fits Your Work?",
     seoDescription: "TabStax vs Workona comparison: one is a re-entry engine with next-action intent, the other a full workspace OS. Find out which tab manager fits your workflow.",
-    date: "2025-12-26",
+    date: "2025-02-03",
     author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Both deal with browser tabs and projects — but Workona is a workspace OS for teams, and TabStax is a re-entry engine for individuals. Here's the honest breakdown.",
@@ -3803,7 +3803,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabStax vs Toby: Collections vs Next-Action Re-entry",
     seoTitle: "TabStax vs Toby: Collections or Next-Action Re-entry?",
     seoDescription: "TabStax vs Toby tab manager comparison: Toby saves links for teams, TabStax saves intent for individuals. Honest breakdown of which fits your workflow.",
-    date: "2025-12-23",
+    date: "2025-02-06",
     author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Toby saves links. TabStax saves intent. That one-sentence summary captures the core difference — and determines which tool fits your workflow.",
@@ -3862,7 +3862,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabStax vs OneTab: Tab Dumping vs Living Project State",
     seoTitle: "TabStax vs OneTab: Tab Dump or Living Project State?",
     seoDescription: "TabStax vs OneTab: OneTab clears tab clutter fast and free. TabStax saves named project contexts with next actions. Which is right for your browser habits?",
-    date: "2025-12-21",
+    date: "2025-02-08",
     author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "OneTab is a relief valve. TabStax is a project context manager. Those are different tools — here's which problem you actually have.",
@@ -3918,7 +3918,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabStax vs Session Buddy: Crash Recovery vs Intentional Continuity",
     seoTitle: "TabStax vs Session Buddy: Recovery or Continuity?",
     seoDescription: "TabStax vs Session Buddy comparison: Session Buddy is passive crash protection. TabStax is active project continuity with next actions. Honest breakdown of both.",
-    date: "2025-12-18",
+    date: "2025-02-11",
     author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Session Buddy is passive safety. TabStax is active continuity. Are you trying to protect yourself from losing tabs, or building a reliable system for re-entering project work?",
@@ -3970,7 +3970,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabStax vs Tabs Outliner: Tree Notebook vs Cockpit Switcher",
     seoTitle: "TabStax vs Tabs Outliner: Tree Notes or Cockpit Switching?",
     seoDescription: "TabStax vs Tabs Outliner: one is a rich browser notebook with tree structure and notes, the other a fast project cockpit switcher. Honest comparison of both.",
-    date: "2025-12-16",
+    date: "2025-02-13",
     author: "Colm Byrne",
     kicker: "Tool Comparison",
     excerpt: "Tabs Outliner thinks your browser is a notebook. TabStax thinks your browser is a project launcher. That distinction determines nearly every design decision in both tools.",
@@ -4020,7 +4020,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Why Chrome Tab Groups Aren't Enough for Serious Multi-Project Work",
     seoTitle: "Why Chrome Tab Groups Fail for Multi-Project Work",
     seoDescription: "Chrome tab groups reduce visual clutter but fail at persistence, cross-device sync, intent tracking, and structured re-entry. Here is exactly where they break down.",
-    date: "2025-12-13",
+    date: "2025-02-16",
     author: "Colm Byrne",
     kicker: "Browser Limitations",
     excerpt: "Chrome tab groups are a step in the right direction that stops well short of what serious multi-project browser work actually requires. Here's exactly where they fail.",
@@ -4070,7 +4070,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "OneTab Best Practices: How Not to Lose Your Lists",
     seoTitle: "OneTab Best Practices: How Not to Lose Your Lists",
     seoDescription: "Learn onetab best practices tips organization — naming conventions, the star feature, when to export, and honest limits of OneTab's flat-list model.",
-    date: "2025-12-11",
+    date: "2025-02-18",
     author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "OneTab works best when you name every group immediately, use the star feature intentionally, and export anything you'd be upset to lose. Here's the full routine.",
@@ -4127,7 +4127,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Session Buddy Best Practices: Collections You Can Find Again",
     seoTitle: "Session Buddy Best Practices: Collections You Can Find",
     seoDescription: "Master session buddy tips organisation collections — naming, tagging, auto-save settings, export for backup, and when Session Buddy's model reaches its ceiling.",
-    date: "2025-12-08",
+    date: "2025-02-21",
     author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "Session Buddy rewards discipline around naming and tagging. The conventions below make the difference between a collection library you can navigate and a pile of saved sessions.",
@@ -4185,7 +4185,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Tabs Outliner Best Practices: Tree Structures That Don't Rot",
     seoTitle: "Tabs Outliner Best Practices: Trees That Stay Useful",
     seoDescription: "Master tabs outliner tips tree organization — current work vs archive nodes, effective note-taking, weekly pruning rituals, and honest limits of the tree model.",
-    date: "2025-12-06",
+    date: "2025-02-23",
     author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "Tabs Outliner's tree structure is powerful when maintained. Here's the two-zone architecture, pruning ritual, and note-taking patterns that keep it from becoming an archaeological site.",
@@ -4246,7 +4246,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "TabXpert Best Practices: Tags and Session History for Power Users",
     seoTitle: "TabXpert Best Practices: Tags and Session History Tips",
     seoDescription: "Master tabxpert best practices power user tips — tag taxonomy design, session history management, cloud sync setup, and honest tradeoffs of a fully-featured tool.",
-    date: "2025-12-03",
+    date: "2025-02-26",
     author: "Colm Byrne",
     kicker: "Tool Guides",
     excerpt: "TabXpert's features are only as valuable as the organizational habits you build around them. Here's the tag taxonomy decision, history management, and sync setup that makes it pay off.",
@@ -4305,7 +4305,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Vivaldi Workspaces vs Tab Managers: Where Browser-Native Wins",
     seoTitle: "Vivaldi Workspaces vs Tab Managers: When Native Wins",
     seoDescription: "Vivaldi workspaces vs tab manager comparison — where built-in workspace tools win on trust and integration, and where extensions win on portability and next actions.",
-    date: "2025-12-01",
+    date: "2025-02-28",
     author: "Colm Byrne",
     kicker: "Browser Alternatives",
     excerpt: "Vivaldi Workspaces wins on trust, integration depth, and first-party sync reliability. Extensions win on portability, the next-actions context layer, and sharing. Here's the real comparison.",
@@ -4354,7 +4354,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Arc Spaces for Multi-Role Lives: A Configuration Guide",
     seoTitle: "Arc Browser Spaces: Multi-Role Configuration Guide",
     seoDescription: "Master arc browser spaces setup multi-role guide — configure Spaces for work, personal, and side projects, understand the pinned/unpinned tab model, and assess Arc's uncertain future.",
-    date: "2025-11-28",
+    date: "2025-03-03",
     author: "Colm Byrne",
     kicker: "Browser Alternatives",
     excerpt: "Arc Spaces is a genuine innovation in browser workspace design. Here's the practical configuration guide, including what the pinned/unpinned model means and what Arc's frozen roadmap means for your workflow.",
@@ -4419,7 +4419,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Arc Stopped Adding Features. Should You Switch Browsers?",
     seoTitle: "Arc Browser Stopped New Features: Should You Switch?",
     seoDescription: "The Browser Company stopped adding features to Arc in 2025, pivoting to AI browser Dia. Here's what it means for power users and your best migration options.",
-    date: "2025-11-26",
+    date: "2025-03-05",
     author: "Colm Byrne",
     kicker: "Browser News",
     excerpt: "Arc's feature freeze is not a crisis, but it is an invitation to audit your workflow dependency. Here's the honest analysis and your real migration options.",
@@ -4484,7 +4484,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Cluster Is Gone: A Practical Migration Guide to Modern Replacements",
     seoTitle: "Cluster Chrome Extension Gone: Your Migration Guide",
     seoDescription: "Cluster Chrome extension was removed from the store. This practical guide helps former Cluster users find the right modern replacement based on what they actually used it for.",
-    date: "2025-11-23",
+    date: "2025-03-08",
     author: "Colm Byrne",
     kicker: "Migration Guide",
     excerpt: "Before picking a replacement for Cluster, identify what job you were actually hiring it to do. Window organisation, tab group management, and session save-and-restore each point to different tools.",
@@ -4541,7 +4541,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Pocket Shutdown Aftermath: How to Rebuild Your Read-Later Stack",
     seoTitle: "Pocket Shutdown: How to Rebuild Your Read-Later Stack",
     seoDescription: "Mozilla shut down Pocket in July 2025. Here's how to export your saved articles and find the right read-later replacement — Instapaper, Raindrop, Readwise Reader, or Matter.",
-    date: "2025-11-21",
+    date: "2025-03-10",
     author: "Colm Byrne",
     kicker: "Migration Guide",
     excerpt: "Mozilla shut down Pocket in July 2025. Before picking a replacement, identify what you actually used Pocket for — reading queue, research library, or annotation practice. Each points to a different tool.",
@@ -4597,7 +4597,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "The Security Reality of Browser Extensions (How to Choose Safely)",
     seoTitle: "Browser Extension Security: How to Choose Extensions Safely",
     seoDescription: "The Great Suspender malware incident showed extensions can be weaponised after purchase. Here's how to evaluate browser extension security and privacy before you install.",
-    date: "2025-11-18",
+    date: "2025-03-13",
     author: "Colm Byrne",
     kicker: "Security & Privacy",
     excerpt: "The Great Suspender incident — a trusted extension sold to a buyer who injected malware — is a template for a recurring attack. Here's the practical checklist for evaluating any extension before you install.",
@@ -4659,7 +4659,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Manifest V3 and Why Your Favourite Tab Tools Keep Disappearing",
     seoTitle: "Manifest V3: Why Browser Extensions Keep Disappearing",
     seoDescription: "Manifest V3 is Google's Chrome extension overhaul that forced rewrites and caused several popular tab managers to vanish. Here's what actually changed and what it means for your workflow.",
-    date: "2025-11-16",
+    date: "2025-03-15",
     author: "Colm Byrne",
     kicker: "Browser Ecosystem",
     excerpt: "Manifest V3 is Google's rewrite of the Chrome extension platform. It forced architectural rewrites, killed several popular tab managers, and tells you something important about which tools to trust.",
@@ -4718,7 +4718,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Consultant Workflow",
     excerpt: "Stop hunting for tabs before every client call. Build a client Stax that opens your full client cockpit in one click — CRM, notes, deck, and next action ready.",
     author: "Colm Byrne",
-    date: "2025-11-13",
+    date: "2025-03-18",
     keywords: [
       "client context switching browser management",
       "client cockpit browser tabs",
@@ -4762,7 +4762,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Research & Insights",
     excerpt: "Gloria Mark finds 23-minute interruption recovery. The APA documents 20-40% performance loss from task switching. Here's what the reconstruction tax actually costs.",
     author: "Colm Byrne",
-    date: "2025-11-11",
+    date: "2025-03-20",
     keywords: [
       "context switching cost at work productivity",
       "reconstruction tax knowledge work",
@@ -4810,7 +4810,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Sales Workflow",
     excerpt: "High-value accounts demand intensive prep. Build a per-account sales cockpit with CRM, proposal, competitor intel, and next action — ready before every call.",
     author: "Colm Byrne",
-    date: "2025-11-08",
+    date: "2025-03-23",
     keywords: [
       "sales browser context switching account management",
       "sales cockpit browser tabs",
@@ -4854,7 +4854,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Customer Success",
     excerpt: "A CS manager going from a healthy QBR to a churn-risk call needs different tools and data. Here's how separate cockpits stop tone bleed from costing you renewals.",
     author: "Colm Byrne",
-    date: "2025-11-06",
+    date: "2025-03-25",
     keywords: [
       "customer success context switching renewal churn",
       "CS manager browser tab management",
@@ -4898,7 +4898,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Recruiting Workflow",
     excerpt: "Four to six panellists all need the same candidate context. Build one shared hiring cockpit — CV, portfolio, notes, criteria — and share it with the panel.",
     author: "Colm Byrne",
-    date: "2025-11-03",
+    date: "2025-03-28",
     keywords: [
       "recruiter browser tab management interview panel",
       "hiring loop cockpit candidate context",
@@ -4942,7 +4942,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Team Workflow",
     excerpt: "Not every handoff needs a Jira ticket. For agency and small team transitions, a browser cockpit with a clear next action is the fastest complete handoff.",
     author: "Colm Byrne",
-    date: "2025-11-01",
+    date: "2025-03-30",
     keywords: [
       "project handoff lightweight browser collaboration",
       "async project handoff no PM tool",
@@ -4986,7 +4986,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Agency Workflow",
     excerpt: "Agency work runs at three levels: client, project, and phase. Browser organisation patterns that keep each level in its own context, with naming conventions.",
     author: "Colm Byrne",
-    date: "2025-10-29",
+    date: "2025-04-02",
     keywords: [
       "browser organisation agency freelancer client project",
       "agency tab management browser workflow",
@@ -5030,7 +5030,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Sales Workflow",
     excerpt: "Sales context lives in stages: prospecting, qualification, proposal, closing. Browser organisation patterns to keep each stage in its own purpose-built environment.",
     author: "Colm Byrne",
-    date: "2025-10-27",
+    date: "2025-04-04",
     keywords: [
       "sales browser organisation tab management account",
       "sales stage browser workflow",
@@ -5078,7 +5078,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Consultant Workflow",
     excerpt: "A structured weekly planning ritual: decide which 4 browser worlds you're working in this week, load them Monday, and don't add a fifth without removing one.",
     author: "Colm Byrne",
-    date: "2025-10-24",
+    date: "2025-04-07",
     keywords: [
       "weekly planning browser context rotation productivity",
       "browser worlds context switching",
@@ -5122,7 +5122,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Research & Insights",
     excerpt: "Re-entry time is the minutes between 'I'm switching to this project' and 'I know what to do next.' Here's how to track it, quantify the cost, and cut it.",
     author: "Colm Byrne",
-    date: "2025-10-22",
+    date: "2025-04-09",
     keywords: [
       "re-entry time measurement productivity metric",
       "context switching cost knowledge workers",
@@ -5166,7 +5166,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Browser Habits",
     excerpt: "If you open the same Jira, Notion, Slack, and dashboard tabs every morning, you're spending 10-40 hours a year on pure orientation. Here's how to fix it.",
     author: "Colm Byrne",
-    date: "2025-10-19",
+    date: "2025-04-12",
     keywords: [
       "reopening same browser tabs every day productivity",
       "daily browser setup routine",
@@ -5210,7 +5210,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Mobile Workflow",
     excerpt: "Real estate agents, field engineers, sales reps — the context switching problem lives on mobile too. Here's how to design a field-ready cockpit for your phone.",
     author: "Colm Byrne",
-    date: "2025-10-17",
+    date: "2025-04-14",
     keywords: [
       "mobile browser productivity field work cockpit",
       "browser tab management mobile phone",
@@ -5254,7 +5254,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Meeting Workflow",
     excerpt: "Tone bleed is when emotional residue from one meeting bleeds into the next. Here's a practical protocol for resetting context and posture before each back-to-back.",
     author: "Colm Byrne",
-    date: "2025-10-14",
+    date: "2025-04-17",
     keywords: [
       "back to back meetings context switching tone bleed",
       "meeting preparation mental reset",
@@ -5298,7 +5298,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Meeting Workflow",
     excerpt: "Build per-meeting browser cockpits you preload 10 minutes before you need them — agenda, last notes, live dashboard. The practice of preload, not scramble.",
     author: "Colm Byrne",
-    date: "2025-10-12",
+    date: "2025-04-19",
     keywords: [
       "meeting preparation browser tabs context preload",
       "pre-meeting browser environment",
@@ -5342,7 +5342,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Daily Workflow",
     excerpt: "Every morning you open email, Slack, Notion, your project tracker, analytics, and your CRM. That's not productivity — it's orientation. Here's how to fix it.",
     author: "Colm Byrne",
-    date: "2025-10-09",
+    date: "2025-04-22",
     keywords: [
       "morning browser app rebuild productivity waste",
       "daily work environment setup",
@@ -5386,7 +5386,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "DevOps Workflow",
     excerpt: "Build a pre-saved incident response browser cockpit with Datadog, Grafana, runbooks, PagerDuty, Slack, and your DB console — one click and you're operational.",
     author: "Colm Byrne",
-    date: "2025-10-07",
+    date: "2025-04-24",
     keywords: [
       "incident response browser setup devops template",
       "p1 incident cockpit",
@@ -5430,7 +5430,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Agile Workflow",
     excerpt: "Build a shareable standup kit in your browser — sprint board, yesterday's decisions, today's focus, blockers — so any team member can run the ritual reliably.",
     author: "Colm Byrne",
-    date: "2025-10-04",
+    date: "2025-04-27",
     keywords: [
       "standup template reusable browser team ritual",
       "shareable standup kit",
@@ -5474,7 +5474,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "DevOps Workflow",
     excerpt: "Different incidents need different runbooks and dashboards. Build per-type browser cockpits for database failures, payment outages, security events, and scaling emergencies.",
     author: "Colm Byrne",
-    date: "2025-10-02",
+    date: "2025-04-29",
     keywords: [
       "devops browser runbook organisation incident types",
       "per-incident runbook cockpit",
@@ -5522,7 +5522,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Team Workflow",
     excerpt: "For small teams or lateral status sharing, skip the Jira overhead. Build lightweight project status visibility with a shared browser cockpit, a status doc, and a standup kit.",
     author: "Colm Byrne",
-    date: "2025-09-29",
+    date: "2025-05-02",
     keywords: [
       "project status visible lightweight without pm tool",
       "lightweight project visibility",
@@ -5570,7 +5570,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Team Workflow",
     excerpt: "Sharing a link gives a colleague one data point. Sharing an environment gives them context. The difference reshapes incident response, standups, onboarding, and demos.",
     author: "Colm Byrne",
-    date: "2025-09-27",
+    date: "2025-05-04",
     keywords: [
       "shared browser context team collaboration environments",
       "share browser environment team",
@@ -5614,7 +5614,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Agile Workflow",
     excerpt: "Stop scrolling through 47 Slack messages to find yesterday's standup. Build a persistent browser standup kit with sprint board, decisions doc, and today's focus — shareable in one click.",
     author: "Colm Byrne",
-    date: "2025-09-24",
+    date: "2025-05-07",
     keywords: [
       "standup documentation browser tabs slack alternative",
       "shareable standup kit browser",
@@ -5662,7 +5662,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Meeting Workflow",
     excerpt: "15 minutes between calls. Walk through the PM survival protocol: open your stakeholder cockpit, scan last meeting notes, check dashboard numbers, write your one key message, join.",
     author: "Colm Byrne",
-    date: "2025-09-22",
+    date: "2025-05-09",
     keywords: [
       "meeting preparation 15 minutes browser fast",
       "pm meeting prep protocol",
@@ -5710,7 +5710,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Browser Organisation",
     excerpt: "Active work and reference material have different access patterns. Stop mixing WIP and reference in your browser — here's how to separate them and why it eliminates the can't-find-anything problem.",
     author: "Colm Byrne",
-    date: "2025-09-19",
+    date: "2025-05-12",
     keywords: [
       "work in progress vs reference browser organisation",
       "browser tab organisation wip",
@@ -5758,7 +5758,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Security & Privacy",
     excerpt: "Most tab managers are free. Walk through the business models behind donation-based, paid-tier, one-time, and ad-funded extensions — and what each means for your data and the tool's longevity.",
     author: "Colm Byrne",
-    date: "2025-09-17",
+    date: "2025-05-14",
     keywords: [
       "free browser extension sustainability business model",
       "browser extension business model",
@@ -5802,7 +5802,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Ecosystem Risk",
     excerpt: "Browser extensions get discontinued. The Great Suspender, Cluster, Pocket — it happens. Build a contingency plan: regular exports, backup workflows, and a migration path before you need it.",
     author: "Colm Byrne",
-    date: "2025-09-14",
+    date: "2025-05-17",
     keywords: [
       "browser extension discontinued replacement contingency",
       "tab manager shutdown contingency",
@@ -5850,7 +5850,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Buyer's Guide",
     excerpt: "Most people choose tab tools from YouTube reviews. Use this evaluation framework instead: job-fit test, permissions audit, publisher reliability check, data portability test, and trial protocol.",
     author: "Colm Byrne",
-    date: "2025-09-12",
+    date: "2025-05-19",
     keywords: [
       "browser tab manager evaluation criteria checklist",
       "how to choose tab manager",
@@ -5898,7 +5898,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     kicker: "Security & Privacy",
     excerpt: "Every tab manager says it respects your privacy. Learn how to verify: read manifest permissions, interpret privacy policies for extensions, check data transmission with developer tools.",
     author: "Colm Byrne",
-    date: "2025-09-09",
+    date: "2025-05-22",
     keywords: [
       "browser extension privacy evaluation tab manager",
       "tab manager privacy policy review",
@@ -5946,7 +5946,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Learn how the Two-Stax Model separates your writing cockpit from your input sources — so you synthesise before you write, not while you write.",
     kicker: "Journalism Workflow",
     author: "Colm Byrne",
-    date: "2025-09-07",
+    date: "2025-05-24",
     keywords: [
       "journalist browser tab organisation writing research",
       "writing workflow separation",
@@ -5986,7 +5986,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Twenty open tabs is not a research system — it's geology. Here's how to build a five-tab story cockpit that holds everything you need and nothing you don't.",
     kicker: "Journalism Workflow",
     author: "Colm Byrne",
-    date: "2025-09-04",
+    date: "2025-05-27",
     keywords: [
       "journalist tab management story research browser",
       "story cockpit journalism",
@@ -6026,7 +6026,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Zotero archives your sources permanently. TabStax holds your active working environment. Here's how to use both together without confusing their jobs.",
     kicker: "Research Tools",
     author: "Colm Byrne",
-    date: "2025-09-02",
+    date: "2025-05-29",
     keywords: [
       "zotero tabstax journalist research workflow",
       "zotero browser extension workflow",
@@ -6066,7 +6066,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "When three reporters, a photographer, and a copy editor are all working on your feature, status lives in Slack by default. Here's a better structure.",
     kicker: "Editorial Workflow",
     author: "Colm Byrne",
-    date: "2025-08-30",
+    date: "2025-06-01",
     keywords: [
       "journalist multi-contributor article management browser",
       "feature story coordination journalism",
@@ -6106,7 +6106,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Fact-checking is a distinct workflow from writing. It needs its own browser environment: claims list, source archive, status tracker, and editor queries.",
     kicker: "Editorial Workflow",
     author: "Colm Byrne",
-    date: "2025-08-28",
+    date: "2025-06-03",
     keywords: [
       "fact checking browser workflow journalist",
       "fact check cockpit journalism",
@@ -6147,7 +6147,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "By 3:30pm you should have your deadline cockpit open. Here is exactly what goes in it: draft, editor notes, wire context, headline options, legal checklist.",
     kicker: "Journalism Workflow",
     author: "Colm Byrne",
-    date: "2025-08-25",
+    date: "2025-06-06",
     keywords: [
       "newsroom deadline browser workflow template",
       "deadline cockpit journalism",
@@ -6187,7 +6187,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Open tabs close. Browsers crash. Sources disappear. If your source list lives in your tab bar, you are one crash away from losing your research trail.",
     kicker: "Research Methods",
     author: "Colm Byrne",
-    date: "2025-08-23",
+    date: "2025-06-08",
     keywords: [
       "journalist source management browser tab risk",
       "open tab source risk journalism",
@@ -6227,7 +6227,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The Zotero browser connector archives any citable web page in one click with full metadata and a web snapshot. Here is exactly what it captures and how to use it.",
     kicker: "Research Tools",
     author: "Colm Byrne",
-    date: "2025-08-20",
+    date: "2025-06-11",
     keywords: [
       "zotero connector browser workflow journalist sources",
       "zotero browser extension save sources",
@@ -6267,7 +6267,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Google Sheets and Zotero both manage sources but they do different jobs. Here is when a spreadsheet wins, when a library wins, and how to use both together.",
     kicker: "Research Methods",
     author: "Colm Byrne",
-    date: "2025-08-18",
+    date: "2025-06-13",
     keywords: [
       "journalist source organisation spreadsheet library",
       "google sheets source tracker journalism",
@@ -6307,7 +6307,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Instapaper saves articles for distraction-free reading. Readwise Reader saves and resurfaces highlights on a schedule. Different jobs, different tools.",
     kicker: "Reading Tools",
     author: "Colm Byrne",
-    date: "2025-08-15",
+    date: "2025-06-16",
     keywords: [
       "instapaper vs readwise reader comparison journalist",
       "read later app journalist researcher",
@@ -6348,7 +6348,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Raindrop.io is a permanent bookmark library. Tab managers are active working environments. Here is how to use both in a two-layer browser system.",
     kicker: "Browser Systems",
     author: "Colm Byrne",
-    date: "2025-08-13",
+    date: "2025-06-18",
     keywords: [
       "raindrop io tab manager two layer browser system",
       "raindrop io journalist researcher workflow",
@@ -6388,7 +6388,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Some researchers live entirely in tabs with notes in their head. The migration to tabs plus notes does not have to be dramatic. Here is a gradual approach.",
     kicker: "Research Methods",
     author: "Colm Byrne",
-    date: "2025-08-10",
+    date: "2025-06-21",
     keywords: [
       "browser tabs notes workflow integration migration",
       "tabs plus notes research workflow",
@@ -6428,7 +6428,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Layer 1 is Zotero for source archiving. Layer 2 is Notion for synthesis and structure. Layer 3 is your browser cockpit for active work. Here is how they connect.",
     kicker: "Research Stacks",
     author: "Colm Byrne",
-    date: "2025-08-08",
+    date: "2025-06-23",
     keywords: [
       "zotero notion tabstax research stack journalist",
       "three layer research system",
@@ -6468,7 +6468,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The two-lists method: one list of active cockpits for current work, one archive for everything else. Never let your archive live in your active environment.",
     kicker: "Browser Organisation",
     author: "Colm Byrne",
-    date: "2025-08-05",
+    date: "2025-06-26",
     keywords: [
       "active projects archive browser two lists method",
       "active browser cockpits vs archive",
@@ -6508,7 +6508,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Three types of browser work have completely different needs. Research needs quiet. Comms needs responsiveness. Execution needs focus. Separating them is the fix.",
     kicker: "Productivity Frameworks",
     author: "Colm Byrne",
-    date: "2025-08-03",
+    date: "2025-06-28",
     keywords: [
       "browser work types research communication execution",
       "browser work taxonomy journalist researcher",
@@ -6548,7 +6548,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Notion stores your docs and decisions. TabStax stores your active browser environment. Learn how these two tools work as separate layers in a real project workflow.",
     kicker: "Tool Integration",
     author: "Colm Byrne",
-    date: "2025-07-31",
+    date: "2025-07-01",
     keywords: [
       "notion tabstax integration knowledge base workflow",
       "browser tab management notion",
@@ -6588,7 +6588,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Obsidian keeps your permanent notes. TabStax keeps your active browser cockpit. Here's how to wire them together for a local-first, project-aware daily workflow.",
     kicker: "Tool Integration",
     author: "Colm Byrne",
-    date: "2025-07-29",
+    date: "2025-07-03",
     keywords: [
       "obsidian tabstax integration local notes workflow",
       "obsidian browser tab management",
@@ -6628,7 +6628,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A campaign launch has phases. Each phase needs its own browser cockpit. Here's how to structure pre-launch, launch day, and post-launch environments that don't bleed into each other.",
     kicker: "Marketing Workflow",
     author: "Colm Byrne",
-    date: "2025-07-26",
+    date: "2025-07-06",
     keywords: [
       "marketing campaign browser organisation launch",
       "launch cockpit browser tabs marketing",
@@ -6668,7 +6668,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Three modes, three browser worlds. Here's how content creators can build separate cockpits for prep, live production, and post-production without bleeding context between them.",
     kicker: "Creator Workflow",
     author: "Colm Byrne",
-    date: "2025-07-24",
+    date: "2025-07-08",
     keywords: [
       "content creator browser tab management workflow",
       "creator workflow browser cockpit",
@@ -6708,7 +6708,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "47 tabs, three windows, none of them labelled. Here's the honest escape plan for founders whose browser became a junk drawer — with a concrete audit and sorting method.",
     kicker: "Founder Workflow",
     author: "Colm Byrne",
-    date: "2025-07-21",
+    date: "2025-07-11",
     keywords: [
       "browser organisation founder startup junk drawer",
       "tab management founder productivity",
@@ -6749,7 +6749,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "When you're bootstrapping with 10 customers, each one deserves a browser cockpit. Here's how per-customer named worlds create clarity and reduce churn for early-stage founders.",
     kicker: "Founder Workflow",
     author: "Colm Byrne",
-    date: "2025-07-19",
+    date: "2025-07-13",
     keywords: [
       "bootstrapping founder customer pipeline browser",
       "customer cockpit browser organisation",
@@ -6829,7 +6829,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Multi-role founders context-switch constantly. The world building approach makes each role a distinct browser cockpit — so switching is deliberate, not accidental.",
     kicker: "Founder Workflow",
     author: "Colm Byrne",
-    date: "2025-07-14",
+    date: "2025-07-18",
     keywords: [
       "role based browser environments productivity founder",
       "context switching browser worlds founder",
@@ -6869,7 +6869,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A cockpit named 'Project 1' is useless in three weeks. Here are naming conventions for browser Stax that stay meaningful over time, with anti-patterns to avoid.",
     kicker: "Browser Organisation",
     author: "Colm Byrne",
-    date: "2025-07-11",
+    date: "2025-07-21",
     keywords: [
       "naming convention browser tab stax cockpit",
       "browser world naming productivity",
@@ -6909,7 +6909,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Board prep is a multi-world problem. Fundraising data, product roadmap, and hiring pipeline each need their own browser cockpit. Here's how to separate them and show up ready.",
     kicker: "Founder Workflow",
     author: "Colm Byrne",
-    date: "2025-07-09",
+    date: "2025-07-23",
     keywords: [
       "startup founder board prep browser context switching",
       "board meeting preparation browser organisation",
@@ -6950,7 +6950,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Every browser extension claims to respect your privacy. Here's the technical checklist — manifest permissions, network requests, open source checks — to verify those claims.",
     kicker: "Security & Privacy",
     author: "Colm Byrne",
-    date: "2025-07-06",
+    date: "2025-07-26",
     keywords: [
       "tab manager privacy evaluation browser extension",
       "browser extension privacy check manifest",
@@ -6990,7 +6990,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A task is vague. A next action is specific enough to start without thinking. Here's why that difference determines what gets done — and how to attach next actions to browser cockpits.",
     kicker: "GTD & Frameworks",
     author: "Colm Byrne",
-    date: "2025-07-04",
+    date: "2025-07-28",
     keywords: [
       "tasks vs next actions gtd difference daily practice",
       "next action gtd productivity",
@@ -7030,7 +7030,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A video has stages: ideation, pre-production, production, post-production. Each stage is a browser world. Here's how to build per-stage Stax that keep your video pipeline moving.",
     kicker: "Creator Workflow",
     author: "Colm Byrne",
-    date: "2025-07-01",
+    date: "2025-07-31",
     keywords: [
       "creator workflow browser tab management video stages",
       "video pipeline browser cockpit creator",
@@ -7070,7 +7070,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Writing a book in the browser means juggling a manuscript, references, character notes, editor comments, and a timeline. Save it all as a named cockpit — and re-enter with full context.",
     kicker: "Writing Workflow",
     author: "Colm Byrne",
-    date: "2025-06-29",
+    date: "2025-08-02",
     keywords: [
       "author book editing browser workflow manuscript",
       "writing workflow browser tabs manuscript",
@@ -7110,7 +7110,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Phase transitions lose momentum. Design, Development, QA, Launch — each handoff is a context reset. Browser cockpits change that: hand off the world, not just the spec doc.",
     kicker: "Team Workflow",
     author: "Colm Byrne",
-    date: "2025-06-26",
+    date: "2025-08-05",
     keywords: [
       "project handoff browser collaboration multi-phase",
       "team browser cockpit handoff",
@@ -7150,7 +7150,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Learn how the PARA method maps directly to browser tab organisation. Structure your browser worlds as Projects, Areas, Resources, and Archives for clearer thinking.",
     kicker: "Productivity Frameworks",
     author: "Colm Byrne",
-    date: "2025-06-24",
+    date: "2025-08-07",
     keywords: [
       "para method browser tab organisation",
       "PARA productivity browser",
@@ -7190,7 +7190,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "GTD's capture-and-clarify loop has a gap: your trusted system lives outside the browser where work happens. Here's how to close it with browser-native next actions.",
     kicker: "Productivity Frameworks",
     author: "Colm Byrne",
-    date: "2025-06-21",
+    date: "2025-08-10",
     keywords: [
       "gtd browser tabs next action capture workflow",
       "GTD trusted system browser",
@@ -7230,7 +7230,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Cognitive offloading is a legitimate strategy — using your environment to reduce mental load. Browser tabs do this, but unstructured tab piles eventually backfire. Here's what the research says.",
     kicker: "Research & Insights",
     author: "Colm Byrne",
-    date: "2025-06-19",
+    date: "2025-08-12",
     keywords: [
       "cognitive offloading browser tabs external memory",
       "browser tabs memory research",
@@ -7275,7 +7275,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The simplest alternative to tab management tools: one browser window per role. Here's how it works, where it breaks down, and when to move to something more structured.",
     kicker: "DIY Workflows",
     author: "Colm Byrne",
-    date: "2025-06-16",
+    date: "2025-08-15",
     keywords: [
       "browser windows per project role diy separation",
       "diy browser organisation windows",
@@ -7315,7 +7315,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Browser profiles create fully separate environments for work and personal use. Here is the complete trade-off analysis: when profiles work well and when they create more overhead than they solve.",
     kicker: "Browser Configuration",
     author: "Colm Byrne",
-    date: "2025-06-14",
+    date: "2025-08-17",
     keywords: [
       "browser profiles separate work personal productivity",
       "Chrome profiles work personal separation",
@@ -7359,7 +7359,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Tab suspension tools like OneTab and Auto Tab Discard solve a browser performance problem. They do not solve an organisation problem. These are different jobs. Here is why the distinction matters.",
     kicker: "Browser Habits",
     author: "Colm Byrne",
-    date: "2025-06-11",
+    date: "2025-08-20",
     keywords: [
       "tab suspension vs tab organisation productivity",
       "OneTab vs tab manager",
@@ -7399,7 +7399,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A bookmark saves a URL. Resuming work requires the URL plus context: where you were, what else you had open, and what you were about to do. These are different jobs. Here is the distinction.",
     kicker: "Browser Habits",
     author: "Colm Byrne",
-    date: "2025-06-09",
+    date: "2025-08-22",
     keywords: [
       "bookmarking vs browser session restore productivity",
       "browser bookmarks vs tab manager",
@@ -7439,7 +7439,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Productivity tool switching is a symptom of hiring tools for jobs they cannot do. A Jobs-to-be-Done audit helps you define the job first and find tools that actually do it.",
     kicker: "Productivity Mindset",
     author: "Colm Byrne",
-    date: "2025-06-06",
+    date: "2025-08-25",
     keywords: [
       "productivity tool switching stop churn jtbd framework",
       "jobs to be done productivity tools",
@@ -7483,7 +7483,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Side projects die at re-entry, not at start. The fix is not more motivation — it is making re-entry cheap enough to work on even on a low-energy day. Here is the continuity-first approach.",
     kicker: "Project Continuity",
     author: "Colm Byrne",
-    date: "2025-06-04",
+    date: "2025-08-27",
     keywords: [
       "side project productivity continuity motivation graveyard",
       "side project re-entry low energy",
@@ -7527,7 +7527,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Search assumes you know what to look for. Re-entry requires knowing where you were. These are different cognitive operations — and confusing them is costing you time every day.",
     kicker: "Browser Habits",
     author: "Colm Byrne",
-    date: "2025-06-01",
+    date: "2025-08-30",
     keywords: [
       "browser search vs context re-entry knowledge work",
       "browser history search productivity",
@@ -7567,7 +7567,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "If you open the same 12 tabs every morning, you're spending 5-10 minutes per day on pure overhead. That's 20-40 hours per year. Here is the one-click fix.",
     kicker: "Browser Habits",
     author: "Colm Byrne",
-    date: "2025-05-30",
+    date: "2025-09-01",
     keywords: [
       "reopening same browser tabs every morning routine",
       "daily browser tab routine automation",
@@ -7611,7 +7611,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A concrete, fear-free method for reducing 200 browser tabs to 5 focused project worlds. Triage instead of delete. Named worlds instead of tab piles. A max-worlds constraint that holds.",
     kicker: "Tab Management",
     author: "Colm Byrne",
-    date: "2025-05-27",
+    date: "2025-09-04",
     keywords: [
       "reduce browser tabs focused productivity method",
       "too many browser tabs fix",
@@ -7655,7 +7655,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Notion, Obsidian, and Roam are excellent for capturing what you have learned. They are not where knowledge work happens. The gap between notes and browser is costing you context every day.",
     kicker: "Tool Philosophy",
     author: "Colm Byrne",
-    date: "2025-05-25",
+    date: "2025-09-06",
     keywords: [
       "note taking vs browser workflow gap productivity",
       "Notion Obsidian browser workflow",
@@ -7695,7 +7695,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The GTD weekly review is the ritual that keeps your trusted system current. Here is a 20-minute protocol for applying it to your browser worlds: review, update, archive, and create.",
     kicker: "GTD & Frameworks",
     author: "Colm Byrne",
-    date: "2025-05-22",
+    date: "2025-09-09",
     keywords: [
       "gtd weekly review browser cockpit organisation",
       "GTD weekly review browser tabs",
@@ -7739,7 +7739,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Six courses, 40 tabs each, no separation — that is the overwhelm spiral. Learn how to build one browser cockpit per course to reclaim focus and actually finish work.",
     kicker: "Student Life",
     author: "Colm Byrne",
-    date: "2025-05-20",
+    date: "2025-09-11",
     keywords: [
       "student browser tab management courses separation",
       "browser organisation for students",
@@ -7783,7 +7783,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The blank screen before an essay is rarely about not knowing what to write. It is about not having the right environment open. Here is how to build a writing launch pad that gets you started.",
     kicker: "Student Life",
     author: "Colm Byrne",
-    date: "2025-05-17",
+    date: "2025-09-14",
     keywords: [
       "student assignment re-entry writing task initiation",
       "blank page problem student essay",
@@ -7827,7 +7827,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Two levels of browser organisation for students: persistent module cockpits for the whole semester and temporary assignment cockpits for each sprint. Here is how to manage both.",
     kicker: "Student Life",
     author: "Colm Byrne",
-    date: "2025-05-15",
+    date: "2025-09-16",
     keywords: [
       "student browser organisation per module assignment",
       "student stax organisation system",
@@ -7875,7 +7875,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Family admin in 2026 is scattered across 12 or more systems. A browser cockpit consolidates the portals you actually use into one named world you and your partner can share.",
     kicker: "Family Life",
     author: "Colm Byrne",
-    date: "2025-05-12",
+    date: "2025-09-19",
     keywords: [
       "family admin browser organisation school portals",
       "family life admin browser cockpit",
@@ -7919,7 +7919,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Caregiving involves 15 or more systems: GP portals, specialist referrals, benefits applications, legal documents. Every session starts with retrieval. Here is a better approach.",
     kicker: "Caregiver Support",
     author: "Colm Byrne",
-    date: "2025-05-10",
+    date: "2025-09-21",
     keywords: [
       "caregiver browser organisation tools legal benefits",
       "carer admin browser cockpit",
@@ -7965,7 +7965,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Travel planning is 40 maybe-tabs, three windows, and a spreadsheet one week out of date. A named browser cockpit per trip keeps research, shortlists, and bookings in one place.",
     kicker: "Life Admin",
     author: "Colm Byrne",
-    date: "2025-05-07",
+    date: "2025-09-24",
     keywords: [
       "travel planning browser tab management cockpit",
       "trip planning browser organisation",
@@ -8009,7 +8009,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Executing an estate is a months-long project with episodic sessions. A dedicated cockpit with all portals, documents, and the current next action makes each session a resumption, not a restart.",
     kicker: "Life Admin",
     author: "Colm Byrne",
-    date: "2025-05-05",
+    date: "2025-09-26",
     keywords: [
       "estate executor browser admin workflow",
       "probate administration browser tools",
@@ -8053,7 +8053,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The pension you have not reviewed, the will you have not written, the side project that is always next month. A named container with one next action is the first real step.",
     kicker: "Life Projects",
     author: "Colm Byrne",
-    date: "2025-05-02",
+    date: "2025-09-29",
     keywords: [
       "quiet crisis midlife project productivity named container",
       "procrastination important projects life admin",
@@ -8097,7 +8097,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Genealogy research is tab chaos: census databases, parish records, DNA services, family trees. Two people with similar names in 1860 will derail your research without organisation.",
     kicker: "Hobby Projects",
     author: "Colm Byrne",
-    date: "2025-04-30",
+    date: "2025-10-01",
     keywords: [
       "genealogy research browser tab management organisation",
       "family history research browser cockpit",
@@ -8141,7 +8141,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A DM running three campaigns has three completely different worlds. Mixing NPCs, maps, and plot threads across campaigns kills immersion. Here is how to keep them separated.",
     kicker: "Hobby Projects",
     author: "Colm Byrne",
-    date: "2025-04-27",
+    date: "2025-10-04",
     keywords: [
       "dungeon master browser campaign organisation tools",
       "DM session prep browser cockpit",
@@ -8187,7 +8187,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "International relocation is a multi-year project: visas, housing, schools, banks, healthcare. A move planning cockpit keeps each phase organised and prevents anything from falling through.",
     kicker: "Life Admin",
     author: "Colm Byrne",
-    date: "2025-04-25",
+    date: "2025-10-06",
     keywords: [
       "moving abroad planning browser tabs organisation expat",
       "international relocation browser cockpit",
@@ -8231,7 +8231,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Tax season means HMRC, bank statements across multiple portals, pension, investments, expense tracker. Every session re-finds these. A financial cockpit saves that time across the season.",
     kicker: "Life Admin",
     author: "Colm Byrne",
-    date: "2025-04-22",
+    date: "2025-10-09",
     keywords: [
       "tax season browser organisation financial cockpit",
       "HMRC self assessment browser organisation",
@@ -8275,7 +8275,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Parenting in 2026 means the school portal, dinner money app, ParentPay, Google Classroom, and PE kit reminders — all in separate systems. One browser cockpit brings them together.",
     kicker: "Family Life",
     author: "Colm Byrne",
-    date: "2025-04-20",
+    date: "2025-10-11",
     keywords: [
       "school admin browser organisation family portals",
       "school portal family browser cockpit",
@@ -8319,7 +8319,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Community organisations lose volunteers because onboarding is a 40-minute verbal dump of URLs no-one can retain. A shared browser cockpit makes onboarding self-serve and sticky.",
     kicker: "Community Work",
     author: "Colm Byrne",
-    date: "2025-04-17",
+    date: "2025-10-14",
     keywords: [
       "volunteer onboarding browser shared workspace cockpit",
       "community organisation onboarding browser tools",
@@ -8363,7 +8363,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "The novel, the career change, the community solar project that is always next month. Not a motivation problem — an infrastructure one. Here is how to give the dream a container.",
     kicker: "Life Projects",
     author: "Colm Byrne",
-    date: "2025-04-15",
+    date: "2025-10-16",
     keywords: [
       "second act career change hobby project productivity",
       "dream project browser cockpit organisation",
@@ -8407,7 +8407,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Link your Notion project brief to your browser cockpit for instant context recovery. A practical template connecting your decision docs to your working environment.",
     kicker: "Templates & Integrations",
     author: "Colm Byrne",
-    date: "2025-04-12",
+    date: "2025-10-19",
     keywords: [
       "notion template project brief tabstax link",
       "notion project management browser integration",
@@ -8451,7 +8451,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Add an Active Cockpit field to your Obsidian daily note template. Recover your exact working context from any historical date with one link.",
     kicker: "Templates & Integrations",
     author: "Colm Byrne",
-    date: "2025-04-10",
+    date: "2025-10-21",
     keywords: [
       "obsidian daily note template cockpit link tabstax",
       "obsidian daily note browser workspace integration",
@@ -8495,7 +8495,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Build a research stack that separates source archiving, synthesis, and active execution. Zotero holds your sources, Notion holds your thinking, your cockpit holds your current tabs.",
     kicker: "Research Stacks",
     author: "Colm Byrne",
-    date: "2025-04-07",
+    date: "2025-10-24",
     keywords: [
       "three layer research stack zotero notion tabstax",
       "academic research browser workflow tools",
@@ -8539,7 +8539,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Move from OneTab's flat tab lists to named, actionable workspaces. A practical step-by-step guide to migrating your OneTab archive into a structured system.",
     kicker: "Migration Guides",
     author: "Colm Byrne",
-    date: "2025-04-05",
+    date: "2025-10-26",
     keywords: [
       "onetab migration workspace tool step by step",
       "onetab alternative structured workspace browser",
@@ -8583,7 +8583,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Session Buddy collections are named but often become catch-alls. A practical migration guide to move from Session Buddy to structured, actionable browser workspaces.",
     kicker: "Migration Guides",
     author: "Colm Byrne",
-    date: "2025-04-02",
+    date: "2025-10-29",
     keywords: [
       "session buddy migration workspace named cockpit",
       "session buddy alternative structured workspace",
@@ -8627,7 +8627,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Browser profiles create completely separate environments for work and personal browsing. A complete trade-off guide covering the edge cases most tutorials skip.",
     kicker: "Browser Configuration",
     author: "Colm Byrne",
-    date: "2025-03-31",
+    date: "2025-10-31",
     keywords: [
       "browser profiles work personal worlds trade-offs",
       "chrome browser profiles separate environments guide",
@@ -8671,7 +8671,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Most browser organisation falls apart at naming. A practical guide to cockpit naming conventions, anti-patterns, a decision tree, and a quarterly audit ritual.",
     kicker: "Browser Organisation",
     author: "Colm Byrne",
-    date: "2025-03-28",
+    date: "2025-11-03",
     keywords: [
       "browser cockpit naming convention organisation",
       "workspace naming conventions productivity",
@@ -8715,7 +8715,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Multi-role professionals context-switch constantly but rarely intentionally. Building explicit browser worlds for each role reduces cognitive collision and sharpens execution.",
     kicker: "Advanced Patterns",
     author: "Colm Byrne",
-    date: "2025-03-26",
+    date: "2025-11-05",
     keywords: [
       "role based environments browser productivity explicit",
       "multi-role professional context switching browser",
@@ -8759,7 +8759,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Three fundamentally different types of browser work require different environments. Understanding the taxonomy is the first step to ending the junk-drawer browser problem.",
     kicker: "Framework Thinking",
     author: "Colm Byrne",
-    date: "2025-03-23",
+    date: "2025-11-08",
     keywords: [
       "browser work types taxonomy research communication",
       "browser productivity framework knowledge worker",
@@ -8803,7 +8803,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Most tab managers are free. Understanding how they survive — and what happens when they don't — is essential for choosing tools you can depend on long-term.",
     kicker: "Ecosystem Thinking",
     author: "Colm Byrne",
-    date: "2025-03-21",
+    date: "2025-11-10",
     keywords: [
       "free browser extension business model sustainability",
       "tab manager extension business model 2026",
@@ -8847,7 +8847,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "A personal runbook treats life admin as repeatable processes with documented procedures. Build one to stop reconstructing context every time an annual or rare event recurs.",
     kicker: "Life Systems",
     author: "Colm Byrne",
-    date: "2025-03-18",
+    date: "2025-11-13",
     keywords: [
       "personal runbook life admin system browser",
       "personal operations manual life admin",
@@ -8891,7 +8891,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "One list for active cockpits, one for archives. The discipline of never letting completed work live in your active browser environment changes how clearly you see your current workload.",
     kicker: "Browser Organisation",
     author: "Colm Byrne",
-    date: "2025-03-16",
+    date: "2025-11-15",
     keywords: [
       "active projects archive browser two lists organisation",
       "browser workspace active archive method",
@@ -8935,7 +8935,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "Sticky notes work because they're always in your visual field. Digital reminders fail to replace them because they disappear. Build a digital system that preserves salience.",
     kicker: "Capture Systems",
     author: "Colm Byrne",
-    date: "2025-03-13",
+    date: "2025-11-18",
     keywords: [
       "replace sticky notes digital capture salience productivity",
       "digital sticky note alternative always visible",
@@ -8979,7 +8979,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     excerpt: "If you open the same 10+ tabs every morning, you have an undocumented daily environment. Name it, save it, open it in one click. Here's the complete protocol.",
     kicker: "Browser Habits",
     author: "Colm Byrne",
-    date: "2025-03-11",
+    date: "2025-11-20",
     keywords: [
       "daily browser tabs morning routine escape productivity",
       "morning tab routine browser cockpit setup",
@@ -9022,7 +9022,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoDescription: "AI tools multiplied the surfaces where work lives — and traditional tools weren't built for it. Here's what the research says and what actually helps.",
     kicker: "Future of Work",
     author: "Colm Byrne",
-    date: "2025-03-08",
+    date: "2025-11-23",
     excerpt: "AI tools were supposed to consolidate the chaos. Instead, most people who use them daily report feeling more fragmented — more tabs open, more half-finished threads, more mornings starting with 'wait, where was I?' Here's why, and what actually helps.",
     keywords: [
       "ai distraction productivity",
@@ -9109,7 +9109,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Your Tab Manager Will Eventually Delete Everything | TabStax",
     seoDescription:
       "OneTab, Session Buddy, Tabs Outliner — all of them have deleted users' saved sessions. Here's why tab manager data loss happens, what's recoverable, and what isn't.",
-    date: "2025-03-06",
+    date: "2025-11-25",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -9204,7 +9204,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
       "Autosave Is Theater: Why Your Tab Sessions Aren't Actually Being Saved | TabStax",
     seoDescription:
       "Tab session manager autosave sounds reassuring. But under browser crashes, restarts, and extension updates, it often does nothing. Here's how to test whether yours actually works.",
-    date: "2025-03-03",
+    date: "2025-11-28",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -9319,7 +9319,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
       "The 1,000+ Sessions Performance Cliff: Why Tab Managers Slow Down | TabStax",
     seoDescription:
       "Tab session managers work fine at 50 sessions. At 500-2000, they lag, freeze, and sometimes crash — exactly when heavy users need them most. Here's why, and what to do about it.",
-    date: "2025-03-01",
+    date: "2025-11-30",
     author: "Colm Byrne",
     kicker: "Tab Manager Limits",
     excerpt:
@@ -9410,7 +9410,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
       "Notion Turns Into Molasses at Scale: A Systems Problem Explained | TabStax",
     seoDescription:
       "Notion's performance degrades in large workspaces, and offline limitations make it worse. This isn't a critique of Notion — it's an honest look at what happens when a powerful tool hits its structural limits.",
-    date: "2025-02-26",
+    date: "2025-12-03",
     author: "Colm Byrne",
     kicker: "Workspace Tools",
     excerpt:
@@ -9497,7 +9497,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
       "When Workspaces Overwrite Your Work: The State Machine Problem | TabStax",
     seoDescription:
       "Workona and similar workspace tools can overwrite your current tabs on restart or reinstall. Here's why this happens structurally, and what safe state management for browser sessions actually looks like.",
-    date: "2025-02-24",
+    date: "2025-12-05",
     author: "Colm Byrne",
     kicker: "Workspace Tools",
     excerpt:
@@ -9592,7 +9592,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
       "The Hidden Cost of 'Free' Tab Tools: Backups, Anxiety, and the Export Gap | TabStax",
     seoDescription:
       "Free tab managers externalize their cost into backup labor, anxiety, and migration work. Here's the real cost accounting of 'free' tab tools — and what local-first design changes.",
-    date: "2025-02-21",
+    date: "2025-12-08",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -9696,7 +9696,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Toby Tab Manager Sync & Multi Space: Why Hidden Pricing Breaks Trust",
     seoDescription:
       "Toby's multi space and sync features are locked behind a paid tier many users didn't expect. Here's why pricing transparency is a trust signal — and what to look for instead.",
-    date: "2025-02-19",
+    date: "2025-12-10",
     author: "Colm Byrne",
     kicker: "Tab Manager Pricing",
     excerpt:
@@ -9798,7 +9798,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "ADHD Tab Hoarding: Why Tab Managers Can Make It Worse",
     seoDescription:
       "Saving tabs feels productive but often deepens backlog anxiety for ADHD brains. Here's why 'next action' is the missing step between hoarding and finishing — and what the research says.",
-    date: "2025-02-16",
+    date: "2025-12-13",
     author: "Colm Byrne",
     kicker: "Neurodivergent Productivity",
     excerpt:
@@ -9897,7 +9897,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Journalist Tab Management: The Re-Entry Problem in Newsrooms",
     seoDescription:
       "Journalists run multiple concurrent stories, each needing context reconstruction. Raw tab storage doesn't solve re-entry. Here's what newsroom browser workflows actually need.",
-    date: "2025-02-14",
+    date: "2025-12-15",
     author: "Colm Byrne",
     kicker: "Journalist Productivity",
     excerpt:
@@ -9998,7 +9998,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Chrome MV3 Migration: Why Your Extension Workflow Is at Risk",
     seoDescription:
       "Chrome's MV2 to MV3 migration removed or broke extensions millions relied on. Here's what changed, what's at risk, and why export-first design is the only safe foundation for extension-based workflows.",
-    date: "2025-02-11",
+    date: "2025-12-18",
     author: "Colm Byrne",
     kicker: "Extension Risk",
     excerpt:
@@ -10102,7 +10102,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Tab Wrangler Problems: When Auto-Close Automation Breaks Your Workflow",
     seoDescription:
       "Tab Wrangler's auto-close feature can violate user intent even when tabs are 'locked.' Here's why automation you can't trust is worse than no automation — and what trustworthy tab management actually looks like.",
-    date: "2025-02-09",
+    date: "2025-12-20",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -10193,7 +10193,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Zotero Storage Limit: How PDF Sync Quota Taxes Heavy Research Workflows",
     seoDescription:
       "Zotero's free storage tier fills quickly with PDFs — hitting the limit at exactly the moment you need it most. Here's what the quota actually means, what the workarounds are, and the broader argument about tools that tax you at peak use.",
-    date: "2025-02-06",
+    date: "2025-12-23",
     author: "Colm Byrne",
     kicker: "Research Tools",
     excerpt:
@@ -10305,7 +10305,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Notion Slow Workspace & Offline Problems: What Users Actually Say",
     seoDescription:
       "Notion users report sluggish performance at scale, a steep learning curve, and unreliable offline access. Here's what the complaints reveal — and what a browser-native alternative looks like.",
-    date: "2025-02-04",
+    date: "2025-12-25",
     author: "Colm Byrne",
     kicker: "Workspace Tools",
     excerpt:
@@ -10390,7 +10390,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "OneTab Data Loss: How to Recover Tabs and What to Do Next",
     seoDescription:
       "OneTab has a well-documented data loss problem. Users report losing everything after reinstalls, browser resets, and extension updates. Here's what actually happens and what a safer approach looks like.",
-    date: "2025-02-01",
+    date: "2025-12-28",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -10488,7 +10488,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Toby Tab Manager Review: Sync Problems, Locked Features, and Alternatives",
     seoDescription:
       "Toby is a polished tab manager with a real usability gap: multi-space and sync are locked or limited, and the pricing structure creates anxiety for power users. Here's an honest review.",
-    date: "2025-01-30",
+    date: "2025-12-30",
     author: "Colm Byrne",
     kicker: "Tab Manager Review",
     excerpt:
@@ -10569,7 +10569,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Workona Problems: Duplicate Tabs, Overwrites, and Workspace Trust Issues",
     seoDescription:
       "Workona users consistently report duplicated tabs, mislabeled workspaces, and sync overwrites. Here's what the complaints reveal about trusting automated workspace management — and what an explicit approach looks like.",
-    date: "2025-01-27",
+    date: "2026-01-02",
     author: "Colm Byrne",
     kicker: "Workspace Tools",
     excerpt:
@@ -10656,7 +10656,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Session Buddy Deleted History and Collections: What Users Report",
     seoDescription:
       "Session Buddy users have reported collections and history deleted without explanation, data lost after upgrades, and backup-reliance as the only safety net. Here's what the complaints mean for how you use it.",
-    date: "2025-01-25",
+    date: "2026-01-04",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -10746,7 +10746,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Tabs Outliner Clear Cookies Data Loss: What Users Report and What to Do",
     seoDescription:
       "Tabs Outliner stores its data in browser cookies and profile storage — meaning clearing your cache can delete your entire saved tab tree. Here's how this works, what users say, and what a safer alternative looks like.",
-    date: "2025-01-22",
+    date: "2026-01-07",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -10844,7 +10844,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Tabli Chrome Extension Problems: Tab Search Conflicts & Lag | TabStax",
     seoDescription:
       "Real user complaints about Tabli: it breaks Chrome's built-in tab search, triggers permissions anxiety, and lags at high tab counts. Here's what the reviews actually say.",
-    date: "2025-01-20",
+    date: "2026-01-09",
     author: "Colm Byrne",
     kicker: "Tab Manager Review",
     excerpt:
@@ -10934,7 +10934,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "TabXpert Cloud Sync Not Working: Sessions Lost After Restart | TabStax",
     seoDescription:
       "TabXpert users report cloud sync failures, session corruption after crashes, and plan churn from unwanted ads. Here's what the reviews say and what it means for your workflow.",
-    date: "2025-01-17",
+    date: "2026-01-12",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt:
@@ -11026,7 +11026,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Raindrop AI Tagging Problems: More Work Than Manual? | TabStax",
     seoDescription:
       "Raindrop's AI auto-tagging creates more cleanup work than it saves, users say. We look at the complaint record, the Pro vs Free confusion, and what it reveals about AI-assisted organisation.",
-    date: "2025-01-15",
+    date: "2026-01-14",
     author: "Colm Byrne",
     kicker: "Bookmark Tools",
     excerpt:
@@ -11109,7 +11109,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Zotero Sync Problems & Storage Limits Explained | TabStax",
     seoDescription:
       "Zotero's 300MB free storage cap blocks PDF sync for active researchers. We examine the real complaint record: quota failures, conflict resolution friction, and what to do when your machine can't get the files it needs.",
-    date: "2025-01-12",
+    date: "2026-01-17",
     author: "Colm Byrne",
     kicker: "Research Tools",
     excerpt:
@@ -11203,7 +11203,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Arc Browser RAM Usage High & Privacy Concerns | TabStax",
     seoDescription:
       "Arc Browser uses more RAM than Chrome and has triggered privacy questions on Hacker News. We look at the actual complaint record: resource usage, telemetry questions, and what trust means for a daily driver browser.",
-    date: "2025-01-10",
+    date: "2026-01-19",
     author: "Colm Byrne",
     kicker: "Browser Choice",
     excerpt:
@@ -11291,7 +11291,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Vivaldi Browser Slow & Lagging? Performance Problems Explained | TabStax",
     seoDescription:
       "Vivaldi users love its customisation but consistently report slowness and UI lag. We look at the real complaint record: where the performance drag comes from, who it hits hardest, and what the alternatives look like.",
-    date: "2025-01-07",
+    date: "2026-01-22",
     author: "Colm Byrne",
     kicker: "Browser Choice",
     excerpt:
@@ -11384,7 +11384,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Pocket Is Gone: What Happened, What to Export, and What It Means for Your Workflow",
     seoTitle: "Pocket Shut Down: What Happened, How to Export, and What Comes Next",
     seoDescription: "Pocket shut down on July 8, 2025. Here's the full account of what happened, how to export your saved articles before the deadline, and what the shutdown reveals about read-it-later tools.",
-    date: "2025-01-05",
+    date: "2026-01-24",
     author: "Colm Byrne",
     kicker: "Vendor Risk",
     excerpt: "Pocket removed from app stores in May 2025, full shutdown July 8, 2025. Here's what actually happened, how to export your data, and what the backlog graveyard problem means for your workflow.",
@@ -11469,7 +11469,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Instapaper's Sync Problem: When 'Save for Later' Becomes 'Gone Forever'",
     seoTitle: "Instapaper Not Syncing? The Problem Behind the Problem",
     seoDescription: "Instapaper sync failures, saves not appearing, and slow loading are recurring complaints. Here's what's actually going wrong and what it reveals about the limits of cloud-dependent read-it-later tools.",
-    date: "2025-01-02",
+    date: "2026-01-27",
     author: "Colm Byrne",
     kicker: "Read-It-Later Tools",
     excerpt: "Instapaper sync failures leave users waiting minutes for recent saves to appear, or finding them gone entirely. Here's what's happening technically and what it means for workflows that depend on reliable retrieval.",
@@ -11554,7 +11554,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Readwise Reader: Is It Worth $8\u20139 a Month? The Honest Breakdown",
     seoTitle: "Readwise Reader Review: Is the $8-9/Month Price Worth It?",
     seoDescription: "Readwise Reader costs $8-9 per month and is genuinely the best read-it-later tool for serious readers. But is it worth it? Here's an honest cost-benefit breakdown that doesn't pull punches.",
-    date: "2024-12-31",
+    date: "2026-01-29",
     author: "Colm Byrne",
     kicker: "Read-It-Later Tools",
     excerpt: "Readwise Reader is the best-in-class read-it-later tool for serious readers. The critique is purely about price and whether the workflow it enables justifies the ongoing cost versus lighter alternatives.",
@@ -11638,7 +11638,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Tab Wrangler Review: When 'Locked' Tabs Keep Getting Closed Anyway",
     seoTitle: "Tab Wrangler Review: The Locked Tabs Problem and What It Costs You",
     seoDescription: "Tab Wrangler's auto-close feature is supposed to reduce tab anxiety, but locked tabs getting closed anyway undermines the core promise. Here's what's happening and what it means.",
-    date: "2024-12-28",
+    date: "2026-02-01",
     author: "Colm Byrne",
     kicker: "Tab Manager Review",
     excerpt: "Tab Wrangler auto-closes tabs you said to keep. Locked tabs are not always honored. The result is more time managing the tool than managing tabs. Here's the full picture.",
@@ -11721,7 +11721,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "Tab Session Manager's Autosave Problem: The Failure Nobody Talks About",
     seoTitle: "Tab Session Manager Autosave Not Working: What's Really Happening",
     seoDescription: "Tab Session Manager's autosave silently fails for many users, and random session deletions compound the risk. Here's the full picture of what goes wrong and why it matters.",
-    date: "2024-12-26",
+    date: "2026-02-03",
     author: "Colm Byrne",
     kicker: "Tab Manager Risk",
     excerpt: "Tab Session Manager's autosave can fail silently, and backups may not cover the gap. Sessions get deleted without warning. Here's what's actually happening and how to protect yourself.",
@@ -11808,7 +11808,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     title: "The Great Suspender Malware Incident: A Full Account of What Happened",
     seoTitle: "The Great Suspender Malware: What Happened and What It Means for Extension Trust",
     seoDescription: "In February 2021, Chrome disabled The Great Suspender after the extension was found to contain tracking code. Here's the full account of what happened, how suspended tabs were broken, and what it means for workflows built on browser extensions.",
-    date: "2024-12-23",
+    date: "2026-02-06",
     author: "Colm Byrne",
     kicker: "Extension Risk",
     excerpt: "The Great Suspender went from beloved tab manager to Chrome-disabled malware in one ownership change. Here's what happened, why suspended tabs broke on disable, and what the incident teaches about extension trust.",
@@ -11902,7 +11902,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Readwise Reader Price: Is It Worth It in 2026?",
     seoDescription:
       "Readwise Reader is a genuinely impressive read-it-later tool — but at $8–9/month, the price creates real friction for users who just want fast re-entry to their reading context. Here's an honest look at where the value holds and where it doesn't.",
-    date: "2024-12-21",
+    date: "2026-02-08",
     author: "Colm Byrne",
     kicker: "Read-It-Later Tools",
     excerpt:
@@ -11990,7 +11990,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Instapaper Not Syncing? The Deeper Problem With 'Save for Later'",
     seoDescription:
       "Instapaper's sync failures and slow loading are symptoms of a structural problem: save-for-later tools assume you'll return to content outside the context you saved it in. Here's when that assumption breaks.",
-    date: "2024-12-18",
+    date: "2026-02-11",
     author: "Colm Byrne",
     kicker: "Read-It-Later Tools",
     excerpt:
@@ -12083,7 +12083,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Pocket Shut Down: Lessons for Read-It-Later Tool Users in 2026",
     seoDescription:
       "Pocket shut down on July 8, 2025. Here's what the timeline taught us about vendor risk with free tools — and how to export your data from whatever you're using now before it's too late.",
-    date: "2024-12-16",
+    date: "2026-02-13",
     author: "Colm Byrne",
     kicker: "Vendor Risk",
     excerpt:
@@ -12176,7 +12176,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "The Great Suspender Malware Incident: What It Means for Extension Trust",
     seoDescription:
       "Google disabled The Great Suspender in February 2021 because it contained malware after a quiet ownership change. Here's what that incident taught us about the risk calculus of browser extensions with deep permissions.",
-    date: "2024-12-13",
+    date: "2026-02-16",
     author: "Colm Byrne",
     kicker: "Extension Risk",
     excerpt:
@@ -12270,7 +12270,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Arc Browser RAM Usage and Privacy Concerns: What Power Users Are Saying",
     seoDescription:
       "Arc browser has genuine UX innovations. It also has a pattern of high RAM usage and data transfer reports that has made power users anxious. Here's a clear-eyed look at what's documented and what's speculation.",
-    date: "2024-12-11",
+    date: "2026-02-18",
     author: "Colm Byrne",
     kicker: "Browser Choice",
     excerpt:
@@ -12359,7 +12359,7 @@ If the patterns above sound familiar, TabStax was built for exactly this. It sav
     seoTitle: "Vivaldi Browser Slow and Laggy: The Performance Problem Power Users Face",
     seoDescription:
       "Vivaldi is the most configurable browser available. For tab power users who need instant context switching, its performance overhead is a serious problem. Here's what's happening and what you can do about it.",
-    date: "2024-12-08",
+    date: "2026-02-21",
     author: "Colm Byrne",
     kicker: "Browser Choice",
     excerpt:

@@ -6,6 +6,20 @@ import Link from "next/link";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { Suspense } from "react";
 
+// Curated top 10 by SEO conversion value — high-intent, high-traffic queries
+const POPULAR_SLUGS = [
+  "onetab-problems-data-loss",
+  "pocket-shutdown-what-happened",
+  "great-suspender-malware-what-happened",
+  "tab-manager-will-delete-everything",
+  "tab-tools-adhd-tab-hoarding",
+  "ai-making-us-more-distracted-disorganized",
+  "autosave-is-theater",
+  "notion-sluggish-at-scale",
+  "tab-session-manager-autosave-problems",
+  "journalists-tab-reentry-problem",
+];
+
 function BlogContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -15,13 +29,12 @@ function BlogContent() {
   const currentPage = Math.max(1, parseInt(searchParams.get("page") || "1", 10));
   const POSTS_PER_PAGE = 15;
 
-  // Build category counts from kicker values
+  // Build category counts
   const categoryCounts = blogPosts.reduce<Record<string, number>>((acc, post) => {
     acc[post.kicker] = (acc[post.kicker] || 0) + 1;
     return acc;
   }, {});
 
-  // Sort categories: "All" first, then by count desc, then alpha for ties
   const sortedCategories = Object.entries(categoryCounts).sort(
     ([a, countA], [b, countB]) => countB - countA || a.localeCompare(b)
   );
@@ -42,6 +55,11 @@ function BlogContent() {
     safePage * POSTS_PER_PAGE
   );
 
+  // Resolve popular posts (preserve curated order, skip any missing slugs)
+  const popularPosts = POPULAR_SLUGS
+    .map((slug) => blogPosts.find((p) => p.slug === slug))
+    .filter(Boolean) as typeof blogPosts;
+
   function navigate(category: string, page: number) {
     const params = new URLSearchParams();
     if (category !== "All") params.set("category", category);
@@ -58,15 +76,10 @@ function BlogContent() {
     });
   }
 
-  // Build ellipsis-aware page numbers
   function getPageNumbers(): (number | "…")[] {
     const pages: (number | "…")[] = [];
     for (let i = 1; i <= totalPages; i++) {
-      if (
-        i === 1 ||
-        i === totalPages ||
-        Math.abs(i - safePage) <= 2
-      ) {
+      if (i === 1 || i === totalPages || Math.abs(i - safePage) <= 2) {
         if (pages.length > 0 && typeof pages[pages.length - 1] === "number") {
           const prev = pages[pages.length - 1] as number;
           if (i - prev > 1) pages.push("…");
@@ -85,16 +98,44 @@ function BlogContent() {
         <h1 className="font-heading text-4xl sm:text-5xl font-bold text-charcoal mb-4">
           Blog
         </h1>
-        <p className="font-body text-lg text-warm-gray mb-10">
+        <p className="font-body text-lg text-warm-gray mb-12">
           Evidence-first writing on context switching, ADHD productivity, browser tool risks, and re-entry workflows.{" "}
           <span className="text-charcoal font-semibold">{blogPosts.length} posts</span>{" "}
           across {sortedCategories.length} topics.
         </p>
 
+        {/* Most Popular */}
+        <div className="mb-16">
+          <h2 className="font-heading text-2xl font-bold text-charcoal mb-6">
+            Most popular
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {popularPosts.map((post) => (
+              <Link
+                key={post.slug}
+                href={`/blog/${post.slug}`}
+                className="group block border border-charcoal/10 rounded-xl p-5 hover:border-terracotta/40 hover:shadow-sm transition-all bg-white"
+              >
+                <p className="text-xs font-semibold text-amber uppercase tracking-wide mb-2">
+                  {post.kicker}
+                </p>
+                <h3 className="font-heading text-base font-bold text-charcoal group-hover:text-terracotta transition-colors leading-snug mb-3">
+                  {post.title}
+                </h3>
+                <p className="text-xs text-warm-gray">
+                  {readingTime(post.content)} min read
+                </p>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Category filter bar */}
         <div className="mb-3">
+          <h2 className="font-heading text-2xl font-bold text-charcoal mb-4">
+            All posts
+          </h2>
           <div className="flex flex-wrap gap-2">
-            {/* All button */}
             <button
               onClick={() => navigate("All", 1)}
               className={`px-3 py-1.5 rounded-full text-sm font-semibold transition-colors ${
