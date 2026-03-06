@@ -1,9 +1,21 @@
 export function JobCapture() {
   const surfaces = [
-    { name: "Extension", status: "available" },
-    { name: "Web App", status: "available" },
-    { name: "CLI", status: "planned" },
-    { name: "MCP", status: "planned" },
+    {
+      name: "Extension",
+      href: "https://chromewebstore.google.com/detail/mjplcglfdelgdcoalbgechkeophncjmf",
+    },
+    {
+      name: "Web App",
+      href: "https://dash.tabstax.app",
+    },
+    {
+      name: "CLI",
+      href: "https://www.npmjs.com/package/tabstax-cli",
+    },
+    {
+      name: "MCP",
+      href: "https://hulupeep.github.io/TabStax-Help/topics/mcp-section",
+    },
   ];
 
   return (
@@ -37,17 +49,15 @@ export function JobCapture() {
 
             <div className="mt-8 grid grid-cols-2 gap-4">
               {surfaces.map((surface) => (
-                <div
+                <a
                   key={surface.name}
-                  className="bg-cream border border-amber/20 rounded-xl p-5 text-center shadow-sm"
+                  href={surface.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-cream border border-amber/20 rounded-xl p-5 text-center shadow-sm hover:border-amber/50 hover:shadow-md transition-all"
                 >
                   <p className="font-semibold text-charcoal">{surface.name}</p>
-                  {surface.status === "planned" && (
-                    <span className="mt-2 inline-block text-xs font-medium text-amber">
-                      Planned
-                    </span>
-                  )}
-                </div>
+                </a>
               ))}
             </div>
           </div>
