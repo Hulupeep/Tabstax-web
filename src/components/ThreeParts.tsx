@@ -30,7 +30,7 @@ export function ThreeParts() {
             </a>
           </div>
 
-          {/* Card 2: Hey! */}
+          {/* Card 2: Hey! + MCP */}
           <div className="bg-cream-dark border border-amber/20 rounded-2xl p-8 shadow-sm">
             <div className="flex items-center gap-3">
               <p className="text-sm font-semibold text-amber uppercase tracking-wide">
@@ -38,23 +38,26 @@ export function ThreeParts() {
               </p>
             </div>
             <h3 className="mt-2 font-heading font-bold text-2xl text-charcoal">
-              Hey!
+              Hey! + Claude
             </h3>
             <p className="mt-4 text-warm-gray leading-relaxed">
-              Capture the next action without leaving the surface you&rsquo;re in.
-              One terminal command adds an action to the right project &mdash; no
-              context switch, no app to open. Your AI assistant can run it too.
+              Use TabStax in Claude Code, Claude.ai, or in the terminal with the
+              Hey CLI. Claude can see across all your Stax, help you figure out
+              which project to work on next, and add next actions for you.
             </p>
-            <div className="mt-4 flex items-center gap-2">
+            <div className="mt-4 flex flex-wrap items-center gap-2">
               <span className="inline-flex items-center px-3 py-1 rounded-full bg-amber/10 text-xs font-medium text-amber">
-                Available &mdash; CLI
+                MCP Live
+              </span>
+              <span className="inline-flex items-center px-3 py-1 rounded-full bg-amber/10 text-xs font-medium text-amber">
+                CLI
               </span>
             </div>
             <a
-              href="/hey"
+              href="https://hulupeep.github.io/TabStax-Help/topics/mcp-section"
               className="mt-4 inline-flex items-center text-sm font-semibold text-amber hover:text-terracotta transition-colors"
             >
-              Install Hey!&nbsp;&rarr;
+              Connect to Claude&nbsp;&rarr;
             </a>
           </div>
 
