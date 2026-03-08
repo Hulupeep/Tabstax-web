@@ -27,7 +27,7 @@ export function generateMetadata({
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
-      url: `https://www.tabstax.app/blog/${post.slug}`,
+      url: `https://www.heystax.ai/blog/${post.slug}`,
     },
   };
 }
@@ -97,11 +97,11 @@ export default function BlogPostPage({
     },
     datePublished: post.date,
     dateModified: post.date,
-    url: `https://www.tabstax.app/blog/${post.slug}`,
+    url: `https://www.heystax.ai/blog/${post.slug}`,
     publisher: {
       "@type": "Organization",
-      name: "TabStax",
-      url: "https://www.tabstax.app",
+      name: "HeyStax",
+      url: "https://www.heystax.ai",
     },
     keywords: post.keywords.join(", "),
     articleSection: post.kicker,

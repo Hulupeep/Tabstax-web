@@ -53,9 +53,9 @@ export default async function UseCasePage({ params }: PageProps) {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Home", item: "https://tabstax.com" },
-        { "@type": "ListItem", position: 2, name: "Use Cases", item: "https://tabstax.com/use-cases" },
-        { "@type": "ListItem", position: 3, name: useCase.seoTitle, item: `https://tabstax.com/use-cases/${slug}` },
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://heystax.ai" },
+        { "@type": "ListItem", position: 2, name: "Use Cases", item: "https://heystax.ai/use-cases" },
+        { "@type": "ListItem", position: 3, name: useCase.seoTitle, item: `https://heystax.ai/use-cases/${slug}` },
       ],
     },
     {
@@ -140,7 +140,7 @@ export default async function UseCasePage({ params }: PageProps) {
           ))}
           {solutionParagraphs.length > 0 && (
             <>
-              <h2 className="font-heading text-2xl font-bold text-charcoal pt-4">How TabStax helps</h2>
+              <h2 className="font-heading text-2xl font-bold text-charcoal pt-4">How HeyStax helps</h2>
               {solutionParagraphs.map((p, i) => (
                 <p
                   key={i}
@@ -200,7 +200,7 @@ export default async function UseCasePage({ params }: PageProps) {
         {/* CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://dash.tabstax.app/attention"
+            href="https://dash.heystax.ai/attention"
             className="inline-block bg-amber text-cream font-body font-semibold px-8 py-4 rounded-full text-lg hover:bg-terracotta transition-colors"
           >
             Start Now

@@ -43,12 +43,12 @@ export const useCases: UseCase[] = [
     summary:
       "You're finishing a deck for one client. In five minutes, you're on a Zoom call with a completely different one. Every second you spend reconstructing context is a second stolen from your craft.",
     content:
-      "You're tweaking one last chart for Lighting Brothers when you realise the Zoom call with the Swedish Department of Education starts in five minutes. Two entirely different worlds — different docs, different dashboards, different people, different headspace.\n\nWithout TabStax, you finish the deck, scramble for the Zoom link, try to remember where your Sweden notes live, close the wrong tabs, reopen others, and start the call already out of breath. With TabStax, each client has its own Stax. You finish in the Lighting Brothers Stax, mark it done, then hit Open Stax for Sweden. Zoom opens. Agenda loads. Your prep notes appear. The Start Page even reminds you how to open the conversation.\n\nYou switch from one client universe to another in under ten seconds, with full confidence you haven't left anything behind. If a colleague joins the call, they can open the shared Stax and see the same agenda and research instantly.",
+      "You're tweaking one last chart for Lighting Brothers when you realise the Zoom call with the Swedish Department of Education starts in five minutes. Two entirely different worlds — different docs, different dashboards, different people, different headspace.\n\nWithout HeyStax, you finish the deck, scramble for the Zoom link, try to remember where your Sweden notes live, close the wrong tabs, reopen others, and start the call already out of breath. With HeyStax, each client has its own Stax. You finish in the Lighting Brothers Stax, mark it done, then hit Open Stax for Sweden. Zoom opens. Agenda loads. Your prep notes appear. The Start Page even reminds you how to open the conversation.\n\nYou switch from one client universe to another in under ten seconds, with full confidence you haven't left anything behind. If a colleague joins the call, they can open the shared Stax and see the same agenda and research instantly.",
     staxPattern:
       '"Lighting Brothers – Q3 Analysis" / "Swedish Dept of Education – Pilot Call"',
-    seoTitle: "Tab Manager for Consultants | TabStax",
+    seoTitle: "Tab Manager for Consultants | HeyStax",
     metaDescription:
-      "Switch between client contexts in seconds. TabStax gives consultants a dedicated browser workspace per client — no more tab chaos between calls.",
+      "Switch between client contexts in seconds. HeyStax gives consultants a dedicated browser workspace per client — no more tab chaos between calls.",
     keywords: [
       "browser tab manager consultant",
       "switch client context browser",
@@ -58,16 +58,16 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help consultants switch between clients quickly?",
-        a: "TabStax saves each client's tabs, docs, and notes as a named Stax. Opening a Stax restores the full browser environment for that client in one click.",
+        q: "How does HeyStax help consultants switch between clients quickly?",
+        a: "HeyStax saves each client's tabs, docs, and notes as a named Stax. Opening a Stax restores the full browser environment for that client in one click.",
       },
       {
         q: "Can I share a Stax with a client or colleague?",
         a: "Yes. You can share a Stax link so colleagues or clients open the same set of tabs and context instantly.",
       },
       {
-        q: "Does TabStax work across different devices?",
-        a: "TabStax syncs your Stax across devices so your client environments are available wherever you work.",
+        q: "Does HeyStax work across different devices?",
+        a: "HeyStax syncs your Stax across devices so your client environments are available wherever you work.",
       },
     ],
     relatedSlugs: ["sales-rep-whale-account", "csm-renewal-day", "agency-founder-three-clients"],
@@ -81,12 +81,12 @@ export const useCases: UseCase[] = [
     summary:
       "Your brain wants to go deep, but the setup cost of getting back into each project kills you. Half your energy is spent remembering what you were doing.",
     content:
-      "You have a Chrome extension you're building, a book you're editing, a small AI tool, a landing page experiment, and a client advisory gig. Your brain wants depth, but the setup cost of re-entering each project destroys your momentum.\n\nWithout TabStax, you bounce between random tabs, lose the world-state of each project, and every return feels like starting from zero. With TabStax, each project is a saveable, reloadable brain state. Open the Book Stax and your manuscript, references, and edit notes appear. The Start Page tells you exactly what to do next. You're not figuring out what to work on — you're continuing.\n\nHyperfocus becomes a weapon, not a liability. When your attention shifts, you close one Stax and open another. The context switch costs ten seconds instead of ten minutes. If you collaborate with an editor, dev, or designer, you share the relevant Stax and they step into the same world you operate in.",
+      "You have a Chrome extension you're building, a book you're editing, a small AI tool, a landing page experiment, and a client advisory gig. Your brain wants depth, but the setup cost of re-entering each project destroys your momentum.\n\nWithout HeyStax, you bounce between random tabs, lose the world-state of each project, and every return feels like starting from zero. With HeyStax, each project is a saveable, reloadable brain state. Open the Book Stax and your manuscript, references, and edit notes appear. The Start Page tells you exactly what to do next. You're not figuring out what to work on — you're continuing.\n\nHyperfocus becomes a weapon, not a liability. When your attention shifts, you close one Stax and open another. The context switch costs ten seconds instead of ten minutes. If you collaborate with an editor, dev, or designer, you share the relevant Stax and they step into the same world you operate in.",
     staxPattern:
-      '"TabStax MVP – Build" / "Book – Chapter 4 Editing" / "AI Tool – ClaimAlert Experiments"',
-    seoTitle: "Tab Manager for ADHD & Neurodivergent Builders | TabStax",
+      '"HeyStax MVP – Build" / "Book – Chapter 4 Editing" / "AI Tool – ClaimAlert Experiments"',
+    seoTitle: "Tab Manager for ADHD & Neurodivergent Builders | HeyStax",
     metaDescription:
-      "Stop losing context between projects. TabStax saves each project as a reloadable brain state — perfect for ADHD creators juggling multiple parallel builds.",
+      "Stop losing context between projects. HeyStax saves each project as a reloadable brain state — perfect for ADHD creators juggling multiple parallel builds.",
     keywords: [
       "ADHD browser tab manager",
       "neurodivergent productivity tool",
@@ -96,12 +96,12 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help people with ADHD manage multiple projects?",
+        q: "How does HeyStax help people with ADHD manage multiple projects?",
         a: "Each project gets its own named Stax. Opening it restores every tab, doc, and note exactly where you left off — no reconstruction tax.",
       },
       {
         q: "What is the reconstruction tax?",
-        a: "The reconstruction tax is the time and mental energy spent re-assembling context after switching tasks. TabStax eliminates it by saving your full environment.",
+        a: "The reconstruction tax is the time and mental energy spent re-assembling context after switching tasks. HeyStax eliminates it by saving your full environment.",
       },
       {
         q: "Can I set reminders or next actions inside a Stax?",
@@ -119,12 +119,12 @@ export const useCases: UseCase[] = [
     summary:
       "You're working a big enterprise prospect with CRM pages, LinkedIn profiles, email chains, a proposal deck, competitor pricing, and call recordings. Before each interaction, you hunt for everything from scratch.",
     content:
-      "You're deep in the NordicGrid Energy deal cycle. CRM pages, LinkedIn accounts for the champion and blockers, email chains, the proposal deck in progress, competitor pricing sheets, internal Slack threads, and discovery call recordings. Before every touchpoint, you have to reassemble the war room from memory.\n\nWith TabStax, you create a single NordicGrid Deal Cycle Stax. All research, CRM, docs, and call recaps live in one persistent environment. Before the next call, you open the Stax and everything is instantly live — your notes about the last call front and center, the deck open on the right slide.\n\nThen you share the Stax internally. Pre-sales adds a technical FAQ tab. Your VP adds an exec summary draft. Marketing drops in a case study. You can even create a client-facing Stax with the proposal, ROI calculator, and implementation timeline. Every time you touch this account, you step into a fully loaded war room.",
+      "You're deep in the NordicGrid Energy deal cycle. CRM pages, LinkedIn accounts for the champion and blockers, email chains, the proposal deck in progress, competitor pricing sheets, internal Slack threads, and discovery call recordings. Before every touchpoint, you have to reassemble the war room from memory.\n\nWith HeyStax, you create a single NordicGrid Deal Cycle Stax. All research, CRM, docs, and call recaps live in one persistent environment. Before the next call, you open the Stax and everything is instantly live — your notes about the last call front and center, the deck open on the right slide.\n\nThen you share the Stax internally. Pre-sales adds a technical FAQ tab. Your VP adds an exec summary draft. Marketing drops in a case study. You can even create a client-facing Stax with the proposal, ROI calculator, and implementation timeline. Every time you touch this account, you step into a fully loaded war room.",
     staxPattern:
       '"NordicGrid – Deal Cycle" / "NordicGrid – Shared Materials"',
-    seoTitle: "Browser Tab Manager for Enterprise Sales Reps | TabStax",
+    seoTitle: "Browser Tab Manager for Enterprise Sales Reps | HeyStax",
     metaDescription:
-      "Keep every deal's CRM pages, decks, and research in one shareable browser workspace. TabStax gives sales reps a deal war room ready in one click.",
+      "Keep every deal's CRM pages, decks, and research in one shareable browser workspace. HeyStax gives sales reps a deal war room ready in one click.",
     keywords: [
       "enterprise sales tab manager",
       "deal room browser workspace",
@@ -134,7 +134,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How can TabStax help before a sales call?",
+        q: "How can HeyStax help before a sales call?",
         a: "Open your deal Stax and every CRM record, deck, and research tab is instantly live — no hunting for links before the call.",
       },
       {
@@ -142,8 +142,8 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax link and colleagues instantly open the same environment — pre-sales, VP, and marketing can all add their tabs.",
       },
       {
-        q: "Does TabStax replace my CRM?",
-        a: "No — TabStax organises your browser around your CRM, keeping the right pages open for each deal alongside all supporting docs.",
+        q: "Does HeyStax replace my CRM?",
+        a: "No — HeyStax organises your browser around your CRM, keeping the right pages open for each deal alongside all supporting docs.",
       },
     ],
     relatedSlugs: ["sales-engineer-two-demos", "csm-renewal-day", "financial-planner-client-reviews"],
@@ -155,13 +155,13 @@ export const useCases: UseCase[] = [
     category: "Rituals, Meetings & Team Rhythms",
     persona: "Scrum Master",
     summary:
-      "When you're sick or late, the team freestyles. Standup loses structure. With TabStax, your process becomes a reusable kit anyone can open.",
+      "When you're sick or late, the team freestyles. Standup loses structure. With HeyStax, your process becomes a reusable kit anyone can open.",
     content:
-      "You run daily standup for Team Falcon. Your cockpit includes the Jira board in the exact column view you use, the sprint goal page, a filtered bug list, the CI/CD status page, and a short checklist for running standup.\n\nWithout TabStax, when you're out sick, the team freestyles. Standup loses structure and new members are confused. With TabStax, you create a Team Falcon Standup Stax with all the tabs saved and a Start Page walking through Step 1: revisit sprint goal, Step 2: yesterday/today/blockers, Step 3: check critical bugs.\n\nYou share the Stax with the whole team. On any morning, anyone can click the same link and get the board, the checklist, and priorities identically arranged. Your process becomes a system, not a personality.",
+      "You run daily standup for Team Falcon. Your cockpit includes the Jira board in the exact column view you use, the sprint goal page, a filtered bug list, the CI/CD status page, and a short checklist for running standup.\n\nWithout HeyStax, when you're out sick, the team freestyles. Standup loses structure and new members are confused. With HeyStax, you create a Team Falcon Standup Stax with all the tabs saved and a Start Page walking through Step 1: revisit sprint goal, Step 2: yesterday/today/blockers, Step 3: check critical bugs.\n\nYou share the Stax with the whole team. On any morning, anyone can click the same link and get the board, the checklist, and priorities identically arranged. Your process becomes a system, not a personality.",
     staxPattern: '"Team Falcon – Standup Stax"',
-    seoTitle: "Shareable Standup Browser Kit for Scrum Masters | TabStax",
+    seoTitle: "Shareable Standup Browser Kit for Scrum Masters | HeyStax",
     metaDescription:
-      "Turn your standup process into a reusable kit anyone on the team can open. TabStax lets Scrum Masters share a complete meeting environment in one link.",
+      "Turn your standup process into a reusable kit anyone on the team can open. HeyStax lets Scrum Masters share a complete meeting environment in one link.",
     keywords: [
       "scrum master browser tool",
       "standup tab organiser",
@@ -171,7 +171,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does a Scrum Master use TabStax for standups?",
+        q: "How does a Scrum Master use HeyStax for standups?",
         a: "Create a Standup Stax with the Jira board, sprint goal, bug list, and a Start Page checklist. Share it so anyone can run standup identically.",
       },
       {
@@ -192,13 +192,13 @@ export const useCases: UseCase[] = [
     category: "Family, Care & School",
     persona: "Neurodivergent Parent",
     summary:
-      "School portals, payment links, event calendars, random one-off days. One parent ends up carrying all the mental load. TabStax turns it into a shared workspace.",
+      "School portals, payment links, event calendars, random one-off days. One parent ends up carrying all the mental load. HeyStax turns it into a shared workspace.",
     content:
-      "You've got a child in school and the usual mess: school app, emails about trips and uniforms, payment links, a calendar of random one-off days, and a running checklist of things to remember for Thursday.\n\nWithout TabStax, stuff slips. One parent carries all the mental load. You scramble the morning of the school play. With TabStax, you create a School Admin Stax with the school portal, payment pages, a shared to-do doc, and the calendar in the right view. The Start Page lists next actions: pay for class trip by Friday, buy new tracksuit bottoms, note parent-teacher time slot.\n\nYou share this Stax with your co-parent. Either of you can open it and see everything that needs attention. Whoever acts ticks off the next action and updates the doc. On big days, you open the Stax and instantly see logistics instead of sweeping through old emails. The mental model of school admin becomes a shared workspace, not one person's overloaded memory.",
+      "You've got a child in school and the usual mess: school app, emails about trips and uniforms, payment links, a calendar of random one-off days, and a running checklist of things to remember for Thursday.\n\nWithout HeyStax, stuff slips. One parent carries all the mental load. You scramble the morning of the school play. With HeyStax, you create a School Admin Stax with the school portal, payment pages, a shared to-do doc, and the calendar in the right view. The Start Page lists next actions: pay for class trip by Friday, buy new tracksuit bottoms, note parent-teacher time slot.\n\nYou share this Stax with your co-parent. Either of you can open it and see everything that needs attention. Whoever acts ticks off the next action and updates the doc. On big days, you open the Stax and instantly see logistics instead of sweeping through old emails. The mental model of school admin becomes a shared workspace, not one person's overloaded memory.",
     staxPattern: '"Rory – School Admin (This Term)"',
-    seoTitle: "Shared School Admin Browser Workspace for Parents | TabStax",
+    seoTitle: "Shared School Admin Browser Workspace for Parents | HeyStax",
     metaDescription:
-      "Stop one parent carrying all the school mental load. TabStax turns school admin into a shared browser workspace both co-parents can open and update.",
+      "Stop one parent carrying all the school mental load. HeyStax turns school admin into a shared browser workspace both co-parents can open and update.",
     keywords: [
       "shared school admin browser tool",
       "neurodivergent parent productivity",
@@ -208,15 +208,15 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help parents share school admin?",
+        q: "How does HeyStax help parents share school admin?",
         a: "Create a School Stax with portals, payment links, and a shared to-do doc. Both parents open the same Stax and act on the next visible item.",
       },
       {
-        q: "Is TabStax useful for neurodivergent parents?",
+        q: "Is HeyStax useful for neurodivergent parents?",
         a: "Yes. Having one named place for all school admin reduces the cognitive load of remembering scattered links and dates.",
       },
       {
-        q: "Can TabStax help with last-minute school day chaos?",
+        q: "Can HeyStax help with last-minute school day chaos?",
         a: "Yes. Opening the School Stax shows today's logistics instantly — no rummaging through old emails on the morning of the school play.",
       },
     ],
@@ -231,12 +231,12 @@ export const useCases: UseCase[] = [
     summary:
       "Invoicing, bank portal, project tracker, email, design tools, messaging, social media. Every morning is a rebuild-ops-view exercise. You lose half an hour just getting oriented.",
     content:
-      "You run BrightPixel Studio. Your daily operating stack includes Xero for invoicing, the bank portal, Trello or Asana for project tracking, email, Figma, WhatsApp Web for client messages, and social media for leads.\n\nWithout TabStax, every morning is a rebuild-ops-view exercise. You open things in random order, miss an invoice, forget which client is overdue, and lose half an hour to getting oriented. With TabStax, you create a Daily Ops Stax with all core tools in one saved state and a Start Page sequence: check overdue invoices, review today's tasks, respond to client pings, ten minutes on lead gen.\n\nYou also have separate Client Stax for each project — each containing just the Figma, doc, and email thread for that client. When you switch clients, you close one Stax and open the other. Your brain doesn't have to drag context across. Running the business feels like opening Ops Mode and Client Mode on demand, not juggling spaghetti.",
+      "You run BrightPixel Studio. Your daily operating stack includes Xero for invoicing, the bank portal, Trello or Asana for project tracking, email, Figma, WhatsApp Web for client messages, and social media for leads.\n\nWithout HeyStax, every morning is a rebuild-ops-view exercise. You open things in random order, miss an invoice, forget which client is overdue, and lose half an hour to getting oriented. With HeyStax, you create a Daily Ops Stax with all core tools in one saved state and a Start Page sequence: check overdue invoices, review today's tasks, respond to client pings, ten minutes on lead gen.\n\nYou also have separate Client Stax for each project — each containing just the Figma, doc, and email thread for that client. When you switch clients, you close one Stax and open the other. Your brain doesn't have to drag context across. Running the business feels like opening Ops Mode and Client Mode on demand, not juggling spaghetti.",
     staxPattern:
       '"BrightPixel – Daily Ops" / "Client – Atlas Retail Website" / "Client – Nova Branding"',
-    seoTitle: "Browser Workspace for Small Business Owners | TabStax",
+    seoTitle: "Browser Workspace for Small Business Owners | HeyStax",
     metaDescription:
-      "Stop rebuilding your ops view every morning. TabStax gives SME owners a Daily Ops Stax and per-client workspaces — open your day in one click.",
+      "Stop rebuilding your ops view every morning. HeyStax gives SME owners a Daily Ops Stax and per-client workspaces — open your day in one click.",
     keywords: [
       "small business browser workspace",
       "SME tab organiser",
@@ -246,7 +246,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help small business owners start their day faster?",
+        q: "How does HeyStax help small business owners start their day faster?",
         a: "Open your Daily Ops Stax and all core tools — invoicing, project tracker, bank, email — are instantly ready with a Start Page sequence to follow.",
       },
       {
@@ -254,8 +254,8 @@ export const useCases: UseCase[] = [
         a: "Yes. Create a Stax per client with only their Figma, docs, and email thread. Switching clients means closing one Stax and opening another.",
       },
       {
-        q: "Does TabStax integrate with tools like Xero or Trello?",
-        a: "TabStax works with any browser-based tool. Simply add your Xero, Trello, or any other tab to the relevant Stax.",
+        q: "Does HeyStax integrate with tools like Xero or Trello?",
+        a: "HeyStax works with any browser-based tool. Simply add your Xero, Trello, or any other tab to the relevant Stax.",
       },
     ],
     relatedSlugs: ["agency-founder-three-clients", "startup-founder-board-prep", "solo-developer-indie-hacker"],
@@ -269,12 +269,12 @@ export const useCases: UseCase[] = [
     summary:
       "Calendar hell, Jira, dashboards, email, Teams, docs for each project, and constant 30-minute context cuts. Each meeting requires hunting for the right notes and dashboards.",
     content:
-      "You're a manager in a big company. Calendar hell, Jira, Asana, internal tools, three dashboards, email, Teams or Slack, and docs for each project. Every meeting requires hunting: where are the notes, where's the dashboard, what did we decide last time?\n\nWith TabStax, you have a Stax for each meeting and project. Weekly Leadership Meeting, Platform Revamp, Cost Optimisation — each with its agenda doc, notes, the right dashboard, relevant Jira board, and key email thread. Before a meeting, you open the Stax and by the time the video call connects, your tools and last notes are ready.\n\nBetween meetings, you close that Stax and open the next one. New dashboards, new notes, new context — instantly. You share each Stax with the project team so they join calls with the same context already open. You switch projects with the same ease you switch tabs, but the entire context comes along.",
+      "You're a manager in a big company. Calendar hell, Jira, Asana, internal tools, three dashboards, email, Teams or Slack, and docs for each project. Every meeting requires hunting: where are the notes, where's the dashboard, what did we decide last time?\n\nWith HeyStax, you have a Stax for each meeting and project. Weekly Leadership Meeting, Platform Revamp, Cost Optimisation — each with its agenda doc, notes, the right dashboard, relevant Jira board, and key email thread. Before a meeting, you open the Stax and by the time the video call connects, your tools and last notes are ready.\n\nBetween meetings, you close that Stax and open the next one. New dashboards, new notes, new context — instantly. You share each Stax with the project team so they join calls with the same context already open. You switch projects with the same ease you switch tabs, but the entire context comes along.",
     staxPattern:
       '"Team – Weekly Leadership Meeting" / "Project – Platform Revamp" / "Project – Cost Optimisation"',
-    seoTitle: "Tab Organiser for Corporate Managers in SaaS Tools | TabStax",
+    seoTitle: "Tab Organiser for Corporate Managers in SaaS Tools | HeyStax",
     metaDescription:
-      "Stop hunting for notes and dashboards before every meeting. TabStax gives corporate managers a per-project browser workspace ready before Zoom connects.",
+      "Stop hunting for notes and dashboards before every meeting. HeyStax gives corporate managers a per-project browser workspace ready before Zoom connects.",
     keywords: [
       "corporate manager tab organiser",
       "meeting browser workspace tool",
@@ -284,7 +284,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help managers prepare for back-to-back meetings?",
+        q: "How does HeyStax help managers prepare for back-to-back meetings?",
         a: "Each meeting or project has its own Stax with the right dashboard, notes, and agenda. Opening it before the call means you're ready before Zoom connects.",
       },
       {
@@ -292,8 +292,8 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax and everyone joins the call with the same context already open — same notes, same dashboard, same agenda.",
       },
       {
-        q: "Does TabStax work with Jira, Slack, and other tools?",
-        a: "TabStax works with any browser-based tool. Add Jira boards, Slack channels, or dashboards to a Stax alongside your docs.",
+        q: "Does HeyStax work with Jira, Slack, and other tools?",
+        a: "HeyStax works with any browser-based tool. Add Jira boards, Slack channels, or dashboards to a Stax alongside your docs.",
       },
     ],
     relatedSlugs: ["scrum-master-standup", "product-manager-three-streams", "corporate-manager-back-to-back"],
@@ -307,11 +307,11 @@ export const useCases: UseCase[] = [
     summary:
       "PagerDuty goes off. You need Grafana, logs, the deployment pipeline, feature flag console, runbook, and incident channel. Without a Stax, you burn 5-10 minutes just spinning everything up.",
     content:
-      "PagerDuty goes off. For this type of incident, you need Grafana or Datadog dashboards, logs, the deployment pipeline, feature flag console, the runbook, and the incident Slack channel.\n\nWithout TabStax, you burn five to ten minutes spinning everything up and pasting links around. With TabStax, you already have a P1 Web Latency Stax prepared: all relevant dashboards with the right filters, the runbook opened at the exact section, the CI/CD panel, and the comms channel.\n\nYou hit Open Stax and you're in the cockpit. You share that Stax in the incident channel. On-call devs and managers click the same link. Everyone instantly sees the same dashboards and runbook instructions — no \"please share link?\" spam. Context switching from regular work to incident mode is a single action, not an adrenaline-fuelled scavenger hunt.",
+      "PagerDuty goes off. For this type of incident, you need Grafana or Datadog dashboards, logs, the deployment pipeline, feature flag console, the runbook, and the incident Slack channel.\n\nWithout HeyStax, you burn five to ten minutes spinning everything up and pasting links around. With HeyStax, you already have a P1 Web Latency Stax prepared: all relevant dashboards with the right filters, the runbook opened at the exact section, the CI/CD panel, and the comms channel.\n\nYou hit Open Stax and you're in the cockpit. You share that Stax in the incident channel. On-call devs and managers click the same link. Everyone instantly sees the same dashboards and runbook instructions — no \"please share link?\" spam. Context switching from regular work to incident mode is a single action, not an adrenaline-fuelled scavenger hunt.",
     staxPattern: '"P1 – Web Latency / Errors"',
-    seoTitle: "Incident Response Browser Workspace for DevOps | TabStax",
+    seoTitle: "Incident Response Browser Workspace for DevOps | HeyStax",
     metaDescription:
-      "Stop burning 10 minutes spinning up dashboards during a P1. TabStax gives DevOps teams a pre-built incident cockpit ready to share in one click.",
+      "Stop burning 10 minutes spinning up dashboards during a P1. HeyStax gives DevOps teams a pre-built incident cockpit ready to share in one click.",
     keywords: [
       "DevOps incident response browser tool",
       "SRE tab organiser",
@@ -321,7 +321,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax speed up incident response?",
+        q: "How does HeyStax speed up incident response?",
         a: "Pre-build a Stax with the right dashboards, runbook, and comms channel. When PagerDuty fires, open the Stax and you're in the cockpit immediately.",
       },
       {
@@ -344,11 +344,11 @@ export const useCases: UseCase[] = [
     summary:
       "Gas leak in a residential area. Fire brigade, police, utilities, press office — everyone needs the same operational picture, instantly. You're not just sending links — you're distributing a command environment.",
     content:
-      "There's a gas leak reported in a residential area. You need a live map, utility provider dashboard, weather data, emergency call feed, evacuation procedures, press release template, and internal comms platform.\n\nWithout TabStax, you're firing links to fire brigade, police, utilities, and press office separately. Everyone builds their own tab mess. With TabStax, you have an Incident Gas Leak Stax ready with all core tools, maps, and procedures. The Start Page has a step list: confirm leak location and radius, trigger evacuation, notify media with pre-approved template.\n\nYou share that Stax link with fire and emergency responders, the utility operator, press officer, and city leadership. Each stakeholder opens one link and gets the same operational picture. You're not just sending links — you're distributing a ready-made command environment.",
+      "There's a gas leak reported in a residential area. You need a live map, utility provider dashboard, weather data, emergency call feed, evacuation procedures, press release template, and internal comms platform.\n\nWithout HeyStax, you're firing links to fire brigade, police, utilities, and press office separately. Everyone builds their own tab mess. With HeyStax, you have an Incident Gas Leak Stax ready with all core tools, maps, and procedures. The Start Page has a step list: confirm leak location and radius, trigger evacuation, notify media with pre-approved template.\n\nYou share that Stax link with fire and emergency responders, the utility operator, press officer, and city leadership. Each stakeholder opens one link and gets the same operational picture. You're not just sending links — you're distributing a ready-made command environment.",
     staxPattern: '"Incident – Gas Leak (Zone A)"',
-    seoTitle: "Shared Command Environment for Emergency Managers | TabStax",
+    seoTitle: "Shared Command Environment for Emergency Managers | HeyStax",
     metaDescription:
-      "Distribute a ready-made operational picture to fire, police, and utilities in one link. TabStax gives emergency managers a shareable command browser workspace.",
+      "Distribute a ready-made operational picture to fire, police, and utilities in one link. HeyStax gives emergency managers a shareable command browser workspace.",
     keywords: [
       "emergency manager browser workspace",
       "incident command tab organiser",
@@ -358,7 +358,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help coordinate multiple agencies in an emergency?",
+        q: "How does HeyStax help coordinate multiple agencies in an emergency?",
         a: "Share one Stax link with all stakeholders. Everyone opens the same maps, utility dashboards, and evacuation procedures instantly.",
       },
       {
@@ -381,11 +381,11 @@ export const useCases: UseCase[] = [
     summary:
       "Tax time. Revenue portal, bank statements, expense tracking, pension docs, receipts. Every session means re-opening everything from scratch. Then you try to loop in your accountant over email.",
     content:
-      "It's tax time. You've got the Revenue portal, bank statements, expense tracking sheet, pension docs, receipts in Drive, and an email thread with your accountant.\n\nWithout TabStax, you re-open these every time you work on taxes, then lose them, then forward random info to your accountant. With TabStax, you make a Tax Prep Stax with all relevant portals and docs. The Start Page lists next actions: upload missing receipts, check health expenses eligibility, confirm pension contributions total.\n\nEvery time you give it twenty minutes, you open that one Stax, continue from the next action, and nothing gets lost. Then you share the Stax with your accountant. They open it and see the same portals, docs, and structure. They can say \"log into this, click that, check this\" while knowing exactly what's on your screen. Tax prep becomes a guided workflow with a shared cockpit, not miscellaneous chaos.",
+      "It's tax time. You've got the Revenue portal, bank statements, expense tracking sheet, pension docs, receipts in Drive, and an email thread with your accountant.\n\nWithout HeyStax, you re-open these every time you work on taxes, then lose them, then forward random info to your accountant. With HeyStax, you make a Tax Prep Stax with all relevant portals and docs. The Start Page lists next actions: upload missing receipts, check health expenses eligibility, confirm pension contributions total.\n\nEvery time you give it twenty minutes, you open that one Stax, continue from the next action, and nothing gets lost. Then you share the Stax with your accountant. They open it and see the same portals, docs, and structure. They can say \"log into this, click that, check this\" while knowing exactly what's on your screen. Tax prep becomes a guided workflow with a shared cockpit, not miscellaneous chaos.",
     staxPattern: '"2024 – Tax Prep"',
-    seoTitle: "Browser Workspace for Tax Prep With Your Accountant | TabStax",
+    seoTitle: "Browser Workspace for Tax Prep With Your Accountant | HeyStax",
     metaDescription:
-      "Stop re-opening portals every time you give tax 20 minutes. TabStax organises your tax documents and shares a guided workspace with your accountant.",
+      "Stop re-opening portals every time you give tax 20 minutes. HeyStax organises your tax documents and shares a guided workspace with your accountant.",
     keywords: [
       "tax preparation browser workspace",
       "personal finance tab organiser",
@@ -395,7 +395,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help with tax preparation?",
+        q: "How does HeyStax help with tax preparation?",
         a: "Build a Tax Prep Stax with the Revenue portal, bank statements, and expense sheets. Open it for each work session and continue from the last action.",
       },
       {
@@ -403,8 +403,8 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax and your accountant sees the same portals and documents — they can guide you step by step from a shared context.",
       },
       {
-        q: "Does TabStax save my login sessions?",
-        a: "TabStax restores your tabs in the state you last saved them, including any pages you were logged into, saving re-navigation time.",
+        q: "Does HeyStax save my login sessions?",
+        a: "HeyStax restores your tabs in the state you last saved them, including any pages you were logged into, saving re-navigation time.",
       },
     ],
     relatedSlugs: ["sme-owner-six-apps", "caregiver-ageing-parent", "planning-big-move-abroad"],
@@ -419,12 +419,12 @@ export const useCases: UseCase[] = [
     summary:
       "You just left a design crit. In 15 minutes you have a stakeholder review for a completely different stream. You need to rehydrate an entire mental context in the gap.",
     content:
-      "You're a PM with three active streams: Onboarding 2.0, Billing Revamp, and the SLA Feature. Each lives in a completely different mental universe — different Figma flows, different PRDs, different dashboards, different stakeholders.\n\nWithout TabStax, you alt-tab like a maniac between meetings, sounding like you're remembering rather than leading. With TabStax, each stream gets its own Stax with the right docs, pre-filtered dashboards, and a Start Page listing last decisions and next actions. You close the Onboarding Stax and open Billing. The PRD opens, the finance feedback doc is right there, and your own note reminds you what to open with.\n\nYou share each Stax with the relevant squad. When you say \"let's open the Billing Stax,\" everyone is literally staring at the same context. You drop into the stakeholder review already in their world.",
+      "You're a PM with three active streams: Onboarding 2.0, Billing Revamp, and the SLA Feature. Each lives in a completely different mental universe — different Figma flows, different PRDs, different dashboards, different stakeholders.\n\nWithout HeyStax, you alt-tab like a maniac between meetings, sounding like you're remembering rather than leading. With HeyStax, each stream gets its own Stax with the right docs, pre-filtered dashboards, and a Start Page listing last decisions and next actions. You close the Onboarding Stax and open Billing. The PRD opens, the finance feedback doc is right there, and your own note reminds you what to open with.\n\nYou share each Stax with the relevant squad. When you say \"let's open the Billing Stax,\" everyone is literally staring at the same context. You drop into the stakeholder review already in their world.",
     staxPattern:
       '"PM – Onboarding 2.0" / "PM – Billing Revamp" / "PM – SLA Feature"',
-    seoTitle: "Browser Workspace for Product Managers Across Streams | TabStax",
+    seoTitle: "Browser Workspace for Product Managers Across Streams | HeyStax",
     metaDescription:
-      "Rehydrate a full product context in the gap between meetings. TabStax gives PMs a per-stream browser workspace with last decisions and next actions ready.",
+      "Rehydrate a full product context in the gap between meetings. HeyStax gives PMs a per-stream browser workspace with last decisions and next actions ready.",
     keywords: [
       "product manager browser workspace",
       "PM tab organiser multiple streams",
@@ -434,7 +434,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help product managers between meetings?",
+        q: "How does HeyStax help product managers between meetings?",
         a: "Each product stream has its own Stax with the right PRD, dashboard, and a Start Page listing last decisions. Close one, open the next, and rehydrate in seconds.",
       },
       {
@@ -442,7 +442,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax link so the squad opens the meeting with the same PRD and context already loaded — no 'can you paste the link?' delay.",
       },
       {
-        q: "Does TabStax help with note-taking across streams?",
+        q: "Does HeyStax help with note-taking across streams?",
         a: "Yes. Each Stax can include a notes doc. The Start Page records last decisions so you always know where you left off.",
       },
     ],
@@ -457,12 +457,12 @@ export const useCases: UseCase[] = [
     summary:
       "At 1pm a compliance demo for a bank. At 3pm a developer deep dive for a startup. Same product, utterly different angles. One wrong tab and you show the wrong environment.",
     content:
-      "At 1pm you're doing a compliance-focused demo for a bank. At 3pm a developer-focused deep dive for a startup. Same product, utterly different angles. The bank needs the locked-down demo tenant, compliance dashboard, audit logs, and security FAQ. The startup needs the sandbox, API docs, code examples, and live logs.\n\nWithout TabStax, you're constantly reconfiguring your browser, logging into different tenants, hunting for the right docs, and praying you don't show the wrong environment. With TabStax, you build two separate worlds: one for the bank demo and one for the developer deep dive. Each includes pre-authenticated environments, tailored slide decks, and a Start Page with a scripted demo flow.\n\nAt 12:55 you open the Bank Demo Stax. Everything is ready. At 2:55 you close it and open the Developer Stax. New tenant, new docs, new script. You share each Stax with the AE and product lead so they can review the flow without a sync meeting. You walk into each demo like you built the product for them.",
+      "At 1pm you're doing a compliance-focused demo for a bank. At 3pm a developer-focused deep dive for a startup. Same product, utterly different angles. The bank needs the locked-down demo tenant, compliance dashboard, audit logs, and security FAQ. The startup needs the sandbox, API docs, code examples, and live logs.\n\nWithout HeyStax, you're constantly reconfiguring your browser, logging into different tenants, hunting for the right docs, and praying you don't show the wrong environment. With HeyStax, you build two separate worlds: one for the bank demo and one for the developer deep dive. Each includes pre-authenticated environments, tailored slide decks, and a Start Page with a scripted demo flow.\n\nAt 12:55 you open the Bank Demo Stax. Everything is ready. At 2:55 you close it and open the Developer Stax. New tenant, new docs, new script. You share each Stax with the AE and product lead so they can review the flow without a sync meeting. You walk into each demo like you built the product for them.",
     staxPattern:
       '"Demo – Bank / Compliance (ACB Bank)" / "Demo – Developer Deep Dive (LaunchCraft)"',
-    seoTitle: "Browser Workspace for Sales Engineers Running Multiple Demos | TabStax",
+    seoTitle: "Browser Workspace for Sales Engineers Running Multiple Demos | HeyStax",
     metaDescription:
-      "Run a compliance demo and a developer deep dive in the same afternoon without mixing environments. TabStax keeps each demo world separate and ready.",
+      "Run a compliance demo and a developer deep dive in the same afternoon without mixing environments. HeyStax keeps each demo world separate and ready.",
     keywords: [
       "sales engineer demo browser workspace",
       "multi-tenant demo tab organiser",
@@ -472,7 +472,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax prevent mixing up demo environments?",
+        q: "How does HeyStax prevent mixing up demo environments?",
         a: "Each demo gets its own Stax with the right tenant, docs, and script. Close one before opening the next — no cross-contamination possible.",
       },
       {
@@ -495,12 +495,12 @@ export const useCases: UseCase[] = [
     summary:
       "At 10am a QBR with a happy, expanding account. At 11am a tense call with a renewal-risk customer. You need to show up with the right posture for each, not one blended tone.",
     content:
-      "It's Renewal Day. At 10:00 you have a QBR with a happy, expanding account — usage dashboard glowing green, NPS quotes, upsell deck. At 11:00 you have a tense call with a renewal-risk customer — dropping logins, spiking support tickets, a quiet executive sponsor.\n\nWithout TabStax, you carry the emotional residue of the first call into the second. Your tabs bleed together. You keep almost sharing the wrong deck. With TabStax, each account gets its own Stax with pre-filtered dashboards, support history, the right deck, and a Start Page setting the emotional posture: \"Lead with wins, then expansion path\" for the happy account, \"Start by listening; mirror their concerns; offer adoption plan\" for the at-risk one.\n\nWhen you finish the happy QBR, you close that entire emotional context and open the Atlas Stax. Your brain reads your own note: \"This call is about empathy and rescue, not selling.\" You show up with the right posture for each account.",
+      "It's Renewal Day. At 10:00 you have a QBR with a happy, expanding account — usage dashboard glowing green, NPS quotes, upsell deck. At 11:00 you have a tense call with a renewal-risk customer — dropping logins, spiking support tickets, a quiet executive sponsor.\n\nWithout HeyStax, you carry the emotional residue of the first call into the second. Your tabs bleed together. You keep almost sharing the wrong deck. With HeyStax, each account gets its own Stax with pre-filtered dashboards, support history, the right deck, and a Start Page setting the emotional posture: \"Lead with wins, then expansion path\" for the happy account, \"Start by listening; mirror their concerns; offer adoption plan\" for the at-risk one.\n\nWhen you finish the happy QBR, you close that entire emotional context and open the Atlas Stax. Your brain reads your own note: \"This call is about empathy and rescue, not selling.\" You show up with the right posture for each account.",
     staxPattern:
       '"CS – QBR: Brightwave Media (Happy)" / "CS – Renewal Risk: Atlas Freight"',
-    seoTitle: "Browser Workspace for Customer Success Managers on Renewal Day | TabStax",
+    seoTitle: "Browser Workspace for Customer Success Managers on Renewal Day | HeyStax",
     metaDescription:
-      "Show up with the right posture for every account. TabStax gives CSMs a per-customer browser workspace with dashboards, history, and an emotional primer.",
+      "Show up with the right posture for every account. HeyStax gives CSMs a per-customer browser workspace with dashboards, history, and an emotional primer.",
     keywords: [
       "customer success manager browser workspace",
       "renewal call tab organiser",
@@ -510,7 +510,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help CSMs switch between accounts?",
+        q: "How does HeyStax help CSMs switch between accounts?",
         a: "Each account has its own Stax with the usage dashboard, support history, and a Start Page setting the call posture. Close one account world, open the next.",
       },
       {
@@ -518,7 +518,7 @@ export const useCases: UseCase[] = [
         a: "It contains the account's usage data, support ticket history, the right deck, and a Start Page reminder: 'Start by listening; mirror their concerns; offer adoption plan.'",
       },
       {
-        q: "Can TabStax help CSMs avoid emotional bleed between calls?",
+        q: "Can HeyStax help CSMs avoid emotional bleed between calls?",
         a: "Yes. Closing the Stax after a tough call creates a mental break. Opening the next Stax resets your frame to that account's story and posture.",
       },
     ],
@@ -533,12 +533,12 @@ export const useCases: UseCase[] = [
     summary:
       "The COO, CMO, and Head of Product all ping you before 10am. Each question hits a different table, dashboard, and narrative. You need to work in tight time-boxed blocks without context bleed.",
     content:
-      "It's 9:30. Slack pings: the COO wants weekly active users before 11, the CMO wants signup breakdowns by channel, and the Head of Product wants an early read on churn for new pricing. Each question hits a different table, different dashboard, different story.\n\nWithout TabStax, you open twelve tabs, drown in queries, and by the time you answer the first, you've forgotten what the second was about. With TabStax, you create a Stax for each request: COO WAU Request, CMO Channel Performance, Pricing Churn Read. Each holds the relevant dashboard, SQL editor with saved query, the spec or context doc, the Slack thread with the request, and a Start Page capturing what the answer needs to say in one sentence.\n\nYou time-box twenty-five minutes each. Open COO Stax, answer the question, paste chart and summary. Close, open CMO Stax — different world, different filters, clean mental shift. You're not juggling queries in your head; you're stepping into three well-defined investigations.",
+      "It's 9:30. Slack pings: the COO wants weekly active users before 11, the CMO wants signup breakdowns by channel, and the Head of Product wants an early read on churn for new pricing. Each question hits a different table, different dashboard, different story.\n\nWithout HeyStax, you open twelve tabs, drown in queries, and by the time you answer the first, you've forgotten what the second was about. With HeyStax, you create a Stax for each request: COO WAU Request, CMO Channel Performance, Pricing Churn Read. Each holds the relevant dashboard, SQL editor with saved query, the spec or context doc, the Slack thread with the request, and a Start Page capturing what the answer needs to say in one sentence.\n\nYou time-box twenty-five minutes each. Open COO Stax, answer the question, paste chart and summary. Close, open CMO Stax — different world, different filters, clean mental shift. You're not juggling queries in your head; you're stepping into three well-defined investigations.",
     staxPattern:
       '"Analytics – COO WAU Request" / "Analytics – CMO Channel Performance" / "Analytics – Pricing Churn Read"',
-    seoTitle: "Browser Workspace for Data Analysts Juggling Exec Requests | TabStax",
+    seoTitle: "Browser Workspace for Data Analysts Juggling Exec Requests | HeyStax",
     metaDescription:
-      "Answer three exec questions without losing context between them. TabStax gives analysts a separate browser workspace per investigation with the right dashboard and query saved.",
+      "Answer three exec questions without losing context between them. HeyStax gives analysts a separate browser workspace per investigation with the right dashboard and query saved.",
     keywords: [
       "data analyst browser workspace",
       "analytics tab organiser",
@@ -548,7 +548,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help analysts work on multiple requests without context bleed?",
+        q: "How does HeyStax help analysts work on multiple requests without context bleed?",
         a: "Each request gets its own Stax with the relevant dashboard, SQL editor, and a one-sentence goal. Time-box 25 minutes per Stax and switch cleanly.",
       },
       {
@@ -571,12 +571,12 @@ export const useCases: UseCase[] = [
     summary:
       "Board deck, production bug, prospect pricing, hiring plan — everything is urgent, everything is fragmented. Your browser becomes a junk drawer of Notion, Slides, Stripe, Slack, Jira, and Gmail.",
     content:
-      "Morning fires: you're trying to finish the board deck, engineering pings about a production bug, a big prospect wants updated pricing, and you're supposed to be drafting a hiring plan. Everything is urgent. Everything is fragmented.\n\nWithout TabStax, your browser becomes a junk drawer: Notion, Slides, Stripe, Slack, Jira, Google Sheets, Gmail, all on top of each other. With TabStax, you slice your day into four Stax: Board Pack Prep, Production Bug, Prospect Pricing, and Hiring Plan. Each has only the relevant tabs and a Start Page with the clear goal and one to three next moves.\n\nYou share Board Pack with your CFO, Bug Stax with your eng lead, Prospect Pricing with sales. Then you work in time blocks: sixty minutes in Board Pack Stax, thirty in Bug Stax, thirty in Prospect Stax, forty-five in Hiring Stax. Each time you switch, you close one world and open the next, rebooting fully instead of context-leaking across.",
+      "Morning fires: you're trying to finish the board deck, engineering pings about a production bug, a big prospect wants updated pricing, and you're supposed to be drafting a hiring plan. Everything is urgent. Everything is fragmented.\n\nWithout HeyStax, your browser becomes a junk drawer: Notion, Slides, Stripe, Slack, Jira, Google Sheets, Gmail, all on top of each other. With HeyStax, you slice your day into four Stax: Board Pack Prep, Production Bug, Prospect Pricing, and Hiring Plan. Each has only the relevant tabs and a Start Page with the clear goal and one to three next moves.\n\nYou share Board Pack with your CFO, Bug Stax with your eng lead, Prospect Pricing with sales. Then you work in time blocks: sixty minutes in Board Pack Stax, thirty in Bug Stax, thirty in Prospect Stax, forty-five in Hiring Stax. Each time you switch, you close one world and open the next, rebooting fully instead of context-leaking across.",
     staxPattern:
       '"Founder – Board Pack Prep" / "Founder – Fire: Production Bug 4819" / "Founder – Prospect Pricing (Acme)" / "Founder – Hiring Plan Q3"',
-    seoTitle: "Browser Workspace for Startup Founders Managing Chaos | TabStax",
+    seoTitle: "Browser Workspace for Startup Founders Managing Chaos | HeyStax",
     metaDescription:
-      "Slice your day into focused Stax for board prep, fires, and hiring. TabStax helps founders time-block without losing context between urgent priorities.",
+      "Slice your day into focused Stax for board prep, fires, and hiring. HeyStax helps founders time-block without losing context between urgent priorities.",
     keywords: [
       "startup founder browser workspace",
       "founder productivity tab organiser",
@@ -586,7 +586,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help founders handle multiple simultaneous priorities?",
+        q: "How does HeyStax help founders handle multiple simultaneous priorities?",
         a: "Create a Stax per priority — board deck, production bug, prospect, hiring. Time-block each slot, switch Stax cleanly, and never drag context between worlds.",
       },
       {
@@ -609,12 +609,12 @@ export const useCases: UseCase[] = [
     summary:
       "You just finished writing a postmortem surrounded by scary graphs. In ten minutes, you're leading a cool-headed reliability review. Different dashboards, different docs, different emotional tone.",
     content:
-      "You just finished writing a postmortem for a nasty incident. In ten minutes, you're leading the weekly reliability review. The postmortem world is incident tickets, logs, timeline docs, and runbook links. The reliability world is SLO dashboards, error budgets, upcoming risky changes, and capacity planning.\n\nWithout TabStax, you finish the postmortem surrounded by emotional debris and scary graphs, then try to spin up reliability dashboards while Slack pings about something else. You drag the mood of fighting a fire into what should be a cool-headed review. With TabStax, each has its own Stax with different dashboards, docs, and goals. The Postmortem Start Page says \"Write root cause summary in human language; capture three action items max.\" The Reliability Start Page says \"Look at SLO burn-down, identify top two violators, assign owners.\"\n\nAt the end of the postmortem, you literally close that world. Open Reliability Stax. Fresh dashboards, fresh framing, fresh tone. You feel the difference in your body.",
+      "You just finished writing a postmortem for a nasty incident. In ten minutes, you're leading the weekly reliability review. The postmortem world is incident tickets, logs, timeline docs, and runbook links. The reliability world is SLO dashboards, error budgets, upcoming risky changes, and capacity planning.\n\nWithout HeyStax, you finish the postmortem surrounded by emotional debris and scary graphs, then try to spin up reliability dashboards while Slack pings about something else. You drag the mood of fighting a fire into what should be a cool-headed review. With HeyStax, each has its own Stax with different dashboards, docs, and goals. The Postmortem Start Page says \"Write root cause summary in human language; capture three action items max.\" The Reliability Start Page says \"Look at SLO burn-down, identify top two violators, assign owners.\"\n\nAt the end of the postmortem, you literally close that world. Open Reliability Stax. Fresh dashboards, fresh framing, fresh tone. You feel the difference in your body.",
     staxPattern:
       '"SRE – Incident #742 Postmortem" / "SRE – Weekly Reliability Review"',
-    seoTitle: "Browser Tool for SREs Switching Between Postmortem and Reliability Review | TabStax",
+    seoTitle: "Browser Tool for SREs Switching Between Postmortem and Reliability Review | HeyStax",
     metaDescription:
-      "Close the incident world before opening the reliability review. TabStax gives SREs separate browser workspaces with the right dashboards and emotional framing.",
+      "Close the incident world before opening the reliability review. HeyStax gives SREs separate browser workspaces with the right dashboards and emotional framing.",
     keywords: [
       "SRE browser workspace tool",
       "postmortem tab organiser",
@@ -624,7 +624,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help SREs avoid emotional bleed between incidents and reviews?",
+        q: "How does HeyStax help SREs avoid emotional bleed between incidents and reviews?",
         a: "Closing the postmortem Stax creates a deliberate reset. Opening the Reliability Stax loads fresh dashboards and a different goal framing.",
       },
       {
@@ -647,12 +647,12 @@ export const useCases: UseCase[] = [
     summary:
       "You've been deep in a gas leak incident for two hours. Now there's a storm planning call. Different risk, different partners, different tools. You need to switch from reacting to anticipating.",
     content:
-      "You're the emergency manager for a city. You've been deep in the gas leak incident for two hours: utility dashboards, local maps, evacuation zones, police and fire updates. An hour later you're due in a planning call about a storm system coming this weekend. Different risk, different partners, different tools.\n\nWithout TabStax, you leave gas leak tabs open, add weather and flood maps on top, and end up mentally half in the last crisis, glancing at the wrong map, mixing protocols. With TabStax, you have a Gas Leak Stax and a Storm Alpha Stax. The gas leak world has utility dashboards, real-time maps, intake logs, and evacuation checklists. The storm world has weather service models, flood zone overlays, shelter capacity maps, and the public messaging plan.\n\nYou share Gas Leak Stax with field commanders and utility, Storm Alpha with city leadership, police, public works, and Red Cross. When it's time to switch, you close the gas leak Stax and open Storm Alpha. You're fully in anticipation and planning mode, not reacting.",
+      "You're the emergency manager for a city. You've been deep in the gas leak incident for two hours: utility dashboards, local maps, evacuation zones, police and fire updates. An hour later you're due in a planning call about a storm system coming this weekend. Different risk, different partners, different tools.\n\nWithout HeyStax, you leave gas leak tabs open, add weather and flood maps on top, and end up mentally half in the last crisis, glancing at the wrong map, mixing protocols. With HeyStax, you have a Gas Leak Stax and a Storm Alpha Stax. The gas leak world has utility dashboards, real-time maps, intake logs, and evacuation checklists. The storm world has weather service models, flood zone overlays, shelter capacity maps, and the public messaging plan.\n\nYou share Gas Leak Stax with field commanders and utility, Storm Alpha with city leadership, police, public works, and Red Cross. When it's time to switch, you close the gas leak Stax and open Storm Alpha. You're fully in anticipation and planning mode, not reacting.",
     staxPattern:
       '"Incident – Gas Leak (Zone A)" / "Preparedness – Storm Alpha Weekend"',
-    seoTitle: "Switch Between Active Incidents and Storm Planning | TabStax",
+    seoTitle: "Switch Between Active Incidents and Storm Planning | HeyStax",
     metaDescription:
-      "Move from reacting to a gas leak to planning for a storm without mixing dashboards or protocols. TabStax gives emergency managers separate operational cockpits.",
+      "Move from reacting to a gas leak to planning for a storm without mixing dashboards or protocols. HeyStax gives emergency managers separate operational cockpits.",
     keywords: [
       "emergency manager incident browser tool",
       "multi-incident browser workspace",
@@ -662,7 +662,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax separate an active incident from preparedness planning?",
+        q: "How does HeyStax separate an active incident from preparedness planning?",
         a: "Each event has its own Stax — one for the live incident, one for storm planning. Closing one world and opening the other shifts your full focus mode.",
       },
       {
@@ -685,12 +685,12 @@ export const useCases: UseCase[] = [
     summary:
       "11am delivery sync, 12pm market strategy review, 1pm HR calibration. Three completely different hats in three hours. You look like someone who walks in prepared to every room.",
     content:
-      "Your Tuesday: 11:00 is a delivery sync with Jira, capacity, and blockers. 12:00 is a market strategy review with analysis and competitor slides. 13:00 is an HR calibration meeting with performance docs and comp bands. Three completely different hats.\n\nWithout TabStax, all three hats sit in one tab soup. You join the HR meeting with Jira and slide decks still open, stalling while you find the performance spreadsheet. With TabStax, you build three Stax: Manager Delivery (Jira, metrics, action log), Strategy Review (market slides, competitive matrix, notes), and HR Calibration (people list, performance docs, HR policies).\n\nYou share each with the people in that specific meeting. Before each call you close the last world and open the next. By the time Zoom connects, your tools, notes, and frame of mind have already changed. You look like someone who walks in prepared to every room, not someone who is very busy.",
+      "Your Tuesday: 11:00 is a delivery sync with Jira, capacity, and blockers. 12:00 is a market strategy review with analysis and competitor slides. 13:00 is an HR calibration meeting with performance docs and comp bands. Three completely different hats.\n\nWithout HeyStax, all three hats sit in one tab soup. You join the HR meeting with Jira and slide decks still open, stalling while you find the performance spreadsheet. With HeyStax, you build three Stax: Manager Delivery (Jira, metrics, action log), Strategy Review (market slides, competitive matrix, notes), and HR Calibration (people list, performance docs, HR policies).\n\nYou share each with the people in that specific meeting. Before each call you close the last world and open the next. By the time Zoom connects, your tools, notes, and frame of mind have already changed. You look like someone who walks in prepared to every room, not someone who is very busy.",
     staxPattern:
       '"Manager – Team Delivery" / "Manager – Strategy Review" / "Manager – HR Calibration"',
-    seoTitle: "Prep for Back-to-Back Different-Topic Meetings | TabStax",
+    seoTitle: "Prep for Back-to-Back Different-Topic Meetings | HeyStax",
     metaDescription:
-      "Walk into every meeting prepared — delivery sync, strategy review, HR calibration. TabStax gives corporate managers a separate browser workspace per meeting.",
+      "Walk into every meeting prepared — delivery sync, strategy review, HR calibration. HeyStax gives corporate managers a separate browser workspace per meeting.",
     keywords: [
       "corporate manager meeting prep browser",
       "back-to-back meetings tab organiser",
@@ -700,7 +700,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help managers switch hats between meetings?",
+        q: "How does HeyStax help managers switch hats between meetings?",
         a: "Build a Stax per meeting with the right tools, notes, and agenda. Close the last world and open the next — your frame of mind changes with the tools.",
       },
       {
@@ -723,12 +723,12 @@ export const useCases: UseCase[] = [
     summary:
       "Running five usability sessions today while also synthesizing yesterday's. Live sessions need the prototype and script. Synthesis needs the affinity map and report draft. Two completely different brain modes.",
     content:
-      "You're running five usability sessions today. In between, you're trying to synthesize yesterday's sessions. Live session world: Zoom, prototype in Figma, research notes doc, script. Synthesis world: tagging board, thematic clusters, affinity diagram, summary report draft.\n\nWithout TabStax, you end a session, promise yourself two minutes of synthesis, can't find the right doc, and then the next session starts with you still half in analysis mode. With TabStax, you have two Stax: Live Sessions (meeting link, prototype, script, note-taking doc) and Synthesis (Miro affinity map, tagging sheet, report draft, stakeholder questions doc).\n\nYou share the Live Stax with observers so they can join and take notes without asking for links. You share Synthesis Stax with PM and designer so they can see the emerging picture. Between sessions, you close Live, open Synthesis, tag a few notes, then swap back. Your brain always knows \"I am here to run sessions\" or \"I am here to make sense,\" not both at once.",
+      "You're running five usability sessions today. In between, you're trying to synthesize yesterday's sessions. Live session world: Zoom, prototype in Figma, research notes doc, script. Synthesis world: tagging board, thematic clusters, affinity diagram, summary report draft.\n\nWithout HeyStax, you end a session, promise yourself two minutes of synthesis, can't find the right doc, and then the next session starts with you still half in analysis mode. With HeyStax, you have two Stax: Live Sessions (meeting link, prototype, script, note-taking doc) and Synthesis (Miro affinity map, tagging sheet, report draft, stakeholder questions doc).\n\nYou share the Live Stax with observers so they can join and take notes without asking for links. You share Synthesis Stax with PM and designer so they can see the emerging picture. Between sessions, you close Live, open Synthesis, tag a few notes, then swap back. Your brain always knows \"I am here to run sessions\" or \"I am here to make sense,\" not both at once.",
     staxPattern:
       '"UXR – Live Sessions: Onboarding Study" / "UXR – Synthesis: Onboarding Study"',
-    seoTitle: "Browser Workspace for UX Researchers: Sessions and Synthesis | TabStax",
+    seoTitle: "Browser Workspace for UX Researchers: Sessions and Synthesis | HeyStax",
     metaDescription:
-      "Switch between running usability sessions and synthesizing findings without losing your flow. TabStax gives UX researchers two distinct browser modes.",
+      "Switch between running usability sessions and synthesizing findings without losing your flow. HeyStax gives UX researchers two distinct browser modes.",
     keywords: [
       "UX researcher browser workspace",
       "usability testing tab organiser",
@@ -738,7 +738,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help UX researchers switch between sessions and synthesis?",
+        q: "How does HeyStax help UX researchers switch between sessions and synthesis?",
         a: "Create a Live Sessions Stax and a Synthesis Stax. Your brain knows which mode you're in — run sessions or make sense — not both at once.",
       },
       {
@@ -761,11 +761,11 @@ export const useCases: UseCase[] = [
     summary:
       "Launching a new feature across landing page, email, social, paid ads, PR, and Product Hunt. Your browser becomes a graveyard of half-remembered tabs.",
     content:
-      "You're launching TabStax Cloud Sync. The pieces: launch brief, landing page editor, email campaign in your ESP, social media calendar, paid ads dashboard, PR outreach list, Product Hunt page draft.\n\nWithout TabStax, your browser becomes a graveyard of half-remembered tabs. You fix copy on the landing page, get distracted by ads performance, forget to update the email, lose the PR sheet. With TabStax, you spin up a Launch Stax with all the tools and docs and a Start Page listing today's focus: finalize landing copy, schedule emails, prep Product Hunt draft.\n\nYou share the Stax with your founder for messaging alignment, designer for visuals, ads manager for campaigns, and PR helper for outreach. When anyone asks \"Where's the latest version?\" the answer is: \"Open the Launch Stax.\" You work in focused bursts, each time re-opening the Stax and continuing from the last completed action instead of re-assembling the launch in your head.",
-    staxPattern: '"Launch – TabStax Cloud Sync"',
-    seoTitle: "Browser Workspace for Marketing Leads Orchestrating a Launch | TabStax",
+      "You're launching HeyStax Cloud Sync. The pieces: launch brief, landing page editor, email campaign in your ESP, social media calendar, paid ads dashboard, PR outreach list, Product Hunt page draft.\n\nWithout HeyStax, your browser becomes a graveyard of half-remembered tabs. You fix copy on the landing page, get distracted by ads performance, forget to update the email, lose the PR sheet. With HeyStax, you spin up a Launch Stax with all the tools and docs and a Start Page listing today's focus: finalize landing copy, schedule emails, prep Product Hunt draft.\n\nYou share the Stax with your founder for messaging alignment, designer for visuals, ads manager for campaigns, and PR helper for outreach. When anyone asks \"Where's the latest version?\" the answer is: \"Open the Launch Stax.\" You work in focused bursts, each time re-opening the Stax and continuing from the last completed action instead of re-assembling the launch in your head.",
+    staxPattern: '"Launch – HeyStax Cloud Sync"',
+    seoTitle: "Browser Workspace for Marketing Leads Orchestrating a Launch | HeyStax",
     metaDescription:
-      "Stop losing copy edits, email drafts, and ad dashboards in a graveyard of tabs. TabStax gives marketing leads a shared launch cockpit everyone can open.",
+      "Stop losing copy edits, email drafts, and ad dashboards in a graveyard of tabs. HeyStax gives marketing leads a shared launch cockpit everyone can open.",
     keywords: [
       "marketing launch browser workspace",
       "product launch tab organiser",
@@ -775,7 +775,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help coordinate a multi-channel product launch?",
+        q: "How does HeyStax help coordinate a multi-channel product launch?",
         a: "Create a Launch Stax with all tools and a Start Page for today's focus. Share with the founder, designer, and ads manager — one source of truth.",
       },
       {
@@ -799,12 +799,12 @@ export const useCases: UseCase[] = [
     summary:
       "09:00 brand review, 10:00 landing page critique, 11:00 crisis call. Three clients with three completely different Figma files, email chains, and dashboards. You hang up with one and your brain needs to snap into a totally different brand.",
     content:
-      "You run a tiny creative agency. Today: 09:00 brand review with Aurora Fitness, 10:00 landing page critique for Nova Fintech, 11:00 crisis call with Harbour Foods about an underperforming campaign. Each client has Figma files, email chains, metrics dashboards, shared folders, and random Looms.\n\nWithout TabStax, you Frankenstein your morning: searching Gmail, digging through Slack for Figma links, opening the wrong dashboard. With TabStax, you carve your day into three Stax, each with the Figma, docs, dashboards, last meeting notes, and a Start Page listing what happened last time and next actions for this call.\n\nYou share each Stax with your designer, copywriter, and account manager. When you say \"Open the Harbour Stax,\" the whole team lands in the same cockpit. You hang up with Aurora, close that world, hit Open Stax for Nova, and your brain snaps into a totally different brand, tone, and problem.",
+      "You run a tiny creative agency. Today: 09:00 brand review with Aurora Fitness, 10:00 landing page critique for Nova Fintech, 11:00 crisis call with Harbour Foods about an underperforming campaign. Each client has Figma files, email chains, metrics dashboards, shared folders, and random Looms.\n\nWithout HeyStax, you Frankenstein your morning: searching Gmail, digging through Slack for Figma links, opening the wrong dashboard. With HeyStax, you carve your day into three Stax, each with the Figma, docs, dashboards, last meeting notes, and a Start Page listing what happened last time and next actions for this call.\n\nYou share each Stax with your designer, copywriter, and account manager. When you say \"Open the Harbour Stax,\" the whole team lands in the same cockpit. You hang up with Aurora, close that world, hit Open Stax for Nova, and your brain snaps into a totally different brand, tone, and problem.",
     staxPattern:
       '"Client – Aurora Fitness (Brand)" / "Client – Nova Fintech (Landing Page)" / "Client – Harbour Foods (Crisis Review)"',
-    seoTitle: "Browser Workspace for Agency Founders With Multiple Clients | TabStax",
+    seoTitle: "Browser Workspace for Agency Founders With Multiple Clients | HeyStax",
     metaDescription:
-      "Snap into a different brand and problem after every call. TabStax gives small agency founders a per-client browser workspace with Figma, dashboards, and notes ready.",
+      "Snap into a different brand and problem after every call. HeyStax gives small agency founders a per-client browser workspace with Figma, dashboards, and notes ready.",
     keywords: [
       "agency founder browser workspace",
       "creative agency tab organiser",
@@ -814,7 +814,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help agency founders switch between client brands?",
+        q: "How does HeyStax help agency founders switch between client brands?",
         a: "Each client has its own Stax with Figma, metrics, emails, and a Start Page. Close one brand world, open the next — your brain snaps into the new context.",
       },
       {
@@ -822,7 +822,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share each Client Stax with your designer, copywriter, and account manager so everyone lands in the same cockpit for each call.",
       },
       {
-        q: "How does TabStax handle crisis or urgent client situations?",
+        q: "How does HeyStax handle crisis or urgent client situations?",
         a: "A crisis Stax pre-loads the problem context — dashboards, email threads, recent work — so you join the call already oriented, not scrambling.",
       },
     ],
@@ -837,12 +837,12 @@ export const useCases: UseCase[] = [
     summary:
       "Fix an auth bug, ship a UI improvement, reply to support emails, prepare for Product Hunt. Each is a separate mental canvas. You open everything at once and bounce between them all day.",
     content:
-      "You're solo, building a SaaS. Today: fix a nasty auth bug, ship a small UI improvement, reply to support emails, prepare for a Product Hunt soft launch. Each is a separate mental canvas requiring different docs, tools, and mindset.\n\nWithout TabStax, you open everything at once. You start debugging, an email comes in, you open support, forget your stack trace, bounce to the landing page, tweak copy, then remember the bug. With TabStax, you create four worlds: Auth Bug, UI Polish, Support Inbox Triage, and Product Hunt Prep. Each has only the tabs needed for that task and a Start Page with the session goal and two to three next actions.\n\nYou share the Launch Stax with a friend helping with copy. You work in tight blocks, always switching by closing one Stax and opening another, not by adding new chaos to the same browser window.",
+      "You're solo, building a SaaS. Today: fix a nasty auth bug, ship a small UI improvement, reply to support emails, prepare for a Product Hunt soft launch. Each is a separate mental canvas requiring different docs, tools, and mindset.\n\nWithout HeyStax, you open everything at once. You start debugging, an email comes in, you open support, forget your stack trace, bounce to the landing page, tweak copy, then remember the bug. With HeyStax, you create four worlds: Auth Bug, UI Polish, Support Inbox Triage, and Product Hunt Prep. Each has only the tabs needed for that task and a Start Page with the session goal and two to three next actions.\n\nYou share the Launch Stax with a friend helping with copy. You work in tight blocks, always switching by closing one Stax and opening another, not by adding new chaos to the same browser window.",
     staxPattern:
       '"Dev – Auth Bug #192" / "Dev – UI Polish (Dashboard Cards)" / "Support – Inbox Triage" / "Launch – Product Hunt Prep"',
-    seoTitle: "Browser Workspace for Solo Developers and Indie Hackers | TabStax",
+    seoTitle: "Browser Workspace for Solo Developers and Indie Hackers | HeyStax",
     metaDescription:
-      "Stop bouncing between debugging, support, and launch prep in one tab soup. TabStax gives indie hackers separate worlds for each mode of work.",
+      "Stop bouncing between debugging, support, and launch prep in one tab soup. HeyStax gives indie hackers separate worlds for each mode of work.",
     keywords: [
       "indie hacker browser workspace",
       "solo developer tab organiser",
@@ -852,7 +852,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help solo developers avoid context bleed?",
+        q: "How does HeyStax help solo developers avoid context bleed?",
         a: "Create one Stax per work mode — debugging, support, launch. Open only one at a time. Each switch is clean, not additive chaos.",
       },
       {
@@ -875,12 +875,12 @@ export const useCases: UseCase[] = [
     summary:
       "Morning viewings with a buyer, afternoon valuation for a seller, a negotiation call in between. Different contexts, different listings, different maps. Your phone browser is a mess.",
     content:
-      "You're parked between appointments, juggling a morning of house viewings with a buyer, an afternoon valuation visit for a seller, and a follow-up negotiation call in between. The buyer context is shortlisted homes, maps, BER ratings, and notes on preferences. The seller context is comparables, valuation spreadsheets, and staging tips. The negotiation is offer history and email threads.\n\nWithout TabStax, your phone browser is a mess of maps, listings, WhatsApp, email, and portals. You show up fumbling between tabs on a tiny screen, hoping you don't mix up properties. With TabStax, you build a Stax for each context: buyer viewings, seller valuation, and negotiation.\n\nYou share the Buyer Stax with your assistant for real-time route adjustments and the Seller Stax with office admin to prep the valuation pack. Between appointments, you hit Open Stax for the next client and your brain is fully in seller mode or negotiation mode, not half remembering what street you're even on.",
+      "You're parked between appointments, juggling a morning of house viewings with a buyer, an afternoon valuation visit for a seller, and a follow-up negotiation call in between. The buyer context is shortlisted homes, maps, BER ratings, and notes on preferences. The seller context is comparables, valuation spreadsheets, and staging tips. The negotiation is offer history and email threads.\n\nWithout HeyStax, your phone browser is a mess of maps, listings, WhatsApp, email, and portals. You show up fumbling between tabs on a tiny screen, hoping you don't mix up properties. With HeyStax, you build a Stax for each context: buyer viewings, seller valuation, and negotiation.\n\nYou share the Buyer Stax with your assistant for real-time route adjustments and the Seller Stax with office admin to prep the valuation pack. Between appointments, you hit Open Stax for the next client and your brain is fully in seller mode or negotiation mode, not half remembering what street you're even on.",
     staxPattern:
       '"Buyer – The O\'Reillys (Viewings Today)" / "Seller – 14 Oakridge Drive (Valuation)" / "Negotiation – Apt 3C"',
-    seoTitle: "Browser Workspace for Real Estate Agents Between Appointments | TabStax",
+    seoTitle: "Browser Workspace for Real Estate Agents Between Appointments | HeyStax",
     metaDescription:
-      "Switch from buyer viewings to seller valuations to negotiation calls without mixing listings. TabStax gives agents a per-context browser environment on the road.",
+      "Switch from buyer viewings to seller valuations to negotiation calls without mixing listings. HeyStax gives agents a per-context browser environment on the road.",
     keywords: [
       "real estate agent browser workspace",
       "property agent tab organiser",
@@ -890,7 +890,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help estate agents manage multiple clients in one day?",
+        q: "How does HeyStax help estate agents manage multiple clients in one day?",
         a: "Each context — buyer viewings, seller valuation, negotiation — has its own Stax. Open the right one between appointments and arrive oriented.",
       },
       {
@@ -898,7 +898,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Buyer Stax so your assistant can make real-time route adjustments and add listings without needing a call.",
       },
       {
-        q: "Does TabStax work on mobile?",
+        q: "Does HeyStax work on mobile?",
         a: "TabStax is a browser extension, so it works in Chrome on any device including laptops used on the road between appointments.",
       },
     ],
@@ -913,12 +913,12 @@ export const useCases: UseCase[] = [
     summary:
       "Routine blood pressure at 10:00, urgent abnormal lab results at 10:15, a brand new patient at 10:30. Three completely different headspaces in thirty minutes.",
     content:
-      "You're in a GP clinic. 10:00 is a routine blood pressure check. 10:15 is an urgent review — the lab just flagged abnormal results on a patient from last week. 10:30 is a new patient you've never met. All three are different headspaces.\n\nWithout TabStax, you rely on the EHR's clunky navigation, flipping between patients, reopening guidelines, scanning for labs. You rush into the urgent consult a bit behind emotionally and cognitively. With TabStax, you set up a Morning List Stax with the EHR patient list, lab inbox, clinical guidelines, and note template. For the flagged patient, you create a dedicated Urgent Lab Review Stax with their record, previous visit notes, the relevant guideline, and your own note: \"At last visit discussed fatigue; no red flags then. Today focus on X, Y, Z.\"\n\nYou share the Clinic Stax with your nurse and admin so they prep rooms in sync. Before you enter the room for the urgent review, you glance at the Stax and walk in oriented, not reacting on the back foot.",
+      "You're in a GP clinic. 10:00 is a routine blood pressure check. 10:15 is an urgent review — the lab just flagged abnormal results on a patient from last week. 10:30 is a new patient you've never met. All three are different headspaces.\n\nWithout HeyStax, you rely on the EHR's clunky navigation, flipping between patients, reopening guidelines, scanning for labs. You rush into the urgent consult a bit behind emotionally and cognitively. With HeyStax, you set up a Morning List Stax with the EHR patient list, lab inbox, clinical guidelines, and note template. For the flagged patient, you create a dedicated Urgent Lab Review Stax with their record, previous visit notes, the relevant guideline, and your own note: \"At last visit discussed fatigue; no red flags then. Today focus on X, Y, Z.\"\n\nYou share the Clinic Stax with your nurse and admin so they prep rooms in sync. Before you enter the room for the urgent review, you glance at the Stax and walk in oriented, not reacting on the back foot.",
     staxPattern:
       '"Clinic – Morning List" / "Patient – Urgent Lab Review (ID: 4827)"',
-    seoTitle: "Browser Workspace for GPs Moving Between Patients and Lab Reviews | TabStax",
+    seoTitle: "Browser Workspace for GPs Moving Between Patients and Lab Reviews | HeyStax",
     metaDescription:
-      "Walk into an urgent consultation oriented, not reacting. TabStax gives doctors a per-patient browser workspace with records, guidelines, and clinical notes ready.",
+      "Walk into an urgent consultation oriented, not reacting. HeyStax gives doctors a per-patient browser workspace with records, guidelines, and clinical notes ready.",
     keywords: [
       "GP browser workspace tool",
       "doctor patient context switching browser",
@@ -928,7 +928,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help GPs manage a busy clinic session?",
+        q: "How does HeyStax help GPs manage a busy clinic session?",
         a: "A Morning List Stax holds the EHR list, lab inbox, and note templates. An urgent patient gets their own Stax with records, guidelines, and contextual notes.",
       },
       {
@@ -951,12 +951,12 @@ export const useCases: UseCase[] = [
     summary:
       "3rd Year Maths at 9, 5th Year Applied Maths at 10, parent-teacher meeting at 11. Different prep, different resources, different emotional tone. The parent is sitting down before you've even found the student's record.",
     content:
-      "You teach at a secondary school. 09:00 is 3rd Year Maths, 10:00 is 5th Year Applied Maths, 11:00 is a parent-teacher meeting for a struggling student. Different prep, different resources, different emotional tone.\n\nWithout TabStax, your browser is a mix of past papers, YouTube videos, worksheets, Google Classroom, and the school admin portal. You scramble between classes and desperately search for the student's record before the parent sits down. With TabStax, you create a Stax for each class (containing lesson slides, past paper questions, LMS, and notes like \"Yesterday they struggled with step 2; slow down there\") and a Parent Meeting Stax with the student record, recent grades, behaviour notes, and a Start Page: \"Start with strengths. Discuss missing homework. End with a concrete plan.\"\n\nYou share the Parent Stax with the year head for alignment. You finish 3rd Year, close that Stax, open 5th Year — different level, different tone, everything ready. Before the parent arrives, you open the student's Stax and step fully into her story.",
+      "You teach at a secondary school. 09:00 is 3rd Year Maths, 10:00 is 5th Year Applied Maths, 11:00 is a parent-teacher meeting for a struggling student. Different prep, different resources, different emotional tone.\n\nWithout HeyStax, your browser is a mix of past papers, YouTube videos, worksheets, Google Classroom, and the school admin portal. You scramble between classes and desperately search for the student's record before the parent sits down. With HeyStax, you create a Stax for each class (containing lesson slides, past paper questions, LMS, and notes like \"Yesterday they struggled with step 2; slow down there\") and a Parent Meeting Stax with the student record, recent grades, behaviour notes, and a Start Page: \"Start with strengths. Discuss missing homework. End with a concrete plan.\"\n\nYou share the Parent Stax with the year head for alignment. You finish 3rd Year, close that Stax, open 5th Year — different level, different tone, everything ready. Before the parent arrives, you open the student's Stax and step fully into her story.",
     staxPattern:
       '"Class – 3rd Year Maths (Simultaneous Equations)" / "Class – 5th Year Applied Maths (Vectors)" / "Meeting – Parent of Aoife K."',
-    seoTitle: "Browser Workspace for Teachers With Back-to-Back Classes | TabStax",
+    seoTitle: "Browser Workspace for Teachers With Back-to-Back Classes | HeyStax",
     metaDescription:
-      "Walk into a parent meeting fully briefed. TabStax gives teachers a per-class browser workspace with lesson slides, LMS, and student notes ready before every bell.",
+      "Walk into a parent meeting fully briefed. HeyStax gives teachers a per-class browser workspace with lesson slides, LMS, and student notes ready before every bell.",
     keywords: [
       "teacher browser workspace tool",
       "class prep tab organiser",
@@ -966,7 +966,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help teachers prepare for back-to-back classes?",
+        q: "How does HeyStax help teachers prepare for back-to-back classes?",
         a: "Each class has its own Stax with lesson slides, past papers, and LMS notes like 'they struggled with step 2 yesterday.' Close one, open the next.",
       },
       {
@@ -989,12 +989,12 @@ export const useCases: UseCase[] = [
     summary:
       "Sponsors: contracts, logos, invoicing. Speakers: bios, scheduling, AV needs. Venue: rooms, catering, tech. Three simultaneous tracks in your head and a browser that's become a junkyard.",
     content:
-      "You're organizing a mid-sized conference with three simultaneous tracks: sponsors (contracts, logo assets, invoicing), speakers (bios, talk titles, scheduling, AV needs), and venue (rooms, layouts, catering, tech).\n\nWithout TabStax, your browser is a junkyard of Stripe, DocuSign, Google Sheets, deck mockups, speaker DM threads, and the venue portal. You join calls half-prepared. With TabStax, you build three core Stax: Sponsors (tracker sheet, contract templates, email threads, asset folder), Speakers (spreadsheet, bio folders, program draft, scheduling tool), and Venue (portal, floorplans, catering menu, AV requirements).\n\nYou share Sponsors with your bizdev/finance helper, Speakers with your content co-owner, and Venue with your ops coordinator. When you have a sponsor call, you open Sponsor Stax and live in money, deliverables, and logos. When you hang up, you close it, open Speakers, and think about time slots and topics, not invoice terms.",
+      "You're organizing a mid-sized conference with three simultaneous tracks: sponsors (contracts, logo assets, invoicing), speakers (bios, talk titles, scheduling, AV needs), and venue (rooms, layouts, catering, tech).\n\nWithout HeyStax, your browser is a junkyard of Stripe, DocuSign, Google Sheets, deck mockups, speaker DM threads, and the venue portal. You join calls half-prepared. With HeyStax, you build three core Stax: Sponsors (tracker sheet, contract templates, email threads, asset folder), Speakers (spreadsheet, bio folders, program draft, scheduling tool), and Venue (portal, floorplans, catering menu, AV requirements).\n\nYou share Sponsors with your bizdev/finance helper, Speakers with your content co-owner, and Venue with your ops coordinator. When you have a sponsor call, you open Sponsor Stax and live in money, deliverables, and logos. When you hang up, you close it, open Speakers, and think about time slots and topics, not invoice terms.",
     staxPattern:
       '"Conf – Sponsors" / "Conf – Speakers & Program" / "Conf – Venue & Logistics"',
-    seoTitle: "Browser Workspace for Conference Organizers | TabStax",
+    seoTitle: "Browser Workspace for Conference Organizers | HeyStax",
     metaDescription:
-      "Keep sponsors, speakers, and venue logistics in totally separate browser environments. TabStax gives conference organizers a shareable cockpit per track.",
+      "Keep sponsors, speakers, and venue logistics in totally separate browser environments. HeyStax gives conference organizers a shareable cockpit per track.",
     keywords: [
       "conference organizer browser workspace",
       "event planning tab organiser",
@@ -1004,7 +1004,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help conference organizers manage multiple tracks?",
+        q: "How does HeyStax help conference organizers manage multiple tracks?",
         a: "Create a Stax per track — Sponsors, Speakers, Venue. Each has its own tools, trackers, and contacts. Close one track, open the next, think only in that mode.",
       },
       {
@@ -1012,7 +1012,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share Sponsors with bizdev, Speakers with your content co-owner, and Venue with ops — each person has their own world.",
       },
       {
-        q: "How does TabStax help during a sponsor call?",
+        q: "How does HeyStax help during a sponsor call?",
         a: "Open the Sponsor Stax and your tracker, contract templates, and email thread are live. Your brain is in money and deliverables mode, not schedule and topics.",
       },
     ],
@@ -1025,14 +1025,14 @@ export const useCases: UseCase[] = [
     category: "Multi-Client & Multi-Project",
     persona: "Wedding Photographer",
     summary:
-      "Planning, shooting, editing and delivery — three distinct phases for every wedding. Your brain treats each like a different mode. TabStax lets you switch modes with one click.",
+      "Planning, shooting, editing and delivery — three distinct phases for every wedding. Your brain treats each like a different mode. HeyStax lets you switch modes with one click.",
     content:
-      "You're shooting a wedding this weekend with three distinct phases: planning (shot list, schedule, family dynamics, locations), shooting (checklists, gear, timeline), and editing and delivery (Lightroom, culling, gallery, album design).\n\nWithout TabStax, you plan in one mess of tabs, can't find the timeline the day before, and lose your own notes when editing. With TabStax, you create three phase Stax for the wedding: Planning (client questionnaire, Pinterest board, shot list, planner's timeline), Shoot Day (timeline, shot list, family group combos, weather, map), and Editing (online gallery, culling tool, export presets, album layout, delivery email draft).\n\nYou share Planning Stax with the planner and couple so everyone agrees. You share Editing Stax with your retoucher so they see inspo, shot list, and delivery expectations. Your brain treats each phase like a different mode. TabStax lets you switch modes with one click instead of reconstructing the wedding from memory.",
+      "You're shooting a wedding this weekend with three distinct phases: planning (shot list, schedule, family dynamics, locations), shooting (checklists, gear, timeline), and editing and delivery (Lightroom, culling, gallery, album design).\n\nWithout HeyStax, you plan in one mess of tabs, can't find the timeline the day before, and lose your own notes when editing. With HeyStax, you create three phase Stax for the wedding: Planning (client questionnaire, Pinterest board, shot list, planner's timeline), Shoot Day (timeline, shot list, family group combos, weather, map), and Editing (online gallery, culling tool, export presets, album layout, delivery email draft).\n\nYou share Planning Stax with the planner and couple so everyone agrees. You share Editing Stax with your retoucher so they see inspo, shot list, and delivery expectations. Your brain treats each phase like a different mode. HeyStax lets you switch modes with one click instead of reconstructing the wedding from memory.",
     staxPattern:
       '"Wedding – The Donnelly\'s (Planning)" / "Wedding – The Donnelly\'s (Shoot Day)" / "Wedding – The Donnelly\'s (Editing & Delivery)"',
-    seoTitle: "Browser Workspace for Wedding Photographers: Plan, Shoot, Edit | TabStax",
+    seoTitle: "Browser Workspace for Wedding Photographers: Plan, Shoot, Edit | HeyStax",
     metaDescription:
-      "Switch between planning, shoot day, and editing mode with one click. TabStax gives wedding photographers a phase-based browser workspace per client wedding.",
+      "Switch between planning, shoot day, and editing mode with one click. HeyStax gives wedding photographers a phase-based browser workspace per client wedding.",
     keywords: [
       "wedding photographer browser workspace",
       "photography workflow tab organiser",
@@ -1042,7 +1042,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help wedding photographers manage different project phases?",
+        q: "How does HeyStax help wedding photographers manage different project phases?",
         a: "Create a Planning, Shoot Day, and Editing Stax per wedding. Each contains the right tools and notes for that phase — open the relevant one and you're in that mode.",
       },
       {
@@ -1050,7 +1050,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Planning Stax with the planner and couple so everyone agrees on the shot list, timeline, and logistics.",
       },
       {
-        q: "How does TabStax help with photo delivery?",
+        q: "How does HeyStax help with photo delivery?",
         a: "The Editing Stax holds the gallery link, culling tool, export presets, and a delivery email draft — everything needed to close out the project cleanly.",
       },
     ],
@@ -1065,12 +1065,12 @@ export const useCases: UseCase[] = [
     summary:
       "Prep a new video, go live, edit past streams into clips, schedule social posts. Each mode uses totally different tools and headspace. OBS while you try to script is chaos.",
     content:
-      "You run a channel. Today: prep a new video, go live for a stream, edit a past stream into clips, schedule social posts. Each mode uses different tools: script and research tabs for prep, OBS and mod tools for live, video editor and thumbnail designer for post.\n\nWithout TabStax, everything piles into one monstrous browser. You've got Twitter open while scripting, OBS while editing, your brain pinging between \"what's my hook?\" and \"is the bitrate okay?\" With TabStax, you define three worlds: Video Prep (script, research, past videos, idea backlog), Live Stream (OBS, StreamElements, studio, mod tools, topic notes), and Editing (video editor, recording, timestamps, thumbnail editor, social caption doc).\n\nYou share Prep and Editing Stax with your editor and thumbnail designer. You share Live Stream Stax with your mods. Before going live, you close Prep, open Live, and you're in showrunner mode. After, you close Live, open Editing, and you're in \"what's the best sixty seconds?\" mode.",
+      "You run a channel. Today: prep a new video, go live for a stream, edit a past stream into clips, schedule social posts. Each mode uses different tools: script and research tabs for prep, OBS and mod tools for live, video editor and thumbnail designer for post.\n\nWithout HeyStax, everything piles into one monstrous browser. You've got Twitter open while scripting, OBS while editing, your brain pinging between \"what's my hook?\" and \"is the bitrate okay?\" With HeyStax, you define three worlds: Video Prep (script, research, past videos, idea backlog), Live Stream (OBS, StreamElements, studio, mod tools, topic notes), and Editing (video editor, recording, timestamps, thumbnail editor, social caption doc).\n\nYou share Prep and Editing Stax with your editor and thumbnail designer. You share Live Stream Stax with your mods. Before going live, you close Prep, open Live, and you're in showrunner mode. After, you close Live, open Editing, and you're in \"what's the best sixty seconds?\" mode.",
     staxPattern:
       '"Creator – Video Prep" / "Creator – Live Stream: Q&A" / "Creator – Editing & Clips"',
-    seoTitle: "Browser Workspace for YouTubers and Streamers | TabStax",
+    seoTitle: "Browser Workspace for YouTubers and Streamers | HeyStax",
     metaDescription:
-      "Switch between prep, live, and editing mode without OBS bleeding into your script. TabStax gives content creators a separate browser world per production phase.",
+      "Switch between prep, live, and editing mode without OBS bleeding into your script. HeyStax gives content creators a separate browser world per production phase.",
     keywords: [
       "YouTuber browser workspace tool",
       "streamer tab organiser",
@@ -1080,7 +1080,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help content creators stay in the right mode?",
+        q: "How does HeyStax help content creators stay in the right mode?",
         a: "Create separate Stax for Prep, Live, and Editing. Open only the one relevant to your current phase — no more OBS open while scripting.",
       },
       {
@@ -1103,12 +1103,12 @@ export const useCases: UseCase[] = [
     summary:
       "Field reality is messy, human, and local. Donor reality is polished, formal, and structured. You need to flip between them without the noise bleeding through.",
     content:
-      "You're running a community program for an NGO with two overlapping worlds. Field reality: updates from local staff, WhatsApp photos, attendance spreadsheets, issues on the ground. Donor reality: logframes, KPIs, structured reports, deadlines.\n\nWithout TabStax, donor report templates sit next to grainy WhatsApp images and half-translated messages. You flip between messy human detail and polished formal structure without any separation. With TabStax, you build Field Ops (shared spreadsheets, messaging, incident tracker, staff meeting notes) and Donor Reporting (donor portal, report template, indicator definitions, past reports).\n\nYou share Field Ops Stax with field coordinators and Donor Stax with HQ and fundraising. When aligning with field staff, you open Field Stax and stay in \"truth on the ground\" mode. When crafting the report, you open Donor Stax and stay in \"translate this into logframe language\" mode without the noise.",
+      "You're running a community program for an NGO with two overlapping worlds. Field reality: updates from local staff, WhatsApp photos, attendance spreadsheets, issues on the ground. Donor reality: logframes, KPIs, structured reports, deadlines.\n\nWithout HeyStax, donor report templates sit next to grainy WhatsApp images and half-translated messages. You flip between messy human detail and polished formal structure without any separation. With HeyStax, you build Field Ops (shared spreadsheets, messaging, incident tracker, staff meeting notes) and Donor Reporting (donor portal, report template, indicator definitions, past reports).\n\nYou share Field Ops Stax with field coordinators and Donor Stax with HQ and fundraising. When aligning with field staff, you open Field Stax and stay in \"truth on the ground\" mode. When crafting the report, you open Donor Stax and stay in \"translate this into logframe language\" mode without the noise.",
     staxPattern:
       '"Program – Field Ops (Youth Centre)" / "Program – Donor Reporting (Youth Centre)"',
-    seoTitle: "Browser Workspace for NGO Program Managers: Field and Donors | TabStax",
+    seoTitle: "Browser Workspace for NGO Program Managers: Field and Donors | HeyStax",
     metaDescription:
-      "Flip between field reality and donor reporting without noise bleeding through. TabStax gives NGO managers separate browser environments for each audience.",
+      "Flip between field reality and donor reporting without noise bleeding through. HeyStax gives NGO managers separate browser environments for each audience.",
     keywords: [
       "NGO program manager browser workspace",
       "donor reporting tab organiser",
@@ -1118,7 +1118,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help NGO managers translate field reality into donor reports?",
+        q: "How does HeyStax help NGO managers translate field reality into donor reports?",
         a: "Keep Field Ops and Donor Reporting as separate Stax. Work in 'truth on the ground' mode, then switch to 'logframe language' mode cleanly.",
       },
       {
@@ -1126,7 +1126,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it with coordinators who can add spreadsheets, incident notes, and photos in real time.",
       },
       {
-        q: "Does TabStax help with multiple program geographies?",
+        q: "Does HeyStax help with multiple program geographies?",
         a: "Yes. Create a separate Stax per program or geography so each team focuses only on their relevant portals and data.",
       },
     ],
@@ -1141,11 +1141,11 @@ export const useCases: UseCase[] = [
     summary:
       "Screening, tech interview, hiring manager conversation, reference checks. For one candidate you need ATS, CV, GitHub, feedback forms, and email threads. Everyone opens the same Stax and they're all in the Sara K world together.",
     content:
-      "You're running a full interview loop for a critical role: screening call, tech interview, hiring manager conversation, reference checks. For this candidate you need the ATS profile, CV, portfolio, GitHub, screening notes, interview feedback forms, email thread, hiring manager's requirements, and reference contacts.\n\nWithout TabStax, you're hunting the candidate's profile before each step, digging through Gmail for their GitHub, reopening feedback form links, mixing up which manager wanted what. With TabStax, you create a dedicated Candidate Stax with everything inside: ATS profile, CV, GitHub, requirements spreadsheet, scorecard links, email thread, reference contacts, and a Start Page with the timeline and next actions.\n\nYou share this Stax with the hiring manager and interview panel. Before any debrief, everyone opens the same Stax: same profile, same expectations, same feedback forms. You're not re-forwarding CVs or re-explaining context. You're all in the Sara K world together.",
+      "You're running a full interview loop for a critical role: screening call, tech interview, hiring manager conversation, reference checks. For this candidate you need the ATS profile, CV, portfolio, GitHub, screening notes, interview feedback forms, email thread, hiring manager's requirements, and reference contacts.\n\nWithout HeyStax, you're hunting the candidate's profile before each step, digging through Gmail for their GitHub, reopening feedback form links, mixing up which manager wanted what. With HeyStax, you create a dedicated Candidate Stax with everything inside: ATS profile, CV, GitHub, requirements spreadsheet, scorecard links, email thread, reference contacts, and a Start Page with the timeline and next actions.\n\nYou share this Stax with the hiring manager and interview panel. Before any debrief, everyone opens the same Stax: same profile, same expectations, same feedback forms. You're not re-forwarding CVs or re-explaining context. You're all in the Sara K world together.",
     staxPattern: '"Candidate – Sara K (Staff Engineer)"',
-    seoTitle: "Browser Workspace for Recruiters Running Full Interview Loops | TabStax",
+    seoTitle: "Browser Workspace for Recruiters Running Full Interview Loops | HeyStax",
     metaDescription:
-      "Stop hunting for the candidate's profile before every interview step. TabStax gives recruiters a per-candidate browser workspace shared with the whole panel.",
+      "Stop hunting for the candidate's profile before every interview step. HeyStax gives recruiters a per-candidate browser workspace shared with the whole panel.",
     keywords: [
       "recruiter browser workspace tool",
       "interview loop tab organiser",
@@ -1155,7 +1155,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help recruiters manage a full interview loop?",
+        q: "How does HeyStax help recruiters manage a full interview loop?",
         a: "Create one Candidate Stax with the ATS profile, CV, GitHub, scorecards, and email thread. Share it with the panel — everyone opens the same context.",
       },
       {
@@ -1163,7 +1163,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax with the hiring manager and interview panel. Before any debrief, everyone has the same profile, expectations, and feedback forms.",
       },
       {
-        q: "Does TabStax help when managing multiple open roles at once?",
+        q: "Does HeyStax help when managing multiple open roles at once?",
         a: "Yes. Create a separate Candidate Stax per open role or active candidate, so each hiring process stays clean and self-contained.",
       },
     ],
@@ -1177,14 +1177,14 @@ export const useCases: UseCase[] = [
     category: "Legal & Crisis",
     persona: "Public Defender",
     summary:
-      "Three cases in different states of chaos: a plea, a bail review, and a hearing in ten minutes. His browser is forty tabs deep. The DA's email is buried. TabStax means his environment does the remembering for him.",
+      "Three cases in different states of chaos: a plea, a bail review, and a hearing in ten minutes. His browser is forty tabs deep. The DA's email is buried. HeyStax means his environment does the remembering for him.",
     content:
-      "It's Los Angeles, 3:20pm, 100 degrees. He's in his car outside the courthouse, laptop on the steering wheel, AC fighting for its life. In ten minutes he's in front of a judge on People v. Ramirez. Before that he was working on a plea negotiation and a bail review for two other cases. Each lives in its own mess of court docket, discovery PDFs, client meeting notes, DA emails, and motion drafts.\n\nWithout TabStax, his browser is forty tabs deep. The motion draft is somewhere. The DA's last email is buried. He goes into court with \"good enough\" recall. With TabStax, each case has its own Stax: the court portal, motion draft, DA email thread, client visit notes, relevant statute, and a Start Page with bold next actions like \"Argue for continuance if DA's offer unchanged\" and \"Bring up missing discovery from 03/14.\"\n\nHe shares the Ramirez Stax with his investigator and paralegal. They add witness statements and timeline docs. Sitting in the baking car, he opens Ramirez Stax and his notes remind him what the client wants. He walks in hot, but not scattered — his environment did the remembering for him.",
+      "It's Los Angeles, 3:20pm, 100 degrees. He's in his car outside the courthouse, laptop on the steering wheel, AC fighting for its life. In ten minutes he's in front of a judge on People v. Ramirez. Before that he was working on a plea negotiation and a bail review for two other cases. Each lives in its own mess of court docket, discovery PDFs, client meeting notes, DA emails, and motion drafts.\n\nWithout HeyStax, his browser is forty tabs deep. The motion draft is somewhere. The DA's last email is buried. He goes into court with \"good enough\" recall. With HeyStax, each case has its own Stax: the court portal, motion draft, DA email thread, client visit notes, relevant statute, and a Start Page with bold next actions like \"Argue for continuance if DA's offer unchanged\" and \"Bring up missing discovery from 03/14.\"\n\nHe shares the Ramirez Stax with his investigator and paralegal. They add witness statements and timeline docs. Sitting in the baking car, he opens Ramirez Stax and his notes remind him what the client wants. He walks in hot, but not scattered — his environment did the remembering for him.",
     staxPattern:
       '"Case – People v. Ramirez" / "Case – People v. Johnson (Plea)" / "Case – People v. Flores (Bail Review)"',
-    seoTitle: "Browser Workspace for Public Defenders Managing Multiple Cases | TabStax",
+    seoTitle: "Browser Workspace for Public Defenders Managing Multiple Cases | HeyStax",
     metaDescription:
-      "Walk into court with notes and context ready — not scattered across 40 tabs. TabStax gives public defenders a per-case browser workspace with the full record.",
+      "Walk into court with notes and context ready — not scattered across 40 tabs. HeyStax gives public defenders a per-case browser workspace with the full record.",
     keywords: [
       "public defender browser workspace",
       "legal case tab organiser",
@@ -1194,7 +1194,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help public defenders manage multiple active cases?",
+        q: "How does HeyStax help public defenders manage multiple active cases?",
         a: "Each case has its own Stax with the court portal, motion drafts, DA emails, and a Start Page with bold next actions. Open the Stax before court and you're oriented.",
       },
       {
@@ -1202,7 +1202,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the case Stax with your investigator and paralegal so they add documents in context — no separate email chains.",
       },
       {
-        q: "How does TabStax help during brief windows between hearings?",
+        q: "How does HeyStax help during brief windows between hearings?",
         a: "Open the case Stax in the car or waiting room. Your notes, the DA email, and the next action are right there — your environment does the remembering.",
       },
     ],
@@ -1217,12 +1217,12 @@ export const useCases: UseCase[] = [
     summary:
       "Machine failing on Line 3, critical supplier shipment delayed, quality audit this afternoon. Three cockpits for three crises. She moves through the day as if each has its own command center — because it does.",
     content:
-      "She runs operations for a small manufacturing plant. Today: a machine on Line 3 is intermittently failing, a critical supplier shipment is delayed, and an external quality audit is happening this afternoon. Each involves different tools: factory floor dashboards, maintenance logs, SOPs, supplier portals, email threads, cost spreadsheets, audit checklists.\n\nWithout TabStax, she drags everything into one chaotic browser. When the auditor asks for a specific record, she hunts frantically. With TabStax, she builds three Stax: Line 3 Fault (live dashboard, maintenance ticket history, SOP, notes), Supplier Delay (purchase order, supplier portal, email, contingency planning), and Quality Audit (checklist, document index, certificates, non-conformance log).\n\nShe shares Line 3 Stax with the maintenance supervisor and Audit Stax with the QA lead. In the morning she focuses on Line 3, then closes it and opens Supplier Delay for a call with SteelCo. Before the audit, she opens Audit Stax and everything they'll ask for is one click away. She moves through the day as if each crisis has its own cockpit — because it does.",
+      "She runs operations for a small manufacturing plant. Today: a machine on Line 3 is intermittently failing, a critical supplier shipment is delayed, and an external quality audit is happening this afternoon. Each involves different tools: factory floor dashboards, maintenance logs, SOPs, supplier portals, email threads, cost spreadsheets, audit checklists.\n\nWithout HeyStax, she drags everything into one chaotic browser. When the auditor asks for a specific record, she hunts frantically. With HeyStax, she builds three Stax: Line 3 Fault (live dashboard, maintenance ticket history, SOP, notes), Supplier Delay (purchase order, supplier portal, email, contingency planning), and Quality Audit (checklist, document index, certificates, non-conformance log).\n\nShe shares Line 3 Stax with the maintenance supervisor and Audit Stax with the QA lead. In the morning she focuses on Line 3, then closes it and opens Supplier Delay for a call with SteelCo. Before the audit, she opens Audit Stax and everything they'll ask for is one click away. She moves through the day as if each crisis has its own cockpit — because it does.",
     staxPattern:
       '"Ops – Line 3 Intermittent Fault" / "Ops – Supplier Delay: SteelCo" / "Ops – Quality Audit (Today)"',
-    seoTitle: "Browser Workspace for Manufacturing Ops Managers | TabStax",
+    seoTitle: "Browser Workspace for Manufacturing Ops Managers | HeyStax",
     metaDescription:
-      "Manage a factory floor fault, supplier delay, and quality audit without tab chaos. TabStax gives ops managers a separate browser cockpit per crisis.",
+      "Manage a factory floor fault, supplier delay, and quality audit without tab chaos. HeyStax gives ops managers a separate browser cockpit per crisis.",
     keywords: [
       "manufacturing ops manager browser workspace",
       "factory operations tab organiser",
@@ -1232,7 +1232,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help manufacturing ops managers handle multiple simultaneous crises?",
+        q: "How does HeyStax help manufacturing ops managers handle multiple simultaneous crises?",
         a: "Build a Stax per situation — Line 3 Fault, Supplier Delay, Quality Audit. Each has its own dashboards, SOPs, and contacts. Switch cleanly between them.",
       },
       {
@@ -1240,7 +1240,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Audit Stax with the QA lead so all documents, checklists, and certificates are one click away when the auditor asks.",
       },
       {
-        q: "Does TabStax help with supplier calls?",
+        q: "Does HeyStax help with supplier calls?",
         a: "Yes. Open the Supplier Stax before the call and the purchase order, supplier portal, and contingency plan are all visible — no hunting through email.",
       },
     ],
@@ -1255,12 +1255,12 @@ export const useCases: UseCase[] = [
     summary:
       "A feature film rough cut for one director, a punchy 90-second trailer for a brand campaign. The tools overlap but the worlds don't. When Director A drops in on Zoom, you still have Brand B's style guide open.",
     content:
-      "He's in an edit suite working on a feature film rough cut for Director A and a punchy 90-second trailer for Brand B's campaign. The tools overlap but the worlds don't. The feature is long timeline, character arcs, director's notes, and continuity sheets. The trailer is brand guidelines, endcard requirements, legal lines, and media specs.\n\nWithout TabStax, his browser is a tangle: script PDFs, Frame.io comments, two brand folders, music licensing pages. When Director A drops in on Zoom, he still has Brand B's style guide open. With TabStax, he defines two Stax: Feature (script, scene breakdown, Frame.io comments, continuity notes, temp tracks) and Trailer (brand guidelines, asset folder, client feedback, legal disclaimers, placement specs).\n\nHe shares the Feature Stax with director and producer, who add reference clips. He shares Trailer Stax with the agency producer for briefs and specs. Morning: open Feature Stax, living in scenes and pacing. Afternoon: open Trailer Stax, living in punchy hooks and brand beats. Each world feels intact and self-contained.",
+      "He's in an edit suite working on a feature film rough cut for Director A and a punchy 90-second trailer for Brand B's campaign. The tools overlap but the worlds don't. The feature is long timeline, character arcs, director's notes, and continuity sheets. The trailer is brand guidelines, endcard requirements, legal lines, and media specs.\n\nWithout HeyStax, his browser is a tangle: script PDFs, Frame.io comments, two brand folders, music licensing pages. When Director A drops in on Zoom, he still has Brand B's style guide open. With HeyStax, he defines two Stax: Feature (script, scene breakdown, Frame.io comments, continuity notes, temp tracks) and Trailer (brand guidelines, asset folder, client feedback, legal disclaimers, placement specs).\n\nHe shares the Feature Stax with director and producer, who add reference clips. He shares Trailer Stax with the agency producer for briefs and specs. Morning: open Feature Stax, living in scenes and pacing. Afternoon: open Trailer Stax, living in punchy hooks and brand beats. Each world feels intact and self-contained.",
     staxPattern:
       '"Edit – Feature: Glass Harbor Rough Cut" / "Edit – Trailer: Brand B Spring Campaign"',
-    seoTitle: "Browser Workspace for Film Editors Working on Multiple Projects | TabStax",
+    seoTitle: "Browser Workspace for Film Editors Working on Multiple Projects | HeyStax",
     metaDescription:
-      "Keep a feature film and brand trailer in completely separate browser worlds. TabStax gives film editors a per-project workspace with the right assets and notes.",
+      "Keep a feature film and brand trailer in completely separate browser worlds. HeyStax gives film editors a per-project workspace with the right assets and notes.",
     keywords: [
       "film editor browser workspace",
       "video editor tab organiser",
@@ -1270,7 +1270,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax keep film editing projects separate?",
+        q: "How does HeyStax keep film editing projects separate?",
         a: "Each project has its own Stax with the script, Frame.io comments, brand guidelines, and notes. Morning in Feature mode, afternoon in Trailer mode — cleanly.",
       },
       {
@@ -1278,7 +1278,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Feature Stax with the director and producer — they can add reference clips and comments without interrupting your session.",
       },
       {
-        q: "Does TabStax help with brand compliance on ad projects?",
+        q: "Does HeyStax help with brand compliance on ad projects?",
         a: "Yes. The Trailer Stax holds brand guidelines, endcard requirements, and legal disclaimers so they're always visible alongside the edit timeline.",
       },
     ],
@@ -1291,14 +1291,14 @@ export const useCases: UseCase[] = [
     category: "Legal & Crisis",
     persona: "Hospital Social Worker",
     summary:
-      "An elderly patient going home alone, a young parent needing mental health support, a homeless patient who needs temporary accommodation. Each case is a maze of portals, PDFs, and notes. TabStax holds the complexity so she can be fully present.",
+      "An elderly patient going home alone, a young parent needing mental health support, a homeless patient who needs temporary accommodation. Each case is a maze of portals, PDFs, and notes. HeyStax holds the complexity so she can be fully present.",
     content:
-      "She's the social worker covering a busy hospital ward, juggling three complicated discharges: an elderly patient going home alone with mobility issues, a young parent needing community mental health support, and a homeless patient requiring coordinated discharge to temporary accommodation.\n\nWithout TabStax, her browser is a maze of portals, PDFs, and notes. She keeps six to ten tabs pinned and prays she doesn't close one accidentally. Each patient switch wastes time re-opening records and websites. With TabStax, each case gets its own Stax: EHR open to that patient, relevant portals (home care, benefits, housing, mental health), notes doc summarizing family situation and MDT decisions, and a Start Page with key risks, agencies, and next actions.\n\nShe shares each Stax with the ward discharge coordinator. As she moves between cases, she closes one and opens the next, fully re-entering that patient's story and support network in seconds. She doesn't carry all three in short-term memory; TabStax holds the complexity so she can be fully present in the conversation at hand.",
+      "She's the social worker covering a busy hospital ward, juggling three complicated discharges: an elderly patient going home alone with mobility issues, a young parent needing community mental health support, and a homeless patient requiring coordinated discharge to temporary accommodation.\n\nWithout HeyStax, her browser is a maze of portals, PDFs, and notes. She keeps six to ten tabs pinned and prays she doesn't close one accidentally. Each patient switch wastes time re-opening records and websites. With HeyStax, each case gets its own Stax: EHR open to that patient, relevant portals (home care, benefits, housing, mental health), notes doc summarizing family situation and MDT decisions, and a Start Page with key risks, agencies, and next actions.\n\nShe shares each Stax with the ward discharge coordinator. As she moves between cases, she closes one and opens the next, fully re-entering that patient's story and support network in seconds. She doesn't carry all three in short-term memory; HeyStax holds the complexity so she can be fully present in the conversation at hand.",
     staxPattern:
       '"Case – Mrs. O\'Shea (Mobility)" / "Case – Daniel M. (Mental Health)" / "Case – John Doe (Homeless Discharge)"',
-    seoTitle: "Browser Workspace for Hospital Social Workers Managing Discharges | TabStax",
+    seoTitle: "Browser Workspace for Hospital Social Workers Managing Discharges | HeyStax",
     metaDescription:
-      "Hold complex discharge cases in separate browser environments so you can be fully present with each patient. TabStax reduces the cognitive load of social work.",
+      "Hold complex discharge cases in separate browser environments so you can be fully present with each patient. HeyStax reduces the cognitive load of social work.",
     keywords: [
       "hospital social worker browser workspace",
       "discharge planning tab organiser",
@@ -1308,7 +1308,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help social workers manage multiple complex cases?",
+        q: "How does HeyStax help social workers manage multiple complex cases?",
         a: "Each patient gets their own Stax with EHR, relevant portals, and MDT notes. Close one patient world and open the next — fully re-entering their story in seconds.",
       },
       {
@@ -1316,8 +1316,8 @@ export const useCases: UseCase[] = [
         a: "Yes. Share each case Stax with the ward discharge coordinator so they're aligned without extra briefings.",
       },
       {
-        q: "How does TabStax reduce cognitive overload in social work?",
-        a: "TabStax holds the complexity — portals, history, next actions — so you don't carry all three cases in short-term memory at once.",
+        q: "How does HeyStax reduce cognitive overload in social work?",
+        a: "HeyStax holds the complexity — portals, history, next actions — so you don't carry all three cases in short-term memory at once.",
       },
     ],
     relatedSlugs: ["doctor-clinic-lab-results", "public-defender-court", "hr-generalist-grievance-offer-policy"],
@@ -1331,12 +1331,12 @@ export const useCases: UseCase[] = [
     summary:
       "Day two of a three-day music festival. A security incident at one gate, a changing weather front threatening the main stage, and an artist whose flight is delayed. The team starts talking in shorthand: check the Weather Stax.",
     content:
-      "It's day two of a three-day music festival. The ops lead is balancing a minor security incident at one gate, a changing weather front threatening the main stage, and an artist whose flight is delayed. Tools include security incident logs, radio hub, weather radar, stage schedule, airline tracking, and artist liaison chat.\n\nWithout TabStax, they click through tabs in a noisy operations cabin, trying to remember which window held the gate camera. Every new issue adds more noise. With TabStax, they've created three Stax: Live Ops Cockpit (security live view, incident log, radio dashboard, site map), Weather Risk (detailed radar, forecast models, risk matrix, contingency plan), and Artist Logistics (airline tracking, travel details, agent messages, updated schedule).\n\nThey share Live Ops with security supervisors and medical, Weather Risk with stage managers and production, and Artist Logistics with the liaison team and booking manager. The whole team starts talking in shorthand: \"Check the Weather Stax; check the Artist Stax.\" As each problem heats up or cools down, they switch Stax and are 100% in that problem space.",
+      "It's day two of a three-day music festival. The ops lead is balancing a minor security incident at one gate, a changing weather front threatening the main stage, and an artist whose flight is delayed. Tools include security incident logs, radio hub, weather radar, stage schedule, airline tracking, and artist liaison chat.\n\nWithout HeyStax, they click through tabs in a noisy operations cabin, trying to remember which window held the gate camera. Every new issue adds more noise. With HeyStax, they've created three Stax: Live Ops Cockpit (security live view, incident log, radio dashboard, site map), Weather Risk (detailed radar, forecast models, risk matrix, contingency plan), and Artist Logistics (airline tracking, travel details, agent messages, updated schedule).\n\nThey share Live Ops with security supervisors and medical, Weather Risk with stage managers and production, and Artist Logistics with the liaison team and booking manager. The whole team starts talking in shorthand: \"Check the Weather Stax; check the Artist Stax.\" As each problem heats up or cools down, they switch Stax and are 100% in that problem space.",
     staxPattern:
       '"Festival – Live Ops Cockpit" / "Festival – Weather Risk: Stage A" / "Festival – Artist Logistics: Day 2"',
-    seoTitle: "Browser Workspace for Festival Operations Leads | TabStax",
+    seoTitle: "Browser Workspace for Festival Operations Leads | HeyStax",
     metaDescription:
-      "Manage security, weather risk, and artist logistics as separate browser cockpits during a live festival. TabStax gives ops teams a shared command environment.",
+      "Manage security, weather risk, and artist logistics as separate browser cockpits during a live festival. HeyStax gives ops teams a shared command environment.",
     keywords: [
       "festival ops manager browser workspace",
       "live event tab organiser",
@@ -1346,7 +1346,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help festival ops leads during a live event?",
+        q: "How does HeyStax help festival ops leads during a live event?",
         a: "Create Live Ops, Weather Risk, and Artist Logistics Stax. Share each with the relevant team — security, stage managers, and liaison coordinators.",
       },
       {
@@ -1369,12 +1369,12 @@ export const useCases: UseCase[] = [
     summary:
       "Grievance meeting with an upset employee, offer letter for a senior hire, and a new hybrid work policy rollout. Different data sensitivities and emotional tones. Easy to carry the weight of the grievance into the cheerfulness of the offer call.",
     content:
-      "She's HR in a 200-person company. Within three hours: prepare for a grievance meeting with an upset employee, get an offer letter out to a senior hire, and finalize a new hybrid work policy. Each uses different data sensitivities and emotional tones.\n\nWithout TabStax, Gmail, HRIS, Google Docs, Slack, and a contract template are all open at once. She jumps from grievance notes to offer letter paragraphs to policy bullets without resetting. Easy to mis-send the wrong doc or carry the emotional weight across. With TabStax, she defines three Stax: Grievance (case log, policy docs, emails, meeting notes, meeting plan: \"Listen first, clarify, summarise back\"), Offer (template, comp bands, candidate profile, email draft), and Policy (draft doc, legal review notes, FAQ, rollout plan).\n\nShe shares Grievance with HR director and legal, Policy with leadership, and a curated version of Offer with the hiring manager. When she moves from grievance prep to offer call, she closes the Grievance Stax — mentally closing that loop — and opens Offer. Her environment shifts to welcoming and clear instead of tense and investigative.",
+      "She's HR in a 200-person company. Within three hours: prepare for a grievance meeting with an upset employee, get an offer letter out to a senior hire, and finalize a new hybrid work policy. Each uses different data sensitivities and emotional tones.\n\nWithout HeyStax, Gmail, HRIS, Google Docs, Slack, and a contract template are all open at once. She jumps from grievance notes to offer letter paragraphs to policy bullets without resetting. Easy to mis-send the wrong doc or carry the emotional weight across. With HeyStax, she defines three Stax: Grievance (case log, policy docs, emails, meeting notes, meeting plan: \"Listen first, clarify, summarise back\"), Offer (template, comp bands, candidate profile, email draft), and Policy (draft doc, legal review notes, FAQ, rollout plan).\n\nShe shares Grievance with HR director and legal, Policy with leadership, and a curated version of Offer with the hiring manager. When she moves from grievance prep to offer call, she closes the Grievance Stax — mentally closing that loop — and opens Offer. Her environment shifts to welcoming and clear instead of tense and investigative.",
     staxPattern:
       '"HR – Grievance: Case #2025-04" / "HR – Offer: Senior PM Candidate" / "HR – Policy: Hybrid Work Rollout"',
-    seoTitle: "Browser Workspace for HR Generalists Juggling Sensitive Tasks | TabStax",
+    seoTitle: "Browser Workspace for HR Generalists Juggling Sensitive Tasks | HeyStax",
     metaDescription:
-      "Separate a grievance meeting, an offer call, and a policy rollout into distinct browser environments. TabStax prevents emotional and data bleed between HR tasks.",
+      "Separate a grievance meeting, an offer call, and a policy rollout into distinct browser environments. HeyStax prevents emotional and data bleed between HR tasks.",
     keywords: [
       "HR generalist browser workspace",
       "HR case management tab organiser",
@@ -1384,7 +1384,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help HR professionals handle emotionally distinct tasks?",
+        q: "How does HeyStax help HR professionals handle emotionally distinct tasks?",
         a: "Each task — grievance, offer, policy — has its own Stax. Closing the Grievance Stax mentally closes that loop before opening the Offer Stax.",
       },
       {
@@ -1405,14 +1405,14 @@ export const useCases: UseCase[] = [
     category: "Deep Work, Research & Analysis",
     persona: "Equity Analyst",
     summary:
-      "Three companies across three sectors reporting earnings this week. Each uses different KPIs, comps, and narratives. He doesn't carry three theses in working RAM; TabStax loads one coverage universe at a time.",
+      "Three companies across three sectors reporting earnings this week. Each uses different KPIs, comps, and narratives. He doesn't carry three theses in working RAM; HeyStax loads one coverage universe at a time.",
     content:
-      "He's an equity analyst. This week three companies across three sectors are reporting earnings: CloudCo in tech, FreshFoods in consumer, RailTrans in industrials. Each story uses different KPIs, comps, and narratives.\n\nWithout TabStax, his terminal windows and browser tabs are a tangle of PDFs, models, call transcripts, and competitor charts. He keeps reopening the wrong model. With TabStax, each company gets its own Coverage Stax: model spreadsheet, last quarter's deck, today's deck PDF, live transcript, notes with key questions, and comps table.\n\nHe shares each Stax with his PM and associate. When it's CloudCo's call, he opens that Stax and his notes and model are exactly where he left them. Later he closes CloudCo and opens FreshFoods — new model, new comps, new thesis. His Start Page says: \"Focus on margin recovery and store count, not just top-line.\" He doesn't carry three theses in his working RAM; TabStax loads one coverage universe at a time.",
+      "He's an equity analyst. This week three companies across three sectors are reporting earnings: CloudCo in tech, FreshFoods in consumer, RailTrans in industrials. Each story uses different KPIs, comps, and narratives.\n\nWithout HeyStax, his terminal windows and browser tabs are a tangle of PDFs, models, call transcripts, and competitor charts. He keeps reopening the wrong model. With HeyStax, each company gets its own Coverage Stax: model spreadsheet, last quarter's deck, today's deck PDF, live transcript, notes with key questions, and comps table.\n\nHe shares each Stax with his PM and associate. When it's CloudCo's call, he opens that Stax and his notes and model are exactly where he left them. Later he closes CloudCo and opens FreshFoods — new model, new comps, new thesis. His Start Page says: \"Focus on margin recovery and store count, not just top-line.\" He doesn't carry three theses in his working RAM; HeyStax loads one coverage universe at a time.",
     staxPattern:
       '"Coverage – CloudCo Earnings Q2" / "Coverage – FreshFoods Earnings Q2" / "Coverage – RailTrans Earnings Q2"',
-    seoTitle: "Browser Workspace for Equity Analysts on Earnings Week | TabStax",
+    seoTitle: "Browser Workspace for Equity Analysts on Earnings Week | HeyStax",
     metaDescription:
-      "Load one coverage universe at a time without mixing models or theses. TabStax gives equity analysts a per-company browser workspace with the right deck, model, and notes.",
+      "Load one coverage universe at a time without mixing models or theses. HeyStax gives equity analysts a per-company browser workspace with the right deck, model, and notes.",
     keywords: [
       "equity analyst browser workspace",
       "earnings coverage tab organiser",
@@ -1422,7 +1422,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help analysts stay focused on one coverage name at a time?",
+        q: "How does HeyStax help analysts stay focused on one coverage name at a time?",
         a: "Each company has its own Coverage Stax with the model, last deck, transcript, and thesis notes. Close one, open the next — no mixed-up models.",
       },
       {
@@ -1445,12 +1445,12 @@ export const useCases: UseCase[] = [
     summary:
       "A new bus rapid transit corridor, a controversial housing development, and a public consultation evening where both will get shouted about. GIS maps, traffic models, developer submissions — all separated into clean environments.",
     content:
-      "She's working in a city planning office, deep in a new bus rapid transit corridor proposal, a controversial housing development under review, and a scheduled public consultation evening where both will get shouted about. Each needs GIS maps, traffic models, policy documents, developer submissions, and public feedback portals.\n\nWithout TabStax, her browser is piled with shapefiles, PDFs, forms, and council minutes. She hops between transport, housing, and consultation logistics without ever feeling anchored. With TabStax, she creates three Stax: Transit Corridor (route maps, environmental assessments, technical studies, funding options), Housing Development (site plans, developer proposal, objections, zoning regs), and Public Consultation (event agenda, slide deck, FAQ, feedback form builder).\n\nShe shares Transit with transport engineers, Housing with legal and councillors, and Consultation with comms and event staff. On consultation day, she closes Transit and Housing and opens only Consultation. Her machine, notes, and slides are all in \"listen and explain\" mode, not \"tweak the model\" mode.",
+      "She's working in a city planning office, deep in a new bus rapid transit corridor proposal, a controversial housing development under review, and a scheduled public consultation evening where both will get shouted about. Each needs GIS maps, traffic models, policy documents, developer submissions, and public feedback portals.\n\nWithout HeyStax, her browser is piled with shapefiles, PDFs, forms, and council minutes. She hops between transport, housing, and consultation logistics without ever feeling anchored. With HeyStax, she creates three Stax: Transit Corridor (route maps, environmental assessments, technical studies, funding options), Housing Development (site plans, developer proposal, objections, zoning regs), and Public Consultation (event agenda, slide deck, FAQ, feedback form builder).\n\nShe shares Transit with transport engineers, Housing with legal and councillors, and Consultation with comms and event staff. On consultation day, she closes Transit and Housing and opens only Consultation. Her machine, notes, and slides are all in \"listen and explain\" mode, not \"tweak the model\" mode.",
     staxPattern:
       '"Planning – Transit Corridor North-South" / "Planning – Housing Development: Elm Street" / "Planning – Public Consultation: June 18"',
-    seoTitle: "Browser Workspace for City Planners Managing Multiple Projects | TabStax",
+    seoTitle: "Browser Workspace for City Planners Managing Multiple Projects | HeyStax",
     metaDescription:
-      "Keep transit, housing, and public consultation in separate browser environments. TabStax gives city planners a per-project cockpit with the right GIS tools and docs.",
+      "Keep transit, housing, and public consultation in separate browser environments. HeyStax gives city planners a per-project cockpit with the right GIS tools and docs.",
     keywords: [
       "city planner browser workspace",
       "urban planning tab organiser",
@@ -1460,11 +1460,11 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help city planners working across multiple planning projects?",
+        q: "How does HeyStax help city planners working across multiple planning projects?",
         a: "Each project has its own Stax — Transit, Housing, Consultation — with the right GIS maps, policy docs, and developer submissions. Switch focus cleanly.",
       },
       {
-        q: "How does TabStax help during a public consultation event?",
+        q: "How does HeyStax help during a public consultation event?",
         a: "Close all other Stax and open only the Consultation Stax. Your slides, FAQ, and feedback form are in 'listen and explain' mode, not 'tweak the model' mode.",
       },
       {
@@ -1483,12 +1483,12 @@ export const useCases: UseCase[] = [
     summary:
       "Three supportive lawmakers need tailored briefing packs for tomorrow's hearing. Each MP has a different angle — education, economic, constituency impact. You share each briefing Stax directly with their staffer.",
     content:
-      "He works for an advocacy org. Tomorrow there's a parliamentary committee hearing on a topic they care deeply about. He needs to prep three supportive lawmakers with tailored briefing packs, track opposition talking points, and coordinate media follow-up.\n\nWithout TabStax, his browser is full of bill texts, amendments, op-eds, polling, and MP profiles. He copies and pastes into docs and emails, hoping not to send the wrong briefing to the wrong office. With TabStax, he builds a Core Evidence Stax (bill text, amendments, research papers, polls) and a separate Briefing Stax for each MP — each containing that MP's profile and speeches, constituency data, a tailored one-page brief, and suggested questions.\n\nHe shares the Core Evidence Stax internally with his team. He shares each MP Stax with that MP's staffer — they open it and see suggested lines, supporting stats, and the local angle. On hearing day, he also has a Media Follow-up Stax with press lists, draft releases, and social copy. He swaps between them as the day unfolds, each world representing a different audience and frame.",
+      "He works for an advocacy org. Tomorrow there's a parliamentary committee hearing on a topic they care deeply about. He needs to prep three supportive lawmakers with tailored briefing packs, track opposition talking points, and coordinate media follow-up.\n\nWithout HeyStax, his browser is full of bill texts, amendments, op-eds, polling, and MP profiles. He copies and pastes into docs and emails, hoping not to send the wrong briefing to the wrong office. With HeyStax, he builds a Core Evidence Stax (bill text, amendments, research papers, polls) and a separate Briefing Stax for each MP — each containing that MP's profile and speeches, constituency data, a tailored one-page brief, and suggested questions.\n\nHe shares the Core Evidence Stax internally with his team. He shares each MP Stax with that MP's staffer — they open it and see suggested lines, supporting stats, and the local angle. On hearing day, he also has a Media Follow-up Stax with press lists, draft releases, and social copy. He swaps between them as the day unfolds, each world representing a different audience and frame.",
     staxPattern:
       '"Hearing – Core Evidence & Arguments" / "Briefing – MP A (Education)" / "Briefing – MP B (Economic)" / "Briefing – MP C (Constituency)"',
-    seoTitle: "Browser Workspace for Policy Lobbyists at Committee Hearings | TabStax",
+    seoTitle: "Browser Workspace for Policy Lobbyists at Committee Hearings | HeyStax",
     metaDescription:
-      "Send each lawmaker's staffer a tailored briefing Stax with their local angle and suggested questions. TabStax replaces scatter-gun PDF emails with a shared context.",
+      "Send each lawmaker's staffer a tailored briefing Stax with their local angle and suggested questions. HeyStax replaces scatter-gun PDF emails with a shared context.",
     keywords: [
       "policy lobbyist browser workspace",
       "parliamentary briefing tab organiser",
@@ -1498,7 +1498,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help lobbyists brief multiple lawmakers before a hearing?",
+        q: "How does HeyStax help lobbyists brief multiple lawmakers before a hearing?",
         a: "Create a tailored Briefing Stax per MP with their profile, constituency data, a one-page brief, and suggested questions. Share directly with their staffer.",
       },
       {
@@ -1506,7 +1506,7 @@ export const useCases: UseCase[] = [
         a: "Yes. The Core Evidence Stax — bill text, research, polls — is shared internally. Each MP Stax is shared only with that MP's office.",
       },
       {
-        q: "How does TabStax help on hearing day?",
+        q: "How does HeyStax help on hearing day?",
         a: "Switch between stakeholder Stax as the hearing unfolds — from MP briefings to Media Follow-up — each world ready for a different audience.",
       },
     ],
@@ -1521,12 +1521,12 @@ export const useCases: UseCase[] = [
     summary:
       "Second-call investor pitch, final interview for a senior engineer, internal roadmap review. Each room expects a different story from the same product. You come across as grounded because you're not hauling all three in memory at once.",
     content:
-      "You're a remote-first founder. In one afternoon: a second-call investor pitch, a final interview for a senior engineer, and an internal roadmap review with your team. Each room expects a different story from the same product.\n\nWithout TabStax, you keep pitch deck, hiring scorecards, roadmap doc, and Miro board floating in one environment. You show the investor the wrong roadmap version, open the candidate's CV during the team review, fumble for the right doc. With TabStax, you set up three Stax: Investor Pitch (deck, metrics dashboard, partner notes, email chain, Start Page: \"Hit why now plus traction early\"), Hiring (CV, GitHub, scorecard, structured questions, feedback form), and Roadmap Review (current roadmap, Miro, retro notes, feature backlog).\n\nYou share Investor Stax with your co-founder, Hiring with the panel, Roadmap with the product team. Before the investor call: open Investor Stax, brain in story-plus-numbers mode. After: close it, open Hiring, now in assess-alignment mode. Later: open Roadmap, trade-offs-plus-priorities mode. You come across as grounded and present because you're not hauling all three in memory at once.",
+      "You're a remote-first founder. In one afternoon: a second-call investor pitch, a final interview for a senior engineer, and an internal roadmap review with your team. Each room expects a different story from the same product.\n\nWithout HeyStax, you keep pitch deck, hiring scorecards, roadmap doc, and Miro board floating in one environment. You show the investor the wrong roadmap version, open the candidate's CV during the team review, fumble for the right doc. With HeyStax, you set up three Stax: Investor Pitch (deck, metrics dashboard, partner notes, email chain, Start Page: \"Hit why now plus traction early\"), Hiring (CV, GitHub, scorecard, structured questions, feedback form), and Roadmap Review (current roadmap, Miro, retro notes, feature backlog).\n\nYou share Investor Stax with your co-founder, Hiring with the panel, Roadmap with the product team. Before the investor call: open Investor Stax, brain in story-plus-numbers mode. After: close it, open Hiring, now in assess-alignment mode. Later: open Roadmap, trade-offs-plus-priorities mode. You come across as grounded and present because you're not hauling all three in memory at once.",
     staxPattern:
       '"Founder – Investor Pitch: Seed Round (Call 2)" / "Founder – Hiring: Senior Engineer Final" / "Founder – Roadmap Review Q3"',
-    seoTitle: "Browser Workspace for Remote Founders: Pitch, Hiring, Roadmap | TabStax",
+    seoTitle: "Browser Workspace for Remote Founders: Pitch, Hiring, Roadmap | HeyStax",
     metaDescription:
-      "Walk into an investor pitch, final engineer interview, and team roadmap review prepared — all from separate browser worlds. TabStax keeps each context clean.",
+      "Walk into an investor pitch, final engineer interview, and team roadmap review prepared — all from separate browser worlds. HeyStax keeps each context clean.",
     keywords: [
       "remote founder browser workspace",
       "investor pitch browser context tool",
@@ -1536,7 +1536,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help remote founders manage three high-stakes meetings in one afternoon?",
+        q: "How does HeyStax help remote founders manage three high-stakes meetings in one afternoon?",
         a: "Each meeting has its own Stax — Investor Pitch, Hiring, Roadmap. Close one world and open the next. Your brain switches from story mode to assess mode to trade-offs mode.",
       },
       {
@@ -1560,12 +1560,12 @@ export const useCases: UseCase[] = [
     summary:
       "Labrador with suspected bloat, cat on fluids after a fall, terrier waiting for stitches. Three anxious owners. You bring clean attention into each treatment room, even in the chaos.",
     content:
-      "It's 7:45pm at an emergency vet clinic. A labrador with suspected bloat, a cat on fluids after a bad fall, a terrier waiting for stitches, and three anxious owners asking for updates. Your world is practice management software, lab results, imaging, drug dosage calculators, treatment protocols, and a whiteboard of who's where.\n\nWithout TabStax, your browser is chaos: three patient records, Google tabs for dosages, imaging viewer, PDF protocols. You keep flicking between them, trying not to mix up conditions. With TabStax, each case gets its own Stax (patient record, imaging, lab results, relevant protocol, structured next actions) plus a Shift Overview Stax.\n\nYou share each Case Stax with vet nurses and techs so they know what stage each patient is at. You share the Overview with reception for realistic owner updates. When you move from Max to Luna, you close Max's Stax and open Luna's. Your brain reloads the entire story: mechanism of injury, current vitals, owner's concerns. You bring clean attention into each treatment room, even in the chaos.",
+      "It's 7:45pm at an emergency vet clinic. A labrador with suspected bloat, a cat on fluids after a bad fall, a terrier waiting for stitches, and three anxious owners asking for updates. Your world is practice management software, lab results, imaging, drug dosage calculators, treatment protocols, and a whiteboard of who's where.\n\nWithout HeyStax, your browser is chaos: three patient records, Google tabs for dosages, imaging viewer, PDF protocols. You keep flicking between them, trying not to mix up conditions. With HeyStax, each case gets its own Stax (patient record, imaging, lab results, relevant protocol, structured next actions) plus a Shift Overview Stax.\n\nYou share each Case Stax with vet nurses and techs so they know what stage each patient is at. You share the Overview with reception for realistic owner updates. When you move from Max to Luna, you close Max's Stax and open Luna's. Your brain reloads the entire story: mechanism of injury, current vitals, owner's concerns. You bring clean attention into each treatment room, even in the chaos.",
     staxPattern:
       '"Case – Max (Labrador, Suspected GDV)" / "Case – Luna (Cat, Trauma)" / "Case – Milo (Terrier, Laceration)" / "Shift – ER Overview"',
-    seoTitle: "Browser Workspace for Emergency Vets Managing Multiple Cases | TabStax",
+    seoTitle: "Browser Workspace for Emergency Vets Managing Multiple Cases | HeyStax",
     metaDescription:
-      "Bring clean attention into each treatment room during a chaotic ER shift. TabStax gives emergency vets a per-patient browser workspace with the full case record.",
+      "Bring clean attention into each treatment room during a chaotic ER shift. HeyStax gives emergency vets a per-patient browser workspace with the full case record.",
     keywords: [
       "emergency vet browser workspace",
       "vet clinic tab organiser",
@@ -1575,7 +1575,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help emergency vets switch between cases without mixing up patients?",
+        q: "How does HeyStax help emergency vets switch between cases without mixing up patients?",
         a: "Each case has its own Stax with the patient record, imaging, lab results, and treatment protocol. Close Max's Stax, open Luna's — different story, different vitals.",
       },
       {
@@ -1598,12 +1598,12 @@ export const useCases: UseCase[] = [
     summary:
       "A line of storms rolling in. One flight holding, another needs a diversion airport, crew nearing duty limits, passengers missing connections. You look calm because your environment is carrying the complexity.",
     content:
-      "You're in the airline ops center. A line of storms is rolling in. One flight is in a holding pattern, another needs a diversion airport, crew are nearing duty time limits, and passengers are missing connections. Your tools: flight tracking, weather radar, crew scheduling, airport ops dashboards, and internal chat.\n\nWithout TabStax, you're juggling twenty tabs and three monitors, flipping between radar, flight details, Slack DMs, and an Excel with crew duty times. With TabStax, you make a Storm Overview Stax (big-picture radar, affected flights list, airport capacity) and individual Flight Stax for each critical aircraft (live track, weather and diversion data, passenger loads, connections, notes on preferred diversion airports).\n\nYou share Storm Overview with the whole shift team and individual Flight Stax with ground ops at both airports. As priorities shift, you open and close Flight Stax like tabs of reality. When you step into AB123 world, everything you need for that flight — not the entire airline — is right there. You look calm because your environment is carrying the complexity.",
+      "You're in the airline ops center. A line of storms is rolling in. One flight is in a holding pattern, another needs a diversion airport, crew are nearing duty time limits, and passengers are missing connections. Your tools: flight tracking, weather radar, crew scheduling, airport ops dashboards, and internal chat.\n\nWithout HeyStax, you're juggling twenty tabs and three monitors, flipping between radar, flight details, Slack DMs, and an Excel with crew duty times. With HeyStax, you make a Storm Overview Stax (big-picture radar, affected flights list, airport capacity) and individual Flight Stax for each critical aircraft (live track, weather and diversion data, passenger loads, connections, notes on preferred diversion airports).\n\nYou share Storm Overview with the whole shift team and individual Flight Stax with ground ops at both airports. As priorities shift, you open and close Flight Stax like tabs of reality. When you step into AB123 world, everything you need for that flight — not the entire airline — is right there. You look calm because your environment is carrying the complexity.",
     staxPattern:
       '"Ops – Storm System Delta (Overview)" / "Flight – AB123 Diversion" / "Flight – CD456 Crew Duty Limit Risk"',
-    seoTitle: "Browser Workspace for Airline Ops Controllers During Storm Events | TabStax",
+    seoTitle: "Browser Workspace for Airline Ops Controllers During Storm Events | HeyStax",
     metaDescription:
-      "Manage storm diversions, crew duty limits, and passenger connections from separate browser cockpits. TabStax helps airline ops controllers look calm under pressure.",
+      "Manage storm diversions, crew duty limits, and passenger connections from separate browser cockpits. HeyStax helps airline ops controllers look calm under pressure.",
     keywords: [
       "airline ops controller browser workspace",
       "flight operations tab organiser",
@@ -1613,7 +1613,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help airline ops controllers during a storm event?",
+        q: "How does HeyStax help airline ops controllers during a storm event?",
         a: "Create a Storm Overview Stax and individual Flight Stax per critical aircraft. Open a Flight Stax and see only that flight's data — not the whole airline at once.",
       },
       {
@@ -1636,12 +1636,12 @@ export const useCases: UseCase[] = [
     summary:
       "Electricians late and blocking drywall, steel delivery due any minute, safety inspection this afternoon. Each Stax is like a scene: when you open it, you know who you're dealing with and what success looks like.",
     content:
-      "You're running a large construction site. The electricians are late and blocking the drywall crew, a steel delivery is due any minute, and there's a safety walk with the inspector this afternoon. Your life is Gantt charts, WhatsApp groups with subcontractors, delivery notes, email threads, and safety checklists.\n\nWithout TabStax, you've got the schedule in one tab, supplier portal in another, safety PDFs buried somewhere, and three chat apps dinging. You react to whoever shouts loudest. With TabStax, you define four Stax: Daily Control Room (schedule, site layout, issues sheet), Coordination (today's work area plan, messages with subs, photos), Steel Delivery (purchase order, logistics, timing), and Safety Walk (checklist, outstanding items, regs, method statements).\n\nYou share Coordination Stax with both subcontractors so they see the same drawings. You share Safety Stax with the safety officer and site manager. When it's time for the walk, you open Safety Stax and your checklist, old actions, and documents are ready. No rummaging through email while the inspector waits. Each Stax is like a scene: when you open it, you know who you're dealing with and what success looks like.",
+      "You're running a large construction site. The electricians are late and blocking the drywall crew, a steel delivery is due any minute, and there's a safety walk with the inspector this afternoon. Your life is Gantt charts, WhatsApp groups with subcontractors, delivery notes, email threads, and safety checklists.\n\nWithout HeyStax, you've got the schedule in one tab, supplier portal in another, safety PDFs buried somewhere, and three chat apps dinging. You react to whoever shouts loudest. With HeyStax, you define four Stax: Daily Control Room (schedule, site layout, issues sheet), Coordination (today's work area plan, messages with subs, photos), Steel Delivery (purchase order, logistics, timing), and Safety Walk (checklist, outstanding items, regs, method statements).\n\nYou share Coordination Stax with both subcontractors so they see the same drawings. You share Safety Stax with the safety officer and site manager. When it's time for the walk, you open Safety Stax and your checklist, old actions, and documents are ready. No rummaging through email while the inspector waits. Each Stax is like a scene: when you open it, you know who you're dealing with and what success looks like.",
     staxPattern:
       '"Site – Daily Control Room" / "Site – Electrical / Drywall Coordination" / "Site – Steel Delivery (Today)" / "Site – Safety Walk (Inspector)"',
-    seoTitle: "Browser Workspace for Construction Site Foremen | TabStax",
+    seoTitle: "Browser Workspace for Construction Site Foremen | HeyStax",
     metaDescription:
-      "Manage subcontractors, deliveries, and a safety inspection without reacting to whoever shouts loudest. TabStax gives construction foremen a per-task browser cockpit.",
+      "Manage subcontractors, deliveries, and a safety inspection without reacting to whoever shouts loudest. HeyStax gives construction foremen a per-task browser cockpit.",
     keywords: [
       "construction foreman browser workspace",
       "site management tab organiser",
@@ -1651,7 +1651,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help construction foremen manage multiple simultaneous site tasks?",
+        q: "How does HeyStax help construction foremen manage multiple simultaneous site tasks?",
         a: "Build a Stax per task — Daily Control, Coordination, Steel Delivery, Safety Walk. Open the relevant one and you know who you're dealing with and what success looks like.",
       },
       {
@@ -1674,12 +1674,12 @@ export const useCases: UseCase[] = [
     summary:
       "Couple nearing retirement at 9, young professional at 10, business owner at 11. Completely different conversations, numbers, and tone. Clients feel it — you're present, not generic.",
     content:
-      "You're a financial planner with back-to-back annual reviews. 09:00 is a couple nearing retirement. 10:00 is a young professional focused on aggressive growth. 11:00 is a business owner balancing company cash and personal wealth. They all need completely different conversations, numbers, and tone.\n\nWithout TabStax, you pull up the wrong portfolio, blank on what stage of life they're in, and click through the CRM while they're on Zoom. With TabStax, each client gets a Stax: portfolio dashboard, CRM notes, plan doc, risk profile, and a Start Page with the emotional opener (\"Open with how they feel about slowing down work\" for the couple, \"Revisit volatility; check if last dip spooked her\" for the young professional, \"Clarify business buffer vs personal investment\" for the business owner).\n\nYou share each Stax with your paraplanner to prep notes and follow-up tasks. After the 9:00 call, you close that entire life story and open the next. You're in \"single, career, growth\" headspace, not \"couple, security, legacy.\" Clients feel it. You're present, not generic.",
+      "You're a financial planner with back-to-back annual reviews. 09:00 is a couple nearing retirement. 10:00 is a young professional focused on aggressive growth. 11:00 is a business owner balancing company cash and personal wealth. They all need completely different conversations, numbers, and tone.\n\nWithout HeyStax, you pull up the wrong portfolio, blank on what stage of life they're in, and click through the CRM while they're on Zoom. With HeyStax, each client gets a Stax: portfolio dashboard, CRM notes, plan doc, risk profile, and a Start Page with the emotional opener (\"Open with how they feel about slowing down work\" for the couple, \"Revisit volatility; check if last dip spooked her\" for the young professional, \"Clarify business buffer vs personal investment\" for the business owner).\n\nYou share each Stax with your paraplanner to prep notes and follow-up tasks. After the 9:00 call, you close that entire life story and open the next. You're in \"single, career, growth\" headspace, not \"couple, security, legacy.\" Clients feel it. You're present, not generic.",
     staxPattern:
       '"Client – Mark & Lynda (Retirement Review)" / "Client – Priya (Growth & Risk)" / "Client – Alvarez Ltd. / Sofia (Business & Personal)"',
-    seoTitle: "Browser Workspace for Financial Planners Running Back-to-Back Reviews | TabStax",
+    seoTitle: "Browser Workspace for Financial Planners Running Back-to-Back Reviews | HeyStax",
     metaDescription:
-      "Show up fully present for each client — retirement couple, growth investor, business owner. TabStax gives financial planners a per-client browser workspace with the right posture.",
+      "Show up fully present for each client — retirement couple, growth investor, business owner. HeyStax gives financial planners a per-client browser workspace with the right posture.",
     keywords: [
       "financial planner browser workspace",
       "client review tab organiser",
@@ -1689,7 +1689,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help financial planners switch between clients with different life stages?",
+        q: "How does HeyStax help financial planners switch between clients with different life stages?",
         a: "Each client has a Stax with portfolio dashboard, plan doc, risk profile, and a Start Page with an emotional opener tuned to their stage of life.",
       },
       {
@@ -1697,7 +1697,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share each Client Stax with your paraplanner to prep notes and follow-up tasks before the review.",
       },
       {
-        q: "Does TabStax help prevent showing the wrong portfolio to the wrong client?",
+        q: "Does HeyStax help prevent showing the wrong portfolio to the wrong client?",
         a: "Yes. Each client is a separate Stax. Close one before opening the next — no chance of pulling up the wrong portfolio mid-call.",
       },
     ],
@@ -1712,12 +1712,12 @@ export const useCases: UseCase[] = [
     summary:
       "A gritty low-magic campaign on Tuesdays, high-chaos meme group on Thursdays, a serious long-form story on Sundays. Each has its own world map, NPCs, plots, and player backstories. Your players feel like you've been thinking only about their story all week.",
     content:
-      "You DM three games: a gritty low-magic campaign on Tuesdays, a high-chaos meme-filled group on Thursdays, and a serious long-form story on Sundays. Each has world maps, NPCs, ongoing plots, player backstories, and encounter notes.\n\nWithout TabStax, your browser has five D&D Beyond tabs, three map tools, fifteen name generator tabs, and session notes buried in Docs. You show up on Thursday remembering Tuesday's plot twist. With TabStax, each campaign gets its own Stax: notes, character sheets, encounter builder, map, playlist, and a Start Page with tonight's agenda (\"Reveal the traitor in the guild\" for Greybridge, \"Lean into chaos; give them a ridiculous magic item\" for Goblin TikTok, \"Advance the war; show consequences of last session's choice\" for Iron Dominion).\n\nYou share each Stax with your players so they can see the map, recap, and key NPCs. Before each session, you open the right Stax and instantly re-enter that world — tone, stakes, threads. Your players feel like you've been thinking only about their story all week.",
+      "You DM three games: a gritty low-magic campaign on Tuesdays, a high-chaos meme-filled group on Thursdays, and a serious long-form story on Sundays. Each has world maps, NPCs, ongoing plots, player backstories, and encounter notes.\n\nWithout HeyStax, your browser has five D&D Beyond tabs, three map tools, fifteen name generator tabs, and session notes buried in Docs. You show up on Thursday remembering Tuesday's plot twist. With HeyStax, each campaign gets its own Stax: notes, character sheets, encounter builder, map, playlist, and a Start Page with tonight's agenda (\"Reveal the traitor in the guild\" for Greybridge, \"Lean into chaos; give them a ridiculous magic item\" for Goblin TikTok, \"Advance the war; show consequences of last session's choice\" for Iron Dominion).\n\nYou share each Stax with your players so they can see the map, recap, and key NPCs. Before each session, you open the right Stax and instantly re-enter that world — tone, stakes, threads. Your players feel like you've been thinking only about their story all week.",
     staxPattern:
       '"Campaign – Greybridge (Tuesdays)" / "Campaign – Goblin TikTok (Thursdays)" / "Campaign – The Iron Dominion (Sundays)"',
-    seoTitle: "Browser Workspace for Dungeon Masters Running Multiple Campaigns | TabStax",
+    seoTitle: "Browser Workspace for Dungeon Masters Running Multiple Campaigns | HeyStax",
     metaDescription:
-      "Switch between three TTRPG campaign worlds without mixing up plots, NPCs, or session notes. TabStax gives DMs a per-campaign browser workspace shared with players.",
+      "Switch between three TTRPG campaign worlds without mixing up plots, NPCs, or session notes. HeyStax gives DMs a per-campaign browser workspace shared with players.",
     keywords: [
       "dungeon master browser workspace",
       "TTRPG campaign tab organiser",
@@ -1727,7 +1727,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help DMs running multiple campaigns?",
+        q: "How does HeyStax help DMs running multiple campaigns?",
         a: "Each campaign has its own Stax with notes, character sheets, maps, encounter builder, and a Start Page with tonight's agenda. Open the right campaign world before each session.",
       },
       {
@@ -1735,7 +1735,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share each campaign Stax with your players so they can see the map, session recap, and key NPCs before the game starts.",
       },
       {
-        q: "Does TabStax help DMs avoid confusing different campaign plots?",
+        q: "Does HeyStax help DMs avoid confusing different campaign plots?",
         a: "Yes. Each campaign is a separate, named world. The Start Page reminds you of the current story arc and tonight's specific goal.",
       },
     ],
@@ -1748,14 +1748,14 @@ export const useCases: UseCase[] = [
     category: "SME & Multi-Role Founders",
     persona: "Vet Clinic Owner",
     summary:
-      "Vet seeing appointments, manager dealing with staff rota and HR, owner watching the books and marketing. Three completely different modes using different tools. TabStax lets you wear one hat at a time.",
+      "Vet seeing appointments, manager dealing with staff rota and HR, owner watching the books and marketing. Three completely different modes using different tools. HeyStax lets you wear one hat at a time.",
     content:
-      "You own a busy vet clinic. Your roles: vet seeing appointments, manager dealing with staff rota and HR, and owner watching the books, marketing, and growth. Each mode uses different tools: clinical software and imaging for patients, scheduling and HR docs for staff, accounting and social media for business.\n\nWithout TabStax, you have everything half-open all day — x-rays next to payroll, Facebook ads next to lab results. You stay in a fuzzy, stressed \"everything at once\" state. With TabStax, you carve out three Stax: Consult Room Mode (EHR, lab portal, imaging, client education), Staff and HR (rota, HR documents, feedback forms), and Business (accounting, POS reports, marketing tools).\n\nYou share Staff and HR Stax with your practice manager and Business Stax with your accountant. During consult blocks, you live only in Consult Stax. When it's time to think about the business, you close that and open Business — your brain swaps \"this animal, this family\" for \"this business, this month.\"",
+      "You own a busy vet clinic. Your roles: vet seeing appointments, manager dealing with staff rota and HR, and owner watching the books, marketing, and growth. Each mode uses different tools: clinical software and imaging for patients, scheduling and HR docs for staff, accounting and social media for business.\n\nWithout HeyStax, you have everything half-open all day — x-rays next to payroll, Facebook ads next to lab results. You stay in a fuzzy, stressed \"everything at once\" state. With HeyStax, you carve out three Stax: Consult Room Mode (EHR, lab portal, imaging, client education), Staff and HR (rota, HR documents, feedback forms), and Business (accounting, POS reports, marketing tools).\n\nYou share Staff and HR Stax with your practice manager and Business Stax with your accountant. During consult blocks, you live only in Consult Stax. When it's time to think about the business, you close that and open Business — your brain swaps \"this animal, this family\" for \"this business, this month.\"",
     staxPattern:
       '"Clinic – Consult Room Mode" / "Clinic – Staff & HR" / "Clinic – Business & Growth"',
-    seoTitle: "Browser Workspace for Vet Clinic Owners Wearing Multiple Hats | TabStax",
+    seoTitle: "Browser Workspace for Vet Clinic Owners Wearing Multiple Hats | HeyStax",
     metaDescription:
-      "Stop keeping x-rays next to payroll. TabStax gives vet clinic owners separate browser environments for clinical work, staff management, and business operations.",
+      "Stop keeping x-rays next to payroll. HeyStax gives vet clinic owners separate browser environments for clinical work, staff management, and business operations.",
     keywords: [
       "vet clinic owner browser workspace",
       "veterinary practice manager tab organiser",
@@ -1765,7 +1765,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a vet who also owns their practice?",
+        q: "How does HeyStax help a vet who also owns their practice?",
         a: "Create three Stax: Consult Room Mode, Staff and HR, and Business. During consult blocks, open only Consult Stax — no ads or payroll in view.",
       },
       {
@@ -1773,7 +1773,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Staff and HR Stax with your practice manager so rota, HR docs, and feedback forms are a shared workspace.",
       },
       {
-        q: "Does TabStax help with accountant collaboration?",
+        q: "Does HeyStax help with accountant collaboration?",
         a: "Yes. Share the Business Stax with your accountant so they can view the POS reports and accounting tools alongside your goals.",
       },
     ],
@@ -1786,14 +1786,14 @@ export const useCases: UseCase[] = [
     category: "Deep Work, Research & Analysis",
     persona: "Penetration Tester",
     summary:
-      "Finalizing tests on a fintech API, starting recon on a manufacturing perimeter, writing the final report for a third client. Mixing up credentials or URLs between clients is a big no-no. TabStax keeps worlds totally separate.",
+      "Finalizing tests on a fintech API, starting recon on a manufacturing perimeter, writing the final report for a third client. Mixing up credentials or URLs between clients is a big no-no. HeyStax keeps worlds totally separate.",
     content:
-      "You're a pentester. Today: finalizing tests on a fintech API, starting recon on a manufacturing company's external perimeter, and writing the final report for a third client. Each engagement has scopes, tools, notes, and findings.\n\nWithout TabStax, your browser is full of Burp, recon tools, notes, Jira tickets, and PDFs of scopes. You risk mixing up credentials or URLs between clients — a big no-no. With TabStax, each engagement gets its own Stax: scope document, tool dashboards, target URLs, findings with severity, and client communication channel. The Reporting Stax has the report template, evidence screenshots, findings summary, and risk rating references.\n\nYou share each Engagement Stax internally with your security team lead. You share nothing cross-client, keeping worlds totally separate and contained. When you work on FintechCo, you open that Stax only, knowing you're inside the right scope. When you move to ManuCorp, you close FintechCo completely. No chance of accidental cross-contamination. You're faster and safer.",
+      "You're a pentester. Today: finalizing tests on a fintech API, starting recon on a manufacturing company's external perimeter, and writing the final report for a third client. Each engagement has scopes, tools, notes, and findings.\n\nWithout HeyStax, your browser is full of Burp, recon tools, notes, Jira tickets, and PDFs of scopes. You risk mixing up credentials or URLs between clients — a big no-no. With HeyStax, each engagement gets its own Stax: scope document, tool dashboards, target URLs, findings with severity, and client communication channel. The Reporting Stax has the report template, evidence screenshots, findings summary, and risk rating references.\n\nYou share each Engagement Stax internally with your security team lead. You share nothing cross-client, keeping worlds totally separate and contained. When you work on FintechCo, you open that Stax only, knowing you're inside the right scope. When you move to ManuCorp, you close FintechCo completely. No chance of accidental cross-contamination. You're faster and safer.",
     staxPattern:
       '"Engagement – FintechCo API" / "Engagement – ManuCorp Perimeter" / "Reporting – RetailBank Web App"',
-    seoTitle: "Browser Workspace for Penetration Testers on Multiple Engagements | TabStax",
+    seoTitle: "Browser Workspace for Penetration Testers on Multiple Engagements | HeyStax",
     metaDescription:
-      "Keep each pentest engagement in a totally separate browser environment. TabStax prevents credential and URL cross-contamination between client scopes.",
+      "Keep each pentest engagement in a totally separate browser environment. HeyStax prevents credential and URL cross-contamination between client scopes.",
     keywords: [
       "penetration tester browser workspace",
       "pentest tab organiser",
@@ -1803,7 +1803,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax prevent cross-contamination between pentest engagements?",
+        q: "How does HeyStax prevent cross-contamination between pentest engagements?",
         a: "Each engagement is a separate Stax with its own scope, target URLs, and credentials. Close one before opening the next — no accidental cross-client access.",
       },
       {
@@ -1826,12 +1826,12 @@ export const useCases: UseCase[] = [
     summary:
       "Morning lecture, afternoon office hours, evening research paper revision, and a pile of admin emails somewhere in between. Four completely different mental spaces. You close Admin, open Research, and let your brain sink into theory, not forms.",
     content:
-      "You're a lecturer. Morning lecture for 2nd years, afternoon office hours, evening work on a research paper revision, and somewhere in between a pile of admin emails. Four different mental spaces: teaching, one-to-one student support, deep research and writing, and bureaucratic checklist hell.\n\nWithout TabStax, your browser holds lecture slides, Moodle, email, journal submission portal, spreadsheets, and Teams all in one soup. You carry admin frustration into your lecture and student stories into your writing block. With TabStax, you create four Stax: Teaching (slides, code examples, LMS, Q&A doc), Office Hours (student list with notes, project docs, gradebook), Research (draft paper, reviewer comments, relevant papers, fix notes), and Admin (email, university portals, form docs).\n\nYou share Teaching Stax with your TA and Research Stax with your co-author. When it's time to teach, you open only Teaching Stax. When you sit down at night to revise, you close Admin, open Research, and let your brain sink into theory, not forms.",
+      "You're a lecturer. Morning lecture for 2nd years, afternoon office hours, evening work on a research paper revision, and somewhere in between a pile of admin emails. Four different mental spaces: teaching, one-to-one student support, deep research and writing, and bureaucratic checklist hell.\n\nWithout HeyStax, your browser holds lecture slides, Moodle, email, journal submission portal, spreadsheets, and Teams all in one soup. You carry admin frustration into your lecture and student stories into your writing block. With HeyStax, you create four Stax: Teaching (slides, code examples, LMS, Q&A doc), Office Hours (student list with notes, project docs, gradebook), Research (draft paper, reviewer comments, relevant papers, fix notes), and Admin (email, university portals, form docs).\n\nYou share Teaching Stax with your TA and Research Stax with your co-author. When it's time to teach, you open only Teaching Stax. When you sit down at night to revise, you close Admin, open Research, and let your brain sink into theory, not forms.",
     staxPattern:
       '"Teaching – 2nd Year Algorithms (Week 6)" / "Students – Office Hours (Today)" / "Research – Paper Revision: Graph Models" / "Admin – Emails & Forms"',
-    seoTitle: "Browser Workspace for University Lecturers: Teaching, Research, Admin | TabStax",
+    seoTitle: "Browser Workspace for University Lecturers: Teaching, Research, Admin | HeyStax",
     metaDescription:
-      "Stop carrying admin frustration into your lecture or student stories into your research block. TabStax gives lecturers separate browser environments per role.",
+      "Stop carrying admin frustration into your lecture or student stories into your research block. HeyStax gives lecturers separate browser environments per role.",
     keywords: [
       "university lecturer browser workspace",
       "academic browser context tool",
@@ -1841,7 +1841,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help university lecturers work across four different roles?",
+        q: "How does HeyStax help university lecturers work across four different roles?",
         a: "Create a Stax for Teaching, Office Hours, Research, and Admin. Open only the relevant one — carry teaching energy into teaching, not into research.",
       },
       {
@@ -1849,7 +1849,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Teaching Stax with your TA and the Research Stax with your co-author — each sees only the relevant context.",
       },
       {
-        q: "How does TabStax help with evening research sessions?",
+        q: "How does HeyStax help with evening research sessions?",
         a: "Close the Admin Stax, open Research, and let your brain sink into theory. The switch is deliberate and the right tools are immediately visible.",
       },
     ],
@@ -1864,11 +1864,11 @@ export const useCases: UseCase[] = [
     summary:
       "Saturday night, deep in your family tree. Census scans, parish records, passenger lists, DNA matches. Twenty-five tabs and you've lost track of which Patrick Byrne you're even looking at.",
     content:
-      "It's Saturday night and you're deep in your family tree, chasing the Byrne line through census scans, parish records, passenger lists, DNA matches, and old family photos someone uploaded once.\n\nWithout TabStax, you open twenty-five tabs from Ancestry and MyHeritage, a map, a notes doc, and get hopelessly lost. Which Patrick Byrne is this — the one from Boston or Liverpool? With TabStax, you create a Family Line Stax for the branch you're investigating. Inside: tree view focused on the relevant branch, census records tabs you're comparing, passenger list for likely matches, and a notes doc with working theories like \"Patrick b. 1884: likely match with ship record from 1905 — check father's name.\"\n\nYou share the Stax with a cousin who's also obsessed. They open it and see exactly which records you're weighing, your working theories, and links to documents. Next time you come back — whether a week or a month later — you open the Stax and your investigation restarts exactly where your last brain left off.",
+      "It's Saturday night and you're deep in your family tree, chasing the Byrne line through census scans, parish records, passenger lists, DNA matches, and old family photos someone uploaded once.\n\nWithout HeyStax, you open twenty-five tabs from Ancestry and MyHeritage, a map, a notes doc, and get hopelessly lost. Which Patrick Byrne is this — the one from Boston or Liverpool? With HeyStax, you create a Family Line Stax for the branch you're investigating. Inside: tree view focused on the relevant branch, census records tabs you're comparing, passenger list for likely matches, and a notes doc with working theories like \"Patrick b. 1884: likely match with ship record from 1905 — check father's name.\"\n\nYou share the Stax with a cousin who's also obsessed. They open it and see exactly which records you're weighing, your working theories, and links to documents. Next time you come back — whether a week or a month later — you open the Stax and your investigation restarts exactly where your last brain left off.",
     staxPattern: '"Family Line – Byrne (Galway to US)"',
-    seoTitle: "Browser Workspace for Genealogy Hobbyists Tracing Family Lines | TabStax",
+    seoTitle: "Browser Workspace for Genealogy Hobbyists Tracing Family Lines | HeyStax",
     metaDescription:
-      "Pick up a family tree investigation exactly where you left off. TabStax saves census records, working theories, and DNA match tabs in one named research environment.",
+      "Pick up a family tree investigation exactly where you left off. HeyStax saves census records, working theories, and DNA match tabs in one named research environment.",
     keywords: [
       "genealogy browser workspace tool",
       "family history tab organiser",
@@ -1878,7 +1878,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help genealogy researchers avoid getting lost in tabs?",
+        q: "How does HeyStax help genealogy researchers avoid getting lost in tabs?",
         a: "Save all open census records, passenger lists, and DNA matches as a named Stax. Add working theories to a notes doc. Pick up exactly where you left off.",
       },
       {
@@ -1886,7 +1886,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax so your cousin opens the same records and sees your working theories — collaborative research without the email chain.",
       },
       {
-        q: "Does TabStax work with Ancestry, MyHeritage, and FindMyPast?",
+        q: "Does HeyStax work with Ancestry, MyHeritage, and FindMyPast?",
         a: "Yes. TabStax is a browser extension, so any genealogy website tab can be saved into a Stax and restored next session.",
       },
     ],
@@ -1901,12 +1901,12 @@ export const useCases: UseCase[] = [
     summary:
       "Flights into one city, out of another. Trains between two countries. Airbnbs and hotels. Things to do for adults and kids. Budget you don't want to blow. Forty tabs of 'maybe' ideas and you can't find the apartment your partner found yesterday.",
     content:
-      "You're planning a summer trip with your partner and kids. Flights into one city, out of another. Trains between two countries. Airbnbs and hotels. Things to do that work for both adults and kids. A budget you don't want to blow.\n\nWithout TabStax, you screenshot things, send random links on WhatsApp, have forty tabs of \"maybe\" ideas, and constantly ask \"Where was that cool apartment you found?\" With TabStax, you spin up a Master Trip Stax with flights search, train timetables, accommodation options, a shared budget spreadsheet, a map with pinned locations, and a Start Page with decisions: \"Lock flights by Sunday\" and \"Decide between Option A and Option B.\"\n\nYou share this Stax with your partner. They open it and see the same options, notes, and budget. When it's trip planning time, you both open the Trip Stax and make decisions from a single shared context instead of juggling fifteen threads. The planning itself stops being a chore and starts feeling like collaborating inside a shared mind.",
+      "You're planning a summer trip with your partner and kids. Flights into one city, out of another. Trains between two countries. Airbnbs and hotels. Things to do that work for both adults and kids. A budget you don't want to blow.\n\nWithout HeyStax, you screenshot things, send random links on WhatsApp, have forty tabs of \"maybe\" ideas, and constantly ask \"Where was that cool apartment you found?\" With HeyStax, you spin up a Master Trip Stax with flights search, train timetables, accommodation options, a shared budget spreadsheet, a map with pinned locations, and a Start Page with decisions: \"Lock flights by Sunday\" and \"Decide between Option A and Option B.\"\n\nYou share this Stax with your partner. They open it and see the same options, notes, and budget. When it's trip planning time, you both open the Trip Stax and make decisions from a single shared context instead of juggling fifteen threads. The planning itself stops being a chore and starts feeling like collaborating inside a shared mind.",
     staxPattern:
       '"Trip – Summer 2026 (Master Stax)" / "Trip – City 1 (3 days)" / "Trip – Lakes / Mountains"',
-    seoTitle: "Shared Trip Planning Browser Workspace for Families | TabStax",
+    seoTitle: "Shared Trip Planning Browser Workspace for Families | HeyStax",
     metaDescription:
-      "Plan a multi-country trip with your partner from one shared browser workspace. TabStax replaces scattered WhatsApp links and 40 maybe tabs with a single planning environment.",
+      "Plan a multi-country trip with your partner from one shared browser workspace. HeyStax replaces scattered WhatsApp links and 40 maybe tabs with a single planning environment.",
     keywords: [
       "family trip planning browser workspace",
       "travel planning tab organiser",
@@ -1916,7 +1916,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help couples plan a trip together?",
+        q: "How does HeyStax help couples plan a trip together?",
         a: "Create a Master Trip Stax with flights, trains, accommodation options, and a shared budget sheet. Both partners open the same Stax and make decisions together.",
       },
       {
@@ -1924,7 +1924,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Either partner can add tabs, update the budget doc, and mark decisions made — the shared context evolves as planning progresses.",
       },
       {
-        q: "How does TabStax help when switching from planning one city to another?",
+        q: "How does HeyStax help when switching from planning one city to another?",
         a: "Create a separate Stax per destination leg. Open the relevant city Stax when planning that leg — accommodation, maps, and activities for that location only.",
       },
     ],
@@ -1940,11 +1940,11 @@ export const useCases: UseCase[] = [
     summary:
       "The school just called about an incident. IEP, SENCO emails, benefits portal, past meeting agreements — she needs the full record, not an overwhelmed parent pulled from something else.",
     content:
-      "She's at the kitchen table trying to get work done when the school calls. Her son melted down in class. They want a meeting tomorrow. Her world for this child spans the school portal, IEP, emails from the SENCO and therapists, government benefits portal, trusted resources, and her own notes from past meetings.\n\nWithout TabStax, every incident is a fresh storm. She scrambles through her inbox, opens the wrong report, hunts for the last IEP, tries to remember what they promised last time. By the meeting, she's reactive and exhausted. With TabStax, she already has a School and Supports Stax: school portal, IEP PDF, SENCO emails, benefits portal, a meetings-and-agreements doc, and a Start Page with the last agreement and next actions.\n\nWhen the school calls, she opens that Stax. Everything is ready. She adds a note about today's incident. That evening she shares the Stax with her partner and a trusted advocate. They see the same documents and history. The next day she walks into the meeting as the person who has the full record, not the overwhelmed parent.",
+      "She's at the kitchen table trying to get work done when the school calls. Her son melted down in class. They want a meeting tomorrow. Her world for this child spans the school portal, IEP, emails from the SENCO and therapists, government benefits portal, trusted resources, and her own notes from past meetings.\n\nWithout HeyStax, every incident is a fresh storm. She scrambles through her inbox, opens the wrong report, hunts for the last IEP, tries to remember what they promised last time. By the meeting, she's reactive and exhausted. With HeyStax, she already has a School and Supports Stax: school portal, IEP PDF, SENCO emails, benefits portal, a meetings-and-agreements doc, and a Start Page with the last agreement and next actions.\n\nWhen the school calls, she opens that Stax. Everything is ready. She adds a note about today's incident. That evening she shares the Stax with her partner and a trusted advocate. They see the same documents and history. The next day she walks into the meeting as the person who has the full record, not the overwhelmed parent.",
     staxPattern: '"[Child\'s Name] – School & Supports"',
-    seoTitle: "Browser Workspace for Parents of Children With Special Needs | TabStax",
+    seoTitle: "Browser Workspace for Parents of Children With Special Needs | HeyStax",
     metaDescription:
-      "Walk into a school meeting with the full record ready. TabStax gives special needs parents a browser workspace with IEP, SENCO emails, and benefits portal in one place.",
+      "Walk into a school meeting with the full record ready. HeyStax gives special needs parents a browser workspace with IEP, SENCO emails, and benefits portal in one place.",
     keywords: [
       "special needs parent browser workspace",
       "IEP browser tool parent",
@@ -1954,7 +1954,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help parents of children with special needs?",
+        q: "How does HeyStax help parents of children with special needs?",
         a: "Build a School and Supports Stax with the IEP, SENCO emails, benefits portal, and past meeting agreements. When the school calls, open it immediately.",
       },
       {
@@ -1962,7 +1962,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax with your partner and a trusted advocate so they see the same documents and history before any meeting.",
       },
       {
-        q: "How does TabStax help during emergency school calls?",
+        q: "How does HeyStax help during emergency school calls?",
         a: "When the school calls unexpectedly, you open the Stax in seconds. Your notes, IEP, and last agreements are ready — you walk in as the parent with the full record.",
       },
     ],
@@ -1975,13 +1975,13 @@ export const useCases: UseCase[] = [
     category: "Health, Recovery & Performance",
     persona: "First-Time Marathon Runner",
     summary:
-      "Not to get skinny. To prove to himself he can. Training plans, shoe reviews, nutrition guides — he keeps googling the same stuff. TabStax turns the goal from a vague wish into a continuing story.",
+      "Not to get skinny. To prove to himself he can. Training plans, shoe reviews, nutrition guides — he keeps googling the same stuff. HeyStax turns the goal from a vague wish into a continuing story.",
     content:
-      "Bill is 240lbs and has decided: he's running a marathon this year. Not to get skinny — to prove to himself he can. His world now includes beginner training plans, YouTube videos on form, articles on running at higher weight, shoe and gear reviews, a calendar, and nutrition guides.\n\nWithout TabStax, he keeps googling the same stuff. Training plans in one tab, shoe reviews in another, a random blog on his phone. He forgets which plan he chose. Every time he thinks about training, he has to rebuild the universe. With TabStax, he builds a Marathon Stax: the one training plan he chose, a shoe shortlist tab, a run-logging spreadsheet, a YouTube playlist for form and recovery, a calendar showing the build, and a Start Page with this week's long run and today's action.\n\nHe shares the Stax with a running buddy or accountability friend. They can see his plan, drop links, leave comments. Every time doubt creeps in, the task is simple: open the Marathon Stax. The plan, the progress, and the \"why\" all load at once. He's not restarting the project every time he laces up — he's continuing a story.",
+      "Bill is 240lbs and has decided: he's running a marathon this year. Not to get skinny — to prove to himself he can. His world now includes beginner training plans, YouTube videos on form, articles on running at higher weight, shoe and gear reviews, a calendar, and nutrition guides.\n\nWithout HeyStax, he keeps googling the same stuff. Training plans in one tab, shoe reviews in another, a random blog on his phone. He forgets which plan he chose. Every time he thinks about training, he has to rebuild the universe. With HeyStax, he builds a Marathon Stax: the one training plan he chose, a shoe shortlist tab, a run-logging spreadsheet, a YouTube playlist for form and recovery, a calendar showing the build, and a Start Page with this week's long run and today's action.\n\nHe shares the Stax with a running buddy or accountability friend. They can see his plan, drop links, leave comments. Every time doubt creeps in, the task is simple: open the Marathon Stax. The plan, the progress, and the \"why\" all load at once. He's not restarting the project every time he laces up — he's continuing a story.",
     staxPattern: '"Bill – Marathon 2025"',
-    seoTitle: "Browser Workspace for First-Time Marathon Runners | TabStax",
+    seoTitle: "Browser Workspace for First-Time Marathon Runners | HeyStax",
     metaDescription:
-      "Stop googling the same training content every week. TabStax saves your plan, log, and motivation in one named browser workspace — open it and continue the story.",
+      "Stop googling the same training content every week. HeyStax saves your plan, log, and motivation in one named browser workspace — open it and continue the story.",
     keywords: [
       "marathon training browser workspace",
       "running plan tab organiser",
@@ -1991,7 +1991,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help someone training for their first marathon?",
+        q: "How does HeyStax help someone training for their first marathon?",
         a: "Save your training plan, run log, YouTube form guides, and gear shortlist as a Marathon Stax. Open it for each training session and continue from the Start Page.",
       },
       {
@@ -2014,12 +2014,12 @@ export const useCases: UseCase[] = [
     summary:
       "Four friends, all laid off from the same company, start a weekly accountability call. Each has different goals. The accountability becomes grounded: not 'I'll do something by EOW' but 'I will move the next action in my Stax.'",
     content:
-      "Anne just got laid off. So did three friends from the same company. They start a weekly accountability call. Anne is building an interview pipeline. Friend 1 is launching freelance consulting. Friend 2 is exploring a career pivot. Friend 3 is finally shipping a personal project.\n\nWithout TabStax, calls devolve into vague \"yeah, I did some stuff.\" Browsers are chaos: job boards, half-written resumes, bookmarked posts. With TabStax, they create a shared Accountability Crew Stax with each person's quarter goal, weekly checkpoints, shared resources, and the meeting link. Then each person creates a personal Stax — Anne's has her CV versions, LinkedIn saved searches, applications tracker, draft outreach messages, and a Start Page: \"Apply to 2 roles today. DM 1 person at a company I care about.\"\n\nOn call day they open the shared Stax, then each opens their own when it's their turn. Between calls they can peek at each other's Stax and see real work, not just self-reported stories. The accountability becomes grounded: not \"I'll do something by EOW\" but \"I will move the next action in my Stax.\"",
+      "Anne just got laid off. So did three friends from the same company. They start a weekly accountability call. Anne is building an interview pipeline. Friend 1 is launching freelance consulting. Friend 2 is exploring a career pivot. Friend 3 is finally shipping a personal project.\n\nWithout HeyStax, calls devolve into vague \"yeah, I did some stuff.\" Browsers are chaos: job boards, half-written resumes, bookmarked posts. With HeyStax, they create a shared Accountability Crew Stax with each person's quarter goal, weekly checkpoints, shared resources, and the meeting link. Then each person creates a personal Stax — Anne's has her CV versions, LinkedIn saved searches, applications tracker, draft outreach messages, and a Start Page: \"Apply to 2 roles today. DM 1 person at a company I care about.\"\n\nOn call day they open the shared Stax, then each opens their own when it's their turn. Between calls they can peek at each other's Stax and see real work, not just self-reported stories. The accountability becomes grounded: not \"I'll do something by EOW\" but \"I will move the next action in my Stax.\"",
     staxPattern:
       '"Laid Off, Leveling Up – Accountability Crew" / "Anne – Job Search & Interviews"',
-    seoTitle: "Browser Workspace for Job Seekers After a Layoff | TabStax",
+    seoTitle: "Browser Workspace for Job Seekers After a Layoff | HeyStax",
     metaDescription:
-      "Turn vague accountability into concrete action. TabStax gives laid-off professionals a personal job search workspace and a shared crew Stax for weekly check-ins.",
+      "Turn vague accountability into concrete action. HeyStax gives laid-off professionals a personal job search workspace and a shared crew Stax for weekly check-ins.",
     keywords: [
       "job search browser workspace",
       "laid off productivity browser tool",
@@ -2029,7 +2029,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help people job hunting after a layoff?",
+        q: "How does HeyStax help people job hunting after a layoff?",
         a: "Build a Job Search Stax with your CV versions, LinkedIn searches, applications tracker, and a Start Page: 'Apply to 2 roles today. DM 1 person at a company I care about.'",
       },
       {
@@ -2037,7 +2037,7 @@ export const useCases: UseCase[] = [
         a: "A shared Stax holds each person's goal, weekly checkpoints, and the meeting link. Each person's progress is visible — real work, not just self-reported updates.",
       },
       {
-        q: "Can TabStax help with a career pivot?",
+        q: "Can HeyStax help with a career pivot?",
         a: "Yes. Build a separate Stax for each track you're exploring — new industry research, portfolio building, freelance pipeline — and switch between them cleanly.",
       },
     ],
@@ -2052,12 +2052,12 @@ export const useCases: UseCase[] = [
     summary:
       "She doesn't care about scale yet. She cares about one real paying customer at a time. Each prospect gets their own Stax with conversation notes, a prototype view, and next actions. Her metric: how many Customer Stax have moved from 'exploring' to 'paid.'",
     content:
-      "Different Anne. She's building an app and has decided she doesn't care about scale yet. She cares about one real paying customer at a time. Her reality: a basic landing page, a Supabase backend, customer interview notes, Stripe, a list of twenty people she thinks she can help, and DM threads.\n\nWithout TabStax, it's one soup: code editor, landing page builder, Stripe dashboard, Gmail, DMs. When she tries to focus on just one customer, eleven other tabs whisper in her face. With TabStax, she creates a separate Stax for each prospective customer she's truly dancing with — each containing their conversation thread, notes, a doc on what their world looks like, the specific prototype view, and a Start Page with one or two next actions.\n\nShe also keeps a Core Product Stax for her own engineering work. She shares Customer Stax with a mentor who can see the thread, the prototype, and the notes. Her metric becomes: how many Customer Stax have moved from exploring to paid?",
+      "Different Anne. She's building an app and has decided she doesn't care about scale yet. She cares about one real paying customer at a time. Her reality: a basic landing page, a Supabase backend, customer interview notes, Stripe, a list of twenty people she thinks she can help, and DM threads.\n\nWithout HeyStax, it's one soup: code editor, landing page builder, Stripe dashboard, Gmail, DMs. When she tries to focus on just one customer, eleven other tabs whisper in her face. With HeyStax, she creates a separate Stax for each prospective customer she's truly dancing with — each containing their conversation thread, notes, a doc on what their world looks like, the specific prototype view, and a Start Page with one or two next actions.\n\nShe also keeps a Core Product Stax for her own engineering work. She shares Customer Stax with a mentor who can see the thread, the prototype, and the notes. Her metric becomes: how many Customer Stax have moved from exploring to paid?",
     staxPattern:
       '"Customer 001 – Jamie (Freelance Designer)" / "Customer 002 – Priya (Ops Manager)" / "Build – Core Product"',
-    seoTitle: "Browser Workspace for Bootstrapping Founders Chasing First Customers | TabStax",
+    seoTitle: "Browser Workspace for Bootstrapping Founders Chasing First Customers | HeyStax",
     metaDescription:
-      "Focus on one real paying customer at a time. TabStax gives bootstrapping founders a per-prospect browser workspace with conversation notes and next actions.",
+      "Focus on one real paying customer at a time. HeyStax gives bootstrapping founders a per-prospect browser workspace with conversation notes and next actions.",
     keywords: [
       "bootstrapping founder browser workspace",
       "customer development tab organiser",
@@ -2067,7 +2067,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help bootstrapping founders stay customer-focused?",
+        q: "How does HeyStax help bootstrapping founders stay customer-focused?",
         a: "Create a Stax per active prospect with their conversation thread, notes, prototype view, and next actions. Your metric: how many Stax have moved from 'exploring' to 'paid.'",
       },
       {
@@ -2075,7 +2075,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Customer Stax with a mentor so they see the conversation, the prototype view, and the notes — real context for real advice.",
       },
       {
-        q: "How does TabStax separate product building from customer work?",
+        q: "How does HeyStax separate product building from customer work?",
         a: "Keep a Core Product Stax for engineering work. When doing customer conversations, switch to that customer's Stax — the product code stops whispering in your face.",
       },
     ],
@@ -2088,13 +2088,13 @@ export const useCases: UseCase[] = [
     category: "Family, Care & School",
     persona: "Family Caregiver",
     summary:
-      "GP portals, medication lists, legal docs, home care providers, benefits portal, and siblings' WhatsApp thread. Every new issue sends him back into the mess. TabStax cuts the cognitive retrieval tax.",
+      "GP portals, medication lists, legal docs, home care providers, benefits portal, and siblings' WhatsApp thread. Every new issue sends him back into the mess. HeyStax cuts the cognitive retrieval tax.",
     content:
-      "He's the responsible child for his ageing mum. His world: GP and specialist portals, medication lists, lab results, legal docs like power of attorney and will, home care providers, benefits and pension info, and siblings' WhatsApp thread full of opinions.\n\nWithout TabStax, every new issue — a fall, a new prescription, a letter about benefits — sends him back into the mess. He hunts for logins, can't remember which doctor said what, and can't quickly answer siblings' questions. With TabStax, he defines a Mum Health and Life Admin Stax: GP portal, specialist portal, medications tracker, legal docs folder, benefits portal, a timeline and notes doc, and a Start Page with last updates and next actions.\n\nHe shares this Stax with his siblings. When the benefits letter arrives or the doctor calls, he opens the Stax, takes notes in one place. Siblings can self-serve: \"Oh, she already had that scan; here's the date.\" The caregiving load is still heavy. But the cognitive retrieval tax is much lighter.",
+      "He's the responsible child for his ageing mum. His world: GP and specialist portals, medication lists, lab results, legal docs like power of attorney and will, home care providers, benefits and pension info, and siblings' WhatsApp thread full of opinions.\n\nWithout HeyStax, every new issue — a fall, a new prescription, a letter about benefits — sends him back into the mess. He hunts for logins, can't remember which doctor said what, and can't quickly answer siblings' questions. With HeyStax, he defines a Mum Health and Life Admin Stax: GP portal, specialist portal, medications tracker, legal docs folder, benefits portal, a timeline and notes doc, and a Start Page with last updates and next actions.\n\nHe shares this Stax with his siblings. When the benefits letter arrives or the doctor calls, he opens the Stax, takes notes in one place. Siblings can self-serve: \"Oh, she already had that scan; here's the date.\" The caregiving load is still heavy. But the cognitive retrieval tax is much lighter.",
     staxPattern: '"Mum – Health & Life Admin"',
-    seoTitle: "Browser Workspace for Family Caregivers Managing an Ageing Parent | TabStax",
+    seoTitle: "Browser Workspace for Family Caregivers Managing an Ageing Parent | HeyStax",
     metaDescription:
-      "Cut the cognitive retrieval tax of caregiving. TabStax gives family caregivers one browser workspace for GP portals, medications, legal docs, and benefits info.",
+      "Cut the cognitive retrieval tax of caregiving. HeyStax gives family caregivers one browser workspace for GP portals, medications, legal docs, and benefits info.",
     keywords: [
       "family caregiver browser workspace",
       "ageing parent care tab organiser",
@@ -2104,7 +2104,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help family caregivers stay on top of a parent's health admin?",
+        q: "How does HeyStax help family caregivers stay on top of a parent's health admin?",
         a: "Build a Health and Life Admin Stax with GP portals, medication tracker, legal docs, and benefits portal. When a letter arrives or a doctor calls, open the Stax and act.",
       },
       {
@@ -2112,7 +2112,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Stax with siblings so they self-serve answers — 'Oh, she already had that scan; here's the date' — without calling you every time.",
       },
       {
-        q: "Does TabStax help reduce caregiver cognitive overload?",
+        q: "Does HeyStax help reduce caregiver cognitive overload?",
         a: "Yes. You don't carry all the medical and legal context in your head. The Stax holds it so you can focus on being present with your parent.",
       },
     ],
@@ -2127,12 +2127,12 @@ export const useCases: UseCase[] = [
     summary:
       "Recovery, work, and rebuilding life — three overlapping, fragile layers. When things get wobbly, the action is simple: open Recovery Stax. No search. No choice architecture. Just the next right tools.",
     content:
-      "They're newly sober. Life is now three overlapping, fragile layers: recovery (online meetings, sponsor contact, readings, journaling), work (still have a job, still have responsibilities), and rebuilding (money, relationships, health).\n\nWithout TabStax, the recovery tabs sit in the same window as work email and YouTube. One bad day, they go searching for help but fall into distraction instead. With TabStax, they create three Stax: Recovery Daily Kit (online meeting directory, daily reading, journal, sponsor contact, and a Start Page: \"If craving: 1) text X, 2) open meeting link, 3) write 5 sentences\"), Work Today (email, task list, project docs), and Rebuild Money and Life (bank accounts, budget tracker, small goals list).\n\nThey share the Recovery Stax with their sponsor or a trusted friend: \"If I text you, this is the world I'm using.\" When things get wobbly, the action is: open Recovery Stax. No search. No choice architecture. Just the next right tools.",
+      "They're newly sober. Life is now three overlapping, fragile layers: recovery (online meetings, sponsor contact, readings, journaling), work (still have a job, still have responsibilities), and rebuilding (money, relationships, health).\n\nWithout HeyStax, the recovery tabs sit in the same window as work email and YouTube. One bad day, they go searching for help but fall into distraction instead. With HeyStax, they create three Stax: Recovery Daily Kit (online meeting directory, daily reading, journal, sponsor contact, and a Start Page: \"If craving: 1) text X, 2) open meeting link, 3) write 5 sentences\"), Work Today (email, task list, project docs), and Rebuild Money and Life (bank accounts, budget tracker, small goals list).\n\nThey share the Recovery Stax with their sponsor or a trusted friend: \"If I text you, this is the world I'm using.\" When things get wobbly, the action is: open Recovery Stax. No search. No choice architecture. Just the next right tools.",
     staxPattern:
       '"Recovery – Daily Kit" / "Work – Today" / "Rebuild – Money & Life"',
-    seoTitle: "Browser Workspace for People in Recovery Rebuilding Their Life | TabStax",
+    seoTitle: "Browser Workspace for People in Recovery Rebuilding Their Life | HeyStax",
     metaDescription:
-      "When things get wobbly, the action is simple: open Recovery Stax. TabStax gives people in recovery a named browser environment with the next right tools ready.",
+      "When things get wobbly, the action is simple: open Recovery Stax. HeyStax gives people in recovery a named browser environment with the next right tools ready.",
     keywords: [
       "recovery browser workspace tool",
       "sobriety productivity browser",
@@ -2142,7 +2142,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax support someone in early recovery?",
+        q: "How does HeyStax support someone in early recovery?",
         a: "A Recovery Daily Kit Stax holds online meeting links, daily readings, a journal, and a Start Page: 'If craving: 1) text X, 2) open meeting link, 3) write 5 sentences.'",
       },
       {
@@ -2165,11 +2165,11 @@ export const useCases: UseCase[] = [
     summary:
       "Helping tenants organize around rent hikes and repairs. When someone new asks 'how can I help?' instead of a forty-minute info dump, she says: 'Open the Tenants Stax. Start with the Read First doc.'",
     content:
-      "She's helping tenants in a building organize around rent hikes and repairs. Her world: group messaging, local tenant rights resources, city housing department portal, a spreadsheet of tenants and issues, petition forms, and meeting notes.\n\nWithout TabStax, every WhatsApp ping sends her into ad hoc mode. When the city asks for specifics, she wastes time re-building the list. Tenants ask \"what's the latest?\" and she has to reconstruct it manually. With TabStax, she defines a Tenants Stax: shared spreadsheet of tenants and issues, tenants' union site, city complaint portal, shared demands and timeline doc, meeting notes, and a Start Page: \"Current phase: collect 30 signatures. Next actions: reach out to flats 2B, 3C, 5A.\"\n\nShe shares this Stax with the tenant committee. Anyone who joins can onboard themselves: read history, check demands, see who's involved. When someone new asks \"how can I help?\" instead of a forty-minute info dump she says: \"Open the Tenants Stax. Start with the doc Read First, then text me.\"",
+      "She's helping tenants in a building organize around rent hikes and repairs. Her world: group messaging, local tenant rights resources, city housing department portal, a spreadsheet of tenants and issues, petition forms, and meeting notes.\n\nWithout HeyStax, every WhatsApp ping sends her into ad hoc mode. When the city asks for specifics, she wastes time re-building the list. Tenants ask \"what's the latest?\" and she has to reconstruct it manually. With HeyStax, she defines a Tenants Stax: shared spreadsheet of tenants and issues, tenants' union site, city complaint portal, shared demands and timeline doc, meeting notes, and a Start Page: \"Current phase: collect 30 signatures. Next actions: reach out to flats 2B, 3C, 5A.\"\n\nShe shares this Stax with the tenant committee. Anyone who joins can onboard themselves: read history, check demands, see who's involved. When someone new asks \"how can I help?\" instead of a forty-minute info dump she says: \"Open the Tenants Stax. Start with the doc Read First, then text me.\"",
     staxPattern: '"Tenants – Building 42 Oak Street"',
-    seoTitle: "Shared Browser Workspace for Community Organizers | TabStax",
+    seoTitle: "Shared Browser Workspace for Community Organizers | HeyStax",
     metaDescription:
-      "Onboard new volunteers instantly. TabStax gives community organizers a shared browser workspace with tenant spreadsheets, petition forms, and current phase visible.",
+      "Onboard new volunteers instantly. HeyStax gives community organizers a shared browser workspace with tenant spreadsheets, petition forms, and current phase visible.",
     keywords: [
       "community organizer browser workspace",
       "tenant organizing tab organiser",
@@ -2179,7 +2179,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help community organizers onboard new volunteers?",
+        q: "How does HeyStax help community organizers onboard new volunteers?",
         a: "Share the Stax link and new volunteers read the history, see current demands, and know who's involved — no forty-minute info dump needed.",
       },
       {
@@ -2202,11 +2202,11 @@ export const useCases: UseCase[] = [
     summary:
       "Moving from Dublin to Berlin. Visa requirements, housing websites, job prospects, language resources, cost of living, and a spreadsheet of things to cancel and things to set up. Every time they sit down to plan, they feel like they're starting again.",
     content:
-      "They're moving from Dublin to Berlin. Tabs everywhere: visa and registration requirements, housing websites, job prospects, cost-of-living comparisons, language resources, airline and moving quotes, and a spreadsheet of things to cancel and set up.\n\nWithout TabStax, the move exists as fifty tabs across devices plus notes in three apps. They forget which guide they trusted. Every planning session feels like starting over. With TabStax, they create a Move Stax: official city registration site, trusted moving guide, flat rental portals, job board, budget sheet, and a checklist doc split into Ireland (cancel, close, change) and Germany (register, bank, insurance, SIM).\n\nThey share the Stax with their partner, family, or a friend helping them. Conversations become: \"Can you look at the Move Stax and see what's left under Before leaving Ireland?\" and \"I added a new flat to the tab, take a look.\" When anxiety spikes, they don't have to remember everything. They just open their Move world and do one next action.",
+      "They're moving from Dublin to Berlin. Tabs everywhere: visa and registration requirements, housing websites, job prospects, cost-of-living comparisons, language resources, airline and moving quotes, and a spreadsheet of things to cancel and set up.\n\nWithout HeyStax, the move exists as fifty tabs across devices plus notes in three apps. They forget which guide they trusted. Every planning session feels like starting over. With HeyStax, they create a Move Stax: official city registration site, trusted moving guide, flat rental portals, job board, budget sheet, and a checklist doc split into Ireland (cancel, close, change) and Germany (register, bank, insurance, SIM).\n\nThey share the Stax with their partner, family, or a friend helping them. Conversations become: \"Can you look at the Move Stax and see what's left under Before leaving Ireland?\" and \"I added a new flat to the tab, take a look.\" When anxiety spikes, they don't have to remember everything. They just open their Move world and do one next action.",
     staxPattern: '"Move – Dublin to Berlin 2026"',
-    seoTitle: "Browser Workspace for Planning a Big Move Abroad | TabStax",
+    seoTitle: "Browser Workspace for Planning a Big Move Abroad | HeyStax",
     metaDescription:
-      "Stop planning an international move from scattered tabs and notes in three apps. TabStax gives expats a single browser workspace with visa, housing, and checklists.",
+      "Stop planning an international move from scattered tabs and notes in three apps. HeyStax gives expats a single browser workspace with visa, housing, and checklists.",
     keywords: [
       "expat move planning browser workspace",
       "relocating abroad tab organiser",
@@ -2216,7 +2216,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help someone planning a move to another country?",
+        q: "How does HeyStax help someone planning a move to another country?",
         a: "Build a Move Stax with the registration site, rental portals, job board, budget sheet, and a checklist split into 'before leaving' and 'after arriving.'",
       },
       {
@@ -2224,7 +2224,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it and conversations shift from 'where did you put that link?' to 'can you look at the Move Stax and check what's left under housing?'",
       },
       {
-        q: "How does TabStax help when anxiety spikes during a big move?",
+        q: "How does HeyStax help when anxiety spikes during a big move?",
         a: "Open the Move Stax and do one next action. You don't need to remember everything — the Stax holds the full picture and shows what's left.",
       },
     ],
@@ -2239,11 +2239,11 @@ export const useCases: UseCase[] = [
     summary:
       "Painting for years, finally decided to sell prints and originals. Platform choice, pricing, payment, shipping, promotion. Every time she thinks about the shop, she has to remember what the next step even is.",
     content:
-      "She's been painting for years and finally decided to sell prints and originals. Current needs: decide on a platform, photograph artwork, set prices, set up payment and shipping, promote on Instagram and TikTok, track orders and commissions.\n\nWithout TabStax, she flutters between tutorials, shop platforms, pricing advice, and Instagram, never anchoring the structure. Every time she thinks \"I should work on the shop,\" she has to remember what the next step even is. With TabStax, she creates an Art Shop Launch Stax: chosen platform admin, a piece-listing doc with sizes, mediums, and prices, shipping resources, payment setup page, Canva for images, and a Start Page with a three-step launch path: finalize ten pieces, upload photos and descriptions, post first teaser on Instagram.\n\nShe shares the Stax with a trusted friend cheering her on. They can see concretely how close she is and add links like \"use this packaging supplier.\" Every launch session starts by opening that one Stax; the \"I'm bad at admin\" voice has less power when the admin world is already arranged.",
+      "She's been painting for years and finally decided to sell prints and originals. Current needs: decide on a platform, photograph artwork, set prices, set up payment and shipping, promote on Instagram and TikTok, track orders and commissions.\n\nWithout HeyStax, she flutters between tutorials, shop platforms, pricing advice, and Instagram, never anchoring the structure. Every time she thinks \"I should work on the shop,\" she has to remember what the next step even is. With HeyStax, she creates an Art Shop Launch Stax: chosen platform admin, a piece-listing doc with sizes, mediums, and prices, shipping resources, payment setup page, Canva for images, and a Start Page with a three-step launch path: finalize ten pieces, upload photos and descriptions, post first teaser on Instagram.\n\nShe shares the Stax with a trusted friend cheering her on. They can see concretely how close she is and add links like \"use this packaging supplier.\" Every launch session starts by opening that one Stax; the \"I'm bad at admin\" voice has less power when the admin world is already arranged.",
     staxPattern: '"Art Shop – Launch"',
-    seoTitle: "Browser Workspace for Artists Launching an Online Shop | TabStax",
+    seoTitle: "Browser Workspace for Artists Launching an Online Shop | HeyStax",
     metaDescription:
-      "Stop fluttering between tutorials and platform tabs without anchoring progress. TabStax gives artists and makers a structured browser workspace for their shop launch.",
+      "Stop fluttering between tutorials and platform tabs without anchoring progress. HeyStax gives artists and makers a structured browser workspace for their shop launch.",
     keywords: [
       "artist shop launch browser workspace",
       "maker etsy browser tool",
@@ -2253,7 +2253,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help artists launch an online shop?",
+        q: "How does HeyStax help artists launch an online shop?",
         a: "Build an Art Shop Launch Stax with the platform admin, piece listing doc, shipping resources, and a Start Page with a three-step launch path.",
       },
       {
@@ -2261,7 +2261,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it and they can see how close you are to launching and add useful links — like 'use this packaging supplier' — in context.",
       },
       {
-        q: "How does TabStax reduce the 'I'm bad at admin' feeling for creatives?",
+        q: "How does HeyStax reduce the 'I'm bad at admin' feeling for creatives?",
         a: "The admin world is pre-arranged in the Stax. You don't build it from scratch — you open it and continue from the next visible action.",
       },
     ],
@@ -2276,12 +2276,12 @@ export const useCases: UseCase[] = [
     summary:
       "Degree, freelance income on the side, and family pressure about grades. Everything collides. They sit down for an assignment and end up scrolling Upwork. Switching between selves becomes intentionally controlled instead of chaotic.",
     content:
-      "They're doing a degree, spinning up a little freelance income on the side, and dealing with family pressure about grades and \"real jobs.\" Their worlds: university (learning platform, lecture slides, assignment portals), side hustle (portfolio, Upwork listings, invoicing, client chats), and family (budget, long-term planning, maybe visa or loan info).\n\nWithout TabStax, everything collides. They sit down to work on an assignment and end up scrolling Upwork. They try client work with a lecture PDF half-open and WhatsApp from home asking about exam results. With TabStax, they split reality into three Stax: Uni Current Modules, Side Hustle Clients and Pipeline, and Life Money and Future.\n\nThey share Side Hustle Stax with a friend or mentor and a safe view of Uni Stax with a study buddy. When they say \"I'm doing uni work now,\" they open Uni Stax and close the others. When they say \"I'm doing client work now,\" they open Side Hustle Stax. The work doesn't get easier, but switching between selves becomes intentionally controlled instead of chaotic.",
+      "They're doing a degree, spinning up a little freelance income on the side, and dealing with family pressure about grades and \"real jobs.\" Their worlds: university (learning platform, lecture slides, assignment portals), side hustle (portfolio, Upwork listings, invoicing, client chats), and family (budget, long-term planning, maybe visa or loan info).\n\nWithout HeyStax, everything collides. They sit down to work on an assignment and end up scrolling Upwork. They try client work with a lecture PDF half-open and WhatsApp from home asking about exam results. With HeyStax, they split reality into three Stax: Uni Current Modules, Side Hustle Clients and Pipeline, and Life Money and Future.\n\nThey share Side Hustle Stax with a friend or mentor and a safe view of Uni Stax with a study buddy. When they say \"I'm doing uni work now,\" they open Uni Stax and close the others. When they say \"I'm doing client work now,\" they open Side Hustle Stax. The work doesn't get easier, but switching between selves becomes intentionally controlled instead of chaotic.",
     staxPattern:
       '"Uni – Current Modules (This Week)" / "Side Hustle – Clients & Pipeline" / "Life – Money, Family, Future"',
-    seoTitle: "Browser Workspace for Students Balancing Uni and a Side Hustle | TabStax",
+    seoTitle: "Browser Workspace for Students Balancing Uni and a Side Hustle | HeyStax",
     metaDescription:
-      "Stop sitting down for an assignment and ending up on Upwork. TabStax gives university students separate browser worlds for study, freelancing, and life.",
+      "Stop sitting down for an assignment and ending up on Upwork. HeyStax gives university students separate browser worlds for study, freelancing, and life.",
     keywords: [
       "university student browser workspace",
       "student freelancer tab organiser",
@@ -2291,7 +2291,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help students balance study and freelance work?",
+        q: "How does HeyStax help students balance study and freelance work?",
         a: "Create three Stax: Uni, Side Hustle, and Life. When you say 'I'm doing uni work now,' open Uni Stax and close the others — the switch is intentional, not chaotic.",
       },
       {
@@ -2299,7 +2299,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Uni Stax with a study buddy so you're both working in the same context — same lecture notes and assignment portal.",
       },
       {
-        q: "How does TabStax help with family pressure about grades?",
+        q: "How does HeyStax help with family pressure about grades?",
         a: "The Uni Stax makes your academic work visible and structured. You can show a parent or mentor the Stax as evidence of progress, not just a vague 'I'm working on it.'",
       },
     ],
@@ -2315,11 +2315,11 @@ export const useCases: UseCase[] = [
     summary:
       "Just retired after 35 years. Pension options, health insurance, volunteer roles, travel dreams, an online course. Nothing moves forward because it's all in her head and scattered tabs. Retirement becomes an intentional project, not just an absence of work.",
     content:
-      "Mary has just retired after 35 years in a corporate job. Everyone says \"enjoy it!\" but her brain is full of static: pension options, health insurance, trips she'd love to take, volunteer roles she bookmarked, an online course she keeps thinking about, and a vague sense she should do something with all this time.\n\nWithout TabStax, it all lives in her head and scattered tabs. One day pensions, the next walking tours in Italy, the next a YouTube rabbit hole. Nothing moves forward. With TabStax, she builds two Stax: Retirement Foundations (pension provider, bank accounts, health insurance, monthly baseline budget, Start Page: confirm drawdown meeting, book health check) and Second Act (volunteer opportunities, adult education courses, travel ideas, a brainstorm doc: \"What do I want the next 5 years to feel like?\" with one focus for this quarter).\n\nShe shares Foundations Stax with her financial advisor and adult child, and Second Act Stax with a close friend who can nudge her. Instead of vague \"someday,\" she opens one Stax and pushes one concrete next action. Retirement becomes an intentional project, not just an absence of work.",
+      "Mary has just retired after 35 years in a corporate job. Everyone says \"enjoy it!\" but her brain is full of static: pension options, health insurance, trips she'd love to take, volunteer roles she bookmarked, an online course she keeps thinking about, and a vague sense she should do something with all this time.\n\nWithout HeyStax, it all lives in her head and scattered tabs. One day pensions, the next walking tours in Italy, the next a YouTube rabbit hole. Nothing moves forward. With HeyStax, she builds two Stax: Retirement Foundations (pension provider, bank accounts, health insurance, monthly baseline budget, Start Page: confirm drawdown meeting, book health check) and Second Act (volunteer opportunities, adult education courses, travel ideas, a brainstorm doc: \"What do I want the next 5 years to feel like?\" with one focus for this quarter).\n\nShe shares Foundations Stax with her financial advisor and adult child, and Second Act Stax with a close friend who can nudge her. Instead of vague \"someday,\" she opens one Stax and pushes one concrete next action. Retirement becomes an intentional project, not just an absence of work.",
     staxPattern: '"Retirement – Foundations" / "Retirement – Second Act"',
-    seoTitle: "Browser Workspace for Retirees Planning Their Second Act | TabStax",
+    seoTitle: "Browser Workspace for Retirees Planning Their Second Act | HeyStax",
     metaDescription:
-      "Turn retirement from a drift into an intentional project. TabStax gives retirees a browser workspace for pension planning and a Second Act exploration environment.",
+      "Turn retirement from a drift into an intentional project. HeyStax gives retirees a browser workspace for pension planning and a Second Act exploration environment.",
     keywords: [
       "retiree browser workspace tool",
       "retirement planning tab organiser",
@@ -2329,7 +2329,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a new retiree create structure?",
+        q: "How does HeyStax help a new retiree create structure?",
         a: "Build two Stax — Retirement Foundations for financial and health admin, and Second Act for volunteer options, courses, and travel ideas. Open one at a time.",
       },
       {
@@ -2350,14 +2350,14 @@ export const useCases: UseCase[] = [
     category: "Learning, Education & Future Self",
     persona: "College Applicant (17yo)",
     summary:
-      "Final year of school, trying to get into college. Twenty-five tabs, a half-finished essay, and overwhelming paralysis every time he sits down. TabStax turns 'college stuff' from amorphous to actionable.",
+      "Final year of school, trying to get into college. Twenty-five tabs, a half-finished essay, and overwhelming paralysis every time he sits down. HeyStax turns 'college stuff' from amorphous to actionable.",
     content:
-      "He's 17, final year of school, trying to get into college. His world: CAO, UCAS, or Common App, college websites, course descriptions, grades, personal essay drafts, scholarship info, and teacher advice.\n\nWithout TabStax, he's got twenty-five tabs, a half-finished essay, a WhatsApp chat about easiest courses, and a random Reddit thread. Every time he sits down to work on college stuff, he gets overwhelmed and does almost nothing. With TabStax, he defines two Stax: Research and Choices (tabs for each course and university, a comparison spreadsheet, counsellor notes) and Applications and Essays (application portals, personal statement drafts, deadlines list, a doc titled \"My story and what I bring,\" and a Start Page: finish first draft by Friday, confirm teacher reference).\n\nHe shares Research Stax with a parent or mentor so they can see choices instead of nagging abstractly. He shares Essays Stax with an English teacher who can leave comments in context. Now college stuff isn't amorphous. It's: open the Applications Stax, do the next visible thing, close it.",
+      "He's 17, final year of school, trying to get into college. His world: CAO, UCAS, or Common App, college websites, course descriptions, grades, personal essay drafts, scholarship info, and teacher advice.\n\nWithout HeyStax, he's got twenty-five tabs, a half-finished essay, a WhatsApp chat about easiest courses, and a random Reddit thread. Every time he sits down to work on college stuff, he gets overwhelmed and does almost nothing. With HeyStax, he defines two Stax: Research and Choices (tabs for each course and university, a comparison spreadsheet, counsellor notes) and Applications and Essays (application portals, personal statement drafts, deadlines list, a doc titled \"My story and what I bring,\" and a Start Page: finish first draft by Friday, confirm teacher reference).\n\nHe shares Research Stax with a parent or mentor so they can see choices instead of nagging abstractly. He shares Essays Stax with an English teacher who can leave comments in context. Now college stuff isn't amorphous. It's: open the Applications Stax, do the next visible thing, close it.",
     staxPattern:
       '"College – Research & Choices" / "College – Applications & Essays"',
-    seoTitle: "Browser Workspace for College Applicants and Their Essays | TabStax",
+    seoTitle: "Browser Workspace for College Applicants and Their Essays | HeyStax",
     metaDescription:
-      "Turn college applications from amorphous panic into a structured browser workspace. TabStax helps students track choices, essays, and deadlines without overwhelm.",
+      "Turn college applications from amorphous panic into a structured browser workspace. HeyStax helps students track choices, essays, and deadlines without overwhelm.",
     keywords: [
       "college application browser workspace",
       "university application tab organiser",
@@ -2367,7 +2367,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a student manage college applications?",
+        q: "How does HeyStax help a student manage college applications?",
         a: "Create two Stax — Research and Choices with course comparisons, and Applications and Essays with portals, drafts, and a Start Page showing the next deadline.",
       },
       {
@@ -2375,7 +2375,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the Research Stax so parents can see the actual choices being considered instead of only getting abstract updates.",
       },
       {
-        q: "How does TabStax reduce the overwhelm of college applications?",
+        q: "How does HeyStax reduce the overwhelm of college applications?",
         a: "Open the Applications Stax and do the next visible thing. The paralysis of 'where do I even start?' is replaced by 'open the Stax and continue.'",
       },
     ],
@@ -2388,13 +2388,13 @@ export const useCases: UseCase[] = [
     category: "Learning, Education & Future Self",
     persona: "Struggling University Student",
     summary:
-      "Grades tanking, behind in three modules, ashamed, dodging emails. She opens the LMS, sees the mountain of red 'late' labels, and closes the tab. TabStax turns 'I'm failing so I'll avoid it' into 'here is my failing, and here is one thing I can do today.'",
+      "Grades tanking, behind in three modules, ashamed, dodging emails. She opens the LMS, sees the mountain of red 'late' labels, and closes the tab. HeyStax turns 'I'm failing so I'll avoid it' into 'here is my failing, and here is one thing I can do today.'",
     content:
-      "She's in university. Grades are tanking. She's behind in three modules, ashamed, and dodging emails. Her mental browser: LMS with overdue assignments, confusing lecture slides, unanswered emails from lecturers, student support pages she can't quite click on.\n\nWithout TabStax, she opens the LMS, sees the mountain of red \"late\" labels, and closes the tab. Maybe scrolls TikTok. The story in her head is \"it's too late anyway.\" With TabStax, she constructs a Triage Mode Stax with help from a tutor: LMS homepage, one tab per module she's still trying to pass, a Reality Check doc (current grade, missing pieces, pass threshold per module), student support links, and a Start Page that says: \"This is not about being perfect. This is about not disappearing. Today: email one lecturer and say I'm behind. Submit any version of Assignment X, even if incomplete.\"\n\nShe shares the Stax with someone safe — a counsellor, tutor, or sibling. They can see the real state, not just \"I'm fine.\" When she opens this Stax, the chaos is structured: modules listed, deadlines visible, one action highlighted. It turns \"I'm failing so I'll avoid it\" into \"here is my failing, and here is one thing I can do today.\"",
+      "She's in university. Grades are tanking. She's behind in three modules, ashamed, and dodging emails. Her mental browser: LMS with overdue assignments, confusing lecture slides, unanswered emails from lecturers, student support pages she can't quite click on.\n\nWithout HeyStax, she opens the LMS, sees the mountain of red \"late\" labels, and closes the tab. Maybe scrolls TikTok. The story in her head is \"it's too late anyway.\" With HeyStax, she constructs a Triage Mode Stax with help from a tutor: LMS homepage, one tab per module she's still trying to pass, a Reality Check doc (current grade, missing pieces, pass threshold per module), student support links, and a Start Page that says: \"This is not about being perfect. This is about not disappearing. Today: email one lecturer and say I'm behind. Submit any version of Assignment X, even if incomplete.\"\n\nShe shares the Stax with someone safe — a counsellor, tutor, or sibling. They can see the real state, not just \"I'm fine.\" When she opens this Stax, the chaos is structured: modules listed, deadlines visible, one action highlighted. It turns \"I'm failing so I'll avoid it\" into \"here is my failing, and here is one thing I can do today.\"",
     staxPattern: '"Uni – Triage Mode (Saving This Semester)"',
-    seoTitle: "Browser Workspace for Struggling Students Saving the Semester | TabStax",
+    seoTitle: "Browser Workspace for Struggling Students Saving the Semester | HeyStax",
     metaDescription:
-      "Turn 'I'm failing so I'll avoid it' into 'here is my failing, and here is one thing I can do today.' TabStax gives struggling students a triage browser workspace.",
+      "Turn 'I'm failing so I'll avoid it' into 'here is my failing, and here is one thing I can do today.' HeyStax gives struggling students a triage browser workspace.",
     keywords: [
       "failing student browser workspace",
       "university triage browser tool",
@@ -2404,7 +2404,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a student who is behind in multiple modules?",
+        q: "How does HeyStax help a student who is behind in multiple modules?",
         a: "Build a Triage Stax with one tab per module, a Reality Check doc showing pass thresholds, and a Start Page: 'Email one lecturer. Submit any version of Assignment X.'",
       },
       {
@@ -2425,13 +2425,13 @@ export const useCases: UseCase[] = [
     category: "Health, Recovery & Performance",
     persona: "The Comfortable Procrastinator",
     summary:
-      "Growing credit card balance, small health issue, certification renewal, stalled side project. He dismisses each as it pops up. TabStax gives the quiet alarms a contained, named place to live.",
+      "Growing credit card balance, small health issue, certification renewal, stalled side project. He dismisses each as it pops up. HeyStax gives the quiet alarms a contained, named place to live.",
     content:
-      "His life looks okay on the surface: bills mostly paid, work okay, relationships fine-ish. But under the hood: a credit card balance that's growing, a small health issue he's been ignoring, a certification he needs for his job, and a side project he claims he really wants but never moves.\n\nWithout TabStax, he dismisses each worry as it pops up. \"I'll deal with the card when it's bigger.\" \"If it was serious, my body would shout louder.\" So he does nothing. The alarms become background noise. With TabStax, he builds an Alarms Stax: bank and credit card, health portal, certification page, a doc titled \"If I ignore this for a year, what happens?\" and a Start Page listing the truth and next actions: set up extra payment, book GP appointment, block two hours for certification study.\n\nHe shares the Stax with a partner or accountability friend — \"these are my quiet alarms; don't let me pretend they don't exist.\" Once a week he opens this Stax on purpose. Not to catastrophize, but to take one small corrective action per alarm. Procrastination becomes a pattern he can see in a single workspace, not a vibe he endlessly rationalises.",
+      "His life looks okay on the surface: bills mostly paid, work okay, relationships fine-ish. But under the hood: a credit card balance that's growing, a small health issue he's been ignoring, a certification he needs for his job, and a side project he claims he really wants but never moves.\n\nWithout HeyStax, he dismisses each worry as it pops up. \"I'll deal with the card when it's bigger.\" \"If it was serious, my body would shout louder.\" So he does nothing. The alarms become background noise. With HeyStax, he builds an Alarms Stax: bank and credit card, health portal, certification page, a doc titled \"If I ignore this for a year, what happens?\" and a Start Page listing the truth and next actions: set up extra payment, book GP appointment, block two hours for certification study.\n\nHe shares the Stax with a partner or accountability friend — \"these are my quiet alarms; don't let me pretend they don't exist.\" Once a week he opens this Stax on purpose. Not to catastrophize, but to take one small corrective action per alarm. Procrastination becomes a pattern he can see in a single workspace, not a vibe he endlessly rationalises.",
     staxPattern: '"Alarms – Stuff I Keep Dismissing"',
-    seoTitle: "Browser Workspace for the Quiet Alarms You Keep Ignoring | TabStax",
+    seoTitle: "Browser Workspace for the Quiet Alarms You Keep Ignoring | HeyStax",
     metaDescription:
-      "Give your quiet alarms a named, contained place to live. TabStax helps comfortable procrastinators face a credit card balance, health issue, or stalled project one action at a time.",
+      "Give your quiet alarms a named, contained place to live. HeyStax helps comfortable procrastinators face a credit card balance, health issue, or stalled project one action at a time.",
     keywords: [
       "procrastination browser workspace tool",
       "quiet alarms productivity browser",
@@ -2441,7 +2441,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a procrastinator face quiet alarms?",
+        q: "How does HeyStax help a procrastinator face quiet alarms?",
         a: "Build an Alarms Stax with bank, health portal, certification page, and a Start Page listing the truth and one small corrective action per alarm. Open it weekly.",
       },
       {
@@ -2449,7 +2449,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it and say 'these are my quiet alarms — don't let me pretend they don't exist.' Visibility makes avoidance harder.",
       },
       {
-        q: "How does TabStax turn procrastination into small corrective actions?",
+        q: "How does HeyStax turn procrastination into small corrective actions?",
         a: "Instead of the alarm being a vague background dread, it lives in a named workspace. Opening the Stax once a week means doing one small action, not catastrophizing.",
       },
     ],
@@ -2462,13 +2462,13 @@ export const useCases: UseCase[] = [
     category: "Health, Recovery & Performance",
     persona: "Pre-Surgery Patient",
     summary:
-      "Surgery in a month. Pre-op instructions, hospital portal, insurance, work handover, who minds the kids, recovery plan. She wakes at 3am thinking about logistics. TabStax turns it into a structured project with shared visibility.",
+      "Surgery in a month. Pre-op instructions, hospital portal, insurance, work handover, who minds the kids, recovery plan. She wakes at 3am thinking about logistics. HeyStax turns it into a structured project with shared visibility.",
     content:
-      "She's going in for surgery in a month. Her world explodes into pre-op instructions, hospital portal, insurance, work time-off arrangements, who will mind the kids, meals, transport, and recovery planning for physio and follow-ups.\n\nWithout TabStax, she prints some stuff, bookmarks other bits, leaves emails starred. She wakes at 3am thinking \"Did I ever confirm who's picking me up?\" With TabStax, she creates a Surgery and Recovery Plan Stax: hospital portal, pre-op instructions, insurance portal, employer HR policy, a shared household doc for while she's in hospital, and recovery equipment list. The Start Page is split into timelines: This Week (book pre-op tests, confirm leave), Week Before (stop medication X, final hospital check), and After Surgery (schedule physio, review at-home care).\n\nShe shares the Stax with her partner and a family member. They can see what needs to happen when and add to the household doc. The surgery isn't just a date. It's a structured project with shared visibility. When she gets scared, she opens the Stax and can tell: \"I'm actually doing what needs to be done.\"",
+      "She's going in for surgery in a month. Her world explodes into pre-op instructions, hospital portal, insurance, work time-off arrangements, who will mind the kids, meals, transport, and recovery planning for physio and follow-ups.\n\nWithout HeyStax, she prints some stuff, bookmarks other bits, leaves emails starred. She wakes at 3am thinking \"Did I ever confirm who's picking me up?\" With HeyStax, she creates a Surgery and Recovery Plan Stax: hospital portal, pre-op instructions, insurance portal, employer HR policy, a shared household doc for while she's in hospital, and recovery equipment list. The Start Page is split into timelines: This Week (book pre-op tests, confirm leave), Week Before (stop medication X, final hospital check), and After Surgery (schedule physio, review at-home care).\n\nShe shares the Stax with her partner and a family member. They can see what needs to happen when and add to the household doc. The surgery isn't just a date. It's a structured project with shared visibility. When she gets scared, she opens the Stax and can tell: \"I'm actually doing what needs to be done.\"",
     staxPattern: '"Surgery – Operation & Recovery Plan"',
-    seoTitle: "Browser Workspace for Pre-Surgery Planning and Recovery | TabStax",
+    seoTitle: "Browser Workspace for Pre-Surgery Planning and Recovery | HeyStax",
     metaDescription:
-      "Turn surgery prep from a 3am anxiety spiral into a structured project. TabStax gives patients a shared browser workspace with pre-op steps, insurance, and recovery plan.",
+      "Turn surgery prep from a 3am anxiety spiral into a structured project. HeyStax gives patients a shared browser workspace with pre-op steps, insurance, and recovery plan.",
     keywords: [
       "pre-surgery planning browser workspace",
       "surgery prep tab organiser",
@@ -2478,7 +2478,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help someone prepare for surgery?",
+        q: "How does HeyStax help someone prepare for surgery?",
         a: "Build a Surgery and Recovery Stax with hospital portal, pre-op instructions, insurance, and a Start Page split by timeline: This Week, Week Before, After Surgery.",
       },
       {
@@ -2486,7 +2486,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it so they see what needs to happen when and can contribute to the household doc — logistics become a shared responsibility.",
       },
       {
-        q: "How does TabStax help reduce pre-surgery anxiety?",
+        q: "How does HeyStax help reduce pre-surgery anxiety?",
         a: "Open the Stax and you can see: 'I'm actually doing what needs to be done.' The structured next actions replace the 3am spiral of 'did I forget something?'",
       },
     ],
@@ -2499,13 +2499,13 @@ export const useCases: UseCase[] = [
     category: "Crisis, Loss & Legal Aftermath",
     persona: "Grieving Family Member",
     summary:
-      "His father just died. He's numb, exhausted, and still the one everyone looks to. Contact funeral home, decide on burial, coordinate obituary, notify relatives. TabStax reduces the administrative cruelty layered on top of grief.",
+      "His father just died. He's numb, exhausted, and still the one everyone looks to. Contact funeral home, decide on burial, coordinate obituary, notify relatives. HeyStax reduces the administrative cruelty layered on top of grief.",
     content:
-      "His father just died. He's numb, exhausted, and still the one everyone looks to for \"what happens now?\" Immediate load: contact funeral home, decide on burial or cremation, talk to priest, coordinate obituary, notify relatives, sort clothes, photos, music, deal with costs.\n\nWithout TabStax, he's doing all this from his head and phone: calls, emails, half-open tabs on funeral packages, a note somewhere with the priest's number. Every small thing feels huge because he has to remember it, do it, and feel it simultaneously. With TabStax, he quietly creates a Funeral and Farewell Stax: funeral home website, ceremony details, a Decisions doc (date, place, readings, speakers), a photos folder, an obituary draft, and a \"Who to call\" notes doc. The Start Page is a simple, gentle checklist: today confirm date and time, choose three photos, ask if someone wants to speak.\n\nHe shares the Stax with one sibling and a close cousin. They can help draft the obituary, pick music, own some calls. He doesn't need to hold the whole thing in his head. He opens the Stax, does the next piece, closes it when his brain can't carry more. The grief is still raw. TabStax just reduces the administrative cruelty layered on top.",
+      "His father just died. He's numb, exhausted, and still the one everyone looks to for \"what happens now?\" Immediate load: contact funeral home, decide on burial or cremation, talk to priest, coordinate obituary, notify relatives, sort clothes, photos, music, deal with costs.\n\nWithout HeyStax, he's doing all this from his head and phone: calls, emails, half-open tabs on funeral packages, a note somewhere with the priest's number. Every small thing feels huge because he has to remember it, do it, and feel it simultaneously. With HeyStax, he quietly creates a Funeral and Farewell Stax: funeral home website, ceremony details, a Decisions doc (date, place, readings, speakers), a photos folder, an obituary draft, and a \"Who to call\" notes doc. The Start Page is a simple, gentle checklist: today confirm date and time, choose three photos, ask if someone wants to speak.\n\nHe shares the Stax with one sibling and a close cousin. They can help draft the obituary, pick music, own some calls. He doesn't need to hold the whole thing in his head. He opens the Stax, does the next piece, closes it when his brain can't carry more. The grief is still raw. HeyStax just reduces the administrative cruelty layered on top.",
     staxPattern: '"Dad – Funeral & Farewell"',
-    seoTitle: "Browser Workspace for Funeral Planning While Grieving | TabStax",
+    seoTitle: "Browser Workspace for Funeral Planning While Grieving | HeyStax",
     metaDescription:
-      "Reduce the administrative cruelty layered on top of grief. TabStax gives grieving families a shared browser workspace with decisions, contacts, and a gentle checklist.",
+      "Reduce the administrative cruelty layered on top of grief. HeyStax gives grieving families a shared browser workspace with decisions, contacts, and a gentle checklist.",
     keywords: [
       "funeral planning browser workspace",
       "grief admin browser tool",
@@ -2515,7 +2515,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help with funeral planning while grieving?",
+        q: "How does HeyStax help with funeral planning while grieving?",
         a: "Build a Funeral and Farewell Stax with the funeral home site, ceremony decisions, photos folder, and a gentle checklist. Do one piece, then close it when your brain can't carry more.",
       },
       {
@@ -2524,7 +2524,7 @@ export const useCases: UseCase[] = [
       },
       {
         q: "Is it appropriate to use a browser tool for something this personal?",
-        a: "The grief is still raw — TabStax doesn't change that. It simply reduces the administrative burden so you have more energy for the human parts of loss.",
+        a: "The grief is still raw — HeyStax doesn't change that. It simply reduces the administrative burden so you have more energy for the human parts of loss.",
       },
     ],
     relatedSlugs: ["executor-estate-paperwork", "caregiver-ageing-parent", "preparing-for-surgery"],
@@ -2538,11 +2538,11 @@ export const useCases: UseCase[] = [
     summary:
       "Will, probate, bank accounts, insurance, utilities, house sale, letters from lawyers. It all feels endless. They open the Stax once or twice a week as 'estate time,' handle one cluster, then close it.",
     content:
-      "A few weeks after the funeral, the executor faces a new mountain: will and probate docs, bank accounts, insurance policies, utility accounts to close or transfer, house sale or transfer, and letters from lawyers and tax authorities. Siblings keep asking \"what's happening?\"\n\nWithout TabStax, they drown in envelopes, PDFs, and browser tabs. It all feels endless. They keep promising to deal with the estate soon but never want to open that pile. With TabStax, they create an Estate Executor Workspace Stax: probate guidance, lawyer email thread, spreadsheet of accounts and assets, a Tasks and Status doc, and a Start Page with grouped actions — Bank and Money, House, and Siblings update.\n\nThey share a read-only version with siblings. Everyone can see the checklist and know progress. Fewer \"so what's going on?\" phone calls. They open the Stax once or twice a week as estate time, handle one cluster, then close it. Instead of \"I should be doing everything,\" they're doing something in a defined container.",
+      "A few weeks after the funeral, the executor faces a new mountain: will and probate docs, bank accounts, insurance policies, utility accounts to close or transfer, house sale or transfer, and letters from lawyers and tax authorities. Siblings keep asking \"what's happening?\"\n\nWithout HeyStax, they drown in envelopes, PDFs, and browser tabs. It all feels endless. They keep promising to deal with the estate soon but never want to open that pile. With HeyStax, they create an Estate Executor Workspace Stax: probate guidance, lawyer email thread, spreadsheet of accounts and assets, a Tasks and Status doc, and a Start Page with grouped actions — Bank and Money, House, and Siblings update.\n\nThey share a read-only version with siblings. Everyone can see the checklist and know progress. Fewer \"so what's going on?\" phone calls. They open the Stax once or twice a week as estate time, handle one cluster, then close it. Instead of \"I should be doing everything,\" they're doing something in a defined container.",
     staxPattern: '"Estate – [Name] (Executor Workspace)"',
-    seoTitle: "Browser Workspace for Estate Executors After a Death | TabStax",
+    seoTitle: "Browser Workspace for Estate Executors After a Death | HeyStax",
     metaDescription:
-      "Handle probate, bank accounts, and property in defined sessions without drowning. TabStax gives estate executors a shared browser workspace with a visible progress checklist.",
+      "Handle probate, bank accounts, and property in defined sessions without drowning. HeyStax gives estate executors a shared browser workspace with a visible progress checklist.",
     keywords: [
       "estate executor browser workspace",
       "probate planning browser tool",
@@ -2552,7 +2552,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help an estate executor manage the administration?",
+        q: "How does HeyStax help an estate executor manage the administration?",
         a: "Build an Estate Executor Stax with probate guidance, lawyer emails, accounts spreadsheet, and a Start Page grouped into Bank, House, and Siblings update.",
       },
       {
@@ -2573,13 +2573,13 @@ export const useCases: UseCase[] = [
     category: "Dreams, Second Act & Identity",
     persona: "Midlife Professional",
     summary:
-      "She's 42. Stable job she doesn't love, relationship that's more logistics than connection, a creative dream she's been saying 'I'll do later' for 15 years. TabStax gives those alarms a contained, named place to live and evolve.",
+      "She's 42. Stable job she doesn't love, relationship that's more logistics than connection, a creative dream she's been saying 'I'll do later' for 15 years. HeyStax gives those alarms a contained, named place to live and evolve.",
     content:
-      "She's 42. Life is fine. Stable job she doesn't love. Relationship that's more logistics than connection. Health basically okay. A creative dream she's been saying \"I'll do later\" for 15 years. These are quiet alarms, not emergencies — which makes them easier to ignore.\n\nWithout TabStax, she feels low-level dissatisfaction and occasionally binge-reads self-help or checks job boards. Then back to autopilot. With TabStax, she creates a Nagging Thoughts Stax: a journal doc (\"What's bothering me that I keep minimising?\"), job market roles she's curious about, a doc (\"If nothing changes in 5 years, what does life look like?\"), an outline for a creative project, and therapy or coaching resources. The Start Page asks three gentle but pointed questions: \"What is one experiment I could run in the next 90 days?\" \"What am I afraid will happen if I never try?\" \"Who is one person I could talk to?\"\n\nShe shares this Stax with one trusted person. Once a week she opens it on purpose — not to fix her entire life, but to move one experiment forward: book a therapy consult, sign up for a class, send an email, set a coffee with someone in a job she admires. Instead of letting the \"everything's fine\" mask smother the alarms, she gives them a contained, named place to live and evolve.",
+      "She's 42. Life is fine. Stable job she doesn't love. Relationship that's more logistics than connection. Health basically okay. A creative dream she's been saying \"I'll do later\" for 15 years. These are quiet alarms, not emergencies — which makes them easier to ignore.\n\nWithout HeyStax, she feels low-level dissatisfaction and occasionally binge-reads self-help or checks job boards. Then back to autopilot. With HeyStax, she creates a Nagging Thoughts Stax: a journal doc (\"What's bothering me that I keep minimising?\"), job market roles she's curious about, a doc (\"If nothing changes in 5 years, what does life look like?\"), an outline for a creative project, and therapy or coaching resources. The Start Page asks three gentle but pointed questions: \"What is one experiment I could run in the next 90 days?\" \"What am I afraid will happen if I never try?\" \"Who is one person I could talk to?\"\n\nShe shares this Stax with one trusted person. Once a week she opens it on purpose — not to fix her entire life, but to move one experiment forward: book a therapy consult, sign up for a class, send an email, set a coffee with someone in a job she admires. Instead of letting the \"everything's fine\" mask smother the alarms, she gives them a contained, named place to live and evolve.",
     staxPattern: '"Life – Nagging Thoughts I Don\'t Want to Lose"',
-    seoTitle: "Browser Workspace for Midlife Quiet Crisis and Personal Change | TabStax",
+    seoTitle: "Browser Workspace for Midlife Quiet Crisis and Personal Change | HeyStax",
     metaDescription:
-      "Give your quiet alarms a named place to live and evolve. TabStax helps people in a midlife rut move one experiment forward each week without fixing their entire life.",
+      "Give your quiet alarms a named place to live and evolve. HeyStax helps people in a midlife rut move one experiment forward each week without fixing their entire life.",
     keywords: [
       "midlife crisis browser workspace",
       "personal change browser tool",
@@ -2589,7 +2589,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help someone stuck in a midlife rut?",
+        q: "How does HeyStax help someone stuck in a midlife rut?",
         a: "Build a Nagging Thoughts Stax with a journal doc, job market tabs, and a creative outline. Open it weekly and run one small experiment — a consult, a class, an email.",
       },
       {
@@ -2613,12 +2613,12 @@ export const useCases: UseCase[] = [
     summary:
       "Tenured professor, now a candidate for state senate. Opposition digging, media interviews, volunteers, family under scrutiny, his own health at risk. Four Stax, four cockpits — he chooses which role to inhabit.",
     content:
-      "He's a tenured professor who's now a candidate for state senate. The campaign is a different beast: opposition oppo teams digging into twenty years of career, local radio and TV interviews, a campaign team that's half volunteers, family under new scrutiny, and his own health and mental bandwidth at risk.\n\nWithout TabStax, his laptop is a disaster: academic papers, campaign strategy docs, health portal, school emails, and security briefings in the same tab bar. His partner asks \"what's the plan if they go after us?\" and there's no actual place where that plan lives. With TabStax, he splits his life into four Stax: Campaign Strategy and Field (polling, voter file, field plan, issue briefs), Campaign Media and Messaging (press list, talking points, interview calendar, \"Stories I actually want to tell\"), Personal Health and Bandwidth (health portal, sleep tracker, therapist scheduler, non-negotiables doc), and Family Safety and Support (security advisor notes, school portals, privacy boundaries doc).\n\nBefore an interview, he opens Media Stax — no grading, no Twitter, just prep. After a brutal day, he closes campaign worlds, opens Health Stax, and books the next therapy session while he's still clear he needs it. He might still get hit hard. But each role has its own cockpit, and he chooses which one to inhabit.",
+      "He's a tenured professor who's now a candidate for state senate. The campaign is a different beast: opposition oppo teams digging into twenty years of career, local radio and TV interviews, a campaign team that's half volunteers, family under new scrutiny, and his own health and mental bandwidth at risk.\n\nWithout HeyStax, his laptop is a disaster: academic papers, campaign strategy docs, health portal, school emails, and security briefings in the same tab bar. His partner asks \"what's the plan if they go after us?\" and there's no actual place where that plan lives. With HeyStax, he splits his life into four Stax: Campaign Strategy and Field (polling, voter file, field plan, issue briefs), Campaign Media and Messaging (press list, talking points, interview calendar, \"Stories I actually want to tell\"), Personal Health and Bandwidth (health portal, sleep tracker, therapist scheduler, non-negotiables doc), and Family Safety and Support (security advisor notes, school portals, privacy boundaries doc).\n\nBefore an interview, he opens Media Stax — no grading, no Twitter, just prep. After a brutal day, he closes campaign worlds, opens Health Stax, and books the next therapy session while he's still clear he needs it. He might still get hit hard. But each role has its own cockpit, and he chooses which one to inhabit.",
     staxPattern:
       '"Campaign – Strategy & Field" / "Campaign – Media & Messaging" / "Personal – Health & Mental Bandwidth" / "Family – Safety, Boundaries, & Support"',
-    seoTitle: "Browser Workspace for Political Candidates Under Pressure | TabStax",
+    seoTitle: "Browser Workspace for Political Candidates Under Pressure | HeyStax",
     metaDescription:
-      "Manage campaign strategy, media, personal health, and family safety in separate browser cockpits. TabStax gives candidates a named environment for each role they inhabit.",
+      "Manage campaign strategy, media, personal health, and family safety in separate browser cockpits. HeyStax gives candidates a named environment for each role they inhabit.",
     keywords: [
       "political candidate browser workspace",
       "campaign manager tab organiser",
@@ -2628,7 +2628,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a candidate juggling campaign and personal life?",
+        q: "How does HeyStax help a candidate juggling campaign and personal life?",
         a: "Create four Stax: Campaign Strategy, Media and Messaging, Personal Health, and Family Safety. Choose which cockpit to inhabit for each block of time.",
       },
       {
@@ -2649,14 +2649,14 @@ export const useCases: UseCase[] = [
     category: "Dreams, Second Act & Identity",
     persona: "Home Gardener / Self-Sufficiency Seeker",
     summary:
-      "Semi-detached house, decent garden, a big terrifying goal: majority of veg from out that back door in two years. Seasons roll past without a plan. TabStax turns a quiet personal food security project into a structured two-year cockpit.",
+      "Semi-detached house, decent garden, a big terrifying goal: majority of veg from out that back door in two years. Seasons roll past without a plan. HeyStax turns a quiet personal food security project into a structured two-year cockpit.",
     content:
-      "Ger lives in a semi-detached house with a decent garden. His goal: in two years, the majority of their veg comes from out that back door. He needs soil testing, a polytunnel, crop rotation plans, a season-by-season task list, advice from people who've done this, and buy-in from his partner and kids.\n\nWithout TabStax, he spends winter opening random gardening blogs and watching homesteading videos at 11pm, then forgetting what mattered. Seasons roll past: \"Ah, we missed planting time again. Next year.\" With TabStax, he sets up a master Food by 2027 Stax: soil analysis service, a beds layout and crop rotation spreadsheet, polytunnel supplier shortlist, a region-specific planting calendar, and a doc titled \"What We Actually Want to Eat.\" The Start Page is explicitly seasonal: This Winter — get soil test done, order polytunnel. Spring Year 1 — build beds, plant potatoes, salad, peas.\n\nHe shares the Stax with his partner for budget and realistic timeline input and a read-only version with a local gardening group for feedback. Instead of vague self-sufficiency dreams, Ger has a literal two-year project cockpit he opens every weekend.",
+      "Ger lives in a semi-detached house with a decent garden. His goal: in two years, the majority of their veg comes from out that back door. He needs soil testing, a polytunnel, crop rotation plans, a season-by-season task list, advice from people who've done this, and buy-in from his partner and kids.\n\nWithout HeyStax, he spends winter opening random gardening blogs and watching homesteading videos at 11pm, then forgetting what mattered. Seasons roll past: \"Ah, we missed planting time again. Next year.\" With HeyStax, he sets up a master Food by 2027 Stax: soil analysis service, a beds layout and crop rotation spreadsheet, polytunnel supplier shortlist, a region-specific planting calendar, and a doc titled \"What We Actually Want to Eat.\" The Start Page is explicitly seasonal: This Winter — get soil test done, order polytunnel. Spring Year 1 — build beds, plant potatoes, salad, peas.\n\nHe shares the Stax with his partner for budget and realistic timeline input and a read-only version with a local gardening group for feedback. Instead of vague self-sufficiency dreams, Ger has a literal two-year project cockpit he opens every weekend.",
     staxPattern:
       '"Back Garden – Food by 2027" / "Garden – Polytunnel Setup" / "Garden – Year 1 Crops"',
-    seoTitle: "Browser Workspace for Home Gardeners Growing Their Own Food | TabStax",
+    seoTitle: "Browser Workspace for Home Gardeners Growing Their Own Food | HeyStax",
     metaDescription:
-      "Stop missing planting season every year. TabStax gives home gardeners a structured two-year project cockpit with soil tests, crop plans, and a seasonal Start Page.",
+      "Stop missing planting season every year. HeyStax gives home gardeners a structured two-year project cockpit with soil tests, crop plans, and a seasonal Start Page.",
     keywords: [
       "home gardener browser workspace",
       "food growing browser tool",
@@ -2666,7 +2666,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a home gardener follow through on a food-growing goal?",
+        q: "How does HeyStax help a home gardener follow through on a food-growing goal?",
         a: "Build a Food by 2027 Stax with soil analysis, crop rotation spreadsheet, supplier shortlist, and a seasonal Start Page. Open it every weekend and do the next action.",
       },
       {
@@ -2687,13 +2687,13 @@ export const useCases: UseCase[] = [
     category: "Dreams, Second Act & Identity",
     persona: "Returning Actor / Creative",
     summary:
-      "She acted in her early 20s and it lit her up like nothing else. Then life happened. Now every great performance twists something inside her. TabStax treats the dream like a real project, not a fantasy she keeps anesthetized.",
+      "She acted in her early 20s and it lit her up like nothing else. Then life happened. Now every great performance twists something inside her. HeyStax treats the dream like a real project, not a fantasy she keeps anesthetized.",
     content:
-      "Mary is in her 40s. In her early 20s she acted — small theatre, student films. It lit her up like nothing else. But then life happened: a job, bills, safety. She buried that dream deep. Now every time she sees a great performance, something inside her twists. She knows: if she doesn't at least try again, she'll regret this on her deathbed.\n\nWithout TabStax, she binge-watches \"how to get into acting\" videos, follows actors on Instagram, bookmarks classes, opens casting sites, and never pulls the trigger. With TabStax, she creates a Return to Acting Stax with three dimensions: Craft and Confidence (local classes, online scene study, a doc of roles she's drawn to, monologue list), Career Mechanics (casting sites, headshot photographers, union info, a starter-path doc), and Life Architecture (calendar with realistic windows, budget for headshots and classes, notes shared with partner: \"This is what I want and what it will cost us\").\n\nShe shares the Stax with one brutally honest friend. When she sits down to \"do something about acting,\" she doesn't re-google classes. She opens her Acting Stax, where her past desire is acknowledged, the industry reality is mapped, and the next move is written by a clear-headed version of her.",
+      "Mary is in her 40s. In her early 20s she acted — small theatre, student films. It lit her up like nothing else. But then life happened: a job, bills, safety. She buried that dream deep. Now every time she sees a great performance, something inside her twists. She knows: if she doesn't at least try again, she'll regret this on her deathbed.\n\nWithout HeyStax, she binge-watches \"how to get into acting\" videos, follows actors on Instagram, bookmarks classes, opens casting sites, and never pulls the trigger. With HeyStax, she creates a Return to Acting Stax with three dimensions: Craft and Confidence (local classes, online scene study, a doc of roles she's drawn to, monologue list), Career Mechanics (casting sites, headshot photographers, union info, a starter-path doc), and Life Architecture (calendar with realistic windows, budget for headshots and classes, notes shared with partner: \"This is what I want and what it will cost us\").\n\nShe shares the Stax with one brutally honest friend. When she sits down to \"do something about acting,\" she doesn't re-google classes. She opens her Acting Stax, where her past desire is acknowledged, the industry reality is mapped, and the next move is written by a clear-headed version of her.",
     staxPattern: '"Mary – Return to Acting"',
-    seoTitle: "Browser Workspace for Returning to a Dream You Put on Hold | TabStax",
+    seoTitle: "Browser Workspace for Returning to a Dream You Put on Hold | HeyStax",
     metaDescription:
-      "Treat your buried creative dream like a real project. TabStax gives people returning to acting (or any creative pursuit) a structured browser workspace with craft, career, and life architecture.",
+      "Treat your buried creative dream like a real project. HeyStax gives people returning to acting (or any creative pursuit) a structured browser workspace with craft, career, and life architecture.",
     keywords: [
       "returning actor browser workspace",
       "creative career browser tool",
@@ -2703,7 +2703,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help someone returning to a creative dream?",
+        q: "How does HeyStax help someone returning to a creative dream?",
         a: "Build a Return to Acting Stax with three dimensions: Craft and Confidence, Career Mechanics, and Life Architecture. Open it when you're ready to 'do something about acting.'",
       },
       {
@@ -2711,7 +2711,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share it with one brutally honest friend so they can see your concrete steps and hold you accountable beyond vague intent.",
       },
       {
-        q: "How does TabStax prevent endless research without action?",
+        q: "How does HeyStax prevent endless research without action?",
         a: "The Start Page has the next move written by a clear-headed version of you. You don't re-google classes — you open the Stax and do the named next action.",
       },
     ],
@@ -2724,14 +2724,14 @@ export const useCases: UseCase[] = [
     category: "Dreams, Second Act & Identity",
     persona: "Software Engineer / Climate Activist",
     summary:
-      "He reads too much climate science to sleep well. Individual tweaks aren't enough, but local resilience is something he could influence. Community solar, tool libraries, food co-ops. TabStax gives climate anxiety a container and a project universe.",
+      "He reads too much climate science to sleep well. Individual tweaks aren't enough, but local resilience is something he could influence. Community solar, tool libraries, food co-ops. HeyStax gives climate anxiety a container and a project universe.",
     content:
-      "He's a software engineer who reads too much climate science to sleep well. National politics is slow and individual lifestyle tweaks aren't enough. But local resilience is something he could influence: community solar, tool libraries, food co-ops, emergency prep.\n\nWithout TabStax, he doom-scrolls climate Twitter, shares an article, feels sick, does nothing structured. Everything feels both urgent and impossible. With TabStax, he defines a Local Resilience Stax: city climate adaptation docs, examples of successful projects, an assets-and-people doc, a map with important locations, and a community Slack or Discord. The Start Page is deliberately narrow: \"Phase 1 (3 months): meet five people already doing something locally. Pick one pilot project and commit.\"\n\nOnce the pilot is chosen, he creates a dedicated Stax for it — say, a Tool Library with examples, space options, cost sheet, and volunteer roster. He shares the Resilience Stax with his initial group and the project Stax with whoever commits. Now climate anxiety has a container, a project universe. He can schedule resilience time, open that Stax, and work on structure, not just feelings.",
+      "He's a software engineer who reads too much climate science to sleep well. National politics is slow and individual lifestyle tweaks aren't enough. But local resilience is something he could influence: community solar, tool libraries, food co-ops, emergency prep.\n\nWithout HeyStax, he doom-scrolls climate Twitter, shares an article, feels sick, does nothing structured. Everything feels both urgent and impossible. With HeyStax, he defines a Local Resilience Stax: city climate adaptation docs, examples of successful projects, an assets-and-people doc, a map with important locations, and a community Slack or Discord. The Start Page is deliberately narrow: \"Phase 1 (3 months): meet five people already doing something locally. Pick one pilot project and commit.\"\n\nOnce the pilot is chosen, he creates a dedicated Stax for it — say, a Tool Library with examples, space options, cost sheet, and volunteer roster. He shares the Resilience Stax with his initial group and the project Stax with whoever commits. Now climate anxiety has a container, a project universe. He can schedule resilience time, open that Stax, and work on structure, not just feelings.",
     staxPattern:
       '"Local Resilience – Project (My Town)" / "Tool Library – Pilot"',
-    seoTitle: "Browser Workspace for Climate-Anxious Engineers Building Local Resilience | TabStax",
+    seoTitle: "Browser Workspace for Climate-Anxious Engineers Building Local Resilience | HeyStax",
     metaDescription:
-      "Turn climate anxiety into a structured local project. TabStax gives engineers and activists a browser workspace for community solar, tool libraries, and food co-ops.",
+      "Turn climate anxiety into a structured local project. HeyStax gives engineers and activists a browser workspace for community solar, tool libraries, and food co-ops.",
     keywords: [
       "climate resilience browser workspace",
       "community project tab organiser",
@@ -2741,7 +2741,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a climate-anxious person take local action?",
+        q: "How does HeyStax help a climate-anxious person take local action?",
         a: "Build a Local Resilience Stax with city climate docs, project examples, and a Start Page narrowing the focus: 'Phase 1: meet five people already doing something locally.'",
       },
       {
@@ -2749,7 +2749,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the project Stax — say, a Tool Library — with volunteers so they see examples, space options, costs, and the volunteer roster in one place.",
       },
       {
-        q: "How does TabStax give climate anxiety a container?",
+        q: "How does HeyStax give climate anxiety a container?",
         a: "Instead of doom-scrolling and sharing articles, you have a named workspace. You schedule resilience time, open the Stax, and work on structure — not just feelings.",
       },
     ],
@@ -2762,13 +2762,13 @@ export const useCases: UseCase[] = [
     category: "Dreams, Second Act & Identity",
     persona: "Night Nurse / Aspiring Author",
     summary:
-      "Rotating night shifts, emotional overflow from work, scraps of dialogue in her phone, half-started chapters in Word. On a day off she stares at the draft and ends up doing laundry. TabStax turns 'I always wanted to write' into 'I wrote a damn book while saving lives at night.'",
+      "Rotating night shifts, emotional overflow from work, scraps of dialogue in her phone, half-started chapters in Word. On a day off she stares at the draft and ends up doing laundry. HeyStax turns 'I always wanted to write' into 'I wrote a damn book while saving lives at night.'",
     content:
-      "She's a nurse working rotating night shifts. She's also been carrying a story in her head for years — a novel based on things she's seen and felt, fictionalized. Her world is shift schedules, exhaustion, emotional overflow, scraps of dialogue noted in her phone, and Word documents with half-started chapters.\n\nWithout TabStax, on a day off she opens a Word doc called \"Novel draft v3,\" stares at it, then ends up doing laundry, doomscrolling, or sleeping. Her story feels like a foggy dream. With TabStax, she creates a Novel Stax: main manuscript doc, a scenes-and-snippets note, a simple outline, resources on writing in small bursts, and a calendar showing realistic writing windows between shifts. The Start Page says: \"You do NOT have to be a full-time writer. Goal this quarter: 3 finished chapters, no matter how bad. Today: write one messy scene.\"\n\nShe shares the Stax with no one at first — it's her private sanctuary. Later, when ready, she shares it with one trusted reader. When she has forty minutes of alive brain, she doesn't waste it looking for the right file. She opens the Novel Stax and continues the story. Over a year, that's the difference between \"I always wanted to write\" and \"I wrote a damn book while saving lives at night.\"",
+      "She's a nurse working rotating night shifts. She's also been carrying a story in her head for years — a novel based on things she's seen and felt, fictionalized. Her world is shift schedules, exhaustion, emotional overflow, scraps of dialogue noted in her phone, and Word documents with half-started chapters.\n\nWithout HeyStax, on a day off she opens a Word doc called \"Novel draft v3,\" stares at it, then ends up doing laundry, doomscrolling, or sleeping. Her story feels like a foggy dream. With HeyStax, she creates a Novel Stax: main manuscript doc, a scenes-and-snippets note, a simple outline, resources on writing in small bursts, and a calendar showing realistic writing windows between shifts. The Start Page says: \"You do NOT have to be a full-time writer. Goal this quarter: 3 finished chapters, no matter how bad. Today: write one messy scene.\"\n\nShe shares the Stax with no one at first — it's her private sanctuary. Later, when ready, she shares it with one trusted reader. When she has forty minutes of alive brain, she doesn't waste it looking for the right file. She opens the Novel Stax and continues the story. Over a year, that's the difference between \"I always wanted to write\" and \"I wrote a damn book while saving lives at night.\"",
     staxPattern: '"Novel – Night Shift Stories"',
-    seoTitle: "Browser Workspace for Nurses and Shift Workers Writing a Novel | TabStax",
+    seoTitle: "Browser Workspace for Nurses and Shift Workers Writing a Novel | HeyStax",
     metaDescription:
-      "Stop wasting your 40 minutes of alive brain looking for the right file. TabStax gives night shift writers a private novel workspace they can open and continue instantly.",
+      "Stop wasting your 40 minutes of alive brain looking for the right file. HeyStax gives night shift writers a private novel workspace they can open and continue instantly.",
     keywords: [
       "nurse writer browser workspace",
       "night shift writing browser tool",
@@ -2778,7 +2778,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help a shift worker write a novel in small bursts?",
+        q: "How does HeyStax help a shift worker write a novel in small bursts?",
         a: "Build a Novel Stax with the manuscript, scene snippets, outline, and a Start Page: 'You do NOT have to be a full-time writer. Today: write one messy scene.'",
       },
       {
@@ -2786,7 +2786,7 @@ export const useCases: UseCase[] = [
         a: "Yes. A Stax is private by default. Share it only when you're ready — starting with no one, then a trusted reader when the time feels right.",
       },
       {
-        q: "How does TabStax prevent the 'stare at the draft and do laundry' pattern?",
+        q: "How does HeyStax prevent the 'stare at the draft and do laundry' pattern?",
         a: "The Stax loads the manuscript, not a blank screen. The Start Page gives a small, achievable action. Forty minutes of alive brain go to the story, not the set-up.",
       },
     ],
@@ -2803,12 +2803,12 @@ export const useCases: UseCase[] = [
     summary:
       "You have 147 tabs open because closing one feels like erasing a memory. Your browser IS your working memory — but it's collapsing under its own weight, and you can't find anything anymore.",
     content:
-      "You open a tab to look something up. That leads to another tab. Then a Slack notification sends you to three more. By lunch you have over a hundred tabs spread across four windows, and you can't close any of them because each one represents a thought you haven't finished processing. The ADHD brain uses browser tabs the way most people use sticky notes — as external working memory. Researchers call this \"cognitive offloading\": when your internal working memory is unreliable, you outsource it to your environment. Open tabs become placeholders for ongoing tasks, half-read articles, and \"I'll get to this\" intentions.\n\nThe problem is that tab hoarding doesn't scale. Once you pass fifty tabs, you can't find the one you need. The browser slows down, the favicons blur together, and the nagging visual clutter adds background anxiety. You've turned a coping mechanism into a second problem. According to a study by Joseph Chee Chang et al., people treat tabs as a to-do list that \"nags\" at them — but the nag becomes noise when there are too many.\n\nTabStax turns the chaotic tab hoard into named, resumable contexts. Instead of 147 tabs in one window, you have six or seven Stax: one for the client project, one for the side build, one for personal research, one for finances. Each Stax saves the exact tabs you need, plus a next action telling you where you left off. Close the Stax, the tabs vanish. Open it again, everything reappears — plus the note you left yourself. Your browser stays clean. Your external brain stays organized. You stop losing thoughts because they're not floating in tab purgatory anymore — they're saved in a named context you can reopen any time.",
+      "You open a tab to look something up. That leads to another tab. Then a Slack notification sends you to three more. By lunch you have over a hundred tabs spread across four windows, and you can't close any of them because each one represents a thought you haven't finished processing. The ADHD brain uses browser tabs the way most people use sticky notes — as external working memory. Researchers call this \"cognitive offloading\": when your internal working memory is unreliable, you outsource it to your environment. Open tabs become placeholders for ongoing tasks, half-read articles, and \"I'll get to this\" intentions.\n\nThe problem is that tab hoarding doesn't scale. Once you pass fifty tabs, you can't find the one you need. The browser slows down, the favicons blur together, and the nagging visual clutter adds background anxiety. You've turned a coping mechanism into a second problem. According to a study by Joseph Chee Chang et al., people treat tabs as a to-do list that \"nags\" at them — but the nag becomes noise when there are too many.\n\nHeyStax turns the chaotic tab hoard into named, resumable contexts. Instead of 147 tabs in one window, you have six or seven Stax: one for the client project, one for the side build, one for personal research, one for finances. Each Stax saves the exact tabs you need, plus a next action telling you where you left off. Close the Stax, the tabs vanish. Open it again, everything reappears — plus the note you left yourself. Your browser stays clean. Your external brain stays organized. You stop losing thoughts because they're not floating in tab purgatory anymore — they're saved in a named context you can reopen any time.",
     staxPattern:
       '"Client Project – Dev" / "Side Build – AI Experiment" / "Personal Research – ADHD Strategies" / "Finances – Tax Prep"',
-    seoTitle: "ADHD Tab Hoarding Solution | TabStax",
+    seoTitle: "ADHD Tab Hoarding Solution | HeyStax",
     metaDescription:
-      "Stop using 100+ browser tabs as external memory. TabStax saves each context as a named Stax you can close and reopen without losing a single thought.",
+      "Stop using 100+ browser tabs as external memory. HeyStax saves each context as a named Stax you can close and reopen without losing a single thought.",
     keywords: [
       "ADHD tab hoarding",
       "too many browser tabs ADHD",
@@ -2822,8 +2822,8 @@ export const useCases: UseCase[] = [
         a: "ADHD affects working memory, so open tabs serve as external memory aids — each tab represents a thought, task, or intention the brain can't reliably hold internally.",
       },
       {
-        q: "How does TabStax help with ADHD tab hoarding?",
-        a: "TabStax groups related tabs into named Stax you can close and reopen. Instead of 100+ tabs in one window, you have clean, resumable contexts with next actions attached.",
+        q: "How does HeyStax help with ADHD tab hoarding?",
+        a: "HeyStax groups related tabs into named Stax you can close and reopen. Instead of 100+ tabs in one window, you have clean, resumable contexts with next actions attached.",
       },
       {
         q: "Will I lose my tabs if I close a Stax?",
@@ -2841,12 +2841,12 @@ export const useCases: UseCase[] = [
     summary:
       "You know exactly what needs doing. You've been thinking about it all morning. But you're frozen — the gap between knowing and starting feels like a concrete wall. It's not laziness. It's a missing start signal.",
     content:
-      "Task initiation is one of the most debilitating ADHD symptoms. In online ADHD communities, people rank it alongside time blindness and emotional dysregulation as the symptoms that most damage their careers and self-image. You sit down at your desk. You have a clear task: write the report, review the PR, reply to the email chain. You understand what needs doing. You even want to do it. But your body won't move. Your brain won't engage. You open a new tab, check something irrelevant, come back, and the wall is still there.\n\nDr. Russell Barkley's research shows ADHD brains run on low dopamine, creating an \"interest-based nervous system\" where boring or unclear tasks feel impossible to start — even when the consequences of not starting are severe. The standard advice is to \"shrink the first step\" — make it so small your brain doesn't feel threatened. But that assumes you can identify the first step. When you return to a project after hours or days away, the first step is buried under reconstruction: Where was I? What files were open? What was the decision I made last time?\n\nTabStax eliminates that reconstruction entirely. Each Stax has a Start Page with a concrete next action — not \"work on the report\" but \"add the Q3 comparison table to slide 7.\" When your brain can't generate a start signal, the Stax provides one. Open the Stax, see the action, do the action. The five-minute rule becomes effortless when you don't spend four of those five minutes remembering what to do. Hey — TabStax's quick capture command — lets you drop the next action into any Stax from wherever you are, so your future self always has a clear entry point waiting.",
+      "Task initiation is one of the most debilitating ADHD symptoms. In online ADHD communities, people rank it alongside time blindness and emotional dysregulation as the symptoms that most damage their careers and self-image. You sit down at your desk. You have a clear task: write the report, review the PR, reply to the email chain. You understand what needs doing. You even want to do it. But your body won't move. Your brain won't engage. You open a new tab, check something irrelevant, come back, and the wall is still there.\n\nDr. Russell Barkley's research shows ADHD brains run on low dopamine, creating an \"interest-based nervous system\" where boring or unclear tasks feel impossible to start — even when the consequences of not starting are severe. The standard advice is to \"shrink the first step\" — make it so small your brain doesn't feel threatened. But that assumes you can identify the first step. When you return to a project after hours or days away, the first step is buried under reconstruction: Where was I? What files were open? What was the decision I made last time?\n\nHeyStax eliminates that reconstruction entirely. Each Stax has a Start Page with a concrete next action — not \"work on the report\" but \"add the Q3 comparison table to slide 7.\" When your brain can't generate a start signal, the Stax provides one. Open the Stax, see the action, do the action. The five-minute rule becomes effortless when you don't spend four of those five minutes remembering what to do. Hey — HeyStax's quick capture command — lets you drop the next action into any Stax from wherever you are, so your future self always has a clear entry point waiting.",
     staxPattern:
       '"Q3 Report – Slide Deck" with Start Page: "Add Q3 comparison table to slide 7"',
-    seoTitle: "ADHD Task Initiation Help | TabStax",
+    seoTitle: "ADHD Task Initiation Help | HeyStax",
     metaDescription:
-      "Can't start the task even though you know what to do? TabStax gives your ADHD brain a concrete next action every time you open a project — no reconstruction required.",
+      "Can't start the task even though you know what to do? HeyStax gives your ADHD brain a concrete next action every time you open a project — no reconstruction required.",
     keywords: [
       "ADHD task initiation",
       "ADHD can't start tasks",
@@ -2860,12 +2860,12 @@ export const useCases: UseCase[] = [
         a: "Task initiation is an executive function that allows you to begin tasks. ADHD brains often struggle to generate the internal 'start signal,' making it hard to begin even wanted tasks.",
       },
       {
-        q: "How does TabStax help with ADHD task initiation?",
+        q: "How does HeyStax help with ADHD task initiation?",
         a: "Each Stax saves a concrete next action on its Start Page. When you open a project, you see exactly what to do first — no reconstruction, no decision fatigue, just action.",
       },
       {
         q: "What is the Hey feature and how does it help with task initiation?",
-        a: "Hey is TabStax's quick-capture command. Drop a next action into any Stax from wherever you are — so your future self always finds a clear entry point, not a blank screen.",
+        a: "Hey is HeyStax's quick-capture command. Drop a next action into any Stax from wherever you are — so your future self always finds a clear entry point, not a blank screen.",
       },
     ],
     relatedSlugs: ["neurodivergent-builder", "adhd-tab-hoarder-external-memory", "adhd-project-graveyard"],
@@ -2879,12 +2879,12 @@ export const useCases: UseCase[] = [
     summary:
       "Context switching costs everyone productivity — but ADHD brains pay double. Studies show up to 40% of productive time is lost to task transitions. For ADHD minds already managing executive function overhead, that's a career-threatening tax.",
     content:
-      "A Harvard Business Review study found the average knowledge worker toggles between applications 1,200 times per day, losing roughly five working weeks per year to reorientation alone. For neurotypical brains, that's bad. For ADHD brains, it's devastating. ADHD already taxes executive function — attention regulation, working memory, inhibitory control — and every context switch demands more of the same depleted resources. Each transition is a micro-decision: stop this, start that, reload the mental model, find the right tabs, remember the last decision. Neurotypical brains handle these transitions semi-automatically. ADHD brains treat each one as a brand new cognitive event.\n\nThe result is a double tax: the universal context-switching cost that everyone pays, plus the ADHD-specific reconstruction cost of re-entering a mental state your working memory already dropped. The research from FocusBear notes that ADHD brains can lose up to 40% of productive capacity to switching costs alone. This isn't a focus problem — it's an infrastructure problem. Your brain needs external scaffolding to make transitions cheap.\n\nTabStax makes context switching nearly free. Each project is a named Stax with saved tabs, notes, and a next action. Switching projects means closing one Stax and opening another — a ten-second operation that preserves full context on both sides. No hunting for tabs, no rebuilding mental models, no lost decisions. The 40% tax drops to almost zero because the reconstruction happens in your browser, not your brain. For ADHD professionals juggling multiple projects, clients, or roles, this isn't a nice-to-have — it's the difference between burning out by Wednesday and sustaining flow all week.",
+      "A Harvard Business Review study found the average knowledge worker toggles between applications 1,200 times per day, losing roughly five working weeks per year to reorientation alone. For neurotypical brains, that's bad. For ADHD brains, it's devastating. ADHD already taxes executive function — attention regulation, working memory, inhibitory control — and every context switch demands more of the same depleted resources. Each transition is a micro-decision: stop this, start that, reload the mental model, find the right tabs, remember the last decision. Neurotypical brains handle these transitions semi-automatically. ADHD brains treat each one as a brand new cognitive event.\n\nThe result is a double tax: the universal context-switching cost that everyone pays, plus the ADHD-specific reconstruction cost of re-entering a mental state your working memory already dropped. The research from FocusBear notes that ADHD brains can lose up to 40% of productive capacity to switching costs alone. This isn't a focus problem — it's an infrastructure problem. Your brain needs external scaffolding to make transitions cheap.\n\nHeyStax makes context switching nearly free. Each project is a named Stax with saved tabs, notes, and a next action. Switching projects means closing one Stax and opening another — a ten-second operation that preserves full context on both sides. No hunting for tabs, no rebuilding mental models, no lost decisions. The 40% tax drops to almost zero because the reconstruction happens in your browser, not your brain. For ADHD professionals juggling multiple projects, clients, or roles, this isn't a nice-to-have — it's the difference between burning out by Wednesday and sustaining flow all week.",
     staxPattern:
       '"Client A – Strategy Deck" / "Client B – Data Migration" / "Internal – Sprint Planning"',
-    seoTitle: "ADHD Context Switching Solution | TabStax",
+    seoTitle: "ADHD Context Switching Solution | HeyStax",
     metaDescription:
-      "ADHD brains lose up to 40% of productive time to context switching. TabStax makes project transitions nearly free — close one Stax, open another, full context preserved.",
+      "ADHD brains lose up to 40% of productive time to context switching. HeyStax makes project transitions nearly free — close one Stax, open another, full context preserved.",
     keywords: [
       "ADHD context switching",
       "context switching cost ADHD",
@@ -2902,7 +2902,7 @@ export const useCases: UseCase[] = [
         a: "Research suggests up to 40% of productive capacity can be lost to switching costs. The average worker loses five working weeks per year to reorientation alone.",
       },
       {
-        q: "How does TabStax reduce context switching costs?",
+        q: "How does HeyStax reduce context switching costs?",
         a: "Each project is a saved Stax with tabs, notes, and next actions. Switching projects is a ten-second operation — close one Stax, open another — with zero reconstruction needed.",
       },
     ],
@@ -2917,12 +2917,12 @@ export const useCases: UseCase[] = [
     summary:
       "You've started a podcast, a Notion system, three side projects, and a workout plan this year. None survived past the dopamine crash. Your project graveyard grows while your confidence shrinks.",
     content:
-      "The ADHD project graveyard is practically a rite of passage. Each new idea arrives with a surge of dopamine — the brain lights up, you research obsessively, you set up the infrastructure, and you produce more in 48 hours than most people do in a week. Then the novelty wears off. The dopamine crashes. The thing that felt electric yesterday now feels like homework. You open the project, stare at it, close it, and open something new instead. As ADHD coach Dana Rayburn notes, the cycle is predictable: hyperfocus, distraction or burnout, abandonment.\n\nThe emotional toll compounds. Each abandoned project becomes evidence in the case your inner critic is building: you're unreliable, you never finish anything, why even start? Research from The Mini ADHD Coach shows that unfinished projects create visual clutter that acts as a permanent to-do list, adding background stress that makes starting the next thing even harder.\n\nTabStax breaks the abandonment cycle in two ways. First, it makes re-entry free. When the dopamine returns — and it often does, unpredictably — opening the Stax puts you exactly where you left off. No setup cost, no reconstruction, no staring at a project you can't remember the state of. The Start Page says what to do next, and you do it. Second, TabStax makes strategic pausing intentional. Instead of \"I abandoned this,\" it's \"I parked this Stax with a clear next action and I'll come back when I'm ready.\" The graveyard becomes a garage — projects on pause, not projects on death row. When you see six parked Stax with clear next actions, you stop feeling like a failure and start feeling like someone with a lot of interesting things in progress.",
+      "The ADHD project graveyard is practically a rite of passage. Each new idea arrives with a surge of dopamine — the brain lights up, you research obsessively, you set up the infrastructure, and you produce more in 48 hours than most people do in a week. Then the novelty wears off. The dopamine crashes. The thing that felt electric yesterday now feels like homework. You open the project, stare at it, close it, and open something new instead. As ADHD coach Dana Rayburn notes, the cycle is predictable: hyperfocus, distraction or burnout, abandonment.\n\nThe emotional toll compounds. Each abandoned project becomes evidence in the case your inner critic is building: you're unreliable, you never finish anything, why even start? Research from The Mini ADHD Coach shows that unfinished projects create visual clutter that acts as a permanent to-do list, adding background stress that makes starting the next thing even harder.\n\nHeyStax breaks the abandonment cycle in two ways. First, it makes re-entry free. When the dopamine returns — and it often does, unpredictably — opening the Stax puts you exactly where you left off. No setup cost, no reconstruction, no staring at a project you can't remember the state of. The Start Page says what to do next, and you do it. Second, HeyStax makes strategic pausing intentional. Instead of \"I abandoned this,\" it's \"I parked this Stax with a clear next action and I'll come back when I'm ready.\" The graveyard becomes a garage — projects on pause, not projects on death row. When you see six parked Stax with clear next actions, you stop feeling like a failure and start feeling like someone with a lot of interesting things in progress.",
     staxPattern:
       '"Podcast – Episode 3 Edit" (parked) / "Side Project – ClaimAlert MVP" (active) / "Workout Plan – Week 4" (parked)',
-    seoTitle: "ADHD Unfinished Projects Solution | TabStax",
+    seoTitle: "ADHD Unfinished Projects Solution | HeyStax",
     metaDescription:
-      "Turn your ADHD project graveyard into a project garage. TabStax lets you park and resume projects with zero setup cost — so the dopamine return finds a clear next action.",
+      "Turn your ADHD project graveyard into a project garage. HeyStax lets you park and resume projects with zero setup cost — so the dopamine return finds a clear next action.",
     keywords: [
       "ADHD unfinished projects",
       "ADHD project abandonment",
@@ -2936,8 +2936,8 @@ export const useCases: UseCase[] = [
         a: "ADHD brains crave novelty dopamine. New projects deliver it; continuing old ones doesn't. When the dopamine crashes, the project feels impossible to resume — especially without clear context.",
       },
       {
-        q: "How does TabStax help ADHD creators finish projects?",
-        a: "TabStax saves each project as a Stax with a concrete next action. When motivation returns, re-entry is instant — no setup cost, no staring at a blank screen wondering where you left off.",
+        q: "How does HeyStax help ADHD creators finish projects?",
+        a: "HeyStax saves each project as a Stax with a concrete next action. When motivation returns, re-entry is instant — no setup cost, no staring at a blank screen wondering where you left off.",
       },
       {
         q: "What's the difference between a project graveyard and a project garage?",
@@ -2953,14 +2953,14 @@ export const useCases: UseCase[] = [
     category: "Rituals, Meetings & Team Rhythms",
     persona: "ADHD Employee",
     summary:
-      "Your manager says \"just do the work and update me when it's done.\" But ADHD brains need external accountability checkpoints to function. Without them, tasks drift into the void. TabStax Hey gives you the structure your manager won't.",
+      "Your manager says \"just do the work and update me when it's done.\" But ADHD brains need external accountability checkpoints to function. Without them, tasks drift into the void. HeyStax Hey gives you the structure your manager won't.",
     content:
-      "In r/ADHD communities, this scenario appears constantly: a well-meaning manager says \"I trust you, don't bother updating me, just get it done.\" For a neurotypical employee, that's liberation. For someone with ADHD, it's a death sentence for productivity. External accountability isn't a crutch — it's a core part of how ADHD brains regulate attention and initiate tasks. Without check-in points, deadlines become abstract, tasks lose urgency, and the \"I'll do it later\" spiral begins.\n\nThe research is clear: ADHD brains operate on an interest-based nervous system, not an importance-based one. Urgency, novelty, and external pressure are the primary activation levers. Remove external accountability and you remove one of the three levers that actually work. Body doubling studies show that just having another person aware of your work dramatically improves task completion. The manager who says \"don't update me\" has unknowingly removed the scaffolding.\n\nTabStax fills this gap without requiring your manager to change. Hey — the quick-capture command — lets you log next actions into any Stax from wherever you are. Each action becomes a self-accountability checkpoint: \"Sent draft to Sarah for review,\" \"Waiting on API key from DevOps,\" \"Next: add error handling to /login.\" The Attention Stax dashboard shows all your projects with their current next actions, creating a visual accountability board you can check every morning. You don't need your manager to ask \"where are you on this?\" — you can see the answer yourself. And when you do need to give an update, every Stax has a ready-made status trail. The structure lives in your tools, not in someone else's willingness to provide it.",
+      "In r/ADHD communities, this scenario appears constantly: a well-meaning manager says \"I trust you, don't bother updating me, just get it done.\" For a neurotypical employee, that's liberation. For someone with ADHD, it's a death sentence for productivity. External accountability isn't a crutch — it's a core part of how ADHD brains regulate attention and initiate tasks. Without check-in points, deadlines become abstract, tasks lose urgency, and the \"I'll do it later\" spiral begins.\n\nThe research is clear: ADHD brains operate on an interest-based nervous system, not an importance-based one. Urgency, novelty, and external pressure are the primary activation levers. Remove external accountability and you remove one of the three levers that actually work. Body doubling studies show that just having another person aware of your work dramatically improves task completion. The manager who says \"don't update me\" has unknowingly removed the scaffolding.\n\nHeyStax fills this gap without requiring your manager to change. Hey — the quick-capture command — lets you log next actions into any Stax from wherever you are. Each action becomes a self-accountability checkpoint: \"Sent draft to Sarah for review,\" \"Waiting on API key from DevOps,\" \"Next: add error handling to /login.\" The Attention Stax dashboard shows all your projects with their current next actions, creating a visual accountability board you can check every morning. You don't need your manager to ask \"where are you on this?\" — you can see the answer yourself. And when you do need to give an update, every Stax has a ready-made status trail. The structure lives in your tools, not in someone else's willingness to provide it.",
     staxPattern:
       '"Project Alpha – Backend" with Hey actions: "Sent draft to Sarah" → "Waiting on API key" → "Add error handling to /login"',
-    seoTitle: "ADHD External Accountability Tool | TabStax",
+    seoTitle: "ADHD External Accountability Tool | HeyStax",
     metaDescription:
-      "Manager says 'don't update me' but your ADHD brain needs checkpoints? TabStax Hey gives you self-accountability with logged next actions across every project.",
+      "Manager says 'don't update me' but your ADHD brain needs checkpoints? HeyStax Hey gives you self-accountability with logged next actions across every project.",
     keywords: [
       "ADHD external accountability",
       "ADHD needs check-ins work",
@@ -2974,11 +2974,11 @@ export const useCases: UseCase[] = [
         a: "ADHD brains activate through urgency, novelty, and external pressure. Without check-in points, tasks lose urgency and drift — it's neurological, not motivational.",
       },
       {
-        q: "How does TabStax replace manager check-ins for ADHD workers?",
+        q: "How does HeyStax replace manager check-ins for ADHD workers?",
         a: "Hey lets you log next actions into any Stax as you work. The Attention Stax dashboard shows all projects with current actions — a self-serve accountability board.",
       },
       {
-        q: "What is Hey in TabStax?",
+        q: "What is Hey in HeyStax?",
         a: "Hey is a quick-capture command that lets you add next actions to any Stax from wherever you are — browser, terminal, or web app — without switching context.",
       },
     ],
@@ -2991,14 +2991,14 @@ export const useCases: UseCase[] = [
     category: "Admin, Money & Systems",
     persona: "ADHD Job Seeker",
     summary:
-      "You crushed the interview. You were brilliant in the first meeting. Then onboarding hit — new systems, new people, no routine — and your executive function collapsed. ADHD workers are 60% more likely to be fired. TabStax can change that.",
+      "You crushed the interview. You were brilliant in the first meeting. Then onboarding hit — new systems, new people, no routine — and your executive function collapsed. ADHD workers are 60% more likely to be fired. HeyStax can change that.",
     content:
-      "In ADHD communities, the story repeats with heartbreaking regularity: talented people who ace interviews, impress in early meetings, then crumble during the chaotic first weeks of a new role. Research by Dr. Russell Barkley shows employees with ADHD are 60% more likely to be fired and 30% more likely to have chronic employment issues. The reason isn't ability — it's the onboarding period, which demands maximum executive function at the exact moment you have the least structural support.\n\nNew job onboarding requires learning multiple new systems simultaneously, remembering names and org structures, absorbing unwritten norms, managing time without established routines, and performing well enough to survive the probation period. For ADHD brains, this is a perfect storm: working memory overload, no established patterns, zero autopilot, and the pressure of being watched. Four to five months in, many experience what researchers describe as a \"chemical switch\" — the novelty dopamine evaporates and forcing yourself through the day becomes agonizing.\n\nTabStax gives you the scaffolding your new workplace won't. On day one, create a Stax for each major system you're learning: \"HR & Benefits Stax\" with enrollment pages, policy docs, and a checklist. \"Team Wiki Stax\" with the org chart, Slack channels, and meeting cadences. \"Daily Work Stax\" with the tools you'll use most, plus a Start Page listing your first concrete deliverables. Each Stax becomes a reloadable orientation kit. Instead of asking your manager the same question twice — a fast track to a bad impression — you open the Stax and the answer is right there. The Hey feature logs micro-progress throughout the day so you can show your manager a clear trail of what you've done and what's next, even when your brain feels like it's drowning.",
+      "In ADHD communities, the story repeats with heartbreaking regularity: talented people who ace interviews, impress in early meetings, then crumble during the chaotic first weeks of a new role. Research by Dr. Russell Barkley shows employees with ADHD are 60% more likely to be fired and 30% more likely to have chronic employment issues. The reason isn't ability — it's the onboarding period, which demands maximum executive function at the exact moment you have the least structural support.\n\nNew job onboarding requires learning multiple new systems simultaneously, remembering names and org structures, absorbing unwritten norms, managing time without established routines, and performing well enough to survive the probation period. For ADHD brains, this is a perfect storm: working memory overload, no established patterns, zero autopilot, and the pressure of being watched. Four to five months in, many experience what researchers describe as a \"chemical switch\" — the novelty dopamine evaporates and forcing yourself through the day becomes agonizing.\n\nHeyStax gives you the scaffolding your new workplace won't. On day one, create a Stax for each major system you're learning: \"HR & Benefits Stax\" with enrollment pages, policy docs, and a checklist. \"Team Wiki Stax\" with the org chart, Slack channels, and meeting cadences. \"Daily Work Stax\" with the tools you'll use most, plus a Start Page listing your first concrete deliverables. Each Stax becomes a reloadable orientation kit. Instead of asking your manager the same question twice — a fast track to a bad impression — you open the Stax and the answer is right there. The Hey feature logs micro-progress throughout the day so you can show your manager a clear trail of what you've done and what's next, even when your brain feels like it's drowning.",
     staxPattern:
       '"New Job – HR & Benefits" / "New Job – Team Wiki & People" / "New Job – Daily Work" / "New Job – First 30 Days"',
-    seoTitle: "ADHD New Job Onboarding Survival Tool | TabStax",
+    seoTitle: "ADHD New Job Onboarding Survival Tool | HeyStax",
     metaDescription:
-      "ADHD workers are 60% more likely to be fired. TabStax turns chaotic new job onboarding into reloadable orientation kits with clear next actions for every system.",
+      "ADHD workers are 60% more likely to be fired. HeyStax turns chaotic new job onboarding into reloadable orientation kits with clear next actions for every system.",
     keywords: [
       "ADHD new job onboarding",
       "ADHD fired from job",
@@ -3012,11 +3012,11 @@ export const useCases: UseCase[] = [
         a: "Onboarding demands maximum executive function — learning new systems, people, and norms simultaneously — at the exact moment you have no established routines to lean on.",
       },
       {
-        q: "How can TabStax help ADHD workers survive onboarding?",
+        q: "How can HeyStax help ADHD workers survive onboarding?",
         a: "Create a Stax for each system you're learning. Each one saves the relevant tabs, docs, and a Start Page with next steps — a reloadable orientation kit instead of scattered bookmarks.",
       },
       {
-        q: "How does TabStax prevent asking the same question twice?",
+        q: "How does HeyStax prevent asking the same question twice?",
         a: "Save answers, docs, and process pages in the relevant Stax. Instead of asking your manager again, open the Stax — the answer is already there with context.",
       },
     ],
@@ -3029,14 +3029,14 @@ export const useCases: UseCase[] = [
     category: "Health, Recovery & Performance",
     persona: "ADHD Professional",
     summary:
-      "It's 6 PM. You've been \"working\" since 9 AM. But you can't name a single thing you finished. Time blindness isn't poor time management — it's a broken internal clock. TabStax makes your day visible.",
+      "It's 6 PM. You've been \"working\" since 9 AM. But you can't name a single thing you finished. Time blindness isn't poor time management — it's a broken internal clock. HeyStax makes your day visible.",
     content:
-      "Time blindness is one of ADHD's most misunderstood symptoms. It's not that you're bad at managing time — it's that you literally cannot feel time passing. An hour feels like fifteen minutes when you're hyperfocused, and fifteen minutes feels like an hour when you're stuck. The result: you look up from your screen at 6 PM, genuinely shocked that nine hours have passed, unable to account for most of them. The evening panic sets in: \"Where is my life going, and why can I never seem to have enough time?\"\n\nThe standard advice — use a calendar, set timers, plan your day — assumes you can sense duration and urgency. For ADHD brains, calendars are abstract artifacts that exist in a different dimension. You set the timer, then forget it's running. You plan the day, then the plan evaporates by 10 AM. What you need isn't better planning — it's a system that makes time visible through your work itself.\n\nTabStax creates a natural time log without requiring you to track anything manually. Each project is a Stax. Opening and closing Stax throughout the day creates a trail of what you worked on and when. The Attention Stax dashboard (Must / Should / Good / Meh) forces a daily triage that takes thirty seconds: what matters today? When you open the Must Stax and see \"Draft the proposal intro — just the first paragraph\" on the Start Page, you work on that instead of falling into a three-hour research rabbit hole. At the end of the day, your Stax history shows you exactly where the time went. Not a vague sense of \"I was busy\" — a concrete record of projects touched, actions completed, and progress made. Time blindness doesn't disappear, but its damage does.",
+      "Time blindness is one of ADHD's most misunderstood symptoms. It's not that you're bad at managing time — it's that you literally cannot feel time passing. An hour feels like fifteen minutes when you're hyperfocused, and fifteen minutes feels like an hour when you're stuck. The result: you look up from your screen at 6 PM, genuinely shocked that nine hours have passed, unable to account for most of them. The evening panic sets in: \"Where is my life going, and why can I never seem to have enough time?\"\n\nThe standard advice — use a calendar, set timers, plan your day — assumes you can sense duration and urgency. For ADHD brains, calendars are abstract artifacts that exist in a different dimension. You set the timer, then forget it's running. You plan the day, then the plan evaporates by 10 AM. What you need isn't better planning — it's a system that makes time visible through your work itself.\n\nHeyStax creates a natural time log without requiring you to track anything manually. Each project is a Stax. Opening and closing Stax throughout the day creates a trail of what you worked on and when. The Attention Stax dashboard (Must / Should / Good / Meh) forces a daily triage that takes thirty seconds: what matters today? When you open the Must Stax and see \"Draft the proposal intro — just the first paragraph\" on the Start Page, you work on that instead of falling into a three-hour research rabbit hole. At the end of the day, your Stax history shows you exactly where the time went. Not a vague sense of \"I was busy\" — a concrete record of projects touched, actions completed, and progress made. Time blindness doesn't disappear, but its damage does.",
     staxPattern:
       'Attention Stax: Must → "Proposal Draft" / Should → "Code Review" / Good → "Blog Post Research" / Meh → "Inbox Zero"',
-    seoTitle: "ADHD Time Blindness Productivity Tool | TabStax",
+    seoTitle: "ADHD Time Blindness Productivity Tool | HeyStax",
     metaDescription:
-      "Can't feel time passing? TabStax makes your workday visible with project-based context switching that creates a natural time trail — no manual tracking required.",
+      "Can't feel time passing? HeyStax makes your workday visible with project-based context switching that creates a natural time trail — no manual tracking required.",
     keywords: [
       "ADHD time blindness",
       "ADHD where did the day go",
@@ -3050,11 +3050,11 @@ export const useCases: UseCase[] = [
         a: "Time blindness means you can't accurately sense time passing. Hours feel like minutes during hyperfocus, and the day ends with no clear account of where it went.",
       },
       {
-        q: "How does TabStax help with ADHD time blindness?",
+        q: "How does HeyStax help with ADHD time blindness?",
         a: "Attention Stax forces a 30-second daily triage (Must/Should/Good/Meh). Opening and closing Stax throughout the day creates a visible trail of what you worked on.",
       },
       {
-        q: "Do I need to manually track time in TabStax?",
+        q: "Do I need to manually track time in HeyStax?",
         a: "No. Your natural workflow of opening, working in, and closing Stax creates an automatic record. No timers, no logging — just work, and the trail builds itself.",
       },
     ],
@@ -3069,12 +3069,12 @@ export const useCases: UseCase[] = [
     summary:
       "You have twelve things to do. They all feel equally urgent. You can't decide which one to start, so you start none of them. The guilt builds while the clock runs. ADHD choice paralysis isn't procrastination — it's a brain that can't rank.",
     content:
-      "ADHD decision paralysis sits at the intersection of three executive function deficits: working memory (can't hold all options in mind), flexible thinking (can't shift between evaluation criteria), and inhibitory control (can't dismiss low-priority options). The result is a freeze state that looks like procrastination but feels like drowning. You're not avoiding work — you're overwhelmed by the inability to choose between competing tasks. Studies show that when people face too many options, they're more likely to make no decision at all. For ADHD brains, \"too many\" can be as few as three.\n\nThe inner experience is exhausting. You spend the entire day in mental gymnastics — weighing tasks, second-guessing, starting one thing then switching to another because maybe that's more important. By evening, you're mentally drained despite producing almost nothing. The shame compounds: \"I had the whole day and I did nothing.\" The Mini ADHD Coach describes three overlapping types: mental paralysis (too many thoughts), task paralysis (can't start what you've chosen), and choice paralysis (can't choose what to start).\n\nTabStax attacks choice paralysis directly through the Attention Stax system. The Must / Should / Good / Meh framework pre-decides priority for you. During a calm moment — maybe Sunday evening or first thing Monday — you drag your Stax into lanes. \"Must\" gets the client deadline. \"Should\" gets the code review. \"Good\" gets the blog post. \"Meh\" gets inbox maintenance. Now when Monday morning hits and your brain freezes, you don't decide anything. You open the first Stax in the Must lane. The Start Page tells you what to do. Decision eliminated. Action begins. The framework works because it separates the deciding from the doing — you triage when you have clarity, and execute when you don't.",
+      "ADHD decision paralysis sits at the intersection of three executive function deficits: working memory (can't hold all options in mind), flexible thinking (can't shift between evaluation criteria), and inhibitory control (can't dismiss low-priority options). The result is a freeze state that looks like procrastination but feels like drowning. You're not avoiding work — you're overwhelmed by the inability to choose between competing tasks. Studies show that when people face too many options, they're more likely to make no decision at all. For ADHD brains, \"too many\" can be as few as three.\n\nThe inner experience is exhausting. You spend the entire day in mental gymnastics — weighing tasks, second-guessing, starting one thing then switching to another because maybe that's more important. By evening, you're mentally drained despite producing almost nothing. The shame compounds: \"I had the whole day and I did nothing.\" The Mini ADHD Coach describes three overlapping types: mental paralysis (too many thoughts), task paralysis (can't start what you've chosen), and choice paralysis (can't choose what to start).\n\nHeyStax attacks choice paralysis directly through the Attention Stax system. The Must / Should / Good / Meh framework pre-decides priority for you. During a calm moment — maybe Sunday evening or first thing Monday — you drag your Stax into lanes. \"Must\" gets the client deadline. \"Should\" gets the code review. \"Good\" gets the blog post. \"Meh\" gets inbox maintenance. Now when Monday morning hits and your brain freezes, you don't decide anything. You open the first Stax in the Must lane. The Start Page tells you what to do. Decision eliminated. Action begins. The framework works because it separates the deciding from the doing — you triage when you have clarity, and execute when you don't.",
     staxPattern:
       'Must → "Client Deadline – Final Deliverable" / Should → "Code Review – PR #47" / Good → "Blog Post Draft" / Meh → "Email & Admin"',
-    seoTitle: "ADHD Decision Paralysis Tool | TabStax",
+    seoTitle: "ADHD Decision Paralysis Tool | HeyStax",
     metaDescription:
-      "Can't decide what to work on? TabStax Attention Stax pre-sorts your projects into Must/Should/Good/Meh — so your frozen brain just opens the first Stax and starts.",
+      "Can't decide what to work on? HeyStax Attention Stax pre-sorts your projects into Must/Should/Good/Meh — so your frozen brain just opens the first Stax and starts.",
     keywords: [
       "ADHD decision paralysis",
       "ADHD choice overload",
@@ -3088,7 +3088,7 @@ export const useCases: UseCase[] = [
         a: "ADHD impairs working memory, flexible thinking, and inhibitory control — the three skills needed to evaluate options and commit to a choice. Too many options causes a freeze.",
       },
       {
-        q: "How does TabStax Attention Stax help with ADHD decision paralysis?",
+        q: "How does HeyStax Attention Stax help with ADHD decision paralysis?",
         a: "The Must/Should/Good/Meh framework lets you pre-sort projects when calm. When paralysis hits, just open the first Must Stax — no deciding needed, just doing.",
       },
       {
@@ -3107,12 +3107,12 @@ export const useCases: UseCase[] = [
     summary:
       "The office gave you structure you didn't know you needed — the commute, the boss walking by, the meeting rhythm. Now you work from home and the entire day is formless. Some days you work 14 hours, some days you work zero.",
     content:
-      "Remote work is a double-edged sword for ADHD brains. The quiet is welcome. The flexibility is lifesaving. But the structure — the ambient accountability of coworkers, the commute that signals \"work starts now,\" the meeting cadences that break the day into blocks — all of that disappears. Research from Mental Health America and ADDitude Magazine consistently finds that ADHD remote workers struggle most with self-regulation: starting work, staying on task, knowing when to stop, and separating \"work brain\" from \"home brain.\"\n\nThe paradox is brutal: 64% of ADHD employees rank schedule flexibility as their most valued workplace benefit, yet remote workers with ADHD report finding daily tasks 17% more challenging than on-site peers. Without physical separation between work and home, many adults with ADHD find themselves either unable to start work or unable to stop. One common pattern: working from 7 AM until 10 PM because the computer is always there and you \"should always be working.\" Another: lying on the couch unable to open the laptop despite mounting deadlines.\n\nTabStax recreates the structural scaffolding that the office provided. Morning ritual: open the Attention Stax dashboard, spend thirty seconds dragging projects into Must / Should / Good / Meh. That's your daily plan — the commute replacement. During the day, each project lives in its own Stax. Opening a Stax is clocking into that project. Closing it is clocking out. The physical act of switching Stax creates artificial boundaries your home environment doesn't provide. At the end of the day, closing all Stax is your commute home — a signal to your brain that work is done. The structure lives in the tool, not in the environment, so it follows you whether you're at your desk, the kitchen table, or a coffee shop.",
+      "Remote work is a double-edged sword for ADHD brains. The quiet is welcome. The flexibility is lifesaving. But the structure — the ambient accountability of coworkers, the commute that signals \"work starts now,\" the meeting cadences that break the day into blocks — all of that disappears. Research from Mental Health America and ADDitude Magazine consistently finds that ADHD remote workers struggle most with self-regulation: starting work, staying on task, knowing when to stop, and separating \"work brain\" from \"home brain.\"\n\nThe paradox is brutal: 64% of ADHD employees rank schedule flexibility as their most valued workplace benefit, yet remote workers with ADHD report finding daily tasks 17% more challenging than on-site peers. Without physical separation between work and home, many adults with ADHD find themselves either unable to start work or unable to stop. One common pattern: working from 7 AM until 10 PM because the computer is always there and you \"should always be working.\" Another: lying on the couch unable to open the laptop despite mounting deadlines.\n\nHeyStax recreates the structural scaffolding that the office provided. Morning ritual: open the Attention Stax dashboard, spend thirty seconds dragging projects into Must / Should / Good / Meh. That's your daily plan — the commute replacement. During the day, each project lives in its own Stax. Opening a Stax is clocking into that project. Closing it is clocking out. The physical act of switching Stax creates artificial boundaries your home environment doesn't provide. At the end of the day, closing all Stax is your commute home — a signal to your brain that work is done. The structure lives in the tool, not in the environment, so it follows you whether you're at your desk, the kitchen table, or a coffee shop.",
     staxPattern:
       'Morning: Open Attention Stax → Drag into lanes. Workday: Open/close project Stax. Evening: Close all Stax = "commute home."',
-    seoTitle: "ADHD Remote Work Structure Tool | TabStax",
+    seoTitle: "ADHD Remote Work Structure Tool | HeyStax",
     metaDescription:
-      "Lost the office structure your ADHD brain depended on? TabStax recreates daily scaffolding with project-based context switching and a 30-second morning triage.",
+      "Lost the office structure your ADHD brain depended on? HeyStax recreates daily scaffolding with project-based context switching and a 30-second morning triage.",
     keywords: [
       "ADHD remote work",
       "ADHD work from home structure",
@@ -3126,11 +3126,11 @@ export const useCases: UseCase[] = [
         a: "The office provides external structure — commutes, coworkers, meeting rhythms — that ADHD brains unknowingly depend on. At home, you must generate all that structure yourself.",
       },
       {
-        q: "How does TabStax replace office structure for ADHD remote workers?",
+        q: "How does HeyStax replace office structure for ADHD remote workers?",
         a: "Morning Attention Stax triage replaces the commute. Opening/closing project Stax creates work boundaries. Closing all Stax at day's end signals 'work is done.'",
       },
       {
-        q: "Can TabStax help with ADHD work-life boundary problems?",
+        q: "Can HeyStax help with ADHD work-life boundary problems?",
         a: "Yes. The physical act of closing all Stax creates a clear 'commute home' moment — a signal to your brain that work mode is over, even when your desk is in your bedroom.",
       },
     ],
@@ -3145,12 +3145,12 @@ export const useCases: UseCase[] = [
     summary:
       "You love the freedom of freelancing — varied work, no boss, choose your own hours. But without external structure, deadlines slip, clients get ghosted, and the guilt-anxiety spiral makes everything worse.",
     content:
-      "Freelancing attracts ADHD brains for good reason: novelty, autonomy, variety, and pressure-driven deadlines. But the same condition that makes you brilliant in a deadline sprint makes you terrible at everything between sprints. Without a boss, meetings, or team accountability, tasks drift. Invoices go unsent. Client emails sit unanswered. That proposal you promised \"by Friday\" is now ten days late and you're avoiding the client entirely because the shame of being late makes it harder to start.\n\nADHD coach and freelancer communities describe a common death spiral: miss a deadline → feel shame → avoid the client → deadline gets later → shame intensifies → avoid harder. Going freelance can be a \"tipping point\" for ADHD diagnosis — where struggles that were partially buffered by office structure become catastrophically visible. The freelancer with ADHD isn't less talented. They're operating without the scaffolding that neurotypical work environments provide by default.\n\nTabStax gives freelancers the client management infrastructure their brain can't build alone. Each client gets a Stax: the project brief, communication threads, deliverable docs, and — critically — a Start Page with the current deadline and next concrete action. The Attention Stax dashboard shows all clients in priority lanes. When you open the dashboard Monday morning, you see: Must → \"Acme Corp: deliver wireframes by Wednesday\" / Should → \"Bloom Studio: first draft review\" / Good → \"Personal site redesign.\" The Hey command lets you log progress from anywhere: \"Hey Acme Corp: sent wireframes for review.\" Every client has a visible status trail, so when you do check in, you have something concrete to share instead of a vague \"still working on it.\" The structure doesn't require willpower — it requires opening the dashboard.",
+      "Freelancing attracts ADHD brains for good reason: novelty, autonomy, variety, and pressure-driven deadlines. But the same condition that makes you brilliant in a deadline sprint makes you terrible at everything between sprints. Without a boss, meetings, or team accountability, tasks drift. Invoices go unsent. Client emails sit unanswered. That proposal you promised \"by Friday\" is now ten days late and you're avoiding the client entirely because the shame of being late makes it harder to start.\n\nADHD coach and freelancer communities describe a common death spiral: miss a deadline → feel shame → avoid the client → deadline gets later → shame intensifies → avoid harder. Going freelance can be a \"tipping point\" for ADHD diagnosis — where struggles that were partially buffered by office structure become catastrophically visible. The freelancer with ADHD isn't less talented. They're operating without the scaffolding that neurotypical work environments provide by default.\n\nHeyStax gives freelancers the client management infrastructure their brain can't build alone. Each client gets a Stax: the project brief, communication threads, deliverable docs, and — critically — a Start Page with the current deadline and next concrete action. The Attention Stax dashboard shows all clients in priority lanes. When you open the dashboard Monday morning, you see: Must → \"Acme Corp: deliver wireframes by Wednesday\" / Should → \"Bloom Studio: first draft review\" / Good → \"Personal site redesign.\" The Hey command lets you log progress from anywhere: \"Hey Acme Corp: sent wireframes for review.\" Every client has a visible status trail, so when you do check in, you have something concrete to share instead of a vague \"still working on it.\" The structure doesn't require willpower — it requires opening the dashboard.",
     staxPattern:
       '"Acme Corp – Wireframes" / "Bloom Studio – Brand Guidelines" / "Personal – Site Redesign"',
-    seoTitle: "ADHD Freelancer Deadline Tool | TabStax",
+    seoTitle: "ADHD Freelancer Deadline Tool | HeyStax",
     metaDescription:
-      "ADHD freelancer missing deadlines? TabStax gives each client a Stax with next actions and deadlines visible on the Attention dashboard — structure without a boss.",
+      "ADHD freelancer missing deadlines? HeyStax gives each client a Stax with next actions and deadlines visible on the Attention dashboard — structure without a boss.",
     keywords: [
       "ADHD freelancer productivity",
       "ADHD self-employed deadlines",
@@ -3164,11 +3164,11 @@ export const useCases: UseCase[] = [
         a: "Freelancing removes the external structure — bosses, meetings, team accountability — that ADHD brains rely on to activate. Without it, deadlines become abstract and drift.",
       },
       {
-        q: "How does TabStax help ADHD freelancers manage multiple clients?",
+        q: "How does HeyStax help ADHD freelancers manage multiple clients?",
         a: "Each client gets a Stax with project tabs, docs, and a Start Page showing the current deadline and next action. The Attention dashboard shows all clients by priority.",
       },
       {
-        q: "Can I log client progress in TabStax without switching context?",
+        q: "Can I log client progress in HeyStax without switching context?",
         a: "Yes. The Hey command lets you add a next action or status update to any client Stax from wherever you are — no need to stop what you're doing.",
       },
     ],
@@ -3183,12 +3183,12 @@ export const useCases: UseCase[] = [
     summary:
       "The essay is due tomorrow. You've had two weeks. You've opened and closed the doc seventeen times. Your research tabs multiplied into sixty and you can't find the three that actually matter. Your brain isn't broken — it's overloaded.",
     content:
-      "College is an ADHD minefield. Every assignment triggers multiple paralysis types simultaneously: decision paralysis (which source to use?), task paralysis (how to start the introduction?), and time paralysis (it's due in 14 days so it doesn't feel real). Research from Riveta Labs shows that school creates the perfect storm of ADHD triggers: multi-subject decision paralysis, long-term project overwhelm, and unclear instructions that leave the first step ambiguous.\n\nThe browser makes it worse. A research session for one essay spawns forty tabs: journal articles, Wikipedia rabbit holes, that one blog post that seemed relevant, three YouTube explainers, and the assignment brief buried somewhere in the middle. By the time you've \"researched enough,\" you're exhausted from managing tabs and can't remember which sources actually support your argument. The essay sits blank while the tab bar overflows.\n\nTabStax turns research chaos into an actionable workspace. Create a Stax for each assignment: \"Psych 301 – Memory & Learning Essay.\" Save the assignment brief, your three best sources, the citation generator, and the doc you're writing in. The Start Page says: \"Thesis: spaced repetition outperforms cramming. Next action: write the introduction paragraph using the Smith 2024 study.\" Close all other tabs. Your sixty-tab research nightmare becomes a focused five-tab workspace with a clear first sentence to write. When you need to switch to another class, close this Stax and open \"Bio 210 – Lab Report.\" Neither assignment loses context. Neither bleeds tabs into the other. You stop drowning in research and start writing — because the Stax removed every obstacle between you and the first sentence.",
+      "College is an ADHD minefield. Every assignment triggers multiple paralysis types simultaneously: decision paralysis (which source to use?), task paralysis (how to start the introduction?), and time paralysis (it's due in 14 days so it doesn't feel real). Research from Riveta Labs shows that school creates the perfect storm of ADHD triggers: multi-subject decision paralysis, long-term project overwhelm, and unclear instructions that leave the first step ambiguous.\n\nThe browser makes it worse. A research session for one essay spawns forty tabs: journal articles, Wikipedia rabbit holes, that one blog post that seemed relevant, three YouTube explainers, and the assignment brief buried somewhere in the middle. By the time you've \"researched enough,\" you're exhausted from managing tabs and can't remember which sources actually support your argument. The essay sits blank while the tab bar overflows.\n\nHeyStax turns research chaos into an actionable workspace. Create a Stax for each assignment: \"Psych 301 – Memory & Learning Essay.\" Save the assignment brief, your three best sources, the citation generator, and the doc you're writing in. The Start Page says: \"Thesis: spaced repetition outperforms cramming. Next action: write the introduction paragraph using the Smith 2024 study.\" Close all other tabs. Your sixty-tab research nightmare becomes a focused five-tab workspace with a clear first sentence to write. When you need to switch to another class, close this Stax and open \"Bio 210 – Lab Report.\" Neither assignment loses context. Neither bleeds tabs into the other. You stop drowning in research and start writing — because the Stax removed every obstacle between you and the first sentence.",
     staxPattern:
       '"Psych 301 – Memory Essay" / "Bio 210 – Lab Report" / "CS 150 – Project Milestone 2"',
-    seoTitle: "ADHD Student Assignment Help Tool | TabStax",
+    seoTitle: "ADHD Student Assignment Help Tool | HeyStax",
     metaDescription:
-      "ADHD student can't start the assignment? TabStax turns research tab chaos into a focused workspace with a clear first action — write the sentence, not manage the tabs.",
+      "ADHD student can't start the assignment? HeyStax turns research tab chaos into a focused workspace with a clear first action — write the sentence, not manage the tabs.",
     keywords: [
       "ADHD student productivity",
       "ADHD college assignment help",
@@ -3202,7 +3202,7 @@ export const useCases: UseCase[] = [
         a: "Assignments trigger decision, task, and time paralysis simultaneously. The ADHD brain can't rank priorities, generate a start signal, or feel urgency for distant deadlines.",
       },
       {
-        q: "How does TabStax help ADHD students with research and writing?",
+        q: "How does HeyStax help ADHD students with research and writing?",
         a: "Create a Stax per assignment with only the tabs you need. The Start Page gives a concrete first action — 'write the intro using Smith 2024' — so you start writing, not searching.",
       },
       {
@@ -3219,14 +3219,14 @@ export const useCases: UseCase[] = [
     category: "Health, Recovery & Performance",
     persona: "Medicated ADHD Professional",
     summary:
-      "Your stimulant medication is a miracle until it isn't. Around 2 PM the crash hits — focus evaporates, irritability spikes, and the afternoon becomes a write-off. But your workday isn't over. TabStax helps you work with the cliff instead of against it.",
+      "Your stimulant medication is a miracle until it isn't. Around 2 PM the crash hits — focus evaporates, irritability spikes, and the afternoon becomes a write-off. But your workday isn't over. HeyStax helps you work with the cliff instead of against it.",
     content:
-      "Between 2 PM and 4 PM, adults on ADHD stimulant medication often experience what clinicians call \"medication rebound\" — a sudden return of symptoms, sometimes worse than baseline, as the drug's dopamine boost fades. Cleveland Clinic describes it as a \"full-blown crash\" that affects attention, productivity, and emotional regulation. Dr. William Dodson notes that almost all stimulant side effects occur when blood levels rise or fall — and the afternoon crash is the sharpest fall of the day.\n\nThe practical impact: your morning was productive. You crushed three tasks, wrote clear emails, stayed focused. Then 2 PM arrives and your brain turns to static. You stare at the screen, start five things, finish none, get irritable, and by 4 PM you're convinced you're a fraud who only works half a day. The gap between morning-you and afternoon-you feels like two different people.\n\nTabStax lets you design your day around the cliff instead of pretending it doesn't exist. Morning strategy: use your peak medication hours for Must Stax — the cognitively demanding work that requires full executive function. Triage the Attention Stax dashboard during morning clarity. Afternoon strategy: when the crash hits, switch to Good or Meh Stax — low-cognitive-load tasks like email triage, light code review, or reading. The key insight: each Stax has a Start Page calibrated to the energy level it requires. Your morning Must Stax says \"Write the technical spec introduction.\" Your afternoon Meh Stax says \"Reply to three emails — just replies, no new threads.\" You're still working through the crash, but the work matches your available capacity. Focus Mode — the full-screen single-action view — is especially powerful during the crash: one action, large text, nothing else. Even a depleted brain can do one thing at a time.",
+      "Between 2 PM and 4 PM, adults on ADHD stimulant medication often experience what clinicians call \"medication rebound\" — a sudden return of symptoms, sometimes worse than baseline, as the drug's dopamine boost fades. Cleveland Clinic describes it as a \"full-blown crash\" that affects attention, productivity, and emotional regulation. Dr. William Dodson notes that almost all stimulant side effects occur when blood levels rise or fall — and the afternoon crash is the sharpest fall of the day.\n\nThe practical impact: your morning was productive. You crushed three tasks, wrote clear emails, stayed focused. Then 2 PM arrives and your brain turns to static. You stare at the screen, start five things, finish none, get irritable, and by 4 PM you're convinced you're a fraud who only works half a day. The gap between morning-you and afternoon-you feels like two different people.\n\nHeyStax lets you design your day around the cliff instead of pretending it doesn't exist. Morning strategy: use your peak medication hours for Must Stax — the cognitively demanding work that requires full executive function. Triage the Attention Stax dashboard during morning clarity. Afternoon strategy: when the crash hits, switch to Good or Meh Stax — low-cognitive-load tasks like email triage, light code review, or reading. The key insight: each Stax has a Start Page calibrated to the energy level it requires. Your morning Must Stax says \"Write the technical spec introduction.\" Your afternoon Meh Stax says \"Reply to three emails — just replies, no new threads.\" You're still working through the crash, but the work matches your available capacity. Focus Mode — the full-screen single-action view — is especially powerful during the crash: one action, large text, nothing else. Even a depleted brain can do one thing at a time.",
     staxPattern:
       'Morning Must → "Technical Spec – Write Intro" / Afternoon Good → "Email Replies – 3 Responses" / Focus Mode for single actions',
-    seoTitle: "ADHD Medication Crash Productivity Tool | TabStax",
+    seoTitle: "ADHD Medication Crash Productivity Tool | HeyStax",
     metaDescription:
-      "ADHD meds wear off at 2 PM and focus crashes? TabStax helps you design your workday around the cliff — deep work in the morning, low-load Stax in the afternoon.",
+      "ADHD meds wear off at 2 PM and focus crashes? HeyStax helps you design your workday around the cliff — deep work in the morning, low-load Stax in the afternoon.",
     keywords: [
       "ADHD medication crash",
       "ADHD afternoon productivity",
@@ -3240,11 +3240,11 @@ export const useCases: UseCase[] = [
         a: "Medication rebound occurs when stimulant levels drop — usually between 2-4 PM. Symptoms return abruptly, often worse than baseline, causing a sharp productivity cliff.",
       },
       {
-        q: "How does TabStax help work through a medication crash?",
+        q: "How does HeyStax help work through a medication crash?",
         a: "Design your Attention Stax around energy levels: Must Stax for morning peak hours, Good/Meh Stax for afternoon crash with low-cognitive-load next actions.",
       },
       {
-        q: "What is Focus Mode in TabStax?",
+        q: "What is Focus Mode in HeyStax?",
         a: "Focus Mode shows a single action in full-screen with large text and a count-up timer. When your brain is depleted, it removes everything except the one thing you need to do.",
       },
     ],
@@ -3259,12 +3259,12 @@ export const useCases: UseCase[] = [
     summary:
       "You're writing a feature with three runners feeding you quotes, a photographer filing images, and an editor making live changes to the shared doc. The tabs multiply, the versions blur, and by deadline you can't tell who contributed what or what's left to do.",
     content:
-      "A complex feature article isn't a solo act. You have runners in the field gathering quotes and filing raw copy into shared Google Docs. A photographer is uploading images to a shared drive. Your editor is making live structural changes to the master draft. A fact-checker needs access to original sources. And you — the lead writer — are trying to synthesize everything into a coherent narrative while the tabs multiply. By noon you have the master doc, three runner docs, a source spreadsheet, the photo folder, the CMS backend, Slack threads with your editor, and a half-dozen reference articles all open in one chaotic browser window.\n\nThe worst part isn't the volume — it's the context loss. You switch to check a runner's doc, then can't find the master draft. You open Slack to reply to your editor, then lose the source spreadsheet. Every interruption costs minutes of reconstruction, and in a newsroom with a 4 PM deadline, those minutes are lethal. Research shows journalists are most productive with around four focused tabs, but the reality of multi-contributor work demands dozens.\n\nTabStax turns the chaos into a structured editorial workflow. Create a Stax for the article itself: master doc, style guide, CMS page, and your editor's Slack thread. That's your writing environment. Create a second Stax for contributor inputs: runner docs, the photo folder, source spreadsheet, and fact-check notes. The Start Page on the main Stax tracks the status of every moving piece: \"Runner 1: quotes filed, awaiting integration\" / \"Photos: 8 received, 3 selected\" / \"Fact-check: pending on paragraphs 4-6.\" Use Hey to log progress from either Stax without switching: \"Hey Feature Stax: integrated Runner 2 quotes into section 3.\" At any point, you can see exactly what's done, what's pending, and whose input you're waiting on. When your editor asks \"where are we?\" you don't scramble — you open the Stax and read the trail.",
+      "A complex feature article isn't a solo act. You have runners in the field gathering quotes and filing raw copy into shared Google Docs. A photographer is uploading images to a shared drive. Your editor is making live structural changes to the master draft. A fact-checker needs access to original sources. And you — the lead writer — are trying to synthesize everything into a coherent narrative while the tabs multiply. By noon you have the master doc, three runner docs, a source spreadsheet, the photo folder, the CMS backend, Slack threads with your editor, and a half-dozen reference articles all open in one chaotic browser window.\n\nThe worst part isn't the volume — it's the context loss. You switch to check a runner's doc, then can't find the master draft. You open Slack to reply to your editor, then lose the source spreadsheet. Every interruption costs minutes of reconstruction, and in a newsroom with a 4 PM deadline, those minutes are lethal. Research shows journalists are most productive with around four focused tabs, but the reality of multi-contributor work demands dozens.\n\nHeyStax turns the chaos into a structured editorial workflow. Create a Stax for the article itself: master doc, style guide, CMS page, and your editor's Slack thread. That's your writing environment. Create a second Stax for contributor inputs: runner docs, the photo folder, source spreadsheet, and fact-check notes. The Start Page on the main Stax tracks the status of every moving piece: \"Runner 1: quotes filed, awaiting integration\" / \"Photos: 8 received, 3 selected\" / \"Fact-check: pending on paragraphs 4-6.\" Use Hey to log progress from either Stax without switching: \"Hey Feature Stax: integrated Runner 2 quotes into section 3.\" At any point, you can see exactly what's done, what's pending, and whose input you're waiting on. When your editor asks \"where are we?\" you don't scramble — you open the Stax and read the trail.",
     staxPattern:
       '"Feature: Housing Crisis – Writing" / "Feature: Housing Crisis – Contributor Inputs"',
-    seoTitle: "Journalist Multi-Contributor Article Tool | TabStax",
+    seoTitle: "Journalist Multi-Contributor Article Tool | HeyStax",
     metaDescription:
-      "Managing a feature with runners, editors, and shared docs? TabStax organizes contributor inputs and writing into separate workspaces with visible status trails.",
+      "Managing a feature with runners, editors, and shared docs? HeyStax organizes contributor inputs and writing into separate workspaces with visible status trails.",
     keywords: [
       "journalist browser workspace",
       "newsroom collaboration tool",
@@ -3274,7 +3274,7 @@ export const useCases: UseCase[] = [
     ],
     faq: [
       {
-        q: "How does TabStax help journalists manage multi-contributor articles?",
+        q: "How does HeyStax help journalists manage multi-contributor articles?",
         a: "Create separate Stax for writing and contributor inputs. The Start Page tracks each runner's status, filed quotes, photos, and fact-checks in one visible trail.",
       },
       {
@@ -3282,7 +3282,7 @@ export const useCases: UseCase[] = [
         a: "Yes. Share the contributor Stax so runners know where to file copy, and the writing Stax so your editor can see the master doc and current status.",
       },
       {
-        q: "How does TabStax handle deadline pressure in newsrooms?",
+        q: "How does HeyStax handle deadline pressure in newsrooms?",
         a: "Hey logs progress without switching context. At any point you can see what's done, what's pending, and whose input you're waiting on — no scrambling when the editor asks for status.",
       },
     ],
@@ -3297,12 +3297,12 @@ export const useCases: UseCase[] = [
     summary:
       "You've tried Todoist, Notion, Trello, Habitica, Focusmate, Forest, and thirty more. Each one worked for two weeks then joined the app graveyard. The problem isn't the apps — it's that none of them manage what you actually work in: the browser.",
     content:
-      "A viral Reddit post on r/ADHD documented one person's 500-day journey through 36 productivity apps — routine-setters, to-do lists, habit trackers, health apps, and productivity suites. The conclusion resonated with thousands: most apps are designed for neurotypical brains, require too much manual input, and create \"productivity theater\" — the appearance of getting organized without actually helping you do the work. Streaks, gamification, and dopamine-hit animations keep you opening the app but don't address the core ADHD challenge: getting into and staying in the actual work.\n\nThe fundamental problem with most productivity apps for ADHD is they exist outside your workflow. You have to leave the thing you're doing, open the app, update your status, then navigate back. For a brain that struggles with task switching, this is asking for trouble. Every context switch is a risk of never coming back. And the apps that do stay in your browser — bookmark managers, tab savers — solve the wrong problem. They organize tabs without preserving context, next actions, or the cognitive state you need to resume work.\n\nTabStax is different because it lives where you already work — the browser. It doesn't ask you to maintain a separate system. Your Stax IS your workspace: the tabs, the notes, the next action, all saved together. There's no manual sync between your todo app and your browser. There's no context switch to update a dashboard. When you open a Stax, you're immediately in the work — not in a meta-layer about the work. The Attention Stax dashboard (Must / Should / Good / Meh) is the only triage layer, and it takes thirty seconds. Hey captures next actions from wherever you are without leaving the current surface. The goal isn't to be another productivity app you abandon in two weeks. The goal is to make your browser itself the productivity system — so there's nothing to abandon because you never leave it.",
+      "A viral Reddit post on r/ADHD documented one person's 500-day journey through 36 productivity apps — routine-setters, to-do lists, habit trackers, health apps, and productivity suites. The conclusion resonated with thousands: most apps are designed for neurotypical brains, require too much manual input, and create \"productivity theater\" — the appearance of getting organized without actually helping you do the work. Streaks, gamification, and dopamine-hit animations keep you opening the app but don't address the core ADHD challenge: getting into and staying in the actual work.\n\nThe fundamental problem with most productivity apps for ADHD is they exist outside your workflow. You have to leave the thing you're doing, open the app, update your status, then navigate back. For a brain that struggles with task switching, this is asking for trouble. Every context switch is a risk of never coming back. And the apps that do stay in your browser — bookmark managers, tab savers — solve the wrong problem. They organize tabs without preserving context, next actions, or the cognitive state you need to resume work.\n\nHeyStax is different because it lives where you already work — the browser. It doesn't ask you to maintain a separate system. Your Stax IS your workspace: the tabs, the notes, the next action, all saved together. There's no manual sync between your todo app and your browser. There's no context switch to update a dashboard. When you open a Stax, you're immediately in the work — not in a meta-layer about the work. The Attention Stax dashboard (Must / Should / Good / Meh) is the only triage layer, and it takes thirty seconds. Hey captures next actions from wherever you are without leaving the current surface. The goal isn't to be another productivity app you abandon in two weeks. The goal is to make your browser itself the productivity system — so there's nothing to abandon because you never leave it.",
     staxPattern:
       'Not another app — your browser IS the system. Stax = tabs + next actions + notes, saved where you already work.',
-    seoTitle: "ADHD Productivity App Alternative | TabStax",
+    seoTitle: "ADHD Productivity App Alternative | HeyStax",
     metaDescription:
-      "Tried 36 productivity apps and none stuck? TabStax works inside your browser — no separate system to maintain, no context switching to update, no app to abandon.",
+      "Tried 36 productivity apps and none stuck? HeyStax works inside your browser — no separate system to maintain, no context switching to update, no app to abandon.",
     keywords: [
       "ADHD productivity app fatigue",
       "best productivity app ADHD",
@@ -3316,11 +3316,11 @@ export const useCases: UseCase[] = [
         a: "Most apps require manual input and exist outside your workflow. Each update is a context switch — and for ADHD brains, every switch is a risk of never returning to the task.",
       },
       {
-        q: "How is TabStax different from other ADHD productivity tools?",
-        a: "TabStax lives in your browser, not outside it. Your workspace IS the productivity system — tabs, notes, and next actions saved together. No separate app to maintain or abandon.",
+        q: "How is HeyStax different from other ADHD productivity tools?",
+        a: "HeyStax lives in your browser, not outside it. Your workspace IS the productivity system — tabs, notes, and next actions saved together. No separate app to maintain or abandon.",
       },
       {
-        q: "Do I need to manually update TabStax?",
+        q: "Do I need to manually update HeyStax?",
         a: "Barely. Opening and closing Stax is your natural workflow. Hey captures next actions from anywhere. The only manual step is a 30-second Attention Stax triage each morning.",
       },
     ],
