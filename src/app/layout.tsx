@@ -5,12 +5,12 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "TabStax — Never Pay the Reconstruction Tax Again",
-    template: "%s | TabStax",
+    default: "HeyStax — Never Pay the Reconstruction Tax Again",
+    template: "%s | HeyStax",
   },
   description:
-    "TabStax is a re-entry engine for fragmented work. Drop and resume projects without penalty. Zero reconstruction tax.",
-  metadataBase: new URL("https://tabstax.com"),
+    "HeyStax is your flow engine for work across AI chat, terminal, browser, and web. Open the exact workspace. See the exact next action. Continue in seconds.",
+  metadataBase: new URL("https://heystax.ai"),
   icons: {
     icon: [
       { url: "/favicon.png", sizes: "32x32", type: "image/png" },
@@ -19,11 +19,11 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "TabStax — Never Pay the Reconstruction Tax Again",
+    title: "HeyStax — Never Pay the Reconstruction Tax Again",
     description:
-      "TabStax is a re-entry engine for fragmented work. Drop and resume projects without penalty.",
+      "Your flow engine for work across AI chat, terminal, browser, and web. Open the exact workspace. See the exact next action. Continue in seconds.",
     type: "website",
-    url: "https://tabstax.com",
+    url: "https://heystax.ai",
   },
 };
 

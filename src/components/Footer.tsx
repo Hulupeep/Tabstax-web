@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-2">
             <p className="font-heading text-xl font-bold text-cream mb-3">
-              TabStax
+              HeyStax
             </p>
             <p className="text-sm leading-relaxed max-w-md">
               Pick up where your mind left off.
@@ -19,11 +19,19 @@ export function Footer() {
             <ul className="space-y-2 text-sm">
               <li>
                 <a
-                  href="https://dash.tabstax.app/attention"
+                  href="https://dash.heystax.ai/attention"
                   className="hover:text-cream transition-colors"
                 >
-                  Open Attention Stax
+                  Dashboard
                 </a>
+              </li>
+              <li>
+                <Link
+                  href="/hey"
+                  className="hover:text-cream transition-colors"
+                >
+                  Hey CLI
+                </Link>
               </li>
               <li>
                 <Link
@@ -48,7 +56,7 @@ export function Footer() {
                   rel="noopener noreferrer"
                   className="hover:text-cream transition-colors"
                 >
-                  Help
+                  Docs
                 </a>
               </li>
             </ul>
@@ -75,10 +83,10 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:tabstax@floutlabs.com"
+                  href="mailto:hello@heystax.ai"
                   className="hover:text-cream transition-colors"
                 >
-                  tabstax@floutlabs.com
+                  hello@heystax.ai
                 </a>
               </li>
             </ul>

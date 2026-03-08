@@ -15,19 +15,30 @@ export function Hero() {
         </h1>
 
         <p className="mt-8 text-lg md:text-xl text-warm-gray max-w-3xl mx-auto leading-relaxed animate-slide-up">
-          TabStax is a re-entry engine &mdash; the OS for fragmented work across
-          every surface you work in.
-        </p>
-        <p className="mt-3 text-xl md:text-2xl font-heading font-bold text-amber max-w-2xl mx-auto animate-slide-up [animation-delay:0.1s]">
-          Pick up where your mind left off.
+          HeyStax is your flow engine for work across all your projects
+          on every surface you work on &mdash; AI chat, terminal, browser, and web.
         </p>
 
-        <div className="mt-12 animate-slide-up [animation-delay:0.2s]">
+        <p className="mt-4 text-base text-warm-gray/80 max-w-2xl mx-auto animate-slide-up [animation-delay:0.1s]">
+          Open the exact workspace. See the exact next action. Continue in seconds.
+        </p>
+
+        <p className="mt-3 text-sm text-warm-gray/60 animate-slide-up [animation-delay:0.15s]">
+          Used inside Claude, your terminal, and your browser.
+        </p>
+
+        <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up [animation-delay:0.2s]">
           <a
-            href="https://dash.tabstax.app/attention"
+            href="https://dash.heystax.ai/attention"
             className="inline-flex items-center px-8 py-4 rounded-full bg-amber text-white font-semibold text-lg hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl"
           >
             Start Now
+          </a>
+          <a
+            href="#video"
+            className="inline-flex items-center px-8 py-4 rounded-full border-2 border-charcoal/20 text-charcoal font-semibold text-lg hover:border-charcoal/40 transition-colors"
+          >
+            See HeyStax in Action
           </a>
         </div>
       </div>

@@ -13,17 +13,17 @@ const useCases = [
 
 export function UseCaseTeaser() {
   return (
-    <section id="use-cases-teaser" className="bg-cream py-20 md:py-28">
+    <section id="use-cases-teaser" className="bg-cream-dark py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="font-heading font-bold text-3xl md:text-4xl text-charcoal text-center">
-          See how people use TabStax
+          See how people use HeyStax
         </h2>
 
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {useCases.map((uc) => (
             <div
               key={uc.persona}
-              className="bg-cream-dark border border-amber/10 rounded-xl p-6 shadow-sm"
+              className="bg-cream border border-amber/10 rounded-xl p-6 shadow-sm"
             >
               <p className="text-sm font-semibold text-amber">{uc.persona}</p>
               <p className="mt-2 text-charcoal leading-snug">{uc.title}</p>

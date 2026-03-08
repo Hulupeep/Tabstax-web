@@ -4,12 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/blog", label: "Blog" },
-  { href: "/use-cases", label: "Use Cases" },
-  { href: "/contact", label: "Contact" },
-  { href: "https://hulupeep.github.io/TabStax-Help/", label: "Help", external: true },
+  { href: "/#works-everywhere", label: "Product" },
+  { href: "/#individual-value", label: "Individuals" },
+  { href: "/#fast-kickoff", label: "Teams" },
+  { href: "/#quick-start", label: "Quick Start" },
+  { href: "https://hulupeep.github.io/TabStax-Help/", label: "Docs", external: true },
 ];
 
 export function Header() {
@@ -22,12 +21,12 @@ export function Header() {
           <Link href="/" className="flex items-center gap-2">
             <img
               src="/logo-icon.png"
-              alt="TabStax"
+              alt="HeyStax"
               width={32}
               height={32}
               className="h-8 w-8"
             />
-            <span className="font-heading font-bold text-charcoal text-lg">TabStax</span>
+            <span className="font-heading font-bold text-charcoal text-lg">HeyStax</span>
           </Link>
 
           <nav className="hidden md:flex items-center gap-8">
@@ -53,7 +52,7 @@ export function Header() {
               )
             )}
             <a
-              href="https://dash.tabstax.app/attention"
+              href="https://dash.heystax.ai/attention"
               className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors shadow-sm"
             >
               Start Now
@@ -117,7 +116,7 @@ export function Header() {
                 )
               )}
               <a
-                href="https://dash.tabstax.app/attention"
+                href="https://dash.heystax.ai/attention"
                 className="mx-4 mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors"
               >
                 Start Now
