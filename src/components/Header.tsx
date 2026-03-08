@@ -7,6 +7,8 @@ const navLinks = [
   { href: "/#works-everywhere", label: "Product" },
   { href: "/#individual-value", label: "Individuals" },
   { href: "/#fast-kickoff", label: "Teams" },
+  { href: "/use-cases", label: "Use Cases" },
+  { href: "/blog", label: "Blog" },
   { href: "/#quick-start", label: "Quick Start" },
   { href: "https://hulupeep.github.io/TabStax-Help/", label: "Docs", external: true },
 ];
