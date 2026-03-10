@@ -12324,209 +12324,658 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
       "That is the version of coordination I wanted. Not better reporting. No reporting at all.",
   },
   {
-    slug: "heystax-cli-terminal-task-management",
-    title: "Manage Your Tasks from the Terminal with HeyStax CLI",
-    seoTitle: "HeyStax CLI: Terminal Task Management for Developers",
+    slug: "ai-builders-dont-use-project-management",
+    title:
+      "AI Builders Don't Use Project Management Tools. Here's What They Use Instead.",
+    seoTitle: "AI Builders Skip PM Tools — What They Use Instead",
     seoDescription:
-      "Meet hey — the HeyStax CLI that lets you track tasks without leaving the terminal. Type a sentence, hit enter, it's tracked. No app switching, no GUI overhead.",
-    date: "2026-03-10",
+      "AI builders ship in hours, not sprints. Traditional project management tools can't keep up. Here's the workflow pattern emerging in agentic engineering teams.",
+    date: "2026-03-01",
     author: "Colm Byrne",
     kicker: "CLI & Terminal",
     keywords: [
-      "heystax cli",
-      "terminal task manager",
-      "developer task management",
-      "command line todo",
-      "hey cli",
-      "terminal productivity",
+      "project management tool AI builders",
+      "AI developer workflow",
+      "agentic engineering productivity",
+      "developer project management",
+      "AI builder tools",
+      "terminal workflow AI",
     ],
     excerpt:
-      "Most task managers ask you to leave your terminal, open a browser, click around, and then remember what you were doing. hey asks you to type a sentence and hit enter.",
+      "The new generation of AI builders ships in hours, not sprints. Their project management tool is a terminal and a Claude window. The question is whether that's reckless or rational.",
     faq: [
       {
-        q: "How do I install the HeyStax CLI?",
-        a: "Run npm install -g heystax-cli. Once installed, the hey command is available globally in your terminal. You can start adding tasks immediately with hey 'your task here'.",
+        q: "Why don't AI builders use traditional project management tools?",
+        a: "The cycle time is too short. When you can go from idea to working code in an afternoon with an LLM, the overhead of creating a ticket, estimating it, assigning it, and moving it across a board takes longer than the work itself. AI builders need tools that match their speed, not tools that slow them down to match a process designed for two-week sprints.",
       },
       {
-        q: "Do I need a HeyStax account to use the CLI?",
-        a: "You can use hey locally without an account. Tasks are stored on your machine. To sync tasks with the HeyStax extension and dashboard, or to share with teammates, run hey auth to connect your account.",
+        q: "Is skipping project management sustainable for teams?",
+        a: "Only if you replace the visibility that PM tools provide. The problem is not the skipping — it's the gap it leaves. If nobody can see what anyone else is working on, coordination breaks down. The solution is lightweight, always-on visibility rather than heavyweight, after-the-fact reporting.",
       },
       {
-        q: "What's the difference between hey and a .txt file?",
-        a: "A text file doesn't know what project you're working on, doesn't sync across surfaces, and doesn't let teammates see progress. hey attaches tasks to a Stax — a named project context — and makes them visible in the extension, the dashboard, and the CLI simultaneously.",
+        q: "Can HeyStax replace a full project management tool?",
+        a: "For teams that ship fast and work in short cycles, yes. HeyStax provides project context (tabs and next actions), team visibility (who is working on what), and coordination (task assignment) without the overhead of boards, sprints, and estimation ceremonies. For teams with regulatory requirements or fixed-scope contracts, a traditional PM tool may still be appropriate.",
       },
       {
-        q: "Can I use hey alongside the browser extension?",
-        a: "Yes. They share the same data layer. A task you add from the terminal appears in the extension's Next Actions and on the dashboard. A task you mark done in the extension disappears from hey ls. They're different surfaces for the same project state.",
+        q: "How does the HeyStax CLI fit into an AI development workflow?",
+        a: "The CLI lives where AI builders already work — the terminal. You create a project with hey -s, add tasks with hey, assign them with @handle syntax, and mark them done with hey done. Because HeyStax has an MCP server, your AI assistant can read your project context directly, eliminating the need to re-explain what you're working on every session.",
       },
     ],
     content:
-      "There is a specific kind of friction that most task management tools impose, and it is so familiar that it has become invisible. You are in the terminal. You have just finished a thing. You need to note the next thing. To do this, you must leave the terminal, open a browser or app, navigate to the right project, find the right list, click the right button, type, save, and then return to where you were. The round trip takes thirty seconds if you are fast. The context switch it causes lasts longer.\n\n" +
-      "That is the problem `hey` was built to solve. The HeyStax CLI is a single command that tracks tasks from the place where developers already work: the terminal.\n\n" +
-      "## The Core Loop\n\n" +
-      "The entire interface is one command: `hey`. You add a task by typing it as a sentence. You list tasks with `hey ls`. You mark one done with `hey done 1`. That is the core loop, and it covers about 90% of what you actually need from a task tracker during a work session.\n\n" +
-      "Adding a task looks like this: `hey 'fix the auth redirect on staging'`. No flags, no categories, no priority dropdowns. The task exists. It is attached to whatever Stax (project) you currently have selected. When you run `hey ls`, it shows up with a number. When you finish it, `hey done 1` marks it complete.\n\n" +
-      "If you need to switch projects, `hey use 'Client Pitch'` changes your active Stax. Every task you add after that belongs to Client Pitch until you switch again. The mental model is the same as `cd` for directories: you are always working inside a context, and the context determines where things go.\n\n" +
-      "## Who This Is For\n\n" +
-      "If you spend most of your day in a GUI project manager and you like it, hey is probably not for you. It is for people who already live in the terminal — developers, devops engineers, sysadmins, technical leads — and who find that the overhead of switching to a visual task manager is enough friction to stop them from tracking things at all.\n\n" +
-      "That is the key insight. The problem is not that developers don't want to track tasks. The problem is that every task tracker requires them to leave the environment where the work is happening. And the cost of leaving, even briefly, is high enough that most people just keep a mental list instead. The mental list works until it doesn't. And when it doesn't, things get dropped.\n\n" +
-      "`hey` is designed to be so low-friction that capturing a task costs less effort than remembering it. If typing a sentence is easier than holding it in your head, you will type the sentence. That is the entire design thesis.\n\n" +
-      "## Beyond the Basics\n\n" +
-      "The core loop is deliberately simple, but hey has depth when you need it. You can assign tasks to teammates with `hey 'review the PR' @sarah`. You can flag something as urgent with `hey 'deploy hotfix' --urgent`. You can create a new Stax and switch to it in one move with `hey -s 'New Project'`.\n\n" +
-      "The output of `hey ls` is compact and scannable — task number, description, assignee if any, urgency flag if set. It is designed to be glanced at, not studied. The information density matches what you need when you are in the middle of something and want to check what is next without losing your place.\n\n" +
-      "## The Connection to HeyStax\n\n" +
-      "The CLI is not a standalone tool. It is a surface — one of three — for the same underlying project data. When you add a task with `hey`, it appears in the [HeyStax browser extension](/blog/cli-project-context-not-just-tasks) as a Next Action and on the web dashboard. When a teammate marks something done in the extension, it disappears from your `hey ls` output.\n\n" +
-      "This matters because it means the CLI is not another silo. Terminal-native team members and browser-native team members are looking at the same state. The developer who never leaves the terminal and the project manager who lives in the dashboard are working from the same list. Nobody has to translate between systems.\n\n" +
-      "## What hey Does Not Do\n\n" +
-      "It does not do Gantt charts. It does not do sprint planning. It does not have a kanban view, a calendar integration, or an AI assistant that suggests priorities. These are deliberate omissions. The tool is optimised for one thing: capturing and completing tasks without leaving the terminal.\n\n" +
-      "If you need project management, use a project management tool. If you need a way to say \"I need to do this next\" without opening a browser, that is what `hey` is for.\n\n" +
-      "## Getting Started\n\n" +
-      "Install with `npm install -g heystax-cli`. Run `hey auth` to connect your HeyStax account (optional — hey works locally without one). Then start adding tasks: `hey 'the first thing'`. Run `hey ls` to see them. Run `hey done 1` when you finish one. See the [speed run walkthrough](/blog/heystax-cli-speed-run-demo) if you want to see the full flow in action.\n\n" +
-      "The whole point is that there is nothing to learn. If you can type a sentence, you can use hey.",
+      "A project management tool for AI builders is becoming a contradiction in terms. Not because project management is unnecessary — coordination still matters — but because the tools built for it assume a cadence that no longer exists. Two-week sprints. Story points. Backlog grooming. These rhythms were designed for a world where shipping took weeks and the bottleneck was developer hours. That world is receding fast.\n\n" +
+      "\"I just open a terminal and a Claude window. That's my PM tool.\" That quote, from an agentic engineers Discord, keeps surfacing in different forms across the communities where AI-native builders gather. It is not bravado. It is a description of how work actually happens when an LLM can generate a working prototype in an afternoon.\n\n" +
+      "## The Day in the Life Nobody Talks About\n\n" +
+      "Here is what a Tuesday looks like for an AI builder named Rin. She wakes up, opens her laptop, and starts a conversation with Claude about a payments integration she has been thinking about since yesterday. By 9:30, she has a working Stripe webhook handler. By 10:15, she has tests. By 11:00, it is deployed to staging and she is showing it to her co-founder.\n\n" +
+      "At no point did she open Jira. At no point did she create a ticket, estimate it, assign it to herself, move it from To Do to In Progress, or update a status field. She did not do these things because they would have taken longer than the work itself. The [overhead of tracking work](/blog/jira-ticket-before-first-line-of-code) exceeded the work being tracked.\n\n" +
+      "This is not laziness. Rin is disciplined. She keeps meticulous notes. She communicates clearly with her co-founder. But she does these things in the tools where the work happens — the terminal, the browser, the LLM conversation — not in a separate system designed for a different era.\n\n" +
+      "The pattern is consistent across the AI builder community. Context lives in the LLM conversation. The working state lives in the terminal and the browser. The project board, if it exists at all, is a lagging indicator that someone updates reluctantly at the end of the week.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Linear and Notion have genuinely improved the project management user experience. Linear in particular is fast and opinionated in a way that respects developers. Its keyboard shortcuts work. Its interface does not lag. It made project management less painful, which is a real achievement. For teams with stable scope, predictable cycles, and enough people that visibility requires a dedicated surface, these tools earn their place.\n\n" +
+      "## Why the Mismatch Exists\n\n" +
+      "The mismatch is not about quality. It is about topology. Traditional PM tools assume work flows through a pipeline: ideation, specification, estimation, assignment, execution, review, deployment. Each stage has its own ceremony and its own artifact. The tool's job is to track movement through the pipeline.\n\n" +
+      "AI builders do not work in pipelines. They work in loops. Idea, prototype, test, deploy, learn, adjust — and the whole loop might take two hours. By the time you have created a Jira ticket for the work, the work is done. The ticket becomes a historical record, not a coordination tool. And historical records that cost time to create but serve no operational purpose get abandoned.\n\n" +
+      "The deeper issue is that context decays. The moment when Rin knows exactly what the payments integration should do — the requirements, the edge cases, the API quirks she discovered while reading the Stripe docs — that moment is when the work should happen. Not after she has translated that understanding into a ticket format that someone else might read.\n\n" +
+      "## Decision Criteria: Is Your PM Tool Helping or Performing?\n\n" +
+      "Before adding another tool to your workflow, ask these questions honestly.\n\n" +
+      "**Does the tool make work visible, or does it make reporting visible?** If the primary consumer of your PM tool is a weekly status meeting, the tool is serving the meeting, not the work.\n\n" +
+      "**Does the tool match your cycle time?** If you can ship a feature in four hours, a tool designed for two-week sprints is adding drag, not structure.\n\n" +
+      "**Does the tool live where the work happens?** If you have to leave your working environment to update the tool, the update will always lag reality. And lagging data is worse than no data, because it creates false confidence.\n\n" +
+      "**Can your AI assistant see the tool's data?** If your LLM cannot access your project state, you are maintaining two context windows — one for the machine and one for yourself. That is double the work for half the coherence.\n\n" +
+      "## What If There Was a Way to Track Work Without Leaving Work?\n\n" +
+      "What if there was a way to create a project, assign collaborators, and start tracking tasks without opening a browser? What if the same data was visible in the terminal, the browser extension, and on a dashboard — and your AI assistant could read it too?\n\n" +
+      "That is what `hey -s 'MCP server for payments'` does. It creates a project context — a Stax — in the terminal. Then `hey 'design tool schema' @me` adds a task and assigns it. The Stax appears in the [HeyStax browser extension](/blog/tabs-are-not-the-problem) with the same tasks, and Claude can read the project state via MCP.\n\n" +
+      "The workflow matches the speed. Create the project when the idea is fresh. Add tasks as you think of them. Mark them done as you finish them. The tracking happens inside the work, not alongside it.\n\n" +
+      "For teams where the work moves faster than the board, that distinction is the difference between a tool that helps and a tool that performs. The [context window you build for yourself](/blog/context-window-for-humans) should be as carefully engineered as the one you build for your AI.\n\n" +
+      "## The Emerging Pattern: Context-First, Not Process-First\n\n" +
+      "What distinguishes the AI builder workflow from traditional development is not speed alone. It is the relationship between context and process. In traditional development, the process preserves context: the ticket describes the work, the board shows progress, the sprint review captures learnings. The process is the context infrastructure.\n\n" +
+      "For AI builders, the context infrastructure is the working environment itself. The terminal session is the context. The LLM conversation is the context. The browser tabs are the context. Layering a separate process on top of this — one that requires translating working context into ticket context — is not just overhead. It is a lossy compression algorithm applied to something that should not be compressed.\n\n" +
+      "The builders who are most productive have found ways to preserve context without translating it. They work in the terminal and their tasks live in the terminal. They work in the browser and their project state lives in the browser. The AI sees the same data they see. There is one context, visible in multiple surfaces, maintained as a side effect of working rather than as a separate activity.\n\n" +
+      "This is not anti-process. It is a different topology of process — one where the process is embedded in the work rather than wrapped around it. The distinction matters because it changes what tools are useful. Tools that add a layer of abstraction between work and tracking become friction. Tools that make tracking an intrinsic property of working become invisible in the best possible way.\n\n" +
+      "The right tool is not the one with the best roadmap view. It is the one that gets out of the way fastest.",
   },
   {
-    slug: "cli-project-context-not-just-tasks",
-    title: "Why We Built a CLI for Project Context, Not Just Tasks",
-    seoTitle: "HeyStax CLI: Project Context Management, Not Just Tasks",
+    slug: "context-window-for-humans",
+    title: "Your Team Needs a Context Window Too",
+    seoTitle: "Team Context Windows: Knowledge Transfer Fix",
     seoDescription:
-      "Most CLI task tools track tasks in isolation. HeyStax CLI attaches tasks to a Stax — a named project context with browser tabs, next actions, and team visibility.",
-    date: "2026-03-10",
+      "LLMs need context windows to function. Human teams have the same requirement but no equivalent mechanism. Here's how to build one.",
+    date: "2026-03-01",
     author: "Colm Byrne",
     kicker: "CLI & Terminal",
     keywords: [
-      "project context management",
-      "developer workflow",
-      "stax",
-      "heystax",
+      "team context engineering knowledge transfer",
+      "developer onboarding context",
+      "knowledge transfer engineering teams",
+      "context switching cost developers",
+      "team collaboration tools",
+      "project context sharing",
+    ],
+    excerpt:
+      "You wouldn't give your AI a blank context window. But every time a teammate asks 'what's the status on this?', that's exactly what you're giving them.",
+    faq: [
+      {
+        q: "What is a 'context window' for a human team?",
+        a: "It is the set of information a person needs to understand and contribute to a project: what the project is, what has been done, what is next, who is responsible for what, and where the relevant resources are. LLMs have this as a technical feature. Human teams have to build it deliberately.",
+      },
+      {
+        q: "How is this different from documentation?",
+        a: "Documentation is static and gets stale. A team context window is live — it reflects what is actually happening right now. The tabs that are open, the tasks that are in progress, the person who is working on the auth fix. Documentation tells you what was true when someone wrote it. A context window tells you what is true now.",
+      },
+      {
+        q: "Can HeyStax actually replace onboarding documentation?",
+        a: "Not entirely, but it can replace the most expensive part: the live walkthrough. When a new team member opens a Stax, they see the tabs the project uses and the next actions that are pending. They get the working context without someone having to stop and explain it. The deeper why-we-made-this-decision documentation still has its place.",
+      },
+    ],
+    content:
+      "Team context engineering and knowledge transfer are the hidden costs that no sprint planning session accounts for. Every engineering team has experienced this moment: a new person joins the project, and someone — usually the most senior person, the one whose time is most expensive — stops what they are doing to explain. Not the architecture. Not the codebase. The context. What are we actually trying to do? Where did we leave off? Who is working on what? Which tabs should I have open? What is the next concrete thing that needs to happen?\n\n" +
+      "\"I spent 20 minutes getting my colleague up to speed. The work took 10.\" That ratio, reported on dev.to, is not unusual. It is the norm. The context transfer costs more than the work it enables. And it happens not once, but every time someone touches a project they have been away from for more than a few days.\n\n" +
+      "## The Failure Mode Nobody Measures\n\n" +
+      "Here is how context loss actually manifests. A developer named Kai was pulled onto the auth refactor on Monday. By Wednesday, he had the full picture: the edge cases, the migration path, the reason the original approach failed. On Thursday, he was pulled onto an urgent bug fix. By the following Monday, when he returned to the auth refactor, the context was gone. Not the code — the code was still there. The understanding. The mental model of why the code was shaped the way it was.\n\n" +
+      "He spent forty minutes re-reading his own pull request, re-reading the Slack thread where the approach was discussed, and re-opening the tabs he had closed. Forty minutes to reconstruct something he had fully understood four days earlier. That reconstruction cost is invisible in every project management tool. No ticket tracks \"time spent remembering what I was doing.\"\n\n" +
+      "The failure mode compounds. If Kai needs to bring someone else onto the project, he is now transferring a context that he himself reconstructed from artifacts. Each transfer is lossy. By the third handoff, the project context is a game of telephone.\n\n" +
+      "## Why LLMs Got This Right\n\n" +
+      "Large language models have context windows because their designers understood something fundamental: intelligence requires context. An LLM with no context window is just a pattern matcher. Give it the right context — the system prompt, the conversation history, the tool descriptions — and it becomes useful. The context is not a feature. It is the mechanism by which the model understands what to do.\n\n" +
+      "Human teams have the same requirement. A developer without project context is just a person who knows how to code. Give them the right context — the project state, the pending tasks, the relevant resources — and they become productive. Without it, they spend their first hour (or day) reconstructing what someone else already knows.\n\n" +
+      "The difference is that LLMs have a deliberate, engineered mechanism for receiving context. Human teams do not. They have Confluence pages that were accurate six months ago. They have Slack threads that require forty minutes of scrolling to extract meaning from. They have the institutional knowledge that lives in one person's head and leaves when that person goes on vacation.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Confluence and Notion are serious attempts at persistent context for teams. When maintained — and that is a significant caveat — they provide a shared reference that new team members can consult. Notion in particular has done thoughtful work on making documentation feel less like a chore. For teams with the discipline to keep their docs current, these tools provide genuine value.\n\n" +
+      "## Decision Criteria: Is Your Team Context Working?\n\n" +
+      "**Can a new person start contributing within an hour of being added to the project?** If the answer is no, the context transfer mechanism is broken, regardless of how much documentation exists.\n\n" +
+      "**When someone asks \"what's the status?\", can you answer without a meeting?** If the answer requires synchronous communication, the project state is not visible enough.\n\n" +
+      "**When you return to a project after a week away, how long does it take to get back to productive work?** If it is more than ten minutes, the project context is stored in your memory, not in a tool. Memory is volatile storage.\n\n" +
+      "**Does your AI assistant know what the team is working on?** If you have to re-explain the project to Claude every session, you are the [context window](/blog/llm-that-knows-what-youre-working-on), and that is an expensive use of your attention.\n\n" +
+      "## What If There Was a Way to Share Working Context, Not Documents?\n\n" +
+      "What if there was a way to add someone to a project and have them immediately see the tabs, the tasks, and the current state — not a description of the state, but the state itself?\n\n" +
+      "That is what happens when you run `hey -s 'New feature: dark mode'` and then `hey -a @newdev`. When @newdev opens the Stax, the tabs load. The next actions are visible. The project context transfers without a meeting, without a document, without someone stopping their work to explain.\n\n" +
+      "The difference between a document and a context window is liveness. A document describes what was true. A context window shows what is true. When the tabs, the tasks, and the assignments are the same data across the [browser extension](/blog/tabs-are-not-the-problem), the CLI, and the dashboard, the context is always current because it is the work itself, not a report about the work.\n\n" +
+      "For teams where knowledge transfer is a constant overhead — which is most teams — the cost of maintaining a live context window is lower than the cost of not having one. Every \"quick question\" that did not need to be asked, every onboarding session that did not need to happen, every Monday morning that did not start with reconstruction — those are the returns on a [project context that builds itself](/blog/visibility-without-standups) as a side effect of working.\n\n" +
+      "## The Compounding Effect of Shared Context\n\n" +
+      "There is a second-order benefit to shared context that is easy to miss. When the project context is visible and current, decisions get made faster. Not because people are smarter, but because they are better informed. The developer who can see the pending tasks does not duplicate work. The designer who can see the active tabs knows which pages are being implemented. The product manager who can see task completion rates does not need to ask for a status update.\n\n" +
+      "Each of these small efficiencies compounds. A team of five people, each saving twenty minutes a day on context reconstruction and status queries, saves over eight hours a day collectively. That is a full person's worth of productivity recovered — not by working harder, but by making the work visible.\n\n" +
+      "The teams that struggle most with knowledge transfer are not the ones with the worst documentation. They are the ones where the documentation and the reality have diverged. The Confluence page says one thing. The code says another. The Slack thread says a third thing. The truth is in someone's head, and that person is on vacation. A live context window cannot diverge from reality because it is reality — the actual tabs, the actual tasks, the actual assignments, updated at the moment the work happens.\n\n" +
+      "If you have to explain the project, the project is not documented — it is in your head. And heads are single points of failure.",
+  },
+  {
+    slug: "human-context-engineering",
+    title:
+      "Human Context Engineering: The Discipline AI Builders Are Building Without Naming",
+    seoTitle: "Human Context Engineering for AI Builders",
+    seoDescription:
+      "You engineer context windows for your AI. You should be engineering them for yourself too. Here's the discipline AI builders are discovering.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "human context engineering AI builder productivity",
+      "AI developer workflow optimization",
+      "context engineering for humans",
+      "LLM productivity patterns",
+      "developer context management",
+      "AI builder tools workflow",
+    ],
+    excerpt:
+      "You spend hours crafting the perfect system prompt for your AI. Your own working context gets zero engineering. That asymmetry is costing you more than you think.",
+    faq: [
+      {
+        q: "What is human context engineering?",
+        a: "It is the practice of deliberately designing your own working environment — the tabs, tasks, project state, and reference materials — so that you can resume work with minimal reconstruction cost. It applies the same principles that make LLM context windows effective (relevance, recency, structure) to your own cognitive environment.",
+      },
+      {
+        q: "How is this different from just being organised?",
+        a: "Organisation is about storing things so you can find them. Context engineering is about loading things so you can think with them. The difference is between a filing cabinet and a workbench. A filing cabinet stores information. A workbench presents the information you need for the task at hand.",
+      },
+      {
+        q: "Do I need special tools for human context engineering?",
+        a: "You need tools that preserve and restore working state, not just save files. A browser that can reopen a specific set of tabs, a task tracker that shows what is next for a specific project, and ideally a way to share that state with collaborators and AI assistants. HeyStax was built specifically for this — it saves project state (tabs plus next actions) and restores it across sessions and devices.",
+      },
+    ],
+    content:
+      "Human context engineering is a discipline that AI builder productivity communities are developing in real time, though most of them have not named it yet. The pattern is unmistakable: developers who spend hours crafting system prompts, engineering tool descriptions, and optimising memory strategies for their AI assistants give zero deliberate thought to their own working context.\n\n" +
+      "\"I optimise my Claude prompts but I never thought about optimising my own context.\" That observation, from an agentic engineering community, captures the asymmetry perfectly. The AI gets a carefully curated context window. The human gets whatever tabs happen to be open and whatever they can remember from last Thursday.\n\n" +
+      "## A Day Without Context Engineering\n\n" +
+      "Here is what a Monday morning looks like for an AI builder named Dev. He sits down, opens his laptop, and stares at a browser with forty-seven tabs from three different projects. He cannot remember which project he was working on Friday afternoon. He opens Claude and types: \"I'm working on a payments integration with Stripe. Here's what I've done so far...\" and spends five minutes re-explaining a project that Claude helped him build last week.\n\n" +
+      "Then his co-founder messages: \"Where are we on the auth refactor?\" Dev opens Slack, scrolls through messages, opens the GitHub repo, checks the PR, and fifteen minutes later can give a coherent answer. The answer existed — in his head, on Friday — but it did not survive the weekend.\n\n" +
+      "Dev is not disorganised. He is an excellent engineer. He has a meticulously crafted `CLAUDE.md` file that gives his AI perfect context. He has system prompts that specify coding style, architecture constraints, and project history. He engineers context for machines with genuine skill. He just never thought to do the same for himself.\n\n" +
+      "## The Irony of Prompt Engineering\n\n" +
+      "The practices that make LLM interactions effective are well understood. You provide relevant context. You specify the task clearly. You include examples. You structure the information so the model can process it efficiently. You remove noise. You keep the context window focused on what matters for the current task.\n\n" +
+      "Every one of these practices applies to human cognition. Relevant context reduces reconstruction time. Clear task specification reduces ambiguity. Structured information is processed faster than unstructured information. Noise increases cognitive load.\n\n" +
+      "The irony is that the people who understand this best — AI builders — apply it exclusively to their tools. Their own [context window](/blog/context-window-for-humans) is an afterthought. Tabs accumulate without curation. Tasks live in memory or scattered across apps. Project state is reconstructed from artifacts every Monday morning rather than preserved and restored.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Notion, Linear, and Confluence are genuinely thoughtful products. They are not bad. They are designed for a different topology — teams that work in sprints, with stable scope, where the coordination overhead is justified by the complexity of the work. For those teams, the investment in documentation and process pays off. The issue is not quality. It is fit. A Formula 1 car is an extraordinary machine, but it is not what you want for a dirt road.\n\n" +
+      "## The Context Engineering Framework\n\n" +
+      "If you were engineering a context window for yourself the way you engineer one for Claude, you would ask three questions.\n\n" +
+      "**What do I need to see to resume this project?** Not everything about the project. Just enough to start working. The relevant tabs. The pending tasks. The last decision that was made. This is the equivalent of a system prompt: the minimum viable context.\n\n" +
+      "**How do I preserve state between sessions?** When you close your laptop on Friday, the context in your head begins to decay. By Monday, it is substantially degraded. The question is whether you have a mechanism to restore it or whether you have to reconstruct it from scratch. Reconstruction is expensive. Restoration is cheap.\n\n" +
+      "**How do I share context without transferring it?** The most expensive form of knowledge transfer is synchronous explanation: stopping your work to bring someone else up to speed. The cheapest form is shared state: someone opens the project and the context is already there.\n\n" +
+      "## Decision Criteria: Are You Engineering Your Own Context?\n\n" +
+      "**When you return to a project after three days, how long until you are productive?** If the answer is \"fifteen minutes of tab archaeology and Slack scrolling,\" your context is not engineered. It is accidental.\n\n" +
+      "**Can your AI assistant see your current project state?** If you re-explain your project to Claude every session, you are acting as a context bridge between sessions. That is a job for a tool, not a human. The [LLM that knows what you're working on](/blog/llm-that-knows-what-youre-working-on) is the one with access to your live project state.\n\n" +
+      "**Can a collaborator see what you are working on without asking?** If the answer requires a Slack message or a meeting, the context is stored in your head. Heads do not scale.\n\n" +
+      "**Do you curate your working environment or let it accumulate?** The difference between a context window and a junk drawer is curation. One is designed. The other just happened.\n\n" +
+      "## What If There Was a Way to Engineer Your Own Context Window?\n\n" +
+      "What if there was a way to save your working state — the tabs, the tasks, the assignments — and restore it with a click or a command? What if the same state was visible to your collaborators and your AI assistant?\n\n" +
+      "That is what `hey which` does. It shows you where you are: which project is active, what tasks are pending. `hey ls` shows the full state. `hey done 1` updates it. `hey -x 'auth is flaky'` adds a note that appears in the CLI, the browser extension, and on your phone. The same data, in every surface, always current.\n\n" +
+      "The discipline is not about the tool. It is about the practice. Engineer your context the way you [engineer your AI's context](/blog/ai-builders-dont-use-project-management). Save your working state deliberately. Curate your project environment. Make restoration cheap and reconstruction unnecessary.\n\n" +
+      "## The Asymmetry We Need to Close\n\n" +
+      "There is something revealing about the fact that a generation of builders has independently arrived at the practice of engineering context for machines while neglecting to do the same for themselves. The asymmetry is not laziness. It is visibility. When you give Claude a bad system prompt, the degraded output is obvious and immediate. When you give yourself a bad working context — scattered tabs, no next actions, no clear project boundaries — the degraded output is invisible. You just feel slightly foggy, slightly unfocused, slightly less productive than you should be. The cost is real but diffuse, spread across every task, every day, every context switch.\n\n" +
+      "The builders who close this asymmetry — who apply the same deliberate engineering to their own context that they apply to their AI's context — report a qualitative shift. Not just faster work, but clearer thinking. When the working environment is curated rather than accumulated, the cognitive overhead drops. Decisions get easier because the relevant information is present and the irrelevant information is not. Focus improves because the tabs on screen belong to one project, not five.\n\n" +
+      "This is not a tooling problem dressed up as a philosophy. It is a recognition that human cognition, like machine cognition, operates within a context window. The quality of what comes out depends on the quality of what goes in. Engineer the input, and the output takes care of itself.\n\n" +
+      "You would not give your AI a blank context window. Stop giving yourself one. The [tabs are not the problem](/blog/tabs-are-not-the-problem). The problem is that you never thought to design your own working context with the same care you bring to your system prompts.",
+  },
+  {
+    slug: "incident-response-no-time-for-tickets",
+    title: "Incident Response Has No Time for Tickets",
+    seoTitle: "Incident Response Coordination Without Tickets",
+    seoDescription:
+      "When the service is down, you need to coordinate three people in 60 seconds. Ticket systems were not built for this. Here's what works.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "incident response coordination CLI",
+      "incident management developer tools",
+      "on-call coordination terminal",
+      "production outage response",
+      "incident response workflow",
+      "DevOps incident coordination",
+    ],
+    excerpt:
+      "The person who knows what to do needs three other people doing three things in sixty seconds. The ticket system was not designed for this moment.",
+    faq: [
+      {
+        q: "Can HeyStax actually be used during a production incident?",
+        a: "Yes, and the key reason is speed. Creating a Stax and assigning tasks takes seconds from the terminal. During an incident, the person coordinating can create an incident Stax, assign specific tasks to specific people, and everyone can see what they need to do immediately. The CLI is faster than any GUI for this kind of rapid coordination.",
+      },
+      {
+        q: "What about PagerDuty and incident management platforms?",
+        a: "PagerDuty is excellent at alerting — getting the right people awake and aware. What it does not do well is the coordination that happens after everyone is online. Who is doing what right now? What is the current hypothesis? What has been tried? That real-time coordination is where lightweight tools like HeyStax fill the gap.",
+      },
+      {
+        q: "How does this work for distributed teams across time zones?",
+        a: "Better than Slack threads, because the state is structured. When someone in a different time zone opens the incident Stax, they see assigned tasks with owners, not a 200-message Slack thread they have to read from the top. The context is pre-organised by the person who was there when it started.",
+      },
+    ],
+    content:
+      "Incident response coordination through a CLI is not a pattern most teams have considered, because most teams have not examined how their actual incident response works versus how they think it works. The gap between the two is where minutes — and sometimes hours — are lost.\n\n" +
+      "\"We were still arguing about who owned the Jira board while the service was down.\" That line, from an engineering post-mortem published on a team blog, is the kind of sentence that sounds absurd in retrospect but is entirely predictable in the moment. When the adrenaline hits and the service is down, every second spent on tooling overhead is a second not spent on resolution.\n\n" +
+      "## The Incident Timeline Nobody Wants to Publish\n\n" +
+      "Here is a timeline reconstructed from a real incident, details changed to protect the team.\n\n" +
+      "**00:00** — Alert fires. PagerDuty wakes up Sam, the on-call engineer.\n\n" +
+      "**00:02** — Sam checks dashboards. Database connection pool exhausted. Replica reads are returning errors.\n\n" +
+      "**00:04** — Sam knows what to do. Needs three things to happen simultaneously: isolate replica reads to the primary, scale up the connection pool, and notify downstream services to implement circuit breakers.\n\n" +
+      "**00:05** — Sam opens Slack. Types in #incidents. \"DB connection pool exhausted, need help.\" Three people respond. Two of them ask \"what do you need me to do?\"\n\n" +
+      "**00:08** — Sam explains the plan in Slack. One person misses the message because they are reading the scrollback. Another person starts working on the wrong thing because the instructions were in a thread they had not opened.\n\n" +
+      "**00:14** — Someone asks if they should create a Jira ticket. Someone else has already created one, but in the wrong project. A third person is trying to find the incident response runbook in Confluence.\n\n" +
+      "**00:22** — Actual remediation begins. Sam has been coordinating for eighteen minutes. The fix takes four.\n\n" +
+      "**00:26** — Service restored. Total incident duration: 26 minutes. Time spent on coordination overhead: 18 minutes. Time spent on actual remediation: 4 minutes. The ratio is 4.5 to 1.\n\n" +
+      "This ratio is not unusual. Post-mortems consistently show that the coordination cost of incidents exceeds the remediation cost. The person who knows what to do is bottlenecked not by the problem but by the overhead of telling other people what to do.\n\n" +
+      "## Why Incident Coordination Breaks Down\n\n" +
+      "The fundamental issue is that incident response requires zero-friction coordination. The person who understands the problem needs to distribute tasks to three or four people in sixty seconds. Every tool they use to do this adds friction. Slack is fast but unstructured — tasks get lost in threads. Jira is structured but slow — nobody creates tickets during an outage. Runbooks are useful but static — they describe what to do in general, not what to do right now.\n\n" +
+      "The result is that most incident coordination happens through the worst possible medium: synchronous conversation in a rapidly scrolling Slack channel where critical instructions are interspersed with status updates, questions, and well-meaning suggestions from people who are trying to help but do not have the full picture.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Jira's incident templates and PagerDuty integrations work well for post-incident review. The structured data — timeline, root cause, action items — is valuable for learning and prevention. The problem is not the tools. The problem is the moment. These tools are designed for reflection, not for action. They are excellent at documenting what happened after the fact. They are terrible at coordinating what should happen right now.\n\n" +
+      "## Decision Criteria: Is Your Incident Response Actually Fast?\n\n" +
+      "**How many minutes pass between \"someone knows what to do\" and \"everyone is doing it\"?** That gap is your coordination overhead. If it is more than two minutes, the tooling is the bottleneck.\n\n" +
+      "**Can the incident commander assign tasks without leaving the terminal?** If they have to open a browser, navigate to a tool, and click through a form, they are context-switching during a crisis. Context switches during crises cost more than context switches during normal work.\n\n" +
+      "**When a new person joins the incident, can they see what is happening without asking?** If the first thing someone does when they join an incident channel is ask \"what do you need me to do?\", the coordination state is not visible enough.\n\n" +
+      "**Does the incident tool work the same way as the daily tool?** If your incident response requires a different tool with a different interface, you are asking people to learn a new tool during the highest-stress moment of their job. The [tool you use in a crisis](/blog/spinning-up-a-team-in-60-seconds) should be the same tool you use every day.\n\n" +
+      "## What If There Was a Way to Coordinate in Sixty Seconds?\n\n" +
+      "What if there was a way to create an incident context, assign tasks, and make the state visible to everyone — all from the terminal, in the time it takes to type three commands?\n\n" +
+      "That is what this looks like: `hey -s 'DB outage prod'` creates the incident Stax. `hey -a @sam @dispatch` adds the responders. `hey 'isolate replica reads' @sam --now` assigns the first task with an urgency flag. Each person sees their assignment. The coordination state is visible without anyone asking \"what do you need me to do?\"\n\n" +
+      "The commands take fifteen seconds to type. Compare that to eighteen minutes of Slack coordination. The difference is not just speed. It is structure. Slack is a stream. A Stax is a state. Streams scroll away. State persists until it is resolved.\n\n" +
+      "After the incident, the same Stax serves as the incident record. What was assigned, to whom, when it was marked done. The [post-mortem writes itself](/blog/timesheets-that-fill-themselves) because the work was tracked at the moment it happened, not reconstructed afterward.\n\n" +
+      "The tool you use in a crisis should be the same tool you use every day. That is not a design preference. It is a safety requirement. Muscle memory matters when the adrenaline hits. If `hey ls` is how you check tasks on a Tuesday morning, `hey ls` is how you check tasks during a production outage. Same command. Same interface. Same instinct.\n\n" +
+      "## The Rehearsal That Happens Every Day\n\n" +
+      "There is a concept in incident response called the \"peacetime rehearsal.\" The idea is that you practice incident response during normal operations so that the muscle memory is there when you need it. The problem with most rehearsals is that they use different tools than daily work. You run a tabletop exercise with a facilitator and a shared document. Then the real incident happens and you are in Slack, trying to coordinate in a tool that was not part of the rehearsal.\n\n" +
+      "When the daily coordination tool and the incident coordination tool are the same tool, every day is a rehearsal. The engineer who uses `hey` to manage their daily tasks is already fluent in the interface when the incident hits. The assignment syntax is the same. The task visibility is the same. The status checking is the same. There is no cognitive load spent on the tool because the tool is familiar. All cognitive load goes to the problem.\n\n" +
+      "This is why the best incident response teams are not the ones with the most sophisticated incident management platforms. They are the ones with the lowest friction between \"I know what needs to happen\" and \"everyone is doing it.\" The [speed of coordination](/blog/spinning-up-a-team-in-60-seconds) determines the speed of resolution. Everything else is secondary.\n\n" +
+      "The teams that respond fastest are not the ones with the best runbooks. They are the ones where coordination costs nothing because the coordination tool is already in their hands.",
+  },
+  {
+    slug: "jira-ticket-before-first-line-of-code",
+    title: "You Wrote a Jira Ticket Before You Wrote a Line of Code",
+    seoTitle: "Jira Alternative for Fast-Moving Dev Teams",
+    seoDescription:
+      "Jira assumes work is stable before it starts. AI-era builders work the opposite way — context is richest at inception and decays fast. Here's a better pattern.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "Jira alternative fast-moving teams",
+      "developer project tracking",
+      "lightweight project management",
+      "agile alternative developers",
+      "fast dev team coordination",
       "terminal project management",
-      "cli productivity tool",
     ],
     excerpt:
-      "Most CLI task tools are standalone lists. hey is different because tasks are attached to a Stax — a named project context that includes browser tabs, next actions, and team visibility.",
+      "The context in your head is richest at the moment you understand the problem. By the time the ticket is groomed and estimated, that context has decayed. The overhead of tracking work should never exceed the work itself.",
     faq: [
       {
-        q: "What is a Stax?",
-        a: "A Stax is a named project context. It contains the browser tabs you had open for that project, the next actions you need to take, and metadata like tags and team assignments. When you reopen a Stax, you resume where you left off — tabs and tasks together.",
+        q: "Is HeyStax a Jira replacement?",
+        a: "For fast-moving teams that ship in hours or days rather than sprints, yes. HeyStax provides project context, task tracking, and team visibility without the overhead of boards, sprints, estimation, and grooming ceremonies. For teams with regulatory requirements, audit trails, or fixed-scope contracts, Jira may still be the right tool.",
       },
       {
-        q: "How is hey different from taskwarrior or todoist CLI?",
-        a: "Those tools manage tasks as a standalone list. hey attaches tasks to a project context (a Stax) that also includes browser tabs. When you switch Stax in the CLI, you're not just filtering a list — you're switching to a different work context that has its own tabs, its own actions, and its own team visibility.",
+        q: "What about teams that need Jira for compliance?",
+        a: "If your industry requires formal audit trails or you have contractual obligations around project tracking, Jira's compliance features are genuinely valuable. The question is whether the team that needs those features is the same team writing the code. Often the compliance requirement applies to the deliverable, not the development process.",
       },
       {
-        q: "Can I use hey without the browser extension?",
-        a: "Yes. The CLI works independently for task management. But the full value comes from the connection: tasks you add from the terminal appear as Next Actions in the extension, and the Stax you manage in the extension are the same ones you switch between in the CLI.",
-      },
-      {
-        q: "What happens when I run hey use 'Project Name'?",
-        a: "You set your active Stax. All tasks you add after that are attached to that Stax. When you run hey ls, you see only the tasks for that project. It's like cd for project context — you work inside one context at a time.",
+        q: "Can I use HeyStax alongside Jira?",
+        a: "Yes. Many teams use Jira for the organizational requirements (reporting, compliance, stakeholder visibility) and HeyStax for the actual development coordination. The Jira ticket gets updated when the work is done. The hey CLI tracks the work while it is happening.",
       },
     ],
     content:
-      "There are plenty of CLI task managers. Taskwarrior has been around since 2006. Todoist has a CLI. There are dozens of lightweight alternatives on GitHub — most of them store tasks in a JSON file and let you add, list, and check them off from the terminal. They do the job.\n\n" +
-      "So when we built `hey`, the question we had to answer was: why does the world need another one?\n\n" +
-      "The answer is that hey is not a task manager. It is a project context surface.\n\n" +
-      "## The Problem with Standalone Task Lists\n\n" +
-      "A standalone task list — whether it lives in a text file, a JSON store, or a cloud database — has a structural limitation: it knows what you need to do, but not where you were doing it.\n\n" +
-      "When you write \"review the API docs\" in a task list, the list does not know which API docs, which browser tabs you had open when you were reviewing them, or what state the review was in when you stopped. The task is a string. The context it refers to exists only in your memory.\n\n" +
-      "This is fine for simple, self-contained tasks. It breaks down for knowledge work, where the task is usually shorthand for a much richer working state: five tabs open, a specific section of documentation, a draft in progress, a Slack thread you were referencing.\n\n" +
-      "The task list says \"review API docs.\" What it means is \"reopen those four tabs, find the section you were reading, remember what you were going to say about the authentication flow, and pick up where you left off.\" That reconstruction is what we call the re-entry tax, and it is usually more expensive than the task itself.\n\n" +
-      "## What a Stax Adds\n\n" +
-      "In HeyStax, a Stax is not a category or a tag. It is a saved project context: a named collection of browser tabs plus the next actions attached to them. When you save a Stax in the extension, you are saving both what you were looking at and what you were about to do.\n\n" +
-      "The CLI plugs into this same structure. When you run `hey use 'Client Pitch'`, you are not filtering a flat task list by project name. You are selecting a context that has its own browser tabs (saved in the extension), its own next actions (visible in the CLI, the extension, and the dashboard), and its own team visibility.\n\n" +
-      "This is why `hey` exists alongside the extension and the dashboard, not instead of them. Each surface shows the same project state through a different lens. The [extension](/blog/heystax-cli-terminal-task-management) shows tabs and actions in the browser. The dashboard shows actions across all projects. The CLI shows actions in the terminal. The underlying data is the same.\n\n" +
-      "## The hey use Command\n\n" +
-      "The `hey use` command is the pivot point. It sets your active Stax, and everything after it is scoped to that context.\n\n" +
-      "`hey use 'Client Pitch'` means: I am now working on Client Pitch. Tasks I add go there. Tasks I list come from there. When I switch to `hey use 'API Redesign'`, I am in a different context with different tasks, different tabs (in the extension), and different team assignments.\n\n" +
-      "This is the same mental model as `cd` in a filesystem. You are always somewhere. The somewhere determines what you see and what you create. The difference is that a Stax is not a directory of files — it is a directory of context. Tabs, actions, people, urgency.\n\n" +
-      "Most CLI task tools skip this entirely. They give you a global list and let you filter it. That works until you have three projects running simultaneously and the list becomes a wall of mixed-context items that requires you to do the sorting in your head. The `hey use` model means sorting is structural, not cognitive.\n\n" +
-      "## Why the CLI Matters for Teams\n\n" +
-      "There is a gap on most teams between the people who live in the terminal and the people who live in the browser. Developers, devops engineers, and sysadmins often track their work mentally or in local notes because the team's official task tool requires a browser, a mouse, and a context switch that feels too expensive in the middle of a deploy.\n\n" +
-      "The result is that work happens in the terminal but gets reported in a different tool, later, from memory. The reporting is lossy. The delay means things get forgotten. And the team's shared picture of project state is always slightly behind reality.\n\n" +
-      "`hey` closes that gap. When a developer adds a task from the terminal, it is immediately visible in the extension and the dashboard. When they mark something done, the team sees it. No translation step, no reporting delay. The terminal becomes a first-class surface for team project state.\n\n" +
-      "## The Philosophy\n\n" +
-      "The design principle behind hey is that a task should not exist in isolation from the context it belongs to. \"Review API docs\" is not a meaningful unit of work unless you know which project it belongs to, what tabs are relevant, and who else is involved.\n\n" +
-      "Most task tools treat tasks as atoms. hey treats them as properties of a context. The context is the Stax. The Stax is the unit that matters.\n\n" +
-      "This is not a philosophical distinction. It has a practical consequence: when you sit down to work, you do not scan a flat list and decide what to do. You select a Stax — a project, a world — and the relevant tasks are already there, scoped and ready. The decision is not \"what should I do?\" but \"which project am I working on?\" Once that is decided, the tasks follow.\n\n" +
-      "That is why we built a CLI for project context, not just tasks. The task is the smallest useful unit. The project context is the one that actually gets you back to work.",
+      "Looking for a Jira alternative for fast-moving teams is not a sign of immaturity. It is a sign that your team's cycle time has outgrown a tool designed for a different era. The friction is not a bug in Jira. It is a fundamental mismatch between how Jira models work and how fast-moving teams actually work.\n\n" +
+      "\"By the time the ticket is groomed, estimated, and assigned, the context I had in my head is gone.\" That observation, posted on Hacker News, has been echoed in different forms by developers for years. The pattern is always the same: the moment of maximum understanding — when the developer knows exactly what needs to be done, why, and how — is the moment before the ticket exists. The ticket creation process consumes time during which that understanding decays.\n\n" +
+      "## A Day in the Life of a Ticket\n\n" +
+      "Here is what a Wednesday morning looks like for a developer named Priya. She is debugging an authentication issue. She has spent forty minutes in the codebase and she now understands the problem: the OAuth2 refresh token flow is not handling expired tokens correctly. She knows the fix. She has the mental model of the code in her head.\n\n" +
+      "Before she can start coding, her team's process requires a ticket. She opens Jira. She fills in the title, description, acceptance criteria, story points, sprint, epic, labels, and assignee. She links it to the parent issue. She moves it to In Progress. This takes twelve minutes. Not because Jira is slow — it is not — but because translating a mental model into a structured ticket format is cognitive work.\n\n" +
+      "During those twelve minutes, the detailed understanding she had starts to degrade. Not dramatically. She still knows the fix. But the vivid, working mental model — the one where she could see the exact code paths and edge cases — has partially faded. She has to re-engage with the code, which takes another five minutes.\n\n" +
+      "Total overhead: seventeen minutes. The actual fix takes twenty. The overhead is nearly equal to the work.\n\n" +
+      "Now multiply this by every task, every day, across the team. The cumulative cost is enormous. Not because any individual ticket is expensive, but because the tax is paid on every unit of work, regardless of its size or complexity.\n\n" +
+      "## The Assumption That Breaks Down\n\n" +
+      "Jira works on an assumption: work is stable before it starts. You define the work, then you execute it. The definition phase (ticket creation, grooming, estimation) produces an artifact (the ticket) that guides the execution phase.\n\n" +
+      "This assumption holds for some work. Building a feature from a well-understood spec, implementing a design that has been reviewed and approved, migrating a database with a documented schema — these are stable-scope tasks where the upfront investment in definition pays off.\n\n" +
+      "But increasingly, the work is not like this. Debugging is exploratory. Prototyping is iterative. Working with AI is conversational. The scope emerges as the work happens. Defining it upfront is not just overhead — it is often wrong. The ticket you would write before starting is not the ticket you would write after finishing. The map does not match the territory because the territory is being discovered.\n\n" +
+      "For [AI builders who ship in hours](/blog/ai-builders-dont-use-project-management), this mismatch is acute. When you can go from idea to working prototype in an afternoon with Claude, the ticket becomes a receipt, not a plan. You are documenting work that has already happened, not coordinating work that is about to happen.\n\n" +
+      "## What Jira Does Well\n\n" +
+      "Jira's audit trail, permissions model, and CI/CD integrations are genuinely valuable. For regulated environments with fixed scope — medical devices, financial systems, government contracts — Jira earns its complexity. The audit trail is not overhead; it is a deliverable. The permissions model is not bureaucracy; it is compliance. When the scope is stable and the stakes are high, Jira's weight is justified.\n\n" +
+      "The problem is that Jira's weight is applied uniformly. The three-person startup building an MVP gets the same tool as the hundred-person enterprise team building a regulated product. The tool does not scale down. And for teams where the cycle time is measured in hours rather than weeks, that weight becomes the dominant cost.\n\n" +
+      "## Decision Criteria: Is Your Ticket System Earning Its Keep?\n\n" +
+      "**What percentage of your tickets are written before the work starts versus after?** If most tickets are created after the work is done (or worse, never created at all), the system is tracking history, not coordinating work.\n\n" +
+      "**How long does ticket creation take relative to the work?** If the ratio is above 1:5, the overhead may be disproportionate. Priya's 17-minute overhead on a 20-minute fix is a 1:1.2 ratio. That is expensive.\n\n" +
+      "**Does the team update ticket status in real time, or in batches?** Batch updates (\"let me update my tickets before standup\") mean the board is always stale. Stale data is worse than no data because it creates false confidence.\n\n" +
+      "**Would you use this tool if nobody required you to?** If the answer is no, the tool is serving the process, not the team.\n\n" +
+      "## What If There Was a Way to Track Work at the Speed of Work?\n\n" +
+      "What if there was a way to capture a task at the exact moment you understand it, without leaving the environment where the understanding lives?\n\n" +
+      "That is what `hey -s 'Auth refactor'` does. It creates the project context in the terminal — the same terminal where Priya was debugging. Then `hey -a @priya @leon` adds collaborators. Then `hey 'spike OAuth2 flow' @priya` assigns the task. Total time: ten seconds. The context in Priya's head is still intact.\n\n" +
+      "The task is immediately visible in the [HeyStax browser extension](/blog/tabs-are-not-the-problem), in the CLI, and on the dashboard. Leon can see what Priya is working on. Priya can see her own task list with `hey ls`. When she finishes, `hey done 1` marks it complete. The [timestamp becomes a timesheet entry](/blog/timesheets-that-fill-themselves) as a side effect.\n\n" +
+      "The overhead of tracking work should never exceed the work itself. When tracking costs ten seconds instead of seventeen minutes, the calculus changes. Small tasks get tracked. Short-lived projects get tracked. The three-hour investigation that used to live only in someone's head now has a record, because the cost of creating that record dropped below the threshold of bothering.\n\n" +
+      "## The Invisible Threshold\n\n" +
+      "Every team has an invisible threshold — a minimum project size or duration below which work does not get tracked. This threshold is not set by policy. It is set by friction. When ticket creation takes fifteen minutes, only work expected to last more than a day gets a ticket. Everything shorter is invisible: the quick investigation, the spike, the bug that took an hour to diagnose and five minutes to fix.\n\n" +
+      "That invisible work adds up. In most teams, the untracked work represents 20-40% of total engineering time. It is the dark matter of productivity — present, impactful, but invisible to every dashboard and report. When a manager asks \"where did the time go this sprint?\" the answer is often the untracked work: the investigations, the mentoring, the yak-shaving, the context switching.\n\n" +
+      "Lowering the threshold changes what is visible. When tracking costs ten seconds instead of fifteen minutes, the three-hour investigation gets tracked. The mentoring session gets tracked. The spike gets tracked. Not because someone mandated it, but because the cost of tracking dropped below the cost of not tracking. The dark matter becomes visible, and the team's understanding of where time actually goes becomes accurate for the first time.\n\n" +
+      "That is not a feature. It is a shift in what is worth tracking. And when more work is tracked, [the team's visibility improves](/blog/visibility-without-standups) without anyone doing more work. The tracking is a side effect of doing the work, not an additional task layered on top.",
   },
   {
-    slug: "heystax-cli-speed-run-demo",
-    title: "Ship a Demo in 30 Seconds: The HeyStax CLI Speed Run",
-    seoTitle: "HeyStax CLI Speed Run: Set Up a Team Project in 30 Seconds",
+    slug: "llm-that-knows-what-youre-working-on",
+    title: "The LLM That Actually Knows What You're Working On",
+    seoTitle: "Claude MCP Project Context for AI Assistants",
     seoDescription:
-      "A concrete walkthrough of the full HeyStax CLI flow: create a Stax, assign teammates, add tasks, and see everything in one terminal session. 30 seconds, start to finish.",
-    date: "2026-03-10",
+      "You re-explain your project to Claude every session. An MCP server that gives your AI live access to your working state changes everything.",
+    date: "2026-03-01",
     author: "Colm Byrne",
     kicker: "CLI & Terminal",
     keywords: [
-      "heystax demo",
-      "cli onboarding",
-      "team task assignment",
-      "terminal team management",
-      "hey stax cli",
-      "project kickoff cli",
+      "Claude MCP project context AI assistant",
+      "LLM project context",
+      "AI assistant productivity",
+      "Claude memory project state",
+      "MCP server developer tools",
+      "AI coding assistant context",
     ],
     excerpt:
-      "Create a Stax, assign teammates, add five tasks, and see everything — all from the terminal, all in 30 seconds. This is the hey speed run.",
+      "Your AI assistant is stateless between sessions. You are the one carrying the context burden — re-explaining your project every time you start a new conversation. There is a better architecture.",
     faq: [
       {
-        q: "Do I need teammates to have HeyStax accounts for the speed run?",
-        a: "No. You can assign tasks to names with @mentions even if they haven't signed up yet. When they do connect, the assignments are waiting for them. The speed run works solo or with a team.",
+        q: "What is an MCP server and how does it help my AI assistant?",
+        a: "MCP (Model Context Protocol) is a standard that lets AI assistants connect to external data sources. A HeyStax MCP server gives Claude direct access to your project state — which project is active, what tabs are open, what tasks are pending, who is assigned to what. Instead of you explaining this every session, the AI can read it directly.",
       },
       {
-        q: "What happens to the Stax after I create it in the CLI?",
-        a: "It exists as a project context across all HeyStax surfaces. If you're authenticated, it syncs to the cloud and appears in the browser extension and dashboard. Tasks you added from the terminal show up as Next Actions in the extension.",
+        q: "Does this mean Claude can see all my browser tabs?",
+        a: "Only the tabs saved in your Stax — the project contexts you have deliberately created. It does not have access to your general browsing. The data it sees is the data you have curated as part of your project context.",
       },
       {
-        q: "Can I run the speed run without installing anything?",
-        a: "You need the CLI installed: npm install -g heystax-cli. After that, the speed run commands work immediately. No account required for local use.",
-      },
-      {
-        q: "Is the --urgent flag just visual, or does it change behaviour?",
-        a: "It's visible across all surfaces — the CLI output, the extension's Next Actions, and the dashboard. Urgent tasks sort to the top of hey ls output so they're the first thing you see when you check in.",
+        q: "How is this different from Claude's built-in Projects feature?",
+        a: "Claude's Projects feature stores documents and instructions that persist across conversations. It is useful for single-project context. HeyStax MCP provides live working state — what you are actually doing right now, what tasks are pending, who is working on what. Projects are static context. MCP provides dynamic context.",
       },
     ],
     content:
-      "This is a walkthrough of the full HeyStax CLI flow, start to finish, in six commands. It takes about thirty seconds to type. By the end, you have a project with assigned teammates, prioritised tasks, and a view that works in the terminal, the browser extension, and the dashboard simultaneously.\n\n" +
-      "No configuration files. No onboarding wizard. No settings page. Just commands.\n\n" +
-      "## The Setup\n\n" +
-      "You have a new project. It is called Global Explorer. Three people are involved: you, James, and Mary. There are five things that need to happen. Here is the entire setup.\n\n" +
-      "## Command 1: Create the Stax\n\n" +
-      "`hey -s 'Global Explorer'`\n\n" +
-      "This creates a new Stax called Global Explorer and switches to it. The `-s` flag is shorthand for \"create and switch.\" Everything you add after this command is scoped to Global Explorer. You are now inside a project context, the same way `cd` puts you inside a directory.\n\n" +
-      "The terminal confirms: **Stax created: Global Explorer**. You are ready.\n\n" +
-      "## Command 2: Add Your Team\n\n" +
-      "`hey -a @james @mary`\n\n" +
-      "This adds James and Mary as collaborators on the Stax. The `-a` flag adds team members. They do not need to be present or authenticated at this moment. When they connect to HeyStax, Global Explorer and its tasks will be waiting for them.\n\n" +
-      "Two people added in one command. No invitation flow, no email confirmation, no waiting.\n\n" +
-      "## Command 3: First Task, Assigned\n\n" +
-      "`hey 'setup repo' @james`\n\n" +
-      "This adds a task — \"setup repo\" — and assigns it to James. The `@james` at the end is the assignment. The task is now visible in James's view of Global Explorer, whether he checks via the CLI, the extension, or the dashboard.\n\n" +
-      "Notice the pattern: the command reads like a sentence. \"Hey, setup repo, James.\" That is deliberate. The CLI is designed so that the thing you would say out loud is the thing you type.\n\n" +
-      "## Command 4: Second Task, Assigned\n\n" +
-      "`hey 'design system audit' @mary`\n\n" +
-      "Same pattern. Mary now has a task. She will see it the next time she opens any HeyStax surface. The task knows it belongs to Global Explorer because that is the active Stax.\n\n" +
-      "## Command 5: Urgent Task, Unassigned\n\n" +
-      "`hey 'pitch deck' --urgent`\n\n" +
-      "This adds a task with the `--urgent` flag. Urgent tasks sort to the top of `hey ls` output, appear with a visual indicator in the extension, and are highlighted on the dashboard. No assignee on this one — it belongs to the project, and whoever picks it up picks it up.\n\n" +
-      "The `--urgent` flag is the only priority mechanism in hey. There are no P1/P2/P3 levels, no priority matrices, no colour-coded severity tiers. A thing is either urgent or it is not. This is a deliberate constraint. Priority systems with more than two levels tend to become negotiation surfaces rather than decision tools.\n\n" +
-      "## Command 6: See Everything\n\n" +
-      "`hey ls`\n\n" +
-      "This lists all tasks for the active Stax. The output looks something like this:\n\n" +
-      "**Global Explorer** (3 tasks)\n\n" +
-      "The list shows each task with its number, description, assignee, and urgency flag. The pitch deck task is at the top because it is urgent. The assigned tasks show their owners. The whole thing fits in a terminal window without scrolling.\n\n" +
-      "That is six commands. The project exists, the team is assigned, the tasks are tracked, and everything is visible across three surfaces. Total elapsed time: about thirty seconds of typing.\n\n" +
-      "## What Just Happened\n\n" +
-      "In thirty seconds, you created a project structure that would take five to ten minutes in most project management tools. Not because those tools are slow, but because they require navigation. You have to create a project, configure its settings, invite members through an email flow, create tasks through a form interface, assign them through a dropdown, and set priority through a menu.\n\n" +
-      "Each of those steps is individually reasonable. Together, they add up to enough friction that many projects never get properly set up. The team lead knows the project exists and the tasks are clear, but the overhead of entering it all into the tool means it stays in their head or in a Slack message instead.\n\n" +
-      "`hey` compresses the setup to the minimum number of keystrokes. The project exists the moment you name it. The team is added the moment you mention them. The tasks exist the moment you type them. There is no gap between knowing what needs to happen and having it tracked.\n\n" +
-      "## After the Speed Run\n\n" +
-      "Once the Stax exists, the ongoing workflow is even simpler. You check in with `hey ls`. You add tasks as they come up with `hey 'whatever it is'`. You mark things done with `hey done 2`. If you need to switch to another project, `hey use 'Other Project'` changes your context.\n\n" +
-      "If you are authenticated, everything syncs. James and Mary see their tasks in whatever surface they prefer. The [browser extension](/blog/heystax-cli-terminal-task-management) shows Global Explorer as a Stax with Next Actions. The dashboard shows tasks across all projects. The CLI shows the same data, formatted for the terminal.\n\n" +
-      "The speed run is designed to be the kind of thing you show someone in a screen share and they say \"wait, that's it?\" Yes. That is it. The project is set up. The tasks are tracked. The team can see them. You typed six commands and you are done.\n\n" +
-      "## Why Speed Matters for Setup\n\n" +
-      "There is a well-documented pattern in tool adoption: if the setup cost is too high, the tool does not get used for small or short-lived projects. A two-week sprint gets a Jira board. A three-day spike does not. The spike lives in someone's head, or in a Slack thread, or in a sticky note.\n\n" +
-      "When setup takes thirty seconds, the threshold drops. A three-day spike gets a Stax. A one-day investigation gets a Stax. Even a two-hour pairing session could get a Stax if the tasks are worth tracking. The cost of creating the [project context](/blog/cli-project-context-not-just-tasks) is low enough that it makes sense for work at any scale.\n\n" +
-      "That is the point of the speed run. Not to show off, but to demonstrate that the barrier to organised work can be this low. Six commands. Thirty seconds. Everything tracked, everything visible, everyone aligned.",
+      "Claude MCP project context is the missing layer between your AI assistant and your actual work. The problem is simple to state: every time you start a new conversation with Claude, you start from zero. The AI does not know what project you are working on, what you did yesterday, what is next, or who else is involved. You are the context bridge, and you pay the toll every session.\n\n" +
+      "\"I have to re-explain my project to Claude every single session. It's exhausting.\" That frustration, posted on r/ClaudeAI, has hundreds of upvotes because it describes a universal experience. The AI assistant is powerful but amnesiac. Every session begins with the user performing the cognitive equivalent of loading a context window by hand: pasting code, explaining architecture, recounting history, specifying constraints.\n\n" +
+      "## The Failure Mode: You Are the Context Window\n\n" +
+      "Here is what this costs in practice. A developer named Ravi is building a payments integration. On Monday, he had a productive session with Claude. They designed the schema, wrote the webhook handler, and planned the error recovery flow. The conversation was excellent. The AI understood the constraints, suggested good patterns, and caught two edge cases Ravi had missed.\n\n" +
+      "On Tuesday, Ravi starts a new conversation. Claude does not know about Monday. Ravi spends eight minutes re-explaining: the project context, the architecture decisions, the constraints, the current state. He pastes code. He re-explains the schema. He mentions the edge cases they discussed yesterday.\n\n" +
+      "By the time Claude is up to speed, Ravi has lost the sharp focus he had when he sat down. The re-explanation is not just time. It is a context switch from \"doing the work\" to \"describing the work.\" Those are different cognitive modes, and the transition between them has a cost that the eight minutes do not fully capture.\n\n" +
+      "This happens every session. Five times a week, eight minutes each, that is forty minutes a week — a full workday per month — spent loading context into an AI that could, in principle, load it itself.\n\n" +
+      "The deeper failure mode is degradation. On Monday, Ravi's explanation is vivid and complete. By Thursday, he is summarising. By the following Monday, he is approximating. The context he provides to Claude gets less accurate over time because his own memory of the details is decaying. The AI's responses degrade accordingly. Not because the AI is worse, but because the input is worse.\n\n" +
+      "## Why Statelessness Is the Wrong Default\n\n" +
+      "LLMs are stateless between sessions by design. This is a reasonable default for general-purpose conversations where the user could be anyone asking anything. But for development work, where the same person returns to the same project day after day, statelessness is a significant friction cost.\n\n" +
+      "The problem is not that the AI cannot remember. The problem is that the AI has no mechanism to access the user's current working state. Even with Claude's Projects feature — which is a genuine improvement — the context is static. It is a set of documents that the user uploads and maintains. When the project state changes, the user must update the documents. The maintenance cost scales with the pace of change.\n\n" +
+      "What is needed is not memory but access. The AI does not need to remember what you did yesterday. It needs to see what is true right now: which project is active, what tasks are pending, what tabs are open, who is assigned to what. Live state, not historical documents.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Claude's Projects and persistent memory features are genuine improvements for single-project users. If you work on one project and can maintain a set of reference documents, Projects provides useful persistent context. Custom instructions shape the AI's responses in ways that compound across sessions. These features move in the right direction — they just do not go far enough for multi-project developers whose working state changes daily.\n\n" +
+      "## Decision Criteria: Is Your AI Actually Helping or Just Fast?\n\n" +
+      "**How many minutes do you spend loading context per session?** Track it for a week. If the total exceeds thirty minutes, you are spending a meaningful fraction of your AI-assisted time on setup rather than work.\n\n" +
+      "**Does your AI know which project you are working on right now?** If you have to tell it, you are the routing layer. Routing is a job for machines.\n\n" +
+      "**Can your AI see your current tasks and their status?** If the AI cannot see what is pending, it cannot prioritise its suggestions. It is guessing at relevance.\n\n" +
+      "**When you switch projects, does your AI switch with you?** If switching projects requires re-explaining the new context, the AI is session-scoped, not project-scoped. Project-scoped assistance is dramatically more useful.\n\n" +
+      "## What If There Was a Way to Give Your AI Live Project Access?\n\n" +
+      "What if there was a way to connect your AI assistant to your actual working state — not a document about your state, but the state itself? What if switching projects in your terminal automatically changed what the AI could see?\n\n" +
+      "That is what the HeyStax MCP server provides. When Claude connects via MCP, it can read your active Stax: the project name, the open tabs, the pending tasks, the team assignments. When you run `hey -s 'Payments v2'` in the terminal, the MCP server reflects that change. Claude's next response is grounded in the project you are actually working on, not the project you described last Tuesday.\n\n" +
+      "The workflow becomes: open terminal, select project, start talking to Claude. No preamble. No re-explanation. The AI already knows what you are working on because it can see the same state you can see. The conversation starts at the work, not at the setup.\n\n" +
+      "For teams, this compounds. When multiple people are working in the same Stax, each person's AI assistant sees the same shared state. The tasks, the assignments, the [context that would normally require a standup](/blog/visibility-without-standups) to share. The AI does not just know what you are working on. It knows what your team is working on.\n\n" +
+      "The [human context engineering](/blog/human-context-engineering) discipline that AI builders are developing applies here directly. You would not give your AI a blank system prompt. You should not give it a blank project context either. The MCP server is the mechanism by which your carefully curated project state becomes available to the tool that needs it most.\n\n" +
+      "## The Compound Returns of Live Context\n\n" +
+      "The benefits of giving your AI live project access compound in ways that are hard to predict before you experience them. The first benefit is obvious: no more re-explanation. But the second benefit is subtler. When the AI knows what you are working on, its suggestions become relevant by default. It does not suggest patterns that are inappropriate for your architecture because it can see your architecture. It does not recommend libraries you have already rejected because it can see what you are actually using.\n\n" +
+      "The third benefit is the one nobody expects: the AI becomes a better collaborator when it can see the team's state, not just yours. When multiple people share a Stax, the AI can see the full picture — who is working on what, which tasks are blocked, where the dependencies are. A question like \"what should I work on next?\" gets a useful answer because the AI has enough context to reason about priorities, not just capabilities.\n\n" +
+      "This is the difference between a tool and a teammate. A tool does what you tell it. A teammate understands the situation and acts accordingly. The context is what makes the difference. The more context, the more useful the collaboration. The [human context engineering](/blog/human-context-engineering) discipline is ultimately about recognising that context is not overhead — it is the mechanism by which both humans and machines do their best work.\n\n" +
+      "An AI assistant that cannot see what you are working on is just a very fast search engine. An AI assistant with live project access is a collaborator. The difference is not the model. It is the context.",
+  },
+  {
+    slug: "spinning-up-a-team-in-60-seconds",
+    title: "Spinning Up a Team in 60 Seconds",
+    seoTitle: "Spin Up a Project Team Fast with CLI Tools",
+    seoDescription:
+      "Project setup friction is invisible because it happens at the beginning. Fast teams need fast ignition. Here's how to go from zero to coordinated in sixty seconds.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "spin up project team fast CLI",
+      "project setup developer tools",
+      "team coordination fast startup",
+      "developer project kickoff",
+      "CLI team management",
+      "fast project onboarding",
+    ],
+    excerpt:
+      "The moment of ignition matters. A project that takes thirty minutes to set up creates drag that a project set up in thirty seconds never has. Setup friction is invisible because it happens once — but it shapes everything that follows.",
+    faq: [
+      {
+        q: "How fast can I actually set up a project with HeyStax?",
+        a: "Three commands, about fifteen seconds. hey -s creates the project, hey -a adds team members, and hey assigns the first task. Everything is immediately visible to the team in the CLI, the browser extension, and the dashboard.",
+      },
+      {
+        q: "What about projects that need more structure — milestones, phases, permissions?",
+        a: "HeyStax is optimised for fast-cycle work where the coordination cost should be near zero. If your project needs formal milestones, phase gates, and role-based permissions, a traditional PM tool is likely a better fit. The question is whether the project's complexity justifies that overhead.",
+      },
+      {
+        q: "Can I use this for temporary or short-lived projects?",
+        a: "Yes, and that is actually the sweet spot. Three-day spikes, one-week prototypes, incident responses, hackathon projects — these short-lived efforts often get no project structure because the setup cost is too high relative to the project duration. When setup takes fifteen seconds, even a two-hour pairing session is worth tracking.",
+      },
+    ],
+    content:
+      "The ability to spin up a project team fast with CLI tools changes what is worth organising. Most teams have a threshold below which work does not get tracked. A two-week feature gets a Jira board. A three-day spike lives in someone's head. The spike is not less important — it just is not important enough to justify the setup cost. That threshold is set not by the work but by the tooling.\n\n" +
+      "\"We spent more time setting up the project than we spent on the first task.\" That observation, from an indie hacker forum, captures the absurdity perfectly. The setup ceremony — creating the board, adding members, configuring permissions, writing the initial tickets — takes longer than the first meaningful unit of work. For short-lived projects, the setup cost can exceed the total project value.\n\n" +
+      "## The First Sixty Seconds of a Project\n\n" +
+      "Here is what the first sixty seconds of a project look like when setup friction is near zero. This is not hypothetical. This is the actual sequence.\n\n" +
+      "**Second 0:** Sara gets a message from the CTO: \"We need a Stripe integration. Can you and Tom start today?\"\n\n" +
+      "**Second 10:** Sara opens her terminal. Types `hey -s 'Payments integration'`. The project exists.\n\n" +
+      "**Second 20:** `hey -a @sara @tom`. Both are now collaborators. Tom sees the Stax in his extension and his `hey ls` output.\n\n" +
+      "**Second 30:** `hey 'read Stripe docs' @sara`. First task, assigned.\n\n" +
+      "**Second 40:** `hey 'set up test webhook endpoint' @tom`. Second task, assigned.\n\n" +
+      "**Second 50:** `hey 'review Stripe pricing tiers' @sara`. Third task, queued.\n\n" +
+      "**Second 60:** Sara opens the Stripe docs. Tom opens the webhook endpoint code. Both know what they are doing. Neither had to wait for the project to be \"set up\" because the setup was the work. Three commands created the context. Three more created the initial tasks. Everything is visible to both of them.\n\n" +
+      "Compare this to the traditional flow. Sara would create a Slack channel, a Jira project (or ask someone with admin access to create one), invite Tom, create initial tickets, estimate them, assign them, and then — twenty minutes later — start reading the Stripe docs. Those twenty minutes are invisible in any retrospective because they happened at the beginning, before the \"real work\" started. But they set the tone. A project that begins with friction carries that friction forward.\n\n" +
+      "## Why Setup Friction Matters More Than You Think\n\n" +
+      "There is a well-documented pattern in tool adoption: the cost of starting determines what gets started. When project setup takes twenty minutes, only projects expected to last more than a few days get set up. Everything shorter — spikes, investigations, pairing sessions, incident responses — goes untracked.\n\n" +
+      "The consequence is an information gap. The longest-lived, most stable projects have the most tooling and the most visibility. The shortest-lived, most dynamic work — which is often the most critical — has none. The [incident that needed coordination](/blog/incident-response-no-time-for-tickets) did not get a board. The spike that discovered a critical architecture flaw did not get tracked. The pairing session that produced a breakthrough did not leave a record.\n\n" +
+      "This is not a discipline problem. It is an economics problem. The cost of setup exceeds the expected return for short-lived work. Reduce the cost, and the threshold drops. When setup takes fifteen seconds, a three-day spike gets a Stax. A one-day investigation gets a Stax. Even a two-hour pairing session gets a Stax if the tasks are worth tracking.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Notion's project templates and Linear's team setup are genuinely faster than they used to be. Linear in particular has invested in reducing setup friction, and it shows. For teams that are already in the Linear ecosystem, creating a new project is reasonably quick. The templates provide structure, and the defaults are sensible. For teams with ongoing, multi-month projects, the upfront investment in proper setup pays off across hundreds of tasks.\n\n" +
+      "## Decision Criteria: Is Your Setup Cost Appropriate?\n\n" +
+      "**How long does it take to go from \"we should work on this\" to \"everyone knows what they are doing\"?** If the answer is more than five minutes, the setup cost is a tax on every new initiative.\n\n" +
+      "**What percentage of your team's work is tracked?** If only long-lived projects get tracked, you have an information gap. The most dynamic work is invisible.\n\n" +
+      "**Can you create a project and assign work in the same tool, in the same minute?** If project creation and task assignment require different tools or different workflows, the friction is structural.\n\n" +
+      "**Does a short-lived project get the same tooling as a long-lived one?** If not, your visibility is biased toward the stable and predictable. The unstable and unpredictable — where the surprises live — is a blind spot.\n\n" +
+      "## What If There Was a Way to Go From Zero to Coordinated in Sixty Seconds?\n\n" +
+      "What if there was a way to create a project, add teammates, and assign the first tasks — all from the terminal, all in under a minute?\n\n" +
+      "That is what the sequence above demonstrates. `hey -s 'Payments integration'` creates the Stax. `hey -a @sara @tom` adds the team. `hey 'read Stripe docs' @sara` assigns the first task. The entire setup is three commands. Everything that follows — [tracking time](/blog/timesheets-that-fill-themselves), checking status, seeing who is working on what — flows from that initial moment.\n\n" +
+      "## The Psychology of a Clean Start\n\n" +
+      "There is a psychological dimension to setup friction that is rarely discussed. A project that begins with twenty minutes of administrative overhead carries that overhead as a first impression. The team's emotional relationship with the project starts with forms and configurations, not with the work itself. The first experience is bureaucratic, and first experiences set expectations.\n\n" +
+      "A project that begins with the work itself — reading the docs, writing the first prototype, having the first design conversation — starts with momentum. The team's first experience is productive. The emotional relationship with the project is positive. This is not soft or sentimental. It is a well-documented phenomenon: initial velocity predicts sustained velocity. Projects that start fast tend to finish fast. Projects that start with friction tend to accumulate friction.\n\n" +
+      "The three-command setup is not just faster. It is a different kind of beginning. The team goes from \"we should work on this\" to \"we are working on this\" in under a minute. The transition from intention to action is nearly instantaneous. No time for doubt, no time for second-guessing, no time for the project to lose momentum before it has any.\n\n" +
+      "When you think about the projects that went well — the ones where the team was energised, the work flowed, and the outcome exceeded expectations — how many of them started with a smooth, fast setup? And how many of the projects that stalled or failed started with friction, overhead, and the slow drain of administrative setup that made the real work feel like an afterthought?\n\n" +
+      "The moment of ignition matters. A fast start creates momentum that a slow start never recovers. When the first thing your team does is the work itself — not setting up the tools to track the work — the project begins with velocity instead of overhead. That momentum compounds. The team that started working in sixty seconds is further ahead at the end of the day than the team that spent twenty minutes on setup, not just by twenty minutes, but by the psychological weight of [a clean, friction-free beginning](/blog/ai-builders-dont-use-project-management).",
+  },
+  {
+    slug: "tabs-are-not-the-problem",
+    title: "Tabs Are Not the Problem. Re-entry Is.",
+    seoTitle: "Tab Manager? No. Context Recovery Tool. Yes.",
+    seoDescription:
+      "Tabs get blamed for the chaos, but they are just evidence. The real cost is re-entry — reconstructing what you were doing after every interruption.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "tab manager re-entry context recovery",
+      "browser tab management",
+      "context switching cost",
+      "tab overload solution",
+      "project context browser",
+      "developer tab management",
+    ],
+    excerpt:
+      "You didn't have a tab problem. You had a re-entry problem. The tabs were just evidence of every project you couldn't safely put down.",
+    faq: [
+      {
+        q: "How is HeyStax different from Chrome tab groups?",
+        a: "Chrome tab groups organise tabs visually within a single session. When you close them, they are gone (unless you have the tab group save feature enabled, which saves URLs but not project context). HeyStax saves the full project state — tabs, next actions, and assignments — and restores it across sessions, devices, and team members. The difference is between organising what you have open now and preserving a project you can put down and pick up later.",
+      },
+      {
+        q: "What about tab suspender extensions?",
+        a: "Tab suspenders reduce memory usage by unloading inactive tabs, which solves a performance problem. They do not solve the context problem — you still have forty tabs open, they just use less RAM. HeyStax solves a different problem: letting you close the tabs entirely because the project context is saved and will be intact when you return.",
+      },
+      {
+        q: "Does saving tabs as a Stax really help with re-entry?",
+        a: "Yes, because re-entry is not about finding the right URL. It is about reconstructing the working state. A Stax saves the specific combination of tabs you had open for a specific project, plus the next actions you had queued. When you reopen it, you are not just opening tabs — you are resuming a context. The tabs are the context's footprint in the browser.",
+      },
+    ],
+    content:
+      "The tab manager conversation is one that every productivity community has had, and it always goes the same way. Someone posts about having too many tabs. Someone suggests a tab manager. Someone else suggests bookmarks. A third person suggests just closing everything. None of these suggestions solve the actual problem, because the actual problem is not tabs. The actual problem is re-entry, and context recovery is what makes re-entry possible.\n\n" +
+      "\"I had 47 tabs open and I still couldn't find where I left off.\" That sentence, from a productivity forum, reveals the real issue. The tabs were not the problem. The tabs were the evidence. Evidence of projects started but not finished. Evidence of research partially completed. Evidence of contexts that could not be safely put down because putting them down meant losing them.\n\n" +
+      "## The Re-entry Tax\n\n" +
+      "Here is what re-entry actually costs. A designer named Mika is working on three projects. Each project has its own set of tabs: the Figma file, the requirements doc, the reference designs, the client feedback thread, the component library. Three projects, seven tabs each, twenty-one tabs minimum.\n\n" +
+      "On Monday morning, Mika opens her laptop and looks at twenty-one tabs. She knows, in theory, which project she should work on. But the tabs are not grouped by project. They are grouped by the order in which she opened them, which is a function of how her attention moved last Friday, not how it should move today.\n\n" +
+      "She spends twelve minutes sorting through the tabs. Not twelve minutes doing productive work — twelve minutes figuring out what the productive work is. Which tabs belong to which project? Which project was she in the middle of? Where did she leave off? What was the next thing she was going to do?\n\n" +
+      "That twelve minutes is the re-entry tax. It is not about finding a URL. It is about reconstructing a mental model. The tabs are the inputs to that reconstruction, but the reconstruction itself — the cognitive work of rebuilding context — is the expensive part.\n\n" +
+      "Now imagine Mika does this three times a day, every time she switches between projects. That is thirty-six minutes daily — three hours a week — spent not on work, but on figuring out where the work is.\n\n" +
+      "## Why Tab Managers Miss the Point\n\n" +
+      "Most tab managers address the symptom: too many tabs. They offer to suspend inactive tabs, group tabs by domain, or archive tabs that have not been visited recently. These are reasonable solutions to a real problem — browser performance degrades with too many tabs, and the visual clutter is genuinely distracting.\n\n" +
+      "But they do not solve the re-entry problem. A tab manager that groups your tabs by project makes it easier to find a tab. It does not make it easier to remember what you were doing with those tabs. It does not tell you which tab you were actively working in. It does not remind you what you were about to do next.\n\n" +
+      "The re-entry problem is not \"which tabs do I need?\" It is \"what was I doing, and what should I do next?\" Tabs are necessary context, but they are not sufficient context. The sufficient context includes the tabs plus the next action plus the awareness of where you left off.\n\n" +
+      "## What Chrome and Safari Do Well\n\n" +
+      "Chrome and Safari's tab grouping features provide visual organisation without data-loss risk. You can colour-code groups, collapse them, and name them. For people who work in a single browser session and do not close tabs between sessions, this is a genuine improvement over ungrouped tabs. The risk is low — you are organising what you already have open — and the benefit is real.\n\n" +
+      "## Decision Criteria: Is Your Tab Problem Actually a Context Problem?\n\n" +
+      "**When you return to a project, do you know what to do next?** If the answer is \"I have to look around for a few minutes,\" the problem is not the tabs. The problem is the absence of a next action.\n\n" +
+      "**Can you close all tabs for a project without anxiety?** If closing feels like loss, it is because the context is stored in the browser, not in a tool. The browser is volatile storage. It was not designed to be a project management surface.\n\n" +
+      "**How many of your open tabs are for projects you are not actively working on?** If more than half your tabs belong to inactive projects, those tabs are insurance policies against context loss. A tool that saves project context reliably makes those insurance policies unnecessary.\n\n" +
+      "**Do your tabs have associated next actions?** If the tabs tell you where a project lives but not what the project needs, the tabs are a map without a compass.\n\n" +
+      "## What If There Was a Way to Put Projects Down Safely?\n\n" +
+      "What if there was a way to save a project's full context — the tabs and the next actions — and know that it would be exactly intact when you came back? What if \"closing a project\" was not losing it but parking it?\n\n" +
+      "That is what `hey which` does: it tells you which project is active. `hey ls` shows you the tasks. When you open a Stax in the browser extension, the tabs open — exactly the ones you had, in the positions you had them. The next actions are visible. The [re-entry cost drops to near zero](/blog/jira-ticket-before-first-line-of-code) because there is nothing to reconstruct.\n\n" +
+      "Mika's twelve-minute Monday morning becomes a thirty-second one. Open the extension. Click the project. The tabs open. The next action is visible. She is working, not remembering.\n\n" +
+      "## The Cost Nobody Counts\n\n" +
+      "There is a cost to the tab problem that nobody tracks because it does not appear in any productivity metric. It is the cost of low-grade anxiety. Twenty-seven tabs create a background hum of unfinished business. Each tab is a reminder of something you were going to do, something you were going to read, something you were going to follow up on. The tabs are not just taking up memory in your browser. They are taking up memory in your mind.\n\n" +
+      "When you can safely put a project down — save its tabs, save its next actions, close the window, and know that everything will be intact when you return — the anxiety resolves. The project is not gone. It is parked. The distinction between \"closed and lost\" and \"closed and saved\" is the distinction between anxiety and calm. It sounds small. It is not small. It compounds across every project, every day, every context switch.\n\n" +
+      "The developers who report the biggest improvement from using project context tools do not talk about productivity metrics. They talk about the feeling of closing a window without worrying. They talk about opening their laptop on Monday morning and knowing exactly where they left off. They talk about the absence of the low-grade hum. Those qualitative improvements — feeling focused, feeling organised, feeling calm — are the foundation on which quantitative productivity gains are built.\n\n" +
+      "The problem was never too many tabs. It was too little context. When the context is saved — tabs, actions, project state — the tabs become what they should have been all along: a set of resources for the work, not a fragile record of the work's existence. The [context window you build for yourself](/blog/human-context-engineering) should include not just what you are working on, but what you should do next. That is the difference between a tab manager and a context recovery tool.",
+  },
+  {
+    slug: "timesheets-that-fill-themselves",
+    title:
+      "Timesheets That Fill Themselves: The Side Effect of Working Well",
+    seoTitle: "Automatic Timesheet for Developers via CLI",
+    seoDescription:
+      "Time tracking is a memory task after the fact. What if the timesheet filled itself as a side effect of doing the work?",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "automatic timesheet developer CLI",
+      "developer time tracking",
+      "timesheet automation",
+      "freelancer time tracking",
+      "CLI time tracking tool",
+      "automatic work logging",
+    ],
+    excerpt:
+      "You dread Friday. Not the week — the hour you spend trying to remember what you did. Time tracking is a memory task performed after the fact, and memory is the worst tool for the job.",
+    faq: [
+      {
+        q: "Does HeyStax actually generate timesheets?",
+        a: "It generates the raw data that timesheets need: what was worked on, when it started (task creation timestamp), and when it finished (hey done timestamp). The timestamps are captured automatically as a side effect of using hey to manage tasks. You still need to export and format the data, but the reconstruction problem — trying to remember what you did — is eliminated.",
+      },
+      {
+        q: "How accurate is the time tracking?",
+        a: "As accurate as your task granularity. If you create a task when you start working on something and mark it done when you finish, the timestamps bracket the work precisely. If you create five tasks at the start of the day and mark them done in a batch at the end, the accuracy is lower. The tool rewards the same behaviour that good task management rewards: frequent, small updates.",
+      },
+      {
+        q: "Can I use this for client billing?",
+        a: "The timestamps provide an auditable record of what was worked on and when. For freelancers and consultants who bill by the hour, this is a significant improvement over after-the-fact reconstruction. You still need to apply your hourly rate and format the invoice, but the hardest part — accurately recalling what you did — is handled automatically.",
+      },
+    ],
+    content:
+      "The automatic timesheet for developers is not a product category anyone asked for, because the real problem has been misidentified for decades. The problem is not that people do not track their time. The problem is that time tracking is a memory task performed after the fact, and memory is the worst tool for the job.\n\n" +
+      "\"I dread Friday. Not the week — the hour I spend trying to remember what I did.\" That sentence, from r/freelance, resonates with every contractor, consultant, and agency developer who has stared at a blank timesheet and tried to reverse-engineer their week from calendar entries and gut feel.\n\n" +
+      "## The Failure Mode of After-the-Fact Tracking\n\n" +
+      "Here is how time tracking actually works for most people. On Friday afternoon — or Monday morning, or whenever the guilt becomes acute enough — they open their timesheet tool. They look at their calendar. They check Slack. They try to remember what they worked on Tuesday. Was it the API integration or the auth refactor? Both, probably. How long on each? An hour on auth, maybe two? Or was that Wednesday?\n\n" +
+      "The reconstruction takes thirty to sixty minutes, depending on how fragmented the week was. The result is approximate. Studies on time tracking accuracy show that retrospective entries can be off by 30% or more. A two-hour task gets logged as three hours because it felt long, or as one hour because it was interrupted and the interruptions get attributed to other work.\n\n" +
+      "The failure mode is not dishonesty. It is the fundamental limitation of episodic memory. Human memory is narrative, not chronological. You remember what happened, roughly, but not when or for how long. The harder the week, the worse the recall. The weeks that most need accurate tracking — the chaotic, interrupt-driven, multi-project weeks — are the weeks where memory is least reliable.\n\n" +
+      "For freelancers and consultants, this has direct financial consequences. Underreported hours are lost revenue. Overreported hours are a client trust risk. The margin of error in retrospective time tracking is a margin of error in income.\n\n" +
+      "## The Deeper Problem\n\n" +
+      "The deeper problem is that time tracking and work tracking are treated as separate activities. You do the work in one tool (terminal, editor, browser). You track the time in another tool (Harvest, Toggl, a spreadsheet). The two systems are not connected. The time tracker does not know what you are doing. The work tool does not know that you need to track time.\n\n" +
+      "This separation creates the memory burden. If the time tracker could see the work as it happened — task started, task completed, task switched — the reconstruction would be unnecessary. The timesheet would fill itself because the work events would be the time events. The data that a timesheet needs — what was done, when, for how long — is the same data that good task management produces. The two systems are doing the same job from different angles, but because they are separate tools, the data must be entered twice: once when doing the work, once when reporting the work.\n\n" +
+      "## What the Old Approach Does Well\n\n" +
+      "Harvest and Toggl have good reporting UIs. Once the data is in the system, the visualisations, invoicing features, and export options are genuinely useful. For teams with the discipline to run a timer for every task — and some teams do have this discipline — these tools work well. The reporting layer is not the problem. The data entry layer is the problem.\n\n" +
+      "## Decision Criteria: Is Your Time Tracking Costing More Than It's Worth?\n\n" +
+      "**How much time do you spend tracking time?** If it is more than fifteen minutes a week, the overhead may be disproportionate. An hour a week on time tracking is over fifty hours a year — more than a full work week — spent on meta-work.\n\n" +
+      "**How accurate are your time entries?** If you are honest with yourself, are your Friday afternoon entries accurate or approximate? If approximate, what is the margin of error? For billable work, that margin has a dollar value.\n\n" +
+      "**Do you track time at the moment of working or after the fact?** In-the-moment tracking is accurate but interruptive. After-the-fact tracking is non-interruptive but inaccurate. Both have costs. The question is which cost you are paying.\n\n" +
+      "**Does your time tracking tool know what project you are working on?** If you have to manually select the project every time you start a timer, the tool is requiring you to do work that the tool should do.\n\n" +
+      "## What If There Was a Way to Track Time Without Tracking Time?\n\n" +
+      "What if there was a way to have your timesheet fill itself as a side effect of doing the work? Not a timer you start and stop. Not a form you fill out on Friday. Just the natural timestamps of task creation and task completion, captured automatically because you were managing your work anyway.\n\n" +
+      "That is what happens when you use `hey` for task management. `hey 'write API docs' @me` creates a task with a timestamp. You do the work. `hey done 1` marks it complete with another timestamp. The duration is the difference between the two timestamps. No timer. No form. No Friday afternoon reconstruction.\n\n" +
+      "The accuracy is a function of task granularity. If you create a task when you start and mark it done when you finish, the timestamps bracket the work precisely. The same behaviour that makes you a good task manager — frequent, specific updates — makes the automatic timesheet accurate.\n\n" +
+      "For freelancers, this changes the economics of time tracking. The hour spent on Friday afternoon reconstruction disappears. The accuracy improves because timestamps do not forget. The [data is the same data](/blog/visibility-without-standups) that provides team visibility and project tracking — one set of actions serving multiple purposes.\n\n" +
+      "## The Freelancer's Friday Problem\n\n" +
+      "For freelancers and consultants, the Friday afternoon timesheet reconstruction has a specific and quantifiable cost. It is not just the time spent — though thirty to sixty minutes per week is significant. It is the accuracy cost. Studies on retrospective time tracking show systematic biases: enjoyable work gets underreported because it felt quick, difficult work gets overreported because it felt long, and context-switching overhead disappears entirely because nobody remembers the transitions.\n\n" +
+      "The financial impact is real. A freelancer billing at two hundred dollars an hour who underreports by 15% is losing over six thousand dollars per month in unbilled time. The underreporting is not intentional. It is a natural consequence of using episodic memory — a tool optimised for narrative, not chronology — to perform a chronological task.\n\n" +
+      "Automatic timestamps eliminate this entire class of error. The task was created at 2:14pm. It was marked done at 4:47pm. The duration is two hours and thirty-three minutes. No narrative reconstruction required. No bias toward tasks that felt long or short. Just timestamps, captured at the moment of action, as reliable as the clock they came from.\n\n" +
+      "The best time tracker is the one you never have to think about. When time tracking is a side effect of task management, and task management is a [side effect of working](/blog/jira-ticket-before-first-line-of-code) — captured in the terminal, at the moment of doing — the overhead drops to zero. The timesheet fills itself because the work leaves timestamps, and timestamps are all a timesheet needs.",
+  },
+  {
+    slug: "visibility-without-standups",
+    title: "Visibility Without Standups: What Async Teams Actually Need",
+    seoTitle: "Async Team Visibility Without Daily Standups",
+    seoDescription:
+      "Standups exist because work is invisible. Fix the visibility, and the meeting becomes optional. Here's what async teams actually need.",
+    date: "2026-03-01",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "async team visibility no standups",
+      "remote team coordination",
+      "async standup alternative",
+      "team visibility tools",
+      "developer standup alternative",
+      "async engineering team",
+    ],
+    excerpt:
+      "Your team does standups to find out what people are working on. If the work was already visible, the standup would be a social call — pleasant but optional.",
+    faq: [
+      {
+        q: "Are you saying standups are bad?",
+        a: "No. Standups have genuine social value — they create rhythm, surface blockers that people would not proactively share, and build team cohesion. What we are saying is that the information-gathering function of standups — finding out what everyone is working on — should not require a meeting. If the work is visible, the standup can focus on what meetings are actually good at: nuanced discussion and relationship building.",
+      },
+      {
+        q: "How does async visibility work for remote teams?",
+        a: "Each team member works in their Stax with their tasks visible. The dashboard shows all active Stax with colour-coded ownership — you can see who is working on what without asking. When someone marks a task done, the update is visible everywhere. The hey ls --team command shows all team activity from the terminal.",
+      },
+      {
+        q: "What about blockers — how do those surface without standups?",
+        a: "Blockers are the genuine use case for synchronous communication. HeyStax surfaces task status, but if someone is stuck and does not say so, no tool can fix that. The argument is not that standups should disappear entirely, but that they should focus on the things only a meeting can do — like drawing out blockers — rather than things a dashboard can do.",
+      },
+    ],
+    content:
+      "Async team visibility without daily standups is not a radical proposition. It is the logical consequence of making work visible. Standups exist for a specific reason: to compensate for invisible work. If the work was visible — if everyone could see what everyone else was doing without asking — the information-gathering function of the standup would be redundant. The standup would still have social value. But the fifteen minutes spent going around the room saying \"yesterday I worked on X, today I'm working on Y\" would be unnecessary.\n\n" +
+      "\"We do standups to find out what people are working on. We should already know.\" That observation, from an async-first engineering team, captures the problem precisely. The standup is a patch for a visibility problem. It is a daily meeting that exists because the tools the team uses do not make work visible enough to make the meeting unnecessary.\n\n" +
+      "## A Day in an Invisible Team\n\n" +
+      "Here is what a Monday morning looks like on a team where work is invisible. Aisha is the tech lead. She manages five engineers across two time zones. She arrives at her desk and does not know what happened over the weekend. She does not know if the staging deploy went out. She does not know if the bug fix from Friday was merged. She does not know what her team is planning to work on today.\n\n" +
+      "To find out, she has two options. She can read Slack, scrolling through channels and threads to piece together a picture from fragments. This takes twenty minutes and the picture is incomplete. Or she can wait for the standup at 10am, where each person will spend two minutes summarising their work. This takes fifteen minutes of meeting time, plus the waiting.\n\n" +
+      "Neither option is good. Both require Aisha to actively seek information that should be passively available. The work happened. The results exist. But the results are locked inside the tools where the work happened — git commits, Slack messages, Jira transitions — and Aisha has to cross-reference multiple sources to build a coherent picture.\n\n" +
+      "Now multiply this across every tech lead, every manager, every team member who needs to know what someone else is doing. The coordination cost is enormous, and most of it is spent not on coordinating but on discovering what there is to coordinate.\n\n" +
+      "## The Real Purpose of Standups\n\n" +
+      "Standups serve three functions. The first is information sharing: what did you do, what are you doing, what are you blocked by. The second is social: creating rhythm and presence in a team that might otherwise feel atomised. The third is escalation: surfacing problems that someone is reluctant to bring up proactively.\n\n" +
+      "Of these three, only the first — information sharing — can be fully replaced by tooling. The social and escalation functions require human interaction. A dashboard cannot draw out the engineer who is stuck but embarrassed to say so. A status page cannot create the sense of shared purpose that a well-run standup provides.\n\n" +
+      "The problem is that the first function dominates most standups. The fifteen minutes are spent primarily on \"here is what I did / here is what I'm doing,\" leaving little time for the social and escalation functions that actually require a meeting. If the information-sharing function was handled by tooling, the standup could be shorter, less frequent, and focused on the things only a meeting can do.\n\n" +
+      "## What Standups Do Well\n\n" +
+      "Standups have genuine social value. They create rhythm and cadence in a team. They provide a predictable point of contact, especially for remote teams where casual hallway conversations do not exist. They surface blockers that people would not proactively share — sometimes the act of saying \"I'm stuck\" to a group is the push someone needs to ask for help. For teams where interpersonal trust is still developing, the daily touchpoint has real value.\n\n" +
+      "## Decision Criteria: Is Your Standup Earning Its Time?\n\n" +
+      "**What percentage of standup time is spent on information that could be visible without a meeting?** If more than half the meeting is \"yesterday I did X, today I'm doing Y,\" the meeting is compensating for invisible work.\n\n" +
+      "**Do team members report the same information in multiple places?** If someone updates Jira, then reports the same update in standup, then posts it in Slack, the work is visible — but only through redundant effort. One source of truth, visible everywhere, eliminates the duplication.\n\n" +
+      "**How often does the standup surface something genuinely surprising?** If the standups are predictable — everyone reports roughly what was expected — the meeting is confirming what is already known, not discovering what is unknown.\n\n" +
+      "**Would the team function well with standups twice a week instead of daily?** If yes, the daily cadence is habit, not necessity. The information need can be met by visibility tooling, with the meeting reserved for the functions that require human interaction.\n\n" +
+      "## What If There Was a Way to Make Work Visible Without a Meeting?\n\n" +
+      "What if there was a way for Aisha to see what her team did over the weekend without reading Slack or waiting for a meeting? What if the work left a visible trace, automatically, as a side effect of being done?\n\n" +
+      "That is what `hey ls stax` provides: a view of all active projects. `hey ls --team` shows what the team is working on — tasks, assignments, completion status. The dashboard shows the same information visually, with colour-coded ownership. When an engineer marks a task done with `hey done 1`, the update is visible everywhere — in the CLI, in the [browser extension](/blog/tabs-are-not-the-problem), on the dashboard. No separate reporting step. No Slack update. No standup item.\n\n" +
+      "Aisha's Monday morning changes. She opens the dashboard. The staging deploy is marked done. The bug fix shows as completed Friday at 4pm. Two new tasks were created over the weekend by a teammate in a different time zone. She knows the state of every project without asking anyone anything.\n\n" +
+      "The standup, when it happens, is different now. Nobody reports what they did — that is visible. Instead, they talk about what is hard. What is uncertain. Where they need help. The meeting shifts from information sharing to problem solving. It gets shorter. It gets better. And eventually, it might get optional.\n\n" +
+      "## The Meeting That Evolves\n\n" +
+      "The teams that have adopted always-on visibility do not universally drop standups. What they do is transform them. The standup evolves from a reporting ceremony into a problem-solving session. When everyone can see what everyone else is doing, the meeting no longer needs to establish the baseline. It can start from the baseline and go deeper.\n\n" +
+      "The evolved standup sounds different. Instead of \"yesterday I worked on the auth refactor,\" the conversation becomes \"I'm stuck on the token refresh edge case — has anyone seen this pattern before?\" Instead of \"today I'm going to work on the API docs,\" the conversation becomes \"I noticed the payment tests are flaky, should we prioritise that before the release?\" The information content per minute of meeting time increases dramatically because the low-value information — who did what — is already known.\n\n" +
+      "Some teams move to standups twice a week instead of daily. Some move to standups only when someone flags a blocker. Some keep the daily cadence but reduce the meeting to five minutes. The right cadence depends on the team. What does not depend on the team is the principle: meetings should provide value that tools cannot. Information sharing is something tools can do. Problem solving, emotional support, and creative brainstorming are things meetings do well. The standup earns its time when it focuses on its strengths.\n\n" +
+      "Standups are a patch for a visibility problem. Fix the visibility, and you fix the meeting. The information that [fills a timesheet](/blog/timesheets-that-fill-themselves) is the same information that makes standups redundant — [timestamps and task completions](/blog/human-context-engineering), captured at the point of work, visible to everyone who needs to know.",
   },
 ];
