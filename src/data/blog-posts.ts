@@ -12323,4 +12323,210 @@ See [browser extension security and how to choose](/blog/browser-extension-secur
       "We still have standups, sometimes. But they are quieter now. Shorter. Mostly about what comes next, not what already happened. Because what already happened left its own record, at the moment it happened, without anyone stopping to describe it.\n\n" +
       "That is the version of coordination I wanted. Not better reporting. No reporting at all.",
   },
+  {
+    slug: "heystax-cli-terminal-task-management",
+    title: "Manage Your Tasks from the Terminal with HeyStax CLI",
+    seoTitle: "HeyStax CLI: Terminal Task Management for Developers",
+    seoDescription:
+      "Meet hey — the HeyStax CLI that lets you track tasks without leaving the terminal. Type a sentence, hit enter, it's tracked. No app switching, no GUI overhead.",
+    date: "2026-03-10",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "heystax cli",
+      "terminal task manager",
+      "developer task management",
+      "command line todo",
+      "hey cli",
+      "terminal productivity",
+    ],
+    excerpt:
+      "Most task managers ask you to leave your terminal, open a browser, click around, and then remember what you were doing. hey asks you to type a sentence and hit enter.",
+    faq: [
+      {
+        q: "How do I install the HeyStax CLI?",
+        a: "Run npm install -g heystax-cli. Once installed, the hey command is available globally in your terminal. You can start adding tasks immediately with hey 'your task here'.",
+      },
+      {
+        q: "Do I need a HeyStax account to use the CLI?",
+        a: "You can use hey locally without an account. Tasks are stored on your machine. To sync tasks with the HeyStax extension and dashboard, or to share with teammates, run hey auth to connect your account.",
+      },
+      {
+        q: "What's the difference between hey and a .txt file?",
+        a: "A text file doesn't know what project you're working on, doesn't sync across surfaces, and doesn't let teammates see progress. hey attaches tasks to a Stax — a named project context — and makes them visible in the extension, the dashboard, and the CLI simultaneously.",
+      },
+      {
+        q: "Can I use hey alongside the browser extension?",
+        a: "Yes. They share the same data layer. A task you add from the terminal appears in the extension's Next Actions and on the dashboard. A task you mark done in the extension disappears from hey ls. They're different surfaces for the same project state.",
+      },
+    ],
+    content:
+      "There is a specific kind of friction that most task management tools impose, and it is so familiar that it has become invisible. You are in the terminal. You have just finished a thing. You need to note the next thing. To do this, you must leave the terminal, open a browser or app, navigate to the right project, find the right list, click the right button, type, save, and then return to where you were. The round trip takes thirty seconds if you are fast. The context switch it causes lasts longer.\n\n" +
+      "That is the problem `hey` was built to solve. The HeyStax CLI is a single command that tracks tasks from the place where developers already work: the terminal.\n\n" +
+      "## The Core Loop\n\n" +
+      "The entire interface is one command: `hey`. You add a task by typing it as a sentence. You list tasks with `hey ls`. You mark one done with `hey done 1`. That is the core loop, and it covers about 90% of what you actually need from a task tracker during a work session.\n\n" +
+      "Adding a task looks like this: `hey 'fix the auth redirect on staging'`. No flags, no categories, no priority dropdowns. The task exists. It is attached to whatever Stax (project) you currently have selected. When you run `hey ls`, it shows up with a number. When you finish it, `hey done 1` marks it complete.\n\n" +
+      "If you need to switch projects, `hey use 'Client Pitch'` changes your active Stax. Every task you add after that belongs to Client Pitch until you switch again. The mental model is the same as `cd` for directories: you are always working inside a context, and the context determines where things go.\n\n" +
+      "## Who This Is For\n\n" +
+      "If you spend most of your day in a GUI project manager and you like it, hey is probably not for you. It is for people who already live in the terminal — developers, devops engineers, sysadmins, technical leads — and who find that the overhead of switching to a visual task manager is enough friction to stop them from tracking things at all.\n\n" +
+      "That is the key insight. The problem is not that developers don't want to track tasks. The problem is that every task tracker requires them to leave the environment where the work is happening. And the cost of leaving, even briefly, is high enough that most people just keep a mental list instead. The mental list works until it doesn't. And when it doesn't, things get dropped.\n\n" +
+      "`hey` is designed to be so low-friction that capturing a task costs less effort than remembering it. If typing a sentence is easier than holding it in your head, you will type the sentence. That is the entire design thesis.\n\n" +
+      "## Beyond the Basics\n\n" +
+      "The core loop is deliberately simple, but hey has depth when you need it. You can assign tasks to teammates with `hey 'review the PR' @sarah`. You can flag something as urgent with `hey 'deploy hotfix' --urgent`. You can create a new Stax and switch to it in one move with `hey -s 'New Project'`.\n\n" +
+      "The output of `hey ls` is compact and scannable — task number, description, assignee if any, urgency flag if set. It is designed to be glanced at, not studied. The information density matches what you need when you are in the middle of something and want to check what is next without losing your place.\n\n" +
+      "## The Connection to HeyStax\n\n" +
+      "The CLI is not a standalone tool. It is a surface — one of three — for the same underlying project data. When you add a task with `hey`, it appears in the [HeyStax browser extension](/blog/cli-project-context-not-just-tasks) as a Next Action and on the web dashboard. When a teammate marks something done in the extension, it disappears from your `hey ls` output.\n\n" +
+      "This matters because it means the CLI is not another silo. Terminal-native team members and browser-native team members are looking at the same state. The developer who never leaves the terminal and the project manager who lives in the dashboard are working from the same list. Nobody has to translate between systems.\n\n" +
+      "## What hey Does Not Do\n\n" +
+      "It does not do Gantt charts. It does not do sprint planning. It does not have a kanban view, a calendar integration, or an AI assistant that suggests priorities. These are deliberate omissions. The tool is optimised for one thing: capturing and completing tasks without leaving the terminal.\n\n" +
+      "If you need project management, use a project management tool. If you need a way to say \"I need to do this next\" without opening a browser, that is what `hey` is for.\n\n" +
+      "## Getting Started\n\n" +
+      "Install with `npm install -g heystax-cli`. Run `hey auth` to connect your HeyStax account (optional — hey works locally without one). Then start adding tasks: `hey 'the first thing'`. Run `hey ls` to see them. Run `hey done 1` when you finish one. See the [speed run walkthrough](/blog/heystax-cli-speed-run-demo) if you want to see the full flow in action.\n\n" +
+      "The whole point is that there is nothing to learn. If you can type a sentence, you can use hey.",
+  },
+  {
+    slug: "cli-project-context-not-just-tasks",
+    title: "Why We Built a CLI for Project Context, Not Just Tasks",
+    seoTitle: "HeyStax CLI: Project Context Management, Not Just Tasks",
+    seoDescription:
+      "Most CLI task tools track tasks in isolation. HeyStax CLI attaches tasks to a Stax — a named project context with browser tabs, next actions, and team visibility.",
+    date: "2026-03-10",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "project context management",
+      "developer workflow",
+      "stax",
+      "heystax",
+      "terminal project management",
+      "cli productivity tool",
+    ],
+    excerpt:
+      "Most CLI task tools are standalone lists. hey is different because tasks are attached to a Stax — a named project context that includes browser tabs, next actions, and team visibility.",
+    faq: [
+      {
+        q: "What is a Stax?",
+        a: "A Stax is a named project context. It contains the browser tabs you had open for that project, the next actions you need to take, and metadata like tags and team assignments. When you reopen a Stax, you resume where you left off — tabs and tasks together.",
+      },
+      {
+        q: "How is hey different from taskwarrior or todoist CLI?",
+        a: "Those tools manage tasks as a standalone list. hey attaches tasks to a project context (a Stax) that also includes browser tabs. When you switch Stax in the CLI, you're not just filtering a list — you're switching to a different work context that has its own tabs, its own actions, and its own team visibility.",
+      },
+      {
+        q: "Can I use hey without the browser extension?",
+        a: "Yes. The CLI works independently for task management. But the full value comes from the connection: tasks you add from the terminal appear as Next Actions in the extension, and the Stax you manage in the extension are the same ones you switch between in the CLI.",
+      },
+      {
+        q: "What happens when I run hey use 'Project Name'?",
+        a: "You set your active Stax. All tasks you add after that are attached to that Stax. When you run hey ls, you see only the tasks for that project. It's like cd for project context — you work inside one context at a time.",
+      },
+    ],
+    content:
+      "There are plenty of CLI task managers. Taskwarrior has been around since 2006. Todoist has a CLI. There are dozens of lightweight alternatives on GitHub — most of them store tasks in a JSON file and let you add, list, and check them off from the terminal. They do the job.\n\n" +
+      "So when we built `hey`, the question we had to answer was: why does the world need another one?\n\n" +
+      "The answer is that hey is not a task manager. It is a project context surface.\n\n" +
+      "## The Problem with Standalone Task Lists\n\n" +
+      "A standalone task list — whether it lives in a text file, a JSON store, or a cloud database — has a structural limitation: it knows what you need to do, but not where you were doing it.\n\n" +
+      "When you write \"review the API docs\" in a task list, the list does not know which API docs, which browser tabs you had open when you were reviewing them, or what state the review was in when you stopped. The task is a string. The context it refers to exists only in your memory.\n\n" +
+      "This is fine for simple, self-contained tasks. It breaks down for knowledge work, where the task is usually shorthand for a much richer working state: five tabs open, a specific section of documentation, a draft in progress, a Slack thread you were referencing.\n\n" +
+      "The task list says \"review API docs.\" What it means is \"reopen those four tabs, find the section you were reading, remember what you were going to say about the authentication flow, and pick up where you left off.\" That reconstruction is what we call the re-entry tax, and it is usually more expensive than the task itself.\n\n" +
+      "## What a Stax Adds\n\n" +
+      "In HeyStax, a Stax is not a category or a tag. It is a saved project context: a named collection of browser tabs plus the next actions attached to them. When you save a Stax in the extension, you are saving both what you were looking at and what you were about to do.\n\n" +
+      "The CLI plugs into this same structure. When you run `hey use 'Client Pitch'`, you are not filtering a flat task list by project name. You are selecting a context that has its own browser tabs (saved in the extension), its own next actions (visible in the CLI, the extension, and the dashboard), and its own team visibility.\n\n" +
+      "This is why `hey` exists alongside the extension and the dashboard, not instead of them. Each surface shows the same project state through a different lens. The [extension](/blog/heystax-cli-terminal-task-management) shows tabs and actions in the browser. The dashboard shows actions across all projects. The CLI shows actions in the terminal. The underlying data is the same.\n\n" +
+      "## The hey use Command\n\n" +
+      "The `hey use` command is the pivot point. It sets your active Stax, and everything after it is scoped to that context.\n\n" +
+      "`hey use 'Client Pitch'` means: I am now working on Client Pitch. Tasks I add go there. Tasks I list come from there. When I switch to `hey use 'API Redesign'`, I am in a different context with different tasks, different tabs (in the extension), and different team assignments.\n\n" +
+      "This is the same mental model as `cd` in a filesystem. You are always somewhere. The somewhere determines what you see and what you create. The difference is that a Stax is not a directory of files — it is a directory of context. Tabs, actions, people, urgency.\n\n" +
+      "Most CLI task tools skip this entirely. They give you a global list and let you filter it. That works until you have three projects running simultaneously and the list becomes a wall of mixed-context items that requires you to do the sorting in your head. The `hey use` model means sorting is structural, not cognitive.\n\n" +
+      "## Why the CLI Matters for Teams\n\n" +
+      "There is a gap on most teams between the people who live in the terminal and the people who live in the browser. Developers, devops engineers, and sysadmins often track their work mentally or in local notes because the team's official task tool requires a browser, a mouse, and a context switch that feels too expensive in the middle of a deploy.\n\n" +
+      "The result is that work happens in the terminal but gets reported in a different tool, later, from memory. The reporting is lossy. The delay means things get forgotten. And the team's shared picture of project state is always slightly behind reality.\n\n" +
+      "`hey` closes that gap. When a developer adds a task from the terminal, it is immediately visible in the extension and the dashboard. When they mark something done, the team sees it. No translation step, no reporting delay. The terminal becomes a first-class surface for team project state.\n\n" +
+      "## The Philosophy\n\n" +
+      "The design principle behind hey is that a task should not exist in isolation from the context it belongs to. \"Review API docs\" is not a meaningful unit of work unless you know which project it belongs to, what tabs are relevant, and who else is involved.\n\n" +
+      "Most task tools treat tasks as atoms. hey treats them as properties of a context. The context is the Stax. The Stax is the unit that matters.\n\n" +
+      "This is not a philosophical distinction. It has a practical consequence: when you sit down to work, you do not scan a flat list and decide what to do. You select a Stax — a project, a world — and the relevant tasks are already there, scoped and ready. The decision is not \"what should I do?\" but \"which project am I working on?\" Once that is decided, the tasks follow.\n\n" +
+      "That is why we built a CLI for project context, not just tasks. The task is the smallest useful unit. The project context is the one that actually gets you back to work.",
+  },
+  {
+    slug: "heystax-cli-speed-run-demo",
+    title: "Ship a Demo in 30 Seconds: The HeyStax CLI Speed Run",
+    seoTitle: "HeyStax CLI Speed Run: Set Up a Team Project in 30 Seconds",
+    seoDescription:
+      "A concrete walkthrough of the full HeyStax CLI flow: create a Stax, assign teammates, add tasks, and see everything in one terminal session. 30 seconds, start to finish.",
+    date: "2026-03-10",
+    author: "Colm Byrne",
+    kicker: "CLI & Terminal",
+    keywords: [
+      "heystax demo",
+      "cli onboarding",
+      "team task assignment",
+      "terminal team management",
+      "hey stax cli",
+      "project kickoff cli",
+    ],
+    excerpt:
+      "Create a Stax, assign teammates, add five tasks, and see everything — all from the terminal, all in 30 seconds. This is the hey speed run.",
+    faq: [
+      {
+        q: "Do I need teammates to have HeyStax accounts for the speed run?",
+        a: "No. You can assign tasks to names with @mentions even if they haven't signed up yet. When they do connect, the assignments are waiting for them. The speed run works solo or with a team.",
+      },
+      {
+        q: "What happens to the Stax after I create it in the CLI?",
+        a: "It exists as a project context across all HeyStax surfaces. If you're authenticated, it syncs to the cloud and appears in the browser extension and dashboard. Tasks you added from the terminal show up as Next Actions in the extension.",
+      },
+      {
+        q: "Can I run the speed run without installing anything?",
+        a: "You need the CLI installed: npm install -g heystax-cli. After that, the speed run commands work immediately. No account required for local use.",
+      },
+      {
+        q: "Is the --urgent flag just visual, or does it change behaviour?",
+        a: "It's visible across all surfaces — the CLI output, the extension's Next Actions, and the dashboard. Urgent tasks sort to the top of hey ls output so they're the first thing you see when you check in.",
+      },
+    ],
+    content:
+      "This is a walkthrough of the full HeyStax CLI flow, start to finish, in six commands. It takes about thirty seconds to type. By the end, you have a project with assigned teammates, prioritised tasks, and a view that works in the terminal, the browser extension, and the dashboard simultaneously.\n\n" +
+      "No configuration files. No onboarding wizard. No settings page. Just commands.\n\n" +
+      "## The Setup\n\n" +
+      "You have a new project. It is called Global Explorer. Three people are involved: you, James, and Mary. There are five things that need to happen. Here is the entire setup.\n\n" +
+      "## Command 1: Create the Stax\n\n" +
+      "`hey -s 'Global Explorer'`\n\n" +
+      "This creates a new Stax called Global Explorer and switches to it. The `-s` flag is shorthand for \"create and switch.\" Everything you add after this command is scoped to Global Explorer. You are now inside a project context, the same way `cd` puts you inside a directory.\n\n" +
+      "The terminal confirms: **Stax created: Global Explorer**. You are ready.\n\n" +
+      "## Command 2: Add Your Team\n\n" +
+      "`hey -a @james @mary`\n\n" +
+      "This adds James and Mary as collaborators on the Stax. The `-a` flag adds team members. They do not need to be present or authenticated at this moment. When they connect to HeyStax, Global Explorer and its tasks will be waiting for them.\n\n" +
+      "Two people added in one command. No invitation flow, no email confirmation, no waiting.\n\n" +
+      "## Command 3: First Task, Assigned\n\n" +
+      "`hey 'setup repo' @james`\n\n" +
+      "This adds a task — \"setup repo\" — and assigns it to James. The `@james` at the end is the assignment. The task is now visible in James's view of Global Explorer, whether he checks via the CLI, the extension, or the dashboard.\n\n" +
+      "Notice the pattern: the command reads like a sentence. \"Hey, setup repo, James.\" That is deliberate. The CLI is designed so that the thing you would say out loud is the thing you type.\n\n" +
+      "## Command 4: Second Task, Assigned\n\n" +
+      "`hey 'design system audit' @mary`\n\n" +
+      "Same pattern. Mary now has a task. She will see it the next time she opens any HeyStax surface. The task knows it belongs to Global Explorer because that is the active Stax.\n\n" +
+      "## Command 5: Urgent Task, Unassigned\n\n" +
+      "`hey 'pitch deck' --urgent`\n\n" +
+      "This adds a task with the `--urgent` flag. Urgent tasks sort to the top of `hey ls` output, appear with a visual indicator in the extension, and are highlighted on the dashboard. No assignee on this one — it belongs to the project, and whoever picks it up picks it up.\n\n" +
+      "The `--urgent` flag is the only priority mechanism in hey. There are no P1/P2/P3 levels, no priority matrices, no colour-coded severity tiers. A thing is either urgent or it is not. This is a deliberate constraint. Priority systems with more than two levels tend to become negotiation surfaces rather than decision tools.\n\n" +
+      "## Command 6: See Everything\n\n" +
+      "`hey ls`\n\n" +
+      "This lists all tasks for the active Stax. The output looks something like this:\n\n" +
+      "**Global Explorer** (3 tasks)\n\n" +
+      "The list shows each task with its number, description, assignee, and urgency flag. The pitch deck task is at the top because it is urgent. The assigned tasks show their owners. The whole thing fits in a terminal window without scrolling.\n\n" +
+      "That is six commands. The project exists, the team is assigned, the tasks are tracked, and everything is visible across three surfaces. Total elapsed time: about thirty seconds of typing.\n\n" +
+      "## What Just Happened\n\n" +
+      "In thirty seconds, you created a project structure that would take five to ten minutes in most project management tools. Not because those tools are slow, but because they require navigation. You have to create a project, configure its settings, invite members through an email flow, create tasks through a form interface, assign them through a dropdown, and set priority through a menu.\n\n" +
+      "Each of those steps is individually reasonable. Together, they add up to enough friction that many projects never get properly set up. The team lead knows the project exists and the tasks are clear, but the overhead of entering it all into the tool means it stays in their head or in a Slack message instead.\n\n" +
+      "`hey` compresses the setup to the minimum number of keystrokes. The project exists the moment you name it. The team is added the moment you mention them. The tasks exist the moment you type them. There is no gap between knowing what needs to happen and having it tracked.\n\n" +
+      "## After the Speed Run\n\n" +
+      "Once the Stax exists, the ongoing workflow is even simpler. You check in with `hey ls`. You add tasks as they come up with `hey 'whatever it is'`. You mark things done with `hey done 2`. If you need to switch to another project, `hey use 'Other Project'` changes your context.\n\n" +
+      "If you are authenticated, everything syncs. James and Mary see their tasks in whatever surface they prefer. The [browser extension](/blog/heystax-cli-terminal-task-management) shows Global Explorer as a Stax with Next Actions. The dashboard shows tasks across all projects. The CLI shows the same data, formatted for the terminal.\n\n" +
+      "The speed run is designed to be the kind of thing you show someone in a screen share and they say \"wait, that's it?\" Yes. That is it. The project is set up. The tasks are tracked. The team can see them. You typed six commands and you are done.\n\n" +
+      "## Why Speed Matters for Setup\n\n" +
+      "There is a well-documented pattern in tool adoption: if the setup cost is too high, the tool does not get used for small or short-lived projects. A two-week sprint gets a Jira board. A three-day spike does not. The spike lives in someone's head, or in a Slack thread, or in a sticky note.\n\n" +
+      "When setup takes thirty seconds, the threshold drops. A three-day spike gets a Stax. A one-day investigation gets a Stax. Even a two-hour pairing session could get a Stax if the tasks are worth tracking. The cost of creating the [project context](/blog/cli-project-context-not-just-tasks) is low enough that it makes sense for work at any scale.\n\n" +
+      "That is the point of the speed run. Not to show off, but to demonstrate that the barrier to organised work can be this low. Six commands. Thirty seconds. Everything tracked, everything visible, everyone aligned.",
+  },
 ];
