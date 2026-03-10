@@ -99,7 +99,7 @@ function BlogContent() {
           Blog
         </h1>
         <p className="font-body text-lg text-warm-gray mb-12">
-          Evidence-first writing on context switching, ADHD productivity, browser tool risks, and re-entry workflows.{" "}
+          Practical writing on managing multiple initiatives, team visibility, and working across teams in the AI era.{" "}
           <span className="text-charcoal font-semibold">{blogPosts.length} posts</span>{" "}
           across {sortedCategories.length} topics.
         </p>

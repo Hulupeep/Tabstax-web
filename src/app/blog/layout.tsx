@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog — Tab management, ADHD productivity, deep work, and browser habits",
+  title: "Blog — Managing multiple initiatives and working across teams in the AI era",
   description:
-    "The HeyStax blog. Evidence-first writing on context switching, neurodivergent productivity, browser tool risks, re-entry workflows, and building systems for how knowledge workers actually operate.",
+    "The HeyStax blog. Practical writing on managing multiple projects, team visibility, context switching, and building workflows for how modern teams actually operate with AI.",
   keywords: [
-    "tab management blog",
-    "ADHD productivity",
+    "managing multiple projects",
+    "team visibility",
     "context switching",
-    "browser productivity",
-    "deep work",
-    "neurodivergent productivity",
+    "AI productivity workflows",
+    "cross-team collaboration",
+    "project context management",
     "knowledge worker tools",
   ],
 };
