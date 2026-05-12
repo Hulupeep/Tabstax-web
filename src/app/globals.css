@@ -54,3 +54,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
+
+.mobile-full-cta {
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .mobile-full-cta {
+    width: auto;
+  }
+}

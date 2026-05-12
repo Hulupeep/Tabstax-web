@@ -9,59 +9,62 @@ function readSrc(relPath: string) {
 }
 
 describe("Contract: feature_no_payment_signup_583", () => {
-  it("routes primary homepage CTAs to Dash onboarding", () => {
-    const files = [
-      "components/Header.tsx",
-      "components/Hero.tsx",
-      "components/Pricing.tsx",
-      "components/FinalCTA.tsx",
-    ];
+  it("keeps the homepage start CTA on Dash onboarding", () => {
+    const page = readSrc("app/page.tsx");
 
-    files.forEach((file) => {
-      expect(readSrc(file)).toContain("DASH_ONBOARDING_URL");
-    });
+    expect(page).toContain("DASH_ONBOARDING_URL");
     expect(readSrc("lib/routes.ts")).toContain(onboardingUrl);
+    expect(page).toContain("Start Now");
   });
 
-  it("does not route Start Now to the dashboard body", () => {
-    const files = [
-      "components/Header.tsx",
-      "components/Hero.tsx",
-      "components/Pricing.tsx",
-      "components/FinalCTA.tsx",
-    ];
+  it("narrows the header to Product, Blog, and Sign in", () => {
+    const header = readSrc("components/Header.tsx");
 
-    files.forEach((file) => {
-      expect(readSrc(file)).not.toMatch(/https:\/\/dash\.heystax\.ai\/attention/);
-    });
+    expect(header).toContain('label: "Product"');
+    expect(header).toContain('label: "Blog"');
+    expect(header).toContain('label: "Sign in"');
+    expect(header).not.toContain('label: "Individuals"');
+    expect(header).not.toContain('label: "Teams"');
+    expect(header).not.toContain('label: "Use Cases"');
+    expect(header).not.toContain("Start Now");
   });
 
-  it("renders the #583 plan intent tiers", () => {
-    const pricing = readSrc("components/Pricing.tsx");
+  it("removes homepage pricing and payment-first copy", () => {
+    const page = readSrc("app/page.tsx");
 
-    expect(pricing).toContain("Principal");
-    expect(pricing).toContain("Team");
-    expect(pricing).toContain("Enterprise");
-    expect(pricing).toContain("Plan selection is intent, not checkout.");
+    expect(page).not.toMatch(/\$\d+|€\d+|â‚¬\d+/);
+    expect(page).not.toMatch(/\bFree\b/);
+    expect(page).not.toContain("Free and Pro");
+    expect(page).not.toContain("Pro tier");
+    expect(page).not.toMatch(/card number|cvv|expiry|stripe checkout/i);
+    expect(page).not.toContain("Simple pricing");
   });
 
-  it("removes legacy payment-first pricing copy", () => {
-    const pricing = readSrc("components/Pricing.tsx");
+  it("replaces the video with the Done and Next proof mock", () => {
+    const page = readSrc("app/page.tsx");
 
-    expect(pricing).not.toMatch(/\bFree\b/);
-    expect(pricing).not.toMatch(/\bPro\b/);
-    expect(pricing).not.toContain("€3.99");
-    expect(pricing).not.toContain("7-day free trial");
+    expect(page).not.toMatch(/iframe|youtube|youtube-nocookie/i);
+    expect(page).toContain("Done while you slept. Decisions when you arrive.");
+    expect(page).toContain("@scribe drafted reply to solicitor");
+    expect(page).toContain("@notify sent Sprint 7 update to John");
+    expect(page).toContain("Approve scribe's draft to solicitor");
+    expect(page).toContain('tag: "Yours"');
   });
 
-  it("does not collect payment on first start", () => {
-    const pageCopy = [
-      readSrc("components/Hero.tsx"),
-      readSrc("components/Pricing.tsx"),
-      readSrc("components/FinalCTA.tsx"),
-    ].join("\n");
+  it("keeps the technical section as unlabeled product detail", () => {
+    const page = readSrc("app/page.tsx");
 
-    expect(pageCopy).not.toMatch(/card number|cvv|expiry|stripe checkout/i);
-    expect(pageCopy).toContain("No card.");
+    expect(page).toContain('hey "draft update to @rob on Claim Alert sprint"');
+    expect(page).toMatch(/HookTunnel logs every agent action in both\s+directions\./);
+    expect(page).not.toContain(">Technical");
+  });
+
+  it("updates homepage metadata", () => {
+    const layout = readSrc("app/layout.tsx");
+
+    expect(layout).toContain("HeyStax — Hire agents that already know your job.");
+    expect(layout).toContain(
+      "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them."
+    );
   });
 });
