@@ -1,3 +1,5 @@
+import { DASH_ONBOARDING_URL } from "@/lib/routes";
+
 export function QuickStart() {
   return (
     <section id="quick-start" className="bg-cream-dark py-20 md:py-28">
@@ -94,10 +96,10 @@ export function QuickStart() {
               Plan your week and see all Stax and next actions together in one view.
             </p>
             <a
-              href="https://dash.heystax.ai/attention"
+              href={DASH_ONBOARDING_URL}
               className="mt-4 inline-flex items-center text-sm font-semibold text-amber hover:text-terracotta transition-colors"
             >
-              Open Dashboard&nbsp;&rarr;
+              Start in Dashboard&nbsp;&rarr;
             </a>
           </div>
         </div>

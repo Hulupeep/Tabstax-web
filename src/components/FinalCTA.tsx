@@ -1,3 +1,5 @@
+import { DASH_ONBOARDING_URL } from "@/lib/routes";
+
 export function FinalCTA() {
   return (
     <section id="final-cta" className="bg-charcoal py-24 md:py-32">
@@ -12,7 +14,7 @@ export function FinalCTA() {
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="https://dash.heystax.ai/attention"
+            href={DASH_ONBOARDING_URL}
             className="inline-flex items-center px-10 py-5 rounded-full bg-amber text-white font-semibold text-lg hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl"
           >
             Start Now

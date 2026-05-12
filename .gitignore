@@ -4,6 +4,7 @@ node_modules/
 # next.js
 .next/
 out/
+_site/
 
 # production
 build/
@@ -14,6 +15,7 @@ build/
 
 # debug
 npm-debug.log*
+.next-dev-*.log
 
 # env files
 .env*.local
