@@ -74,9 +74,8 @@ rules:
           - pattern: /dash\.heystax\.ai\/onboarding\?source=homepage/
             message: "Primary signup CTA must link to Dash onboarding for #583"
             scope:
-              - "src/components/Hero.tsx"
-              - "src/components/Pricing.tsx"
-              - "src/components/FinalCTA.tsx"
+              - "src/app/page.tsx"
+              - "src/app/pricing/page.tsx"
 
     - id: ARCH-004
       title: "Images must use unoptimized mode or plain img tags"

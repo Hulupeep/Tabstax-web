@@ -1,46 +1,84 @@
 import { expect, test } from "@playwright/test";
 
-test.describe("no-payment signup handoff (#583)", () => {
-  test("homepage start path points to Dash onboarding", async ({ page }) => {
+test.describe("homepage rebuild signup handoff (#583)", () => {
+  test("hero and nav match the rebuilt homepage contract", async ({ page }) => {
     await page.goto("/");
 
-    const heroStart = page.locator("#hero a", { hasText: "Start Now" });
-    await expect(heroStart).toHaveAttribute(
+    await expect(page).toHaveTitle("HeyStax — Hire agents that already know your job.");
+    await expect(page.locator('meta[name="description"]')).toHaveAttribute(
+      "content",
+      "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them."
+    );
+
+    await expect(page.getByText("For you, your team, and your agents.")).toBeVisible();
+    await expect(
+      page.getByRole("heading", { name: "Hire agents that already know your job." })
+    ).toBeVisible();
+
+    const desktopNav = page.locator("header nav").first();
+    await expect(desktopNav.getByRole("link", { name: "Product" })).toBeVisible();
+    await expect(desktopNav.getByRole("link", { name: "Blog" })).toBeVisible();
+    await expect(desktopNav.getByRole("link", { name: "Sign in" })).toBeVisible();
+    await expect(desktopNav.getByRole("link")).toHaveCount(3);
+
+    const startNow = page.locator("#hero a", { hasText: "Start Now" });
+    await expect(startNow).toHaveCount(1);
+    await expect(startNow).toHaveAttribute(
       "href",
       "https://dash.heystax.ai/onboarding?source=homepage"
     );
-
-    await expect(page.getByRole("heading", { name: "You hire the AI. You keep the work." }))
-      .toBeVisible();
-    await expect(page.locator("#hero").getByText("Start in Claude. Finish in ChatGPT."))
-      .toBeVisible();
   });
 
-  test("pricing is plan intent, not checkout", async ({ page }) => {
-    await page.goto("/#pricing");
+  test("homepage removes old pricing and video surfaces", async ({ page }) => {
+    await page.goto("/");
 
-    await expect(page.getByRole("heading", { name: "Choose the starting shape." }))
-      .toBeVisible();
-    const pricing = page.locator("#pricing");
-
-    await expect(pricing.getByRole("heading", { name: "Principal", exact: true }))
-      .toBeVisible();
-    await expect(pricing.getByRole("heading", { name: "Team", exact: true })).toBeVisible();
-    await expect(pricing.getByRole("heading", { name: "Enterprise", exact: true }))
-      .toBeVisible();
-    await expect(pricing.getByText("Plan selection is intent, not checkout.")).toBeVisible();
+    await expect(page.locator("iframe")).toHaveCount(0);
+    await expect(page.getByText("Simple pricing")).toHaveCount(0);
+    await expect(page.getByText("$19")).toHaveCount(0);
     await expect(page.getByText("€3.99")).toHaveCount(0);
     await expect(page.getByText("7-day free trial")).toHaveCount(0);
+  });
 
-    const pricingStarts = page.locator("#pricing a", { hasText: "Start Now" });
-    const count = await pricingStarts.count();
-    expect(count).toBe(3);
+  test("proof mock renders Done and Next rows", async ({ page }) => {
+    await page.goto("/");
 
-    for (let index = 0; index < count; index += 1) {
-      await expect(pricingStarts.nth(index)).toHaveAttribute(
-        "href",
-        "https://dash.heystax.ai/onboarding?source=homepage"
-      );
-    }
+    await expect(page.getByText("Done while you slept. Decisions when you arrive."))
+      .toBeVisible();
+    await expect(page.getByText("@scribe drafted reply to solicitor")).toBeVisible();
+    await expect(page.getByText("@notify sent Sprint 7 update to John")).toBeVisible();
+    await expect(page.getByText("Lock SKU naming decision")).toBeVisible();
+    await expect(page.getByText("Approve scribe's draft to solicitor")).toBeVisible();
+    await expect(page.getByText("Yours")).toBeVisible();
+  });
+
+  test("technical and close sections match the spec", async ({ page }) => {
+    await page.goto("/");
+
+    await expect(page.getByText('hey "draft update to @rob on Claim Alert sprint"'))
+      .toBeVisible();
+    await expect(
+      page.getByText("Start in Claude. Finish in ChatGPT. Same stax. Same information.")
+    ).toBeVisible();
+    await expect(page.getByText("GYST cohort one")).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Ten operators. By application." }))
+      .toBeVisible();
+    await expect(page.getByRole("link", { name: "Apply" })).toHaveAttribute(
+      "href",
+      "https://dash.heystax.ai/onboarding?source=homepage"
+    );
+  });
+
+  test("mobile layout stacks and keeps CTA buttons full width", async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 900 });
+    await page.goto("/");
+
+    const startNow = page.locator("#hero a", { hasText: "Start Now" });
+    const box = await startNow.boundingBox();
+    expect(box).toBeTruthy();
+    expect(box!.width).toBeGreaterThan(300);
+
+    await expect(page.getByText("Typed work graph")).toBeVisible();
+    await expect(page.getByText("Cross-surface motion")).toBeVisible();
+    await expect(page.getByText("Agents as peers")).toBeVisible();
   });
 });

@@ -5,11 +5,11 @@ import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: "HeyStax — Never Pay the Reconstruction Tax Again",
+    default: "HeyStax — Hire agents that already know your job.",
     template: "%s | HeyStax",
   },
   description:
-    "HeyStax is your flow engine for work across AI chat, terminal, browser, and web. Open the exact workspace. See the exact next action. Continue in seconds.",
+    "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them.",
   metadataBase: new URL("https://heystax.ai"),
   icons: {
     icon: [
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "HeyStax — Never Pay the Reconstruction Tax Again",
+    title: "HeyStax — Hire agents that already know your job.",
     description:
-      "Your flow engine for work across AI chat, terminal, browser, and web. Open the exact workspace. See the exact next action. Continue in seconds.",
+      "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them.",
     type: "website",
     url: "https://heystax.ai",
   },

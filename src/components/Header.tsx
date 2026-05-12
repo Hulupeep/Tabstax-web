@@ -2,16 +2,11 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
 
 const navLinks = [
-  { href: "/#works-everywhere", label: "Product" },
-  { href: "/#individual-value", label: "Individuals" },
-  { href: "/#fast-kickoff", label: "Teams" },
-  { href: "/use-cases", label: "Use Cases" },
+  { href: "/#product", label: "Product" },
   { href: "/blog", label: "Blog" },
-  { href: "/#quick-start", label: "Quick Start" },
-  { href: "https://hulupeep.github.io/TabStax-Help/", label: "Docs", external: true },
+  { href: "https://dash.heystax.ai/attention", label: "Sign in", external: true },
 ];
 
 export function Header() {
@@ -54,12 +49,6 @@ export function Header() {
                 </Link>
               )
             )}
-            <a
-              href={DASH_ONBOARDING_URL}
-              className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors shadow-sm"
-            >
-              Start Now
-            </a>
           </nav>
 
           <button
@@ -118,12 +107,6 @@ export function Header() {
                   </Link>
                 )
               )}
-              <a
-                href={DASH_ONBOARDING_URL}
-                className="mx-4 mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors"
-              >
-                Start Now
-              </a>
             </nav>
           </div>
         )}
