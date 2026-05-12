@@ -1,0 +1,37 @@
+contract_meta:
+  id: feature_no_payment_signup_583
+  version: 1
+  created_from_spec: "Hulupeep/tabstax#583"
+  owner: "tabstax-web"
+
+rules:
+  non_negotiable:
+    - id: WEB-NPS-001
+      title: "Website start CTAs route to Dash onboarding"
+      requirement: "Homepage Start Now CTAs must link to https://dash.heystax.ai/onboarding?source=homepage, not the dashboard body or Stripe checkout."
+      scope:
+        - "src/components/Header.tsx"
+        - "src/components/Hero.tsx"
+        - "src/components/Pricing.tsx"
+        - "src/components/FinalCTA.tsx"
+
+    - id: WEB-NPS-002
+      title: "Pricing is plan intent, not checkout"
+      requirement: "Pricing presents Principal, Team, and Enterprise as setup intent and must not expose old Free/Pro checkout copy."
+      scope:
+        - "src/components/Pricing.tsx"
+
+    - id: WEB-NPS-003
+      title: "No payment collection on first start"
+      requirement: "Website copy must not ask for a card, embed Stripe checkout, or imply payment before account entry."
+      scope:
+        - "src/components/Hero.tsx"
+        - "src/components/Pricing.tsx"
+        - "src/components/FinalCTA.tsx"
+
+acceptance:
+  - "Hero Start Now opens Dash onboarding with source=homepage."
+  - "Header Start Now opens Dash onboarding with source=homepage."
+  - "Pricing renders Principal, Team, and Enterprise."
+  - "Pricing does not render legacy Free/Pro €3.99 checkout positioning."
+  - "Final CTA opens Dash onboarding with source=homepage."

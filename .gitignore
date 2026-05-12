@@ -14,6 +14,7 @@ build/
 
 # debug
 npm-debug.log*
+.next-dev-*.log
 
 # env files
 .env*.local

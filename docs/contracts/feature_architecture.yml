@@ -60,19 +60,19 @@ rules:
           <h1>Attention Stax</h1>
 
     - id: ARCH-003
-      title: "All CTAs must point to dash.tabstax.app/attention"
+      title: "Primary signup CTAs must point to Dash onboarding"
       scope:
         - "src/components/*.tsx"
         - "src/app/**/page.tsx"
       behavior:
         forbidden_patterns:
           - pattern: /tally\.so/
-            message: "No Tally.so forms — signup is via dash.tabstax.app/attention"
+            message: "No Tally.so forms — signup is via dash.heystax.ai/onboarding"
           - pattern: /href=["']\/signup["']/
-            message: "No local signup routes — all signup CTAs go to dash.tabstax.app/attention"
+            message: "No local signup routes — all signup CTAs go to dash.heystax.ai/onboarding"
         required_patterns:
-          - pattern: /dash\.tabstax\.app\/attention/
-            message: "Primary CTA must link to dash.tabstax.app/attention"
+          - pattern: /dash\.heystax\.ai\/onboarding\?source=homepage/
+            message: "Primary signup CTA must link to Dash onboarding for #583"
             scope:
               - "src/components/Hero.tsx"
               - "src/components/Pricing.tsx"
@@ -105,7 +105,7 @@ compliance_checklist:
     - question: "Are you adding an API route or server-side function?"
       if_yes: "STOP — this is a static export site. No API routes, getServerSideProps, or server actions."
     - question: "Are you adding a CTA or signup link?"
-      if_yes: "Must point to https://dash.tabstax.app/attention — no Tally.so forms."
+      if_yes: "Must point to https://dash.heystax.ai/onboarding?source=homepage — no Tally.so forms."
     - question: "Are you referencing the product by name?"
       if_yes: "Use 'Attention Stax' — never 'Attention Blocks', 'Terrain', or 'Map'."
     - question: "Are you adding images?"

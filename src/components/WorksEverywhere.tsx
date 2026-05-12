@@ -1,3 +1,5 @@
+import { DASH_ONBOARDING_URL } from "@/lib/routes";
+
 export function WorksEverywhere() {
   return (
     <section id="works-everywhere" className="bg-cream-dark py-20 md:py-28">
@@ -77,7 +79,7 @@ export function WorksEverywhere() {
               ))}
             </div>
             <a
-              href="https://dash.heystax.ai/attention"
+              href={DASH_ONBOARDING_URL}
               className="mt-6 inline-flex items-center text-sm font-semibold text-amber hover:text-terracotta transition-colors"
             >
               HeyStax Dashboard&nbsp;&rarr;

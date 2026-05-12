@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { DASH_ONBOARDING_URL } from "@/lib/routes";
 
 const navLinks = [
   { href: "/#works-everywhere", label: "Product" },
@@ -54,7 +55,7 @@ export function Header() {
               )
             )}
             <a
-              href="https://dash.heystax.ai/attention"
+              href={DASH_ONBOARDING_URL}
               className="inline-flex items-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors shadow-sm"
             >
               Start Now
@@ -118,7 +119,7 @@ export function Header() {
                 )
               )}
               <a
-                href="https://dash.heystax.ai/attention"
+                href={DASH_ONBOARDING_URL}
                 className="mx-4 mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-amber text-white font-semibold text-sm hover:bg-terracotta transition-colors"
               >
                 Start Now
