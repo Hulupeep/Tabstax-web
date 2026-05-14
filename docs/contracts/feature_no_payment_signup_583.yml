@@ -20,8 +20,8 @@ rules:
         - "src/app/pricing/page.tsx"
 
     - id: WEB-NPS-003
-      title: "Homepage proof mock replaces the old video"
-      requirement: "The homepage must not render the YouTube product embed. It must render the Done/Next proof rows from the rebuild spec."
+      title: "Homepage hero includes product video and proof mock"
+      requirement: "The homepage must render the YouTube product embed under the hero H2 and render the Done/Next proof rows from the rebuild spec."
       scope:
         - "src/app/page.tsx"
 
@@ -39,8 +39,8 @@ rules:
 
 acceptance:
   - "Hero Start Now opens Dash onboarding with source=homepage."
-  - "Homepage has no price copy and no YouTube iframe."
+  - "Homepage has no price copy and renders the product video under the hero H2."
   - "Proof mock shows Done rows, Next rows, and the Yours tag."
   - "Technical section contains the CLI code block and no technical heading."
-  - "Close section uses Apply, not Start Now."
+  - "Close section uses Start Now and routes to the signup plan flow."
   - "Footer links include Pricing, but homepage does not render pricing."

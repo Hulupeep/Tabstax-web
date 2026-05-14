@@ -29,10 +29,15 @@ test.describe("homepage rebuild signup handoff (#583)", () => {
     );
   });
 
-  test("homepage removes old pricing and video surfaces", async ({ page }) => {
+  test("homepage removes old pricing and restores the hero video", async ({ page }) => {
     await page.goto("/");
 
-    await expect(page.locator("iframe")).toHaveCount(0);
+    const heroVideo = page.locator("#hero iframe");
+    await expect(heroVideo).toHaveCount(1);
+    await expect(heroVideo).toHaveAttribute(
+      "src",
+      "https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+    );
     await expect(page.getByText("Simple pricing")).toHaveCount(0);
     await expect(page.getByText("$19")).toHaveCount(0);
     await expect(page.getByText("€3.99")).toHaveCount(0);
@@ -59,10 +64,11 @@ test.describe("homepage rebuild signup handoff (#583)", () => {
     await expect(
       page.getByText("Start in Claude. Finish in ChatGPT. Same stax. Same information.")
     ).toBeVisible();
-    await expect(page.getByText("GYST cohort one")).toBeVisible();
-    await expect(page.getByRole("heading", { name: "Ten operators. By application." }))
+    await expect(page.getByRole("heading", { name: "Start with the work." }))
       .toBeVisible();
-    await expect(page.getByRole("link", { name: "Apply" })).toHaveAttribute(
+    await expect(page.getByText("Bring one project, one goal, and the people around it."))
+      .toBeVisible();
+    await expect(page.locator("section").last().getByRole("link", { name: "Start Now" })).toHaveAttribute(
       "href",
       "https://dash.heystax.ai/onboarding?source=homepage"
     );
