@@ -92,6 +92,17 @@ export default function Home() {
             Multiple projects, work and home. Your AI remembers none of them.
             HeyStax: All of them.
           </p>
+          <div className="mx-auto mt-10 max-w-4xl">
+            <div className="aspect-video w-full overflow-hidden rounded-[1.5rem] border border-charcoal/10 bg-charcoal/5 shadow-xl shadow-charcoal/10">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+                title="HeyStax product demo"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-warm-gray">
             HeyStax is the knowledge graph you own. Agents are peers coordinating
             your next move with you and your team. They know your projects, your
@@ -245,20 +256,18 @@ hey done 2`}</code>
       </section>
 
       <section className="border-t border-charcoal/10 bg-cream px-4 py-24 text-center sm:px-6 lg:px-8">
-        <p className="text-sm tracking-[0.22em] text-warm-gray">
-          GYST cohort one
-        </p>
         <h2 className="mx-auto mt-5 max-w-3xl font-heading text-5xl font-black leading-tight text-charcoal md:text-6xl">
-          Ten operators. By application.
+          Start with the work.
         </h2>
         <p className="mx-auto mt-6 max-w-md text-lg leading-relaxed text-warm-gray">
-          Three months free Pro. Personal onboarding. Real work, in real time.
+          Bring one project, one goal, and the people around it. HeyStax gives
+          the work somewhere to live.
         </p>
         <a
           href={DASH_ONBOARDING_URL}
           className="mobile-full-cta mt-10 inline-flex items-center justify-center rounded-full bg-amber px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-terracotta"
         >
-          Apply
+          Start Now
         </a>
       </section>
     </>

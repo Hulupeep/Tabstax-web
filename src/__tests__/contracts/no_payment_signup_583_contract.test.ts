@@ -40,10 +40,11 @@ describe("Contract: feature_no_payment_signup_583", () => {
     expect(page).not.toContain("Simple pricing");
   });
 
-  it("replaces the video with the Done and Next proof mock", () => {
+  it("renders the product video and the Done and Next proof mock", () => {
     const page = readSrc("app/page.tsx");
 
-    expect(page).not.toMatch(/iframe|youtube|youtube-nocookie/i);
+    expect(page).toContain("https://www.youtube-nocookie.com/embed/jcc-PsCdbM8");
+    expect(page).toContain('title="HeyStax product demo"');
     expect(page).toContain("Done while you slept. Decisions when you arrive.");
     expect(page).toContain("@scribe drafted reply to solicitor");
     expect(page).toContain("@notify sent Sprint 7 update to John");
