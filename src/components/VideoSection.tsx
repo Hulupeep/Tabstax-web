@@ -11,7 +11,7 @@ export function VideoSection() {
         <div className="aspect-video w-full">
           <iframe
             className="w-full h-full rounded-2xl shadow-lg"
-            src="https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+            src="https://www.youtube-nocookie.com/embed/AkPAv3vquck"
             title="HeyStax product demo"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

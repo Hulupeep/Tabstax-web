@@ -43,7 +43,7 @@ describe("Contract: feature_no_payment_signup_583", () => {
   it("renders the product video and the Done and Next proof mock", () => {
     const page = readSrc("app/page.tsx");
 
-    expect(page).toContain("https://www.youtube-nocookie.com/embed/jcc-PsCdbM8");
+    expect(page).toContain("https://www.youtube-nocookie.com/embed/AkPAv3vquck");
     expect(page).toContain('title="HeyStax product demo"');
     expect(page).toContain("Done while you slept. Decisions when you arrive.");
     expect(page).toContain("@scribe drafted reply to solicitor");

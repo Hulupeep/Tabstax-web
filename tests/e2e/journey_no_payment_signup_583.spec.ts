@@ -36,7 +36,7 @@ test.describe("homepage rebuild signup handoff (#583)", () => {
     await expect(heroVideo).toHaveCount(1);
     await expect(heroVideo).toHaveAttribute(
       "src",
-      "https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+      "https://www.youtube-nocookie.com/embed/AkPAv3vquck"
     );
     await expect(page.getByText("Simple pricing")).toHaveCount(0);
     await expect(page.getByText("$19")).toHaveCount(0);

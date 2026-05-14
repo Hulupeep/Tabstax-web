@@ -15,7 +15,7 @@ test.describe("homepage product video", () => {
     await expect(iframe).toBeVisible();
     await expect(iframe).toHaveAttribute(
       "src",
-      "https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+      "https://www.youtube-nocookie.com/embed/AkPAv3vquck"
     );
     await expect(iframe).toHaveAttribute("title", "HeyStax product demo");
   });

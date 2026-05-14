@@ -96,7 +96,7 @@ export default function Home() {
             <div className="aspect-video w-full overflow-hidden rounded-[1.5rem] border border-charcoal/10 bg-charcoal/5 shadow-xl shadow-charcoal/10">
               <iframe
                 className="h-full w-full"
-                src="https://www.youtube-nocookie.com/embed/jcc-PsCdbM8"
+                src="https://www.youtube-nocookie.com/embed/AkPAv3vquck"
                 title="HeyStax product demo"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
