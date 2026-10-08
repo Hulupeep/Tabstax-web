@@ -1,23 +1,15 @@
 export function VideoSection() {
   return (
-    <section id="video" className="bg-cream py-16 md:py-24">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="font-heading font-bold text-3xl md:text-4xl text-charcoal text-center mb-4">
-          See HeyStax in Action
-        </h2>
-        <p className="text-warm-gray text-center mb-10 font-body">
-          Watch how HeyStax eliminates the reconstruction tax.
-        </p>
-        <div className="aspect-video w-full">
-          <iframe
-            className="w-full h-full rounded-2xl shadow-lg"
-            src="https://www.youtube-nocookie.com/embed/AkPAv3vquck"
-            title="HeyStax product demo"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          />
-        </div>
+    <div id="video" className="rounded-[14px] border border-line bg-card p-1.5 md:p-2">
+      <div className="aspect-video w-full overflow-hidden rounded-[10px] bg-ink">
+        <iframe
+          className="h-full w-full"
+          src="https://www.youtube-nocookie.com/embed/AkPAv3vquck"
+          title="HeyStax product demo"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
       </div>
-    </section>
+    </div>
   );
 }
