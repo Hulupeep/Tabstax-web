@@ -13,6 +13,36 @@
   --font-heading: "Fraunces", serif;
   --font-body: "Epilogue", sans-serif;
 
+  /* HeyStax design system (tokens.json v4). Quiet surfaces, one blue, time you can see. */
+  --color-page: #f6f7f9;
+  --color-card: #ffffff;
+  --color-sunken: #fbfbfc;
+  --color-ink: #1b2230;
+  --color-ink-2: #2a3242;
+  --color-ink-3: #3b4455;
+  --color-muted: #5b6475;
+  --color-subtle: #6b7384;
+  --color-line: #e2e5ea;
+  --color-line-control: #d5dae1;
+  --color-line-empty: #b9c0cb;
+  --color-divider: #eef0f3;
+  --color-accent: #1d56ad;
+  --color-accent-strong: #123d7e;
+  --color-accent-soft: #e6eefa;
+  --color-accent-track: #cfdcf2;
+  --color-neutral-soft: #eef0f3;
+  --color-success: #2f8a4f;
+  --color-success-ink: #1f6b3a;
+  --color-success-soft: #e3f3e8;
+  --color-warn-ink: #8a4b0f;
+  --color-warn-soft: #fdf0e1;
+  --color-late: #c2410c;
+  --color-late-ink: #8a3a0a;
+  --color-late-soft: #fde6d6;
+
+  --font-geist: "Geist", system-ui, sans-serif;
+  --font-geist-mono: "Geist Mono", ui-monospace, monospace;
+
   --animate-fade-in: fade-in 0.6s ease-out both;
   --animate-slide-up: slide-up 0.6s ease-out both;
   --animate-blob: blob 7s infinite;
@@ -53,6 +83,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
+}
+
+/* Pages built on the HeyStax design system opt in with .hs on their root. */
+.hs,
+.hs h1, .hs h2, .hs h3, .hs h4 {
+  font-family: var(--font-geist);
+}
+
+.hs .tnum {
+  font-variant-numeric: tabular-nums;
 }
 
 .mobile-full-cta {

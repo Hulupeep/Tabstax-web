@@ -14,19 +14,20 @@ describe("Contract: feature_no_payment_signup_583", () => {
 
     expect(page).toContain("DASH_ONBOARDING_URL");
     expect(readSrc("lib/routes.ts")).toContain(onboardingUrl);
-    expect(page).toContain("Start Now");
+    expect(page).toContain("Start now");
   });
 
-  it("narrows the header to Product, Blog, and Sign in", () => {
+  it("keeps the header to Product, Pricing, Blog, Sign in and one Start now", () => {
     const header = readSrc("components/Header.tsx");
 
     expect(header).toContain('label: "Product"');
+    expect(header).toContain('label: "Pricing"');
     expect(header).toContain('label: "Blog"');
     expect(header).toContain('label: "Sign in"');
+    expect(header).toContain("DASH_ONBOARDING_URL");
     expect(header).not.toContain('label: "Individuals"');
     expect(header).not.toContain('label: "Teams"');
     expect(header).not.toContain('label: "Use Cases"');
-    expect(header).not.toContain("Start Now");
   });
 
   it("removes homepage pricing and payment-first copy", () => {
@@ -40,32 +41,35 @@ describe("Contract: feature_no_payment_signup_583", () => {
     expect(page).not.toContain("Simple pricing");
   });
 
-  it("renders the product video and the Done and Next proof mock", () => {
+  it("renders the hero line, the product video and the three product sections", () => {
     const page = readSrc("app/page.tsx");
+    const video = readSrc("components/VideoSection.tsx");
 
-    expect(page).toContain("https://www.youtube-nocookie.com/embed/AkPAv3vquck");
-    expect(page).toContain('title="HeyStax product demo"');
-    expect(page).toContain("Done while you slept. Decisions when you arrive.");
-    expect(page).toContain("@scribe drafted reply to solicitor");
-    expect(page).toContain("@notify sent Sprint 7 update to John");
-    expect(page).toContain("Approve scribe's draft to solicitor");
-    expect(page).toContain('tag: "Yours"');
+    expect(page).toContain("For people who run on momentum and lose it on every switch.");
+    expect(page).toContain("Kick off with a team in a minute.");
+    expect(page).toContain("Run a dozen projects.");
+    expect(page).toContain("Pick up where you or they left off.");
+    expect(page).toContain("VideoSection");
+    expect(video).toContain("https://www.youtube-nocookie.com/embed/AkPAv3vquck");
+    expect(video).toContain('title="HeyStax product demo"');
+    expect(page).toContain("Invoices come from the work, not from memory.");
   });
 
-  it("keeps the technical section as unlabeled product detail", () => {
+  it("keeps retired vocabulary off the homepage", () => {
     const page = readSrc("app/page.tsx");
 
-    expect(page).toContain('hey "draft update to @rob on Claim Alert sprint"');
-    expect(page).toMatch(/HookTunnel logs every agent action in both\s+directions\./);
-    expect(page).not.toContain(">Technical");
+    // The HeyStax design system retires these words from public surfaces.
+    expect(page).not.toMatch(/\bagents?\b/i);
+    expect(page).not.toMatch(/\bplatform\b/i);
+    expect(page).not.toMatch(/\bautomat(e|ed|ion)\b/i);
   });
 
   it("updates homepage metadata", () => {
     const layout = readSrc("app/layout.tsx");
 
-    expect(layout).toContain("HeyStax — Hire agents that already know your job.");
+    expect(layout).toContain("HeyStax. Pick up where you or your team left off.");
     expect(layout).toContain(
-      "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them."
+      "Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off."
     );
   });
 });

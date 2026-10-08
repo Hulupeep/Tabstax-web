@@ -3,13 +3,16 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
+const siteTitle = "HeyStax. Pick up where you or your team left off.";
+const siteDescription =
+  "Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off. For people who run on momentum and lose it on every switch.";
+
 export const metadata: Metadata = {
   title: {
-    default: "HeyStax — Hire agents that already know your job.",
+    default: siteTitle,
     template: "%s | HeyStax",
   },
-  description:
-    "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them.",
+  description: siteDescription,
   metadataBase: new URL("https://heystax.ai"),
   icons: {
     icon: [
@@ -19,9 +22,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   openGraph: {
-    title: "HeyStax — Hire agents that already know your job.",
-    description:
-      "Multiple projects, work and home. Your AI remembers none of them. HeyStax holds all of them.",
+    title: siteTitle,
+    description: siteDescription,
     type: "website",
     url: "https://heystax.ai",
   },
@@ -42,7 +44,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Epilogue:wght@300;400;500;600;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Epilogue:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
       </head>

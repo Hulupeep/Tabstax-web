@@ -1,46 +1,54 @@
 contract_meta:
   id: feature_no_payment_signup_583
-  version: 2
-  created_from_spec: "Hulupeep/tabstax#583 homepage rebuild"
+  version: 3
+  created_from_spec: "Hulupeep/tabstax#583 homepage rebuild; revised for the Oct 2026 homepage redesign on the HeyStax design system"
   owner: "tabstax-web"
 
 rules:
   non_negotiable:
     - id: WEB-NPS-001
       title: "Homepage has one primary start CTA above the fold"
-      requirement: "The rendered homepage hero has exactly one Start Now CTA and it routes to Dash onboarding."
+      requirement: "The rendered homepage hero has exactly one Start now CTA and it routes to Dash onboarding. The header carries one more Start now to the same place."
       scope:
         - "src/app/page.tsx"
+        - "src/components/Header.tsx"
 
     - id: WEB-NPS-002
       title: "Homepage does not sell pricing inline"
-      requirement: "The homepage must not display prices, Free/Pro tiers, or checkout/payment copy. Pricing lives at /pricing."
+      requirement: "The homepage must not display prices, Free/Pro tiers, or checkout/payment copy. Pricing lives at /pricing and the homepage may link to it."
       scope:
         - "src/app/page.tsx"
         - "src/app/pricing/page.tsx"
 
     - id: WEB-NPS-003
-      title: "Homepage hero includes product video and proof mock"
-      requirement: "The homepage must render the YouTube product embed under the hero H2 and render the Done/Next proof rows from the rebuild spec."
+      title: "Homepage hero carries the positioning line and the product video"
+      requirement: "The hero renders the eyebrow 'For people who run on momentum and lose it on every switch.' and the three-sentence H1 (Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off.), followed by the YouTube product embed via VideoSection inside #hero."
       scope:
         - "src/app/page.tsx"
+        - "src/components/VideoSection.tsx"
 
     - id: WEB-NPS-004
-      title: "Navigation is narrowed"
-      requirement: "The header must render only Product, Blog, and Sign in links next to the logo. Sign in is a text link."
+      title: "Navigation is Product, Pricing, Blog, Sign in, Start now"
+      requirement: "The header renders Product, Pricing, Blog and Sign in as links next to the logo, plus one Start now button to Dash onboarding. Nothing else."
       scope:
         - "src/components/Header.tsx"
 
     - id: WEB-NPS-005
-      title: "Homepage metadata matches the rebuild"
-      requirement: "Page title and description must match the homepage rebuild copy."
+      title: "Homepage metadata matches the hero"
+      requirement: "Page title is 'HeyStax. Pick up where you or your team left off.' and the description is the three-sentence hero plus the eyebrow."
       scope:
         - "src/app/layout.tsx"
 
+    - id: WEB-NPS-006
+      title: "Retired vocabulary stays off the homepage"
+      requirement: "The homepage does not use the words agent, platform or automate. Public copy uses the HeyStax design system vocabulary: stax, next action, goal, record, people."
+      scope:
+        - "src/app/page.tsx"
+
 acceptance:
-  - "Hero Start Now opens Dash onboarding with source=homepage."
-  - "Homepage has no price copy and renders the product video under the hero H2."
-  - "Proof mock shows Done rows, Next rows, and the Yours tag."
-  - "Technical section contains the CLI code block and no technical heading."
-  - "Close section uses Start Now and routes to the signup plan flow."
-  - "Footer links include Pricing, but homepage does not render pricing."
+  - "Hero Start now opens Dash onboarding with source=homepage."
+  - "Homepage has no price copy and renders the product video inside the hero."
+  - "Sections 01, 02 and 03 render the stax card, the Live board (table on desktop, one card per stax on phone) and the re-entry card."
+  - "Money section heading is 'Invoices come from the work, not from memory.' and links to /pricing."
+  - "Close section uses Start now and routes to Dash onboarding."
+  - "At 390px wide the page has no horizontal scroll."
