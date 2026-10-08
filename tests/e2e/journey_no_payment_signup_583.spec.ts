@@ -58,8 +58,16 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     await expect(
       page.getByRole("heading", { name: "Kick off with a team in a minute.", exact: true })
     ).toBeVisible();
-    await expect(page.getByText("Lifesaving course", { exact: true })).toBeVisible();
-    await expect(page.getByText("Book the pool for the six Saturdays").first()).toBeVisible();
+    // Section 01 is an animated scene: it plays once scrolled into view and
+    // ends with the team working the list. Scroll to it and wait for the end.
+    await page.locator("#product").scrollIntoViewIfNeeded();
+    await expect(page.getByText("Lifesaving course", { exact: true }).first()).toBeVisible();
+    await expect(page.getByText("First next action: Book the pool for the six Saturdays")).toBeVisible({
+      timeout: 20000,
+    });
+    await expect(page.getByText("done · @bob · 15:02")).toBeVisible({ timeout: 20000 });
+    await expect(page.getByRole("button", { name: "Replay" })).toBeVisible({ timeout: 20000 });
+    await expect(page.getByText("on track")).toBeVisible();
 
     await expect(page.getByRole("heading", { name: "Run a dozen projects.", exact: true })).toBeVisible();
     await expect(page.getByText("Thu 8 Oct · 14:32 · 6 stax · 3 moving")).toBeVisible();

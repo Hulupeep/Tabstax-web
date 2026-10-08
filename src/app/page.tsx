@@ -1,13 +1,9 @@
 import { DASH_ONBOARDING_URL } from "@/lib/routes";
 import { VideoSection } from "@/components/VideoSection";
+import { KickoffScene } from "@/components/KickoffScene";
 
 // Example data for the product illustrations. Names are placeholders, not people.
 
-const kickoffActions = [
-  { text: "Book the pool for the six Saturdays", handle: "@mary" },
-  { text: "Send the kit list to the trainees", handle: "@bob" },
-  { text: "Confirm the examiner for the last day", handle: "@joe" },
-];
 
 type GoalState = "open" | "done" | "late";
 
@@ -289,78 +285,13 @@ export default function Home() {
 
       {/* 01 Kick off */}
       <section id="product" className="px-4 pb-16 sm:px-6 md:pb-24 lg:px-12">
-        <div className="mx-auto flex max-w-[1040px] flex-col gap-6 md:flex-row md:items-center md:gap-14">
-          <div className="md:flex-1 md:basis-80">
-            <SectionIntro
-              number="01"
-              title="Kick off with a team in a minute."
-              body="Say the goal and who is in. HeyStax makes the stax, invites them by email, and gives each person a next action. No group chat, no shared doc, no setup week."
-            />
-          </div>
-          <div className="relative pb-2 md:flex-1 md:basis-[440px]">
-            <div className="relative z-[2] flex flex-col gap-4 rounded-[14px] border border-line bg-card p-4 md:p-5">
-              <div className="flex items-center justify-between gap-2">
-                <div className="text-lg font-semibold tracking-[-0.01em] md:text-xl">
-                  Lifesaving course
-                </div>
-                <Chip tone="success">active</Chip>
-              </div>
-              <div className="flex items-center gap-2.5 rounded-[10px] border border-line p-3">
-                <Diamond />
-                <span className="flex-1 text-[15px] leading-[22px]">
-                  Run the course for 12 trainees
-                </span>
-                <Chip tone="accent" isMono>
-                  in 53 days
-                </Chip>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="flex flex-none">
-                  {["MK", "BO", "JD"].map((initials, i) => (
-                    <span
-                      key={initials}
-                      className={`inline-flex h-7 w-7 items-center justify-center rounded-full border-2 border-card bg-neutral-soft text-xs font-semibold text-ink-3 ${
-                        i > 0 ? "-ml-2" : ""
-                      }`}
-                    >
-                      {initials}
-                    </span>
-                  ))}
-                </div>
-                <span className="text-[13px] leading-[18px] text-muted">
-                  Mary, Bob and Joe, invited by email
-                </span>
-              </div>
-              <div className="flex flex-col">
-                <div className="border-b border-divider pb-2 text-xs leading-4 text-muted">
-                  Next actions
-                </div>
-                {kickoffActions.map((action, i) => (
-                  <div
-                    key={action.handle}
-                    className={`flex items-start gap-3 py-3 ${
-                      i < kickoffActions.length - 1 ? "border-b border-divider" : ""
-                    }`}
-                  >
-                    <Checkbox />
-                    <div className="flex flex-1 flex-col gap-0.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
-                      <span className="text-[15px] leading-[22px]">{action.text}</span>
-                      <span className={`${mono} text-[13px] leading-[18px] text-ink-3`}>
-                        {action.handle}
-                      </span>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className={`${mono} text-[13px] leading-[18px] text-subtle`}>
-                1 goal · 3 people · 3 next actions
-              </div>
-            </div>
-            <div
-              aria-hidden="true"
-              className="absolute inset-x-1 bottom-1 z-[1] h-2 rounded-b-[14px] border border-t-0 border-line bg-card"
-            />
-          </div>
+        <div className="mx-auto flex max-w-[1040px] flex-col gap-6 md:gap-8">
+          <SectionIntro
+            number="01"
+            title="Kick off with a team in a minute."
+            body="Say the goal, the date and who is in. HeyStax makes the stax, emails each person their first next action, and from there the list fills itself: people add what they see, tick off what they finish, and the goal moves."
+          />
+          <KickoffScene />
         </div>
       </section>
 
