@@ -10,6 +10,8 @@ const footerLinks = [
   },
   { href: "/pricing", label: "Pricing" },
   { href: "/about", label: "About" },
+  { href: "/privacy", label: "Privacy" },
+  { href: "/terms", label: "Terms" },
   { href: "mailto:hello@heystax.ai", label: "hello@heystax.ai", external: true },
 ];
 
@@ -45,7 +47,7 @@ export function Footer() {
           )}
         </nav>
 
-        <p>Flout Labs, Ireland. All rights reserved.</p>
+        <p>Flout Ltd (Flout Labs), Ireland. Company no. 617498. All rights reserved.</p>
       </div>
     </footer>
   );
