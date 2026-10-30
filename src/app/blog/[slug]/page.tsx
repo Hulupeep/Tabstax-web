@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { blogPosts } from "@/data/blog-posts";
+import { blogPosts } from "@/data/all-blog-posts";
 import { readingTime } from "@/lib/reading-time";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -83,6 +83,7 @@ export default function BlogPostPage({
       year: "numeric",
       month: "long",
       day: "numeric",
+      timeZone: "UTC",
     });
   }
 
@@ -205,6 +206,7 @@ export default function BlogPostPage({
                       year: "numeric",
                       month: "short",
                       day: "numeric",
+                      timeZone: "UTC",
                     })}{" "}
                     · {readingTime(related.content)} min read
                   </p>
