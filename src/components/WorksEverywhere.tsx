@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 export function WorksEverywhere() {
   return (
@@ -79,7 +79,7 @@ export function WorksEverywhere() {
               ))}
             </div>
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="mt-6 inline-flex items-center text-sm font-semibold text-amber hover:text-terracotta transition-colors"
             >
               HeyStax Dashboard&nbsp;&rarr;

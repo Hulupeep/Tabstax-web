@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 const plans = [
   {
@@ -95,10 +95,10 @@ export function Pricing() {
               </div>
 
               <a
-                href={DASH_ONBOARDING_URL}
+                href={DASH_BETA_URL}
                 className="mt-auto inline-flex items-center justify-center rounded-full bg-amber px-6 py-3 font-semibold text-white transition-colors hover:bg-terracotta"
               >
-                Start Now
+                Register for beta
               </a>
             </article>
           ))}

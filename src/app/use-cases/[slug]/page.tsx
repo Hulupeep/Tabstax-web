@@ -200,10 +200,10 @@ export default async function UseCasePage({ params }: PageProps) {
         {/* CTA */}
         <div className="mt-12 text-center">
           <a
-            href="https://dash.heystax.ai/attention"
+            href="https://dash.heystax.ai/beta?source=use-cases"
             className="inline-block bg-amber text-cream font-body font-semibold px-8 py-4 rounded-full text-lg hover:bg-terracotta transition-colors"
           >
-            Start Now
+            Register for beta
           </a>
           <p className="text-warm-gray text-sm mt-3 font-body">
             Build your first Stax in under a minute.

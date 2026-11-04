@@ -1,6 +1,6 @@
 import { expect, test } from "@playwright/test";
 
-const onboardingUrl = "https://dash.heystax.ai/onboarding?source=homepage";
+const onboardingUrl = "https://dash.heystax.ai/beta?source=homepage";
 
 test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
   test("hero and nav match the homepage contract", async ({ page }) => {
@@ -26,13 +26,13 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     await expect(desktopNav.getByRole("link", { name: "Pricing" })).toBeVisible();
     await expect(desktopNav.getByRole("link", { name: "Blog" })).toBeVisible();
     await expect(desktopNav.getByRole("link", { name: "Sign in" })).toBeVisible();
-    await expect(desktopNav.getByRole("link", { name: "Start now" })).toHaveAttribute(
+    await expect(desktopNav.getByRole("link", { name: "Register for beta" })).toHaveAttribute(
       "href",
       onboardingUrl
     );
     await expect(desktopNav.getByRole("link")).toHaveCount(5);
 
-    const startNow = page.locator("#hero a", { hasText: "Start now" });
+    const startNow = page.locator("#hero a", { hasText: "Register for beta" });
     await expect(startNow).toHaveCount(1);
     await expect(startNow).toHaveAttribute("href", onboardingUrl);
   });
@@ -101,7 +101,7 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
       page.getByText("Bring one project, one goal, and the people around it.")
     ).toBeVisible();
     await expect(
-      page.locator("main section").last().getByRole("link", { name: "Start now" })
+      page.locator("main section").last().getByRole("link", { name: "Register for beta" })
     ).toHaveAttribute("href", onboardingUrl);
   });
 
@@ -111,7 +111,7 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     await page.setViewportSize({ width: 390, height: 900 });
     await page.goto("/");
 
-    const startNow = page.locator("#hero a", { hasText: "Start now" });
+    const startNow = page.locator("#hero a", { hasText: "Register for beta" });
     const box = await startNow.boundingBox();
     expect(box).toBeTruthy();
     expect(box!.width).toBeGreaterThan(300);

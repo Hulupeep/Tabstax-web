@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import { dashBetaUrl } from "@/lib/routes";
 
-// Signup is gated during the beta. Registration goes by email until the beta form exists.
-const BETA_URL =
-  "mailto:hello@heystax.ai?subject=Register%20for%20beta%3A%20emergency%20teams";
+// Signup is gated during the beta. Registration goes to the beta register page.
+const BETA_URL = dashBetaUrl("emergency");
 const WALKTHROUGH_URL =
   "mailto:hello@heystax.ai?subject=Storm%20stax%20walkthrough";
 

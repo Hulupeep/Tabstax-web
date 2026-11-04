@@ -30,9 +30,9 @@ test.describe("Homepage", () => {
     expect(text).toBeTruthy();
   });
 
-  test("Start Now CTA links to dash.tabstax.app/attention", async ({ page }) => {
+  test("Register for beta CTA links to dash.heystax.ai/beta", async ({ page }) => {
     await page.goto("/");
-    const ctaLinks = page.locator('a[href*="dash.tabstax.app/attention"]');
+    const ctaLinks = page.locator('a[href*="dash.heystax.ai/beta"]');
     const count = await ctaLinks.count();
     expect(count).toBeGreaterThanOrEqual(1);
   });
@@ -183,9 +183,9 @@ for (const slug of SAMPLE_SLUGS) {
       expect(body).toContain("Stax Pattern");
     });
 
-    test("has Start Now CTA", async ({ page }) => {
+    test("has Register for beta CTA", async ({ page }) => {
       await page.goto(`/use-cases/${slug}`);
-      const cta = page.locator('a[href*="dash.tabstax.app/attention"]');
+      const cta = page.locator('a[href*="dash.heystax.ai/beta"]');
       expect(await cta.count()).toBeGreaterThanOrEqual(1);
     });
 

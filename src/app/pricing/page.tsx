@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 export default function PricingPage() {
   return (
@@ -12,10 +12,10 @@ export default function PricingPage() {
           are setting up.
         </p>
         <a
-          href={DASH_ONBOARDING_URL}
+          href={DASH_BETA_URL}
           className="mobile-full-cta mt-10 inline-flex items-center justify-center rounded-full bg-amber px-8 py-4 text-lg font-semibold text-white shadow-lg transition-colors hover:bg-terracotta"
         >
-          Start Now
+          Register for beta
         </a>
       </div>
     </section>

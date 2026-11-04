@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 export function FinalCTA() {
   return (
@@ -14,10 +14,10 @@ export function FinalCTA() {
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href={DASH_ONBOARDING_URL}
+            href={DASH_BETA_URL}
             className="inline-flex items-center px-10 py-5 rounded-full bg-amber text-white font-semibold text-lg hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl"
           >
-            Start Now
+            Register for beta
           </a>
           <a
             href="https://hulupeep.github.io/TabStax-Help/"
