@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 export function QuickStart() {
   return (
@@ -96,7 +96,7 @@ export function QuickStart() {
               Plan your week and see all Stax and next actions together in one view.
             </p>
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="mt-4 inline-flex items-center text-sm font-semibold text-amber hover:text-terracotta transition-colors"
             >
               Start in Dashboard&nbsp;&rarr;

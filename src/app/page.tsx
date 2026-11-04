@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 import { VideoSection } from "@/components/VideoSection";
 import { KickoffScene } from "@/components/KickoffScene";
 
@@ -250,10 +250,10 @@ export default function Home() {
           </h1>
           <div className="mobile-full-cta flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="mobile-full-cta inline-flex h-12 items-center justify-center rounded-[10px] bg-ink px-6 text-[15px] font-semibold text-white transition-colors duration-150 hover:bg-ink-2 md:h-11"
             >
-              Start now
+              Register for beta
             </a>
             <a
               href="#video"
@@ -651,10 +651,10 @@ $ hey done 2
           </div>
           <div className="mobile-full-cta flex sm:w-auto">
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="mobile-full-cta inline-flex h-12 items-center justify-center rounded-[10px] bg-ink px-6 text-[15px] font-semibold text-white transition-colors duration-150 hover:bg-ink-2 md:h-11"
             >
-              Start now
+              Register for beta
             </a>
           </div>
         </div>

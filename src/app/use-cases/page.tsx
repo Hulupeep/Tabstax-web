@@ -56,10 +56,10 @@ export default function UseCasesPage() {
             Pick your first Stax. Drop into your world in seconds, not minutes.
           </p>
           <a
-            href="https://dash.heystax.ai/attention"
+            href="https://dash.heystax.ai/beta?source=use-cases"
             className="inline-block bg-amber text-cream font-body font-semibold px-8 py-4 rounded-full text-lg hover:bg-terracotta transition-colors"
           >
-            Start Now
+            Register for beta
           </a>
         </div>
       </section>

@@ -1,4 +1,4 @@
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 export function Hero() {
   return (
@@ -31,10 +31,10 @@ export function Hero() {
 
         <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4 animate-slide-up [animation-delay:0.2s]">
           <a
-            href={DASH_ONBOARDING_URL}
+            href={DASH_BETA_URL}
             className="inline-flex items-center px-8 py-4 rounded-full bg-amber text-white font-semibold text-lg hover:bg-terracotta transition-colors shadow-lg hover:shadow-xl"
           >
-            Start Now
+            Register for beta
           </a>
           <a
             href="#video"

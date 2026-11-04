@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { DASH_ONBOARDING_URL } from "@/lib/routes";
+import { DASH_BETA_URL } from "@/lib/routes";
 
 const navLinks = [
   { href: "/#product", label: "Product" },
@@ -53,19 +53,19 @@ export function Header() {
               )
             )}
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="ml-2 inline-flex h-11 items-center rounded-[10px] bg-ink px-4.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-ink-2"
             >
-              Start now
+              Register for beta
             </a>
           </nav>
 
           <div className="flex items-center gap-1 md:hidden">
             <a
-              href={DASH_ONBOARDING_URL}
+              href={DASH_BETA_URL}
               className="inline-flex h-10 items-center rounded-[10px] bg-ink px-3.5 text-sm font-semibold text-white"
             >
-              Start now
+              Register for beta
             </a>
             <button
               type="button"

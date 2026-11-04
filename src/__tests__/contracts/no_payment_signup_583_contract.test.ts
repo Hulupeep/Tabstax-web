@@ -2,29 +2,31 @@ import { readFileSync } from "fs";
 import { join } from "path";
 
 const root = join(__dirname, "../../..");
-const onboardingUrl = "https://dash.heystax.ai/onboarding?source=homepage";
+const betaUrl = "https://dash.heystax.ai/beta?source=homepage";
 
 function readSrc(relPath: string) {
   return readFileSync(join(root, "src", relPath), "utf-8");
 }
 
 describe("Contract: feature_no_payment_signup_583", () => {
-  it("keeps the homepage start CTA on Dash onboarding", () => {
+  it("sends the homepage start CTA to the beta register page (signup is invite only)", () => {
     const page = readSrc("app/page.tsx");
 
-    expect(page).toContain("DASH_ONBOARDING_URL");
-    expect(readSrc("lib/routes.ts")).toContain(onboardingUrl);
-    expect(page).toContain("Start now");
+    expect(page).toContain("DASH_BETA_URL");
+    expect(readSrc("lib/routes.ts")).toContain(betaUrl);
+    expect(page).toContain("Register for beta");
+    expect(page).not.toMatch(/Start now/i);
   });
 
-  it("keeps the header to Product, Pricing, Blog, Sign in and one Start now", () => {
+  it("keeps the header to Product, Pricing, Blog, Sign in and one Register for beta", () => {
     const header = readSrc("components/Header.tsx");
 
     expect(header).toContain('label: "Product"');
     expect(header).toContain('label: "Pricing"');
     expect(header).toContain('label: "Blog"');
     expect(header).toContain('label: "Sign in"');
-    expect(header).toContain("DASH_ONBOARDING_URL");
+    expect(header).toContain("DASH_BETA_URL");
+    expect(header).toContain("Register for beta");
     expect(header).not.toContain('label: "Individuals"');
     expect(header).not.toContain('label: "Teams"');
     expect(header).not.toContain('label: "Use Cases"');

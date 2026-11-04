@@ -214,10 +214,10 @@ Want me to show the actions for API Migration?`}</code>
         {/* CTA */}
         <div className="pt-8 border-t border-charcoal/10">
           <a
-            href="https://dash.tabstax.app/attention"
+            href="https://dash.heystax.ai/beta?source=hey"
             className="inline-flex items-center px-8 py-4 rounded-full bg-amber text-white font-semibold text-lg hover:bg-terracotta transition-colors shadow-sm"
           >
-            Start Now
+            Register for beta
           </a>
         </div>
       </div>
