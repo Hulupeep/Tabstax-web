@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}[hidden]{display:none!important}</style>
+<title>Storm Noah</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Schibsted+Grotesk:wght@500;700;800&display=swap">
+<style>
+/* Layout: a fixed 1920x1080 stage (board left, shared TabStax pane right) scaled to fit, with a scrub bar under it. Single dark look: a night-shift ops room. */
+:root{
+  color-scheme:dark;
+  --bg:#0c1016; --panel:#141a23; --panel2:#1b2330; --line:#29323f; --ink:#e7ebf0; --muted:#919eaf;
+  --human:#f0b14a; --agent:#86a9ff; --good:#5fd39a; --amber:#ff9f43; --stall:#ff6b5e; --water:#3f8fd8; --land:#18202b; --landline:#3a4658;
+  --display:"Schibsted Grotesk","Helvetica Neue",Arial,sans-serif;
+  --body:"Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);overflow:hidden;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));box-sizing:border-box}
+#app{height:100%;display:flex;flex-direction:column;gap:8px;padding-block:8px;box-sizing:border-box}
+#view{position:relative;flex:1;min-height:0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:0 0;background:var(--bg);overflow:hidden;border-radius:6px}
+body.rec{padding:0}
+body.rec #app{padding:0;gap:0}
+body.rec #controls{display:none}
+body.rec #stage{border-radius:0}
+.abs{position:absolute}
+.hide{opacity:0;visibility:hidden}
+/* controls */
+#controls{display:flex;flex-direction:column;gap:6px;font-size:13px;color:var(--muted)}
+#pips{display:flex;gap:4px;flex-wrap:wrap}
+#pips button{flex:1 1 0;min-width:28px;background:var(--panel);color:var(--muted);border:1px solid var(--line);border-radius:6px;padding:5px 4px;font:600 12px var(--mono);cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#pips button.on{color:var(--bg);background:var(--human);border-color:var(--human)}
+#bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+#bar button{background:var(--panel2);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:6px 14px;font:600 13px var(--body);cursor:pointer}
+#scrub{flex:1 1 200px;min-width:0;accent-color:var(--human)}
+#tm{font-family:var(--mono);font-variant-numeric:tabular-nums;min-width:86px}
+#bar label{display:flex;gap:6px;align-items:center;cursor:pointer}
+button:focus-visible,input:focus-visible{outline:2px solid var(--agent);outline-offset:2px}
+.hint{font-size:12px}
+/* drawer */
+#drawer{position:absolute;right:8px;top:8px;bottom:8px;width:min(360px,calc(100% - 16px));background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;box-sizing:border-box;overflow:auto;z-index:5;box-shadow:0 10px 40px rgba(0,0,0,.5)}
+#drawer h3{font:700 18px/1.3 var(--display);margin:0 0 4px;text-wrap:balance}
+#drawer .sub{color:var(--muted);font-size:13px;margin-bottom:12px}
+#drawer ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+#drawer li{display:grid;grid-template-columns:52px 1fr;gap:8px;font-size:14px;line-height:1.35}
+#drawer li time{font-family:var(--mono);color:var(--muted);font-size:13px}
+#drawer .x{position:absolute;right:10px;top:10px;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:2px 8px;cursor:pointer}
+/* stage pieces */
+.topbar{left:30px;top:20px;width:1860px;height:120px;background:var(--panel);border:1px solid var(--line);border-radius:14px}
+.eyebrow{font:700 15px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mission{font:800 34px/1.1 var(--display);letter-spacing:-.01em}
+.goal{left:640px;top:34px;width:340px;height:92px;border:2px solid var(--human);border-radius:12px;background:var(--panel2);padding:12px 16px;box-sizing:border-box}
+.goal .k,.metric .k{font:600 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.goal .v{font:700 22px/1.2 var(--display);margin-top:6px}
+.metric .v{font:600 30px var(--mono);font-variant-numeric:tabular-nums;margin-top:6px}
+.obs{display:flex;gap:10px;align-items:center}
+.av{width:44px;height:44px;border-radius:50%;background:var(--panel2);border:1px dashed var(--muted);display:flex;align-items:center;justify-content:center;font:700 14px var(--display);position:relative}
+.av .eye{position:absolute;right:-4px;bottom:-4px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.av .ph{position:absolute;left:50%;top:50px;transform:translateX(-50%);font:600 11px var(--mono);color:var(--good);white-space:nowrap}
+.rowlabel{font:700 13px var(--mono);letter-spacing:.14em;color:var(--muted)}
+.col{background:var(--panel);border:1px solid var(--line);border-radius:12px;box-sizing:border-box}
+.col .hd{padding:10px 10px 0;display:flex;align-items:center;gap:7px;font:700 17px var(--display);white-space:nowrap}
+.col .rl{padding:2px 10px 0;font-size:12px;color:var(--muted);line-height:1.3;height:32px;overflow:hidden}
+.kd{width:10px;height:10px;border-radius:50%;flex:none}
+.kd.h{background:var(--human)} .kd.a{background:var(--agent);border-radius:3px}
+.badge{font:600 11px var(--mono);padding:2px 6px;border-radius:999px;border:1px dashed var(--muted);color:var(--muted)}
+.card{background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:8px 9px;box-sizing:border-box;font-size:14px;line-height:1.28;cursor:pointer;z-index:2}
+.card:hover{border-color:var(--agent)}
+.card .cw{font:500 11px/1.3 var(--mono);color:var(--muted);margin-top:5px;display:flex;gap:6px;align-items:center}
+.card .sd{width:8px;height:8px;border-radius:50%;background:var(--muted);flex:none}
+.card.s-doing .sd{background:var(--agent);box-shadow:0 0 0 3px rgba(134,169,255,.25)}
+.card.s-done{opacity:.55}
+.card.s-done .sd{background:var(--good)}
+.card.s-done .cw{color:var(--good)}
+.card.s-amber{border-color:var(--amber)} .card.s-amber .sd{background:var(--amber)} .card.s-amber .cw{color:var(--amber)}
+.card.s-stalled{border-color:var(--stall);box-shadow:0 0 0 1px var(--stall)} .card.s-stalled .sd{background:var(--stall)} .card.s-stalled .cw{color:var(--stall)}
+.card.s-draft{border-color:var(--human)} .card.s-draft .sd{background:var(--human)} .card.s-draft .cw{color:var(--human)}
+.card .dr{display:none;margin-top:6px;padding:6px 7px;border-left:2px solid var(--human);font-size:12px;color:var(--muted);font-style:italic}
+.card.s-draft .dr{display:block}
+.toast{width:300px;background:#0f1520;border:1.5px solid var(--agent);border-radius:10px;padding:10px 12px;box-sizing:border-box;z-index:4;box-shadow:0 8px 30px rgba(0,0,0,.55)}
+.toast .th{font:600 11px var(--mono);color:var(--agent);letter-spacing:.06em}
+.toast .tt{font:700 19px/1.2 var(--display);margin-top:4px}
+.toast .tb{font-size:14px;color:var(--ink);margin-top:4px;line-height:1.3}
+.tag{font:600 11px var(--mono);padding:3px 8px;border-radius:999px;border:1px dashed var(--human);color:var(--human);background:rgba(12,16,22,.85);white-space:nowrap;z-index:6}
+body.noplanned .tag.planned{display:none}
+.pane{left:1196px;top:160px;width:694px;height:845px;background:var(--panel);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tabs{display:flex;gap:4px;padding:8px 8px 0;height:52px;box-sizing:border-box}
+.tab{flex:1;min-width:0;background:var(--bg);border:1px solid var(--line);border-bottom:none;border-radius:8px 8px 0 0;padding:5px 8px 18px;font:600 11px var(--mono);color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative}
+.tab.on{background:var(--panel2);color:var(--ink)}
+.pg-h{font:600 13px var(--mono);color:var(--muted)}
+.dotm{width:9px;height:9px;border-radius:50%;border:1.5px solid var(--bg)}
+.pulse{width:16px;height:16px;border-radius:50%;z-index:7}
+.cap{left:0;top:1016px;width:1920px;text-align:center;font:700 31px var(--display);letter-spacing:-.005em}
+.ill{left:30px;top:1052px;font:500 13px var(--mono);color:var(--muted)}
+.chat{left:440px;top:110px;width:1040px;height:860px;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-sizing:border-box;padding:28px 36px}
+.chat .ch{font:700 18px var(--display);color:var(--muted);display:flex;gap:10px;align-items:center}
+.bub{margin-left:auto;margin-top:22px;max-width:760px;background:var(--panel2);border:1px solid var(--line);border-radius:14px;padding:18px 22px;font-size:24px;line-height:1.4;min-height:30px}
+.rep{margin-top:26px;display:flex;flex-direction:column;gap:12px}
+.rl2{display:flex;gap:14px;align-items:center;font-size:23px}
+.rl2 .ck{width:28px;height:28px;border-radius:50%;border:2px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700;font-size:16px;flex:none}
+.rl2.done .ck{background:var(--good);border-color:var(--good)}
+.bigct{left:120px;top:150px}
+.bigct .n{font:800 92px/1 var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.bigct .l{font:600 22px var(--mono);color:var(--muted);margin-top:8px}
+.audit{left:30px;top:160px;width:1150px;height:845px;background:rgba(12,16,22,.96);border:1px solid var(--line);border-radius:12px;padding:26px 30px;box-sizing:border-box;z-index:8}
+.audit h4{margin:0 0 16px;font:800 30px var(--display)}
+.arow{display:grid;grid-template-columns:70px 22px 200px 1fr;gap:10px;align-items:center;font-size:19px;padding:9px 0;border-bottom:1px solid var(--line)}
+.arow time{font:600 16px var(--mono);color:var(--muted)}
+.arow b{font:700 17px var(--mono)}
+.end{left:0;top:0;width:1920px;height:1080px;background:rgba(12,16,22,.95);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;z-index:20}
+.end .l1{font:800 72px/1.1 var(--display);max-width:1500px;letter-spacing:-.02em;text-wrap:balance}
+.end .l2{font:500 28px var(--body);color:var(--muted);margin-top:30px}
+@media (max-width:600px){#pips button{font-size:10px;padding:4px 2px}.hint{display:none}}
+@media (prefers-reduced-motion:reduce){.card{transition:none}}
+</style>
+
+</head>
+<body>
+<div id="app">
+  <div id="view"><div id="stage"></div>
+    <aside id="drawer" hidden><button class="x" id="dx" aria-label="Close trail">Close</button><h3 id="dt"></h3><div class="sub" id="ds"></div><ol id="dl"></ol></aside>
+  </div>
+  <div id="controls">
+    <div id="pips" role="group" aria-label="Scenes"></div>
+    <div id="bar">
+      <button id="pp" aria-label="Play or pause">Pause</button>
+      <input id="scrub" type="range" min="0" max="146" step="0.05" value="0" aria-label="Timeline">
+      <span id="tm">0:00</span>
+      <label><input type="checkbox" id="pl" checked> Show planned</label>
+      <span class="hint">Click any card to see its trail.</span>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+const DUR=146;
+const S=document.getElementById('stage');
+const REC=location.hash==='#rec';
+if(REC)document.body.classList.add('rec');
+const view=document.getElementById('view');
+function fit(){const r=view.getBoundingClientRect();const s=Math.min(r.width/1920,r.height/1080);S.style.transform=`scale(${s}) translate(-50%,-50%)`;S.style.transformOrigin='0 0';S.style.left='50%';S.style.top='50%';S.style.transform=`translate(-50%,-50%) scale(${s})`;S.style.transformOrigin='center center';}
+addEventListener('resize',fit);fit();
+
+// ---------- helpers ----------
+const cl=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const sm=x=>x*x*(3-2*x);
+const seg=(t,a,b)=>sm(cl((t-a)/(b-a)));
+const lerp=(a,b,k)=>a+(b-a)*k;
+function mk(cls,html,parent){const d=document.createElement('div');d.className='abs '+cls;if(html!=null)d.innerHTML=html;(parent||S).appendChild(d);return d;}
+function op(e,o){e.style.opacity=o;e.style.visibility=o<=0.002?'hidden':'visible';}
+function pos(e,x,y){e.style.left=x+'px';e.style.top=y+'px';}
+function keys(t,K){if(t<=K[0][0])return K[0][1];for(let i=1;i<K.length;i++){if(t<=K[i][0]){const k=(t-K[i-1][0])/(K[i][0]-K[i-1][0]);return lerp(K[i-1][1],K[i][1],k);}}return K[K.length-1][1];}
+const hm=m=>{m=Math.round(m);const h=Math.floor(m/60)%24,mm=m%60;return String(h).padStart(2,'0')+':'+String(mm).padStart(2,'0');};
+const NS='http://www.w3.org/2000/svg';
+function sv(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+
+// ---------- story clock and counters ----------
+const T=(h,m)=>h*60+m;
+const CLOCK=[[0,T(13,40)],[9,T(14,5)],[21,T(14,20)],[42,T(15,20)],[56,T(16,10)],[68,T(17,5)],[82,T(17,40)],[94,T(17,55)],[104,T(18,8)],[110,T(18,18)],[117,T(18,24)],[118.5,T(18,30)],[121,T(19,42)],[130,T(21,0)],[142,T(23,30)]];
+const clock=t=>keys(t,CLOCK);
+const HOMES=[[0,0],[2,0],[8,147000],[94,147000],[98,182000],[131,182000],[136,41000]];
+const homes=t=>Math.round(keys(t,HOMES)/100)*100;
+const HT=T(19,42);
+const STORM=[[0,-11.2,51.0],[9,-10.0,51.75],[56,-9.8,52.4],[94,-9.5,52.9],[121,-9.1,53.3],[142,-8.3,54.7]];
+function stormLL(t){return [keys(t,STORM.map(r=>[r[0],r[1]])),keys(t,STORM.map(r=>[r[0],r[2]]))];}
+
+// ---------- Ireland ----------
+const IRL=[[-7.37,55.38],[-7.0,55.25],[-6.95,55.17],[-6.65,55.21],[-6.15,55.22],[-5.8,54.85],[-5.9,54.65],[-5.45,54.5],[-5.55,54.3],[-6.0,54.05],[-6.35,54.0],[-6.25,53.72],[-6.1,53.35],[-6.0,52.97],[-6.2,52.6],[-6.35,52.35],[-6.35,52.17],[-6.93,52.12],[-7.55,52.05],[-7.85,51.95],[-8.25,51.8],[-8.53,51.6],[-9.2,51.48],[-9.8,51.45],[-10.15,51.6],[-9.9,51.75],[-10.4,51.9],[-10.5,52.1],[-9.85,52.3],[-9.95,52.4],[-9.93,52.56],[-9.5,52.8],[-9.4,53.05],[-9.15,53.15],[-9.05,53.25],[-9.6,53.25],[-10.2,53.4],[-10.05,53.5],[-9.9,53.65],[-10.2,53.95],[-10.0,54.25],[-9.35,54.32],[-8.6,54.3],[-8.2,54.55],[-8.75,54.65],[-8.45,54.9],[-8.3,55.15],[-7.65,55.27]];
+function proj(k,ox,oy){return (lon,lat)=>[ox+(lon+10.7)*k,oy+(55.5-lat)*k*1.66];}
+function pathFor(P){return 'M'+IRL.map(([a,b])=>P(a,b).map(v=>v.toFixed(1)).join(' ')).join(' L')+' Z';}
+function inIRL(lon,lat){let c=false;for(let i=0,j=IRL.length-1;i<IRL.length;j=i++){const [xi,yi]=IRL[i],[xj,yj]=IRL[j];if(((yi>lat)!==(yj>lat))&&(lon<(xj-xi)*(lat-yi)/(yj-yi)+xi))c=!c;}return c;}
+
+// one SVG for all map drawing, under the DOM layers
+const G=sv('svg',{width:1920,height:1080,style:'position:absolute;left:0;top:0;pointer-events:none'},S);
+const defs=sv('defs',{},G);
+const rg=sv('radialGradient',{id:'rain'},defs);
+[[0,'#c03cff',.95],[.25,'#ff3b3b',.9],[.5,'#ffb52e',.8],[.75,'#4fd17a',.55],[1,'#4fd17a',0]].forEach(([o,c,a])=>sv('stop',{offset:o,'stop-color':c,'stop-opacity':a},rg));
+const bl=sv('filter',{id:'blur',x:'-50%',y:'-50%',width:'200%',height:'200%'},defs);sv('feGaussianBlur',{stdDeviation:7},bl);
+function makeStorm(parent,r){
+  const g=sv('g',{filter:'url(#blur)'},parent);const rot=sv('g',{},g);
+  sv('circle',{cx:0,cy:0,r:r*.55,fill:'url(#rain)'},rot);
+  [[0,r*.95,r*.32],[90,r*.85,r*.3],[180,r*.9,r*.28],[270,r*.75,r*.26]].forEach(([a,rx,ry],i)=>{const e=sv('ellipse',{cx:r*.45,cy:0,rx,ry,fill:'url(#rain)',opacity:.75,transform:`rotate(${a}) translate(${r*.1*i},0) rotate(-35)`},rot);});
+  return {g,rot};
+}
+
+// --- scene 1 big map ---
+const P1=proj(135,605,40);
+const s1=sv('g',{},G);
+sv('rect',{x:0,y:0,width:1920,height:1080,fill:'#0a1420'},s1);
+sv('path',{d:pathFor(P1),fill:'#18202b',stroke:'#4a586c','stroke-width':2},s1);
+const TOWNS=[['Cork',-8.47,51.9,4],['Killarney',-9.5,52.06,3],['Tralee',-9.7,52.27,5],['Bantry',-9.45,51.68,2.5],['Mallow',-8.64,52.13,6],['Kenmare',-9.58,51.88,3.5],['Skibbereen',-9.26,51.55,3],['Clonakilty',-8.9,51.62,5.5],['Dingle',-10.27,52.14,4.5],['Macroom',-8.96,51.9,6.5]];
+const townEls=TOWNS.map(([n,lon,lat,off])=>{const [x,y]=P1(lon,lat);const g=sv('g',{},s1);const c=sv('circle',{cx:x,cy:y,r:7,fill:'#f0b14a'},g);const glow=sv('circle',{cx:x,cy:y,r:16,fill:'#f0b14a',opacity:.25},g);
+  let lt=null;if(['Cork','Killarney','Tralee'].includes(n)){lt=sv('text',{x:x+14,y:y+5,fill:'#c9d2dd','font-size':20,'font-family':'Atkinson Hyperlegible, sans-serif'},g);lt.textContent=n;}return {c,glow,off};});
+const [gx,gy]=P1(-9.05,53.27);
+const galDot=sv('circle',{cx:gx,cy:gy,r:9,fill:'#e7ebf0'},s1);
+const galLbl=sv('text',{x:gx+18,y:gy-6,fill:'#e7ebf0','font-size':28,'font-weight':700,'font-family':'Schibsted Grotesk, sans-serif'},s1);galLbl.textContent='Galway';
+const galSub=sv('text',{x:gx+18,y:gy+24,fill:'#86a9ff','font-size':20,'font-family':'JetBrains Mono, monospace'},s1);galSub.textContent='High tide 19:42';
+const arrow=sv('path',{d:'',fill:'none',stroke:'#e7ebf0','stroke-width':3,'stroke-dasharray':'8 10'},s1);
+const storm1=makeStorm(s1,260);
+// --- tab pane maps ---
+const PX=1196,PY=160,PW=694,PH=845;
+const clipP=sv('clipPath',{id:'pclip'},defs);sv('rect',{x:PX+1,y:PY+52,width:PW-2,height:PH-53,rx:10},clipP);
+const pane=sv('g',{'clip-path':'url(#pclip)'},G);
+const P2=proj(100,PX+80,PY+110);
+const irl2=pathFor(P2);
+const clipI=sv('clipPath',{id:'iclip'},defs);sv('path',{d:irl2},clipI);
+function pageG(){const g=sv('g',{},pane);sv('rect',{x:PX,y:PY+44,width:PW,height:PH-44,fill:'#0a1420'},g);return g;}
+// radar
+const pgRadar=pageG();sv('path',{d:irl2,fill:'#18202b',stroke:'#4a586c','stroke-width':1.5},pgRadar);
+const storm2=makeStorm(pgRadar,170);
+// warnings
+const pgWarn=pageG();
+const wg=sv('g',{'clip-path':'url(#iclip)'},pgWarn);
+sv('rect',{x:PX,y:PY,width:PW,height:PH,fill:'#d9b53a',opacity:.55},wg);
+const [ox1,oy1]=P2(-8.9,52.1);sv('ellipse',{cx:ox1,cy:oy1,rx:190,ry:120,fill:'#f08a24',opacity:.85},wg);
+const [rx1,ry1]=P2(-9.3,53.65);const redZ=sv('ellipse',{cx:rx1,cy:ry1,rx:140,ry:150,fill:'#e2392f',opacity:0},wg);
+sv('path',{d:irl2,fill:'none',stroke:'#0a1420','stroke-width':2},pgWarn);
+const wl=[['#e2392f','Red: Galway, Mayo from 17:00'],['#f08a24','Orange: Cork, Kerry, Clare'],['#d9b53a','Yellow: rest of Ireland']];
+wl.forEach(([c,txt],i)=>{sv('rect',{x:PX+24,y:PY+700+i*30,width:18,height:18,rx:3,fill:c},pgWarn);const tx=sv('text',{x:PX+52,y:PY+714+i*30,fill:'#e7ebf0','font-size':16,'font-family':'Atkinson Hyperlegible, sans-serif'},pgWarn);tx.textContent=txt;});
+// power
+const pgPow=pageG();sv('path',{d:irl2,fill:'#18202b',stroke:'#4a586c','stroke-width':1.5},pgPow);
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return seed/2147483647;};
+const pins=[];
+function addPins(n,lon0,lon1,lat0,lat1,th0,th1){let c=0;while(c<n){const lon=lerp(lon0,lon1,rnd()),lat=lerp(lat0,lat1,rnd());if(!inIRL(lon,lat))continue;const [x,y]=P2(lon,lat);const th=lerp(th0,th1,c/n);pins.push({el:sv('circle',{cx:x,cy:y,r:5,fill:'#ff6b5e',stroke:'#0a1420','stroke-width':1.5},pgPow),th});c++;}}
+addPins(90,-10.4,-7.8,51.45,52.6,500,147000);addPins(40,-10.1,-8.4,52.9,54.1,147500,182000);
+const powT=sv('text',{x:PX+24,y:PY+780,fill:'#e7ebf0','font-size':22,'font-family':'JetBrains Mono, monospace','font-weight':600},pgPow);
+// flood (Galway city, stylised)
+const pgFlood=pageG();
+sv('rect',{x:PX,y:PY+44,width:PW,height:PH-44,fill:'#18202b'},pgFlood);
+[[PX,PY+300,PX+PW,PY+330],[PX+60,PY+120,PX+300,PY+700],[PX+120,PY+520,PX+PW,PY+560],[PX+430,PY+120,PX+460,PY+690],[PX+250,PY+440,PX+680,PY+430],[PX+20,PY+620,PX+330,PY+640]].forEach(([a,b,c,d])=>sv('line',{x1:a,y1:b,x2:c,y2:d,stroke:'#2f3a49','stroke-width':6,'stroke-linecap':'round'},pgFlood));
+const river=sv('path',{d:`M${PX+380} ${PY+44} C ${PX+400} ${PY+250}, ${PX+330} ${PY+420}, ${PX+372} ${PY+560} S ${PX+360} ${PY+690}, ${PX+352} ${PY+730}`,fill:'none',stroke:'#3f8fd8','stroke-width':26,opacity:.9},pgFlood);
+const zones=[[PX+300,PY+700,70,34,'Claddagh'],[PX+425,PY+690,52,28,'Spanish Arch'],[PX+540,PY+690,72,26,'Dock Road']].map(([x,y,rx,ry,n])=>{const z=sv('ellipse',{cx:x,cy:y,rx,ry,fill:'#3f8fd8',opacity:0,stroke:'#86c3ff','stroke-width':2,'stroke-dasharray':'5 5'},pgFlood);return z;});
+const bayG=sv('g',{},pgFlood);
+sv('path',{d:`M${PX} ${PY+735} L${PX+150} ${PY+728} L${PX+300} ${PY+745} L${PX+420} ${PY+735} L${PX+560} ${PY+742} L${PX+PW} ${PY+725} L${PX+PW} ${PY+PH+60} L${PX} ${PY+PH+60} Z`,fill:'#2a6db0'},bayG);
+const fl=[['Salthill',PX+40,PY+690],['Claddagh',PX+250,PY+660],['Spanish Arch',PX+380,PY+650],['Dock Road',PX+530,PY+650],['Eyre Square',PX+470,PY+400],['Galway Bay',PX+260,PY+800],['River Corrib',PX+400,PY+200]];
+fl.forEach(([n,x,y])=>{const tx=sv('text',{x,y,fill:n==='Galway Bay'?'#bcd8f5':'#e7ebf0','font-size':18,'font-weight':700,'font-family':'Atkinson Hyperlegible, sans-serif'},pgFlood);tx.textContent=n;});
+const lpin=sv('g',{},pgFlood);sv('circle',{cx:PX+70,cy:PY+585,r:9,fill:'#5fd39a'},lpin);const lt2=sv('text',{x:PX+86,y:PY+591,fill:'#5fd39a','font-size':16,'font-family':'JetBrains Mono, monospace','font-weight':600},lpin);lt2.textContent='Leisureland';
+const floodChip=sv('text',{x:PX+24,y:PY+112,fill:'#e7ebf0','font-size':20,'font-family':'JetBrains Mono, monospace','font-weight':600},pgFlood);
+// tides
+const pgTide=pageG();
+const CX0=PX+70,CX1=PX+660,CY0=PY+140,CY1=PY+700;
+const tx=m=>lerp(CX0,CX1,(m-720)/720), ty=h=>lerp(CY1,CY0,h/7);
+for(let h=0;h<=7;h++){sv('line',{x1:CX0,y1:ty(h),x2:CX1,y2:ty(h),stroke:'#29323f'},pgTide);const l=sv('text',{x:CX0-12,y:ty(h)+5,'text-anchor':'end',fill:'#919eaf','font-size':14,'font-family':'JetBrains Mono, monospace'},pgTide);l.textContent=h+' m';}
+for(let hh=12;hh<=24;hh+=3){const l=sv('text',{x:tx(hh*60),y:CY1+26,'text-anchor':'middle',fill:'#919eaf','font-size':14,'font-family':'JetBrains Mono, monospace'},pgTide);l.textContent=hm(hh*60);}
+const pred=m=>3+2.1*Math.cos(2*Math.PI*(m-HT)/(12.42*60));
+const surge=m=>pred(m)+0.9*Math.exp(-Math.pow((m-HT)/150,2));
+let p1='',p2='';for(let m=720;m<=1440;m+=6){p1+=(m===720?'M':'L')+tx(m).toFixed(1)+' '+ty(pred(m)).toFixed(1);p2+=(m===720?'M':'L')+tx(m).toFixed(1)+' '+ty(surge(m)).toFixed(1);}
+sv('path',{d:p1+` L${CX1} ${CY1} L${CX0} ${CY1} Z`,fill:'#3f8fd8',opacity:.18},pgTide);
+sv('path',{d:p1,fill:'none',stroke:'#3f8fd8','stroke-width':3},pgTide);
+sv('path',{d:p2,fill:'none',stroke:'#ff6b5e','stroke-width':3,'stroke-dasharray':'8 6'},pgTide);
+const pk=sv('text',{x:tx(HT)+10,y:ty(surge(HT))-12,fill:'#ff6b5e','font-size':17,'font-weight':700,'font-family':'Atkinson Hyperlegible, sans-serif'},pgTide);pk.textContent='High tide 19:42, +0.9 m surge';
+const nowL=sv('line',{x1:0,y1:CY0,x2:0,y2:CY1,stroke:'#f0b14a','stroke-width':2},pgTide);
+const nowT=sv('text',{x:0,y:CY0-10,fill:'#f0b14a','font-size':14,'font-family':'JetBrains Mono, monospace','text-anchor':'middle'},pgTide);
+[['#3f8fd8','Predicted'],['#ff6b5e','With storm surge']].forEach(([c,n],i)=>{sv('rect',{x:PX+70+i*200,y:PY+760,width:22,height:4,fill:c},pgTide);const l=sv('text',{x:PX+100+i*200,y:PY+766,fill:'#e7ebf0','font-size':15,'font-family':'Atkinson Hyperlegible, sans-serif'},pgTide);l.textContent=n;});
+// live view (agent-published): Galway map with surge forecast and X reports
+const pgLive=pageG();
+sv('rect',{x:PX,y:PY+52,width:PW,height:PH-52,fill:'#141c27'},pgLive);
+[[PX,PY+300,PX+PW,PY+330],[PX+60,PY+120,PX+300,PY+700],[PX+120,PY+520,PX+PW,PY+560],[PX+430,PY+120,PX+460,PY+690],[PX+250,PY+440,PX+680,PY+430],[PX+20,PY+620,PX+330,PY+640]].forEach(([a,b,c,d])=>sv('line',{x1:a,y1:b,x2:c,y2:d,stroke:'#2a3442','stroke-width':6,'stroke-linecap':'round'},pgLive));
+sv('path',{d:`M${PX+380} ${PY+44} C ${PX+400} ${PY+250}, ${PX+330} ${PY+420}, ${PX+372} ${PY+560} S ${PX+360} ${PY+690}, ${PX+352} ${PY+730}`,fill:'none',stroke:'#3f8fd8','stroke-width':26,opacity:.9},pgLive);
+const lrg=sv('radialGradient',{id:'risk'},defs);[[0,'#ff6b5e',.75],[1,'#ff6b5e',0]].forEach(([o,c,a])=>sv('stop',{offset:o,'stop-color':c,'stop-opacity':a},lrg));
+const lzones=[[PX+300,PY+700,110,60],[PX+425,PY+690,80,48],[PX+540,PY+690,110,46]].map(([x,y,rx,ry])=>sv('ellipse',{cx:x,cy:y,rx,ry,fill:'url(#risk)',opacity:0},pgLive));
+const bay2=sv('g',{},pgLive);
+const wavePath=k=>{let d=`M${PX} ${PY+735}`;for(let x=0;x<=PW;x+=23)d+=` L${PX+x} ${(PY+735+6*Math.sin(x/40+k)).toFixed(1)}`;return d+` L${PX+PW} ${PY+PH+80} L${PX} ${PY+PH+80} Z`;};
+const bay2p=sv('path',{d:wavePath(0),fill:'#2a6db0'},bay2);
+[['Salthill',PX+40,PY+690],['Claddagh',PX+250,PY+660],['Spanish Arch',PX+380,PY+650],['Dock Road',PX+530,PY+650],['Eyre Square',PX+470,PY+400],['Galway Bay',PX+260,PY+810]].forEach(([n,x,y])=>{const tx=sv('text',{x,y,fill:n==='Galway Bay'?'#bcd8f5':'#e7ebf0','font-size':18,'font-weight':700,'font-family':'Atkinson Hyperlegible, sans-serif'},pgLive);tx.textContent=n;});
+const XP=[[PX+585,PY+610,4,'Dock Road'],[PX+520,PY+585,2,'Dock Road'],[PX+95,PY+650,1,'Salthill']];
+const xpins=XP.map(([x,y,n,place],i)=>{const g=sv('g',{opacity:0},pgLive);const c=sv('circle',{cx:x,cy:y,r:13,fill:'none',stroke:'#ff9f43','stroke-width':3},g);const b=sv('text',{x,y:y+5,'text-anchor':'middle',fill:'#ff9f43','font-size':13,'font-weight':700,'font-family':'JetBrains Mono, monospace'},g);b.textContent=n;return {g,c,b,x,y};});
+const xlab=sv('text',{x:PX+470,y:PY+560,fill:'#ff9f43','font-size':15,'font-weight':600,'font-family':'JetBrains Mono, monospace',opacity:0},pgLive);
+const PAGES={radar:pgRadar,warn:pgWarn,power:pgPow,flood:pgFlood,tide:pgTide,live:pgLive};
+
+// ---------- DOM layers ----------
+// scene 1 overlay
+const big=mk('bigct','<div class="n" id="bn">0</div><div class="l">homes without power</div>');
+const s1t=mk('','<div class="eyebrow" style="font-size:20px">Storm Noah</div><div style="font:800 48px/1.1 var(--display);margin-top:10px;max-width:520px">Cork and Kerry hit.<br>Galway next.</div>');pos(s1t,120,420);
+// scene 2 chat
+const chat=mk('chat',`<div class="ch"><span class="kd a"></span>Claude, with HeyStax connected</div><div class="bub" id="ub"></div><div class="rep" id="rep"></div>`);
+const UMSG='Set up a stax for Storm Noah. Invite fire, ambulance, IT, civil defence and roads. Add the Mayor, the Council CEO and Housing as observers. Add weather, tide, grid and comms agents and a chief of staff. Open a TabStax with Met Éireann, ESB PowerCheck, floodinfo and Galway tides.';
+const REP=[['Created stax: Storm Noah',0],['Added @fire, @ambulance and @it, already on HeyStax',0],['Emailed invites to civil defence and roads',0],['Added 3 observers: Mayor, Council CEO, Housing',1],['Added agents: @chief-of-staff, @weather-watch, @tide-watch, @grid-watch, @comms',0],['Opened a shared TabStax with 5 pages',1]];
+const repEl=document.getElementById('rep');
+const repLines=REP.map(([t,p])=>{const d=document.createElement('div');d.className='rl2';d.innerHTML=`<span class="ck">✓</span><span>${t}</span>`+(p?' <span class="tag planned">planned</span>':'');repEl.appendChild(d);return d;});
+const ub=document.getElementById('ub');
+// top bar
+const top=mk('topbar');
+const eb=mk('eyebrow','Stax · Storm Noah');pos(eb,56,38);
+const mis=mk('mission','Keep Galway safe through Noah.');pos(mis,56,66);
+const goal=mk('goal','<div class="k">Goal</div><div class="v" id="gv">Flood zones clear by 18:30</div>');
+const mClock=mk('metric','<div class="k">Clock</div><div class="v" id="mc">14:20</div>');pos(mClock,1010,40);
+const mPow=mk('metric','<div class="k">Homes without power</div><div class="v" id="mp">147,000</div>');pos(mPow,1150,40);
+const mTide=mk('metric','<div class="k">High tide in</div><div class="v" id="mt">5h 22m</div>');pos(mTide,1400,40);
+const obs=mk('','<div class="k" style="font:600 12px var(--mono);letter-spacing:.12em;color:var(--muted);text-transform:uppercase;margin-bottom:8px">Watching</div><div class="obs" id="obs"></div>');pos(obs,1590,34);
+const OBS=[['M','Mayor'],['CE','Council CEO'],['H','Housing']];
+const obsEl=document.getElementById('obs');
+const avs=OBS.map(([i,n])=>{const d=document.createElement('div');d.className='av';d.title=n+', observer';d.innerHTML=`${i}<span class="eye"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e7ebf0" stroke-width="2"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="ph">update ✓</span>`;obsEl.appendChild(d);return d;});
+const obsTag=mk('tag planned','planned: observers');pos(obsTag,1760,108);
+const obsNote=mk('','<span style="font:500 12px var(--mono);color:var(--muted)">no column, no work</span>');pos(obsNote,1590,112);
+// rows
+const rlP=mk('rowlabel','PEOPLE');pos(rlP,34,146);
+const rlA=mk('rowlabel','AGENTS');pos(rlA,34,601);
+const COLS=[
+ ['coordinator','@coordinator','Principal Response Officer','h',0,0,0],
+ ['fire','@fire','Chief Fire Officer','h',0,1,0],
+ ['ambulance','@ambulance','Ambulance area manager','h',0,2,0],
+ ['civil','@civil-defence','Civil Defence Officer','h',0,3,1],
+ ['roads','@roads','Roads and flood barriers','h',0,4,1],
+ ['it','@it','Phones, radio, incident line','h',0,5,0],
+ ['chief','@chief-of-staff','Keeps the board moving.','a',1,0,0],
+ ['weather','@weather-watch','Tracks Noah and the warnings.','a',1,1,0],
+ ['tide','@tide-watch','Surge against high tide.','a',1,2,0],
+ ['grid','@grid-watch','Outages and critical sites.','a',1,3,0],
+ ['comms','@comms','Public advice, for sign-off.','a',1,4,0],
+];
+const C={};
+COLS.forEach(([id,h,r,k,row,i,inv],n)=>{
+  const w=row===0?180:218, x=30+i*(w+12), y=row===0?166:620, hh=row===0?428:384;
+  const el=mk('col',`<div class="hd"><span class="kd ${k}"></span>${h}</div><div class="rl">${r}</div>`);
+  el.style.width=w+'px';el.style.height=hh+'px';pos(el,x,y);
+  let badge=null;if(inv){badge=mk('badge','invited');pos(badge,x+w-74,y+40);}
+  C[id]={id,h,el,x,y,w,row,i,badge,inv,n};
+});
+const RT={claude:'#d97757',codex:'#5aa9e6',grok:'#e7ebf0'};
+const WORKERS={chief:[['Grok Bot','grok']],weather:[['Claude: buoys','claude'],['Grok: X scan','grok']],tide:[['Codex: model','codex'],['Claude: view','claude']],grid:[['Claude','claude']],comms:[['Claude','claude']]};
+const wchips=[];
+for(const id in WORKERS){const c=C[id];const row=mk('',WORKERS[id].map(([n,r])=>`<span style="display:inline-flex;align-items:center;gap:5px;font:600 10px var(--mono);padding:3px 6px;border:1px solid var(--line);border-radius:999px;background:var(--bg);margin-right:3px"><span style="width:7px;height:7px;border-radius:50%;background:${RT[r]}"></span>${n}</span>`).join(''));row.style.whiteSpace='nowrap';pos(row,c.x+8,c.y+56);wchips.push([row,c.i]);}
+const wTag=mk('tag planned','planned: worker names on roles (#1071)');pos(wTag,110,598);
+// cards
+const CARDS=[
+ ['k1','coordinator','coordinator','Brief the Mayor and CEO at 17:00',[[44,'new','from @coordinator'],[45,'doing','@coordinator on it'],[66,'done','briefed']]],
+ ['c1','fire','coordinator','Pumps to Salthill and Claddagh',[[43,'new','from @coordinator'],[47,'doing','@fire on it'],[84.6,'done','pumps in place']]],
+ ['c2','ambulance','coordinator','Two crews to the city side of the Corrib',[[44,'new','from @coordinator'],[48,'doing','@ambulance on it'],[87,'amber','no update for 15 min'],[89,'stalled','crew 2 blocked: tree down on N6'],[104.5,'doing','N6 clear, crew 2 moving'],[121,'done','crews in place']]],
+ ['c3','civil','chief','Open rest centre at Leisureland',[[45,'new','from @chief-of-staff'],[49,'doing','@civil-defence on it'],[100,'done','open, 62 people in']]],
+ ['c4','roads','coordinator','Flood barriers up at Spanish Arch',[[45.8,'new','from @coordinator'],[50,'doing','@roads on it'],[86,'done','barriers up']]],
+ ['c5','it','chief','Test radio and satellite backup',[[46.5,'new','from @chief-of-staff'],[50.5,'doing','@it on it'],[61,'done','both working']]],
+ ['w1','weather','chief','Track Noah. Post every 15 min.',[[51,'new','from @chief-of-staff'],[52,'doing','@weather-watch on it'],[134,'done','Noah clear of Mayo']]],
+ ['t1','tide','chief','Model surge on the 19:42 high tide',[[51.6,'new','from @chief-of-staff'],[52.6,'doing','@tide-watch on it'],[69,'done','+0.9 m surge']]],
+ ['g1','grid','chief','Track outages. Flag critical sites.',[[52.2,'new','from @chief-of-staff'],[53,'doing','@grid-watch on it']]],
+ ['m1','comms','coordinator','Draft public advice v1',[[52.8,'new','from @coordinator'],[53.6,'doing','@comms drafting'],[64,'done','approved and posted']]],
+ ['e1','fire','weather','Close Salthill promenade by 16:45',[[60,'new','from @weather-watch'],[62,'doing','@fire on it'],[84,'done','promenade closed']]],
+ ['e2','civil','tide','Evacuate Claddagh, 140 homes',[[73,'new','from @tide-watch'],[76.5,'new','moved to top by @chief-of-staff'],[78,'doing','@civil-defence on it'],[117,'done','140 homes clear']]],
+ ['e3','civil','chief','4x4 team to N6, clear it for crew 2',[[91,'new','from @chief-of-staff'],[92.5,'doing','@civil-defence on it'],[104,'done','N6 cleared']]],
+ ['e4','it','grid','Move incident line to backup number',[[99,'new','from @grid-watch'],[100,'doing','@it on it'],[104.5,'done','moved, calls flowing']]],
+ ['k2','comms','coordinator','Press release: Claddagh evacuation, Leisureland open',[[107,'new','from @coordinator'],[108,'doing','@comms drafting'],[110,'draft','draft ready, needs sign-off'],[113.5,'done','approved by @coordinator, sent']],'Claddagh residents: please move now to Leisureland, Salthill. Buses run from Fr Griffin Road every 15 minutes.'],
+ ['x1','fire','weather','Check Dock Road: 4 reports of water over the road',[[123,'new','from @weather-watch (X scan)'],[124,'doing','@fire on it'],[126.5,'done','confirmed by crew, road closed']]],
+ ['g2','grid','chief','Count restoration by county',[[131,'new','from @chief-of-staff'],[131.8,'doing','@grid-watch on it']]],
+ ['r1','comms','coordinator','Draft the all clear',[[131.5,'new','from @coordinator'],[132.5,'doing','@comms drafting'],[136,'done','approved and sent']]],
+];
+const BUMP={e2:76.5};
+const cards=CARDS.map(([id,col,from,text,ev,draft])=>{
+  const el=mk('card',`<div class="ct">${text}</div>${draft?`<div class="dr">${draft}</div>`:''}<div class="cw"><span class="sd"></span><span class="cwt"></span></div>`);
+  el.style.width=(C[col].w-16)+'px';el.tabIndex=0;el.setAttribute('role','button');
+  const c={id,col,from,text,ev,el,cwt:el.querySelector('.cwt'),t0:ev[0][0],h:62};
+  el.addEventListener('click',()=>openTrail(c));el.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openTrail(c);}});
+  return c;});
+function stateAt(c,t){let s=null;for(const e of c.ev){if(t>=e[0])s=e;}return s;}
+function orderKey(c,t){return (BUMP[c.id]!=null&&t>=BUMP[c.id])?-1:c.t0;}
+function slotY(c,t){const col=C[c.col];const sib=cards.filter(o=>o.col===c.col&&t>=o.t0);sib.sort((a,b)=>orderKey(a,t)-orderKey(b,t));let y=col.y+(col.row?88:62);for(const o of sib){if(o===c)return y;y+=o.h+7;}return y;}
+// toasts
+const TOASTS=[
+ [57,64,'weather','Red warning from 17:00','Galway and Mayo. Gusts 140 km/h.'],
+ [69,75.6,'tide','Surge +0.9 m at 19:42','Spanish Arch, Dock Road and Claddagh at high risk.'],
+ [76,79.5,'chief','Moved to the top','Evacuate Claddagh comes first.'],
+ [78.3,83.5,'tide','Live view published','Surge model plus animated map. Updates every 15 min from Atlantic buoys.','planned: agent live views'],
+ [103,108,'tide','Forecast revised: +1.0 m','Atlantic buoy M6 shows 15 m waves. Spanish Arch barriers hold to +1.2 m.'],
+ [89.5,95.5,'chief','Ambulance silent 20 min','Crew 2 blocked on the N6. Sending a 4x4 team.',1],
+ [96,102.5,'grid','182,000 homes now','The council incident line is on a substation that just dropped.'],
+ [119,123.6,'weather','4 reports on X: Dock Road','Water over the road. Pinned on the live view as unverified.'],
+ [127,131,'weather','Noah over Galway','Peak gusts now. Track turning northeast.'],
+ [131,136,'grid','Restoring','Crews out. 41,000 homes still off.'],
+];
+const toasts=TOASTS.map(([a,b,col,tt,tb,pl])=>{const el=mk('toast',`<div class="th">${C[col].h} · update</div><div class="tt">${tt}</div><div class="tb">${tb}</div>`+(pl?`<div style="margin-top:8px"><span class="tag planned">${pl===1?'planned: Chief spots silence':pl}</span></div>`:''));return {a,b,col,el};});
+// pulses
+const PULSES=[[75.8,76.6,'chief','e2','#86a9ff'],[112.6,113.5,'coordinator','k2','#f0b14a']];
+const pulses=PULSES.map(([a,b,from,to,c])=>{const el=mk('pulse');el.style.background=c;el.style.boxShadow='0 0 18px '+c;return {a,b,from,to,el};});
+const obsP=[0,1,2].map(()=>{const el=mk('pulse');el.style.background='#5fd39a';el.style.boxShadow='0 0 18px #5fd39a';return el;});
+const phoneTag=mk('tag planned','planned: phone updates');pos(phoneTag,1590,146);
+// tab pane
+const paneEl=mk('pane','<div class="tabs" id="tabs"></div>');
+const TABS=[['radar','met.ie · radar'],['warn','met.ie · warnings'],['power','ESB PowerCheck'],['flood','floodinfo.ie'],['tide','Galway tides'],['live','Live view · agents']];
+const tabsEl=paneEl.querySelector('#tabs');
+S.insertBefore(G,paneEl.nextSibling);
+const tabEls={};TABS.forEach(([k,n])=>{const d=document.createElement('div');d.className='tab';d.textContent=n;tabsEl.appendChild(d);tabEls[k]=d;});
+const pgHead=mk('pg-h','');pos(pgHead,PX+16,PY+62);
+const stylTag=mk('','<span style="font:500 11px var(--mono);color:var(--muted)">stylised render, not the real site</span>');pos(stylTag,PX+PW-260,PY+64);
+const HEADS={radar:'met.ie · rainfall radar',warn:'met.ie · weather warnings',power:'powercheck.ie · outages',flood:'floodinfo.ie · Galway city',tide:'Galway Port · tide gauge',live:'Live view · published by @tide-watch'};
+const ACT=[[32,'radar'],[58,'warn'],[70,'flood'],[78.5,'live'],[95,'power'],[103,'live'],[110,'power'],[118,'tide'],[120,'live'],[130,'radar']];
+const activeTab=t=>{let a='radar';for(const [s,k] of ACT)if(t>=s)a=k;return a;};
+// member dots on tabs
+const MEM=COLS.map(c=>c[3]==='h'?'#f0b14a':'#86a9ff');
+const dots=MEM.map(c=>{const d=mk('dotm');d.style.background=c;d.style.zIndex=3;return d;});
+const tabTag=mk('tag planned','planned: who is on which tab');
+const buoy=mk('','');buoy.style.cssText+='width:250px;background:rgba(12,16,22,.9);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-sizing:border-box;font:500 13px/1.6 var(--mono);z-index:3';pos(buoy,PX+PW-268,PY+96);
+const fcast=mk('','');fcast.style.cssText+='width:300px;background:rgba(12,16,22,.9);border:1.5px solid var(--stall);border-radius:10px;padding:10px 12px;box-sizing:border-box;z-index:3';pos(fcast,PX+16,PY+96);
+const liveTag=mk('tag planned','planned: agent live views');pos(liveTag,PX+16,PY+232);
+const BUOYS=[['M6','west Atlantic',98,15.2],['M3','off Cork',28,12.1],['M5','off Wexford',46,7.8],['M4','off Donegal',128,11.4],['M2','Irish Sea',112,5.6]];pos(tabTag,PX+16,PY+80);
+// captions
+const cap=mk('cap','');
+const ill=mk('ill','Illustrative storm, numbers and handles');
+const CAPS=[[0.5,9,'Storm Noah. 147,000 homes dark. Galway is next, at high tide.'],[9.5,21,'One message. The whole response team.'],[21.5,32,'People and agents. Same board. Observers just watch.'],[32,42,'Everyone on the same page. Literally.'],[42,56,'Work goes out by handle. Claimed is doing.'],[56,68,'The weather agent doesn’t just report. It assigns.'],[68,78,'The tide agent names the streets. The Chief moves it up.'],[78,82,'One worker models the surge. Another animates it, live.'],[82,94,'Silence shows. Somebody picks it up.'],[94,106,'Agents find the problem. People fix it.'],[106,118,'Agents draft. People sign off. Observers stay informed.'],[118,124,'A worker scans X for flood reports and pins them.'],[124,130,'A crew confirms. High tide. No one in the water.'],[130,136,'Noah moves on. The agents switch to recovery.'],[136,140,'Every action, human and agent, in one log.']];
+const SCENES=[0,9.5,21.5,32,42,56,68,82,94,106,118,130];
+const SCENE_NAMES=['Storm','Setup','Board','TabStax','First work','Warning','Tide','Silence','Grid','Press','High tide','All clear'];
+// audit
+const AUD=[[43,'coordinator','Pumps to Salthill and Claddagh, to @fire'],[57,'weather','Red warning posted. Promenade closure to @fire'],[69,'tide','Surge +0.9 m. Evacuate Claddagh to @civil-defence'],[76.5,'chief','Moved Claddagh evacuation to the top'],[91,'chief','Ambulance silent 20 min. 4x4 team to @civil-defence'],[99,'grid','Incident line at risk, to @it'],[104.5,'it','Incident line moved to backup'],[113.5,'coordinator','Approved press release from @comms'],[103,'tide','Live view: surge forecast revised to +1.0 m'],[117,'civil','Claddagh clear, 140 homes'],[119,'weather','4 X reports at Dock Road, pinned unverified'],[126.5,'fire','Confirmed Dock Road flooding, road closed'],[136,'comms','All clear sent']];
+const audit=mk('audit','<h4>Storm Noah · audit log</h4><div id="arows"></div>');
+const arEl=audit.querySelector('#arows');
+const arows=AUD.map(([t,col,txt])=>{const d=document.createElement('div');d.className='arow';const k=C[col].n<6?'h':'a';d.innerHTML=`<time>${hm(clock(t))}</time><span class="kd ${k}"></span><b>${C[col].h}</b><span>${txt}</span>`;arEl.appendChild(d);return d;});
+const end=mk('end','<div class="l1">Every person. Every agent.<br>One board. One log.</div><div class="l2">HeyStax. Ready for the next named storm.</div>');
+
+// ---------- render ----------
+const $=id=>document.getElementById(id);
+function render(t){
+  // scene 1
+  const s1o=1-seg(t,9,10.2);
+  s1.style.opacity=s1o;s1.style.display=s1o<=0?'none':'';
+  op(big,seg(t,1.2,2.2)*s1o);op(s1t,seg(t,3,4)*s1o);
+  $('bn').textContent=homes(Math.min(t,9)).toLocaleString('en-IE');
+  const [sl,sa]=stormLL(t);const [sx,sy]=P1(sl,sa);
+  storm1.g.setAttribute('transform',`translate(${sx},${sy})`);storm1.rot.setAttribute('transform',`rotate(${-t*14})`);
+  townEls.forEach(e=>{const k=seg(t,e.off,e.off+0.6);const c=k<1?'#f0b14a':'#3a4658';e.c.setAttribute('fill',k>0.5?'#3a4658':'#f0b14a');e.glow.setAttribute('opacity',.25*(1-k));});
+  const ak=seg(t,5,7.5);const ax=lerp(sx,gx-20,ak),ay=lerp(sy,gy+20,ak);arrow.setAttribute('d',`M${sx} ${sy} L${ax} ${ay}`);arrow.setAttribute('opacity',ak>0?1:0);
+  [galDot,galLbl,galSub].forEach(e=>e.setAttribute('opacity',seg(t,5,6)));
+  // scene 2 chat
+  const co=seg(t,9.6,10.6)*(1-seg(t,21,22));op(chat,co);
+  ub.textContent=UMSG.slice(0,Math.floor(cl((t-10.4)/3.6)*UMSG.length));
+  op(ub,seg(t,10,10.5));
+  repLines.forEach((l,i)=>{const a=14.6+i*0.95;op(l,seg(t,a,a+0.4));l.classList.toggle('done',t>=a+0.5);});
+  // board chrome
+  const bo=seg(t,21.5,22.6);
+  [top,eb,mis,goal,mClock,mPow,mTide].forEach(e=>op(e,bo));
+  op(obs,seg(t,27,28));op(obsTag,seg(t,27.5,28.5));op(obsNote,seg(t,28,29));
+  avs.forEach((a,i)=>{const k=seg(t,27+i*0.5,27.6+i*0.5);a.style.opacity=k;a.style.transform=`scale(${lerp(0.6,1,k)})`;});
+  $('mc').textContent=hm(clock(t));
+  $('mp').textContent=homes(t).toLocaleString('en-IE');
+  const left=HT-clock(t);const lm=Math.round(left);$('mt').textContent=left>0.5?`${Math.floor(lm/60)}h ${String(lm%60).padStart(2,'0')}m`:(left>-15?'now':'passed');
+  $('mt').style.color=left<=0.5&&left>-15?'var(--stall)':'';
+  const gdone=t>=117.5;$('gv').textContent=gdone?'Flood zones clear ✓ 18:24':'Flood zones clear by 18:30';
+  goal.style.borderColor=gdone?'var(--good)':'var(--human)';goal.style.transform=gdone&&t<119?`scale(${1+0.04*Math.sin((t-117.5)*Math.PI/1.5)})`:'';
+  op(rlP,seg(t,22,23));op(rlA,seg(t,24.5,25.5));
+  COLS.forEach((c0,n)=>{const c=C[c0[0]];const a=c.row===0?22.2+c.i*0.45:24.8+c.i*0.45;const k=seg(t,a,a+0.8);op(c.el,k);c.el.style.transform=`translateY(${lerp(30,0,k)}px)`;
+    if(c.badge){const j=26.5+c.i*0.4;op(c.badge,k*(1-seg(t,j,j+0.4)));}});
+  // cards
+  cards.forEach(c=>{if(t<c.t0)return;const s=stateAt(c,t);c.el.className='abs card s-'+s[1];c.cwt.textContent=s[2];});
+  cards.forEach(c=>{if(c.el.offsetHeight)c.h=c.el.offsetHeight;});
+  cards.forEach(c=>{
+    if(t<c.t0){op(c.el,0);return;}
+    const s=stateAt(c,t);
+    const col=C[c.col];
+    let y=0;for(let i=0;i<6;i++)y+=slotY(c,Math.max(c.t0,t-i*0.12));y/=6;
+    const x=col.x+8;
+    const fk=seg(t,c.t0,c.t0+0.9);
+    const src=C[c.from];const fx=src.x+20,fy=src.y+30;
+    pos(c.el,lerp(fx,x,fk),lerp(fy,y,fk));op(c.el,Math.min(1,seg(t,c.t0,c.t0+0.25))*(s[1]==='done'?1:1));
+    c.el.style.transform=fk<1?`scale(${lerp(0.85,1,fk)})`:'';
+  });
+  // toasts
+  toasts.forEach(o=>{const k=seg(t,o.a,o.a+0.4)*(1-seg(t,o.b-0.4,o.b));const col=C[o.col];const x=Math.min(col.x,1170-300);pos(o.el,x,col.y-8-lerp(10,0,k)+(-o.el.offsetHeight)+60);op(o.el,k);
+    o.el.style.top=(col.y+(col.row?84:54)+lerp(10,0,k))+'px';});
+  // pulses
+  pulses.forEach(p=>{const k=seg(t,p.a,p.b);const f=C[p.from];const card=cards.find(c=>c.id===p.to);const tx2=parseFloat(card.el.style.left)+20,ty2=parseFloat(card.el.style.top)+10;
+    pos(p.el,lerp(f.x+30,tx2,k),lerp(f.y+20,ty2,k));op(p.el,t>p.a&&t<p.b?1:0);});
+  obsP.forEach((p,i)=>{const a=113.6+i*0.3,b=a+1.2;const k=seg(t,a,b);const kc=C.coordinator;pos(p,lerp(kc.x+60,1594+i*54+14,k),lerp(kc.y+10,60,k));op(p,t>a&&t<b?1:0);});
+  avs.forEach((a,i)=>{const ph=a.querySelector('.ph');ph.style.opacity=seg(t,114.8+i*0.3,115.3+i*0.3)*(1-seg(t,120,121));});
+  op(phoneTag,seg(t,114.8,115.4)*(1-seg(t,120,121)));
+  // pane
+  const po=seg(t,32,33.2);op(paneEl,po);pane.style.opacity=po;
+  const act=activeTab(t);
+  for(const k in tabEls)tabEls[k].classList.toggle('on',k===act);
+  for(const k in PAGES)PAGES[k].style.display=k===act?'':'none';
+  pgHead.textContent=HEADS[act];op(pgHead,po);op(stylTag,po);
+  // member dots gather on active tab
+  const tabIdx=TABS.findIndex(x=>x[0]===act);
+  dots.forEach((d,i)=>{const arr=33.4+i*0.55;const k=seg(t,arr,arr+0.5);const r=tabsEl.children[tabIdx];const tw=(PW-16-4*(TABS.length-1))/TABS.length;const bx=PX+8+tabIdx*(tw+4)+7+i*8.6, by=PY+36;
+    pos(d,bx,by);op(d,k*po);});
+  op(tabTag,seg(t,33.4,34)*(1-seg(t,44,45)));
+  // storm on radar
+  const P2s=P2(sl,sa);storm2.g.setAttribute('transform',`translate(${P2s[0]},${P2s[1]})`);storm2.rot.setAttribute('transform',`rotate(${-t*14})`);
+  storm2.g.setAttribute('opacity',t>137?1-seg(t,137,140):1);
+  redZ.setAttribute('opacity',.9*seg(t,58.3,59.3));
+  // power pins
+  const hn=homes(t);pins.forEach(p=>p.el.setAttribute('opacity',hn>=p.th?1:0));powT.textContent=hn.toLocaleString('en-IE')+' homes off';
+  // flood
+  zones.forEach((z,i)=>{const k=seg(t,70.4+i*0.4,71+i*0.4);z.setAttribute('opacity',k*(0.45+0.15*Math.sin(t*3)));});
+  const wk=seg(t,121.5,127);bayG.setAttribute('transform',`translate(0,${-lerp(0,52,wk)})`);
+  floodChip.textContent=t>=117?(t>=121.5?'Claddagh: clear. 0 people in the flood zone':'Claddagh: 140 homes clear'):(t>=78?'Claddagh: evacuating':(t>=70.4?'High risk at 19:42 high tide':''));
+  floodChip.setAttribute('fill',t>=117?'#5fd39a':'#e7ebf0');
+  // live view
+  const lv=act==='live'?po:0;
+  op(buoy,lv);op(fcast,lv);op(liveTag,lv);
+  if(lv){
+    buoy.innerHTML='<div style="color:var(--muted);font-size:11px;letter-spacing:.08em">ATLANTIC BUOYS · WAVE HEIGHT</div>'+BUOYS.map(([n,w,pk,h])=>{const v=2+(h-2)*Math.exp(-Math.pow((t-pk)/30,2));const up=Math.exp(-Math.pow((t+1-pk)/30,2))>Math.exp(-Math.pow((t-pk)/30,2));return `<div style="display:flex;justify-content:space-between"><span><b>${n}</b> <span style="color:var(--muted)">${w}</span></span><span style="color:${v>10?'var(--stall)':'var(--ink)'}">${v.toFixed(1)} m ${up?'↑':'↓'}</span></div>`;}).join('')+'<div style="color:var(--muted);font-size:11px;margin-top:4px">Marine Institute network · readings illustrative</div>';
+    const rev=t>=103;const upd=Math.floor(clock(t)/15)*15;
+    fcast.innerHTML=`<div style="font:600 11px var(--mono);letter-spacing:.08em;color:var(--stall)">SURGE FORECAST · GALWAY PORT</div><div style="font:800 34px var(--display);margin-top:2px">${rev?'+1.0 m':'+0.9 m'} <span style="font:600 16px var(--mono);color:var(--muted)">peak 19:42</span></div><div style="font:500 12px var(--mono);color:var(--muted)">updated ${hm(upd)} · agent estimate, not official</div>`;
+  }
+  lzones.forEach((z,i)=>z.setAttribute('opacity',seg(t,79+i*0.3,79.7+i*0.3)*(0.7+0.3*Math.sin(t*2.4+i))));
+  bay2p.setAttribute('d',wavePath(t*1.6));bay2.setAttribute('transform',`translate(0,${-lerp(0,58,seg(t,121,127))})`);
+  xpins.forEach((p,i)=>{const a=119.3+i*0.6;p.g.setAttribute('opacity',seg(t,a,a+0.4));const conf=i===0&&t>=126.5;p.c.setAttribute('fill',conf?'#ff6b5e':'none');p.c.setAttribute('stroke',conf?'#ff6b5e':'#ff9f43');p.b.setAttribute('fill',conf?'#0c1016':'#ff9f43');p.c.setAttribute('r',13+(t>a&&t<a+1.5?4*Math.sin((t-a)*6):0));});
+  xlab.setAttribute('opacity',seg(t,120,120.5));xlab.textContent=t>=126.5?'Dock Road: confirmed by @fire':'X reports: unverified';xlab.setAttribute('fill',t>=126.5?'#ff6b5e':'#ff9f43');
+  stylTag.firstChild.textContent=act==='live'?'built by agents':'stylised render, not the real site';
+  // worker chips
+  wchips.forEach(([r,i])=>op(r,seg(t,26+i*0.4,26.6+i*0.4)));op(wTag,seg(t,26.5,27.2)*(1-seg(t,45,46)));
+  // tide now line
+  const nm=clock(t);const nx=tx(cl(nm,720,1440));nowL.setAttribute('x1',nx);nowL.setAttribute('x2',nx);nowT.setAttribute('x',nx);nowT.textContent='now '+hm(nm);
+  // captions
+  let ct='',co2=0;for(const [a,b,txt] of CAPS){if(t>=a&&t<b){ct=txt;co2=Math.min(seg(t,a,a+0.5),1-seg(t,b-0.5,b));}}
+  cap.textContent=ct;op(cap,co2);
+  // audit + end
+  op(audit,seg(t,136,136.8)*(1-seg(t,140.5,141)));
+  arows.forEach((r,i)=>{r.style.opacity=seg(t,136.4+i*0.25,136.8+i*0.25);});
+  op(end,seg(t,140,141.2));
+}
+
+// ---------- playback ----------
+let t=0,playing=!REC,last=null;
+const scrub=$('scrub'),pp=$('pp'),tm=$('tm');
+const pipsEl=$('pips');
+const pipBtns=SCENES.map((s,i)=>{const b=document.createElement('button');b.textContent=(i+1)+' '+SCENE_NAMES[i];b.title=SCENE_NAMES[i];b.onclick=()=>{t=s;closeTrail();draw();};pipsEl.appendChild(b);return b;});
+function fmt(x){x=Math.floor(x);return Math.floor(x/60)+':'+String(x%60).padStart(2,'0');}
+function draw(){render(t);scrub.value=t;tm.textContent=fmt(t)+' / '+fmt(DUR);let si=0;SCENES.forEach((s,i)=>{if(t>=s)si=i;});pipBtns.forEach((b,i)=>b.classList.toggle('on',i===si));pp.textContent=playing?'Pause':(t>=DUR?'Replay':'Play');}
+function loop(ts){if(last==null)last=ts;const dt=(ts-last)/1000;last=ts;if(playing){t=Math.min(DUR,t+dt);if(t>=DUR)playing=false;draw();}requestAnimationFrame(loop);}
+pp.onclick=()=>{if(t>=DUR)t=0;playing=!playing;closeTrail();draw();};
+scrub.oninput=()=>{t=+scrub.value;draw();};
+$('pl').onchange=e=>document.body.classList.toggle('noplanned',!e.target.checked);
+addEventListener('keydown',e=>{if(e.code==='Space'&&e.target.tagName!=='BUTTON'&&e.target.tagName!=='INPUT'){e.preventDefault();pp.click();}});
+// trail drawer
+const dr=$('drawer');
+function openTrail(c){playing=false;$('dt').textContent=c.text;$('ds').textContent='In '+C[c.col].h+'’s column. Created by '+C[c.from].h+'.';
+  const ol=$('dl');ol.innerHTML='';c.ev.filter(e=>e[0]<=t).forEach(e=>{const li=document.createElement('li');li.innerHTML=`<time>${hm(clock(e[0]))}</time><span>${e[2]}</span>`;ol.appendChild(li);});
+  dr.hidden=false;draw();}
+function closeTrail(){dr.hidden=true;}
+$('dx').onclick=closeTrail;
+window.render=render;window.DUR=DUR;
+const go=()=>{fit();draw();requestAnimationFrame(loop);};
+if(document.fonts&&document.fonts.ready)document.fonts.ready.then(go);else go();
+})();
+</script>
+
+</body>
+</html>
