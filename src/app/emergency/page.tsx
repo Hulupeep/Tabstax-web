@@ -118,7 +118,7 @@ export default function EmergencyPage() {
           </div>
           <div className="rounded-2xl overflow-hidden border border-cream/15 bg-black shadow-2xl">
             <iframe
-              src="/scenarios/storm-noah.html"
+              src="/scenarios/storm-noah"
               title="Storm Noah: an emergency response run on HeyStax, interactive scenario"
               className="w-full block"
               style={{ aspectRatio: "16 / 10.2", border: 0 }}
