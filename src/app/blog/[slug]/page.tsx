@@ -80,6 +80,7 @@ export default function BlogPostPage({
 
   function formatDate(dateStr: string) {
     return new Date(dateStr).toLocaleDateString("en-US", {
+      timeZone: "UTC",
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -202,6 +203,7 @@ export default function BlogPostPage({
                   </p>
                   <p className="text-sm text-warm-gray mt-1">
                     {new Date(related.date).toLocaleDateString("en-US", {
+                      timeZone: "UTC",
                       year: "numeric",
                       month: "short",
                       day: "numeric",
