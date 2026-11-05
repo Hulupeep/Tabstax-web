@@ -1,6 +1,6 @@
 "use client";
 
-import { blogPosts } from "@/data/blog-posts";
+import { blogPosts } from "@/data/all-blog-posts";
 import { readingTime } from "@/lib/reading-time";
 import Link from "next/link";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
@@ -73,6 +73,7 @@ function BlogContent() {
       year: "numeric",
       month: "short",
       day: "numeric",
+      timeZone: "UTC",
     });
   }
 
