@@ -13,7 +13,7 @@ export const inheritedWorkPosts: BlogPost[] = [{
   faq: [
     { q: "Does GDPx's 12% score mean agents fail at 88% of everyday work?", a: "No. The score combines different grading methods across selected difficult domains, with equal weighting across domains and partners. It is not a population estimate for ordinary work." },
     { q: "How can a small team test an agent handoff?", a: "Choose one real journey, prepare a fixed starting state and explicit acceptance criteria, and give a fresh worker access to the approved records. Check the final persisted state and evidence, including duplicate actions and human corrections." },
-    { q: "Does HeyStax already provide complete agent execution auditing?", a: "No. Shared work and record audit tools are live foundations. The 2 November ledger says claim rules are in production but the owner and two-agent browser journey remains unverified. Reading claim events through MCP or a dashboard and expiring claim leases remain planned." },
+    { q: "Does HeyStax already provide complete agent execution auditing?", a: "No. Shared work and record audit tools are live foundations. The ledger rechecked on 9 November says claim rules are in production but the owner and two-agent browser journey remains unverified. It records claim leases deployed on 8 November, with the browser walkthrough outstanding. Reading claim events through MCP or a dashboard remains planned." },
   ],
   content: `Imagine opening a colleague's half-finished workbook on Monday morning.
 
@@ -67,7 +67,7 @@ There is a counterargument. Building rich environments takes time. They can beco
 
 Those are official product descriptions, not independent reliability measurements. Neither a saved transcript nor a successful process exit automatically proves that the intended outcome happened. They are useful inputs to a fuller acceptance check.
 
-HeyStax should fit alongside such execution tools. Its live foundations hold shared Stax, goals, next actions, people, records and record audit tools. Its ledger was updated on 2 November: claim rules are in production, while the owner and two-agent browser journey still needs verification. Claim events are recorded, but reading them through MCP or a dashboard remains planned. Expiring claim leases are also planned.
+HeyStax should fit alongside such execution tools. Its live foundations hold shared Stax, goals, next actions, people, records and record audit tools. Its ledger rechecked on 9 November says claim rules are in production, while the owner and two-agent browser journey still needs verification. Claim events are recorded, but reading them through MCP or a dashboard remains planned. The ledger records claim leases deployed on 8 November: a claim made inside a run is leased and released when the run stops sending heartbeats. A browser walkthrough remains outstanding, so this is recorded deployment evidence rather than an end-to-end verification performed for this article.
 
 That boundary matters. Durable responsibility needs a readable history and a way to recover abandoned work. These are concrete requirements to verify, not benefits to assume because an action has an agent's name beside it.
 
@@ -87,5 +87,5 @@ For a scientist, the result may be a reproducible analysis ready for the next ex
 
 ## Sources and Limits
 
-Checked on 3 November 2026. GDPx's launch article is dated 2 November; its leaderboard is a changing snapshot. Its authors report their own evaluation, and the selected tasks do not establish general workplace success rates. This article does not independently reproduce their runs or validate their graders. AgentGrid release claims are dated 31 October and 1 November; Puffle documentation is undated. HeyStax wording follows its shipped ledger dated 2 November. The proposed handoff test is an experiment to run, not evidence of a capability already demonstrated.`,
+Checked on 3 November 2026. GDPx's launch article is dated 2 November; its leaderboard is a changing snapshot. Its authors report their own evaluation, and the selected tasks do not establish general workplace success rates. This article does not independently reproduce their runs or validate their graders. AgentGrid release claims are dated 31 October and 1 November; Puffle documentation is undated. HeyStax product wording was refreshed on 9 November against its shipped ledger, including the recorded 8 November claim-lease deployment and the remaining browser-verification gap. The proposed handoff test is an experiment to run, not evidence of a capability already demonstrated.`,
 }];
