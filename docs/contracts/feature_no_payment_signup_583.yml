@@ -34,8 +34,8 @@ rules:
         - "src/components/Header.tsx"
 
     - id: WEB-NPS-005
-      title: "Homepage metadata matches the hero"
-      requirement: "Page title is 'HeyStax. Pick up where you or your team left off.' and the description is the three-sentence hero plus the eyebrow."
+      title: "Homepage metadata carries the byline"
+      requirement: "Page title is 'HeyStax. Persisted intent.' and the description is 'Set the mission and the goal once. People and bots keep working it until it is done. Nobody has to hold it in their head.'"
       scope:
         - "src/app/layout.tsx"
 
