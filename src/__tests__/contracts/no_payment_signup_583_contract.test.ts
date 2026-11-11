@@ -69,9 +69,9 @@ describe("Contract: feature_no_payment_signup_583", () => {
   it("updates homepage metadata", () => {
     const layout = readSrc("app/layout.tsx");
 
-    expect(layout).toContain("HeyStax. Pick up where you or your team left off.");
+    expect(layout).toContain("HeyStax. Persisted intent.");
     expect(layout).toContain(
-      "Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off."
+      "Set the mission and the goal once. People and bots keep working it until it is done. Nobody has to hold it in their head."
     );
   });
 });

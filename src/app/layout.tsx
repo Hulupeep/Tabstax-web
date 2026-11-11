@@ -3,9 +3,9 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
-const siteTitle = "HeyStax. Pick up where you or your team left off.";
+const siteTitle = "HeyStax. Persisted intent.";
 const siteDescription =
-  "Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off. For people who run on momentum and lose it on every switch.";
+  "Set the mission and the goal once. People and bots keep working it until it is done. Nobody has to hold it in their head.";
 
 export const metadata: Metadata = {
   title: {
