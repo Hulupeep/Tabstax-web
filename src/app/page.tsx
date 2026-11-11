@@ -1,6 +1,7 @@
 import { DASH_BETA_URL } from "@/lib/routes";
 import { VideoSection } from "@/components/VideoSection";
 import { KickoffScene } from "@/components/KickoffScene";
+import { Benefits } from "@/components/Benefits";
 
 // Example data for the product illustrations. Names are placeholders, not people.
 
@@ -529,6 +530,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Benefits />
 
       {/* Money */}
       <section className="border-y border-line bg-card px-4 py-14 sm:px-6 md:py-20 lg:px-12">
