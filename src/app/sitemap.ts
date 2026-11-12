@@ -5,7 +5,7 @@ import { blogPosts } from "@/data/blog-posts";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://tabstax.com";
+  const baseUrl = "https://www.heystax.ai";
 
   const staticPages: MetadataRoute.Sitemap = [
     { url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
