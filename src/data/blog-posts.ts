@@ -1,3 +1,5 @@
+import { followTheData } from "./follow-the-data";
+
 export interface BlogPost {
   slug: string;
   title: string;
@@ -13,6 +15,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  followTheData,
   {
     slug: "the-hidden-benefits-of-limiting-your-choices",
     title: "The Hidden Benefits of Limiting Your Choices",
