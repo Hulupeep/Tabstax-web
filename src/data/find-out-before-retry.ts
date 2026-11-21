@@ -55,7 +55,7 @@ A responsible recovery policy also needs a deadline. Holding an uncertain room b
 
 ## Give other tools credit for the part they solve
 
-[AgentGrid’s 19 November release](https://agentgrid.sh/docs/changelog) adds a read-only Team view for coordinator exchanges and a shared approvals inbox. It also reports clearer worker-failure output and stopping a CLI worker’s whole process tree. These are valuable ways to expose coordination and control running work.
+[AgentGrid’s 19 November release](https://agentgrid.sh/docs/changelog) adds an experimental, off-by-default read-only Team view for coordinator exchanges, alongside a shared approvals inbox. It also reports clearer worker-failure output and stopping a CLI worker’s whole process tree. These are valuable ways to expose coordination and control running work. The Team view’s experimental status was checked on 21 November.
 
 [Puffle’s run-history documentation](https://puffle.ai/docs/automations/run-history) distinguishes an automation definition from each saved run. It directs people to the trigger, status, result and recorded error, and says a failed direct run is terminal. That separation makes investigation easier.
 
