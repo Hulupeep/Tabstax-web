@@ -2,12 +2,12 @@ import { DASH_BETA_URL } from "@/lib/routes";
 
 const plans = [
   {
-    name: "Principal",
-    eyebrow: "ONE PRINCIPAL",
-    price: "$19",
-    priceNote: "per month",
-    note: "One workspace owner. 30-day trial. No card.",
-    headline: "Tuesday morning. You open the stax. The work moved, and the record is yours.",
+    name: "Product",
+    eyebrow: "ONE PRODUCT",
+    price: "$49",
+    priceNote: "per month, per product",
+    note: "Closed beta. Paid from day one.",
+    headline: "One product. A new angle every night. Tuesday morning, the work moved, and the record is yours.",
     body: [
       "Claude sorted the renewal thread.",
       "ChatGPT shaped the client reply.",
@@ -57,8 +57,8 @@ export function Pricing() {
             Choose the starting shape.
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-warm-gray">
-            Plan selection is intent, not checkout. Pick the shape, create the
-            account, enter HeyStax without payment.
+            Closed beta. You pay per product, not per bot. Pick the shape, then
+            register for the beta.
           </p>
         </div>
 

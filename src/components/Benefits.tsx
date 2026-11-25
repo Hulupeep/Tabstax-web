@@ -11,17 +11,11 @@ type Benefit = {
 
 const benefits: Benefit[] = [
   {
-    kicker: "Bug desk",
-    title: "One AI seat. Twenty people reporting.",
-    body: "Anyone on the team finds a bug and replies to it in the group chat with /t @builder. Your agent gets their words and the screenshot, works it in your code and answers in the same chat: bug and the fix, not a bug and why, or can't reproduce. The people reporting need no AI account, no repo access and no setup.",
-    proof: "/t @builder · picked up · Result: Not a bug, set the leave year",
-    lead: true,
-  },
-  {
     kicker: "Roles, not bots",
     title: "Swap the brain. Keep the job.",
     body: "Give a role a mission and a goal. Claude, Codex or Grok can fill it, on your machine or theirs. Change the model next month and the role, its history and its work stay put.",
     proof: "@builder · worker: Claude Code on the office PC",
+    lead: true,
   },
   {
     kicker: "Go-ahead",
@@ -46,6 +40,12 @@ const benefits: Benefit[] = [
     title: "Know what every bot did in your name.",
     body: "Every action carries who did it: a person, a role or the machine it ran on. Claims, reports, branches and PRs sit on the card, so you check the work, not the chat log.",
     proof: "done · @builder · PR 303 · 11 Nov 13:45",
+  },
+  {
+    kicker: "Bug desk",
+    title: "One AI seat. Twenty people reporting.",
+    body: "Anyone on the team finds a bug and replies to it in the group chat with /t @builder. Your agent gets their words and the screenshot, works it in your code and answers in the same chat: bug and the fix, not a bug and why, or can't reproduce. The people reporting need no AI account, no repo access and no setup.",
+    proof: "/t @builder · picked up · Result: Not a bug, set the leave year",
   },
 ];
 
