@@ -12,13 +12,20 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
       "Set the mission and the goal once. People and bots keep working it until it is done. Nobody has to hold it in their head."
     );
 
+    // #45: the hero leads with the structure; the customer factory is what it makes.
     await expect(
-      page.getByText("For people who run on momentum and lose it on every switch.")
+      page.locator("#hero").getByText("I don't want a software factory. I want a customer factory.")
     ).toBeVisible();
     await expect(
-      page.getByRole("heading", {
-        name: "Kick off with a team in a minute. Run a dozen projects. Pick up where you or they left off.",
+      page.locator("#hero").getByRole("heading", {
+        level: 1,
+        name: "The new organizational structure for people and AI working together.",
       })
+    ).toBeVisible();
+    await expect(page.locator("#hero").getByText("Closed beta. Paid, per product.")).toBeVisible();
+    // Continuity copy is kept, below the fold.
+    await expect(
+      page.getByText("For people who run on momentum and lose it on every switch.")
     ).toBeVisible();
 
     const desktopNav = page.locator("header nav").first();
@@ -52,6 +59,28 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     await expect(page.getByText("7-day free trial")).toHaveCount(0);
   });
 
+  test("customer factory and proof sections render (#45)", async ({ page }) => {
+    await page.goto("/");
+
+    await expect(page.getByRole("heading", { name: "One twist a night.", exact: true })).toBeVisible();
+    for (const step of ["Find the angle", "Build what it needs", "Write and follow up", "You check the first few"]) {
+      await expect(page.locator("#factory").getByText(step, { exact: true })).toBeVisible();
+    }
+    await expect(
+      page.getByRole("heading", { name: "What it has won so far is hope.", exact: true })
+    ).toBeVisible();
+    await expect(page.locator("#proof").getByText("Closing is still hard. That is next.")).toBeVisible();
+    await expect(page.locator("#proof").getByText(/as of \d{1,2} \w{3} \d{4}/)).toBeVisible();
+  });
+
+  test("pricing page shows $49 per product and no trial (#45)", async ({ page }) => {
+    await page.goto("/pricing");
+
+    await expect(page.getByRole("heading", { name: "$49 a month, per product." })).toBeVisible();
+    await expect(page.getByText("$19")).toHaveCount(0);
+    await expect(page.getByText(/no card/i)).toHaveCount(0);
+  });
+
   test("the three product sections render their illustrations", async ({ page }) => {
     await page.goto("/");
 
@@ -70,7 +99,7 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     await expect(page.getByText("on track")).toBeVisible();
 
     await expect(page.getByRole("heading", { name: "Run a dozen projects.", exact: true })).toBeVisible();
-    await expect(page.getByText("Thu 8 Oct · 14:32 · 6 stax · 3 moving")).toBeVisible();
+    await expect(page.getByText("Thu 8 Oct · 14:32 · 7 stax · 4 moving")).toBeVisible();
     await expect(page.getByText("Call St Brigid's back").first()).toBeVisible();
 
     await expect(
@@ -116,7 +145,7 @@ test.describe("homepage signup handoff (#583, redesign Oct 2026)", () => {
     expect(box).toBeTruthy();
     expect(box!.width).toBeGreaterThan(300);
 
-    await expect(page.getByText("Thu 8 Oct · 14:32 · 3 moving")).toBeVisible();
+    await expect(page.getByText("Thu 8 Oct · 14:32 · 4 moving")).toBeVisible();
     await expect(page.getByText("3 done today")).toBeVisible();
     await expect(page.locator("table")).toBeHidden();
 

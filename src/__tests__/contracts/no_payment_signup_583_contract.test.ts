@@ -57,6 +57,29 @@ describe("Contract: feature_no_payment_signup_583", () => {
     expect(page).toContain("Invoices come from the work, not from memory.");
   });
 
+  it("leads with the structure and the customer factory, continuity below (#45)", () => {
+    const page = readSrc("app/page.tsx");
+    const factory = readSrc("components/CustomerFactory.tsx");
+
+    expect(page).toContain("I don&apos;t want a software factory. I want a customer factory.");
+    expect(page).toContain("The new organizational structure for people and AI working together.");
+    expect(page.indexOf("<CustomerFactory />")).toBeLessThan(page.indexOf("Kick off with a team in a minute."));
+    expect(factory).toContain("One twist a night.");
+    expect(factory).toContain("What it has won so far is hope.");
+    expect(factory).toMatch(/const proofAsOf = "\d{1,2} \w{3} \d{4}"/);
+    expect(factory).not.toMatch(/\bclos(es|ed) (the )?deals?\b|\brevenue\b/i);
+  });
+
+  it("prices per product with no trial (#45)", () => {
+    const pricingPage = readSrc("app/pricing/page.tsx");
+    const plans = readSrc("components/Pricing.tsx");
+
+    expect(pricingPage).toContain("$49 a month, per product.");
+    expect(plans).toContain('price: "$49"');
+    expect(plans).not.toContain("$19");
+    expect(plans + pricingPage).not.toMatch(/no card|30-day trial/i);
+  });
+
   it("keeps retired vocabulary off the homepage", () => {
     const page = readSrc("app/page.tsx");
 

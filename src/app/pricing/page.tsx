@@ -5,11 +5,16 @@ export default function PricingPage() {
     <section className="bg-cream px-4 py-24 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-3xl text-center">
         <h1 className="font-heading text-5xl font-black leading-tight text-charcoal md:text-6xl">
-          Pricing is moving into the starting flow.
+          $49 a month, per product.
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-warm-gray">
-          Start with the work. Choose the right shape when HeyStax knows what you
-          are setting up.
+          HeyStax is in closed beta. It is paid from day one. Each product gets its
+          own roles, its own launches and a new angle every night. You pay per
+          product, not per bot.
+        </p>
+        <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-warm-gray">
+          Timesheets and invoices are included. Teams with several products or
+          their own data boundary: write to us at tabstax@floutlabs.com.
         </p>
         <a
           href={DASH_BETA_URL}

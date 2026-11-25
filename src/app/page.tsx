@@ -2,6 +2,7 @@ import { DASH_BETA_URL } from "@/lib/routes";
 import { VideoSection } from "@/components/VideoSection";
 import { KickoffScene } from "@/components/KickoffScene";
 import { Benefits } from "@/components/Benefits";
+import { CustomerFactory } from "@/components/CustomerFactory";
 
 // Example data for the product illustrations. Names are placeholders, not people.
 
@@ -41,6 +42,14 @@ const liveRows: LiveRow[] = [
     next: "Call St Brigid's back",
     now: null,
     doneToday: 0,
+  },
+  {
+    stax: "Hubduck · Sell",
+    goal: "First paying customer",
+    goalState: "open",
+    next: "Follow up the AU tour boats",
+    now: { handle: "@bus-dev", elapsed: "22 min" },
+    doneToday: 4,
   },
   {
     stax: "Cave Airbnb",
@@ -242,13 +251,17 @@ export default function Home() {
       <section id="hero" className="px-4 pb-14 pt-12 sm:px-6 md:pb-24 md:pt-[72px] lg:px-12">
         <div className="mx-auto flex max-w-[1040px] flex-col gap-6 md:gap-7">
           <p className="text-[15px] leading-[22px] text-muted md:text-[17px] md:leading-[26px]">
-            For people who run on momentum and lose it on every switch.
+            I don&apos;t want a software factory. I want a customer factory.
           </p>
           <h1 className="max-w-[980px] text-[34px] font-semibold leading-10 tracking-[-0.02em] text-ink md:text-[58px] md:leading-[1.12]">
-            <span className="block">Kick off with a team in a minute.</span>
-            <span className="block">Run a dozen projects.</span>
-            <span className="block">Pick up where you or they left off.</span>
+            The new organizational structure for people and AI working together.
           </h1>
+          <p className="max-w-[760px] text-base leading-6 text-ink-2 md:text-[19px] md:leading-[30px]">
+            Code is nearly free now. The software isn&apos;t the point. Customers are. Give HeyStax a
+            mission and a goal. People and bots take the roles, and every night they find a new
+            angle for your product, build what it needs, write to the people who&apos;d care and
+            follow up.
+          </p>
           <div className="mobile-full-cta flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
             <a
               href={DASH_BETA_URL}
@@ -277,10 +290,27 @@ export default function Home() {
             </a>
           </div>
           <p className="text-[13px] leading-[18px] text-muted">
-            Works inside Claude, ChatGPT, your terminal and your browser. Same stax everywhere.
+            Closed beta. Paid, per product. Works inside Claude, ChatGPT, your terminal and your
+            browser.
           </p>
 
           <VideoSection />
+        </div>
+      </section>
+
+      <CustomerFactory />
+
+      <Benefits />
+
+      {/* Below the fold: the same board, for the team */}
+      <section className="px-4 pb-10 sm:px-6 md:pb-14 lg:px-12">
+        <div className="mx-auto flex max-w-[1040px] flex-col gap-3 border-t border-line pt-12 md:pt-16">
+          <p className="text-[15px] leading-[22px] text-muted md:text-[17px] md:leading-[26px]">
+            For people who run on momentum and lose it on every switch.
+          </p>
+          <h2 className="max-w-[760px] text-[26px] font-semibold leading-8 tracking-[-0.01em] text-ink md:text-[32px] md:leading-10">
+            The factory runs on the same board your team does.
+          </h2>
         </div>
       </section>
 
@@ -313,7 +343,7 @@ export default function Home() {
                 <span className="text-[15px] font-semibold leading-[22px]">Live</span>
               </div>
               <span className={`${mono} text-[13px] leading-[18px] text-muted`}>
-                Thu 8 Oct · 14:32 · 6 stax · 3 moving
+                Thu 8 Oct · 14:32 · 7 stax · 4 moving
               </span>
             </div>
             <div className="overflow-x-auto">
@@ -391,7 +421,7 @@ export default function Home() {
                 <span className="text-[15px] font-semibold leading-[22px]">Live</span>
               </div>
               <span className={`${mono} text-xs leading-4 text-muted`}>
-                Thu 8 Oct · 14:32 · 3 moving
+                Thu 8 Oct · 14:32 · 4 moving
               </span>
             </div>
             {liveRows.map((row) => (
@@ -531,7 +561,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Benefits />
 
       {/* Money */}
       <section className="border-y border-line bg-card px-4 py-14 sm:px-6 md:py-20 lg:px-12">
@@ -650,6 +679,10 @@ $ hey done 2
             <p className="text-base leading-6 text-ink-2">
               Bring one project, one goal, and the people around it. Everyone has a next action
               before you close the tab.
+            </p>
+            <p className="text-[15px] leading-[22px] text-muted">
+              Want a customer factory for your product? HeyStax is in closed beta. It&apos;s paid,
+              per product.
             </p>
           </div>
           <div className="mobile-full-cta flex sm:w-auto">
