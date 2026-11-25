@@ -257,8 +257,8 @@ export default function Home() {
             The new organizational structure for people and AI working together.
           </h1>
           <p className="max-w-[760px] text-base leading-6 text-ink-2 md:text-[19px] md:leading-[30px]">
-            Code is nearly free now. The software isn&apos;t the point. Customers are. Give HeyStax a
-            mission and a goal. People and bots take the roles, and every night they find a new
+            Code is nearly free now. Software is only the wrapper for what customers buy: a problem
+            solved, revenue opened, costs cut. Give HeyStax a mission and a goal. People and bots take the roles, and every night they find a new
             angle for your product, build what it needs, write to the people who&apos;d care and
             follow up.
           </p>
