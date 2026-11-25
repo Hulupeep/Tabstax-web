@@ -1,0 +1,81 @@
+import type { BlogPost } from "../blog-posts";
+
+// Evidence for every number and feature claim is listed in the PR that added this post.
+// Hubduck numbers are copied from src/components/CustomerFactory.tsx (launch review, as of 25 Nov 2026).
+export const customerFactoryOneTwistANight: BlogPost = {
+  slug: "customer-factory-one-twist-a-night",
+  title: "The Customer Factory: One Twist a Night",
+  seoTitle: "Customer Factory for Solo Founders: One Twist a Night",
+  seoDescription:
+    "You pay for a bot and you are still the bottleneck. The HeyStax customer factory tries one new sales angle a night, and you check only the first few sends.",
+  date: "2026-11-25",
+  author: "Colm Byrne",
+  kicker: "Customer Factory",
+  excerpt:
+    "Every product has more faces than you have tried. Each night the roles make one twist: find the angle, build what it needs, write and follow up. You check the first few sends.",
+  keywords: [
+    "customer factory",
+    "solo founder customer acquisition",
+    "ai agents find customers",
+    "founder bottleneck",
+    "persisted intent",
+    "heystax",
+  ],
+  faq: [
+    {
+      q: "What is the customer factory?",
+      a: "A nightly routine run by the roles on your stax. Each night they try one new angle: find a reason someone would care, build the page, feature or list it needs, write the first email and the follow-up, and report back. You check the first few sends of each new launch.",
+    },
+    {
+      q: "Do I have to approve every email?",
+      a: "No. You check the first sends of a new launch. After that it runs inside send caps and a stop rule. Each launch has a review card where you can pause it or redirect the role at any time.",
+    },
+    {
+      q: "Has it produced paying customers yet?",
+      a: "Not yet. On our own product, Hubduck, launch review as of 25 Nov 2026 showed 20 angles opened, 7 launches sent, 208 emails out, 5 replies (4 of them not now) and 0 paid. Closing is still hard. That is next.",
+    },
+    {
+      q: "Do I need to use a particular bot?",
+      a: "No. You hire roles, not bots. The mission stays, and the workers under each role can be swapped.",
+    },
+  ],
+  content: [
+    "You already pay for a bot. Maybe two. It writes when you ask. It codes when you ask. And at the end of the day you are still the one who decides what to try next, writes the email, checks the list and remembers to follow up on Thursday.",
+    "That is the bottleneck. Not the writing. You.",
+    "This post is about the customer factory: the part of HeyStax that keeps looking for customers while you get on with the rest of your life. It works one twist at a time.",
+    "## Your product has more faces than you have tried",
+    "Most founders sell one product one way. One pitch, one buyer, one page. When it does not land, it is easy to decide the product is wrong.",
+    "Often the product is fine. You have only tried one face of it.",
+    "Every product has more faces. A new rule comes in, and someone suddenly has a reason to care. A new buyer turns up with the same problem in a different shape. A gap sits open because nobody ever sold into it.",
+    "You know this already. You just do not have the hours to try twenty faces. You have the hours to try one, maybe two, and then the week is gone.",
+    "## One twist a night",
+    "The customer factory turns that into a routine. Each night the roles on your stax make one twist: one new angle, tried properly. Then they look at what came back, and twist again. Sooner or later a row lines up.",
+    "One twist runs in four steps.",
+    "### 1. Find the angle",
+    "A rule changes in Alaska. A fire season starts in Victoria. That is a reason for someone to care tonight. The roles look for that reason and open it as an angle on the stax, where you can see it.",
+    "### 2. Build what it needs",
+    "An angle needs something to land on. A page that speaks to that buyer. A small feature that answers their version of the problem. A list of the people it is for. It is small on purpose: enough to test the angle, not a rebuild of your product.",
+    "### 3. Write and follow up",
+    "First email, then the follow-up. The follow-up is the step a tired founder skips. Here it is part of the job, not something you have to remember. Replies come back to the stax, not to a pile in your inbox, so the next role can see what was said.",
+    "### 4. You check the first few",
+    "You check the first sends of a new launch. Read them the way the buyer would. If they are wrong, say so and the role fixes them. Once they look right, let it run, inside send caps and a stop rule. The caps limit how much goes out. The stop rule says when an angle has had its chance.",
+    "That is your part. A few minutes at the start of a launch. Not the legwork.",
+    "## What you see in the morning",
+    "Each launch gets one review card. It shows what went out, who it was for, what came back and what happens next. Sends go ahead by default. If something looks off, you pause the launch or redirect the role with a comment. If it looks right, you leave it alone.",
+    "Where a number is not known yet, the card says unknown. It does not say zero. That matters more than it sounds. A factory that rounds up is worse than no factory at all.",
+    "## The real numbers, so far",
+    "We run the factory on our own product first. Hubduck does staff policy sign-off for schools, camps and crews. This is what Hubduck launch review showed as of 25 Nov 2026:",
+    "**20** angles opened. **7** launches sent. **208** emails out. **5** replies, 4 of them not now. **0** paid, so far.",
+    "The last number is the one to read. The factory has found angles, built for them and put real emails in front of real people. It has not closed a sale yet. Five replies is a start, and four of them said not now. Closing is still hard. That is next.",
+    "We show you this because the point of the factory is not that it wins on night one. It is that it keeps going on night two, and night twenty, without you having to find the energy to start again.",
+    "## Why this needs a structure, not a better bot",
+    "You could ask your bot to do all four steps. It would do each one well, once. Then the chat ends, and the intent goes with it. Tomorrow you start again, and you are the one who remembers which angle was tried, who replied and when to stop.",
+    "HeyStax keeps that on the stax. The mission and the goal stay put. You hire roles, not bots: a builder, a bd role, a qc role, each with its own job. The workers under a role can be swapped, and the mission stays. Every write is attributed, so you can check what was done in your name.",
+    "Intelligence is easy to buy now. What is scarce is intent that survives the 2am doubt. That is what the factory is for.",
+    "## How to start",
+    "Pick one product. Write its mission in one line and its goal with a date. Let the roles make the first twist, and check the first few sends when they come. After that, your job is to read one card in the morning and decide whether to leave it alone.",
+    "You can see the four steps and the Hubduck numbers on the [HeyStax homepage](/#factory).",
+    "Persisted intent.",
+    "HeyStax. The platform for hope.",
+  ].join("\n\n"),
+};
