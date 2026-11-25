@@ -274,7 +274,8 @@ npm run start            # Serve production build
 | `src/components/Header.tsx` | Sticky header with nav + "Start Now" CTA (client component) |
 | `src/components/Footer.tsx` | Footer with product links, company info, Flout Labs Ireland |
 | `src/data/use-cases.ts` | 73 use cases with slug, title, category, persona, summary, content |
-| `src/data/blog-posts.ts` | 5 blog posts with slug, title, date, excerpt, content |
+| `src/data/blog-posts.ts` | Single import point: exports `blogPosts` and the `BlogPost` type (defined in `blog-types.ts`) |
+| `src/data/posts/<slug>.ts` | One blog post per file. To add a post: create the file, then add one line at the bottom of `src/data/posts/index.ts` |
 | `src/app/use-cases/[slug]/page.tsx` | Dynamic route for 73 individual use case pages (SSG) |
 | `src/app/sitemap.ts` | Auto-generated sitemap including all use case URLs |
 
