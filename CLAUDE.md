@@ -1,5 +1,16 @@
 # TabStax-web - Development Guide
 
+## Every UI change: design skill first
+
+Any change to a page or component (`src/app/**`, `src/components/**`, CSS):
+
+1. Load the `heystax-design` skill (`skill_get heystax-design` from HeyStax, or `tabstax-webapps/.claude/skills/heystax-design/SKILL.md`). In this repo the same tokens are in `src/app/globals.css` `@theme` without the `hs-` prefix (`bg-page`, `bg-card`, `text-ink`, `text-muted`, `border-line`, `text-accent`), and a page opts in with `className="hs"` on its root.
+2. Run the JTBD pass first (`jtbd-ux-designer` skill): the job in one line, the one primary action, the empty state, the 390px phone layout. Write it into the PR as `## JTBD`.
+3. Put before and after screenshots in the PR: desktop, phone (390px) and dark. Use "phone" and "dark" in their names.
+4. End the PR with `Skill used: heystax-design@<version>`.
+
+The older cream and amber palette (Fraunces, Epilogue) is legacy. New and changed HeyStax pages use the `.hs` system.
+
 ## Project Context
 
 **Repository:** Hulupeep/Tabstax-web
