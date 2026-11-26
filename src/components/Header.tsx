@@ -29,8 +29,13 @@ export function Header() {
               height={32}
               className="h-8 w-8"
             />
-            <span className="text-lg font-semibold tracking-[-0.01em] md:text-xl">
-              HeyStax
+            <span className="flex flex-col leading-tight sm:flex-row sm:items-center sm:gap-2.5">
+              <span className="text-lg font-semibold tracking-[-0.01em] md:text-xl">
+                HeyStax
+              </span>
+              <span className="whitespace-nowrap text-xs text-muted sm:border-l sm:border-line sm:pl-2.5 sm:text-sm md:text-[15px]">
+                Persisted intent
+              </span>
             </span>
           </Link>
 
