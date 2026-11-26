@@ -203,3 +203,4 @@ export { post as p199 } from "./one-shared-decision";
 export { post as p200 } from "./follow-the-data";
 export { post as p201 } from "./find-out-before-you-retry";
 export { post as p202 } from "./skills-must-pass-the-journey";
+export { post as p203 } from "./hire-roles-not-bots";
