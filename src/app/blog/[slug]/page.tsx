@@ -5,6 +5,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
